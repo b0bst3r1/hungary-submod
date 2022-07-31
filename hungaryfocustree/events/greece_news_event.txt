@@ -1,0 +1,21 @@
+  ###############
+  ##NEWS#EVENTS##
+  ###############
+
+add_namespace = greec
+
+	news_event = {		
+	id = greec.1
+	title = greec.1.t
+	desc = greec.1.d
+	picture = GFX_news_event_hun_904
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = greec.1.a
+	}
+        } 
+		

@@ -1,0 +1,146 @@
+﻿  ###############
+  ##NEWS#EVENTS##
+  ###############
+
+add_namespace = hungary
+
+	news_event = { #HORTHYBUDAPEST
+	id = hungary.1
+	title = hungary.1.t
+	desc = hungary.1.d
+	picture = GFX_news_event_hun_900
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.1.a
+	}
+        } 
+
+	news_event = {		#UDWR
+	id = hungary.2
+	title = hungary.2.t
+	desc = hungary.2.d
+	picture = GFX_news_event_hun_901
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.2.a
+	}
+	}
+	
+	news_event = {	#balkwar	
+	id = hungary.3
+	title = hungary.3.t
+	desc = hungary.3.d
+	picture = GFX_news_event_hun_905
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.3.a
+	}
+        }
+
+	news_event = {		#SLOVAK
+	id = hungary.4
+	title = hungary.4.t
+	desc = hungary.4.d
+	picture = GFX_news_event_hun_906
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.4.a
+	}
+        }				 		
+    
+	news_event = { #RUSinMOLDOVA
+	id = hungary.5
+	title = hungary.5.t
+	desc = hungary.5.d
+	picture = GFX_news_event_hun_902
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.5.a
+	}
+        }
+
+	news_event = { #SERBIaPeace
+	id = hungary.6
+	title = hungary.6.t
+	desc = hungary.6.d
+	picture = GFX_news_event_hun_907
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.6.a
+	}
+        }
+
+	news_event = { #RomaniaPeace
+	id = hungary.7
+	title = hungary.7.t
+	desc = hungary.7.d
+	picture = GFX_news_event_hun_908
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.7.a
+	}
+        }	
+
+	news_event = { #SerbianKingExile
+	id = hungary.8
+	title = hungary.8.t
+	desc = hungary.8.d
+	picture = GFX_news_event_hun_909
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.8.a
+	}
+        }
+
+	news_event = { #CHAOSonBalkans
+	id = hungary.9
+	title = hungary.9.t
+	desc = hungary.9.d
+	picture = GFX_news_event_hun_910
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.9.a
+	}
+        }			
+
+ 
+
+
+
+

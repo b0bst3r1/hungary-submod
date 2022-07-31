@@ -1,0 +1,50 @@
+##################
+####albanian#####
+#####events#######
+##################
+
+add_namespace = russs
+	 
+	country_event = {
+	id = russs.1
+	title = russs.1.t
+	desc = russs.1.d
+	picture = GFX
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	immediate = { news_event = {
+         id = hungary.5
+          }
+        }	
+	
+	option = {
+		name = russs.1.a
+		
+		MRD = {
+			transfer_state = 79
+			transfer_state = 80
+		    add_state_core = 79
+		    add_state_core = 80			
+		
+        }
+		
+		RUS = {
+		puppet = MRD
+		
+			set_autonomy = {
+                target = MRD
+                 autonomy_state = autonomy_PB_Imperial_Autonomy
+                }		
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	   }
+	  }
+       
+	   
+ 
+	

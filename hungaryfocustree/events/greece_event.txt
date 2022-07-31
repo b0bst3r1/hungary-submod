@@ -1,0 +1,104 @@
+##################
+####albanian#####
+#####events#######
+##################
+
+add_namespace = greece	
+	 
+	country_event = {
+	id = greece.1
+	title = greece.1.t
+	desc = greece.1.d
+	picture = GFX
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	 immediate = { news_event = {
+           id = greec.1
+            }
+          }	
+	
+	option = {
+		name = greece.1.a
+		
+		set_cosmetic_tag = GRE_RUS
+		
+			create_country_leader = {
+			name = "Anastasy Vonsiatsky"
+			desc = " "
+			picture = "gfx/leaders/GRE/Portrait_anastasy_vosnyatsky.dds"
+			expire = "1965.1.1"
+			ideology = NI_VARIANT_02
+		}
+		
+
+set_politics = {
+	ruling_party = ni
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+remove_ideas = {
+    PB_Revolutionary_Republic 
+    PB_NI_Revanchism
+    PB_HUN_Balkan_Powderkeg
+	PB_Fully_Westernized
+	PB_Govidea_Planned_Economy
+	PB_Revolutionary_Republic
+	PB_Great_War_Military
+	PB_NI_Revolution
+	PB_Limited_Censorship
+	PB_Single_Party_State
+	PB_Full_Womens_Equality
+	PB_Public_Meetings_Monitored
+	PB_Limited_Autonomy
+	PB_Law_Intimidation_Policing
+	PB_8_Hour_Workday
+	PB_Basic_Healthcare
+	PB_Universal_Basic
+    PB_Generous_Welfare
+	PB_Trade_Unions_All_Allowed
+    PB_Slavery_Abolished
+	PB_Significant_Poverty
+    PB_Semi_Industrialized
+	PB_Minor_Illiteracy
+	PB_Middling_Consumer_Confidence
+}
+
+add_ideas = {
+    PB_Parliamentary_Monarchy
+    PB_NI_Order
+    PB_Govidea_State_Capitalism
+    PB_Aristocratic_Democracy
+    PB_Limited_Censorship
+    PB_Public_Meetings_Monitored
+    PB_Limited_Womens_Rights
+    PB_Limited_Autonomy
+    PB_Law_Intimidation_Policing
+    PB_14_Hour_Workday
+    PB_Basic_Healthcare
+    PB_Basic_Education
+    PB_Basic_Welfare
+    PB_Trade_Unions_Non_Socialist
+    PB_Penal_Slavery
+    PB_Widespread_Poverty
+    PB_Semi_Industrialized
+    PB_Significant_Illiteracy
+    PB_Market_Underperformance
+    PB_Great_War_Military
+    PB_Fully_Westernized
+}
+    		
+		
+		
+		ai_chance = {
+			factor = 100
+		}
+	   }
+	  }
+       
+	   
+ 
+	

@@ -1,0 +1,27 @@
+﻿  ###############
+  ##NEWS#EVENTS##
+  ###############
+
+add_namespace = alban
+
+	news_event = {		
+	id = alban.1
+	title = alban.1.t
+	desc = alban.1.d
+	picture = GFX_news_event_alb_900
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = alban.1.a
+	  }
+    } 			 
+     
+
+ 
+
+
+
+
