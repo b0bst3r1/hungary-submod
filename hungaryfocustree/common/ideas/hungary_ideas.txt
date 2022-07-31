@@ -1,0 +1,30 @@
+##################
+##HUNGARYmodIDEAS#
+##################
+
+ideas = {
+
+      country = {
+	  
+		HUN_religion_freedom = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+                        picture = HUN_religion_freedom
+			
+			removal_cost = -1
+	
+			modifier = {
+                        stability_factor = 0.1							
+                        research_speed_factor = - 0.02
+			}
+		}	  
+	}
+ }	
