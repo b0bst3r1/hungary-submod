@@ -1,0 +1,1881 @@
+spriteTypes = {	
+	
+	SpriteType = {
+	    name = "GFX_hun_political_crisis"
+        texturefile = "gfx/interface/goals/hun_political_crisis.dds"
+    }
+
+	SpriteType = {
+	    name = "GFX_hun_politicalstruggle"
+        texturefile = "gfx/interface/goals/hun_politicalstruggle.dds"
+    } 
+
+    SpriteType = { 
+		name = "GFX_hun_open_the_discussion"
+		texturefile = "gfx/interface/goals/hun_open_the_discussion.dds"
+	}
+	
+	 SpriteType = { 
+		name = "GFX_hun_congress"
+		texturefile = "gfx/interface/goals/hun_congress.dds"
+	}
+
+	 SpriteType = { 
+		name = "gfx_hun_Red_Army"
+		texturefile = "gfx/interface/goals/hun_Red_Army.dds"
+	}
+	 
+	 SpriteType = { 
+		name = "GFX_hun_expand_redair"
+		texturefile = "gfx/interface/goals/hun_expand_redair.dds"
+	}
+	
+	 SpriteType = { 
+		name = "GFX_hun_found_workers"
+		texturefile = "gfx/interface/goals/hun_found_workers.dds"
+	}
+	 
+	 SpriteType = { 
+		name = "GFX_hun_heavy_industry"
+		texturefile = "gfx/interface/goals/hun_heavy_industry.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_strenghten_mobilization"
+		texturefile = "gfx/interface/goals/hun_strenghten_mobilization.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_great_patriotic_war"
+		texturefile = "gfx/interface/goals/great_patriotic_war.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_red_guard"
+		texturefile = "gfx/interface/goals/hun_red_guard.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_defence_the_mountains"
+		texturefile = "gfx/interface/goals/hun_defence_the_mountains.dds"
+	}
+		
+	SpriteType = { 
+		name = "GFX_hun_red_army"
+		texturefile = "gfx/interface/goals/hun_red_army.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_prepare_for_war"
+		texturefile = "gfx/interface/goals/hun_prepare_for_war.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_prepare_for_war"
+		texturefile = "gfx/interface/goals/hun_prepare_for_war.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_defence_of_revolution"
+		texturefile = "gfx/interface/goals/hun_defence_of_revolution.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_croatian_fleet"
+		texturefile = "gfx/interface/goals/hun_croatian_fleet.dds" 
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_solve_ethnic"
+		texturefile = "gfx/interface/goals/hun_solve_ethnic.dds" 
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_defensive_treaty"
+		texturefile = "gfx/interface/goals/hun_defensive_treaty.dds" 
+	}
+	  
+	 SpriteType = { 
+		name = "GFX_hun_talk_with_bulgaria"
+		texturefile = "gfx/interface/goals/hun_talk_with_bulgaria.dds" 
+	}
+	  
+	 SpriteType = { 
+		name = "GFX_hun_memory_of_the_revulution"
+		texturefile = "gfx/interface/goals/hun_memory_of_the_revulution.dds" 
+	  }
+	  
+	 SpriteType = { 
+		name = "GFX_hun_internpolit"
+		texturefile = "gfx/interface/goals/hun_internpolit.dds" 
+	}
+	  
+	 SpriteType = { 
+		name = "GFX_hun_victory"
+		texturefile = "gfx/interface/goals/hun_victory.dds" 
+	}
+	  
+	 SpriteType = { 
+		name = "GFX_hun_recovery_from_The_war"
+		texturefile = "gfx/interface/goals/hun_recovery_from_The_war.dds" 
+	}
+	  
+	 SpriteType = { 
+		name = "GFX_hun_victory_parade"
+		texturefile = "gfx/interface/goals/hun_victory_parade.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_pension_war_generals"
+		texturefile = "gfx/interface/goals/hun_pension_war_generals.dds"
+	}
+	  
+	   SpriteType = { 
+		name = "GFX_hun_develop_romanian_oil"
+		texturefile = "gfx/interface/goals/hun_develop_romanian_oil.dds"
+	}
+	
+	       SpriteType = { 
+		name = "GFX_hun_financial_support_forrepublics"
+		texturefile = "gfx/interface/goals/hun_financial_support_forrepublics.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_road_budapest-buharest"
+		texturefile = "gfx/interface/goals/hun_road_budapest-buharest.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_begin_the_industr"
+		texturefile = "gfx/interface/goals/hun_begin_the_industr.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_exceeding_and_catch_up"
+		texturefile = "gfx/interface/goals/hun_exceeding_and_catch_up.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_forthemotherland"
+		texturefile = "gfx/interface/goals/hun_forthemotherland.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_last_stand"
+		texturefile = "gfx/interface/goals/hun_last_stand.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_stabilize_thefront"
+		texturefile = "gfx/interface/goals/hun_stabilize_thefront.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_reconquerourterritories"
+		texturefile = "gfx/interface/goals/hun_reconquerourterritories.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_spread_the_revolution"
+		texturefile = "gfx/interface/goals/hun_spread_the_revolution.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_defenceof_zagreb"
+		texturefile = "gfx/interface/goals/hun_defenceof_zagreb.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_fortify_the_border"
+		texturefile = "gfx/interface/goals/hun_fortify_the_border.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_execute_reformists"
+		texturefile = "gfx/interface/goals/hun_execute_reformists.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_ban_oppostition"
+		texturefile = "gfx/interface/goals/hun_ban_oppostition.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_renew_red_terror"
+		texturefile = "gfx/interface/goals/hun_renew_red_terror"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_establish_penal"
+		texturefile = "gfx/interface/goals/hun_establish_penal.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_contact_jacob"
+		texturefile = "gfx/interface/goals/hun_contact_jacob.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_great_break"
+		texturefile = "gfx/interface/goals/hun_great_break.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_investments_in_heavy_industry"
+		texturefile = "gfx/interface/goals/hun_investments_in_heavy_industry.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_developing_of_core_lands"
+		texturefile = "gfx/interface/goals/hun_developing_of_core_lands.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_improve_the_outskirts"
+		texturefile = "gfx/interface/goals/hun_improve_the_outskirts.dds"
+	}
+	  
+	  SpriteType = { 
+		name = "GFX_hun_underground_factories"
+		texturefile = "gfx/interface/goals/hun_underground_factories.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_counterrevolution"
+		texturefile = "gfx/interface/goals/hun_counterrevolution.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_regency_council"
+		texturefile = "gfx/interface/goals/hun_regency_council.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_chaos_in_hungary"
+		texturefile = "gfx/interface/goals/hun_chaos_in_hungary.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_monarch_elections"
+		texturefile = "gfx/interface/goals/hun_monarch_elections.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_road-bdpst-srjvo-blgrd"
+		texturefile = "gfx/interface/goals/hun_road-bdpst-srjvo-blgrd.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_revolutionary_cities"
+		texturefile = "gfx/interface/goals/hun_revolutionary_cities.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_call_on_russian_troops"
+		texturefile = "gfx/interface/goals/hun_call_on_russian_troops.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_preferences_for_romanovss"
+		texturefile = "gfx/interface/goals/hun_preferences_for_romanovs.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_economic_treaty_russia"
+		texturefile = "gfx/interface/goals/hun_economic_treaty_russia.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_condemn_german_imperealism"
+		texturefile = "gfx/interface/goals/hun_condemn_german_imperealism.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_defensive_treaty_with_revanchist"
+		texturefile = "gfx/interface/goals/hun_defensive_treaty_with_revanchist.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_throw_away_the_peace_treaty"
+		texturefile = "gfx/interface/goals/hun_throw_away_the_peace_treaty.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_mass_clericalization"
+		texturefile = "gfx/interface/goals/hun_mass_clericalization.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_one_country_one_faith"
+		texturefile = "gfx/interface/goals/hun_one_country_one_faith.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_renegatiate_buharest_treaty"
+		texturefile = "gfx/interface/goals/hun_renegatiate_buharest_treaty.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_renegatiate_buharest_treaty"
+		texturefile = "gfx/interface/goals/hun_renegatiate_buharest_treaty.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_improve_naval_bases"
+		texturefile = "gfx/interface/goals/hun_improve_naval_bases.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_black_sea_fleet"
+		texturefile = "gfx/interface/goals/hun_black_sea_fleet.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_Coastal_defence"
+		texturefile = "gfx/interface/goals/hun_Coastal_defence.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_first_battleship"
+		texturefile = "gfx/interface/goals/hun_first_battleship.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_military_exercise"
+		texturefile = "gfx/interface/goals/hun_military_exercise.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_fortification_effort"
+		texturefile = "gfx/interface/goals/hun_fortification_effort.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_mountaniers"
+		texturefile = "gfx/interface/goals/hun_mountaniers.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_classic_army"
+		texturefile = "gfx/interface/goals/hun_classic_army.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_automation_benefits"
+		texturefile = "gfx/interface/goals/hun_automation_benefits.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_massive_artillery"
+		texturefile = "gfx/interface/goals/hun_massive_artillery.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_victory_at_any_cost"
+		texturefile = "gfx/interface/goals/hun_victory_at_any_cost.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_army_of_movement"
+		texturefile = "gfx/interface/goals/hun_army_of_movement.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_new_army_organization"
+		texturefile = "gfx/interface/goals/hun_new_army_organization.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_infantry_cult"
+		texturefile = "gfx/interface/goals/hun_infantry_cult.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_prepare_for_long_war"
+		texturefile = "gfx/interface/goals/hun_prepare_for_long_war.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_increase_firepower"
+		texturefile = "gfx/interface/goals/hun_increase_firepower.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_improve_the_tactics"
+		texturefile = "gfx/interface/goals/hun_improve_the_tactics.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_rebuild_officer_corp"
+		texturefile = "gfx/interface/goals/hun_rebuild_officer_corp.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_guards_division"
+		texturefile = "gfx/interface/goals/hun_guards_division.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_mechanized_forces"
+		texturefile = "gfx/interface/goals/hun_mechanized_forces.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_army_modernization"
+		texturefile = "gfx/interface/goals/hun_army_modernization.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_war_in_the_blood"
+		texturefile = "gfx/interface/goals/hun_war_in_the_blood.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_small_army_engineering"
+		texturefile = "gfx/interface/goals/hun_small_army_engineering.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_form_parachute_division"
+		texturefile = "gfx/interface/goals/hun_form_parachute_division.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_hungarian_air"
+		texturefile = "gfx/interface/goals/hun_hungarian_air.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_army_reform"
+		texturefile = "gfx/interface/goals/hun_army_reform.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_bomber_improvment"
+		texturefile = "gfx/interface/goals/hun_bomber_improvment.dds"
+	}
+	
+	  SpriteType = { 
+		name = "GFX_hun_clear_sky"
+		texturefile = "gfx/interface/goals/hun_clear_sky.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_air_base_expansion"
+		texturefile = "gfx/interface/goals/hun_air_base_expansion.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_fighter_production"
+		texturefile = "gfx/interface/goals/hun_fighter_production.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_heavy_fighter_concept"
+		texturefile = "gfx/interface/goals/hun_heavy_fighter_concept.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_naval_bombers"
+		texturefile = "gfx/interface/goals/hun_naval_bombers.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_experimental_helicopters"
+		texturefile = "gfx/interface/goals/hun_experimental_helicopters.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_evolution_of_air_strategy"
+		texturefile = "gfx/interface/goals/hun_evolution_of_air_strategy.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_rocket_development"
+		texturefile = "gfx/interface/goals/hun_rocket_development.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_sovereigh_democracy"
+		texturefile = "gfx/interface/goals/hun_sovereigh_democracy.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_controlled_parlament"
+		texturefile = "gfx/interface/goals/hun_controlled_parlament.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_get_closer_to_germany"
+		texturefile = "gfx/interface/goals/hun_get_closer_to_germany.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_achieve_british_recognition"
+		texturefile = "gfx/interface/goals/hun_achieve_british_recognition.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_seek_for_american_specialists"
+		texturefile = "gfx/interface/goals/hun_seek_for_american_specialists.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_refuse_the_treaty"
+		texturefile = "gfx/interface/goals/hun_refuse_the_treaty.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_intermediation_of_alies"
+		texturefile = "gfx/interface/goals/hun_intermediation_of_alies.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_religious_freedom"
+		texturefile = "gfx/interface/goals/hun_religious_freedom.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_great_workers_rights"
+		texturefile = "gfx/interface/goals/hun_great_workers_rights.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_gender_equality"
+		texturefile = "gfx/interface/goals/hun_gender_equality.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_free_Elections_rights"
+		texturefile = "gfx/interface/goals/hun_free_Elections_rights.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_large_autonomy_for_minorites"
+		texturefile = "gfx/interface/goals/hun_large_autonomy_for_minorites.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_democratic_country"
+		texturefile = "gfx/interface/goals/hun_democratic_country.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_prepare_big_privatization"
+		texturefile = "gfx/interface/goals/hun_prepare_big_privatization.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_privatization_part_one"
+		texturefile = "gfx/interface/goals/hun_privatization_part_one.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_privatization_part_two"
+		texturefile = "gfx/interface/goals/hun_privatization_part_two.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_privatization_part_three"
+		texturefile = "gfx/interface/goals/hun_privatization_part_three.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_achieve_neutrallity"
+		texturefile = "gfx/interface/goals/hun_achieve_neutrallity.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_get_guarantees_from_ger"
+		texturefile = "gfx/interface/goals/hun_get_guarantees_from_ger.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_get_guarantees_from_brit"
+		texturefile = "gfx/interface/goals/hun_get_guarantees_from_brit.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_democratization"
+		texturefile = "gfx/interface/goals/hun_democratization.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_hold_free_elections"
+		texturefile = "gfx/interface/goals/hun_hold_free_elections.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_get_guarantees_eu_from_ger"
+		texturefile = "gfx/interface/goals/hun_get_guarantees_eu_from_ger.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_get_guarantees_from_fra"
+		texturefile = "gfx/interface/goals/hun_get_guarantees_from_fra.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_connectionof_theinterior"
+		texturefile = "gfx/interface/goals/hun_connectionof_theinterior.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_evolve_our_urban_culture"
+		texturefile = "gfx/interface/goals/hun_evolve_our_urban_culture.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_fix_tire_problem"
+		texturefile = "gfx/interface/goals/hun_fix_tire_problem.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_military_coup"
+		texturefile = "gfx/interface/goals/hun_military_coup.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_begin_covert_remilitarization"
+		texturefile = "gfx/interface/goals/hun_begin_covert_remilitarization.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_begin_covert_remilitarization"
+		texturefile = "gfx/interface/goals/hun_begin_covert_remilitarization.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_talk_with_france"
+		texturefile = "gfx/interface/goals/hun_talk_with_france.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_treaty_with_revanchist_pact"
+		texturefile = "gfx/interface/goals/hun_treaty_with_revanchist_pact.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_hun_destroy_the_unions"
+		texturefile = "gfx/interface/goals/hun_destroy_the_unions.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_investments_from_russia"
+		texturefile = "gfx/interface/goals/hun_investments_from_russia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_jewish_genocide"
+		texturefile = "gfx/interface/goals/hun_jewish_genocide.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_decommunization"
+		texturefile = "gfx/interface/goals/hun_decommunization.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_catholic_education"
+		texturefile = "gfx/interface/goals/catholic_education.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_eternal_red_menace"
+		texturefile = "gfx/interface/goals/hun_eternal_red_menace.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_ask_for_military_advisers"
+		texturefile = "gfx/interface/goals/hun_ask_for_military_advisers.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_found_HNDA"
+		texturefile = "gfx/interface/goals/hun_found_HNDA.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_national_state"
+		texturefile = "gfx/interface/goals/hun_national_state.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_ignite_the_fire_of_revanchshism"
+		texturefile = "gfx/interface/goals/hun_ignite_the_fire_of_revanchshism.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_break_the_peace_deal"
+		texturefile = "gfx/interface/goals/hun_break_the_peace_deal.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_announce_mobilization"
+		texturefile = "gfx/interface/goals/hun_announce_mobilization.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_ask_for_russian_intervention"
+		texturefile = "gfx/interface/goals/hun_ask_for_russian_intervention.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_burn_bucharest"
+		texturefile = "gfx/interface/goals/hun_burn_bucharest.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_get_romanian_oil"
+		texturefile = "gfx/interface/goals/hun_get_romanian_oil.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_revenge_is_sweet"
+		texturefile = "gfx/interface/goals/hun_revenge_is_sweet.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_increase_the_garrison"
+		texturefile = "gfx/interface/goals/hun_increase_the_garrison.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_relocate_industry"
+		texturefile = "gfx/interface/goals/hun_relocate_industry.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_open_terror"
+		texturefile = "gfx/interface/goals/hun_open_terror.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_forced_labor_for_romanians"
+		texturefile = "gfx/interface/goals/hun_forced_labor_for_romanians.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_execute_leadersforindependence"
+		texturefile = "gfx/interface/goals/hun_execute_leadersforindependence.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_ask_for_russian_intermediation"
+		texturefile = "gfx/interface/goals/hun_ask_for_russian_intermediation.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_world_war_two"
+		texturefile = "gfx/interface/goals/hun_world_war_two.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_development_of_the_steel_industry"
+		texturefile = "gfx/interface/goals/hun_development_of_the_steel_industry.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_mass_strikes"
+		texturefile = "gfx/interface/goals/hun_mass_strikes.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_new_program_party"
+		texturefile = "gfx/interface/goals/new_program_party.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_brotherhood_and_unity"
+		texturefile = "gfx/interface/goals/hun_brotherhood_and_unity.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_monetary_reform"
+		texturefile = "gfx/interface/goals/hun_monetary_reform.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_force_improvement_welfare"
+		texturefile = "gfx/interface/goals/hun_force_improvement_welfare.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_revise_the_revolutionary_course"
+		texturefile = "gfx/interface/goals/hun_revise_the_revolutionary_course.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_rewrite_constitution"
+		texturefile = "gfx/interface/goals/hun_rewrite_constitution.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_lift_the_ban_opposition"
+		texturefile = "gfx/interface/goals/hun_lift_the_ban_opposition.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_allow_religion"
+		texturefile = "gfx/interface/goals/hun_allow_religion.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_approve_criticism"
+		texturefile = "gfx/interface/goals/hun_approve_criticism.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_democratic_socialism"
+		texturefile = "gfx/interface/goals/hun_democratic_socialism.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_introduce_market_mechanisms"
+		texturefile = "gfx/interface/goals/hun_introduce_market_mechanisms.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_enter_special_economic_zones"
+		texturefile = "gfx/interface/goals/hun_enter_special_economic_zones.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_ease_tensions_with_capitalists"
+		texturefile = "gfx/interface/goals/hun_ease_tensions_with_capitalists.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_establishment_of_a_parliament"
+		texturefile = "gfx/interface/goals/hun_establishment_of_a_parliament.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_regional_elections"
+		texturefile = "gfx/interface/goals/hun_regional_elections.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_demorcratic_laws"
+		texturefile = "gfx/interface/goals/hun_demorcratic_laws.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_protection_of_human_rights"
+		texturefile = "gfx/interface/goals/hun_protection_of_human_rights.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_open_the_borders"
+		texturefile = "gfx/interface/goals/hun_open_the_borders.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_memory_Wall"
+		texturefile = "gfx/interface/goals/hun_memory_Wall.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_stop_the_separatism"
+		texturefile = "gfx/interface/goals/hun_stop_the_separatism.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_arpad_line"
+		texturefile = "gfx/interface/goals/hun_arpad_line.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_improve_The_arpad_line"
+		texturefile = "gfx/interface/goals/hun_improve_The_arpad_line.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_hun_reinforce_the_border_with_russia"
+		texturefile = "gfx/interface/goals/hun_reinforce_the_border_with_russia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_reinforce_the_border_ger"
+		texturefile = "gfx/interface/goals/hun_reinforce_the_border_ger.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_fleet_development"
+		texturefile = "gfx/interface/goals/hun_fleet_development.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_adriatic_fleet"
+		texturefile = "gfx/interface/goals/hun_adriatic_fleet.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_import_submarine_techs"
+		texturefile = "gfx/interface/goals/hun_import_submarine_techs.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_cruiser_effort"
+		texturefile = "gfx/interface/goals/hun_cruiser_effort.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_own_navy_techologies"
+		texturefile = "gfx/interface/goals/hun_own_navy_techologies.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_ask_for_investments_rus"
+		texturefile = "gfx/interface/goals/hun_ask_for_investments_rus.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_ask_for_investment_fra"
+		texturefile = "gfx/interface/goals/hun_ask_for_investment_fra.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_establish_asemi_constitutional_monarchy"
+		texturefile = "gfx/interface/goals/hun_establish_asemi_constitutional_monarchy.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_HUN_BLOCKLITERATU"
+		texturefile = "gfx/interface/goals/HUN_BLOCKLITERATU.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_russian_garnisons"
+		texturefile = "gfx/interface/goals/hun_russian_garnisons.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_return_the_nobility"
+		texturefile = "gfx/interface/goals/hun_return_the_nobility.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_Romanov_cult"
+		texturefile = "gfx/interface/goals/hun_Romanov_cult.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_join_the_pact"
+		texturefile = "gfx/interface/goals/hun_join_the_pact.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_subdued_oligarchs"
+		texturefile = "gfx/interface/goals/hun_subdued_oligarchs.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_nationalize_large_fields"
+		texturefile = "gfx/interface/goals/hun_nationalize_large_fields.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_german_military_advisors"
+		texturefile = "gfx/interface/goals/hun_german_military_advisors.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_fortify_polish_border"
+		texturefile = "gfx/interface/goals/hun_fortify_polish_border.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_join_the_imperial_powers"
+		texturefile = "gfx/interface/goals/hun_join_the_imperial_powers.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_destroy_the_legacy_jacobinism"
+		texturefile = "gfx/interface/goals/hun_destroy_the_legacy_jacobinism.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_rebuild_socialist_education"
+		texturefile = "gfx/interface/goals/hun_rebuild_socialist_education.dds"
+    }
+	
+	SpriteType = { 
+		name = "GFX_hun_ban_labor_parties"
+		texturefile = "gfx/interface/goals/hun_ban_labor_parties.dds"
+	}
+	
+	SpriteType = {  
+		name = "GFX_hun_anti_communism_in_blood"
+		texturefile = "gfx/interface/goals/hun_anti_communism_in_blood.dds"
+	}
+	
+	SpriteType = {  
+		name = "GFX_hun_new_europe"
+		texturefile = "gfx/interface/goals/hun_new_europe.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_excessive_russian_influence"
+		texturefile = "gfx/interface/goals/hun_excessive_russian_influence.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_submissiveness"
+		texturefile = "gfx/interface/goals/hun_submissiveness.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_strengthen_the_monarchy"
+		texturefile = "gfx/interface/goals/hun_strengthen_the_monarchy.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_friendship_between_monarchies"
+		texturefile = "gfx/interface/goals/hun_friendship_between_monarchies.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_population_exchange"
+		texturefile = "gfx/interface/goals/hun_population_exchange.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_reprivatization_of_fields"
+		texturefile = "gfx/interface/goals/hun_reprivatization_of_fields.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_friendship_treaty"
+		texturefile = "gfx/interface/goals/hun_friendship_treaty.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_business_subsidies"
+		texturefile = "gfx/interface/goals/hun_business_subsidies.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_population_stimulation"
+		texturefile = "gfx/interface/goals/hun_population_stimulation.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_rus_ministrs"
+		texturefile = "gfx/interface/goals/hun_rus_ministrs.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_nikolays_puppet"
+		texturefile = "gfx/interface/goals/hun_nikolays_puppet.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_balkan_entente"
+		texturefile = "gfx/interface/goals/hun_balkan_entente.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_gods_miracle"
+		texturefile = "gfx/interface/goals/hun_gods_miracle.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_start_the_negotiation_process"
+		texturefile = "gfx/interface/goals/hun_start_the_negotiation_process.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_war"
+		texturefile = "gfx/interface/goals/hun_war.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_cesarevich_alexey"
+		texturefile = "gfx/interface/goals/hun_cesarevich_alexey.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_world_is_free"
+		texturefile = "gfx/interface/goals/hun_world_is_free.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_pressure_on_romania"
+		texturefile = "gfx/interface/goals/hun_pressure_on_romania.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_support_democratic_russia"
+		texturefile = "gfx/interface/goals/hun_support_democratic_russia.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_note_humilation_of_hungarians"
+		texturefile = "gfx/interface/goals/hun_note_humilation_of_hungarians.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_ask_for_intermediate_sanctions"
+		texturefile = "gfx/interface/goals/hun_ask_for_intermediate_sanctions.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_play_on_contradictions"
+		texturefile = "gfx/interface/goals/hun_play_on_contradictions.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_united_army"
+		texturefile = "gfx/interface/goals/hun_united_army.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_set_up_own_production"
+		texturefile = "gfx/interface/goals/hun_set_up_own_production.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_peak_of_opportunities"
+		texturefile = "gfx/interface/goals/hun_peak_of_opportunities.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_trans_union_railway"
+		texturefile = "gfx/interface/goals/hun_trans_union_railway.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_use_foreign_specialists"
+		texturefile = "gfx/interface/goals/hun_use_foreign_specialists.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_revolutionary_education"
+		texturefile = "gfx/interface/goals/hun_revolutionary_education.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_tesla_legacy"
+		texturefile = "gfx/interface/goals/hun_tesla_legacy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_electrification"
+		texturefile = "gfx/interface/goals/hun_electrification.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_development_of_petrochemistry"
+		texturefile = "gfx/interface/goals/hun_development_of_petrochemistry.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_large_military_fact_expansion"
+		texturefile = "gfx/interface/goals/hun_large_military_fact_expansion.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_mass_building_civilian_factories"
+		texturefile = "gfx/interface/goals/hun_mass_building_civilian_factories.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_chemical_weapons"
+		texturefile = "gfx/interface/goals/hun_chemical_weapons.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_development_of_nuclear_technologies"
+		texturefile = "gfx/interface/goals/hun_development_of_nuclear_technologies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_industrial_power"
+		texturefile = "gfx/interface/goals/hun_industrial_power.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_start_integration_in_united_europe"
+		texturefile = "gfx/interface/goals/hun_start_integration_in_united_europe.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_support_democratic_ukraine"
+		texturefile = "gfx/interface/goals/hun_support_democratic_ukraine.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_association_agreement"
+		texturefile = "gfx/interface/goals/hun_association_agreement.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_free_trade_agreement"
+		texturefile = "gfx/interface/goals/hun_free_trade_agreement.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hun_united_science"
+		texturefile = "gfx/interface/goals/hun_united_science.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_wien_summit"
+		texturefile = "gfx/interface/goals/hun_wien_summit.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_maintenance_the_intervention"
+		texturefile = "gfx/interface/goals/hun_maintenance_the_intervention.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_join_the_europa"
+		texturefile = "gfx/interface/goals/hun_join_the_europa.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_economyof_hungary"
+		texturefile = "gfx/interface/goals/hun_economyof_hungary.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_resolving_issues_with_romania"
+		texturefile = "gfx/interface/goals/hun_resolving_issues_with_romania.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_trial_of_horthy"
+		texturefile = "gfx/interface/goals/hun_trial_of_horthy.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_HUN_PREPAREARMED"
+		texturefile = "gfx/interface/goals/HUN_PREPAREARMED.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_HUN_THERESISTANCE"
+		texturefile = "gfx/interface/goals/HUN_THERESISTANCE.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_HUN_FOUNDREDFRONT"
+		texturefile = "gfx/interface/goals/HUN_FOUNDREDFRONT.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_Cserny_operation"
+		texturefile = "gfx/interface/goals/hun_Cserny_operation.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_Operation_Stromfeld"
+		texturefile = "gfx/interface/goals/hun_Operation_Stromfeld.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_improve_robots"
+		texturefile = "gfx/interface/goals/hun_improve_robots.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_support_serbs_kosovo"
+		texturefile = "gfx/interface/goals/hun_support_serbs_kosovo.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_formthebosnianarmy"
+		texturefile = "gfx/interface/goals/hun_formthebosnianarmy.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_formtheromanianarmy"
+		texturefile = "gfx/interface/goals/hun_formtheromanianarmy.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_natural_borders"
+		texturefile = "gfx/interface/goals/hun_natural_borders.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_greater_hungary"
+		texturefile = "gfx/interface/goals/hun_greater_hungary.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_regent_without_king"
+		texturefile = "gfx/interface/goals/hun_regent_without_king.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_clean_country"
+		texturefile = "gfx/interface/goals/hun_clean_country.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_horthy_takes_power"
+		texturefile = "gfx/interface/goals/hun_horthy_takes_power.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_horthy_arrested"
+		texturefile = "gfx/interface/goals/hun_horthy_arrested.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_nonhumans"
+		texturefile = "gfx/interface/goals/hun_nonhumans.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_slovakia_declared_independence"
+		texturefile = "gfx/interface/goals/hun_slovakia_declared_independence.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_Rusinia_breaks_away"
+		texturefile = "gfx/interface/goals/hun_Rusinia_breaks_away.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_HUN_BELAKUN"
+		texturefile = "gfx/interface/goals/HUN_BELAKUN.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_Stabilization_of_the_country"
+		texturefile = "gfx/interface/goals/hun_Stabilization_of_the_country.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_execute_leaders_rebellion"
+		texturefile = "gfx/interface/goals/hun_execute_leaders_rebellion.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_Country_held_on"
+		texturefile = "gfx/interface/goals/hun_Country_held_on.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_forgive_sinful_capital"
+		texturefile = "gfx/interface/goals/hun_forgive_sinful_capital.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_seek_for_foreign_specialists"
+		texturefile = "gfx/interface/goals/hun_seek_for_foreign_specialists.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_demand_transylvania"
+		texturefile = "gfx/interface/goals/hun_demand_transylvania.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_execute_romanian_royal_family"
+		texturefile = "gfx/interface/goals/hun_execute_romanian_royal_family.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_romanian_structure"
+		texturefile = "gfx/interface/goals/hun_romanian_structure.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_romanian_state"
+		texturefile = "gfx/interface/goals/hun_romanian_state.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_principality_of_Wallachia"
+		texturefile = "gfx/interface/goals/hun_principality_of_Wallachia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_Divide_and_rule"
+		texturefile = "gfx/interface/goals/hun_Divide_and_rule.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_Istvan_horty_dobruja"
+		texturefile = "gfx/interface/goals/hun_Istvan_horty_dobruja.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_the_enemy_is_defeated"
+		texturefile = "gfx/interface/goals/hun_the_enemy_is_defeated.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_uk_hungary"
+		texturefile = "gfx/interface/goals/hun_uk_hungary.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_madyar_federation"
+		texturefile = "gfx/interface/goals/hun_madyar_federation.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_road_to_sovereignity"
+		texturefile = "gfx/interface/goals/hun_road_to_sovereignity.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_return_of_home_lands"
+		texturefile = "gfx/interface/goals/hun_return_of_home_lands.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_ports_development"
+		texturefile = "gfx/interface/goals/hun_ports_development.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_defence_of_maritime_borders"
+		texturefile = "gfx/interface/goals/hun_defence_of_maritime_borders.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_GFX_hun_new_army_organization"
+		texturefile = "gfx/interface/goals/GFX_hun_new_army_organization.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_voevodina_military_industry"
+		texturefile = "gfx/interface/goals/hun_voevodina_military_industry.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_budapest_industry_centre"
+		texturefile = "gfx/interface/goals/hun_budapest_industry_centre.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_croatian_military_complex"
+		texturefile = "gfx/interface/goals/hun_croatian_military_complex.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_progress_cult"
+		texturefile = "gfx/interface/goals/hun_progress_cult.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_capitals_of_revolution"
+		texturefile = "gfx/interface/goals/hun_capitals_of_revolution.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_bratislava_institut_of_electronics"
+		texturefile = "gfx/interface/goals/hun_bratislava_institut_of_electronics.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_budapest_dunai_canal"
+		texturefile = "gfx/interface/goals/hun_budapest_dunai_canal.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_necessary_measure"
+		texturefile = "gfx/interface/goals/hun_necessary_measure.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_revolutionary_bulgaria"
+		texturefile = "gfx/interface/goals/hun_revolutionary_bulgaria.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_revolutionary_albania"
+		texturefile = "gfx/interface/goals/hun_revolutionary_albania.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_focus_kosovo"
+		texturefile = "gfx/interface/goals/hun_focus_kosovo.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_workers_balkan_league"
+		texturefile = "gfx/interface/goals/hun_workers_balkan_league.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_gradual_privatization"
+		texturefile = "gfx/interface/goals/hun_gradual_privatization.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_sell_unprofitable_enterpises"
+		texturefile = "gfx/interface/goals/hun_sell_unprofitable_enterpises.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_found_sasah"
+		texturefile = "gfx/interface/goals/hun_found_sasah.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_zone_on_adriatic_coast"
+		texturefile = "gfx/interface/goals/hun_zone_on_adriatic_coast.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_limited_export"
+		texturefile = "gfx/interface/goals/hun_limited_export.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_zone_on_blacksea_coast"
+		texturefile = "gfx/interface/goals/hun_zone_on_blacksea_coast.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_avoid_concetration_of_capital"
+		texturefile = "gfx/interface/goals/hun_avoid_concetration_of_capital.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_socialist_self_management"
+		texturefile = "gfx/interface/goals/hun_socialist_self_management.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_direct_democracy"
+		texturefile = "gfx/interface/goals/hun_direct_democracy.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_weaking_of_the_center"
+		texturefile = "gfx/interface/goals/hun_weaking_of_the_center.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_huge_child_support"
+		texturefile = "gfx/interface/goals/hun_huge_child_support.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_zone_in_bratislava"
+		texturefile = "gfx/interface/goals/hun_zone_in_bratislava.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_small_market_elements"
+		texturefile = "gfx/interface/goals/hun_small_market_elements.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_forget_the_past_Embrace_the_future"
+		texturefile = "gfx/interface/goals/hun_forget_the_past_Embrace_the_future.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_stop_five_year_plans"
+		texturefile = "gfx/interface/goals/hun_stop_five_year_plans.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_war_on_uneployment"
+		texturefile = "gfx/interface/goals/hun_war_on_uneployment.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_support_civil_industry"
+		texturefile = "gfx/interface/goals/hun_support_civil_industry.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_support_heavy_industry"
+		texturefile = "gfx/interface/goals/hun_support_heavy_industry.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_expand_budapest_university"
+		texturefile = "gfx/interface/goals/hun_expand_budapest_university.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_mass_housing_development"
+		texturefile = "gfx/interface/goals/hun_mass_housing_development.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_each_in_apartment"
+		texturefile = "gfx/interface/goals/hun_each_in_apartment.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_academy_of_sciencies"
+		texturefile = "gfx/interface/goals/hun_academy_of_sciencies.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_science_above_all"
+		texturefile = "gfx/interface/goals/hun_science_above_all.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_use_Foreign_developments"
+		texturefile = "gfx/interface/goals/hun_use_Foreign_developments.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_education_for_everyone"
+		texturefile = "gfx/interface/goals/hun_education_for_everyone.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_medicine_for_needy"
+		texturefile = "gfx/interface/goals/medicine_for_needy.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_hungarian_center_bank"
+		texturefile = "gfx/interface/goals/hun_hungarian_center_bank.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_to_each_according_to_his_needs"
+		texturefile = "gfx/interface/goals/hun_to_each_according_to_his_needs.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_sovereign_economy"
+		texturefile = "gfx/interface/goals/hun_sovereign_economy.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_proclaim_UDWR"
+		texturefile = "gfx/interface/goals/hun_proclaim_UDWR.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_entry_troops_into_slovakia"
+		texturefile = "gfx/interface/goals/hun_entry_troops_into_slovakia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_collectivization"
+		texturefile = "gfx/interface/goals/hun_collectivization.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_urbanize_hungary"
+		texturefile = "gfx/interface/goals/hun_urbanize_hungary.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_urbanize_slovakia"
+		texturefile = "gfx/interface/goals/hun_urbanize_slovakia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_urbanize_romania"
+		texturefile = "gfx/interface/goals/hun_urbanize_romania.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_urbanize_serbia"
+		texturefile = "gfx/interface/goals/hun_urbanize_serbia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_urbanize_montenegro"
+		texturefile = "gfx/interface/goals/hun_urbanize_montenegro.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_urbanize_croatia"
+		texturefile = "gfx/interface/goals/hun_urbanize_croatia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_urbanize_carpathians"
+		texturefile = "gfx/interface/goals/hun_urbanize_carpathians.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_collectivize_bosnia"
+		texturefile = "gfx/interface/goals/hun_collectivize_bosnia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_collectivize_hungary"
+		texturefile = "gfx/interface/goals/hun_collectivize_hungary.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_collectivize_montenegro"
+		texturefile = "gfx/interface/goals/hun_collectivize_montenegro.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_collectivize_romania"
+		texturefile = "gfx/interface/goals/hun_collectivize_romania.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_collectivize_serbia"
+		texturefile = "gfx/interface/goals/hun_collectivize_serbia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_collectivize_slovakia"
+		texturefile = "gfx/interface/goals/hun_collectivize_slovakia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_HUN_AUTONOMYSLOVAKS"
+		texturefile = "gfx/interface/goals/HUN_AUTONOMYSLOVAKS.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_HUN_AUTONOMYTRANSYLV"
+		texturefile = "gfx/interface/goals/HUN_AUTONOMYTRANSYLV.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_HUN_VOEVODINA"
+		texturefile = "gfx/interface/goals/HUN_VOEVODINA.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_garbai_arrest"
+		texturefile = "gfx/interface/goals/hun_garbai_arrest.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_belakun_arrest"
+		texturefile = "gfx/interface/goals/hun_belakun_arrest.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_belakun_takes_over"
+		texturefile = "gfx/interface/goals/hun_belakun_takes_over.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_garbai_takes"
+		texturefile = "gfx/interface/goals/hun_garbai_takes.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_integrate_with_new_republics"
+		texturefile = "gfx/interface/goals/hun_integrate_with_new_republics.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_split_with_Bulgaria"
+		texturefile = "gfx/interface/goals/hun_split_with_Bulgaria.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_break_relations_with_Alb_rus"
+		texturefile = "gfx/interface/goals/hun_break_relations_with_Alb_rus.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_demobilization"
+		texturefile = "gfx/interface/goals/hun_demobilization.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_tribunaloverbosniaks"
+		texturefile = "gfx/interface/goals/hun_tribunaloverbosniaks.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_tribunaloverserbs"
+		texturefile = "gfx/interface/goals/hun_tribunaloverserbs.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_tribunaloverromanians"
+		texturefile = "gfx/interface/goals/hun_tribunaloverromanians.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_continuation_former_policy"
+		texturefile = "gfx/interface/goals/hun_continuation_former_policy.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_vago_takes"
+		texturefile = "gfx/interface/goals/hun_vago_takes.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_anastasia_romanova"
+		texturefile = "gfx/interface/goals/hun_anastasia_romanova.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_hungarian_orthodox_church"
+		texturefile = "gfx/interface/goals/hun_hungarian_orthodox_church.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_destroy_protestant_churches"
+		texturefile = "gfx/interface/goals/hun_destroy_protestant_churches.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_introduction_orthodoxy_into_education"
+		texturefile = "gfx/interface/goals/hun_introduction_orthodoxy_into_education.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_otto_von_habsburg"
+		texturefile = "gfx/interface/goals/hun_otto_von_habsburg.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_deportation_of_gypsies"
+		texturefile = "gfx/interface/goals/hun_deportation of gypsies.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_execute_romanian_minority"
+		texturefile = "gfx/interface/goals/hun_execute_romanian_minority.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_expel_the_rusyns_to_Russia"
+		texturefile = "gfx/interface/goals/hun_expel_the_rusyns_to_Russia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_commemoratethe_victims_of_Jacobinism"
+		texturefile = "gfx/interface/goals/hun_commemoratethe_victims_of_Jacobinism.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_banishment_of_serbs"
+		texturefile = "gfx/interface/goals/hun_banishment_of_serbs.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_forced_assimilation_slovaks"
+		texturefile = "gfx/interface/goals/hun_forced_assimilation_slovaks.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hun_garbai_two"
+		texturefile = "gfx/interface/goals/hun_garbai_two.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_revai_Circle_with_Guns"
+		texturefile = "gfx/interface/goals/revai_Circle_with_Guns"
+	}		
+	
+	
+ }
+ 
+ 

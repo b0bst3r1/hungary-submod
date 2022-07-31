@@ -1,0 +1,8 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_HUN_religion_freedom"
+		texturefile = "gfx/interface/ideas/HUN_religion_freedom.dds"
+	}
+	
+}

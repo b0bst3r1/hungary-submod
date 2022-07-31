@@ -1,0 +1,59 @@
+spriteTypes = {
+		
+	  spriteType = {
+		name = "GFX_news_event_hun_900"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_900.dds"
+	}
+	
+		  spriteType = {
+		name = "GFX_news_event_hun_901"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_901.dds"
+	}
+	
+			  spriteType = {
+		name = "GFX_news_event_alb_900"
+		texturefile = "GFX/event_pictures/hun_news_event/albania/news_event_alb_900.dds"
+	}
+	
+			  spriteType = {
+		name = "GFX_news_event_hun_904"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_904.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_905"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_905.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_906"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_906.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_902"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_902.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_907"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_907.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_908"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_908.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_909"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_909.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_910"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_910.dds"
+	}	
+	
+	
+}
