@@ -1,0 +1,87 @@
+on_actions = {
+
+on_daily_HUN = {
+effect = { 
+if = {
+limit = {
+
+	has_war_with = BUL
+	
+	BUL = {
+	surrender_progress > 0.6
+	}
+	
+	#controls_province = 9906
+	#controls_province = 3882
+	#controls_province = 949
+	#controls_province = 6923
+	#controls_province = 9783
+    }
+	
+	BUL = {
+	
+    leave_faction = yes
+	white_peace = HUN
+	
+	}	   
+	   HUN = {
+	   country_event = { id = hungarian.15}
+	  }
+	}
+  }
+ }
+ 
+	
+on_daily_HUN = {	
+	
+effect = { 
+if = {
+limit = {
+
+	has_war_with = ROM
+	
+	ROM = {
+	surrender_progress > 0.8
+	 }
+   }	
+	
+	ROM = {
+	
+    leave_faction = yes
+	white_peace = HUN
+	
+	}	   
+	   HUN = {
+	   country_event = { id = hungarian.7}
+	  }
+	}
+  }
+ }
+on_daily_HUN = {	
+	
+effect = { 
+if = {
+limit = {
+
+	has_war_with = SER
+	
+	SER = {
+	surrender_progress > 0.85
+	 }
+   }	
+	
+	SER = {
+	
+    leave_faction = yes
+	white_peace = HUN
+	
+	}	   
+	   HUN = {
+	   country_event = { id = hungarian.2}
+	  }
+	}
+   }   
+  }
+ }
+  
+  
