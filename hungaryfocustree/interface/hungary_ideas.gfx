@@ -5,4 +5,29 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/HUN_religion_freedom.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_HUN_balkan_chaos"
+		texturefile = "gfx/interface/ideas/HUN_balkan_chaos.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_patriotic_war"
+		texturefile = "gfx/interface/ideas/BOS_patriotic_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_balkan_union"
+		texturefile = "gfx/interface/ideas/balkan_union.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HUN_red_terror"
+		texturefile = "gfx/interface/ideas/HUN_red_terror.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROM_transylvania_resistance"
+		texturefile = "gfx/interface/ideas/ROM_transylvania_resistance.dds"
+	}	
+	
 }

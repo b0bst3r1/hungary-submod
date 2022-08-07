@@ -53,7 +53,77 @@ spriteTypes = {
 			  spriteType = {
 		name = "GFX_news_event_hun_910"
 		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_910.dds"
-	}	
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_911"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_911.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_912"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_912.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_913"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_913.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_914"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_914.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_915"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_915.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_916"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_916.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_917"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_917.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_918"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_918.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_919"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_919.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_920"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_920.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_921"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_921.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_922"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_922.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_923"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_923.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_924"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_924.dds"
+	}		
 	
 	
 }

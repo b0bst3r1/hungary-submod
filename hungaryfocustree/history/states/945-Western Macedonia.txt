@@ -1,0 +1,26 @@
+
+state={
+	id=945
+	name="STATE_945"
+	manpower = 252123
+	
+	state_category = town
+	
+	resources={
+		chromium=7
+		steel = 9
+	}
+
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 4
+			air_base = 3
+		}
+		add_core_of = GRE
+	}
+
+	provinces={
+		3980 9837 841
+	}
+}

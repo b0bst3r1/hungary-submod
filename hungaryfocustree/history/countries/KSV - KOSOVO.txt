@@ -22,7 +22,6 @@ set_war_support = 0.1
 set_convoys = 5
 
 add_ideas = {
-	PB_HUN_Balkan_Powderkeg
 
 	PB_Universal_Citizenship
 	PB_Fully_Westernized

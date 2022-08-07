@@ -610,8 +610,26 @@ MAC_Jacobin = {
 
 GRE_RUS = { 
 
-	color = rgb { 64 130 109 }
-	color_ui = rgb { 64 130 109 }
+	color = rgb { 0 149 182 }
+	color_ui = rgb { 0 149 182 }
+}
+
+GRE_ELL = { 
+
+	color = rgb { 0 149 182 }
+	color_ui = rgb { 0 149 182 }
+}
+
+GRE_MIL = {
+
+	color = rgb { 98 99 155 }
+	color_ui = rgb { 98 99 155 }
+}
+
+GRE_REP = { 
+
+	color = rgb { 154 206 235 }
+	color_ui = rgb { 154 206 235 }
 }
 
 KSV_Jacobin = {
@@ -633,6 +651,12 @@ CRO_UST = {
 	color = rgb { 148 123 123 }
 	color_ui = rgb { 148 123 123 }
 }
+
+TRA_CON = {
+	color = rgb { 62 95 138 }
+	color_ui = rgb { 62 95 138 }
+}
+  		
 
 
 

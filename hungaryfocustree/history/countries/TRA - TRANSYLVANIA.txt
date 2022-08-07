@@ -100,9 +100,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Miklós Bánffy"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/TRA/banify_miklos.dds"
 	ideology = CN_VARIANT_01
 }
 

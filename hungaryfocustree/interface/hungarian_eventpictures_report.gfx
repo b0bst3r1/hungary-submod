@@ -88,5 +88,20 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_report_event_hun_917"
 		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_917.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_hun_918"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_918.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_hun_919"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_919.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_hun_920"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_920.dds"
 	}		
 	

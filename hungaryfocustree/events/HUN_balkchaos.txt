@@ -16,16 +16,27 @@ add_namespace = balkchaos
 	option = {
 		name = balkchaos.1.a
 		
-	BNT = {
-	set_politics = {
-	ruling_party = ds
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-  }
- }
+			hidden_effect = {
+			SER = {
+			country_event = { id = balkchaos.2 days = 2 }
+		}
+	}			
 		
-    CRO = {
+	BAT = {
+	
+    transfer_state = 82
+    transfer_state = 764
+	add_state_core = 82
+	add_state_core = 764	
+  }
+		
+    CRO = {	
+	
+    transfer_state = 109
+    transfer_state = 794
+    transfer_state = 944
+    transfer_state = 104
+    transfer_state = 103	
 	
 		  set_politics = {
 	  ruling_party = ni
@@ -98,7 +109,23 @@ add_namespace = balkchaos
 
 	}
 	
+    VJW = {
+	
+    transfer_state = 45
+	add_state_core = 45
+   }
+
+    BOS = {
+    transfer_state = 943
+	add_ideas = BOS_patriotic_war
+   }   
+    
+	
     SER = {
+	
+    transfer_state = 107
+    transfer_state = 941
+	
 	set_cosmetic_tag = Ser_Chetnik
 	
 		  set_politics = {
@@ -179,6 +206,10 @@ add_namespace = balkchaos
    }
    
    ROM = {
+  
+    transfer_state = 46
+    transfer_state = 81
+    transfer_state = 84	
    
    		  set_politics = {
 	  ruling_party = ni
@@ -257,9 +288,175 @@ add_namespace = balkchaos
 	PB_Fully_Westernized
       }	  
     }
-   }
-  }
- }
+
+   TRA = {
+  
+    transfer_state = 83
+    transfer_state = 76	
+	add_state_core = 76
+	add_state_core = 83	
+	}
+	
+   MNT = {
+  
+    transfer_state = 105
+    transfer_state = 948
+	}	
+	
+		    random_owned_controlled_state = {
+			    limit = {
+				    is_in_home_area = yes
+				}
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = SER
+                }
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = SER
+                }
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = SER
+                }
+				
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = SER
+                }
+                
+				create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = SER
+                }
+
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = SER
+                }
+
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = SER
+                }
+
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = SER
+                }
+
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = SER
+                }								
+            }
+
+		    random_owned_controlled_state = {
+			    limit = {
+				    is_in_home_area = yes
+				}
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = CRO
+                }
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = CRO
+                }
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = CRO
+                }
+				
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = CRO
+                }
+                
+				create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = CRO
+                }
+
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = CRO
+                }
+
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = CRO
+                }
+
+                create_unit = {
+                    division = "name = \"Pesadijska Divizija\" division_template = \"Pesadijska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = CRO
+                }
+            }
+			
+		    random_owned_controlled_state = {
+			    limit = {
+				    is_in_home_area = yes
+				}
+                create_unit = {
+                    division = "name = \"Narodna milicija\" division_template = \"Narodna milicija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = BOS
+                }
+                create_unit = {
+                    division = "name = \"Narodna milicija\" division_template = \"Narodna milicija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = BOS
+                }
+                create_unit = {
+                    division = "name = \"Narodna milicija\" division_template = \"Narodna milicija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = BOS
+                }
+				
+                create_unit = {
+                    division = "name = \"Narodna milicija\" division_template = \"Narodna milicija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = BOS
+                }
+                
+				create_unit = {
+                    division = "name = \"Narodna milicija\" division_template = \"Narodna milicija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = BOS
+                }
+
+                create_unit = {
+                    division = "name = \"Narodna milicija\" division_template = \"Narodna milicija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = BOS
+                }
+
+                create_unit = {
+                    division = "name = \"Narodna milicija\" division_template = \"Narodna milicija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = BOS
+                }			
+            }
+
+		    random_owned_controlled_state = {
+			    limit = {
+				    is_in_home_area = yes
+				}
+                create_unit = {
+                    division = "name = \"Milicija\" division_template = \"Milicija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = MNT
+                }
+                create_unit = {
+                    division = "name = \"Milicija\" division_template = \"Milicija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = MNT
+                }
+                create_unit = {
+                    division = "name = \"Milicija\" division_template = \"Milicija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = MNT
+                }
+				
+                create_unit = {
+                    division = "name = \"Milicija\" division_template = \"Milicija\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = MNT
+                }		
+            }				
+          }						
+	   }
+    }
  
  
 
@@ -273,6 +470,33 @@ add_namespace = balkchaos
 
 	option = {
 		name = balkchaos.2.a
+		
+			hidden_effect = {
+			SER = {
+			country_event = { id = balkchaos.3 days = 1 }
+		}
+	}		
+		
+   SLO = {
+  
+    transfer_state = 70
+    transfer_state = 664
+    transfer_state = 71	
+	}
+		
+   SRS = {
+  
+    transfer_state = 946
+    transfer_state = 944	
+	add_state_core = 946
+	add_state_core = 944
+	}	
+
+    RUT = {
+	
+    transfer_state = 73
+	add_state_core = 73
+   }	
 		
 	HUN = {
 	
@@ -324,8 +548,141 @@ start_civil_war = {
 }		
 				
     }
-  }
+	
+    SER = {
+			declare_war_on = {
+            target = BOS
+            type = annex_everything
+            }
+
+			declare_war_on = {
+            target = MNT
+            type = annex_everything
+            }
+        }		
+
+    CRO = {
+			declare_war_on = {
+            target = BOS
+            type = annex_everything
+            }
+			
+			declare_war_on = {
+            target = SRS
+            type = annex_everything
+            }
+        }
+
+		    random_owned_controlled_state = {
+			    limit = {
+				    is_in_home_area = yes
+				}
+                create_unit = {
+                    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = ROM
+                }
+                create_unit = {
+                    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = ROM
+                }
+                create_unit = {
+                    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = ROM
+                }
+				
+                create_unit = {
+                    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = ROM
+                }
+
+                create_unit = {
+                    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = ROM
+                }		
+
+                create_unit = {
+                    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = ROM
+                }		
+
+                create_unit = {
+                    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = ROM
+                }		
+
+                create_unit = {
+                    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = ROM
+                }		
+
+                create_unit = {
+                    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = ROM
+                }
+
+                create_unit = {
+                    division = "name = \"Cavalry Battalion\" division_template = \"Cavalry Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = ROM
+                }
+
+                create_unit = {
+                    division = "name = \"Cavalry Battalion\" division_template = \"Cavalry Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = ROM
+                }										
+
+                create_unit = {
+                    division = "name = \"Cavalry Battalion\" division_template = \"Cavalry Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = ROM
+                }
+			}			   
+        }
+    }
+ 
+      	   country_event = { #Balkanwars
+	id = balkchaos.3
+	title = balkchaos.3.t
+	desc = balkchaos.3.d
+	picture = GFX_report_event_hun_913
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = balkchaos.3.a 
+		
+	ROM = {
+	
+			declare_war_on = {
+            target = BAT
+            type = annex_everything
+            }
+			
+			declare_war_on = {
+            target = TRA
+            type = annex_everything
+            }
+		}
+		
+	TRA = {
+	    create_faction = anti_romanian
+		add_to_faction = BAT
+    }
+   }
  }
+  
+       	   country_event = { #Balkanchaos
+	id = balkchaos.4
+	title = balkchaos.4.t
+	desc = balkchaos.4.d
+	picture = GFX_report_event_hun_913
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = balkchaos.4.a 		
+		}
+	 }
+   }
+   	
 	
 	
 	

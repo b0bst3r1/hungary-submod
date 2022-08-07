@@ -137,6 +137,66 @@ add_namespace = hungary
 	option = {
 		name = hungary.9.a
 	}
+        }
+
+	news_event = { #VagoDead
+	id = hungary.10
+	title = hungary.10.t
+	desc = hungary.10.d
+	picture = GFX_news_event_hun_921
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.10.a
+	}
+        }
+
+	news_event = { #BelaKun
+	id = hungary.11
+	title = hungary.11.t
+	desc = hungary.11.d
+	picture = GFX_news_event_hun_922
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.11.a
+	}
+        }
+
+	news_event = { #Revai
+	id = hungary.12
+	title = hungary.12.t
+	desc = hungary.12.d
+	picture = GFX_news_event_hun_923
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.12.a
+	}
+        }
+
+	news_event = { #Garbai
+	id = hungary.13
+	title = hungary.13.t
+	desc = hungary.13.d
+	picture = GFX_news_event_hun_924
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.13.a
+	}
         }			
 
  

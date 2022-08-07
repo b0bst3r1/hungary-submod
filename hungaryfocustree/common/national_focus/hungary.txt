@@ -20,6 +20,7 @@ focus_tree = {
 		country_event = {
 		id = hungarian.16
 		hours = 6
+		}
 		
 		hidden_effect = {
 	    
@@ -31,7 +32,6 @@ focus_tree = {
 		}
       } 			  
 	}
-  }
 		
 		cost = 3
 		x = 13
@@ -41,6 +41,24 @@ focus_tree = {
 		id = HUN_SOLVETNHIC
 		icon = GFX_goal_unknown
 		cost = 4
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}		
 		
 		completion_reward = {
 	
@@ -61,6 +79,24 @@ focus_tree = {
 		id = HUN_PREPAREFORBALKWAR
 		icon = GFX_hun_prepare_for_war
 		cost = 5
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}		
 		
 	        completion_reward = {
 			army_experience = 10
@@ -106,6 +142,25 @@ focus_tree = {
 		id = hun_economyof_hungary
 		icon = GFX_hun_economyof_hungary
 		cost = 0
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		x = 13
 		y = 24
 
@@ -114,6 +169,14 @@ focus_tree = {
 		id = hun_counterrevolution
 		icon = GFX_hun_counterrevolution
 		cost = 0
+		
+		available = {
+			has_country_leader = {
+				name = "Regency Council"
+				ruling_only = yes
+			}
+		}
+		
 		x = 53
 		y = 1
 
@@ -156,6 +219,24 @@ focus_tree = {
 		id = hun_army_reform
 		icon = GFX_hun_army_reform
 		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}		
+		
 			completion_reward = {
 			army_experience = 15
 			navy_experience = 15
@@ -193,13 +274,6 @@ focus_tree = {
 		}
 		
 		bypass = {
-			GER = {
-				OR = {
-					exists = no
-					is_subject = yes
-					has_war_with = FRA
-				}
-			}
 		}		
 		
 		x = 77
@@ -207,9 +281,20 @@ focus_tree = {
 
 	}
 	focus = {
-		id = hun_world_war_two
+	id = hun_world_war_two
+		
 		icon = GFX_hun_world_war_two
 		cost = 0
+		
+		bypass = {
+			FRA = {
+				OR = {
+					exists = no
+					is_subject = yes
+					has_war_with = GER
+				}
+			}		
+		}
 		
 		prerequisite = {
 			focus = hun_reconquerourterritories
@@ -369,6 +454,16 @@ focus_tree = {
 		id = HUN_politicalstruggle
 		icon = GFX_hun_politicalstruggle
 		cost = 1
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Hungarian Jacobin Provisional Goverment"
+					ruling_only = yes
+				}			
+			}
+		}		
+		
 		prerequisite = {
 			focus = HUN_Partycrisis
 		}
@@ -379,10 +474,15 @@ focus_tree = {
 	focus = {
 		id = HUN_discussion
 		icon = GFX_hun_open_the_discussion
-		cost = 1
+		cost = 3
 		prerequisite = {
 			focus = HUN_politicalstruggle
 		}
+		
+	    completion_reward = {
+		add_political_power = 100
+		}
+		
 		x = 13
 		y = 3
 
@@ -477,12 +577,25 @@ focus_tree = {
 		id = HUN_BELAKUN
 		icon = GFX_HUN_BELAKUN
 		cost = 0
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}
+		
+		completion_reward = {
+		remove_ideas = PB_HUN_Collapsing_Government
+		}		
+	
+		
 		prerequisite = {
 			focus = HUN_SIXTHCONGRESS
 		}
 		mutually_exclusive = {
-			focus = HUN_VAGO
-			focus = hun_garbai
 			focus = HUN_VAGO
 			focus = hun_garbai
 		}
@@ -511,10 +624,17 @@ focus_tree = {
 		prerequisite = {
 			focus = HUN_BELAKUN
 		}
+		
+	    completion_reward = {
+		country_event = {
+		id = hungarian.23
+		hours = 6
+		}
+	 }
+		
 		x = 2
 		y = 7
-
-	}
+  }
 	focus = {
 		id = HUN_INTERNPOLIT
 		icon = GFX_hun_internpolit
@@ -541,18 +661,32 @@ focus_tree = {
 		id = HUN_VAGO
 		icon = GFX_goal_unknown
 		cost = 0
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
+		completion_reward = {
+		remove_ideas = PB_HUN_Collapsing_Government
+		}		
+	
 		prerequisite = {
 			focus = HUN_SIXTHCONGRESS
 		}
 		mutually_exclusive = {
 			focus = hun_garbai
 			focus = HUN_BELAKUN
-			focus = hun_garbai
 		}
 		x = 13
 		y = 6
 
 	}
+	
 	focus = {
 		id = hun_belakun_arrest
 		icon = GFX_hun_belakun_arrest
@@ -919,12 +1053,24 @@ focus_tree = {
 		id = hun_garbai
 		icon = GFX_hun_garbai_two
 		cost = 0
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+			}
+		}
+		
+		completion_reward = {
+		remove_ideas = PB_HUN_Collapsing_Government
+		}		
+		
 		prerequisite = {
 			focus = HUN_SIXTHCONGRESS
 		}
 		mutually_exclusive = {
-			focus = HUN_VAGO
-			focus = HUN_BELAKUN
 			focus = HUN_VAGO
 			focus = HUN_BELAKUN
 		}
@@ -2475,6 +2621,7 @@ focus_tree = {
 		y = 8
 
 	}
+	
 	focus = {
 		id = HUN_RENEWTHERED
 		icon = GFX_goal_unknown
@@ -2485,10 +2632,16 @@ focus_tree = {
 		prerequisite = {
 			focus = HUN_INTERNPOLIT
 		}
-		x = 8
+		
+		completion_reward = {		
+		add_ideas = HUN_red_terror
+		}
+		
+		x = 84
 		y = 8
 
 	}
+	
 	focus = {
 		id = HUN_BLOCKLITERATU
 		icon = GFX_HUN_BLOCKLITERATU
@@ -2569,6 +2722,15 @@ focus_tree = {
 		prerequisite = {
 			focus = HUN_FOUNDREDFRONT
 		}
+		
+		completion_reward = {
+
+        ROM = {		
+		add_ideas = ROM_translyvanian_resistance
+		      }
+		}
+		
+		
 		x = 0
 		y = 11
 
@@ -2753,6 +2915,24 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_collectivization
 		}
+		
+		completion_reward = {
+		
+			add_stability = -0.01		
+		
+			70 = {
+				add_extra_state_shared_building_slots = 2
+			}
+
+			71 = {
+				add_extra_state_shared_building_slots = 2
+			}
+
+			664 = {
+				add_extra_state_shared_building_slots = 2
+			}						
+		  }
+			
 		x = 2
 		y = 8
 
@@ -2764,6 +2944,23 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_collectivize_hungary
 		}
+		
+		completion_reward = {
+		
+			add_stability = -0.01		
+		
+			70 = {
+				add_extra_state_shared_building_slots = 2
+			}
+
+			71 = {
+				add_extra_state_shared_building_slots = 2
+			}
+
+			664 = {
+				add_extra_state_shared_building_slots = 2
+			}						
+		  }			
 		x = 2
 		y = 9
 
@@ -2775,6 +2972,24 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_collectivize_slovakia
 		}
+		
+		completion_reward = {
+		
+			add_stability = -0.01		
+		
+			70 = {
+				add_extra_state_shared_building_slots = 2
+			}
+
+			71 = {
+				add_extra_state_shared_building_slots = 2
+			}
+
+			664 = {
+				add_extra_state_shared_building_slots = 2
+			}						
+		  }
+		  
 		x = 2
 		y = 10
 
@@ -2786,6 +3001,24 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_collectivize_romania
 		}
+		
+		completion_reward = {
+		
+			add_stability = -0.01		
+		
+			70 = {
+				add_extra_state_shared_building_slots = 2
+			}
+
+			71 = {
+				add_extra_state_shared_building_slots = 2
+			}
+
+			664 = {
+				add_extra_state_shared_building_slots = 2
+			}						
+		  }
+		  
 		x = 4
 		y = 11
 
@@ -2797,6 +3030,24 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_collectivize_romania
 		}
+		
+		completion_reward = {
+		
+			add_stability = -0.01		
+		
+			70 = {
+				add_extra_state_shared_building_slots = 2
+			}
+
+			71 = {
+				add_extra_state_shared_building_slots = 2
+			}
+
+			664 = {
+				add_extra_state_shared_building_slots = 2
+			}						
+		  }
+		  
 		x = 2
 		y = 11
 
@@ -2808,6 +3059,24 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_collectivize_romania
 		}
+		
+		completion_reward = {
+		
+			add_stability = -0.01		
+		
+			70 = {
+				add_extra_state_shared_building_slots = 2
+			}
+
+			71 = {
+				add_extra_state_shared_building_slots = 2
+			}
+
+			664 = {
+				add_extra_state_shared_building_slots = 2
+			}						
+		  }
+		  
 		x = 6
 		y = 11
 
@@ -4866,10 +5135,25 @@ focus_tree = {
 		completion_reward = {
 			
 			BUL = {
-		    
-			set_cosmetic_tag = BUL_League
-			
-			
+
+		set_cosmetic_tag = BUL_League
+		
+			create_country_leader = {
+			name = "Christian Rakovsky"
+			desc = " "
+			picture = "gfx/leaders/BUL/Portrait_Christian_Rakovsky.dds"
+			expire = "1965.1.1"
+			ideology = jc
+		}
+		
+			create_country_leader = {
+			name = "Christian Rakovsky"
+			desc = " "
+			picture = "gfx/leaders/BUL/Portrait_Christian_Rakovsky.dds"
+			expire = "1965.1.1"
+			ideology = ss
+		}		
+
              annex_country = {
              target = ALB
              transfer_troops = no

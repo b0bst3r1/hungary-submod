@@ -1,0 +1,30 @@
+##################
+##HUNGARYmodIDEAS#
+##################
+
+ideas = {
+
+      country = {
+	  
+		ROM_translyvanian_resistance = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+                        picture = ROM_transylvania_resistance
+			
+			removal_cost = -1
+	
+			modifier = {
+                        stability_factor = -0.1							                       	
+                        war_support_factor = -0.1
+			}
+		}	  
+	}	
+ }	

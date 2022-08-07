@@ -26,5 +26,46 @@ ideas = {
                         research_speed_factor = - 0.02
 			}
 		}	  
-	}
+		
+		HUN_balkan_chaos = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_balkan_chaos
+			
+			removal_cost = -1
+	
+			modifier = {
+				conscription = 0.05
+				surrender_limit = 0.9
+			}
+		}
+		
+		HUN_red_terror = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_red_terror
+			
+			removal_cost = -1
+	
+			modifier = {
+            monthly_population = -0.1 			
+            stability_weekly = -0.02
+			}
+		}		
+	}	
  }	

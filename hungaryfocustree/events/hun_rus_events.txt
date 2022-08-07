@@ -44,6 +44,44 @@ add_namespace = russs
 		}
 	   }
 	  }
+	  
+	country_event = { #GREATELLADA
+	id = russs.2
+	title = russs.2.t
+	desc = russs.2.d
+	picture = GFX
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	immediate = { news_event = {
+         id = greec.2
+          }
+        }	
+	
+	option = {
+		name = russs.2.a
+		
+		GRE = {
+		
+		set_cosmetic_tag = GRE_ELL
+		
+			transfer_state = 822
+			transfer_state = 339
+		    add_state_core = 339
+			transfer_state = 342			
+			transfer_state = 823
+			transfer_state = 949
+			transfer_state = 183
+		    add_state_core = 183		
+		
+        }
+
+		ai_chance = {
+			factor = 100
+		}
+	   }
+	  }	  
        
 	   
  

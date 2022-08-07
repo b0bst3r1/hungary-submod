@@ -1,5 +1,5 @@
 ##################
-####albanian#####
+####greece#####
 #####events#######
 ##################
 
@@ -22,12 +22,14 @@ add_namespace = greece
 	option = {
 		name = greece.1.a
 		
+		GRE = {
+		
 		set_cosmetic_tag = GRE_RUS
 		
 			create_country_leader = {
-			name = "Anastasy Vonsiatsky"
+			name = "Archbishop Damaskinos Papandreou"
 			desc = " "
-			picture = "gfx/leaders/GRE/Portrait_anastasy_vosnyatsky.dds"
+			picture = "gfx/leaders/GRE/archbishop.dds"
 			expire = "1965.1.1"
 			ideology = NI_VARIANT_02
 		}
@@ -95,9 +97,212 @@ add_ideas = {
 		
 		ai_chance = {
 			factor = 100
-		}
+		 }
+	    }
 	   }
 	  }
+	  
+	country_event = {
+	id = greece.2
+	title = greece.2.t
+	desc = greece.2.d
+	picture = GFX
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	 immediate = { news_event = {
+           id = greec.3
+            }
+          }	
+	
+	option = {
+		name = greece.2.a
+		
+		GRE = {
+		
+		set_cosmetic_tag = GRE_MIL
+
+set_politics = {
+	ruling_party = ds
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+ create_country_leader = {
+			name = "Nikolaos Plastiras"
+			desc = " "
+			picture = "gfx/leaders/GRE/Portrait_plastiras.dds"
+			expire = "1965.1.1"
+			ideology = DS_VARIANT_01
+		}
+
+remove_ideas = {
+    PB_Revolutionary_Republic 
+    PB_NI_Revanchism
+    PB_HUN_Balkan_Powderkeg
+	PB_Fully_Westernized
+	PB_Govidea_Planned_Economy
+	PB_Revolutionary_Republic
+	PB_Great_War_Military
+	PB_NI_Revolution
+	PB_Limited_Censorship
+	PB_Single_Party_State
+	PB_Full_Womens_Equality
+	PB_Public_Meetings_Monitored
+	PB_Limited_Autonomy
+	PB_Law_Intimidation_Policing
+	PB_8_Hour_Workday
+	PB_Basic_Healthcare
+	PB_Universal_Basic
+    PB_Generous_Welfare
+	PB_Trade_Unions_All_Allowed
+    PB_Slavery_Abolished
+	PB_Significant_Poverty
+    PB_Semi_Industrialized
+	PB_Minor_Illiteracy
+	PB_Middling_Consumer_Confidence
+}
+
+add_ideas = {
+    extensive_conscription
+    tot_economic_mobilisation
+    closed_economy
+    PB_Single_Party_State
+    PB_Ultranationalist_Dictatorship
+    PB_Govidea_Planned_Economy
+    PB_Trade_Unions_State_Controlled
+    PB_State_Press
+    PB_Public_Meetings_Monitored
+    PB_No_Womens_Legal_Protections
+    PB_Racial_Segregation
+    PB_Law_Prev_Policing
+    PB_14_Hour_Workday
+    PB_Basic_Healthcare
+    PB_Basic_Education
+    PB_Basic_Welfare
+    PB_Penal_Slavery
+    PB_Widespread_Poverty
+    PB_Semi_Industrialized
+    PB_Great_War_Military
+    PB_Significant_Illiteracy
+    PB_Market_Underperformance
+    PB_Fully_Westernized
+}
+    		
+		
+		
+		ai_chance = {
+			factor = 100
+		 }
+	    }
+	   }
+	  }	  
+	  
+	country_event = { #REPUBLIC
+	id = greece.3
+	title = greece.3.t
+	desc = greece.3.d
+	picture = GFX
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	 immediate = { news_event = {
+           id = greec.4
+            }
+          }	
+	
+	option = {
+		name = greece.3.a
+		
+		ENG = {
+		
+		puppet = GRE
+		
+		set_autonomy = {
+		target = GRE
+		autonomous_state = autonomy_client_state
+		freedom_level = 0.50
+	}
+		
+		GRE = {
+		
+		set_cosmetic_tag = GRE_REP
+		
+set_politics = {
+	ruling_party = cn
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+			create_country_leader = {
+			name = "Themistoklis Sofoulis"
+			desc = " "
+			picture = "gfx/leaders/GRE/Portrait_Themistoklis_Sofoulis.dds"
+			expire = "1965.1.1"
+			ideology = CN_VARIANT_01
+		}
+
+remove_ideas = {
+    PB_Revolutionary_Republic 
+    PB_NI_Revanchism
+    PB_HUN_Balkan_Powderkeg
+	PB_Fully_Westernized
+	PB_Govidea_Planned_Economy
+	PB_Revolutionary_Republic
+	PB_Great_War_Military
+	PB_NI_Revolution
+	PB_Limited_Censorship
+	PB_Single_Party_State
+	PB_Full_Womens_Equality
+	PB_Public_Meetings_Monitored
+	PB_Limited_Autonomy
+	PB_Law_Intimidation_Policing
+	PB_8_Hour_Workday
+	PB_Basic_Healthcare
+	PB_Universal_Basic
+    PB_Generous_Welfare
+	PB_Trade_Unions_All_Allowed
+    PB_Slavery_Abolished
+	PB_Significant_Poverty
+    PB_Semi_Industrialized
+	PB_Minor_Illiteracy
+	PB_Middling_Consumer_Confidence
+}
+
+add_ideas = {
+    PB_Parliamentary_Republic
+    PB_NI_Liberty
+    PB_Govidea_State_Capitalism
+    PB_Limited_Disenfranchisement
+    PB_Free_Press
+    PB_Public_Meetings_Allowed
+    PB_Limited_Womens_Rights
+    PB_Limited_Autonomy
+    PB_Law_Standard_Policing
+    PB_12_Hour_Workday
+    PB_Trinket_Healthcare
+    PB_Universal_Basic
+    PB_Limited_Welfare
+    PB_Trade_Unions_Non_Socialist
+    PB_Slavery_Abolished
+    PB_Significant_Poverty
+    PB_Semi_Industrialized
+    PB_Minor_Illiteracy
+    PB_Middling_Consumer_Confidence
+    PB_Semi_Modern_Military
+    PB_Fully_Westernized
+}
+
+		ai_chance = {
+			factor = 100
+		 }
+	    }
+	   }
+	  }	  
        
 	   
  

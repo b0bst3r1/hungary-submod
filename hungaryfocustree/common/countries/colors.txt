@@ -1759,7 +1759,7 @@ MRD = {
 	color_ui = rgb { 18 130 52 }
 }
 
-BNT = {
+BAT = {
 	color = rgb { 255 202 134 }
 	color_ui = rgb { 255 202 134 }
 }

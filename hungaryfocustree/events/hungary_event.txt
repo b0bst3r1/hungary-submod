@@ -9,7 +9,7 @@ country_event = {
 	id = hungarian.1
 	title = hungarian.1.t
 	desc = hungarian.1.d
-	picture = GFX)news_event_hun_900
+	picture = GFX_news_event_hun_900
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -18,8 +18,6 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		
-		add_politcal_power = 100
 	} 
 	
     immediate = { news_event = {
@@ -553,9 +551,27 @@ country_event = {
 	option = {
 		name = hungarian.11.a
 		
+			hidden_effect = {
+		news_event = {
+			id = hungary.12
+			days = 1
+		} 
+      }		
+		
+		kill_country_leader = yes
+
+		create_country_leader = {
+			name = "Jozsef Revai"
+			desc = " "
+			picture = "gfx/leaders/HUN/Portrait_revai.dds"
+			expire = "1965.1.1"
+			ideology = JC_VARIANT_01
+		}		
+		
 		complete_national_focus = HUN_VAGO
     }
   }
+
 
     country_event = { #BelaKun
 	id = hungarian.12
@@ -568,6 +584,12 @@ country_event = {
 	option = {
 		name = hungarian.12.a
 		
+		hidden_effect = {
+		news_event = {
+		id = hungary.11
+		days = 1
+		}			
+	  }
 		complete_national_focus = HUN_BELAKUN
 		
 		kill_country_leader = yes
@@ -592,6 +614,13 @@ country_event = {
 	
 	option = {
 		name = hungarian.13.a
+		
+			hidden_effect = {
+		news_event = {
+			id = hungary.13
+			days = 1
+		}
+     }		
 		
 		set_politics = {
 			ruling_party = SS
@@ -835,7 +864,7 @@ set_popularities = {
   }
  }
  
-	country_event = {#POLITICLCRISIS
+	country_event = { #POLITICLCRISIS
 	id = hungarian.16
 	title = hungarian.16.t
 	desc = hungarian.16.d
@@ -849,8 +878,8 @@ set_popularities = {
 			hidden_effect = {
 			HUN = {
 			country_event = { id = hungarian.20 days = 10 }
-		}
-	}		
+		  }
+	    }		
 	  }
     }
 
@@ -885,7 +914,7 @@ set_popularities = {
 		
 		add_popularity = {
 			ideology = SS
-			popularity = 0,1
+			popularity = 0.1
 		}		
     }
   }
@@ -943,6 +972,14 @@ set_popularities = {
 	option = {
 		name = hungarian.20.a
 		
+			hidden_effect = {
+		news_event = {
+			id = hungary.10
+			days = 1
+		}	
+		
+complete_national_focus = HUN_politicalstruggle
+
 kill_country_leader = yes
 		
 create_country_leader = {
@@ -952,13 +989,13 @@ create_country_leader = {
 	ideology = JC_VARIANT_01
 }		
 		
-		complete_national_focus = HUN_politicalstruggle
 	
 	 
 	  }
     }
+  }
 	
-      	   country_event = { 
+      	   country_event = {  #BALKCHAOS
 	id = hungarian.21
 	title = hungarian.21.t
 	desc = hungarian.21.d
@@ -1199,11 +1236,13 @@ create_country_leader = {
 	PB_Stagnating_Growth
 	PB_Semi_Modern_Military
 	PB_Fully_Westernized
-   }	  
-   
-}
-
-      	   country_event = { #ReviseRevolution
+      }	   
+    }
+   }
+  }
+ }
+ 
+      	   country_event = { #ANNEXGREECE
 	id = hungarian.22
 	title = hungarian.22.t
 	desc = hungarian.22.d
@@ -1213,12 +1252,55 @@ create_country_leader = {
 	
 	option = {
 		name = hungarian.22.a
-				
+	
+	  BUL = {
+		
+	  annex_country = {
+	  target = GRE
+	  transfer_troops = yes
+	  }
+     }	  
     }
-  }	
+  }
+ 
+     	   country_event = { #COLLECTIVIZATION
+	id = hungarian.23
+	title = hungarian.23.t
+	desc = hungarian.23.d
+	picture = GFX_report_event_hun_918
+	is_triggered_only = yes
+	fire_only_once = yes
 	
-	
-	
+	option = {
+		name = hungarian.23.a
 
+   }
+  }
 
+     	   country_event = { #MEMORYOFTHEREVOLUTION
+	id = hungarian.24
+	title = hungarian.24.t
+	desc = hungarian.24.d
+	picture = GFX_report_event_hun_919
+	is_triggered_only = yes
+	fire_only_once = yes
 	
+	option = {
+		name = hungarian.24.a
+
+   }
+  }
+
+     	   country_event = { #FATHEROFTHEREVOLUTION
+	id = hungarian.25
+	title = hungarian.25.t
+	desc = hungarian.25.d
+	picture = GFX_report_event_hun_920
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.25.a
+
+   }
+  }   
