@@ -613,6 +613,13 @@ focus_tree = {
 		prerequisite = {
 			focus = HUN_BELAKUN
 		}
+		
+		completion_reward = {
+		
+			add_political_power = -100
+			custom_effect_tooltip = HUN_Resistance_twentyfive
+		}
+		
 		x = 0
 		y = 7
 
@@ -744,7 +751,7 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_mass_strikes
 		}
-		x = 12
+		x = 13
 		y = 9
 
 	}
@@ -755,7 +762,7 @@ focus_tree = {
 		prerequisite = {
 			focus = new_program_party
 		}
-		x = 9
+		x = 10
 		y = 10
 
 	}
@@ -766,7 +773,7 @@ focus_tree = {
 		prerequisite = {
 			focus = new_program_party
 		}
-		x = 13
+		x = 14
 		y = 10
 
 	}
@@ -777,7 +784,7 @@ focus_tree = {
 		prerequisite = {
 			focus = new_program_party
 		}
-		x = 15
+		x = 16
 		y = 10
 
 	}
@@ -791,7 +798,7 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_monetary_reform
 		}
-		x = 14
+		x = 15
 		y = 11
 
 	}
@@ -1097,24 +1104,7 @@ focus_tree = {
 		y = 7
 
 	}
-	focus = {
-		id = hun_rewrite_constitution
-		icon = GFX_hun_rewrite_constitution
-		cost = 0
-		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = PB_Revolutionary_Republic
-				add_idea = PB_Workers_Republic
-			}
-        }			
-		prerequisite = {
-			focus = hun_revise_the_revolutionary_course
-		}
-		x = 20
-		y = 8
 
-	}
 	focus = {
 		id = hun_lift_the_ban_opposition
 		icon = GFX_hun_lift_the_ban_opposition
@@ -1129,10 +1119,10 @@ focus_tree = {
 			}
 			
 		prerequisite = {
-			focus = hun_rewrite_constitution
+			focus = hun_revise_the_revolutionary_course
 		}
 		x = 18
-		y = 9
+		y = 8
 
 	}
 	focus = {
@@ -1145,10 +1135,10 @@ focus_tree = {
 		}
 		
 		prerequisite = {
-			focus = hun_rewrite_constitution
+			focus = hun_revise_the_revolutionary_course
 		}
 		x = 20
-		y = 9
+		y = 8
 
 	}
 	focus = {
@@ -1165,10 +1155,10 @@ focus_tree = {
 			}
 			
 		prerequisite = {
-			focus = hun_rewrite_constitution
+			focus = hun_revise_the_revolutionary_course
 		}
 		x = 22
-		y = 9
+		y = 8
 
 	}
 	focus = {
@@ -1193,7 +1183,7 @@ focus_tree = {
 			focus = hun_approve_criticism
 		}
 		x = 20
-		y = 10
+		y = 9
 
 	}
 	focus = {
@@ -1211,8 +1201,8 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_democratic_socialism
 		}
-		x = 17
-		y = 11
+		x = 18
+		y = 10
 
 	}
 	focus = {
@@ -1255,10 +1245,13 @@ focus_tree = {
 		}
 			
 		prerequisite = {
-			focus = hun_introduce_market_mechanisms
+			focus = hun_found_sasah
 		}
-		x = 15
-		y = 12
+		prerequisite = {
+			focus = hun_sell_unprofitable_enterpises
+		}
+		x = 16
+		y = 13
 
 	}
 	focus = {
@@ -1273,8 +1266,8 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_democratic_socialism
 		}
-		x = 19
-		y = 11
+		x = 20
+		y = 10
 
 	}
 	focus = {
@@ -1304,8 +1297,8 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_democratic_socialism
 		}
-		x = 21
-		y = 11
+		x = 22
+		y = 10
 
 	}
 	focus = {
@@ -1335,8 +1328,13 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_establishment_of_a_parliament
 		}
+		
+		prerequisite = {
+			focus = hun_ease_tensions_with_capitalists
+		}
+		
 		x = 21
-		y = 12
+		y = 11
 
 	}
 	
@@ -1354,8 +1352,13 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_regional_elections
 		}
-		x = 21
-		y = 13
+		
+		prerequisite = {
+			focus = hun_open_the_borders
+		}
+		
+		x = 22
+		y = 12
 
 	}
 	focus = {
@@ -1435,7 +1438,7 @@ focus_tree = {
 			focus = hun_democratic_socialism
 		}
 		x = 24
-		y = 11
+		y = 10
 
 	}
 	focus = {
@@ -1470,7 +1473,7 @@ focus_tree = {
 		}
 		
 		x = 23
-		y = 12
+		y = 11
 
 	}
 	focus = {
@@ -1488,7 +1491,7 @@ focus_tree = {
 			focus = hun_protection_of_human_rights
 		}
 		x = 25
-		y = 12
+		y = 11
 
 	}
 	focus = {
@@ -1507,11 +1510,9 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_memory_Wall
 		}
-		prerequisite = {
-			focus = hun_regional_elections
-		}
-		x = 23
-		y = 13
+		
+		x = 24
+		y = 12
 
 	}
 	focus = {
@@ -1549,8 +1550,8 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_stop_the_separatism
 		}
-		x = 23
-		y = 14
+		x = 24
+		y = 13
 
 	}
 	focus = {
@@ -2637,7 +2638,7 @@ focus_tree = {
 		add_ideas = HUN_red_terror
 		}
 		
-		x = 84
+		x = 8
 		y = 8
 
 	}
@@ -2689,6 +2690,13 @@ focus_tree = {
 		prerequisite = {
 			focus = HUN_CONTANTJACOB
 		}
+		
+		completion_reward = {
+		
+			add_political_power = -50
+			custom_effect_tooltip = HUN_Resistance_fifty
+		}
+		
 		x = 0
 		y = 8
 
@@ -2700,6 +2708,20 @@ focus_tree = {
 		prerequisite = {
 			focus = HUN_FUNDANTIROMANI
 		}
+		
+		completion_reward = {
+		
+		HUN = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+				producer = HUN
+			}
+		}
+	
+		custom_effect_tooltip = HUN_Resistance_seventyfive
+		}		
+		
 		x = 0
 		y = 9
 
@@ -2711,30 +2733,27 @@ focus_tree = {
 		prerequisite = {
 			focus = HUN_PREPAREARMED
 		}
-		x = 0
-		y = 10
-
-	}
-	focus = {
-		id = HUN_THERESISTANCE
-		icon = GFX_HUN_PREPAREARMED
-		cost = 5
-		prerequisite = {
-			focus = HUN_FOUNDREDFRONT
-		}
 		
 		completion_reward = {
 
         ROM = {		
 		add_ideas = ROM_translyvanian_resistance
+
+		remove_state_core = 76
+		remove_state_core = 84
+		add_state_claim = 84
+		add_state_claim = 76		
 		      }
+			  
+		custom_effect_tooltip = HUN_Resistance_hundred
+		
 		}
 		
-		
 		x = 0
-		y = 11
+		y = 10
 
 	}
+	
 	focus = {
 		id = hun_Cserny_operation
 		icon = GFX_hun_Cserny_operation
@@ -2920,15 +2939,15 @@ focus_tree = {
 		
 			add_stability = -0.01		
 		
-			70 = {
+			155 = {
 				add_extra_state_shared_building_slots = 2
 			}
 
-			71 = {
+			43 = {
 				add_extra_state_shared_building_slots = 2
 			}
 
-			664 = {
+			154 = {
 				add_extra_state_shared_building_slots = 2
 			}						
 		  }
@@ -2977,15 +2996,15 @@ focus_tree = {
 		
 			add_stability = -0.01		
 		
-			70 = {
+			81 = {
 				add_extra_state_shared_building_slots = 2
 			}
 
-			71 = {
+			46 = {
 				add_extra_state_shared_building_slots = 2
 			}
 
-			664 = {
+			84 = {
 				add_extra_state_shared_building_slots = 2
 			}						
 		  }
@@ -3006,15 +3025,7 @@ focus_tree = {
 		
 			add_stability = -0.01		
 		
-			70 = {
-				add_extra_state_shared_building_slots = 2
-			}
-
-			71 = {
-				add_extra_state_shared_building_slots = 2
-			}
-
-			664 = {
+			107 = {
 				add_extra_state_shared_building_slots = 2
 			}						
 		  }
@@ -3035,15 +3046,15 @@ focus_tree = {
 		
 			add_stability = -0.01		
 		
-			70 = {
+			941 = {
 				add_extra_state_shared_building_slots = 2
 			}
 
-			71 = {
+			943 = {
 				add_extra_state_shared_building_slots = 2
 			}
 
-			664 = {
+			104 = {
 				add_extra_state_shared_building_slots = 2
 			}						
 		  }
@@ -3064,15 +3075,11 @@ focus_tree = {
 		
 			add_stability = -0.01		
 		
-			70 = {
+			105 = {
 				add_extra_state_shared_building_slots = 2
 			}
 
-			71 = {
-				add_extra_state_shared_building_slots = 2
-			}
-
-			664 = {
+			948 = {
 				add_extra_state_shared_building_slots = 2
 			}						
 		  }
@@ -5196,7 +5203,7 @@ focus_tree = {
 			focus = hun_introduce_market_mechanisms
 		}
 		x = 17
-		y = 12
+		y = 11
 
 	}
 	focus = {
@@ -5237,7 +5244,7 @@ focus_tree = {
 			focus = hun_gradual_privatization
 		}
 		x = 19
-		y = 13
+		y = 12
 
 	}
 	focus = {
@@ -5248,41 +5255,10 @@ focus_tree = {
 			focus = hun_gradual_privatization
 		}
 		x = 17
-		y = 13
+		y = 12
 
 	}
-	focus = {
-		id = hun_zone_on_adriatic_coast
-		icon = GFX_hun_zone_on_adriatic_coast
-		cost = 0
-		
-			completion_reward = {
-				
-			794 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-			794 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		
-		prerequisite = {
-			focus = hun_enter_special_economic_zones
-		}
-		x = 15
-		y = 13
-
-	}
+	
 	focus = {
 		id = hun_limited_export
 		icon = GFX_hun_limited_export
@@ -5290,49 +5266,16 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_introduce_market_mechanisms
 		}
-		x = 19
-		y = 12
-
-	}
-	focus = {
-		id = hun_zone_on_blacksea_coast
-		icon = GFX_hun_zone_on_blacksea_coast
-		cost = 0
 		
-			completion_reward = {
-				
-			46 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-			77 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}		
-		
-		available = {
-			HUN = {
-				owns_state = 77
-				owns_state = 46
-			}
-		}
-			
 		prerequisite = {
-			focus = hun_zone_in_bratislava
-		}
-		x = 16
-		y = 15
+			focus = hun_ease_tensions_with_capitalists
+		}		
+
+		x = 19
+		y = 11
 
 	}
+	
 	focus = {
 		id = hun_avoid_concetration_of_capital
 		icon = GFX_hun_avoid_concetration_of_capital
@@ -5344,7 +5287,7 @@ focus_tree = {
 			focus = hun_sell_unprofitable_enterpises
 		}
 		x = 18
-		y = 14
+		y = 13
 
 	}
 	focus = {
@@ -5360,8 +5303,13 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_stop_five_year_plans
 		}
+		
+		prerequisite = {
+			focus = hun_enter_special_economic_zones
+		}		
+			
 		x = 20
-		y = 15
+		y = 14
 
 	}
 	focus = {
@@ -5371,7 +5319,7 @@ focus_tree = {
 		prerequisite = {
 			focus = new_program_party
 		}
-		x = 11
+		x = 12
 		y = 10
 
 	}
@@ -5385,7 +5333,7 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_socialist_self_management
 		}
-		x = 10
+		x = 11
 		y = 11
 
 	}
@@ -5399,7 +5347,7 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_restructing_of_the_collective_farms
 		}
-		x = 12
+		x = 13
 		y = 11
 
 	}
@@ -5413,31 +5361,11 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_force_improvement_welfare
 		}
-		x = 13
+		x = 14
 		y = 12
 
 	}
-	focus = {
-		id = hun_zone_in_bratislava
-		icon = GFX_hun_zone_in_bratislava
-		cost = 0
-		
-				completion_reward = {
-			70 = {
-				add_resource = {
-					type = tungsten
-					amount = 30
-				}
-			}
-		}
-		
-		prerequisite = {
-			focus = hun_zone_on_adriatic_coast
-		}
-		x = 15
-		y = 14
-
-	}
+	
 	focus = {
 		id = hun_small_market_elements
 		icon = GFX_hun_small_market_elements
@@ -5448,7 +5376,7 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_weaking_of_the_center
 		}
-		x = 11
+		x = 12
 		y = 12
 
 	}
@@ -5462,7 +5390,7 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_huge_child_support
 		}
-		x = 12
+		x = 13
 		y = 13
 
 	}
@@ -5477,7 +5405,7 @@ focus_tree = {
 			focus = hun_found_sasah
 		}
 		x = 20
-		y = 14
+		y = 13
 
 	}
 	focus = {

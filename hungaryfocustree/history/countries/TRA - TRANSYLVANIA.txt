@@ -86,9 +86,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Alexandru Averescu"
+	name = "Miklós Bánffy"
 	desc = ""
-	picture = "gfx/leaders/TRA/Portrait_averescu.dds"
+	picture = "gfx/leaders/TRA/banify_miklos.dds"
 	ideology = DS_VARIANT_01
 }
 

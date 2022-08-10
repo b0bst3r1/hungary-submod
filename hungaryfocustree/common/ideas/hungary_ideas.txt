@@ -23,9 +23,9 @@ ideas = {
 	
 			modifier = {
                         stability_factor = 0.1							
-                        research_speed_factor = - 0.02
+                        research_speed_factor = -0.02
 			}
-		}	  
+		}		  
 		
 		HUN_balkan_chaos = {
 		
@@ -43,9 +43,9 @@ ideas = {
 	
 			modifier = {
 				conscription = 0.05
-				surrender_limit = 0.9
+				surrender_limit = 0.8
 			}
-		}
+	                       }
 		
 		HUN_red_terror = {
 			
@@ -63,8 +63,8 @@ ideas = {
 			removal_cost = -1
 	
 			modifier = {
-            monthly_population = -0.1 			
-            stability_weekly = -0.02
+            monthly_population = -0.02 			
+            stability_weekly = -0.001
 			}
 		}		
 	}	

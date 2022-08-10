@@ -915,6 +915,11 @@ set_popularities = {
 		add_popularity = {
 			ideology = SS
 			popularity = 0.1
+			
+			swap_ideas = {
+				remove_idea = PB_Revolutionary_Republic
+				add_idea = PB_Workers_Republic
+			}			
 		}		
     }
   }
@@ -1301,6 +1306,18 @@ create_country_leader = {
 	
 	option = {
 		name = hungarian.25.a
-
    }
-  }   
+  }
+
+     	   country_event = { #HUNGARIANREVOLUTIONDAY
+	id = hungarian.26
+	title = hungarian.26.t
+	desc = hungarian.26.d
+	picture = GFX_report_event_hun_920
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.26.a
+   }
+  }  

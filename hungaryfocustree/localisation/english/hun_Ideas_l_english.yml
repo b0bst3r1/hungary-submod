@@ -10,8 +10,9 @@
   HUN_balkan_chaos_desc:0  " "
   BOS_patriotic_war:0 "Bosnian Patriotic War"
   BOS_patriotic_war_desc:0 "Bosnia has been under the control of foreign goverments for centuries. The people have been enslaved by foreign overlords. Turkey, Serbia, Croatia and, until recently, Hungary did not allow the Bosnian people to live freely. \n\nNow that Bosnia is finally independent, the invaders are encroaching on Bosnian territory again. This is an ideal chance for the Bosnian people. We must not find ourselves again under foreign domination. \n\n§RThere can be no peaceful coexistence between the Islamic faith and non-Islamic society and political institutions.§!" 
-  balkan_union:0 "Balkan Union"
-  balkan_union_desc:0 "The Balkan Union is a regional integration association of Balkan Countries. The objectives of the BU is a customs Union, a common agricultural policy, free movement of capital, labour and services between member states."
+  BUL_balkan_union:0 "Balkan Union"
+  BUL_balkan_union_desc:0 "The Balkan Union is a regional integration association of Balkan Countries. The objectives of the BU is a customs Union, a common agricultural policy, free movement of capital, labour and services between member states."
   HUN_red_terror:0 "Red Terror"
   HUN_red_terror_desc:0 "We must get rid of all unfaithful people who do not follow the true path of the revolution. They bring only harm to the country and do not contribute to progress towards a bright future."
-  
+  ROM_translyvanian_resistance:0 "Red Front of Transylvania"
+  ROM_translyvanian_resistance_desc:0 "The Transylvanian Red Front is an extreme left-wing, illegal paramilitary organisation funded by the Hungarian Jacobin Party. Its aim is for Transylvania to gain independence and/or join Hungary. It tries to achieve this through terrorist attacks on the police, illegal demonstrations, etc. \n\nAlso under the leadership of the Red Front there are organisations like the Union of Free Transylvanian Youth and the Fighting Red Sports Society."
