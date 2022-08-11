@@ -27,9 +27,34 @@ set_convoys = 0
 
 set_country_flag = PB_WAR_SYSTEM_Slovakian_Revolution
 
+recruit_character = HUN_Rakosi
+recruit_character = HUN_Jozsef_Pogan
+recruit_character = HUN_Otto_Korvin
+recruit_character = HUN_arpad_kerekes
+recruit_character = HUN_ivan_hindy
+recruit_character = HUN_Karoly_Bartha
+recruit_character = HUN_Kornel_Radanyi
+recruit_character = HUN_jeno_sarkany
+recruit_character = HUN_stromfeld
+recruit_character = HUN_Laszlo
+recruit_character = HUN_gordony
+recruit_character = HUN_geza
+recruit_character = HUN_Ferenc
+recruit_character = HUN_miklos
+recruit_character = HUN_nagy
+recruit_character = HUN_Karoly
+recruit_character = HUN_Schon
+recruit_character = HUN_tibor
+recruit_character = HUN_Ferenc
+recruit_character = HUN_farkas_mihaly
+recruit_character = HUN_Gabor_Peter
+recruit_character = HUN_Erno_Gero
+recruit_character = HUN_ferenc_munnich
+
 add_ideas = {
+    HUN_diverse_general_staff
 	PB_HUN_Revolution_Home
-	#PB_HUN_Croatian_Support
+	HUN_Croatian_Support
 	PB_HUN_Collapsing_Government
 	PB_HUN_Ethnic_Tensions
     PB_HUN_Balkan_Powderkeg
@@ -158,14 +183,6 @@ create_country_leader = {
 	ideology = CN_VARIANT_01
 }
 
-#create_country_leader = {
-	name = "Sandor Garbai"
-	desc = ""
-	picture = "GFX/leaders/HUN/Portrait_Hun_Bela_Kun.dds"
-	ideology = CN_VARIANT_01
-}
-
-
 create_country_leader = {
 	name = "No Leader"
 	desc = ""
@@ -186,26 +203,3 @@ create_country_leader = {
 	picture = "gfx/leaders/HUN/Portrait_Sandor_Garbai.dds"
 	ideology = SS_VARIANT_01
 }
-
-create_field_marshal = {
-	name = "Mátyás Rákosi" 
-	picture = "gfx/leaders/HUN/HUN_1.dds"
-	traits = {  }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Tibor Szamuely"
-	portrait_path = "gfx/leaders/HUN/HUN_2.dds"
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-

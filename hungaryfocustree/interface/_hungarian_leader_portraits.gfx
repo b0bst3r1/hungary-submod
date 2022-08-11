@@ -1,0 +1,117 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_pogany_jozsef"
+		texturefile = "gfx/leaders/HUN/pogany_jozsef.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Korvin_Otto"
+		texturefile = "gfx/leaders/HUN/Korvin_Otto.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Jeno_Landler"
+		texturefile = "gfx/leaders/HUN/Jeno_Landler.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_arpad_kerekes"
+		texturefile = "gfx/leaders/HUN/arpad_kerekes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ivan_hindy"
+		texturefile = "gfx/leaders/HUN/ivan_hindy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Bartha_Karoly"
+		texturefile = "gfx/leaders/HUN/Bartha_Karoly.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_osztolanyi_kornel"
+		texturefile = "gfx/leaders/HUN/osztolanyi_kornel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Sarkany_Jeno"
+		texturefile = "gfx/leaders/HUN/Sarkany_Jeno.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_stromfeld"
+		texturefile = "gfx/leaders/HUN/stromfeld.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Laszio"
+		texturefile = "gfx/leaders/HUN/Laszio.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Gorondy_Novak"
+		texturefile = "gfx/leaders/HUN/Gorondy_Novak.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Geza_Lakatos"
+		texturefile = "gfx/leaders/HUN/Geza_Lakatos.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Ferenc"
+		texturefile = "gfx/leaders/HUN/Ferenc.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_bela_miklos_de_dalnok"
+		texturefile = "gfx/leaders/HUN/bela_miklos_de_dalnok.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Vilmos_Nagy"
+		texturefile = "gfx/leaders/HUN/Vilmos_Nagy.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_portrait_Beregfy_Karoly"
+		texturefile = "gfx/leaders/HUN/Beregfy_Karoly.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_aprad_schon"
+		texturefile = "gfx/leaders/HUN/aprad_schon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_HUN_2"
+		texturefile = "gfx/leaders/HUN/HUN_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_HUN_1"
+		texturefile = "gfx/leaders/HUN/HUN_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_farkas_mihaly"
+		texturefile = "gfx/leaders/HUN/portrait_farkas_mihaly.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Gabor_Peter"
+		texturefile = "gfx/leaders/HUN/gabor_peter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_enro_gero"
+		texturefile = "gfx/leaders/HUN/erno_gero.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ferenc_munnich"
+		texturefile = "gfx/leaders/HUN/ferenc_munnich.dds"
+	}	
+ }

@@ -1,0 +1,455 @@
+characters={
+	
+	HUN_Rakosi={
+		name="Matyas Rakosi"
+		portraits={
+			army={
+				large="GFX_portrait_HUN_1"
+				small="GFX_portrait_HUN_1"		
+			}
+		}
+		corps_commander = {
+		traits = { Jacobin }
+	    skill = 3
+	    attack_skill = 2
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 3
+		legacy_id = 8001
+		}
+	}
+	
+	HUN_Jozsef_Pogany={
+		name="Jozsef Pogany"
+		portraits={
+			army={
+				large="GFX_portrait_pogany_jozsef"
+				small="GFX_portrait_pogany_jozsef"
+			}
+		}
+	corps_commander = {
+	traits = { Jacobin }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	legacy_id = 8002
+		}
+	}
+	
+	HUN_Otto_Korvin={
+		name="Otto Korvin"
+		portraits={
+			army={
+				large="GFX_portrait_Korvin_Otto"
+				small="GFX_portrait_Korvin_Otto"	
+			}
+		}
+	corps_commander = {
+	traits = { Jacobin }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+	legacy_id = 8003
+		}
+	}
+	
+	HUN_Jeno_Landler={
+		name="Jeno Landler"
+		portraits={
+			army={
+				large="GFX_portrait_Jeno_Landler"
+				small="GFX_portrait_Jeno_Landler"			
+			}
+		}
+	corps_commander = {
+	traits = { Jacobin }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+	legacy_id = 8004	
+		}
+	}
+	
+	HUN_arpad_kerekes={
+		name="Arpad Kerekes"
+		portraits={
+			army={
+				large="GFX_portrait_arpad_kerekes"
+				small="GFX_portrait_arpad_kerekes"		
+			}
+		}
+	corps_commander = {
+	traits = { Jacobin }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+	legacy_id = 8005	
+		}
+	}
+	
+	
+	HUN_ivan_hindy={
+		name="Ivan Hindy"
+		portraits={
+			army={
+				large="GFX_portrait_ivan_hindy"
+				small="GFX_portrait_ivan_hindy"				
+			}
+		}
+	field_marshal = {
+	traits = { Nationalist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	legacy_id = 8006	
+		}
+	}
+	
+	
+	HUN_Karoly_Bartha = {
+		name="Karoly Bartha"
+		portraits={
+			army={
+				large="GFX_portrait_Bartha_Karoly"
+				small="GFX_portrait_Bartha_Karoly"		
+			}
+		}
+	corps_commander = {
+	traits = { Nationalist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	legacy_id = 8007	
+		}
+	}
+	
+	
+	HUN_Kornel_Radanyi={
+		name="Kornel Radanyi"
+		portraits={
+			army={
+				large="GFX_portrait_osztolanyi_kornel"
+				small="GFX_portrait_osztolanyi_kornel"			
+			}
+		}
+	corps_commander = {
+	traits = { Nationalist }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	legacy_id = 8008	
+		}
+	}
+	
+	
+	HUN_jeno_sarkany={
+		name="Jeno Sarkany"
+		portraits={
+			army={
+				large="GFX_portrait_Sarkany_Jeno"
+				small="GFX_portrait_Sarkany_Jeno"			
+			}
+		}
+	corps_commander = {
+			traits = { Nationalist }
+	        skill = 1
+	        attack_skill = 2
+	        defense_skill = 1
+	        planning_skill = 2
+	        logistics_skill = 1
+			legacy_id = 8009
+		}
+	}
+	
+	
+	HUN_stromfeld={
+		name="Aurel Stromfeld"
+		portraits={
+			army={
+				large="GFX_portrait_stromfeld"
+				small="GFX_portrait_stromfeld"			
+			}
+		}
+	field_marshal = {
+	traits = { Neutral }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+	legacy_id = 8010
+		}
+	}
+	
+	
+	HUN_Laszlo={
+		name="Laszlo Szamuely"
+		portraits={
+			army={
+				large="GFX_portrait_Laszio"
+				small="GFX_portrait_Laszio"			
+			}
+		}
+	corps_commander = {
+	traits = { Neutral }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+	legacy_id = 8011	
+		}
+	}
+	
+	
+	HUN_gordony={
+		name="Gordony Novak"
+		portraits={
+			army={
+				large="GFX_portrait_Gorondy_Novak"
+				small="GFX_portrait_Gorondy_Novak"		
+			}
+		}
+	corps_commander = {
+	traits = { Neutral }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	legacy_id = 8012	
+		}
+	}
+	
+	
+	HUN_geza={
+		name="Geza Lakatos"
+		portraits={
+			army={
+				large="GFX_portrait_Geza_Lakatos"
+				small="GFX_portrait_Geza_Lakatos"		
+			}
+		}
+	corps_commander = {
+	traits = { Neutral }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+	legacy_id = 8013	
+		}
+	}
+	
+	
+	HUN_Ferenc={
+		name="Ferenc Kovats"
+		portraits={
+			army={
+				large="GFX_portrait_Ferenc"
+				small="GFX_portrait_Ferenc"			
+			}
+		}
+	corps_commander = {
+	traits = { Neutral }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	legacy_id = 8014	
+		}
+	}
+	
+	
+	HUN_miklos={
+		name="Bela Miklos de Dalnok"
+		portraits={
+			army={
+				large="GFX_portrait_bela_miklos_de_dalnok"
+				small="GFX_portrait_bela_miklos_de_dalnok"
+			}
+		}
+	corps_commander = {
+	traits = { Neutral }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	legacy_id = 8015	
+		}
+	}
+	
+	
+	HUN_nagy={
+		name="Vilmos Nagy"
+		portraits={
+			army={
+				large="GFX_portrait_Vilmos_Nagy"
+				small="GFX_portrait_Vilmos_Nagy"		
+			}
+		}
+	corps_commander = {
+	traits = { Socialist }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+	legacy_id = 8016	
+		}
+	}
+	
+	
+	HUN_Karoly={
+		name="Karoly Beregfy"
+		portraits={
+			army={
+				large="GFX_portrait_Beregfy_Karoly"
+				small="GFX_portrait_Beregfy_Karoly"				
+			}
+		}
+	corps_commander = {
+	traits = { Socialist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	legacy_id = 8017	
+		}
+	}
+	
+	
+	HUN_Schon={
+		name="Arpad Schon"
+		portraits={
+			army={
+				large="GFX_portrait_aprad_schon"
+				small="GFX_portrait_aprad_schon"			
+			}
+		}
+	corps_commander = {
+	traits = { Socialist }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+	legacy_id = 8018	
+		}
+	}
+	
+	HUN_tibor={
+		name="Tibor Szamuely"
+		portraits={
+			army={
+				large="GFX_portrait_HUN_2"
+				small="GFX_portrait_HUN_2"		
+			}
+		}
+	field_marshal = {
+	traits = { Socialist }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	legacy_id = 8019
+		}
+	}
+
+	HUN_farkas_mihaly={
+		name="Mihaly Farkas"
+		portraits={
+			army={
+				large="GFX_portrait_farkas_mihaly"
+				small="GFX_portrait_farkas_mihaly"			
+			}
+		}
+	corps_commander = {
+	traits = { Socialist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+	legacy_id = 8020
+		}
+	}
+	
+	HUN_Gabor_Peter={
+		name="Gabor Peter"
+		portraits={
+			army={
+				large="GFX_Gabor_Peter"
+				small="GFX_Gabor_Peter"		
+			}
+		}
+	corps_commander = {
+	traits = { Socialist }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+	legacy_id = 8021
+		}
+	 }
+	 
+	HUN_Erno_Gero={
+		name="Erno Gero"
+		portraits={
+			army={
+				large="GFX_enro_gero"
+				small="GFX_enro_gero"	
+			}
+		}
+	corps_commander = {
+	traits = { Jacobin }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+	legacy_id = 8022
+		}
+	 }
+
+	HUN_ferenc_munnich={
+		name="Ferenc Munnich"
+		portraits={
+			army={
+				large="GFX_ferenc_munnich"
+				small="GFX_ferenc_munnich"
+			}
+		}
+	corps_commander = {
+	traits = { Jacobin }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	legacy_id = 8023
+		}
+	 }	 
+  }	
+	
+
+	

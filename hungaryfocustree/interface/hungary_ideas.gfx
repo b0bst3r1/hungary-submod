@@ -28,6 +28,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ROM_transylvania_resistance"
 		texturefile = "gfx/interface/ideas/ROM_transylvania_resistance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HUN_diverse_general_staff"
+		texturefile = "gfx/interface/ideas/HUN_diverse_general_staff.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HUN_Croatian_Support"
+		texturefile = "gfx/interface/ideas/HUN_Croatian_Support.dds"
 	}	
 	
 }

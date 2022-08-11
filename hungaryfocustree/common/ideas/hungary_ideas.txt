@@ -66,6 +66,51 @@ ideas = {
             monthly_population = -0.02 			
             stability_weekly = -0.001
 			}
+		}
+
+		HUN_diverse_general_staff = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_diverse_general_staff
+			
+			removal_cost = -1
+			
+			modifier = {
+				ni_drift = 0.02
+				ds_drift = 0.01
+				ss_drift = 0.01				
+                army_org = -5
+                max_planning = -0.15
+				stability_factor = -0.1
+			}
+		}
+
+		HUN_Croatian_Support = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_Croatian_Support
+			
+			removal_cost = -1
+	
+			modifier = {
+                consumer_goods_factor = 0.05
+
+			}
 		}		
 	}	
  }	
