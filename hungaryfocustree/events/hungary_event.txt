@@ -551,12 +551,24 @@ country_event = {
 	option = {
 		name = hungarian.11.a
 		
+			remove_ideas = {
+				remove_idea = HUN_BelaKun_FM
+				remove_idea = HUN_Garbai_IM				
+			}
+
+		    add_ideas = {
+	        HUN_Arpad_EM
+			HUN_Revai_HOG
+			HUN_Gyorgy_IM
+			HUN_Kunfi_FM
+			}
+		
 			hidden_effect = {
 		news_event = {
 			id = hungary.12
 			days = 1
 		} 
-      }		
+      }	  
 		
 		kill_country_leader = yes
 
@@ -583,6 +595,18 @@ country_event = {
 	
 	option = {
 		name = hungarian.12.a
+		
+			remove_ideas = {
+				remove_idea = HUN_BelaKun_FM
+				remove_idea = HUN_Garbai_IM				
+			}
+
+		    add_ideas = {
+            HUN_Munnich_FM
+            HUN_Erno_IM
+            HUN_Nagy_EM
+			HUN_BelaKun_HOG
+			}		
 		
 		hidden_effect = {
 		news_event = {
@@ -615,6 +639,18 @@ country_event = {
 	option = {
 		name = hungarian.13.a
 		
+			remove_ideas = {
+				remove_idea = HUN_BelaKun_FM
+				remove_idea = HUN_Garbai_IM				
+			}
+
+		    add_ideas = {
+            HUN_Varga_EM
+            HUN_Hamburger_FM
+            HUN_Gyula_IM
+			HUN_Garbai_HOG
+			}		
+		
 			hidden_effect = {
 		news_event = {
 			id = hungary.13
@@ -624,14 +660,7 @@ country_event = {
 		
 		set_politics = {
 			ruling_party = SS
-		}
-		
-create_country_leader = {
-	name = "Sandor Garbai"
-	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_Sandor_Garbai.dds"
-	ideology = SS_VARIANT_01
-}		
+		}		
 		
 		complete_national_focus = hun_garbai
 	
@@ -977,28 +1006,22 @@ set_popularities = {
 	option = {
 		name = hungarian.20.a
 		
+	remove_ideas = {
+	HUN_Vago_EM
+	}	
+		
 			hidden_effect = {
 		news_event = {
 			id = hungary.10
 			days = 1
+			
+			HUN = {
+			country_event = { id = hungarian.29 days = 5 }			
 		}	
-		
-complete_national_focus = HUN_politicalstruggle
-
-kill_country_leader = yes
-		
-create_country_leader = {
-	name = "Hungarian Jacobin Provisional Goverment"
-	desc = ""
-	picture = "gfx/leaders/HUN/hungary.dds"
-	ideology = JC_VARIANT_01
-}		
-		
-	
-	 
-	  }
+      }				   
     }
   }
+}
 	
       	   country_event = {  #BALKCHAOS
 	id = hungarian.21
@@ -1313,11 +1336,81 @@ create_country_leader = {
 	id = hungarian.26
 	title = hungarian.26.t
 	desc = hungarian.26.d
-	picture = GFX_report_event_hun_920
+	picture = GFX_report_event_hun_923
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = {
 		name = hungarian.26.a
    }
-  }  
+  }
+
+     	   country_event = { #StrikesInBudapest
+	id = hungarian.27
+	title = hungarian.27.t
+	desc = hungarian.27.d
+	picture = GFX_report_event_hun_921
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.27.a
+   }
+  }
+
+     	   country_event = { #ShootBudapest
+	id = hungarian.28
+	title = hungarian.28.t
+	desc = hungarian.28.d
+	picture = GFX_report_event_hun_922
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.28.a
+		
+			hidden_effect = {
+		news_event = {
+			id = hungary.14
+			days = 1
+		}
+	}
+ }
+}
+
+     	   country_event = { #BohmResings
+	id = hungarian.29
+	title = hungarian.29.t
+	desc = hungarian.29.d
+	picture = GFX_report_event_hun_924
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.29.a
+		
+	remove_ideas = {
+	HUN_PB_Bohm_HOG
+	}
+	
+	complete_national_focus = HUN_politicalstruggle
+	
+     kill_country_leader = yes
+		
+create_country_leader = {
+	name = "Hungarian Jacobin Provisional Goverment"
+	desc = ""
+	picture = "gfx/leaders/HUN/hungary.dds"
+	ideology = JC_VARIANT_01
+                   } 	
+		
+			hidden_effect = {
+		news_event = {
+			id = hungary.15
+			days = 1
+		}	
+	  }		
+    }
+  }	
+
+  

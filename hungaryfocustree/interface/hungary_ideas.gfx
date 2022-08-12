@@ -38,6 +38,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_HUN_Croatian_Support"
 		texturefile = "gfx/interface/ideas/HUN_Croatian_Support.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hun_united_country"
+		texturefile = "gfx/interface/ideas/hun_united_country.dds"
 	}	
 	
 }

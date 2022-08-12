@@ -197,7 +197,53 @@ add_namespace = hungary
 	option = {
 		name = hungary.13.a
 	}
-        }			
+        }
+
+	news_event = { #BudapestMassacre
+	id = hungary.14
+	title = hungary.14.t
+	desc = hungary.14.d
+	picture = GFX_news_event_hun_925
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.14.a 
+		trigger = {
+			NOT = {
+				OR = {
+				is_hun = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = hungary.14.b
+		trigger = {
+			OR = { 				
+				is_hun = yes
+			}
+		}
+	}		
+	}
+
+	news_event = { #BohmResings
+	id = hungary.15
+	title = hungary.15.t
+	desc = hungary.15.d
+	picture = GFX_news_event_hun_926
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.15.a
+	}
+        }	
 
  
 

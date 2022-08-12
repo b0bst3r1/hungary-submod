@@ -25,7 +25,72 @@ ideas = {
                         stability_factor = 0.1							
                         research_speed_factor = -0.02
 			}
-		}		  
+		}
+
+		PB_HUN_Collapsing_Government = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = PB_HUN_Balkan_Powderkeg
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = -0.3
+				political_power_gain = -0.25
+			}
+		}
+		
+		PB_HUN_Revolution_Home = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = PB_HUN_Revolution_Home
+			
+			removal_cost = -1
+	
+			modifier = {
+                stability_factor = 0.10
+                war_support_factor = 0.10
+                army_core_defence_factor = 0.1
+
+			}
+		}		
+
+		PB_HUN_Ethnic_Tensions = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = PB_HUN_Balkan_Powderkeg
+			
+			removal_cost = -1
+	
+			modifier = {
+            stability_factor = -0.15
+			non_core_manpower = -0.5
+			}
+		}		
 		
 		HUN_balkan_chaos = {
 		
@@ -109,6 +174,29 @@ ideas = {
 	
 			modifier = {
                 consumer_goods_factor = 0.05
+
+			}
+		}
+
+		HUN_United_Country = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = hun_united_country
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.1
+				jc_drift = 0.03
+				conscription = 0.02				
 
 			}
 		}		

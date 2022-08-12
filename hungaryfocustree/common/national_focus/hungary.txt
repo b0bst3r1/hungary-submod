@@ -589,7 +589,17 @@ focus_tree = {
 		
 		completion_reward = {
 		remove_ideas = PB_HUN_Collapsing_Government
-		}		
+
+		hidden_effect = {
+	    
+		HUN = {
+		country_event = {
+		id = hungarian.28
+		days = 38
+		  }
+		}
+      }
+   }	  
 	
 		
 		prerequisite = {
@@ -680,7 +690,17 @@ focus_tree = {
 		
 		completion_reward = {
 		remove_ideas = PB_HUN_Collapsing_Government
-		}		
+
+		hidden_effect = {
+	    
+		HUN = {
+		country_event = {
+		id = hungarian.27
+		days = 27
+		  }
+		}
+      }
+   }	  
 	
 		prerequisite = {
 			focus = HUN_SIXTHCONGRESS

@@ -20,7 +20,7 @@ set_technology = {
 	fuel_silos = 1
 }
 
-set_stability = 0.7
+set_stability = 0.5
 set_war_support = 0.3
 
 set_convoys = 0
@@ -49,7 +49,6 @@ recruit_character = HUN_Ferenc
 recruit_character = HUN_farkas_mihaly
 recruit_character = HUN_Gabor_Peter
 recruit_character = HUN_Erno_Gero
-recruit_character = HUN_ferenc_munnich
 
 add_ideas = {
     HUN_diverse_general_staff
@@ -58,11 +57,12 @@ add_ideas = {
 	PB_HUN_Collapsing_Government
 	PB_HUN_Ethnic_Tensions
     PB_HUN_Balkan_Powderkeg
+	HUN_United_Country
 
 	HUN_PB_Bohm_HOG
-	HUN_PB_Vago_IM
-	HUN_PB_Dezso_EM
-	HUN_PB_Garbai_FM
+	HUN_Garbai_IM
+	HUN_Vago_EM
+	HUN_BelaKun_FM
 	HUN_PB_Rakosi
 
     closed_economy
@@ -148,12 +148,11 @@ CRO = {
 }
 
 create_country_leader = {
-	name = "Béla Vágó"
+	name = "Böhm Vilmos"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "Portrait_HUN_Bela_Vago.dds"
+	picture = "gfx/leaders/HUN/bohm.dds"
 	ideology = JC_VARIANT_01
 }
-
 
 create_country_leader = {
 	name = "No Leader"

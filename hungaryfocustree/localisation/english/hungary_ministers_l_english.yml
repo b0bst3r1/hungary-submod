@@ -1,0 +1,25 @@
+﻿l_english:
+
+#MINISTERS#
+
+ HUN_Garbai_IM:0 "Sándor Garbai"
+ HUN_Vago_EM:0 "Bela Vago"
+ HUN_BelaKun_FM:0 "Béla Kun"
+ #BELAKUNadministration
+ HUN_Munnich_FM:0 "Ferenc Münnich"
+ HUN_Erno_IM:0 "Ernő Garami"
+ HUN_Nagy_EM:0 "Imre Nagy"
+ #GARBAIadministration
+ HUN_Varga_EM:0 "Jenő Varga"
+ HUN_Hamburger_FM:0 "Jenő Hamburger"
+ HUN_Gyula_IM:0 "Gyula Peidl"
+ #RevaiAdministration
+ HUN_Arpad_EM:0 "Szakasits Árpád"
+ HUN_Kunfi_FM:0 "Kunfi Zsigmond"
+ HUN_Gyorgy_IM:0 "György Lukács"
+ #HOGs
+ HUN_Revai_HOG:0 "József Révai"
+ HUN_Garbai_HOG:0 "Sándor Garbai"
+ HUN_BelaKun_HOG:0 "Béla Kun"
+  
+  
