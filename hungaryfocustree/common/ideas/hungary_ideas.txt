@@ -199,6 +199,110 @@ ideas = {
 				conscription = 0.02				
 
 			}
+		}
+
+		HUN_bourgeois_literature = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_bourgeois_literature
+			
+			removal_cost = -1
+	
+			modifier = {
+            stability_factor = 0.05						
+            research_speed_factor = -0.02				
+
+			}
+		}
+
+		HUN_martians = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_martians
+			
+			removal_cost = -1
+	
+			modifier = {						
+            research_speed_factor = 0.05				
+			}
+		}
+
+		HUN_artist_union = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_artist_union
+			
+			removal_cost = -1
+	
+			modifier = {						
+            political_power_factor = 0.15			
+			}
+		}
+
+		HUN_labor_camps = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_labor_camps
+			
+			removal_cost = -1
+	
+			modifier = {						
+            production_speed_buildings_factor = 0.04
+            stability_factor = 0.05			
+			}
+		}
+
+		HUN_people_communes = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_farm
+			
+			removal_cost = -1
+	
+			modifier = {						
+            production_factory_efficiency_gain_factor = 0.05
+            production_factory_max_efficiency_factor = 0.05 	
+			}
 		}		
 	}	
  }	

@@ -6,6 +6,61 @@ spriteTypes = {
     }
 
 	SpriteType = {
+	    name = "GFX_HUN_farm"
+        texturefile = "gfx/interface/goals/HUN_farm.dds"
+    }
+	
+	SpriteType = {
+	    name = "GFX_father"
+        texturefile = "gfx/interface/goals/father.dds"
+    }
+	
+	SpriteType = {
+	    name = "GFX_hun_finance_anti_romani"
+        texturefile = "gfx/interface/goals/hun_finance_anti_romani.dds"
+    }	
+
+	SpriteType = {
+	    name = "GFX_father"
+        texturefile = "gfx/interface/goals/father.dds"
+    }	
+
+	SpriteType = {
+	    name = "GFX_HUN_hungary_moves_forward"
+        texturefile = "gfx/interface/goals/HUN_hungary_moves_forward.dds"
+    }
+
+	SpriteType = {
+	    name = "GFX_HUN_general_question"
+        texturefile = "gfx/interface/goals/HUN_general_question.dds"
+    }
+
+	SpriteType = {
+	    name = "GFX_HUN_compaction"
+        texturefile = "gfx/interface/goals/HUN_compaction.dds"
+    }
+
+	SpriteType = {
+	    name = "GFX_HUN_renewthered"
+        texturefile = "gfx/interface/goals/HUN_renewthered.dds"
+    }
+	
+	SpriteType = {
+	    name = "GFX_HUN_Bohm_Resigns"
+        texturefile = "gfx/interface/goals/HUN_Bohm_Resigns.dds"
+    }
+
+	SpriteType = {
+	    name = "GFX_HUN_artist_union"
+        texturefile = "gfx/interface/goals/HUN_artist_union.dds"
+    }
+
+	SpriteType = {
+	    name = "GFX_HUN_Spartakiad"
+        texturefile = "gfx/interface/goals/HUN_Spartakiad.dds"
+    }	
+
+	SpriteType = {
 	    name = "GFX_hun_politicalstruggle"
         texturefile = "gfx/interface/goals/hun_politicalstruggle.dds"
     } 

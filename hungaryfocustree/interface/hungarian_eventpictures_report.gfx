@@ -124,6 +124,36 @@ spriteTypes = {
 		name = "GFX_report_event_hun_924"
 		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_924.dds"
 	}
+	
+		spriteType = {
+		name = "GFX_report_event_hun_925"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_925.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_hun_926"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_926.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_hun_927"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_927.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_hun_928"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_928.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_hun_929"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_929.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_hun_930"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_930.dds"
+	}	
 
 }	
 	

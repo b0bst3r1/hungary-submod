@@ -211,24 +211,19 @@ add_namespace = hungary
 
 	option = {
 		name = hungary.14.a 
-		trigger = {
-			NOT = {
-				OR = {
-				is_hun = yes
-				}
-			}
+        trigger = {
+            NOT = { tag = HUN }
+                  }
 		}
-	}
-
 	option = {
 		name = hungary.14.b
 		trigger = {
 			OR = { 				
-				is_hun = yes
+				tag = HUN
 			}
-		}
-	}		
-	}
+		 }
+	  }		
+   }
 
 	news_event = { #BohmResings
 	id = hungary.15
@@ -243,7 +238,67 @@ add_namespace = hungary
 	option = {
 		name = hungary.15.a
 	}
-        }	
+        }
+
+	news_event = { #Spartakiad
+	id = hungary.16
+	title = hungary.16.t
+	desc = hungary.16.d
+	picture = GFX_news_event_hun_927
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.16.a
+	}
+        }
+
+	news_event = { #HungaryVictorySpartakiad
+	id = hungary.17
+	title = hungary.17.t
+	desc = hungary.17.d
+	picture = GFX_news_event_hun_928
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.17.a
+	}
+        }
+
+	news_event = { #CroatiaVictorySpartakiad
+	id = hungary.18
+	title = hungary.18.t
+	desc = hungary.18.d
+	picture = GFX_news_event_hun_929
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.18.a
+	}
+        }
+
+	news_event = { #JapaneseVictorySpartakiad
+	id = hungary.19
+	title = hungary.19.t
+	desc = hungary.19.d
+	picture = GFX_news_event_hun_930
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.19.a
+	}
+        }		
 
  
 

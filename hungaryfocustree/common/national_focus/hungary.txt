@@ -649,7 +649,7 @@ focus_tree = {
 		}
 	 }
 		
-		x = 2
+		x = 6
 		y = 7
   }
 	focus = {
@@ -657,23 +657,173 @@ focus_tree = {
 		icon = GFX_hun_internpolit
 		cost = 3
 		prerequisite = {
-			focus = HUN_BELAKUN
+			focus = HUN_EXECUTEREFORMISTS
 		}
 		x = 4
-		y = 7
+		y = 9
 
 	}
 	focus = {
 		id = HUN_MEMORYOFTHEREVOLU
 		icon = GFX_hun_memory_of_the_revulution
-		cost = 2
+		cost = 35
 		prerequisite = {
 			focus = HUN_BELAKUN
 		}
-		x = 8
+		
+	    completion_reward = {
+		country_event = {
+		id = hungarian.24
+		hours = 6
+		}
+     }		
+	 
+		x = 10
 		y = 7
 
 	}
+	
+	focus = {
+		id = HUN_Legacy_of_Bohm
+		icon = GFX_HUN_Bohm_Resigns
+		cost = 35
+		prerequisite = {
+			focus = HUN_MEMORYOFTHEREVOLU
+		}
+		
+	    completion_reward = {
+		set_province_name = { id = 11659 name = "Bohmvaros"}
+		}	
+	 
+		x = 10
+		y = 8
+
+	}
+
+	focus = {
+		id = HUN_Spartakiad
+		icon = GFX_HUN_Spartakiad
+		cost = 35
+		
+		prerequisite = {
+			focus = HUN_artist_union
+		}
+
+		prerequisite = {
+			focus = HUN_Legacy_of_Bohm
+		}			
+		
+	    completion_reward = {
+		country_event = {
+		id = hungarian.35
+		days = 1
+		   }
+		}
+  
+		x = 10
+		y = 10
+
+	}
+
+	focus = {
+		id = HUN_artist_union
+		icon = GFX_HUN_artist_union
+		cost = 35
+		
+		prerequisite = {
+			focus = HUN_Legacy_of_Bohm
+		}		
+		
+	    completion_reward = {
+		country_event = {
+		id = hungarian.37
+		days = 1
+		   }
+		}
+  
+		x = 10
+		y = 9
+
+	}
+
+	focus = {
+		id = HUN_solve_general
+		icon = GFX_HUN_general_question
+		cost = 35
+		
+		prerequisite = {
+			focus = hun_collectivization
+		}		
+		
+	    completion_reward = {
+		country_event = {
+		id = hungarian.34
+		days = 1
+		   }
+		}
+  
+		x = 6
+		y = 8
+
+	}
+
+	focus = {
+		id = HUN_peoples_communes
+		icon = GFX_HUN_farm
+		cost = 35
+		
+		prerequisite = {
+			focus = HUN_compactions
+		}
+
+		prerequisite = {
+			focus = HUN_solve_general
+		}		
+		
+	    completion_reward = {
+		add_ideas = HUN_people_communes
+		   }
+  
+		x = 7
+		y = 9
+
+	}
+
+	focus = {
+		id = HUN_compactions
+		icon = GFX_HUN_compaction
+		cost = 35
+		
+		prerequisite = {
+			focus = hun_collectivization
+		}
+		
+	    completion_reward = {
+		}
+  
+		x = 8
+		y = 8
+
+	}
+
+	focus = {
+		id = HUN_hungary_moves_forward
+		icon = GFX_HUN_hungary_moves_forward
+		cost = 35
+		
+		prerequisite = {
+			focus = HUN_peoples_communes
+		}		
+		
+	    completion_reward = {
+		add_ideas = HUN_people_communes
+		   }
+  
+		x = 7
+		y = 10
+
+	}				
+	
 	focus = {
 		id = HUN_VAGO
 		icon = GFX_goal_unknown
@@ -721,7 +871,14 @@ focus_tree = {
 		prerequisite = {
 			focus = HUN_VAGO
 		}
-		x = 10
+		
+	    completion_reward = {
+		country_event = {
+		id = hungarian.32
+		days = 1
+		}
+     }	 
+		x = 17
 		y = 7
 
 	}
@@ -743,7 +900,15 @@ focus_tree = {
 		prerequisite = {
 			focus = HUN_VAGO
 		}
-		x = 16
+
+	    completion_reward = {
+		country_event = {
+		id = hungarian.33
+		days = 1
+		}
+     }		
+		
+		x = 15
 		y = 7
 
 	}
@@ -782,7 +947,7 @@ focus_tree = {
 		prerequisite = {
 			focus = new_program_party
 		}
-		x = 10
+		x = 17
 		y = 10
 
 	}
@@ -2625,53 +2790,66 @@ focus_tree = {
 		icon = GFX_hun_ban_oppostition
 		cost = 3
 		prerequisite = {
-			focus = HUN_INTERNPOLIT
+			focus = HUN_ESTABLISHPENAL
 		}
-		x = 4
+		x = 2
 		y = 8
 
 	}
 	focus = {
 		id = HUN_EXECUTEREFORMISTS
 		icon = GFX_hun_execute_reformists
-		cost = 3
+		cost = 35
 		prerequisite = {
-			focus = HUN_INTERNPOLIT
+			focus = HUN_ESTABLISHPENAL
 		}
-		x = 6
+		
+		completion_reward = {		
+			add_popularity = {
+			ideology = ss
+			popularity = -0.15
+			}
+		}		
+
+		x = 4
 		y = 8
 
 	}
 	
 	focus = {
 		id = HUN_RENEWTHERED
-		icon = GFX_goal_unknown
+		icon = GFX_HUN_renewthered
 		cost = 0
 		prerequisite = {
-			focus = HUN_MEMORYOFTHEREVOLU
+			focus = HUN_BLOCKLITERATU
 		}
+		
 		prerequisite = {
 			focus = HUN_INTERNPOLIT
-		}
+		}		
 		
 		completion_reward = {		
 		add_ideas = HUN_red_terror
 		}
 		
-		x = 8
-		y = 8
+		x = 3
+		y = 10
 
 	}
 	
 	focus = {
 		id = HUN_BLOCKLITERATU
 		icon = GFX_HUN_BLOCKLITERATU
-		cost = 3
+		cost = 28
 		prerequisite = {
 			focus = HUN_BANOPPOSITION
-			focus = HUN_EXECUTEREFORMISTS
 		}
-		x = 5
+		
+		completion_reward = {		
+		add_ideas = HUN_bourgeois_literature
+		}		
+		
+		x = 2
 		y = 9
 
 	}
@@ -2680,32 +2858,51 @@ focus_tree = {
 		icon = GFX_hun_establish_penal
 		cost = 5
 		prerequisite = {
-			focus = HUN_EXECUTEREFORMISTS
+			focus = HUN_BELAKUN
 		}
-		prerequisite = {
-			focus = HUN_RENEWTHERED
+		
+	    completion_reward = {
+		country_event = {
+		id = hungarian.30
+		days = 1
 		}
-		x = 7
-		y = 9
+     }		
+		
+		x = 3
+		y = 7
 
 	}
 	focus = {
 		id = HUN_THEFATHER
-		icon = GFX_goal_unknown
+		icon = GFX_father
 		cost = 10
+		
 		prerequisite = {
-			focus = HUN_BLOCKLITERATU
+			focus = HUN_RENEWTHERED
 		}
+
 		prerequisite = {
-			focus = HUN_ESTABLISHPENAL
+			focus = HUN_hungary_moves_forward
 		}
+
+		prerequisite = {
+			focus = HUN_Spartakiad
+		}		
+		
+	    completion_reward = {
+		country_event = {
+		id = hungarian.25
+		days = 1
+		}
+     }
+	 
 		x = 6
-		y = 10
+		y = 11
 
 	}
 	focus = {
 		id = HUN_FUNDANTIROMANI
-		icon = GFX_goal_unknown
+		icon = GFX_hun_finance_anti_romani
 		cost = 4
 		prerequisite = {
 			focus = HUN_CONTANTJACOB
@@ -2947,167 +3144,7 @@ focus_tree = {
 		y = 10
 
 	}
-	focus = {
-		id = hun_collectivize_hungary
-		icon = GFX_hun_collectivize_hungary
-		cost = 0
-		prerequisite = {
-			focus = hun_collectivization
-		}
-		
-		completion_reward = {
-		
-			add_stability = -0.01		
-		
-			155 = {
-				add_extra_state_shared_building_slots = 2
-			}
-
-			43 = {
-				add_extra_state_shared_building_slots = 2
-			}
-
-			154 = {
-				add_extra_state_shared_building_slots = 2
-			}						
-		  }
-			
-		x = 2
-		y = 8
-
-	}
-	focus = {
-		id = hun_collectivize_slovakia
-		icon = GFX_hun_collectivize_slovakia
-		cost = 0
-		prerequisite = {
-			focus = hun_collectivize_hungary
-		}
-		
-		completion_reward = {
-		
-			add_stability = -0.01		
-		
-			70 = {
-				add_extra_state_shared_building_slots = 2
-			}
-
-			71 = {
-				add_extra_state_shared_building_slots = 2
-			}
-
-			664 = {
-				add_extra_state_shared_building_slots = 2
-			}						
-		  }			
-		x = 2
-		y = 9
-
-	}
-	focus = {
-		id = hun_collectivize_romania
-		icon = GFX_hun_collectivize_romania
-		cost = 0
-		prerequisite = {
-			focus = hun_collectivize_slovakia
-		}
-		
-		completion_reward = {
-		
-			add_stability = -0.01		
-		
-			81 = {
-				add_extra_state_shared_building_slots = 2
-			}
-
-			46 = {
-				add_extra_state_shared_building_slots = 2
-			}
-
-			84 = {
-				add_extra_state_shared_building_slots = 2
-			}						
-		  }
-		  
-		x = 2
-		y = 10
-
-	}
-	focus = {
-		id = hun_collectivize_serbia
-		icon = GFX_hun_collectivize_serbia
-		cost = 0
-		prerequisite = {
-			focus = hun_collectivize_romania
-		}
-		
-		completion_reward = {
-		
-			add_stability = -0.01		
-		
-			107 = {
-				add_extra_state_shared_building_slots = 2
-			}						
-		  }
-		  
-		x = 4
-		y = 11
-
-	}
-	focus = {
-		id = hun_collectivize_bosnia
-		icon = GFX_hun_collectivize_bosnia
-		cost = 0
-		prerequisite = {
-			focus = hun_collectivize_romania
-		}
-		
-		completion_reward = {
-		
-			add_stability = -0.01		
-		
-			941 = {
-				add_extra_state_shared_building_slots = 2
-			}
-
-			943 = {
-				add_extra_state_shared_building_slots = 2
-			}
-
-			104 = {
-				add_extra_state_shared_building_slots = 2
-			}						
-		  }
-		  
-		x = 2
-		y = 11
-
-	}
-	focus = {
-		id = hun_collectivize_montenegro
-		icon = GFX_hun_collectivize_montenegro
-		cost = 0
-		prerequisite = {
-			focus = hun_collectivize_romania
-		}
-		
-		completion_reward = {
-		
-			add_stability = -0.01		
-		
-			105 = {
-				add_extra_state_shared_building_slots = 2
-			}
-
-			948 = {
-				add_extra_state_shared_building_slots = 2
-			}						
-		  }
-		  
-		x = 6
-		y = 11
-
-	}
+	
 	focus = {
 		id = hun_talk_with_france
 		icon = GFX_hun_talk_with_france

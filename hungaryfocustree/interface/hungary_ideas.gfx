@@ -43,6 +43,30 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_hun_united_country"
 		texturefile = "gfx/interface/ideas/hun_united_country.dds"
-	}	
+	}
+
+	spriteType = {
+		name = "GFX_idea_HUN_bourgeois_literature"
+		texturefile = "gfx/interface/ideas/HUN_bourgeois_literature.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HUN_martians"
+		texturefile = "gfx/interface/ideas/HUN_martians.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HUN_artist_union"
+		texturefile = "gfx/interface/ideas/HUN_artist_union.dds"
+	}
 	
+	spriteType = {
+		name = "GFX_idea_HUN_labor_camps"
+		texturefile = "gfx/interface/ideas/HUN_labor_camps.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HUN_farm"
+		texturefile = "gfx/interface/ideas/HUN_farm.dds"
+	}		
 }

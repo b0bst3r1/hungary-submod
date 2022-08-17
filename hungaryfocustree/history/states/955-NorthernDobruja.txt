@@ -1,0 +1,33 @@
+
+state={
+	id=955
+	name="STATE_955"
+	manpower = 82421
+	resources={
+                grain = 7
+	}
+
+	state_category = city
+
+	history={
+		owner = ROM
+		victory_points = { 657 5 }
+		victory_points = { 687 1 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			657 = {
+				naval_base = 8
+			}
+			687 = {
+				naval_base = 1
+			}
+			dockyard = 1
+		}
+		add_core_of = ROM
+	}
+
+	provinces={
+		657 9635 3076 687
+	}
+}

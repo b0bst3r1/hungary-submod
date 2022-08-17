@@ -550,17 +550,10 @@ country_event = {
 	
 	option = {
 		name = hungarian.11.a
-		
-			remove_ideas = {
-				remove_idea = HUN_BelaKun_FM
-				remove_idea = HUN_Garbai_IM				
-			}
 
 		    add_ideas = {
 	        HUN_Arpad_EM
 			HUN_Revai_HOG
-			HUN_Gyorgy_IM
-			HUN_Kunfi_FM
 			}
 		
 			hidden_effect = {
@@ -1315,6 +1308,14 @@ set_popularities = {
 	
 	option = {
 		name = hungarian.24.a
+		
+		add_popularity = {
+			ideology = jc
+			popularity = 0.05
+			}
+			
+			add_war_support = 0.1
+		}		
 
    }
   }
@@ -1329,6 +1330,10 @@ set_popularities = {
 	
 	option = {
 		name = hungarian.25.a
+		
+		add_stability = 0.1
+		popularity = 0.05
+		add_war_support = 0.1		
    }
   }
 
@@ -1342,6 +1347,9 @@ set_popularities = {
 	
 	option = {
 		name = hungarian.26.a
+		
+		add_stability = 0.05
+		
    }
   }
 
@@ -1411,6 +1419,229 @@ create_country_leader = {
 		}	
 	  }		
     }
-  }	
+  }
+
+     	   country_event = { #LaborCamps
+	id = hungarian.30
+	title = hungarian.30.t
+	desc = hungarian.30.d
+	picture = GFX_report_event_hun_929
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.30.a
+		
+			add_ideas = {
+            HUN_labor_camps
+			}		
+             }
+       }
+
+     	   country_event = { #Martians
+	id = hungarian.31
+	title = hungarian.31.t
+	desc = hungarian.31.d
+	picture = GFX_report_event_hun_925
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.31.a
+            
+			add_ideas = {
+            HUN_martians
+			}		
+         }
+      }
+	  
+     	   country_event = { #BelaKunTrial
+	id = hungarian.32
+	title = hungarian.32.t
+	desc = hungarian.32.d
+	picture = GFX_report_event_hun_925
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.32.a #Execute
+            
+			add_ideas = {
+			remove_idea = HUN_BelaKun_FM	
+			}
+			
+			remove_ideas = {			
+            remove_idea = HUN_Kunfi_FM
+			}			
+         }
+      }		 
+
+     	   country_event = { #GarbaiTrial
+	id = hungarian.33
+	title = hungarian.33.t
+	desc = hungarian.33.d
+	picture = GFX_report_event_hun_925
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.33.a #Execute
+            
+			add_ideas = {
+			HUN_Gyorgy_IM
+			}
+			
+			remove_ideas = {			
+            remove_idea = HUN_Garbai_IM	
+			}
+
+           retire_character = HUN_nagy
+		   retire_character = HUN_Karoly
+		   retire_character = HUN_Schon
+		   retire_character = HUN_tibor
+		   retire_character = HUN_farkas_mihaly
+		   retire_character = HUN_Gabor_Peter		   
+         }
+		 
+	option = {
+		name = hungarian.33.b #ExecuteAllButGenerals
+            
+			add_ideas = {
+			HUN_Gyorgy_IM
+			}
+			
+			remove_ideas = {			
+            remove_idea = HUN_Garbai_IM	
+			}		
+      
+	option = {
+		name = hungarian.33.c #Forgive	
+         }		 
+      }
+   }
+   
+     	   country_event = { #PurgeGeneralsBelaKun
+	id = hungarian.34
+	title = hungarian.34.t
+	desc = hungarian.34.d
+	picture = GFX_report_event_hun_926
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.34.a #ExecuteALl
+
+           retire_character = HUN_nagy
+		   retire_character = HUN_Karoly
+		   retire_character = HUN_Schon
+		   retire_character = HUN_tibor
+		   retire_character = HUN_farkas_mihaly
+		   retire_character = HUN_Gabor_Peter	
+           retire_character = HUN_ivan_hindy
+		   retire_character = HUN_Karoly_Bartha
+		   retire_character = HUN_Kornel_Radanyi
+		   retire_character = HUN_jeno_sarkany		   
+         }
+		 
+	option = {
+		name = hungarian.34.a #ExecuteEveryoneButSocialists
+		
+           retire_character = HUN_ivan_hindy
+		   retire_character = HUN_Karoly_Bartha
+		   retire_character = HUN_Kornel_Radanyi
+		   retire_character = HUN_jeno_sarkany		   
+         }		 
+	}
+	
+
+     	   country_event = { #Spartakiad 
+	id = hungarian.35
+	title = hungarian.35.t
+	desc = hungarian.35.d
+	picture = GFX_report_event_hun_930
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.35.a
+
+		hidden_effect = {
+		
+	    news_event = {
+	    id = hungary.16
+		days = 1
+		             }
+					 
+			random_list = {
+				45 = {
+					HUN = {
+						country_event = { days = 1 id = hungarian.36 }
+			            news_event = {
+			            id = hungary.17
+			            days = 1
+		                             }	
+					}
+				}
+				45 = {
+					JAP = {
+						country_event = { days = 1 id = hungarian.36 }
+			            news_event = {
+			            id = hungary.19
+			            days = 1
+		                             }						
+						
+					}
+				}
+				
+				10 = {
+					CRO = {
+						country_event = { days = 1 id = hungarian.36 }
+			            news_event = {
+			            id = hungary.18
+			            days = 1
+		                             }						
+					}
+				}				
+			 }
+		 }		
+      }
+   }
+
+     	   country_event = { #VictoryInSpartakiad
+	id = hungarian.36
+	title = hungarian.36.t
+	desc = hungarian.36.d
+	picture = GFX_report_event_hun_927
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.36.a
+            
+		add_stability = 0.05
+		add_war_support = 0.05			
+         }
+      }
+
+     	   country_event = { #ArtistUnion
+	id = hungarian.37
+	title = hungarian.37.t
+	desc = hungarian.37.d
+	picture = GFX_report_event_hun_928
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.37.a
+            
+			add_ideas = {
+            HUN_artist_union
+			}		
+         }
+      }	  
+	  
+	  
+
+	  
 
   
