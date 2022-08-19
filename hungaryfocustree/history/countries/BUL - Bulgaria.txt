@@ -63,19 +63,21 @@ add_ideas = {
 	PB_Market_Underperformance
 }
 
+set_cosmetic_tag = BUL_TSA
+
 set_popularities = {
-	ni = 28
-	ds = 7
-	rc = 7
-	cn = 58
-	lb = 0
+	ni = 25
+	ds = 40
+	rc = 3
+	cn = 25
+	lb = 7
 	an = 0
 	ss = 0
 	jc = 0
 }
 
 set_politics = {
-	ruling_party = cn
+	ruling_party = ds
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -97,9 +99,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "No Leader"
-	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	name = "Nikolay II"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "Portrait_BUL_Nikolay_II.dds"
 	ideology = DS_VARIANT_01
 }
 

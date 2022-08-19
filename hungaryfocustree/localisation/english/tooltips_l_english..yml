@@ -4,3 +4,6 @@
   HUN_Resistance_fifty:0 "\n\n§GResistance readiness is 50%§!"
   HUN_Resistance_seventyfive:0 "\n\n§GResistance readiness is 75%§!"
   HUN_Resistance_hundred:0 "\n\n§GResistance readiness is 100%§!"
+  HUN_Increase_prison_300:0 "§GIncrease the number of prisoners to 300,000§!"
+  HUN_Increase_prison_450:0 "§GIncrease the number of prisoners to 450,000§!"
+  russia_oil_romania:0 "\n\n§RRussia controls Romanian oil fields§!"

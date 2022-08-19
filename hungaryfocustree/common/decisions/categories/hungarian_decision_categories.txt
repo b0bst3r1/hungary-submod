@@ -1,0 +1,15 @@
+HUN_economic_dec = {
+	icon = generic_propaganda
+
+	picture = GFX_decision_cat_PB_FRA_European_Commonwealth_Picture
+
+	allowed = {
+		original_tag = HUN
+	}
+
+	visible = {
+		has_completed_focus = hun_collectivization
+	}
+
+	priority = 170
+}

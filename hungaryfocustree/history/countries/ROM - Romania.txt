@@ -1,5 +1,5 @@
 ﻿starting_train_buffer = 2
-capital = 46
+capital = 79
 
 oob = "ROM_PB"
 if = {
@@ -12,14 +12,26 @@ if = {
 	}
 }
 
-set_country_flag = Tag_in_French_Sphere
+set_country_flag = Tag_in_Russian_Sphere
+set_country_flag = Megacorp_Tesla_Dominant
+set_country_flag = PB_Russian_Autonomy
 
 # Accepted Cultures
 
-set_variable = { PB_main_culture = 54 }
-add_to_array = { PB_accepted_cultures = 54 }
+set_variable = { PB_main_culture = 442 }
+add_to_array = { PB_accepted_cultures = 61 }
+
+set_cosmetic_tag = ROM_RUS
 
 set_research_slots = 3
+
+add_to_farleft_coalition_jc = yes
+add_to_farleft_coalition_ss = yes
+add_to_farleft_coalition_lb = yes
+add_to_leading_coalition_ni = yes
+add_to_leading_coalition_ds = yes
+add_to_leading_coalition_rc = yes
+add_to_leading_coalition_cn = yes
 
 # Starting tech
 set_technology = { 
@@ -72,28 +84,34 @@ if = {
 }
 
 add_ideas = { 
+
+    ROM_russian_rule
+	ROM_political_turmoil
+	ROM_religious_divide
+	ROM_peasantry
+	
 	limited_conscription
-	PB_Universal_Citizenship
-	PB_Fully_Westernized
-	PB_Govidea_Mixed_Market_Capitalism
-	PB_Great_War_Military
-	PB_Limited_Censorship
-	PB_Public_Meetings_Allowed
-	PB_Parliamentary_Monarchy 
-	PB_NI_Order
-	PB_Limited_Womens_Rights
-	PB_Racial_Segregation
-	PB_Law_Intimidation_Policing
-    PB_8_Hour_Workday
-	PB_Basic_Healthcare
+	PB_NI_Imperialism
+	PB_Parliamentary_Republic
+	PB_Govidea_State_Capitalism
+	PB_Limited_Disenfranchisement
+	PB_State_Press
+	PB_Public_Meetings_Banned
+	PB_Patriarchal_Society
+	PB_Racial_Hierarchy
+	PB_Law_Secret_Police
+	PB_No_Limit_Workday
+	PB_No_Healthcare
 	PB_Basic_Education
 	PB_No_Welfare
-	PB_Trade_Unions_Banned
-	PB_Slavery_Abolished
-	PB_Significant_Poverty
+	PB_Sociogenetics_Allowed
+	PB_Augmentation_No_Legislation
+	PB_Widespread_Poverty
 	PB_Semi_Industrialized
-	PB_Minor_Illiteracy
-	PB_Middling_Consumer_Confidence
+	PB_Rampant_Illiteracy
+	PB_Stagnating_Growth
+	PB_Semi_Modern_Military
+	PB_Fully_Westernized
 	PB_HUN_Balkan_Powderkeg
 
 	ROM_PB_Gheorghe_HOG 
@@ -115,66 +133,66 @@ recruit_character = ROM_eugeniu_savulescu
 
 set_convoys = 25
 
-
-	set_popularities = {
-		ni = 36
-		ds = 8
-		rc = 6
-		cn = 15
-		lb = 26
-		an = 5
-		ss = 4
-		jc = 0
-		}
 set_politics = {
-	ruling_party = cn
+	ruling_party = RC
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
+    set_popularities = {
+        ni = 18
+        ds = 5
+        rc = 32
+        cn = 9
+        lb = 28
+        an = 0
+        ss = 7
+        jc = 1
+    }
+
+
 create_country_leader = {
-	name = "Michael I"
+	name = "Constantin Prezan"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I_YOUNG.dds"
+	picture = "gfx/leaders/ROM/Portrait_prezan.dds"
 	ideology = RC_VARIANT_01
 }
 
 create_country_leader = {
-	name = "Petru Groza"
+	name = "Ion G. Duca"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/ROM/Portrait_prezan.dds"
+	ideology = LB_VARIANT_01
+}
+
+create_country_leader = {
+	name = "Constantin Stere"
 	desc = ""
 	picture = "gfx/leaders/ROM/Portrait_petru_groza_romania.dds"
 	ideology = JC_VARIANT_01
 }
 
 create_country_leader = {
-	name = "Michael I"
+	name = "A.C. Cuza"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I_YOUNG.dds"
 	ideology = NI_VARIANT_01
 }
 
 create_country_leader = {
-	name = "Michael I"
+	name = "Constantin Prezan"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I_YOUNG.dds"
 	ideology = CN_VARIANT_01
 }
 
 create_country_leader = {
-	name = "Michael I"
+	name = "Constantin Prezan"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I_YOUNG.dds"
 	ideology = DS_VARIANT_01
 }
-
-create_country_leader = {
-	name = "Michael I"
-	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I_YOUNG.dds"
-	ideology = AN_VARIANT_01
-}
-
 
 ######################################################################################################## NAVY
 

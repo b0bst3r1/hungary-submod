@@ -34,6 +34,8 @@ set_convoys = 0
 
 set_country_flag = PB_WAR_SYSTEM_Slovakian_Revolution
 
+
+#CHARACTERS
 recruit_character = HUN_Rakosi
 recruit_character = HUN_Jozsef_Pogan
 recruit_character = HUN_Otto_Korvin
@@ -57,14 +59,20 @@ recruit_character = HUN_farkas_mihaly
 recruit_character = HUN_Gabor_Peter
 recruit_character = HUN_Erno_Gero
 
+
+set_cosmetic_tag = HUN_COM
+
 add_ideas = {
+
+    HUN_Low_Revolutionary_Zeal_Idea
+	
     HUN_diverse_general_staff
 	PB_HUN_Revolution_Home
 	HUN_Croatian_Support
 	PB_HUN_Collapsing_Government
 	PB_HUN_Ethnic_Tensions
     PB_HUN_Balkan_Powderkeg
-	HUN_United_Country
+	#HUN_United_Country
 
 	HUN_PB_Bohm_HOG
 	HUN_Garbai_IM
@@ -94,6 +102,11 @@ add_ideas = {
     PB_Semi_Industrialized
 	PB_Minor_Illiteracy
 	PB_Middling_Consumer_Confidence
+}
+
+set_variable = {
+	var = HUN_Revodlutionary_Zeal
+	value = 0.33
 }
 
 set_popularities = {
@@ -135,6 +148,9 @@ if = {
 }
 
 CRO = {
+
+set_cosmetic_tag = CRO_COM
+
 	set_politics = {
 		ruling_party = jc
 		last_election = "1936.1.1"
@@ -155,7 +171,7 @@ CRO = {
 }
 
 create_country_leader = {
-	name = "Böhm Vilmos"
+	name = "Vilmos Böhm"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "gfx/leaders/HUN/bohm.dds"
 	ideology = JC_VARIANT_01

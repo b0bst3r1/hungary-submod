@@ -7,15 +7,15 @@ state= {
 
 	history= {
 	
-		add_core_of = TUR
-		owner = TUR
+		add_core_of = GRE
+		owner = GRE
 
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			arms_factory = 1
 		}
-		add_claim_by = GRE
+		add_core_of = TUR
 	}
 	provinces=
 	{

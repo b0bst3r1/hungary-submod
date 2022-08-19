@@ -2,7 +2,7 @@
 state={
 	id=46
 	name="STATE_46" # Muntenia
-	manpower = 362343
+	manpower = 662343
 	resources={
 		oil=70
                 grain = 20

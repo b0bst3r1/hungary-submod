@@ -1,0 +1,29 @@
+state=
+{
+	id=964
+	name="STATE_964"
+	manpower = 251251
+	
+	state_category = rural
+	history=
+	{
+		owner = ROM
+		victory_points = { 3701 20 }
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			
+			657 = {
+				naval_base = 4
+				bunker = 5
+			}			
+		}
+		
+		add_core_of = ROM
+		add_claim_by = UKR		
+	}
+	provinces=
+	{
+   3724 3701 3704}
+}

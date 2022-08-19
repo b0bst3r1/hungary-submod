@@ -1,6 +1,8 @@
 ﻿starting_train_buffer = 2
 capital = 79
 
+set_country_flag = Tag_in_Russian_Sphere
+
 oob = "MRD_1933"
 
 # Starting tech

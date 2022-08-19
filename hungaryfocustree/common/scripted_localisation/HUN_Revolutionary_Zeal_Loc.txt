@@ -1,0 +1,34 @@
+defined_text = { 
+    name = get_HUN_Revolutionary_Zeal_Loc
+    
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Revolutionary_Zeal > 0.74 }
+                check_variable = { HUN_Revolutionary_Zeal = 0.74 }
+            }
+        }
+        localization_key = "HUN_High_Revolutionary_Zeal"
+    }
+    text = { 
+        trigger = {
+            AND = {
+                check_variable = { HUN_Revolutionary_Zeal < 0.74 }
+                check_variable = { HUN_Revolutionary_Zeal > 0.49 }
+            }
+        }
+        localization_key = "HUN_Medium_Revolutionary_Zeal"
+    }
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Revolutionary_Zeal < 0.49 }
+                check_variable = { HUN_Revolutionary_Zeal = 0.49 }
+            }
+        }
+        localization_key = "HUN_Low_Revolutionary_Zeal"
+    }
+
+    
+}
+

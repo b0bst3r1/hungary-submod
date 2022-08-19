@@ -1318,8 +1318,6 @@ set_popularities = {
 		}		
 
    }
-  }
-
      	   country_event = { #FATHEROFTHEREVOLUTION
 	id = hungarian.25
 	title = hungarian.25.t
@@ -1331,9 +1329,16 @@ set_popularities = {
 	option = {
 		name = hungarian.25.a
 		
+        custom_effect_tooltip = Revolutionary_Zeal_0.04_increase 		
+		
 		add_stability = 0.1
 		popularity = 0.05
-		add_war_support = 0.1		
+		add_war_support = 0.1
+		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = 0.04
+			}	
    }
   }
 
@@ -1347,6 +1352,13 @@ set_popularities = {
 	
 	option = {
 		name = hungarian.26.a
+		
+		custom_effect_tooltip = Revolutionary_Zeal_0.02_increase 
+		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = 0.02
+			}		
 		
 		add_stability = 0.05
 		

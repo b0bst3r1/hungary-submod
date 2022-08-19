@@ -902,3 +902,25 @@ TRA_CON = {
 	color_ui = rgb { 62 95 138 }
 }
 
+ROM_RUS = {
+	color = rgb { 49 127 67 }
+	color_ui = rgb { 49 127 67 }
+}
+
+BUL_TSA = {
+	color = rgb { 66 94 23 }
+	color_ui = rgb { 66 94 23 }
+}
+
+HUN_COM = {
+	color = rgb { 127 24 13 }
+	color_ui = rgb { 127 24 13 }
+}
+
+CRO_COM = {
+	color = rgb { 110 24 13 }
+	color_ui = rgb { 110 24 13 }
+}
+
+
+

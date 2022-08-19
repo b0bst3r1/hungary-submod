@@ -1,0 +1,19 @@
+## Bernie was here
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_PB_Culture_442"
+		texturefile = "gfx/interface/culture/Balkan/Wallachian.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_PB_Culture_443"
+		texturefile = "gfx/interface/culture/Balkan/Transylvanian.dds"
+	}
+
+	spriteType = {
+		name = "GFX_PB_Culture_444"
+		texturefile = "gfx/interface/culture/Balkan/serbocroatia.dds"
+	}	
+}

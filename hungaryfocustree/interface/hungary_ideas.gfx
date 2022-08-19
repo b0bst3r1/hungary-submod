@@ -68,5 +68,25 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_HUN_farm"
 		texturefile = "gfx/interface/ideas/HUN_farm.dds"
-	}		
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROM_russian_puppet"
+		texturefile = "gfx/interface/ideas/ROM_russian_puppet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROM_political_turmoil"
+		texturefile = "gfx/interface/ideas/ROM_political_turmoil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROM_religious_divide"
+		texturefile = "gfx/interface/ideas/ROM_religious_divide.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROM_peasantry"
+		texturefile = "gfx/interface/ideas/ROM_peasantry.dds"
+	}	
 }

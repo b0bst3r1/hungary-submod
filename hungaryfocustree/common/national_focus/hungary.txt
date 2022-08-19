@@ -613,27 +613,7 @@ focus_tree = {
 		y = 6
 
 	}
-	focus = {
-		id = HUN_CONTANTJACOB
-		icon = GFX_hun_contact_jacob
-		cost = 4
-		prerequisite = {
-			focus = HUN_BELAKUN
-		}
-		prerequisite = {
-			focus = HUN_BELAKUN
-		}
-		
-		completion_reward = {
-		
-			add_political_power = -100
-			custom_effect_tooltip = HUN_Resistance_twentyfive
-		}
-		
-		x = 0
-		y = 7
-
-	}
+	
 	focus = {
 		id = hun_collectivization
 		icon = GFX_hun_collectivization
@@ -659,10 +639,21 @@ focus_tree = {
 		prerequisite = {
 			focus = HUN_EXECUTEREFORMISTS
 		}
-		x = 4
-		y = 9
+		
+	    completion_reward = {		
+		hidden_effect = {
+		HUN = {
+		add_ideas = HUN_labor_camps_three
+		}
+      }		
 
-	}
+custom_effect_tooltip = HUN_Increase_prison_450
+		
+      }
+		
+		x = 3
+		y = 9
+   }
 	focus = {
 		id = HUN_MEMORYOFTHEREVOLU
 		icon = GFX_hun_memory_of_the_revulution
@@ -672,13 +663,21 @@ focus_tree = {
 		}
 		
 	    completion_reward = {
+		
+        custom_effect_tooltip = Revolutionary_Zeal_0.02_increase 		
+		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = 0.02
+			}	
+			
 		country_event = {
 		id = hungarian.24
 		hours = 6
 		}
      }		
 	 
-		x = 10
+		x = 9
 		y = 7
 
 	}
@@ -692,10 +691,18 @@ focus_tree = {
 		}
 		
 	    completion_reward = {
+		
+        custom_effect_tooltip = Revolutionary_Zeal_0.02_increase 		
+		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = 0.02
+			}
+			
 		set_province_name = { id = 11659 name = "Bohmvaros"}
 		}	
 	 
-		x = 10
+		x = 9
 		y = 8
 
 	}
@@ -720,7 +727,7 @@ focus_tree = {
 		   }
 		}
   
-		x = 10
+		x = 9
 		y = 10
 
 	}
@@ -741,7 +748,7 @@ focus_tree = {
 		   }
 		}
   
-		x = 10
+		x = 9
 		y = 9
 
 	}
@@ -762,7 +769,7 @@ focus_tree = {
 		   }
 		}
   
-		x = 6
+		x = 5
 		y = 8
 
 	}
@@ -784,7 +791,7 @@ focus_tree = {
 		add_ideas = HUN_people_communes
 		   }
   
-		x = 7
+		x = 6
 		y = 9
 
 	}
@@ -799,9 +806,66 @@ focus_tree = {
 		}
 		
 	    completion_reward = {
+		
+			43 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+					add_manpower = 40000				
+			}
+
+			154 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			add_manpower = 15000	
+			}
+
+			155 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+				add_manpower = 15000
+			}
+
+			70 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+				
+				add_manpower = 20000
+			}
+
+			764 = {
+				add_manpower = -30000
+			}
+			
+			71 = {
+				add_manpower = -25000
+			}
+			
+			664 = {
+				add_manpower = -15000
+			}
+			
+			73 = {
+				add_manpower = -20000
+			}			
 		}
   
-		x = 8
+		x = 7
 		y = 8
 
 	}
@@ -819,7 +883,7 @@ focus_tree = {
 		add_ideas = HUN_people_communes
 		   }
   
-		x = 7
+		x = 6
 		y = 10
 
 	}				
@@ -1907,30 +1971,7 @@ focus_tree = {
 		y = 5
 
 	}
-	focus = {
-		id = hun_stabilize_thefront
-		icon = GFX_hun_stabilize_thefront
-		cost = 0
-		prerequisite = {
-			focus = hun_forthemotherland
-			focus = hun_proletariat_reserves
-			focus = hun_laststand
-		}
-		x = 29
-		y = 6
-
-	}
-	focus = {
-		id = hun_reconquerourterritories
-		icon = GFX_hun_reconquerourterritories
-		cost = 0
-		prerequisite = {
-			focus = hun_stabilize_thefront
-		}
-		x = 29
-		y = 7
-
-	}
+	
 	focus = {
 		id = hun_spread_the_Revolution
 		icon = GFX_hun_spread_the_revolution
@@ -1996,17 +2037,7 @@ focus_tree = {
 		y = 2
 
 	}
-	focus = {
-		id = hun_Operation_Stromfeld
-		icon = GFX_hun_Operation_Stromfeld
-		cost = 0
-		prerequisite = {
-			focus = hun_reconquerourterritories
-		}
-		x = 31
-		y = 8
-
-	}
+	
 	focus = {
 		id = hun_fleet_development
 		icon = GFX_hun_fleet_development
@@ -2792,7 +2823,28 @@ focus_tree = {
 		prerequisite = {
 			focus = HUN_ESTABLISHPENAL
 		}
-		x = 2
+		
+	   completion_reward = {
+			add_popularity = {
+				ideology = ss
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = ni
+				popularity = -0.05
+			}
+		
+			add_popularity = {
+				ideology = ds
+				popularity = -0.05
+			}
+
+			add_popularity = {
+				ideology = jc
+				popularity = 0.15
+			}			
+		}
+		x = 1
 		y = 8
 
 	}
@@ -2804,14 +2856,29 @@ focus_tree = {
 			focus = HUN_ESTABLISHPENAL
 		}
 		
-		completion_reward = {		
+		completion_reward = {
+		
+		hidden_effect = {
+		HUN = {
+		
+		swap_ideas = {
+			remove_idea = add_ideas = HUN_labor_camps
+			add_idea = add_ideas = HUN_labor_camps_two
+			}		
+		}
+      }	  
+
+custom_effect_tooltip = HUN_Increase_prison_300
+		
 			add_popularity = {
 			ideology = ss
 			popularity = -0.15
+			
+			
 			}
 		}		
 
-		x = 4
+		x = 3
 		y = 8
 
 	}
@@ -2828,11 +2895,23 @@ focus_tree = {
 			focus = HUN_INTERNPOLIT
 		}		
 		
-		completion_reward = {		
+		completion_reward = {
+		
+		hidden_effect = {
+		HUN = {
+		swap_ideas = {
+			remove_idea = add_ideas = HUN_labor_camps_two
+			add_idea = add_ideas = HUN_labor_camps_three
+			}
+		}
+      }		
+
+custom_effect_tooltip = HUN_Increase_prison_450
+		
 		add_ideas = HUN_red_terror
 		}
 		
-		x = 3
+		x = 2
 		y = 10
 
 	}
@@ -2845,11 +2924,17 @@ focus_tree = {
 			focus = HUN_BANOPPOSITION
 		}
 		
-		completion_reward = {		
+		completion_reward = {
+
+		country_event = {
+		id = SocDev.6
+		hours = 6
+		}		
+		
 		add_ideas = HUN_bourgeois_literature
 		}		
 		
-		x = 2
+		x = 1
 		y = 9
 
 	}
@@ -2868,7 +2953,7 @@ focus_tree = {
 		}
      }		
 		
-		x = 3
+		x = 2
 		y = 7
 
 	}
@@ -2900,88 +2985,7 @@ focus_tree = {
 		y = 11
 
 	}
-	focus = {
-		id = HUN_FUNDANTIROMANI
-		icon = GFX_hun_finance_anti_romani
-		cost = 4
-		prerequisite = {
-			focus = HUN_CONTANTJACOB
-		}
-		
-		completion_reward = {
-		
-			add_political_power = -50
-			custom_effect_tooltip = HUN_Resistance_fifty
-		}
-		
-		x = 0
-		y = 8
-
-	}
-	focus = {
-		id = HUN_PREPAREARMED
-		icon = GFX_HUN_PREPAREARMED
-		cost = 4
-		prerequisite = {
-			focus = HUN_FUNDANTIROMANI
-		}
-		
-		completion_reward = {
-		
-		HUN = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -1000
-				producer = HUN
-			}
-		}
 	
-		custom_effect_tooltip = HUN_Resistance_seventyfive
-		}		
-		
-		x = 0
-		y = 9
-
-	}
-	focus = {
-		id = HUN_FOUNDREDFRONT
-		icon = GFX_HUN_FOUNDREDFRONT
-		cost = 4
-		prerequisite = {
-			focus = HUN_PREPAREARMED
-		}
-		
-		completion_reward = {
-
-        ROM = {		
-		add_ideas = ROM_translyvanian_resistance
-
-		remove_state_core = 76
-		remove_state_core = 84
-		add_state_claim = 84
-		add_state_claim = 76		
-		      }
-			  
-		custom_effect_tooltip = HUN_Resistance_hundred
-		
-		}
-		
-		x = 0
-		y = 10
-
-	}
-	
-	focus = {
-		id = hun_Cserny_operation
-		icon = GFX_hun_Cserny_operation
-		cost = 0
-		prerequisite = {
-			focus = hun_reconquerourterritories
-		}
-		x = 27
-		y = 8
-
-	}
 	focus = {
 		id = hun_startthe_fifth_5year_plan
 		icon = GFX_goal_unknown

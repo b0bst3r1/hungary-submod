@@ -1,0 +1,11 @@
+
+scripted_gui = {
+	HUN_Revolutionary_Zeal = {
+		context_type = player_context
+		window_name = "Revolutionary_Zeal_container"
+		visible = {
+			original_tag = HUN
+		}
+
+	}
+}
