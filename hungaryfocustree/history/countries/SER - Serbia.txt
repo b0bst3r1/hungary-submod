@@ -14,6 +14,7 @@ add_to_array = { PB_accepted_cultures = 50 }
 add_to_array = { PB_accepted_cultures = 52 }
 add_to_array = { PB_accepted_cultures = 45 }
 add_to_array = { PB_accepted_cultures = 53 }
+add_to_array = { PB_accepted_cultures = 444 }
 
 # Starting tech
 set_technology = { 
@@ -33,6 +34,11 @@ set_technology = {
 }
 
 add_ideas = {
+
+    SER_chetnik_issue
+	SER_ethnic_conflicts
+	SER_great_yug
+	
 	PB_HUN_Balkan_Powderkeg
 
 	limited_conscription
@@ -45,7 +51,7 @@ add_ideas = {
 	PB_Public_Meetings_Monitored
 	PB_Limited_Womens_Rights
 	PB_Limited_Autonomy
-	PB_Law_Prev_Policing
+	PB_Law_Prev_Policing	
 	PB_8_Hour_Workday
 	PB_Basic_Healthcare
 	PB_Basic_Education
@@ -83,11 +89,10 @@ set_politics = {
 	elections_allowed = no
 }
 
-
 create_country_leader = {
-	name = "Alexander I"
-	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "gfx/leaders/SER/Portrait_alexander.dds"
+	name = "Aleksandar I"
+	desc = "PB_SER_Alexander_I_DESC"
+	picture = "Portrait_SER_Alexander.dds"
 	ideology = DS_VARIANT_02
 }
 

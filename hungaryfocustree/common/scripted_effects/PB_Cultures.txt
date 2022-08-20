@@ -1,23 +1,6 @@
 
 PB_Setup_Cultures = {
 
-	### ---- Wallachian Culture ---- ###
-
-	81 = { set_variable = { culture_id = 442 } }
-	46 = { set_variable = { culture_id = 442 } }
-	955 = { set_variable = { culture_id = 442 } }	
-
-	### ---- Transylvanian Culture ---- ###
-	
-	84 = { set_variable = { culture_id = 443 } }
-	76 = { set_variable = { culture_id = 443 } }
-	83 = { set_variable = { culture_id = 443 } }
-	
-	### ---- Serbo-Croatian Culture ---- ###
-
-	959 = { set_variable = { culture_id = 444 } }
-	957 = { set_variable = { culture_id = 444 } }	
-
 	### ---- Londoner Culture ---- ###
 
 	126 = { set_variable = { culture_id = 31 } }
@@ -400,7 +383,9 @@ PB_Setup_Cultures = {
 	43 = { set_variable = { culture_id = 55 } }
 	155 = { set_variable = { culture_id = 55 } }
 	664 = { set_variable = { culture_id = 55 } }
-	82 = { set_variable = { culture_id = 55 } }	
+	82 = { set_variable = { culture_id = 55 } }
+    76 = { set_variable = { culture_id = 55 } }
+    83 = { set_variable = { culture_id = 55 } }		
 
 	### ---- Slovakian Culture ---- ###
 
@@ -1768,6 +1753,22 @@ PB_Setup_Cultures = {
     ### ---- Baltic-German ---- ###
 
 	#not at game start - used for Memel and Suvalkija ingame - culture_id = 441 USED
+	
+	### ---- Wallachian Culture ---- ###
+
+	81 = { set_variable = { culture_id = 442 } }
+	46 = { set_variable = { culture_id = 442 } }
+	955 = { set_variable = { culture_id = 442 } }
+    84 = { set_variable = { culture_id = 442 } }		
+
+	### ---- Transylvanian Culture ---- ###
+	
+     # DEAD #
+	
+	### ---- Serbo-Croatian Culture ---- ###
+
+	959 = { set_variable = { culture_id = 444 } }
+	957 = { set_variable = { culture_id = 444 } }	
 
 }
 

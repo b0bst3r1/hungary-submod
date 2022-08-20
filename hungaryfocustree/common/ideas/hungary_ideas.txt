@@ -70,7 +70,7 @@ hidden_ideas = {
 			}
 		}
 
-		PB_HUN_Collapsing_Government = {
+		HUN_Collapsing_Government = {
 			
 			
 			allowed = {

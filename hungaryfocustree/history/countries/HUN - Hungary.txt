@@ -62,14 +62,19 @@ recruit_character = HUN_Erno_Gero
 
 set_cosmetic_tag = HUN_COM
 
+set_variable = {
+	var = HUN_Revolutionary_Zeal
+	value = 0.5
+}
+
 add_ideas = {
 
-    HUN_Low_Revolutionary_Zeal_Idea
+    HUN_Med_Revolutionary_Zeal_Idea
 	
     HUN_diverse_general_staff
 	PB_HUN_Revolution_Home
 	HUN_Croatian_Support
-	PB_HUN_Collapsing_Government
+	HUN_Collapsing_Government
 	PB_HUN_Ethnic_Tensions
     PB_HUN_Balkan_Powderkeg
 	#HUN_United_Country
@@ -102,11 +107,6 @@ add_ideas = {
     PB_Semi_Industrialized
 	PB_Minor_Illiteracy
 	PB_Middling_Consumer_Confidence
-}
-
-set_variable = {
-	var = HUN_Revodlutionary_Zeal
-	value = 0.33
 }
 
 set_popularities = {

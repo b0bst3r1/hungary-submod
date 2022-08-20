@@ -348,6 +348,13 @@ PB_Set_Max_State_Focus = yes
 
 set_convoys = 366
 
+
+set_autonomy = {
+	target = BUL
+	autonomous_state = autonomy_Formal_Imperial_Autonomy
+	freedom_level = 0.8
+}
+
 set_autonomy = {
 	target = POL
 	autonomous_state = autonomy_PB_Imperial_Autonomy
@@ -523,6 +530,27 @@ ASK = {
         ss = 4
         jc = 4
     }
+}
+
+BUL = {
+
+set_politics = {
+	ruling_party = ds
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	ni = 14
+	ds = 21
+	rc = 16
+	cn = 12
+	lb = 15
+	an = 0
+	ss = 19
+	jc = 3
+                   }
 }
 
 ROM = {

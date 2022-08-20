@@ -88,5 +88,40 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ROM_peasantry"
 		texturefile = "gfx/interface/ideas/ROM_peasantry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BUL_support_imro"
+		texturefile = "gfx/interface/ideas/BUL_support_imro.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BUL_balkan_prussia"
+		texturefile = "gfx/interface/ideas/BUL_balkan_prussia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BUL_rus_influence"
+		texturefile = "gfx/interface/ideas/BUL_rus_influence.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BUL_unpopular_monarch"
+		texturefile = "gfx/interface/ideas/unpopular_monarch.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SER_chetnik"
+		texturefile = "gfx/interface/ideas/SER_chetnik.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_yug_idea"
+		texturefile = "gfx/interface/ideas/yug_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SER_ethnic_tension"
+		texturefile = "gfx/interface/ideas/SER_ethnic_tension.dds"
 	}	
 }

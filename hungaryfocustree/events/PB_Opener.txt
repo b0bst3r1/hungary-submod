@@ -28,12 +28,7 @@ country_event = { # Disable Super Event Audio
 
 		hidden_effect = {
 			country_event = { id = Opener.3 days = 0 }
-			
-				add_to_variable = {
-				var = HUN_Revolutionary_Zeal
-				value = 0.33
-			}
-			
+				
    	give_resource_rights = { 
 	receiver = RUS 
 	state = 46 }         			
@@ -51,15 +46,10 @@ country_event = { # Disable Super Event Audio
 
 		hidden_effect = {
 			country_event = { id = Opener.3 days = 0 }
-			
-				add_to_variable = {
-				var = HUN_Revolutionary_Zeal
-				value = 0.33
 				
 	give_resource_rights = { 
 	receiver = RUS 
-	state = 46 }				
-			}			
+	state = 46 }							
 		}
 
 		ai_chance = {
