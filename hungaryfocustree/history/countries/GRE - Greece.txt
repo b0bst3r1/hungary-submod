@@ -1,5 +1,5 @@
 ﻿starting_train_buffer = 2
-capital = 47
+capital = 341
 
 oob = "GRE_1933"
 
@@ -10,6 +10,7 @@ set_country_flag = Tag_in_Russian_Sphere
 set_variable = { PB_main_culture = 44 }
 add_to_array = { PB_accepted_cultures = 44 }
 add_to_array = { PB_accepted_cultures = 89 }
+add_to_array = { PB_accepted_cultures = 445 }
 
 # Starting tech
 set_technology = { 
@@ -36,6 +37,8 @@ add_ideas = {
 	GRE_PB_Dimitrios_Gounaris_HOG 
 	GRE_PB_Ioannis_Theotokis_ECM 
 	GRE_PB_Konstantinos_Georgakopoulos_FAM 
+	
+	GRE_second_rome
 
 	PB_GRE_Greece_Ascendant
 	PB_GRE_Russan_Economic_Dominance

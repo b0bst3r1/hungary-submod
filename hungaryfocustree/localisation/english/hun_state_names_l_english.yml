@@ -1,10 +1,10 @@
 ﻿l_english:
 
  STATE_103:0 "Dalmatia"
- STATE_104:0 "Hrvatska Bosna"
+ STATE_104:0 "Bosnia"
  STATE_954:0 "Srbska Bosna"
  STATE_955:0 "Northern Dobruja"
- STATE_956:0 "Bosnia"
+ STATE_956:0 "Hrvatska Bosna"
  STATE_957:0 "Slavonija"
  STATE_958:0 "Western Macedonia"
  STATE_959:0 "Southern Dalmatia"
@@ -12,4 +12,11 @@
  STATE_961:0 "Malit te Zi"
  STATE_962:0 "Maeander"
  STATE_963:0 "Sitia"
- STATE_964:0 "Smeilu"
+ STATE_964:0 "Izmail"
+ STATE_965:0 "Nikolaegrad"
+ STATE_966:0 "Gebze"
+ STATE_967:0 "Budapest"
+ STATE_968:0 "Düzce"
+ STATE_969:0 "Totlebensk"
+ 
+ 

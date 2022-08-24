@@ -1,6 +1,8 @@
 ﻿
 starting_train_buffer = 2
-capital = 43
+capital = 967
+
+set_country_flag = hungarian_starting
 
 oob = "HUN_PB"
 
@@ -10,6 +12,7 @@ set_variable = { PB_main_culture = 55 }
 add_to_array = { PB_accepted_cultures = 55 }
 add_to_array = { PB_accepted_cultures = 46 }
 add_to_array = { PB_accepted_cultures = 57 }
+add_to_array = { PB_accepted_cultures = 446 }
 
 # Starting tech
 set_technology = { 
@@ -63,13 +66,89 @@ recruit_character = HUN_Erno_Gero
 set_cosmetic_tag = HUN_COM
 
 set_variable = {
+	var = hungarian_unrest_stability_variable
+	value = -0.04
+}
+set_variable = {
+	var = hungarian_unrest_political_power_variable
+	value = -0.04
+}
+set_variable = {
+	var = banat_unrest_stability_variable
+	value = -0.04
+}
+set_variable = {
+	var = banat_unrest_political_power_variable
+	value = -0.04
+}
+
+set_variable = {
+	var = ruthenia_unrest_stability_variable
+	value = -0.04
+}
+set_variable = {
+	var = ruthenia_unrest_political_power_variable
+	value = -0.04
+}
+
+set_variable = {
+	var = slovakia_unrest_stability_variable
+	value = -0.04
+}
+set_variable = {
+	var = slovakia_unrest_political_power_variable
+	value = -0.04
+}
+
+set_variable = {
+	var = transylvania_unrest_stability_variable
+	value = -0.04
+}
+set_variable = {
+	var = transylvania_unrest_political_power_variable
+	value = -0.04
+}
+
+set_variable = { var = HUN_Hungarian_Unrest value = 20 }
+set_variable = { var = HUN_banat_Unrest value = 15 }
+set_variable = { var = HUN_ruthenia_Unrest value = 15 }
+set_variable = { var = HUN_slovakia_Unrest value = 25 }
+set_variable = { var = HUN_transylvania_Unrest value = 15 }
+
+set_variable = {
 	var = HUN_Revolutionary_Zeal
 	value = 0.5
+}
+
+set_variable = {
+	var = HUN_revival_stage_one
+	value = 0.0
+}
+
+set_variable = {
+	var = HUN_revival_stage_two
+	value = 0.0
+}
+
+set_variable = {
+	var = HUN_revival_stage_three
+	value = 0.0
+}
+
+set_variable = {
+	var = HUN_revival_stage_four
+	value = 0.0
+}
+
+set_variable = {
+	var = HUN_PartyUnity
+	value = 0.3
 }
 
 add_ideas = {
 
     HUN_Med_Revolutionary_Zeal_Idea
+	HUN_Low_Party_Unity_Idea
 	
     HUN_diverse_general_staff
 	PB_HUN_Revolution_Home

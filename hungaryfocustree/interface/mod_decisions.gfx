@@ -1,0 +1,7 @@
+spriteTypes = {	
+
+    spriteType = {
+		name = "GFX_decision_revive"
+		texturefile = "gfx/interface/decisions/revive.dds"
+	}
+}

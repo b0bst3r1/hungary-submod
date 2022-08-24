@@ -22,7 +22,21 @@ defined_text = {
             check_variable = { culture_id = 444 }
         }
         localization_key = "PB_Culture_SerboCroatian_tt"
-    }	
+    }
+
+	text = { 
+        trigger = {
+            check_variable = { culture_id = 445 }
+        }
+        localization_key = "PB_Culture_GrekoTurkish_tt"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { culture_id = 446 }
+        }
+        localization_key = "PB_Culture_Danubian_tt"
+		   }
 
     # BRITAIN #
 	
@@ -1923,8 +1937,22 @@ defined_text = {
             check_variable = { culture_id = 444 }
         }
         localization_key = "PB_Culture_SerboCroatian_tt_delayed"
+    }
+	
+    text = { 
+        trigger = {
+            check_variable = { culture_id = 445 }
+        }
+        localization_key = "PB_Culture_GrekoTurkish_tt_delayed"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { culture_id = 446 }
+        }
+        localization_key = "PB_Culture_Danubian_tt_delayed"
     }	
- 
+
     # BRITAIN #
 	
     text = { 

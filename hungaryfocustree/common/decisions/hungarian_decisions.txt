@@ -164,5 +164,41 @@ HUN_economic_dec = {
 				add_extra_state_shared_building_slots = 2
 			}
 		}
+	}
+}
+
+HUN_unrest_mechanic = {
+
+	HUN_unrest_remove = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		original_tag = HUN
+		}
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+		add_stability = -0.02
+			701 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			43 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			155 = {
+				add_extra_state_shared_building_slots = 2
+			}			
+			
+		}
 	}	
  }

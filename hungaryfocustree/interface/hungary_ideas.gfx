@@ -123,5 +123,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_SER_ethnic_tension"
 		texturefile = "gfx/interface/ideas/SER_ethnic_tension.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GRE_constantinoples"
+		texturefile = "gfx/interface/ideas/GRE_constantinoples.dds"
 	}	
 }

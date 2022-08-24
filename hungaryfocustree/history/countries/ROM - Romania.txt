@@ -118,8 +118,8 @@ add_ideas = {
 	ROM_PB_Gheorghe_HOG 
 	ROM_PB_Gheorghe_IM
 }
-set_stability = 0.5
-set_war_support = 0.1
+set_stability = 0.8
+set_war_support = 0.4
 
 recruit_character = ROM_ion_antonescu
 recruit_character = ROM_nicolae_samsonovici

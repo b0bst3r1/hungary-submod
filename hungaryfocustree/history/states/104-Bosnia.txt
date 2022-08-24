@@ -4,7 +4,6 @@ state={
 	name="STATE_104"
 	manpower =721321
 	
-	
 	state_category = town
 	
 	resources={
@@ -13,18 +12,21 @@ state={
 
 	history={
 		owner = SER
-		
+		victory_points = {
+			6983 2 
+		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
 			air_base = 2
 		}
 		add_core_of = BOS
-		add_core_of = CRO
+		add_claim_by = CRO
 		add_claim_by = SER
 	}
 
 	provinces={
-		3985 6614 6619 6957 9586 9588
+		6983 9922 11872 11572 6799 
 	}
-}
+}	
+	

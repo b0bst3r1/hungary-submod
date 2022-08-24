@@ -1,0 +1,30 @@
+##################
+##GREECEmodIDEAS#
+##################
+
+ideas = {
+
+      country = {
+	  
+		GRE_second_rome = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+                        picture = GRE_constantinoples
+			
+			removal_cost = -1
+	
+			modifier = {
+                        stability_factor = 0.1
+                        army_core_defence_factor = 0.1    						
+			}
+		}
+	}	
+ }	

@@ -15,6 +15,23 @@
   Revolutionary_Zeal_0.02_increase:0 "Revolutionary Zeal: §G+2%§!."
   Revolutionary_Zeal_0.04_increase:0 "Revolutionary Zeal: §G+4%§!."
   Revolutionary_Zeal_0.06_increase:0 "Revolutionary Zeal: §G+6%§!."
+  
+  
+  #Party Unity#
+  HUN_High_Party_Unity:0 "§GUnity§!"
+  HUN_Medium_Party_Unity:0 "§HMedium§!"
+  HUN_Low_Party_Unity:0 "§RDivided§!"  
+  PartyUnity_tt:0 "§ORevolutionary Zeal§! is currently at [?HUN_PartyUnity|%0]"
+  PartyUnity_tt_delayed:0 "The people of Hungary should not forget the 1912 revolution, honouring its heroes and the main founder of the Hungarian People's Republic, Vilmos Böhm. The foreign imperialists are trying in every way to suppress Hungary, but in spite of this we must continue the cause of the revolution.\n\nDepending on your level of Revolutionary Zeal various military modifers will apply. The Revolutionary Zeal modifier will also tick down by a variable of §R-1§! every month so be sure to keep it maintained!\n\nThese modifiers adjust §YMonthly§! and are as follows:\n\nLow Revolutionary Zeal:\n      Monthly Population: §R-5.00%§!\n      Surrender Limit: §R-5.00%§!\n      Recruitable Population Factor: §R-3.00%§!\n      Division Defense On Core Territory: §R-5.00%§!\n      Division Attack On Core Territory: §R-5.00%§!\n\nMedium Revolutionary Zeal:\n      Monthly Population: §G+5.00%§!\n      Surrender Limit: §G+5.00%§!\n      Recruitable Population Factor: §G+1.00%§!\n      Division Defense On Core Territory: §G+5.00%§!\n      Division Attack On Core Territory: §G+5.00%§!\n\nHigh Revolutionary Zeal       :\n      Monthly Population: §G+10.00%§!\n      Surrender Limit: §G+10.00%§!\n      Recruitable Population Factor: §G+3.00%§!\n      Division Defense On Core Territory: §G+15.00%§!\n      Division Attack On Core Territory: §G+15.00%§!"
+  HUN_High_Party_Unity_Idea:0 "Party is United" 
+  HUN_Med_Party_Unity_Idea:0 "Medium Party Unity"
+  HUN_Low_Party_Unity_Idea:0 "The party is split"
+  HUN_PartyUnity_0.02_decrease:0 "Party Unity: §R-2%§!."
+  HUN_PartyUnity_0.04_decrease:0 "Party Unity: §R-4%§!."
+  HUN_PartyUnity_0.06_decrease:0 "Party Unity: §R-6%§!."
+  HUN_PartyUnity_0.02_increase:0 "Party Unity: §G+2%§!."
+  HUN_PartyUnity_0.04_increase:0 "Party Unity: §G+4%§!."
+  HUN_PartyUnity_0.06_increase:0 "Party Unity: §G+6%§!."
 
 
   

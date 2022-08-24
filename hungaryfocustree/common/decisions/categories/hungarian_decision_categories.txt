@@ -1,5 +1,5 @@
 HUN_economic_dec = {
-	icon = generic_propaganda
+	icon = generic_economy
 
 	picture = GFX_decision_cat_PB_FRA_European_Commonwealth_Picture
 
@@ -12,4 +12,38 @@ HUN_economic_dec = {
 	}
 
 	priority = 170
+}
+
+HUN_unrest_mechanic = {
+	icon = usa_congress
+	
+	allowed = {
+		original_tag = HUN
+	}
+
+	visible = {
+			has_country_flag = hungarian_starting
+        }
+		
+    scripted_gui = HUN_unrest_mechanic_Scripted_GUI			
+
+	picture = GFX_decision_cat_GER_Federation_Picture
+
+	priority = 250
+}
+
+HUN_revive_body = {
+	icon = generic_economy
+
+	picture = GFX_decision_revive
+
+	allowed = {
+		original_tag = HUN
+	}
+
+	visible = {
+			has_country_flag = hungarian_starting
+        }
+
+	priority = 75
 }

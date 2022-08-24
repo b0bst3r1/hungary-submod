@@ -48,10 +48,28 @@ scripted_map_modes = {
 						limit = {
 						check_variable = { culture_id = 444 }
 						}
-						set_temp_variable = { red = 0.412 }
-						set_temp_variable = { green = 0.384 }
-						set_temp_variable = { blue = 0.498 }
-					}	
+						set_temp_variable = { red = 0.6 }
+						set_temp_variable = { green = 0.4 }
+						set_temp_variable = { blue = 0.6 }
+					}
+
+					else_if = {
+						limit = {
+						check_variable = { culture_id = 445 }
+						}
+						set_temp_variable = { red = 0.388 }
+						set_temp_variable = { green = 0.486 }
+						set_temp_variable = { blue = 0.5 }
+					}
+
+					else_if = {
+						limit = {
+						check_variable = { culture_id = 446 }
+							}
+						set_temp_variable = { red = 0.8 }
+						set_temp_variable = { green = 0.2 }
+						set_temp_variable = { blue = 0.245 }
+					}					
 					
 					else_if = {
 						limit = {

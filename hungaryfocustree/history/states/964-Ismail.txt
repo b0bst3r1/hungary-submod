@@ -7,8 +7,9 @@ state=
 	state_category = rural
 	history=
 	{
-		owner = ROM
-		victory_points = { 3701 20 }
+		owner = RUS
+		add_core_of = RUS
+		victory_points = { 3701 11 }
 		
 		buildings = {
 			infrastructure = 4
@@ -21,7 +22,7 @@ state=
 		}
 		
 		add_core_of = ROM
-		add_claim_by = UKR		
+		add_core_of = UKR	
 	}
 	provinces=
 	{

@@ -1,0 +1,272 @@
+@SENATE_TEXT_X = 16
+@HOUSE_TEXT_X = 212
+@HEADERS_Y = 67
+@STATUS_Y = 52
+guiTypes = {
+
+	containerWindowType = {
+		name = "HUN_Unrest_Mechanic_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 270 }
+
+
+		containerWindowType = {
+			name = "HUN_Unrest_Mechanic_Map"
+			position = { x = -4  y = 40 }
+
+		    iconType = {
+		    	name ="HUN_State_Outline"
+		    	spriteType = "GFX_HUN_State_Outline"
+		    	position = { x= 160 y = -200 }
+		    }
+
+		    buttonType = {
+		    	name ="HUN_Hungary_color"
+		    	spriteType = "GFX_HUN_Hungary_color"
+		    	position = { x= 231 y = -135 }
+		    	pdx_tooltip = "HUN_Hungarian_button_tt"
+		    }
+
+		    buttonType = {
+		    	name ="HUN_Slovakia_color"
+		    	spriteType = "GFX_HUN_Slovakia_color"
+		    	position = { x= 200 y = -106 }
+		    	pdx_tooltip = "GER_Slovak_button_tt"
+		    }
+
+		    buttonType = {
+		    	name ="HUN_Banat_Color"
+		    	spriteType = "GFX_Banat_color"
+		    	position = { x= 171 y = -140 }
+		    	pdx_tooltip = "HUN_Banat_button_tt"
+		    }
+
+		    buttonType = {
+		    	name ="HUN_Transylvania_color"
+		    	spriteType = "GFX_Transylvania_color"
+		    	position = { x= 186 y = -165 }
+		    	pdx_tooltip = "HUN_Transylvania_button_tt"
+		    }
+
+		    buttonType = {
+		    	name ="HUN_Ruthenia_color"
+		    	spriteType = "GFX_Ruthenia_color"
+		    	position = { x= 236 y = -132 }
+		    	pdx_tooltip = "HUN_Ruthenian_button_tt"
+		    }
+		}
+		
+		containerWindowType = {
+			name = "HUN_centralization_info_container"
+			position = { x = -4 y = 64 }
+			size = { width = 500 height = 210 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_bg"
+			}	
+
+			instantTextboxType = {
+				name = "HUN_centralization_no_info"
+				position = { x = 115 y = 75 }
+				font = "hoi_36header"
+				text = "–√“_centralization_no_info"
+				format = center
+				maxWidth = 300
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "HUN_centralization_unrest_info"
+				position = { x = -50 y = 86 }
+				font = "hoi_30header"
+				text = "HUN_centralization_unrest_info"
+				format = center
+				maxWidth = 300
+				fixedsize = yes
+				maxHeight = 100
+			}
+			
+			instantTextboxType = {
+				name = "HUN_centralization_unrest_impact_info"
+				position = { x = -50 y = 133 }
+				font = "hoi_30header"
+				text = "HUN_centralization_unrest_impact_info"
+				format = center
+				maxWidth = 300
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "centralization_hungary_text_title"
+				position = { x = 160 y = 20 }
+				font = "hoi_30header"
+				text = "HUN_hungary_Text"
+				format = center
+				maxWidth = 200
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "centralization_banat_text_title"
+				position = { x = 160 y = 20 }
+				font = "hoi_30header"
+				text = "HUN_banat_Text"
+				format = center
+				maxWidth = 200
+				fixedsize = yes
+				maxHeight = 100
+			}
+			
+			instantTextboxType = {
+				name = "centralization_slovakia_text_title"
+				position = { x = 160 y = 20 }
+				font = "hoi_30header"
+				text = "HUN_slovakia_Text"
+				format = center
+				maxWidth = 200
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "centralization_ruthenia_text_title"
+				position = { x = 160 y = 20 }
+				font = "hoi_30header"
+				text = "HUN_ruthenia_Text"
+				format = center
+				maxWidth = 200
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "centralization_transylvania_text_title"
+				position = { x = 160 y = 20 }
+				font = "hoi_30header"
+				text = "HUN_transylvania_Text"
+				format = center
+				maxWidth = 200
+				fixedsize = yes
+				maxHeight = 100
+			}			
+             
+            #UnrestNumbersfortheDifferentStates
+
+			instantTextboxType = {
+				name = "unrest_in_hungary"
+				position = { x = 160 y = 86 }
+				font = "hoi_36header"
+				text = "HUN_unrest_in_hungary"
+				format = center
+				maxWidth = 200
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "unrest_in_banat"
+				position = { x = 160 y = 86 }
+				font = "hoi_36header"
+				text = "HUN_unrest_in_banat"
+				format = center
+				maxWidth = 200
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "unrest_in_transylvania"
+				position = { x = 160 y = 86 }
+				font = "hoi_36header"
+				text = "HUN_unrest_in_transylvania"
+				format = center
+				maxWidth = 200
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "unrest_in_slovakia"
+				position = { x = 160 y = 86 }
+				font = "hoi_36header"
+				text = "HUN_unrest_in_slovakia"
+				format = center
+				maxWidth = 200
+				fixedsize = yes
+				maxHeight = 100
+			}
+			
+			instantTextboxType = {
+				name = "unrest_in_ruthenia"
+				position = { x = 160 y = 86 }
+				font = "hoi_36header"
+				text = "HUN_unrest_in_ruthenia"
+				format = center
+				maxWidth = 200
+				fixedsize = yes
+				maxHeight = 100
+			}			
+
+			#UnrestImpactfortheDifferentStates
+
+			instantTextboxType = {
+				name = "unrest_impact_hungary"
+				position = { x = 15 y = 129 }
+				font = "hoi_36header"
+				text = "HUN_unrest_impact_hungary"
+				format = center
+				maxWidth = 500
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "unrest_impact_banat"
+				position = { x = 15 y = 129 }
+				font = "hoi_36header"
+				text = "HUN_unrest_impact_banat"
+				format = center
+				maxWidth = 500
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "unrest_impact_transylvania"
+				position = { x = 15 y = 129 }
+				font = "hoi_36header"
+				text = "HUN_unrest_impact_transylvania"
+				format = center
+				maxWidth = 500
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "unrest_impact_ruthenia"
+				position = { x = 15 y = 129 }
+				font = "hoi_36header"
+				text = "HUN_unrest_impact_ruthenia"
+				format = center
+				maxWidth = 500
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "unrest_impact_slovakia"
+				position = { x = 15 y = 129 }
+				font = "hoi_36header"
+				text = "GER_unrest_impact_slovakia"
+				format = center
+				maxWidth = 500
+				fixedsize = yes
+				maxHeight = 100
+			}		
+	   }
+	}
+}
