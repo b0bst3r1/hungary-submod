@@ -1,0 +1,81 @@
+  ###############
+  ##NEWS#EVENTS##
+  ###############
+
+add_namespace = greec
+
+	news_event = {		
+	id = greec.1
+	title = greec.1.t
+	desc = greec.1.d
+	picture = GFX_news_event_hun_904
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = greec.1.a
+	}
+        }
+
+	news_event = {		#GREATELLADA
+	id = greec.2
+	title = greec.2.t
+	desc = greec.2.d
+	picture = GFX_news_event_hun_917
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = greec.2.a
+	}
+        }
+
+	news_event = {	#MILITARYCOUP	
+	id = greec.3
+	title = greec.3.t
+	desc = greec.3.d
+	picture = GFX_news_event_hun_918
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = greec.3.a
+	}
+        }
+
+	news_event = {	#BRITISHINTERVANTION
+	id = greec.4
+	title = greec.4.t
+	desc = greec.4.d
+	picture = GFX_news_event_hun_919
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = greec.4.a
+	}
+        }
+
+	news_event = {	#HUNGARIANINVADE
+	id = greec.5
+	title = greec.5.t
+	desc = greec.5.d
+	picture = GFX_news_event_hun_920
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = greec.5.a
+	}
+        } 		
+		

@@ -1,0 +1,15 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			HUN = {
+				country_event = { 	#HungarianRevolutionDay
+					id = hungarian.26
+					days = 346
+				}
+			}
+		}
+	}
+  }
+  
+  

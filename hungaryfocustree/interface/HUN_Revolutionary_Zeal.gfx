@@ -1,0 +1,7 @@
+spriteTypes = {
+
+SpriteType = {
+	name = "GFX_HUN_Revolutionary_Zeal_icon"
+	texturefile = "gfx/interface/HUN_Revolutionary_Zeal.dds"
+}
+}

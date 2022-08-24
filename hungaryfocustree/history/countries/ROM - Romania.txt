@@ -1,0 +1,252 @@
+﻿starting_train_buffer = 2
+capital = 79
+
+oob = "ROM_PB"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "ROM_1936_naval_mtg"
+	else = {
+		set_naval_oob = "ROM_1933_naval"
+	}
+}
+
+set_country_flag = Tag_in_Russian_Sphere
+set_country_flag = Megacorp_Tesla_Dominant
+set_country_flag = PB_Russian_Autonomy
+
+# Accepted Cultures
+
+set_variable = { PB_main_culture = 61 }
+add_to_array = { PB_accepted_cultures = 61 }
+add_to_array = { PB_accepted_cultures = 442 }
+
+set_cosmetic_tag = ROM_RUS
+
+set_research_slots = 3
+
+add_to_farleft_coalition_jc = yes
+add_to_farleft_coalition_ss = yes
+add_to_farleft_coalition_lb = yes
+add_to_leading_coalition_ni = yes
+add_to_leading_coalition_ds = yes
+add_to_leading_coalition_rc = yes
+add_to_leading_coalition_cn = yes
+
+# Starting tech
+set_technology = { 
+	infantry_rations = 1
+	basic_train = 1
+	infantry_weapons1930 = 1
+	infantry_weapons1933 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	fuel_silos = 1
+
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+	}
+}
+
+add_ideas = { 
+
+    ROM_russian_rule
+	ROM_political_turmoil
+	ROM_religious_divide
+	ROM_peasantry
+	
+	limited_conscription
+	PB_NI_Imperialism
+	PB_Parliamentary_Republic
+	PB_Govidea_State_Capitalism
+	PB_Limited_Disenfranchisement
+	PB_State_Press
+	PB_Public_Meetings_Banned
+	PB_Patriarchal_Society
+	PB_Racial_Hierarchy
+	PB_Law_Secret_Police
+	PB_No_Limit_Workday
+	PB_No_Healthcare
+	PB_Basic_Education
+	PB_No_Welfare
+	PB_Sociogenetics_Allowed
+	PB_Augmentation_No_Legislation
+	PB_Widespread_Poverty
+	PB_Semi_Industrialized
+	PB_Rampant_Illiteracy
+	PB_Stagnating_Growth
+	PB_Semi_Modern_Military
+	PB_Fully_Westernized
+	PB_HUN_Balkan_Powderkeg
+
+	ROM_PB_Gheorghe_HOG 
+	ROM_PB_Gheorghe_IM
+}
+set_stability = 0.8
+set_war_support = 0.4
+
+recruit_character = ROM_ion_antonescu
+recruit_character = ROM_nicolae_samsonovici
+recruit_character = ROM_gheorghe_mihail
+recruit_character = ROM_alexandru_ioanitiu
+recruit_character = ROM_ioan_racovita
+recruit_character = ROM_petre_dumitrescu
+recruit_character = ROM_gheorghe_avramescu
+recruit_character = ROM_ilie_steflea
+recruit_character = ROM_horia_macellariu
+recruit_character = ROM_eugeniu_savulescu
+
+set_convoys = 25
+
+set_politics = {
+	ruling_party = RC
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+    set_popularities = {
+        ni = 18
+        ds = 5
+        rc = 32
+        cn = 9
+        lb = 28
+        an = 0
+        ss = 7
+        jc = 1
+    }
+
+
+create_country_leader = {
+	name = "Constantin Prezan"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/ROM/Portrait_prezan.dds"
+	ideology = RC_VARIANT_01
+}
+
+create_country_leader = {
+	name = "Ion G. Duca"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/ROM/Portrait_prezan.dds"
+	ideology = LB_VARIANT_01
+}
+
+create_country_leader = {
+	name = "Constantin Stere"
+	desc = ""
+	picture = "gfx/leaders/ROM/Portrait_petru_groza_romania.dds"
+	ideology = JC_VARIANT_01
+}
+
+create_country_leader = {
+	name = "A.C. Cuza"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I_YOUNG.dds"
+	ideology = NI_VARIANT_01
+}
+
+create_country_leader = {
+	name = "Constantin Prezan"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I_YOUNG.dds"
+	ideology = CN_VARIANT_01
+}
+
+create_country_leader = {
+	name = "Constantin Prezan"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I_YOUNG.dds"
+	ideology = DS_VARIANT_01
+}
+
+######################################################################################################## NAVY
+
+create_equipment_variant = {
+	name = "Vifor Class"
+	type = ship_hull_light_1
+	#name_group = GER_TB_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = ship_mine_layer_1
+		rear_1_custom_slot = ship_mine_layer_1
+	}
+	obsolete = no
+}
+create_equipment_variant = {
+	name = "Regele Ferdinand Class"
+	type = ship_hull_light_2
+	#name_group = GER_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = ship_sonar_1
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = ship_depth_charge_1
+		rear_1_custom_slot = ship_mine_layer_1
+	}
+	obsolete = no
+}
+create_equipment_variant = {
+	name = "Scout Cruiser Class"
+	type = ship_hull_cruiser_2
+	#name_group = GER_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = ship_sonar_1
+		fixed_ship_engine_slot = cruiser_ship_engine_2
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		front_1_custom_slot = ship_light_medium_battery_1
+		mid_1_custom_slot = ship_airplane_launcher_1
+		mid_2_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_anti_air_1
+	}
+	obsolete = no
+}

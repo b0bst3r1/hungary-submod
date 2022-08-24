@@ -1,0 +1,78 @@
+spriteTypes = {	
+
+
+    spriteType = {
+		name = "GFX_idea_HUN_BelaKun_FM"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Foreign_Minister/Hungary/HUN_BelaKun_FM.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_idea_HUN_Vago_EM"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Economy_Minister/Hungary/HUN_Vago_EM.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_HUN_Garbai_IM"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Internal_Minister/Hungary/HUN_Garbai_IM.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_idea_HUN_Nagy_EM"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Economy_Minister/Hungary/HUN_Nagy_EM.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_idea_HUN_Munnich_FM"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Foreign_Minister/Hungary/HUN_Munnich_FM.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_idea_HUN_Erno_IM"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Internal_Minister/Hungary/HUN_Erno_IM.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_idea_HUN_Hamburger_FM"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Foreign_Minister/Hungary/HUN_Hamburger_FM.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_HUN_Gyula_IM"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Internal_Minister/Hungary/HUN_Gyula_IM.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_idea_HUN_Varga_EM"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Economy_Minister/Hungary/HUN_Varga_EM.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_HUN_Arpad_EM"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Economy_Minister/Hungary/HUN_Arpad_EM.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_HUN_Kunfi_FM"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Foreign_Minister/Hungary/HUN_Kunfi_FM.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_HUN_Gyorgy_IM"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Internal_Minister/Hungary/HUN_Gyorgy_IM.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_HUN_Revai_HOG"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Head_of_Government/Hungary/HUN_Revai_HOG.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_HUN_BelaKun_HOG"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Head_of_Government/Hungary/HUN_BelaKun_HOG.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_HUN_Garbai_HOG"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Head_of_Government/Hungary/HUN_Garbai_HOG.dds"
+	}	
+}

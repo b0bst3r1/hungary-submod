@@ -1,0 +1,273 @@
+ 
+ HUN_revive_body = {
+ 
+ 	HUN_begin_research_stage_one = {
+
+		icon = GFX_decision_generic_research
+
+		cost = 50
+				
+		ai_will_do = {
+			factor = 33
+		}
+		
+		available = {
+	}
+	
+	days_remove = 5
+	
+	fire_only_once = yes
+	
+		remove_effect = {
+				set_country_flag = HUN_stage_one_begin			
+		}
+    }			
+
+	HUN_japanese_scient = {
+
+		icon = GFX_decision_generic_research
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 33
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = HUN_stage_one_begin_tt
+				has_country_flag = HUN_stage_one_begin
+			}			
+		
+            HUN = {
+		   has_opinion = {
+           target = JAP
+           value > 50
+           }	
+        }
+	}
+
+		days_remove = 45
+
+		fire_only_once = yes
+
+		remove_effect = {
+		
+        custom_effect_tooltip = HUN_25percent_to_research
+
+			add_to_variable = {
+				var = HUN_revival_stage_one
+				value = 0.25
+			}		
+		}
+	}
+
+	HUN_large_investments_research = {
+
+		icon = GFX_decision_generic_research
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 33
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = HUN_stage_one_begin_tt
+				has_country_flag = HUN_stage_one_begin
+			}
+	}
+
+		days_remove = 60
+		
+		modifier = {
+            consumer_goods_factor = 0.05
+		}
+
+		remove_effect = {	
+		
+        custom_effect_tooltip = HUN_25percent_to_research
+
+			add_to_variable = {
+				var = HUN_revival_stage_one
+				value = 0.25
+			}			
+		}
+	}
+
+	HUN_use_foreign_literacy = {
+
+		icon = GFX_decision_generic_research
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 33
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = HUN_stage_one_begin_tt
+				has_country_flag = HUN_stage_one_begin
+			}
+	}
+
+		days_remove = 25
+
+		fire_only_once = yes
+
+		modifier = {
+            political_power_gain = -0.05
+		}
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_10percent_to_research
+
+			add_to_variable = {
+				var = HUN_revival_stage_one
+				value = 0.10
+			}
+		}
+	}
+
+	HUN_Direct_more_scientists  = {
+
+		icon = GFX_decision_generic_research
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 33
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = HUN_stage_one_begin_tt
+				has_country_flag = HUN_stage_one_begin
+			}
+	}
+
+		days_remove = 50
+
+		fire_only_once = yes
+
+		modifier = {
+            research_speed_factor = -0.05
+		}
+
+		remove_effect = {
+		
+        custom_effect_tooltip = HUN_25percent_to_research
+
+			add_to_variable = {
+				var = HUN_revival_stage_one
+				value = 0.25
+			}
+		}
+	}
+	
+	HUN_active_animal_experiments  = {
+
+		icon = GFX_decision_generic_research
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 33
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = HUN_stage_one_begin_tt
+				has_country_flag = HUN_stage_one_begin
+			}
+	}
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		modifier = {
+            consumer_goods_factor = 0.025
+		}
+
+		remove_effect = {
+		
+        custom_effect_tooltip = HUN_15percent_to_research
+
+			add_to_variable = {
+				var = HUN_revival_stage_one
+				value = 0.15
+			}
+		}
+	}	
+	
+####STAGE TWO###
+
+	HUN_begin_the_stage_two  = {
+
+		icon = GFX_decision_generic_research
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 33
+		}
+
+		available = {
+            custom_trigger_tooltip = {
+				tooltip = HUN_first_stage_over
+				check_variable = {
+					var = HUN_revival_stage_one
+					value > 1
+				}
+		    }
+	}
+
+		days_remove = 5
+
+		fire_only_once = yes
+
+		remove_effect = {
+				set_country_flag = HUN_stage_two_begin			
+		}
+	}
+
+	HUN_Experiments_on_psychotics  = {
+
+		icon = GFX_decision_generic_research
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 33
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = HUN_stage_one_begin_tt
+				has_country_flag = HUN_stage_one_begin
+			}
+	}
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		modifier = {
+            consumer_goods_factor = 0.025
+		}
+
+		remove_effect = {
+		
+        custom_effect_tooltip = HUN_25percent_to_research
+
+			add_to_variable = {
+				var = HUN_revival_stage_two
+				value = 0.25
+			}
+		}
+	}	
+ }

@@ -1,0 +1,37 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_HUN_State_Outline"
+		texturefile = "gfx/interface/Hungary/HUN_State_Outline"
+	}
+	
+    SpriteType = {
+		name = "GFX_HUN_Hungary_color"
+		texturefile = "gfx/interface/Hungary/Hungary_color"
+		transparencecheck = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_Slovakia_color"
+		texturefile = "gfx/interface/Hungary/Slovakia_color.dds"
+		transparencecheck = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_Banat_color"
+		texturefile = "gfx/interface/Hungary/Banat_color.dds"
+		transparencecheck = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_Transylvania_color"
+		texturefile = "gfx/interface/Hungary/Transylvania_color.dds"
+		transparencecheck = yes
+	}
+
+	SpriteType = {
+		name = "GFX_Ruthenia_color"
+		texturefile = "gfx/interface/Hungary/Ruthenia_color.dds"
+		transparencecheck = yes
+	}
+}

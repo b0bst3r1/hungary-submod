@@ -1,0 +1,16 @@
+﻿l_english:
+
+  HUN_Resistance_twentyfive:0 "\n\n§GResistance readiness is 25%§!"
+  HUN_Resistance_fifty:0 "\n\n§GResistance readiness is 50%§!"
+  HUN_Resistance_seventyfive:0 "\n\n§GResistance readiness is 75%§!"
+  HUN_Resistance_hundred:0 "\n\n§GResistance readiness is 100%§!"
+  HUN_Increase_prison_300:0 "§GIncrease the number of prisoners to 300,000§!"
+  HUN_Increase_prison_450:0 "§GIncrease the number of prisoners to 450,000§!"
+  russia_oil_romania:0 "\n\n§RRussia controls Romanian oil fields§!"
+  HUN_stage_one_begin_tt:0 "The §GFirst§! stage is began"
+  HUN_first_stage_over:0 "First stage of researchment is §Gcompleted§!"
+  begin_stage_one:0 "Begin the §GFirst§! stage of research" 
+  HUN_25percent_to_research:0 "§GAdd 25%§! to research\n\n"
+  HUN_10percent_to_research:0 "§GAdd 20%§! to research\n\n" 
+  HUN_15percent_to_research:0 "§GAdd 15%§! to research\n\n"
+  HUN_10percent_to_research:0 "§GAdd 10%§! to research\n\n"

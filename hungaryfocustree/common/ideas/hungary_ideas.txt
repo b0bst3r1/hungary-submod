@@ -1,0 +1,660 @@
+##################
+##HUNGARYmodIDEAS#
+##################
+
+ideas = {
+
+hidden_ideas = {
+
+		HUN_Low_Revolutionary_Zeal_Idea = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				monthly_population = -0.05
+				surrender_limit = -0.05
+				conscription_factor = -0.03
+				army_core_defence_factor = -0.05
+				army_core_attack_factor = -0.05
+			}
+		}
+
+		HUN_Med_Revolutionary_Zeal_Idea = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				monthly_population = 0.05
+				surrender_limit = 0.05
+				conscription_factor = 0.01
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+
+		HUN_High_Revolutionary_Zeal_Idea = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				monthly_population = 0.1
+				surrender_limit = 0.1
+				conscription_factor = 0.03
+				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.15
+			}
+		}
+		
+		HUN_Low_Party_Unity_Idea = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				surrender_limit = -0.05
+				stability_factor = -0.15
+				political_power_gain = -0.20				
+                
+			}
+		}
+
+		HUN_Med_Party_Unity_Idea = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.1
+			}
+		}
+
+		HUN_High_Party_Unity_Idea = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				surrender_limit = 0.05
+				stability_factor = 0.1
+				political_power_gain = 0.20
+			}
+		}
+		
+ ####################################
+ 
+		HUN_hungarian_Unrest_Critical = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.08
+				political_power_factor = -0.08
+			}
+		}
+
+		HUN_hungarian_Unrest_Moderate = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05	
+			}
+		}
+
+		HUN_hungarian_Unrest_Normal = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.02
+				political_power_factor = -0.02
+			}
+		}
+
+		HUN_hungarian_Unrest_Critical_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.08
+			}
+		}
+
+		HUN_hungarian_Unrest_Moderate_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+
+		HUN_hungarian_Unrest_Normal_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.02
+			}
+		}
+
+		#HannoverUnrest
+
+		HUN_banat_Unrest_Critical = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.08
+				political_power_factor = -0.08	
+			}
+		}
+
+		HUN_banat_Unrest_Moderate = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05	
+			}
+		}
+
+		HUN_banat_Unrest_Normal = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.02
+				political_power_factor = -0.02
+			}
+		}
+
+		HUN_banat_Unrest_Critical_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.08
+			}
+		}
+
+		HUN_banat_Unrest_Moderate_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+
+		HUN_banat_Unrest_Normal_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.02
+			}
+		}
+
+		#FrankfurtUnrest
+
+		HUN_transylvania_Unrest_Critical = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.08
+				political_power_factor = -0.08	
+			}
+		}
+
+		HUN_transylvania_Unrest_Moderate = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05	
+			}
+		}
+
+		HUN_transylvania_Unrest_Normal = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.02
+				political_power_factor = -0.02
+			}
+		}
+
+		HUN_transylvania_Unrest_Critical_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.08
+			}
+		}
+
+		HUN_transylvania_Unrest_Moderate_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+
+		HUN_transylvania_Unrest_Normal_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.02
+			}
+		}
+
+		#SlovakiaUnrest
+
+		HUN_slovakia_Unrest_Critical = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.08
+				political_power_factor = -0.08
+			}
+		}
+
+		HUN_slovakia_Unrest_Moderate  = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05	
+			}
+		}
+
+		HUN_slovakia_Unrest_Normal = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.02
+				political_power_factor = -0.02
+			}
+		}
+
+		HUN_slovakia_Unrest_Critical_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.08
+			}
+		}
+
+		HUN_slovakia_Unrest_Moderate_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+
+		HUN_slovakia_Unrest_Normal_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.02
+			}
+		}
+
+		#RutheniaUnrest
+
+		HUN_ruthenia_Unrest_Critical = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.08
+				political_power_factor = -0.08	
+			}
+		}
+
+		HUN_ruthenia_Unrest_Moderate = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05	
+			}
+		}
+
+		HUN_ruthenia_Unrest_Normal = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.02
+				political_power_factor = -0.02
+			}
+		}
+
+		HUN_ruthenia_Unrest_Critical_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.08
+			}
+		}
+
+		HUN_ruthenia_Unrest_Moderate_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+
+		HUN_ruthenia_Unrest_Normal_Better = {
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.02
+			}
+		}
+    }
+
+      country = {
+	  
+		HUN_religion_freedom = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+                        picture = HUN_religion_freedom
+			
+			removal_cost = -1
+	
+			modifier = {
+                        stability_factor = 0.1							
+                        research_speed_factor = -0.02
+			}
+		}
+
+		HUN_Collapsing_Government = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = PB_HUN_Balkan_Powderkeg
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = -0.25
+				political_power_gain = -0.25
+			}
+		}
+		
+		PB_HUN_Revolution_Home = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = PB_HUN_Revolution_Home
+			
+			removal_cost = -1
+	
+			modifier = {
+                stability_factor = 0.10
+                war_support_factor = 0.10
+                army_core_defence_factor = 0.1
+
+			}
+		}		
+
+		PB_HUN_Ethnic_Tensions = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = PB_HUN_Balkan_Powderkeg
+			
+			removal_cost = -1
+	
+			modifier = {
+            stability_factor = -0.15
+			non_core_manpower = -0.5
+			}
+		}		
+		
+		HUN_balkan_chaos = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_balkan_chaos
+			
+			removal_cost = -1
+	
+			modifier = {
+				conscription = 0.05
+				surrender_limit = 0.8
+			}
+	                       }
+		
+		HUN_red_terror = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_red_terror
+			
+			removal_cost = -1
+	
+			modifier = {
+            monthly_population = -0.02 			
+            stability_weekly = -0.001
+			}
+		}
+
+		HUN_diverse_general_staff = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_diverse_general_staff
+			
+			removal_cost = -1
+			
+			modifier = {
+				ni_drift = 0.02
+				ds_drift = 0.01
+				ss_drift = 0.01				
+                army_org = -5
+                max_planning = -0.15
+				stability_factor = -0.1
+			}
+		}
+
+		HUN_Croatian_Support = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_Croatian_Support
+			
+			removal_cost = -1
+	
+			modifier = {
+                consumer_goods_factor = 0.1
+
+			}
+		}
+
+		HUN_United_Country = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = hun_united_country
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.1
+				jc_drift = 0.03
+				conscription = 0.02				
+
+			}
+		}
+
+		HUN_bourgeois_literature = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_bourgeois_literature
+			
+			removal_cost = -1
+	
+			modifier = {
+            stability_factor = 0.05						
+            research_speed_factor = -0.02				
+
+			}
+		}
+
+		HUN_martians = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_martians
+			
+			removal_cost = -1
+	
+			modifier = {						
+            research_speed_factor = 0.05				
+			}
+		}
+
+		HUN_artist_union = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_artist_union
+			
+			removal_cost = -1
+	
+			modifier = {						
+            political_power_factor = 0.15			
+			}
+		}
+
+		HUN_labor_camps = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_labor_camps
+			
+			removal_cost = -1
+	
+			modifier = {						
+            production_speed_buildings_factor = 0.04
+            stability_factor = -0.05			
+			}
+		}
+		
+		HUN_labor_camps_two = { #300k
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_labor_camps
+			
+			removal_cost = -1
+	
+			modifier = {						
+            production_speed_buildings_factor = 0.08
+            stability_factor = -0.1			
+			}
+		}
+
+		HUN_labor_camps_three = { #500k
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_labor_camps
+			
+			removal_cost = -1
+	
+			modifier = {						
+            production_speed_buildings_factor = 0.12
+            stability_factor = -0.15			
+			}
+		}		
+
+		HUN_people_communes = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_farm
+			
+			removal_cost = -1
+	
+			modifier = {						
+            production_factory_efficiency_gain_factor = 0.05
+            production_factory_max_efficiency_factor = 0.05 	
+			}
+		}		
+	}	
+ }	

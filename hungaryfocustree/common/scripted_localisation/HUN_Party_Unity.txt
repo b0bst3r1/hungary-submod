@@ -1,0 +1,34 @@
+defined_text = { 
+    name = get_HUN_Party_Unity_Loc
+    
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Party_Unity > 0.74 }
+                check_variable = { HUN_Party_Unity = 0.74 }
+            }
+        }
+        localization_key = "HUN_High_Party_Unity"
+    }
+    text = { 
+        trigger = {
+            AND = {
+                check_variable = { HUN_Party_Unity < 0.74 }
+                check_variable = { HUN_Party_Unity > 0.49 }
+            }
+        }
+        localization_key = "HUN_Medium_Party_Unity"
+    }
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Party_Unity < 0.49 }
+                check_variable = { HUN_Party_Unity = 0.49 }
+            }
+        }
+        localization_key = "HUN_Low_Party_Unity"
+    }
+
+    
+}
+
