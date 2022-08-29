@@ -21,11 +21,11 @@ HUN_unrest_mechanic = {
 		original_tag = HUN
 	}
 
-	visible = {
+	visible = { 
 			has_country_flag = hungarian_starting
         }
 		
-    scripted_gui = HUN_unrest_mechanic_Scripted_GUI			
+    scripted_gui = GER_Kingdoms_Influence_Scripted_GUI			
 
 	picture = GFX_decision_cat_GER_Federation_Picture
 
@@ -33,7 +33,7 @@ HUN_unrest_mechanic = {
 }
 
 HUN_revive_body = {
-	icon = generic_economy
+	icon = GFX_decision_generic_research
 
 	picture = GFX_decision_revive
 
@@ -46,4 +46,36 @@ HUN_revive_body = {
         }
 
 	priority = 75
+}
+
+HUN_domestic_policy = {
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = GFX_decision_polit
+
+	allowed = {
+		original_tag = HUN
+	}
+
+	visible = {
+			has_country_flag = hungarian_starting
+        }
+
+	priority = 85
+}
+
+HUN_war_on_horizon = { 
+	icon = GFX_decision_category_sov_great_patriotic_war
+
+	picture = GFX_decision_war_horizon
+
+	allowed = {
+		original_tag = HUN
+	}
+
+	visible = {
+			has_country_flag = hungarian_starting
+        }
+
+	priority = 80
 }

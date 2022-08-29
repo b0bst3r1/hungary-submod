@@ -1,0 +1,190 @@
+﻿  l_english:
+  
+  
+  PB_HUN_Revolution_Home:0 "Home of the Revolution"
+  PB_HUN_Revolution_Home_desc:0 "The Hungarian People's Republic is the only major revolutionary republic in existence in continental Europe and, if the reactionary powers had their way, it would be the last. Following the Great War, Hungary found itself in crisis. Their allegiance to Germany had cost nearly a million lives, economic collapse and reduced much of the nation to near famine conditions. The touchpaper of Revolution was easily lit in 1912, when the Royal Hungarian Army attempted to crack down on protests in Budapest.\n\nVeteran's militias, trained and hardened by fighting on the Romanian and North Italian fronts, quickly turned the tables on the pro-German protectorate government. Within a matter of days, the nation descended into civil war and revolutionary violence. The regime that emerged from the revolution would be one founded not on Imperial obligations or bourgeois capitalism, but on revolutionary republicanism. Hungary is the vanguard of the revolution in the Balkans, and her people are dedicated to the ideas upon which the new republic was founded."
+  PB_HUN_Balkan_Powderkeg:0 "The Balkan Powderkeg"
+  PB_HUN_Balkan_Powderkeg_desc:0 "The Balkans have always been a region of conflict and the years since the war have seen the region descend into armed camps, mimicking the web of alliances prior to the larger global conflict. With a revanchist Romania and expansionist Serbia, revolutionary fervor in Bulgaria and the Dinarics having split, the Balkans are a single crisis away from exploding into general war. The coming conflict has been predicted by nearly every advisor in every Balkan capital, and thus a palpable sense of tension has overtaken the region. No one knows quite when the Great Balkan War will begin, but everyone is jockeying to be in a position to fire the first shot."
+  
+  PB_HUN_German_Disarmament:0 "German Imposed Disarmament"
+  PB_HUN_German_Disarmament_desc:0 "Our Republic has agreed to accept the terms of the German Ultimatum and disarmed it's army. This has greatly destroyed the support and stability of the Republic."
+  #temporary here until we have serbian locals
+  PB_SER_German_Disarmament:0 "German Imposed Disarmament"
+  PB_SER_German_Disarmament_desc:0 "Our Empire has agreed to accept the terms of the German Ultimatum and disarmed it's army. This has greatly destroyed the support and stability of the Empire."
+
+  PB_HUN_German_Eco_Treaty:0 "German Economic Treaty"
+  
+  PB_ROM_German_Eco_Treaty:0 "German Economic Treaty"
+  
+  #Tooltips#
+  
+  HUN_Resistance_twentyfive:0 "\n\n§GResistance readiness is 25%§!"
+  HUN_Resistance_fifty:0 "\n\n§GResistance readiness is 50%§!"
+  HUN_Resistance_seventyfive:0 "\n\n§GResistance readiness is 75%§!"
+  HUN_Resistance_hundred:0 "\n\n§GResistance readiness is 100%§!"
+  HUN_Increase_prison_300:0 "§GIncrease the number of prisoners to 300,000§!"
+  HUN_Increase_prison_450:0 "§GIncrease the number of prisoners to 450,000§!"
+  russia_oil_romania:0 "\n\n§RRussia controls Romanian oil fields§!"
+  HUN_stage_one_begin_tt:0 "The §GFirst§! stage is began"
+  HUN_stage_two_begin_tt:0 "The §GSecond§! stage is began"
+  HUN_stage_three_begin_tt:0 "The §GThird§! stage is began"
+  HUN_stage_four_begin_tt:0 "The §GFourth§! stage is began"
+  HUN_first_stage_over:0 "First stage of researchment is §Gcompleted§!"
+  HUN_second_stage_over:0 "Second stage of researchment is §Gcompleted§!"
+  HUN_third_stage_over:0 "Third stage of researchment is §Gcompleted§!"
+  HUN_four_stage_over:0 "Fourth stage of researchment is §Gcompleted§!"
+  begin_stage_one:0 "Begin the §GFirst§! stage of research" 
+  begin_stage_two:0 "Begin the §GSecond§! stage of research" 
+  begin_stage_three:0""Begin the §GThird§! stage of research" 
+  HUN_25percent_to_research:0 "§GAdd 25%§! to research\n\n"
+  HUN_10percent_to_research:0 "§GAdd 20%§! to research\n\n" 
+  HUN_15percent_to_research:0 "§GAdd 15%§! to research\n\n"
+  HUN_10percent_to_research:0 "§GAdd 10%§! to research\n\n"
+  HUN_arpad_line_one_tt:0 "The first part of the Arpad line is built"
+  HUN_arpad_line_two_tt:0 "The second part of the Arpad line is built"
+  
+  #MINISTERS#
+  
+  HUN_PB_Bohm_HOG:0 "Vilmos Böhm"
+  HUN_PB_Vago_IM:0 "Béla Vágó"
+  HUN_PB_Dezso_EM:0 "Dezső Bokányi"
+  HUN_PB_Garbai_FM:0 "Sándor Garbai"
+  HUN_PB_Rakosi:0 "Mátyás Rákosi"
+
+  HUN_Garbai_IM:0 "Sándor Garbai"
+  HUN_Vago_EM:0 "Bela Vago"
+  HUN_BelaKun_FM:0 "Béla Kun"
+  #BELAKUNadministration
+  HUN_Munnich_FM:0 "Ferenc Münnich"
+  HUN_Erno_IM:0 "Ernő Garami"
+  HUN_Nagy_EM:0 "Imre Nagy"
+  #GARBAIadministration
+  HUN_Varga_EM:0 "Jenő Varga"
+  HUN_Hamburger_FM:0 "Jenő Hamburger"
+  HUN_Gyula_IM:0 "Gyula Peidl"
+  #RevaiAdministration
+  HUN_Arpad_EM:0 "Szakasits Árpád"
+  HUN_Kunfi_FM:0 "Kunfi Zsigmond"
+  HUN_Gyorgy_IM:0 "György Lukács"
+  #HOGs
+  HUN_Revai_HOG:0 "József Révai"
+  HUN_Garbai_HOG:0 "Sándor Garbai"
+  HUN_BelaKun_HOG:0 "Béla Kun"
+  
+  #REV ZEAL#
+  HUN_High_Revolutionary_Zeal:0 "§GHigh§!"
+  HUN_Medium_Revolutionary_Zeal:0 "§YMedium§!"
+  HUN_Low_Revolutionary_Zeal:0 "§RLow§!"
+  Revolutionary_Zeal_tt:0 "§ORevolutionary Zeal§! is currently at [?HUN_Revolutionary_Zeal|%0]"
+  Revolutionary_Zeal_tt_delayed:0 "The people of Hungary should not forget the 1912 revolution, honouring its heroes and the main founder of the Hungarian People's Republic, Vilmos Böhm. The foreign imperialists are trying in every way to suppress Hungary, but in spite of this we must continue the cause of the revolution.\n\nDepending on your level of Revolutionary Zeal various military modifers will apply. The Revolutionary Zeal modifier will also tick down by a variable of §R-1§! every month so be sure to keep it maintained!\n\nThese modifiers adjust §YMonthly§! and are as follows:\n\nLow Revolutionary Zeal:\n      Monthly Population: §R-5.00%§!\n      Surrender Limit: §R-5.00%§!\n      Recruitable Population Factor: §R-3.00%§!\n      Division Defense On Core Territory: §R-5.00%§!\n      Division Attack On Core Territory: §R-5.00%§!\n\nMedium Revolutionary Zeal:\n      Monthly Population: §G+5.00%§!\n      Surrender Limit: §G+5.00%§!\n      Recruitable Population Factor: §G+1.00%§!\n      Division Defense On Core Territory: §G+5.00%§!\n      Division Attack On Core Territory: §G+5.00%§!\n\nHigh Revolutionary Zeal       :\n      Monthly Population: §G+10.00%§!\n      Surrender Limit: §G+10.00%§!\n      Recruitable Population Factor: §G+3.00%§!\n      Division Defense On Core Territory: §G+15.00%§!\n      Division Attack On Core Territory: §G+15.00%§!"
+  HUN_Low_Revolutionary_Zeal_Idea:0 "Low Revolutionary Zeal" 
+  HUN_Med_Revolutionary_Zeal_Idea:0 "Medium Revolutionary Zeal"
+  HUN_High_Revolutionary_Zeal_Idea:0 "High Revolutionary Zeal"
+  Revolutionary_Zeal_0.02_decrease:0 "Revolutionary Zeal: §R-2%§!."
+  Revolutionary_Zeal_0.04_decrease:0 "Revolutionary Zeal: §R-4%§!."
+  Revolutionary_Zeal_0.06_decrease:0 "Revolutionary Zeal: §R-6%§!."
+  Revolutionary_Zeal_0.02_increase:0 "Revolutionary Zeal: §G+2%§!."
+  Revolutionary_Zeal_0.04_increase:0 "Revolutionary Zeal: §G+4%§!."
+  Revolutionary_Zeal_0.06_increase:0 "Revolutionary Zeal: §G+6%§!."
+  GER_unrest_impact_rhinelands_low:0 "smth"
+  #Party Unity#
+  HUN_High_Party_Unity:0 "§GUnity§!"
+  HUN_Medium_Party_Unity:0 "§HMedium§!"
+  HUN_Low_Party_Unity:0 "§RDivided§!"  
+  PartyUnity_tt:0 "§OParty Unity§! is currently at [?HUN_PartyUnity|%0]"
+  PartyUnity_tt_delayed:0 "The Forradalmi Tanács party finds itself in a very difficult situation - on the eve of the long-awaited change in the central government, the ruling party has divided into several different factions. \n\nModifiers adjust §YMonthly§! and are as follows:\n\nDivided Party:\n      Surrender Limit: §R-5.00%§!\n      Stability Factor: §R-15.00%§!\n      Political Power Gain: §R-15.00%§!\n\nMiddle Party Unity:\n      Stability Factor: §R-10.00%§!\n      Political Power Gain: §R-10.00%§!\n\nUnited Party:\n      Surrender Limit: §G+00.00%§!\n      Stability Factor: §G+10.00%§!\n      Political Power Gain =: §G+20.00%§!"
+  HUN_High_Party_Unity_Idea:0 "Party is United" 
+  HUN_Med_Party_Unity_Idea:0 "Medium Party Unity"
+  HUN_Low_Party_Unity_Idea:0 "The party is split"
+  HUN_PartyUnity_0.02_decrease:0 "Party Unity: §R-2%§!."
+  HUN_PartyUnity_0.04_decrease:0 "Party Unity: §R-4%§!."
+  HUN_PartyUnity_0.06_decrease:0 "Party Unity: §R-6%§!."
+  HUN_PartyUnity_0.02_increase:0 "Party Unity: §G+2%§!."
+  HUN_PartyUnity_0.04_increase:0 "Party Unity: §G+4%§!."
+  HUN_PartyUnity_0.06_increase:0 "Party Unity: §G+6%§!."
+  HUN_PartyUnity_0.1_increase:0 "Party Unity: §G+10%§!."  
+  
+  
+  #DECISIONS#
+  
+  #Revive Organisms#
+  HUN_revive_body:0 "Experiments on Human Revitalization."
+  HUN_revive_body_desc:0 "\n\n\n\n\n\nAs industry developed rapidly, Hungary  faced a labor shortage. Practice showed that policies to stimulate population growth, while helpful, but don't solve the problem. As a result, a group of scientists, previously rejected by Hungary's scientific community, proposed a risky solution to the problem: the government was invited to invest in a program to create so-called artificial humans, created by using electricity from the remains of people who had already died, to be used later for work. This is much cheaper than creating robots or something like that. \n\n§HStage 1:§! §OElectricity in Physiology§! is currently at §L[?HUN_revival_stage_one|%0]§! \n\n§HStage 2:§! §OExperiments to Revive the Heart§! is currently at §L[?HUN_revival_stage_two|%0]§! \n\n§HStage 3:§! §OExperiments to Revitalize the Body§! is currently at §L[?HUN_revival_stage_three|%0]§! \n\n§HStage 4:§! §OHuman Revitalization§! is currently at §L[?HUN_revival_stage_four|%0]§! \n\n§C*As your research progresses, you will receive new technologies.§!"
+  HUN_begin_research_stage_one:0 "Begin the first stage of research"
+  HUN_japanese_scient:0 "Invite Japanese scientists"
+  HUN_large_investments_research:0 "Large investments in research"
+  HUN_use_foreign_literacy:0 "Use foreign academic literature"
+  HUN_Direct_more_scientists:0 "Direct more scientists"
+  HUN_active_animal_experiments:0 "Active animal research"
+  HUN_begin_the_stage_two:0 "Begin the second stage of research"
+  HUN_Experiments_on_psychotics:0 "Experiments on Psychotcs"
+  HUN_revive_dogs_head:0 "Revive the dog's head"
+  HUN_large_two_investments_research:0 "Large investments in research"
+  HUN_Call_for_rejected_foreign_scientists:0 "Call for more rejected scientists"
+  HUN_create_Cardiopulmonary_bypass:0 "Create the Cardiopulmonary bypass"
+  HUN_begin_the_stage_three:0 "Begin the third stage of research"
+  HUN_large_three_investments_research:0 "Large investments in research"
+  HUN_Further_Experiments_in_Reviving_the_Heart:0 "Further Experiments in reviving the Heart"
+  HUN_forced_research_on_prisoners:0 "Forced research on prisoners"
+  HUN_Extracorporeal_membrane_oxygenation:0 "Discover the Extracorporeal membrane oxygenation"
+  HUN_brain_repair_experiments:0 "Brain repair experiments"
+  HUN_begin_the_stage_four:0 "Begin the fourth stage of research"
+  HUN_large_four_investments_research:0 "Large investments in research"
+  HUN_final_experiments_in_Revival_of_Organisms:0 "Final experiments in Revival of Organisms"
+  HUN_Revival_of_central_nervous_system:0 "Revival of central nervous system"
+  HUN_artificial_lungs:0 "Discover the Artifical Lungs"
+  HUN_gastrointestinal_tract:0 "Pathological Processes of the Gastrointestinal tract"
+  HUN_final_research:0 "Revival of the Organisms"
+
+  #Domestic Policy#
+  
+  HUN_domestic_policy:0 "Jacobin way of the life"
+  HUN_domestic_policy_desc:0 "\n\n\n\n\n\nThe Hungarian People's Republic is entering a new phase of its development. The party splits into several on the eve of Vilmos Bom's departure from office, which threatens the country with at least internal collapse, while revolutionary fervor in the face of falling living standards fades in the eyes of the people"
+  HUN_increase_revolutionary_zeal:0 "Increase Revolutionary Zeal"
+  HUN_increase_party_unity:0 "Maintain Party Unity"
+  HUN_Friedrich_Engels_legacy:0 "Legacy of Friedrich Engels"
+  HUN_Propaganda_in_Schools:0 "Jacobin Propaganda in schools"
+  HUN_Fighting_the_Counterrevolution:0 "Fighting the CounterRevolution"
+  HUN_organize_party_meeting:0 "Organize Party meeting"
+  
+  #War is upon us#
+  
+  HUN_war_on_horizon:0 "The war is upon us"
+  HUN_war_on_horizon_desc:0 "\n\n\n\n\n\nAfter 20 years of armistice, war is coming to the Balkans again. Russian influence in the region is fading and the countries of its zone of influence are beginning to threaten each other. Romania claims the territory of North Dobruja, Bulgaria claims Thrace as well as Serbian and Greek Macedonia, Serbia threatens Croatia and Bulgaria in order to unite the South Slavic peoples. Hungary should be ready for the confrontation, which will certainly begin soon."
+  HUN_arpad_line_one:0 "Build the first part of Arpad Line"
+  HUN_arpad_line_two:0 "Build the second part of Arpad Line"
+  HUN_arpad_line_three:0 "Build the third part of Arpad Line"
+  HUN_invest_in_military_industry:0 "Invest in Military Industry"
+  HUN_invest_in_civil:0 "Invest in Civilian Industry"
+  HUN_increase_conscription:0 "Increase Conscription Policy"
+  HUN_mobilize_the_economy:0 "Mobilize the Economy"
+  
+  
+  #Culture War#
+  
+  HUN_unrest_mechanic:0 "Culture War"
+  HUN_unrest_mechanic_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n asasdasd"
+  Hungary_button_tt:0 "Hungary"
+  Transylvania_button_tt:0 "Transylvania"
+  Ruthenia_button_tt:0 "Carpathian Ruthenia"
+  Slovakia_button_tt:0 "Slovakia"
+  
+  HUN_Hungary_Text:0 "Hungary"
+  HUN_Transylvania_Text:0 "Transylvania"
+  HUN_Ruthenia_Text:0 "Carpathian Ruthenia"
+  HUN_Slovakia_Text:0 "Slovakia"
+  
+  HUN_status_info:0 "Status:"
+  HUN_Translyvania_magyarization:0 "Magyarization"
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  

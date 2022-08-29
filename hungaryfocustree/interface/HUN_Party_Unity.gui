@@ -16,7 +16,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name ="PartyUnity_text"
-			position = { x = 0 y = 4 }
+			position = { x = 2 y = 4 }
 			font = "hoi_18mbs"
 			text = "[get_HUN_Party_Unity_Loc]"
 			format = center

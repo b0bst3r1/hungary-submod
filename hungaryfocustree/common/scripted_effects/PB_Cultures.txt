@@ -341,7 +341,8 @@ PB_Setup_Cultures = {
 
 	107 = { set_variable = { culture_id = 48 } }
 	108 = { set_variable = { culture_id = 48 } }
-	960 = { set_variable = { culture_id = 48 } }	
+	954 = { set_variable = { culture_id = 48 } }		
+	960 = { set_variable = { culture_id = 48 } }
 
 	### ---- Croatian Culture ---- ###
 
@@ -1766,7 +1767,6 @@ PB_Setup_Cultures = {
 
 	959 = { set_variable = { culture_id = 444 } }
 	957 = { set_variable = { culture_id = 444 } }
-	954 = { set_variable = { culture_id = 444 } }
 	956 = { set_variable = { culture_id = 444 } }	
 
 	### ---- Greko-Turkish Culture ---- ###

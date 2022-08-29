@@ -1,5 +1,6 @@
 #ECONOMICDECISIONS
-HUN_economic_dec = {
+
+HUN_unrest_mechanic = {
 
 	HUN_collectivize_hungary = {
 
@@ -33,6 +34,48 @@ HUN_economic_dec = {
 			
 		}
 	}
+}
+	
+HUN_economic_dec = {
+
+	HUN_collectivize_hungary = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		has_completed_focus = hun_collectivization
+		}
+		
+        highlight_states = { 
+		highlight_state_targets = { state = 701 }
+		highlight_state_targets = { state = 43 }
+		highlight_state_targets = { state = 155 }
+	    }		
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+		add_stability = -0.02
+			701 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			43 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			155 = {
+				add_extra_state_shared_building_slots = 2
+			}			
+			
+		}
+	}
 
 	HUN_collectivize_slovak_ruthenia = {
 
@@ -46,7 +89,13 @@ HUN_economic_dec = {
 		
 		available = {
 		has_completed_focus = hun_collectivization
-		}		
+		}
+
+        highlight_state_targets = { state = 664 }
+        highlight_state_targets = { state = 71 }
+        highlight_state_targets = { state = 70 }
+        highlight_state_targets = { state = 73 }		
+       		
 		
 		days_remove = 30
 
@@ -82,7 +131,11 @@ HUN_economic_dec = {
 		
 		available = {
 		has_completed_focus = hun_collectivization
-		}		
+		}
+
+        highlight_state_targets = { state = 76 }
+        highlight_state_targets = { state = 83 }
+        highlight_state_targets = { state = 84 }		
 
 		days_remove = 30
 
@@ -116,6 +169,10 @@ HUN_economic_dec = {
 		has_completed_focus = hun_collectivization
 		}
 		
+        highlight_state_targets = { state = 957 }
+        highlight_state_targets = { state = 109 }
+        highlight_state_targets = { state = 794 }		
+		
 		days_remove = 30
 
 		fire_only_once = yes
@@ -146,7 +203,11 @@ HUN_economic_dec = {
 		
 		available = {
 		has_completed_focus = hun_collectivization
-		}		
+		}
+
+        highlight_state_targets = { state = 45 }
+        highlight_state_targets = { state = 764 }
+        highlight_state_targets = { state = 82 }		
 
 		days_remove = 30
 
@@ -167,38 +228,688 @@ HUN_economic_dec = {
 	}
 }
 
-HUN_unrest_mechanic = {
+HUN_domestic_policy = {
 
-	HUN_unrest_remove = {
+	HUN_increase_revolutionary_zeal = {
 
-		icon = GFX_decision_ger_military_buildup
+		icon = GFX_decision_category_generic_communism
 
-		cost = 25
+		cost = 20
 
 		ai_will_do = {
 			factor = 10
 		}
 
 		available = {
-		original_tag = HUN
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+			}
 		}
 
-		days_remove = 30
-
-		fire_only_once = yes
+		days_remove = 15
+		
+		days_re_enable = 30
 
 		remove_effect = {
-		add_stability = -0.02
-			701 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			43 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			155 = {
-				add_extra_state_shared_building_slots = 2
+		
+		custom_effect_tooltip = Revolutionary_Zeal_0.04_increase
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = 0.04
 			}			
 			
 		}
-	}	
+	}
+
+	HUN_increase_party_unity = {
+
+		icon = GFX_decision_category_generic_communism
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+			}
+		}
+
+		days_remove = 15
+		
+		days_re_enable = 30
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_PartyUnity_0.04_increase
+			add_to_variable = {
+				var = HUN_PartyUnity
+				value = 0.04
+			}			
+			
+		}
+	}
+
+	HUN_Friedrich_Engels_legacy = {
+
+		icon = GFX_decision_category_generic_communism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+			}
+		}
+
+		fire_only_once = yes
+
+		effect = {
+		
+		set_province_name = {
+        id = 701
+        name = Engels
+                            }
+		
+		custom_effect_tooltip = Revolutionary_Zeal_0.04_increase
+		  add_to_variable = {
+			var = HUN_Revolutionary_Zeal
+			value = 0.04
+	    }
+			
+		custom_effect_tooltip = HUN_PartyUnity_0.04_increase
+			add_to_variable = {
+				var = HUN_PartyUnity
+				value = 0.04
+			}			
+			
+		}
+	}
+
+	HUN_Propaganda_in_Schools = {
+
+		icon = GFX_decision_category_generic_communism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		days_remove = 25
+
+		days_re_enable = 50
+
+		remove_effect = {
+			add_war_support = 0.025
+
+			if = {
+				limit = {
+					has_government = jc
+				}
+				add_popularity = {
+					ideology = jc
+					popularity = 0.05
+				}
+			}
+
+			if = {
+				limit = {
+					has_government = ss
+				}
+				add_popularity = {
+					ideology = ss
+					popularity = 0.05
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = lb
+				}
+				add_popularity = {
+					ideology = lb
+					popularity = 0.05
+				}
+			}			
+		}
+	}
+
+	HUN_Fighting_the_Counterrevolution = {
+
+		icon = GFX_decision_category_generic_communism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+			}
+		}
+		
+			modifier = {
+			
+			political_power_gain = -0.05
+			
+				ni_drift = -0.01
+				ds_drift = -0.01
+				ss_drift = 0.02
+				jc_drift = 0.02
+				lb_drift = 0.01
+		}	
+		
+        days_remove = 30
+		
+		days_re_enable = 50
+
+		remove_effect = {
+		}
+	}
+	
+	HUN_organize_party_meeting = {
+
+		icon = GFX_decision_category_generic_communism
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+			}
+		}
+
+		days_remove = 30
+		
+		days_re_enable = 120
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_PartyUnity_0.1_increase
+			add_to_variable = {
+				var = HUN_PartyUnity
+				value = 0.10
+			}			
+		}
+	}		
  }
+  
+ HUN_war_on_horizon = {
+
+	HUN_arpad_line_one = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+		
+			modifier = {
+
+			consumer_goods_factor = 0.05
+		}		
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		set_country_flag = HUN_arpad_line_one	
+		
+			76 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 727
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6731
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 9672
+				}
+			}
+			83 = {
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3694
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11622
+				}
+		    }
+		}				
+	}
+	
+	HUN_arpad_line_two = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+			custom_trigger_tooltip = {
+			    tooltip = HUN_arpad_line_one_tt
+				has_country_flag = HUN_arpad_line_one			
+		}
+		}
+		
+			modifier = {
+			consumer_goods_factor = 0.05
+		}		
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		set_country_flag = HUN_arpad_line_two	
+		
+			82 = {
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 662
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11592
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3649
+				}
+			}	
+			
+			764 = {
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 614
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3614
+				}
+			}
+		}				
+	}
+
+	HUN_arpad_line_three = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+			custom_trigger_tooltip = {
+			    tooltip = HUN_arpad_line_two_tt
+				has_country_flag = HUN_arpad_line_two			
+		}
+		}
+		
+			modifier = {
+			consumer_goods_factor = 0.05
+		}		
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+			109 = {
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11580
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11577
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6647
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 9595
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 624
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3596
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3592
+				}
+			}
+
+			794 = { 
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3601
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6611
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 984
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11901
+				}
+			}
+		}				
+	}
+
+	HUN_invest_in_military_industry = {
+
+		icon = GFX_decision_generic_construction
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			}
+
+		days_remove = 30
+		
+		days_re_enable = 60
+
+		remove_effect = {
+		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+	}
+
+	HUN_invest_in_civil = {
+
+		icon = GFX_decision_generic_construction
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			}
+
+		days_remove = 30
+		
+		days_re_enable = 60
+
+		remove_effect = {
+		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+	}	
+	
+	HUN_increase_conscription = {
+
+		icon = GFX_decision_generic_construction
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			}
+
+		days_remove = 15
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+			swap_ideas = {
+				remove_idea = volunteer_only
+				add_idea = limited_conscription
+			}			
+		}
+	}
+
+	HUN_mobilize_the_economy = {
+
+		icon = GFX_decision_generic_construction
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			}
+
+		days_remove = 15
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+			swap_ideas = {
+				remove_idea = civilian_economy
+				add_idea = partial_economic_mobilisation
+			}			
+		}
+	}	
+}
+
+HUN_unrest_mechanic = {
+
+	HUN_increase_revolutionary_zeasl = {
+
+		icon = GFX_decision_category_generic_communism
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+			}
+		}
+
+		days_remove = 1
+		
+		days_re_enable = 30
+
+		remove_effect = {
+		
+		set_country_flag = HUN_magyarization
+		
+		custom_effect_tooltip = Revolutionary_Zeal_0.04_increase
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = 0.04
+			}			
+			
+		}
+	}

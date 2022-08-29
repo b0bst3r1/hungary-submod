@@ -52,6 +52,18 @@
  newbalkchaos.6.d:0 "During the Balkan internecine phase, the Albanian minority in Montenegro, supported from Albania itself, organised a full-scale guerilla war, which in fact evolved into Albania controlling the region. \n\n After Serbia had established control over the whole of Montenegro, it was time to establish it's autohiry in the territory controlled by the Albanian minority. Today, the Serbian National Army has gone on the offensive. Officialy, the goverment claims that the goal of this operation is to     establish control over the occupied Montenegrin territory, but it is believed that if the Albanian army is defeated, Serbia will go further."
  newbalkchaos.6.a:0 "New round of Balkan wars"
  
+ hungarian.4.t:0 "Commissioner of Internal Affairs" 
+ hungarian.4.d:0 "Commissioner of Internal Affairs Sandor Garbai has been an active political figure of the Hungarian Common Republic since the beginning of the revolution. He was the first Prime Minister of the republic, but then he was deposed and he received his current position as Commissioner of Internal Affairs. \n\ \n\Now Garbai supports a reformists social democratic policy, the addition of market elements and a limited lifting of tensions with capitalist powers. He has great population support because of a promises to significantly increase the welfare of the population if he gets the post of Prime Minister once again."
+ hungarian.4.a:0 "Wonderful" 
+  
+ hungarian.5.t:0 "Commissioner of Foreign Affairs" 
+ hungarian.5.d:0 "The Commissioner of Foreign Affairs Bela Kun at the time of revolution he was not the legal leader of the Country, but in fact, he was the actual leader of revolutionary movement. \n\ \n\Bela Kun adheres to classical revolutionary views and doesn't allow even the slightest market reforms. Within the framework of the general political discussion, he designates everyone who proposes reforms as an enemy of the revolution. \n\ \n\Bela Kun has great support among the local intelligentsia and politics, which gives him great prospects."
+ hungarian.5.a:0 "Okay"
+  
+ hungarian.6.t:0 "Commissioner of Popular Culture"
+ hungarian.6.d:0 "The Commisioner of Popular Culture of Hungary Jozsef Revai at the time of revolution was only thirteen years old, but already then he was imbued with Jacobin ideas. \n\ \n\ Revai quickly began earning popularity among the militaries and Intelligence agency elite after Bela Vago's death becaues of his experience as a propagandist. He will inevitably use this to his advantage."
+ hungarian.6.a:0 "Excellent" 
+   
  hungarian.7.t:0 "Romania Defeated!" 
  hungarian.7.d:0 "Despite the numercial superiority of the Romanian Army, the Red Army of the Hungarian People's Republic succeeded in doing the impossible - defeating Romania in open battle. \n\n Citizens are celebrating victory throughour Budapest. And a new revolutionary goverment is being installed in Bucharest."
  hungarian.7.a:0 "Brown Plague is defeated" 
@@ -180,6 +192,38 @@
  hungarian.37.d:0 "Today in Budapest opened the first exhibition of the Union of Hungarian Artists, a creative union that brings together artists and art historians. \n\nThe goal of the Union of Artists is to create ideological, highly artistic works of art of all kinds and genres and works of art history, to strengthen the bond between the members of the Union of Artists and Hungary with the practice of building an equal society, to develop the Jacobin content and national form of art of the peoples of the Hungarian People's Republic and to assert the ideals of patriotism and proletarian internationalism in the work of artists. AU going to hold meetings, conferences, exhibitions, organised and funded creative work, including free workshops for members, and organised creative trips to the regions. \n\nEach region of Hungary also established its own artists' unions under the auspices of the Hungarian Artists' Union."          
  hungarian.37.a:0 "Significant contribution to culture!"
 
+ hungarian.38.t:0 "Electrophysiology"
+ hungarian.38.d:0 "The use of electronic technology makes it possible to draw electrical potentials not only from the surface of living tissues, but also from the depth by means of submersible electrodes (registration of the electrical activity of individual cells and intracellular withdrawal). Electronic computer technology can also be used, which allows to distinguish very weak electrical signals against the background of noise, conduct automatic statistical processing of a large number of electrophysiological data, simulate electrophysiological processes, etc."
+ hungarian.38.a:0 "Technology is reaching a new level!"
+ 
+ hungarian.39.t:0 "Experiments to revive the heart"
+ hungarian.39.d:0 "As the research progressed, scientists came to the conclusion that on the basis of such experiments it was premature to talk about the possibility of reviving a person ("the question is reduced to reviving not only the heart, but also other organs and above all the central nervous system"), but death and the postmortem state should become the subject of comprehensive study: "The line between them is not as sharp as we used to think, this boundary with each passing day, with each new discovery in biology and chemistry more and more smoothed, becomes more and more numerous"
+ hungarian.39.a:0 "Very nice"
+ 
+ hungarian.40.t:0 "Experiments in the Revival of Organisms"
+ hungarian.40.d:0 "Every muscle of the body was immediately agitated with convulsive movements resembling a violent shuddering from cold. ... On moving the second rod from hip to heel, the knee being previously bent, the leg was thrown out with such violence as nearly to overturn one of the assistants, who in vain tried to prevent its extension. The body was also made to perform the movements of breathing by stimulating the phrenic nerve and the diaphragm. When the supraorbital nerve was excited every muscle in his countenance was simultaneously thrown into fearful action; rage, horror, despair, anguish, and ghastly smiles, united their hideous expressions in the murderer's face, surpassing far the wildest representations... \n\nScientists were able to come to the conclusion that reanimation of the body from the point of view of science is quite possible with the enormous impact of electricity."
+ hungarian.40.a:0 "Oh god.." 
+ 
+ hungarian.41.t:0 "Revival of Organism"
+ hungarian.41.d:0 "After several years of research, a group of our scientists was finally able to achieve the original goals, they managed to run the body from the organs of already deceased people. The creature came out several times stronger and more resilient than a human, which gives great opportunities to use it in industry, but the main thing is not to lose vigilance and not to give the creature much freedom. \n\nWhen the research began, it was hard to believe that it would succeed, thanks to the hard work of scientists and the indispensable support of the Hungarian state. Now, to be sure, the country has solved the problem of labor shortages."
+ hungarian.41.a:0 "YES!"
+ 
+ hungarian.42.t:0 "Socialist Self-Managment"
+ hungarian.42.d:0 "The main goal of Socialist self-management is to put company management in the hands of workers and separate management from the state. It also means demonstrating the viability of a third way between capitalist and Jacobin. Based on market distribution, public ownership of the means of production, and self-management in the enterprises, this system replaced the centralized planning of former Hungary."
+ hungarian.42.a:0 "Get it"
+ 
+ hungarian.43.t:0 "Direct Democracy"
+ hungarian.43.d:0 "The first stage of socialist reforms in Hungary is the establishment of direct democracy. In direct democracy, the people decide on policies without any intermediary or representative, whereas in a representative democracy people vote for representatives who then enact policy initiatives. Depending on the particular system in use, direct democracy might entail passing executive decisions, the use of sortition, making laws, directly electing or dismissing officials, and conducting trials."
+ hungarian.43.a:0 "A pure democracy"
+ 
+ hungary.1.t:0 "Horthy in Budapest" 
+ hungary.1.d:0 "Today, Miklos Horthy entered the city of Budapest and announced to the crowd that he forgives the "sinful capital" that defiled the motherland.\n\ \n\ Then Horthy said that one day Hungary would regain its former greatness and the enemies of the motherland would be defeated. The crowd cheered. Horthy left the square."
+ hungary.1.a:0 "Alarming"
+ 
+ hungary.2.t:0 "Proclamation of UDWR"
+ hungary.2.d:0 " The leaders of all six national republics finally signed an agreement that has been discussed for many months. Unification into one single state - Union of Danubian Worker's Republics! \n\ \n\ Each republic of the state (Croatian, Bosnian, Hungarian, Montenegrin, Serbian and Romanian Workers Republics) will have formal sovereignty and also an opportunity to exit from the union." 
+ hungary.2.a:0 "Great Day!"
+ 
  hungary.3.t:0 "THIRD BALKAN WAR"
  hungary.3.d:0 "The day after the Hungarian ultimatum to Albania on granting independence to Kosovo, Albania refused. After Bulgaria officially announced the guaraantees of the Albanian goverment, nothing else could have happened. \n\n Hungary had nothing else to do. This morning, the Hungarian Red Army crossed the Albanian and Bulgarian borders. The war has began."
  hungary.3.a:0 "Here we go again" 
@@ -248,3 +292,7 @@
  hungary.19.t:0 "JAPAN DOMINATE THE SPARTAKIAD"
  hungary.19.d:0 "Without much competition, the Japanese athletes absolutely dominated the Spartakiad. This greatly enhanced Japan's prestige among the revolutionary powers and on the world stage in general."
  hungary.19.a:0 "Perfect"
+ 
+ hungary.20.t:0 "IT'S ALIVE"
+ hungary.20.d:0 "It's hard to believe, but today a group of Hungarian scientists made a statement that they have finally succeeded in reviving the human body from components that are no longer working. Hungary has set itself such a goal in the face of a colossal labor shortage. \n\nThe Hungarian People's Republic is now many times ahead of the rest of the world in the aspect of physiology, who could not even think that this could be possible. Now many scientific communities have also set themselves the goal of making such a discovery, but it is far from certain that they will succeed."
+ hungary.20.a:0 "Outstanding achievement"

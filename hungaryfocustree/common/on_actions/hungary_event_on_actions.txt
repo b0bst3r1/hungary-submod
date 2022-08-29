@@ -9,7 +9,16 @@ on_actions = {
 				}
 			}
 		}
+		
+		effect = {
+			HUN = {
+				country_event = { 	#HungarySituation
+					id = hungarian.16
+					days = 1
+				}
+			}
+		}		
 	}
-  }
+ }
   
   

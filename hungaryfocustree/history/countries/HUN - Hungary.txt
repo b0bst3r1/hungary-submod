@@ -2,16 +2,14 @@
 starting_train_buffer = 2
 capital = 967
 
-set_country_flag = hungarian_starting
-
 oob = "HUN_PB"
 
 # Accepted Cultures
 
 set_variable = { PB_main_culture = 55 }
 add_to_array = { PB_accepted_cultures = 55 }
-add_to_array = { PB_accepted_cultures = 46 }
 add_to_array = { PB_accepted_cultures = 57 }
+add_to_array = { PB_accepted_cultures = 49 }
 add_to_array = { PB_accepted_cultures = 446 }
 
 # Starting tech
@@ -36,7 +34,10 @@ set_war_support = 0.3
 set_convoys = 0
 
 set_country_flag = PB_WAR_SYSTEM_Slovakian_Revolution
+set_country_flag = hungarian_starting
+set_country_flag = Tag_in_Hungarian_Sphere
 
+set_research_slots = 3
 
 #CHARACTERS
 recruit_character = HUN_Rakosi
@@ -117,7 +118,7 @@ set_variable = { var = HUN_transylvania_Unrest value = 15 }
 
 set_variable = {
 	var = HUN_Revolutionary_Zeal
-	value = 0.5
+	value = 0.4
 }
 
 set_variable = {
@@ -193,10 +194,10 @@ set_popularities = {
 	ds = 0
 	rc = 0
 	cn = 0
-	lb = 0
+	lb = 25
 	an = 0 
-	ss = 40
-	jc = 60
+	ss = 33
+	jc = 42
 
 }
 
@@ -206,6 +207,18 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
+
+add_to_leading_coalition_lb = yes
+add_to_leading_coalition_jc = yes
+add_to_leading_coalition_ss = yes
+
+ban_party_ni = yes
+ban_party_ds = yes
+ban_party_rc = yes
+ban_party_cn = yes
+ban_party_an = yes
+
 
 if = {
 	limit = {
@@ -242,10 +255,10 @@ set_cosmetic_tag = CRO_COM
 		ds = 0
 		rc = 0
 		cn = 0
-		lb = 0
+		lb = 25
 		an = 0
-		ss = 40
-		jc = 60
+		ss = 30
+		jc = 45
 	}
 }
 
@@ -292,15 +305,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Sandor Garbai"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/HUN/Portrait_Sandor_Garbai.dds"
 	ideology = LB_VARIANT_01
 }
 
 create_country_leader = {
-	name = "Sandor Garbai"
+	name = "Jozsef Revai"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_Sandor_Garbai.dds"
+	picture = "gfx/leaders/HUN/Portrait_revai.dds"
 	ideology = SS_VARIANT_01
 }

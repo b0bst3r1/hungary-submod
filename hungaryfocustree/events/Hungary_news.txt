@@ -298,6 +298,21 @@ add_namespace = hungary
 	option = {
 		name = hungary.19.a
 	}
+        }
+
+	news_event = { #It's Alive#
+	id = hungary.20
+	title = hungary.20.t
+	desc = hungary.20.d
+	picture = GFX_news_event_hun_931
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.20.a
+	}
         }		
 
  

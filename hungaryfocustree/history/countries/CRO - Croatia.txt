@@ -51,6 +51,7 @@ add_ideas = {
 }
 
 set_country_flag = PB_WAR_SYSTEM_Slovakian_Revolution
+set_country_flag = Tag_in_Hungarian_Sphere
 
 set_stability = 0.5
 set_war_support = 0.8

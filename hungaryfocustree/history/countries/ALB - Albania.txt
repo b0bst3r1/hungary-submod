@@ -27,6 +27,12 @@ set_war_support = 0.75
 set_convoys = 5
 
 add_ideas = {
+
+    ALB_economic_collapse
+	ALB_german_dependency
+    ALB_Agrarian_country
+	ALB_Religious_diversity
+	
 	#PB_ALB_Rose_Of_Albania
 	#PB_ALB_Economic_Collapse
 	#PB_ALB_Discordant_Society

@@ -2,12 +2,12 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_HUN_State_Outline"
-		texturefile = "gfx/interface/Hungary/HUN_State_Outline"
+		texturefile = "gfx/interface/Hungary/HUN_State_Outlin"
 	}
 	
     SpriteType = {
 		name = "GFX_HUN_Hungary_color"
-		texturefile = "gfx/interface/Hungary/Hungary_color"
+		texturefile = "gfx/interface/Hungary/Hungary_color.dds"
 		transparencecheck = yes
 	}
 	

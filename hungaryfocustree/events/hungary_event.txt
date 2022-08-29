@@ -522,7 +522,7 @@ country_event = {
 	hidden_effect = {
 	
 	HUN = {
-	country_event = { id = hungarian.12 days = 1 }
+	country_event = { id = hungarian.12 days = 2 }
 	 }
 	  }
     }
@@ -533,7 +533,7 @@ country_event = {
 	hidden_effect = {
 	
 	HUN = {
-	country_event = { id = hungarian.13 days = 1 }
+	country_event = { id = hungarian.13 days = 3 }
 	 
 	 }
 	}
@@ -552,6 +552,7 @@ country_event = {
 		name = hungarian.11.a
 
 		    add_ideas = {
+			HUN_party_opposition
 	        HUN_Arpad_EM
 			HUN_Revai_HOG
 			}
@@ -565,12 +566,8 @@ country_event = {
 		
 		kill_country_leader = yes
 
-		create_country_leader = {
-			name = "Jozsef Revai"
-			desc = " "
-			picture = "gfx/leaders/HUN/Portrait_revai.dds"
-			expire = "1965.1.1"
-			ideology = JC_VARIANT_01
+		set_politics = {
+		ruling_party = SS
 		}		
 		
 		complete_national_focus = HUN_VAGO
@@ -607,6 +604,7 @@ country_event = {
 		days = 1
 		}			
 	  }
+	  	  
 		complete_national_focus = HUN_BELAKUN
 		
 		kill_country_leader = yes
@@ -650,16 +648,12 @@ country_event = {
 			days = 1
 		}
      }		
-		
 		set_politics = {
-			ruling_party = SS
-		}		
-		
+		ruling_party = LB
+		}
 		complete_national_focus = hun_garbai
-	
-	 
-	  }
-    }
+	 }
+   }
 	
 		   country_event = { #AlbaniaPeace
 	id = hungarian.14
@@ -897,9 +891,11 @@ set_popularities = {
 	option = {
 		name = hungarian.16.a
 		
+		complete_national_focus = HUN_Partycrisis
+		
 			hidden_effect = {
 			HUN = {
-			country_event = { id = hungarian.20 days = 10 }
+			country_event = { id = hungarian.20 days = 8 }
 		  }
 	    }		
 	  }
@@ -1484,7 +1480,28 @@ create_country_leader = {
 			
 			remove_ideas = {			
             remove_idea = HUN_Kunfi_FM
-			}			
+			}
+
+			if = {
+				limit = {
+					NOT = {
+					has_completed_focus = hun_garbai_arrest
+				}
+				}
+				add_popularity = {
+					ideology = jc
+					popularity = -0.05
+				}
+			}
+
+			if = {
+				limit = {
+					has_completed_focus = hun_garbai_arrest
+				}
+				add_popularity = {
+					remove_ideas = HUN_party_opposition
+				}
+			}
          }
       }		 
 
@@ -1512,7 +1529,28 @@ create_country_leader = {
 		   retire_character = HUN_Schon
 		   retire_character = HUN_tibor
 		   retire_character = HUN_farkas_mihaly
-		   retire_character = HUN_Gabor_Peter		   
+		   retire_character = HUN_Gabor_Peter
+
+			if = {
+				limit = {
+					NOT = {
+					has_completed_focus = hun_belakun_arrest
+				}
+				}
+				add_popularity = {
+					ideology = lb
+					popularity = -0.05
+				}
+			}
+
+			if = {
+				limit = {
+					has_completed_focus = hun_belakun_arrest
+				}
+				add_popularity = {
+					remove_ideas = HUN_party_opposition
+				}
+			}		   
          }
 		 
 	option = {
@@ -1524,10 +1562,52 @@ create_country_leader = {
 			
 			remove_ideas = {			
             remove_idea = HUN_Garbai_IM	
-			}		
+			}
+
+			if = {
+				limit = {
+					NOT = {
+					has_completed_focus = hun_belakun_arrest
+				}
+				}
+				add_popularity = {
+					ideology = lb
+					popularity = -0.05
+				}
+			}
+
+			if = {
+				limit = {
+					has_completed_focus = hun_belakun_arrest
+				}
+				add_popularity = {
+					remove_ideas = HUN_party_opposition
+				}
+			}			
       
 	option = {
 		name = hungarian.33.c #Forgive	
+		
+			if = {
+				limit = {
+					NOT = {
+					has_completed_focus = hun_belakun_arrest
+				}
+				}
+				add_popularity = {
+					ideology = lb
+					popularity = -0.05
+				}
+			}
+
+			if = {
+				limit = {
+					has_completed_focus = hun_belakun_arrest
+				}
+				add_popularity = {
+					remove_ideas = HUN_party_opposition
+				}
+			}		
          }		 
       }
    }
@@ -1650,10 +1730,112 @@ create_country_leader = {
             HUN_artist_union
 			}		
          }
+      }
+
+     	   country_event = { #Electrophysiology
+	id = hungarian.38
+	title = hungarian.38.t
+	desc = hungarian.38.d
+	picture = GFX_report_event_hun_931
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.38.a
+
+		set_technology = {
+        combatagate = 1
+		infantry_drugs = 1		
+        }
+      }
+    }
+
+     	   country_event = { #RevivalOfHeart
+	id = hungarian.39
+	title = hungarian.39.t
+	desc = hungarian.39.d
+	picture = GFX_report_event_hun_932
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.39.a
+
+		set_technology = {
+        combatagate_upgrade_1 = 1
+        }
+      }
+    }
+
+     	   country_event = { #Experiments in the Revival of Organisms#
+	id = hungarian.40
+	title = hungarian.40.t
+	desc = hungarian.40.d
+	picture = GFX_report_event_hun_933
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.40.a
+
+		set_technology = {
+        combatagate_upgrade_2 = 1
+        }
+      }
+    }
+
+     	   country_event = { #RevivalOfOrganism
+	id = hungarian.41
+	title = hungarian.41.t
+	desc = hungarian.41.d
+	picture = GFX_report_event_hun_934
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.41.a
+		
+		set_technology = {
+        combatagate_upgrade_A = 1
+		combatagate_upgrade_7 = 1`
+        }
+		
+		add_ideas = {
+        HUN_revival_of_organisms
+			}
+         }
+      }
+
+     	   country_event = { #SocialistSelfManagment
+	id = hungarian.42
+	title = hungarian.42.t
+	desc = hungarian.42.d
+	picture = GFX_report_event_hun_934
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.42.a	
+
+		add_ideas = {
+        HUN_socialist_self_managment
+			}
+         }
+      }
+
+     	   country_event = { #Direct Democracy#
+	id = hungarian.43
+	title = hungarian.43.t
+	desc = hungarian.43.d
+	picture = GFX_report_event_hun_934
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.43.a	
+
+		add_ideas = {
+        HUN_direct_democracy
+			}
+         }
       }	  
-	  
-	  
-
-	  
-
-  

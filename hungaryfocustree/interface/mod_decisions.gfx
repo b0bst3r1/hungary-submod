@@ -4,4 +4,14 @@ spriteTypes = {
 		name = "GFX_decision_revive"
 		texturefile = "gfx/interface/decisions/revive.dds"
 	}
+	
+    spriteType = {
+		name = "GFX_decision_polit"
+		texturefile = "gfx/interface/decisions/political_dec.dds"
+	}
+
+    spriteType = {
+		name = "GFX_decision_war_horizon"
+		texturefile = "gfx/interface/decisions/war_horizon.dds"
+	}	
 }

@@ -1,0 +1,90 @@
+##################
+##BulgariaNmodIDEAS#
+##################
+
+ideas = {
+
+      country = {
+	  
+		ALB_Agrarian_country = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+                        picture = ALB_farm
+			
+			removal_cost = -1
+			
+			modifier = {
+				montly_population = 0.33
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05
+			}
+		  }
+
+		ALB_Religious_diversity = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+                        picture = ALB_Religious_diversity
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.15
+				conscription_factor = -0.05
+			}
+		  }
+
+		ALB_german_dependency = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+                        picture = ALB_ger
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.15
+				conscription_factor = -0.05
+			}
+		  }
+
+		ALB_economic_collapse = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+                        picture = ALB_economic_collapse
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+                consumer_goods_factor = 0.25
+				production_factory_max_efficiency_factor = -0.15				
+			
+			}
+		  }			  
+        }	
+      }

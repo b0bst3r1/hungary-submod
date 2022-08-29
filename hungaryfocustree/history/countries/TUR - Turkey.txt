@@ -41,6 +41,12 @@ set_convoys = 112
 set_research_slots = 3
 
 add_ideas = {
+ 
+    TUR_national_disgrace
+    PB_TUR_Iron_Fist
+	PB_TUR_Caliph_of_Islam
+	TUR_economic_collapse
+	
 	limited_conscription
 	limited_exports
 	civilian_economy

@@ -52,7 +52,7 @@ hidden_ideas = {
 			modifier = {
 				surrender_limit = -0.05
 				stability_factor = -0.15
-				political_power_gain = -0.20				
+				political_power_gain = -0.15				
                 
 			}
 		}
@@ -655,6 +655,176 @@ hidden_ideas = {
             production_factory_efficiency_gain_factor = 0.05
             production_factory_max_efficiency_factor = 0.05 	
 			}
-		}		
+		}
+
+		HUN_revival_of_organisms = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_revival_of_organisms
+			
+			removal_cost = -1
+	
+			modifier = {						
+            production_factory_efficiency_gain_factor = 0.1
+            production_factory_max_efficiency_factor = 0.05 
+            monthly_population = 0.05				
+		   }
+	   }
+
+		HUN_party_opposition = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_opposition
+			
+			removal_cost = -1
+	
+			modifier = {						
+            political_power_gain = -0.10
+            stability_factor = -0.10
+			jc_drift = 0.02
+			lb_drift = 0.02				
+		   }
+	   }
+
+		HUN_socialist_self_managment = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_socialist_self_managment
+			
+			removal_cost = -1
+	
+			modifier = {						
+            production_factory_efficiency_gain_factor = 0.05
+            production_factory_max_efficiency_factor = 0.05	
+		   }
+	   }
+
+		HUN_socialism_human_face = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_socialist_with_human_face
+			
+			removal_cost = -1
+	
+			modifier = {						
+            political_power_gain = 0.10
+            ss_drift = 0.02	
+		   }
+	   }
+
+		HUN_direct_democracy = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_direct_democracy
+			
+			removal_cost = -1
+	
+			modifier = {
+            political_power_gain = 0.05			
+            ss_drift = 0.01
+            lb_drift = 0.01	
+            cn_drift = 0.01			
+		   }
+	   }
+
+		HUN_brotherhood_and_unity = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_brotherhood
+			
+			removal_cost = -1
+	
+			modifier = {
+            stability_factor = 0.05		
+		   }
+	   }
+
+		HUN_child_support = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_child_support
+			
+			removal_cost = -1
+	
+			modifier = {
+            monthly_population = 0.20	
+		   }
+	   }
+
+		HUN_education_reform = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_education_reform
+			
+			removal_cost = -1
+	
+			modifier = {
+            research_speed_factor = 0.05	
+		   }
+	   }	   
 	}	
- }	
+ } 

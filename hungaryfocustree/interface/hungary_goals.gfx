@@ -4,6 +4,16 @@ spriteTypes = {
 	    name = "GFX_hun_political_crisis"
         texturefile = "gfx/interface/goals/hun_political_crisis.dds"
     }
+	
+	SpriteType = {
+	    name = "GFX_free_press"
+        texturefile = "gfx/interface/goals/free_press.dds"
+    }
+	
+	SpriteType = {
+	    name = "GFX_education_reform"
+        texturefile = "gfx/interface/goals/education_reform.dds"
+    }	
 
 	SpriteType = {
 	    name = "GFX_HUN_farm"

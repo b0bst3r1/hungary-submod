@@ -917,6 +917,21 @@ HUN_COM = {
 	color_ui = rgb { 127 24 13 }
 }
 
+HUN_wkr = {
+	color = rgb { 180 6 5 }
+	color_ui = rgb { 180 6 5 }
+}
+
+HUN_SOC = {
+	color = rgb { 200 6 5 }
+	color_ui = rgb { 200 6 5 }
+}
+
+HUN_LB = {
+	color = rgb { 160 24 60 }
+	color_ui = rgb { 160 24 60 }
+}
+
 CRO_COM = {
 	color = rgb { 110 24 13 }
 	color_ui = rgb { 110 24 13 }
