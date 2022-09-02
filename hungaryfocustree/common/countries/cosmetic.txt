@@ -928,8 +928,8 @@ HUN_SOC = {
 }
 
 HUN_LB = {
-	color = rgb { 160 24 60 }
-	color_ui = rgb { 160 24 60 }
+	color = rgb { 253 124 110 }
+	color_ui = rgb { 253 124 110 }
 }
 
 CRO_COM = {

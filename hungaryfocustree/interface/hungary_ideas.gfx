@@ -198,5 +198,30 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ALB_economic_collapse"
 		texturefile = "gfx/interface/ideas/Albania/ALB_economic_collapse.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_HUN_direct_democracy"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_direct_democracy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HUN_welfare"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_welfare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HUN_restructed_farm"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_restructed_farm.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_shock_therapy"
+		texturefile = "gfx/interface/ideas/Hungary/shock_therapy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_democratic_hungary"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_democratic_hungary.dds"
 	}	
 }

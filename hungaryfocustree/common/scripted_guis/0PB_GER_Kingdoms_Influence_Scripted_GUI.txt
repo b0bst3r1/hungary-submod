@@ -42,16 +42,7 @@ scripted_gui = {
 		}
 
 		triggers = {
-			GER_centralization_no_info_visible = {
-				NOT  = {
-				OR = {
-				has_country_flag = clicked_on_transylvania
-				has_country_flag = clicked_on_ruthenia
-				has_country_flag = clicked_on_hungary
-				has_country_flag = clicked_on_slovakia
-			    }
-			    }
-		    }
+		
 			HUN_status_info = {
 				OR = {
 				has_country_flag = clicked_on_transylvania

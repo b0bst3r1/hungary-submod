@@ -6,6 +6,26 @@ spriteTypes = {
     }
 	
 	SpriteType = {
+	    name = "GFX_HUN_Liberal_Hungary"
+        texturefile = "gfx/interface/goals/HUN_Liberal_Hungary.dds"
+    }	
+	
+	SpriteType = {
+	    name = "GFX_HUN_capitalism"
+        texturefile = "gfx/interface/goals/HUN_capitalism.dds"
+    }	
+	
+	SpriteType = {
+	    name = "GFX_hun_new_kolkhoz"
+        texturefile = "gfx/interface/goals/hun_new_kolkhoz.dds"
+    }	
+
+	SpriteType = {
+	    name = "GFX_HUN_revai_coup"
+        texturefile = "gfx/interface/goals/HUN_revai_coup.dds"
+    }	
+	
+	SpriteType = {
 	    name = "GFX_free_press"
         texturefile = "gfx/interface/goals/free_press.dds"
     }

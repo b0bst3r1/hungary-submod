@@ -232,7 +232,7 @@ HUN_domestic_policy = {
 
 	HUN_increase_revolutionary_zeal = {
 
-		icon = GFX_decision_category_generic_communism
+		icon = GFX_decision_category_hun_comm
 
 		cost = 20
 
@@ -265,7 +265,7 @@ HUN_domestic_policy = {
 
 	HUN_increase_party_unity = {
 
-		icon = GFX_decision_category_generic_communism
+		icon = GFX_decision_category_hun_comm
 
 		cost = 20
 
@@ -298,7 +298,7 @@ HUN_domestic_policy = {
 
 	HUN_Friedrich_Engels_legacy = {
 
-		icon = GFX_decision_category_generic_communism
+		icon = GFX_decision_category_hun_comm
 
 		cost = 50
 
@@ -318,29 +318,16 @@ HUN_domestic_policy = {
 
 		effect = {
 		
-		set_province_name = {
-        id = 701
-        name = Engels
-                            }
-		
-		custom_effect_tooltip = Revolutionary_Zeal_0.04_increase
-		  add_to_variable = {
-			var = HUN_Revolutionary_Zeal
-			value = 0.04
-	    }
-			
-		custom_effect_tooltip = HUN_PartyUnity_0.04_increase
-			add_to_variable = {
-				var = HUN_PartyUnity
-				value = 0.04
-			}			
-			
-		}
+		country_event = {
+		id = hungarian.44
+		days = 1
+		  }			
+	   }
 	}
 
 	HUN_Propaganda_in_Schools = {
 
-		icon = GFX_decision_category_generic_communism
+		icon = GFX_decision_category_hun_comm
 
 		cost = 50
 
@@ -401,7 +388,7 @@ HUN_domestic_policy = {
 
 	HUN_Fighting_the_Counterrevolution = {
 
-		icon = GFX_decision_category_generic_communism
+		icon = GFX_decision_category_hun_comm
 
 		cost = 50
 
@@ -438,7 +425,7 @@ HUN_domestic_policy = {
 	
 	HUN_organize_party_meeting = {
 
-		icon = GFX_decision_category_generic_communism
+		icon = GFX_decision_category_hun_comm
 
 		cost = 100
 
@@ -913,3 +900,435 @@ HUN_unrest_mechanic = {
 			
 		}
 	}
+}
+
+HUN_shock_therapy = {
+
+	HUN_Universal_Minimum_Employment_Act = {
+
+		icon = generic_decision
+
+		available = {
+			has_idea = HUN_shock_therapy_1
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_1
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.05
+            consumer_goods_factor = 0.1
+		}
+
+		days_remove = 35
+		fire_only_once = yes
+
+		remove_effect = {
+			add_political_power = 25
+			add_stability = 0.005
+			PB_Poverty_Small_Progress_Increase = yes
+			set_country_flag = hun_employment_act
+		}
+	}
+	
+	HUN_National_Industrial_Recovery = {
+
+		icon = generic_construction
+
+		available = {
+			has_idea = HUN_shock_therapy_1
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_1
+		}
+
+		cost = 40
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.05
+			production_speed_buildings_factor = 0.25
+		}
+
+		days_remove = 60
+		fire_only_once = yes
+
+		remove_effect = {
+			add_political_power = 25
+			add_stability = 0.005
+			set_country_flag = hun_industrial_recovery
+		}
+	}
+	
+	HUN_capital_industry = {
+
+		icon = generic_construction
+
+		available = {
+			has_idea = HUN_shock_therapy_1
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_1
+		}
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+			consumer_goods_factor = 0.05
+		}
+
+		days_remove = 50
+		fire_only_once = yes
+
+		remove_effect = {
+			add_political_power = 25
+			add_stability = -0.1
+			set_country_flag = HUN_capital_industry
+		}
+	}	
+	
+	HUN_First_Shock = {
+
+		icon = generic_health_cross
+
+		available = {
+			has_idea = HUN_shock_therapy_1
+			custom_trigger_tooltip = {
+			    tooltip = HUN_capital_industry_tt
+				has_country_flag = HUN_capital_industry
+			}
+			custom_trigger_tooltip = {
+				tooltip = hun_employment_act_tt
+				has_country_flag = hun_employment_act
+			}
+			custom_trigger_tooltip = {
+				tooltip = hun_industrial_recovery_tt
+				has_country_flag =  hun_industrial_recovery
+			}
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_1
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.25
+		}
+
+		days_remove = 7
+		fire_only_once = yes
+
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = HUN_shock_therapy_1
+				add_idea = HUN_shock_therapy_2
+			}
+		}
+	}
+
+	HUN_Universal_Minimum_Employment_Act_2 = {
+
+		icon = generic_decision
+
+		available = {
+			has_idea = HUN_shock_therapy_2
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_2
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.05
+            consumer_goods_factor = 0.1
+		}
+
+		days_remove = 35
+		fire_only_once = yes
+
+		remove_effect = {
+			add_political_power = 40
+			add_stability = 0.02
+			PB_Poverty_Small_Progress_Increase = yes
+			set_country_flag = hun_employment_act_2
+		}
+	}
+
+	HUN_Rebuilding_Slovakia = {
+
+		icon = generic_construction
+
+		available = {
+			has_idea = HUN_shock_therapy_2
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_2
+		}
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		days_remove = 50
+		fire_only_once = yes
+
+		remove_effect = {
+		add_political_power = -30
+		add_stability = 0.03
+        set_country_flag = HUN_rebuild_slovakia		
+     }	
+   }
+
+	HUN_monetary_reform = {
+
+		icon = generic_construction
+
+		available = {
+			has_idea = HUN_shock_therapy_2
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_2
+		}
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+		}
+
+		days_remove = 60
+		fire_only_once = yes
+
+		remove_effect = {
+			PB_Economy_Small_Progress_Increase = yes
+									
+			set_country_flag = HUN_monetary_reform
+		}
+	 }
+
+	HUN_Second_Shock = {
+
+		icon = generic_health_cross
+
+		available = {
+			has_idea = HUN_shock_therapy_1
+			custom_trigger_tooltip = {
+			    tooltip = HUN_monetary_reform_tt
+				has_country_flag = HUN_monetary_reform
+			}
+			custom_trigger_tooltip = {
+				tooltip = HUN_rebuild_slovakia_tt
+				has_country_flag = HUN_rebuild_slovakia
+			}
+			custom_trigger_tooltip = {
+				tooltip = hun_employment_act_tt
+				has_country_flag =  hun_employment_act_2
+			}
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_2
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.25
+		}
+
+		days_remove = 7
+		fire_only_once = yes
+
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = HUN_shock_therapy_2
+				add_idea = HUN_shock_therapy_3
+			}
+		}
+	}
+
+	HUN_Universal_Minimum_Employment_Act_3 = {
+
+		icon = generic_decision
+
+		available = {
+			has_idea = HUN_shock_therapy_3
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_3
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.05
+            consumer_goods_factor = 0.1
+		}
+
+		days_remove = 35
+		fire_only_once = yes
+
+		remove_effect = {
+			add_political_power = 50
+			add_stability = 0.03
+			PB_Poverty_Small_Progress_Increase = yes
+			set_country_flag = hun_employment_act_3
+		}
+	}
+
+	HUN_speed_up_privatization = {
+
+		icon = generic_decision
+
+		available = {
+			has_idea = HUN_shock_therapy_3
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_3
+		}
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = 0.15
+		}
+
+		days_remove = 35
+		fire_only_once = yes
+
+		remove_effect = {
+			PB_Economy_Small_Progress_Increase = yes
+			set_country_flag = hun_privatization_speed
+		}
+	}
+
+	HUN_Allow_foreign_investments = {
+
+		icon = generic_decision
+
+		available = {
+			has_idea = HUN_shock_therapy_3
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_3
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+		}
+
+		days_remove = 25
+		fire_only_once = yes
+
+		remove_effect = {
+		    add_political_power = 50
+			set_country_flag = hun_allow_investments
+		}
+	}
+
+	HUN_Third_Shock = {
+
+		icon = generic_health_cross
+
+		available = {
+			has_idea = HUN_shock_therapy_3
+			custom_trigger_tooltip = {
+			    tooltip = hun_allow_investments_tt
+				has_country_flag = hun_allow_investments
+			}
+			custom_trigger_tooltip = {
+				tooltip = hun_privatization_speed_tt
+				has_country_flag = hun_privatization_speed
+			}
+			custom_trigger_tooltip = {
+				tooltip = hun_employment_act_tt
+				has_country_flag =  hun_employment_act_3
+			}
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_3
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.25
+		}
+
+		days_remove = 7
+		fire_only_once = yes
+
+		remove_effect = {
+				remove_idea = HUN_shock_therapy_3
+				clr_country_flag = shock_therapy
+		}
+	}
+}	

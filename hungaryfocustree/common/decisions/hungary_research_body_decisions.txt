@@ -19,7 +19,12 @@
 	fire_only_once = yes
 	
 		remove_effect = {
-				set_country_flag = HUN_stage_one_begin			
+				set_country_flag = HUN_stage_one_begin
+
+			swap_ideas = {
+				remove_idea = PB_Augmentation_No_Legislation
+				add_idea = PB_Augmentation_Encouraged
+			}				
 		}
     }			
 
@@ -461,7 +466,12 @@
 		fire_only_once = yes
 
 		remove_effect = {
-				set_country_flag = HUN_stage_three_begin	
+				set_country_flag = HUN_stage_three_begin
+
+			swap_ideas = {
+				remove_idea = PB_Augmentation_Encouraged
+				add_idea = PB_Augmentation_Enforced
+			}				
 		}
 	}
 

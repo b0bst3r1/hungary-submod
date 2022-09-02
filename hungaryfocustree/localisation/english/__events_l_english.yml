@@ -206,7 +206,7 @@
  
  hungarian.41.t:0 "Revival of Organism"
  hungarian.41.d:0 "After several years of research, a group of our scientists was finally able to achieve the original goals, they managed to run the body from the organs of already deceased people. The creature came out several times stronger and more resilient than a human, which gives great opportunities to use it in industry, but the main thing is not to lose vigilance and not to give the creature much freedom. \n\nWhen the research began, it was hard to believe that it would succeed, thanks to the hard work of scientists and the indispensable support of the Hungarian state. Now, to be sure, the country has solved the problem of labor shortages."
- hungarian.41.a:0 "YES!"
+ hungarian.41.a:0 "Finally!"
  
  hungarian.42.t:0 "Socialist Self-Managment"
  hungarian.42.d:0 "The main goal of Socialist self-management is to put company management in the hands of workers and separate management from the state. It also means demonstrating the viability of a third way between capitalist and Jacobin. Based on market distribution, public ownership of the means of production, and self-management in the enterprises, this system replaced the centralized planning of former Hungary."
@@ -215,6 +215,14 @@
  hungarian.43.t:0 "Direct Democracy"
  hungarian.43.d:0 "The first stage of socialist reforms in Hungary is the establishment of direct democracy. In direct democracy, the people decide on policies without any intermediary or representative, whereas in a representative democracy people vote for representatives who then enact policy initiatives. Depending on the particular system in use, direct democracy might entail passing executive decisions, the use of sortition, making laws, directly electing or dismissing officials, and conducting trials."
  hungarian.43.a:0 "A pure democracy"
+ 
+ hungarian.44.t:0 "Friedrich Engels Legacy"
+ hungarian.44.d:0 "Friedrich Engels was a German philosopher, critic of political economy, historian, political theorist and revolutionary socialist. On February 17, 1896, Friedrich Engels publishes Class Consciousness and Revolutionary Struggle, developing the ideas of revolutionary republicanism. Engelsian republicanism becomes a minor, though notable, subsection of ideology, focusing on the importance of working-class movements in the creation of a revolutionary state.\n\nEngels had a tremendous influence on the ideas of the 1911 revolution and is one of its inspirations. We must honor his memory and not forget his contributions."
+ hungarian.44.a:0 "A Great Man"
+ 
+ hungarian.45.t:0 "Economic Collapse"
+ hungarian.45.d:0 "Rapidly implemented market reforms have led to unexpected consequences: in the hands of new owners, industry has lost its former productivity, it is reflected mainly in high-tech areas. Inflation reaches enormous proportions, making the population often unable to provide for even the most basic goods, and poverty is rampant.\n\nForeign powers are trying to pressurize Hungary and try to establish control over various parts of the economy through various investments, which puts Hungarian industrialists in a worse position. At the same time, social tensions between classes continue to rise, crime and death rates are rising. All this has a great impact on the popularity of the ruling party."
+ hungarian.45.a:0 "Oh no..."
  
  hungary.1.t:0 "Horthy in Budapest" 
  hungary.1.d:0 "Today, Miklos Horthy entered the city of Budapest and announced to the crowd that he forgives the "sinful capital" that defiled the motherland.\n\ \n\ Then Horthy said that one day Hungary would regain its former greatness and the enemies of the motherland would be defeated. The crowd cheered. Horthy left the square."

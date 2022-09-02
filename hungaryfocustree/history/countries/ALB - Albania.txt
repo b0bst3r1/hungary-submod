@@ -33,6 +33,9 @@ add_ideas = {
     ALB_Agrarian_country
 	ALB_Religious_diversity
 	
+	PB_Sociogenetics_Allowed
+	PB_Augmentation_No_Legislation
+	
 	#PB_ALB_Rose_Of_Albania
 	#PB_ALB_Economic_Collapse
 	#PB_ALB_Discordant_Society

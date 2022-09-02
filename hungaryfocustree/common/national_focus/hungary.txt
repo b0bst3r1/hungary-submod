@@ -15,19 +15,8 @@ focus_tree = {
 	focus = {
 		id = HUN_Partycrisis
 		icon = GFX_hun_political_crisis
-		
-	    completion_reward = {			  
-	}
-		
-		cost = 3
-		x = 13
-		y = 1
-	}
-	focus = {
-		id = HUN_SOLVETNHIC
-		icon = GFX_goal_unknown
-		cost = 4
-		
+
+
 		available = {
 			OR = {
 				has_country_leader = {
@@ -43,6 +32,25 @@ focus_tree = {
 					name = "Jozsef Revai"
 					ruling_only = yes
 				}				
+			}
+		}
+		
+	    completion_reward = {			  
+	}
+		
+		cost = 3
+		x = 13
+		y = 1
+	}
+	focus = {
+		id = HUN_SOLVETNHIC
+		icon = GFX_goal_unknown
+		cost = 4
+		
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = hun_starting_crisis_tt
+				has_country_flag = hun_starting_crisis
 			}
 		}		
 		
@@ -76,20 +84,9 @@ focus_tree = {
 		cost = 0
 		
 		available = {
-			OR = {
-				has_country_leader = {
-					name = "Sandor Garbai"
-					ruling_only = yes
-				}
-				has_country_leader = {
-					name = "Bela Kun"
-					ruling_only = yes
-				}
-				
-				has_country_leader = {
-					name = "Jozsef Revai"
-					ruling_only = yes
-				}				
+			custom_trigger_tooltip = {
+			    tooltip = hun_starting_crisis_tt
+				has_country_flag = hun_starting_crisis
 			}
 		}
 		
@@ -152,20 +149,9 @@ focus_tree = {
 		icon = GFX_hun_army_reform
 		
 		available = {
-			OR = {
-				has_country_leader = {
-					name = "Sandor Garbai"
-					ruling_only = yes
-				}
-				has_country_leader = {
-					name = "Bela Kun"
-					ruling_only = yes
-				}
-				
-				has_country_leader = {
-					name = "Jozsef Revai"
-					ruling_only = yes
-				}				
+			custom_trigger_tooltip = {
+			    tooltip = hun_starting_crisis_tt
+				has_country_flag = hun_starting_crisis
 			}
 		}		
 		
@@ -212,26 +198,7 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
-	id = hun_world_war_two
-		
-		icon = GFX_hun_world_war_two
-		cost = 0
-		
-		bypass = {
-			FRA = {
-				OR = {
-					exists = no
-					is_subject = yes
-					has_war_with = GER
-				}
-			}		
-		}
-		
-		x = 29
-		y = 9
-
-	}
+	
 	focus = {
 		id = hun_first_premier
 		icon = GFX_goal_unknown
@@ -455,7 +422,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_commisarinterior
-		icon = GFX_hun_garbai_takes
+		icon = GFX_hun_garbai_two
 		cost = 14
 		
 	    completion_reward = {
@@ -516,7 +483,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		remove_ideas = PB_HUN_Collapsing_Government
+		remove_ideas = HUN_Collapsing_Government
 
 		hidden_effect = {
 	    
@@ -545,7 +512,17 @@ focus_tree = {
 	focus = {
 		id = hun_collectivization
 		icon = GFX_hun_collectivization
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}
+		
 		prerequisite = {
 			focus = HUN_BELAKUN
 		}
@@ -563,7 +540,17 @@ focus_tree = {
 	focus = {
 		id = HUN_INTERNPOLIT
 		icon = GFX_hun_internpolit
-		cost = 3
+		cost = 28
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}
+		
 		prerequisite = {
 			focus = HUN_EXECUTEREFORMISTS
 		}
@@ -586,17 +573,27 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		id = HUN_MEMORYOFTHEREVOLU
 		icon = GFX_hun_memory_of_the_revulution
 		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}
+		
 		prerequisite = {
 			focus = HUN_BELAKUN
 		}
 		
 	    completion_reward = {
 		
-        custom_effect_tooltip = Revolutionary_Zeal_0.02_increase 		
+        custom_effect_tooltip = Revolutionary_Zeal_0.04_increase 		
 		
 			add_to_variable = {
 				var = HUN_Revolutionary_Zeal
-				value = 0.02
+				value = 0.04
 			}	
 			
 		country_event = {
@@ -613,18 +610,28 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = HUN_Legacy_of_Bohm
 		icon = GFX_HUN_Bohm_Resigns
-		cost = 35
+		cost = 28
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}
+		
 		prerequisite = {
 			focus = HUN_MEMORYOFTHEREVOLU
 		}
 		
 	    completion_reward = {
 		
-        custom_effect_tooltip = Revolutionary_Zeal_0.02_increase 		
+        custom_effect_tooltip = Revolutionary_Zeal_0.04_increase 		
 		
 			add_to_variable = {
 				var = HUN_Revolutionary_Zeal
-				value = 0.02
+				value = 0.04
 			}
 			
 		set_province_name = { id = 11659 name = "Bohmvaros"}
@@ -639,6 +646,15 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		id = HUN_Spartakiad
 		icon = GFX_HUN_Spartakiad
 		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}		
 		
 		prerequisite = {
 			focus = HUN_artist_union
@@ -665,6 +681,15 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		icon = GFX_HUN_artist_union
 		cost = 35
 		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}		
+		
 		prerequisite = {
 			focus = HUN_Legacy_of_Bohm
 		}		
@@ -685,6 +710,15 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		id = HUN_solve_general
 		icon = GFX_HUN_general_question
 		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}		
 		
 		prerequisite = {
 			focus = hun_collectivization
@@ -707,6 +741,15 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		icon = GFX_HUN_farm
 		cost = 35
 		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}		
+		
 		prerequisite = {
 			focus = HUN_compactions
 		}
@@ -728,6 +771,15 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		id = HUN_compactions
 		icon = GFX_HUN_compaction
 		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}		
 		
 		prerequisite = {
 			focus = hun_collectivization
@@ -803,6 +855,15 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		icon = GFX_HUN_hungary_moves_forward
 		cost = 35
 		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}		
+		
 		prerequisite = {
 			focus = HUN_peoples_communes
 		}		
@@ -818,9 +879,9 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	
 	focus = {
 		id = HUN_VAGO
-		icon = GFX_HUN_hungary_moves_forward
+		icon = GFX_HUN_revai_coup
 		cost = 0
-		
+			
 		available = {
 			OR = {
 				has_country_leader = {
@@ -831,7 +892,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}
 		
 		completion_reward = {
-		remove_ideas = PB_HUN_Collapsing_Government
+		remove_ideas = HUN_Collapsing_Government
 
 		hidden_effect = {
 	    
@@ -859,7 +920,17 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_belakun_arrest
 		icon = GFX_hun_belakun_arrest
-		cost = 0
+		cost = 28
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = HUN_VAGO
 		}
@@ -869,6 +940,19 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		id = hungarian.32
 		days = 1
 		}
+		
+        custom_effect_tooltip = Revolutionary_Zeal_0.02_decrease		
+		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = -0.02
+			}
+
+		custom_effect_tooltip = HUN_PartyUnity_0.04_increase
+			add_to_variable = {
+				var = HUN_PartyUnity
+				value = 0.04
+			}			
      }	 
 		x = 15
 		y = 7
@@ -877,11 +961,34 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_continuation_former_policy
 		icon = GFX_hun_continuation_former_policy
-		cost = 0
+		cost = 28
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = HUN_VAGO
 		}
-	 
+		
+	   completion_reward = {
+		swap_ideas = {
+		remove_idea = PB_Revolutionary_Republic
+		add_idea = PB_Workers_Republic
+		}
+        custom_effect_tooltip = Revolutionary_Zeal_0.04_decrease		
+		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = -0.04
+			}		
+		  }	
+		  
 		x = 13
 		y = 7
 
@@ -889,7 +996,17 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_garbai_arrest
 		icon = GFX_hun_garbai_arrest
-		cost = 0
+		cost = 28
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = HUN_VAGO
 		}
@@ -899,6 +1016,12 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		id = hungarian.33
 		days = 1
 		}
+		
+		custom_effect_tooltip = HUN_PartyUnity_0.04_increase
+			add_to_variable = {
+				var = HUN_PartyUnity
+				value = 0.04
+			}			
      }		
 		
 		x = 17
@@ -908,7 +1031,17 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_brotherhood_and_unity
 		icon = GFX_hun_brotherhood_and_unity
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 		focus = hun_belakun_arrest
 		}
@@ -930,7 +1063,17 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_socialism_human_face
 		icon = GFX_hun_brotherhood_and_unity
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 		focus = hun_monetary_reform
 		}
@@ -951,14 +1094,29 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	
 	focus = {
 		id = hun_restructing_of_the_collective_farms
-		icon = GFX_hun_collectivization
-		cost = 0
+		icon = GFX_hun_new_kolkhoz
+		cost = 35
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = hun_small_market_elements
 		}
 		prerequisite = {
 			focus = hun_socialist_self_management
 		}
+		
+	    completion_reward = {		
+		add_ideas = HUN_restructed_farms
+		}
+		
 		x = 11
 		y = 9
 
@@ -966,13 +1124,29 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_monetary_reform
 		icon = GFX_hun_monetary_reform
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = hun_socialist_self_management
 		}
 		prerequisite = {
 			focus = hun_weaking_of_the_center
 		}
+		
+		completion_reward = {
+					PB_Poverty_Moderate_Progress_Increase = yes
+					PB_Economy_Moderate_Progress_Increase = yes
+        }
+		
 		x = 13
 		y = 9
 
@@ -980,13 +1154,37 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_force_improvement_welfare
 		icon = GFX_hun_force_improvement_welfare
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = hun_restructing_of_the_collective_farms
 		}
 		prerequisite = {
 			focus = hun_monetary_reform
 		}
+		
+		completion_reward = {
+			add_timed_idea = {
+			idea = HUN_force_welfare
+			days = 365
+		}
+			completion_reward = {
+			swap_ideas = {
+				remove_idea = PB_Basic_Welfare
+				add_idea = PB_Limited_Welfare
+			}			
+		}		
+	}
+	  
 		x = 12
 		y = 10
 
@@ -995,7 +1193,17 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_education_reform
 		icon = GFX_education_reform
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = hun_brotherhood_and_unity
 		}
@@ -1003,8 +1211,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		completion_reward = {
 			add_timed_idea = {
 			idea = HUN_education_reform
-			days = 180
+			days = 240
 		}
+		
+        PB_Literacy_Moderate_Progress_Increase = yes		
 	}		
 		
 		x = 17
@@ -1015,14 +1225,37 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_open_the_press
 		icon = GFX_free_press
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = hun_huge_child_support
 		}
 		
 		prerequisite = {
 			focus = hun_education_reform
+		}
+
+			completion_reward = {
+			swap_ideas = {
+				remove_idea = PB_Single_Party_State
+				add_idea = PB_Managed_Democracy
+				remove_idea = PB_Public_Meetings_Monitored
+				add_idea = PB_Public_Meetings_Allowed
+			}
+            swap_ideas = {
+				remove_idea = PB_Public_Meetings_Monitored
+				add_idea = PB_Public_Meetings_Allowed			
 		}		
+	}
 		
 		x = 16
 		y = 10
@@ -1031,7 +1264,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	
 	focus = {
 		id = hun_garbai
-		icon = GFX_hun_garbai_two
+		icon = GFX_hun_garbai_takes
 		cost = 0
 		
 		available = {
@@ -1044,7 +1277,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}
 		
 		completion_reward = {
-		remove_ideas = PB_HUN_Collapsing_Government
+		remove_ideas = HUN_Collapsing_Government
 		}		
 		
 		prerequisite = {
@@ -1054,14 +1287,24 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			focus = HUN_VAGO
 			focus = HUN_BELAKUN
 		}
-		x = 20
+		x = 22
 		y = 6
 
 	}
+	 
 	focus = {
 		id = hun_revise_the_revolutionary_course
 		icon = GFX_hun_revise_the_revolutionary_course
-		cost = 0
+		cost = 28
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }		
 		
 	    completion_reward = {
 		country_event = {
@@ -1073,7 +1316,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		prerequisite = {
 			focus = hun_garbai
 		}
-		x = 20
+		x = 22
 		y = 7
 
 	}
@@ -1081,43 +1324,79 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_lift_the_ban_opposition
 		icon = GFX_hun_lift_the_ban_opposition
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }		
 		
 			completion_reward = {
 		
 			swap_ideas = {
 				remove_idea = PB_Single_Party_State
 				add_idea = PB_Limited_Disenfranchisement
-			}
-		}
+			}	
+	       }
 			
 		prerequisite = {
-			focus = hun_revise_the_revolutionary_course
+			focus = hun_garbai
 		}
-		x = 18
-		y = 8
+		x = 24
+		y = 7
 
 	}
 	focus = {
 		id = hun_allow_religion
 		icon = GFX_hun_allow_religion
-		cost = 0
+		cost = 28
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }		
 		
 		completion_reward = {		
 		add_ideas = HUN_religion_freedom
-		}
+		
+		add_popularity = {
+			ideology = lb
+			popularity = 0.05
+		}		
+	}
 		
 		prerequisite = {
 			focus = hun_revise_the_revolutionary_course
 		}
-		x = 20
+		
+		prerequisite = {
+			focus = hun_lift_the_ban_opposition
+		}		
+		x = 22
 		y = 8
 
 	}
 	focus = {
 		id = hun_approve_criticism
 		icon = GFX_hun_approve_criticism
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }		
 		
 			completion_reward = {		
 		
@@ -1125,63 +1404,69 @@ custom_effect_tooltip = HUN_Increase_prison_450
 				remove_idea = PB_Limited_Censorship
 				add_idea = PB_Free_Press
 			}
-			}
 			
-		prerequisite = {
-			focus = hun_revise_the_revolutionary_course
-		}
-		x = 22
-		y = 8
-
+		add_popularity = {
+			ideology = lb
+			popularity = 0.03
+		}					
 	}
-	focus = {
-		id = hun_democratic_socialism
-		icon = GFX_hun_democratic_socialism
-		cost = 0
-		
-			completion_reward = {		
-		
-			swap_ideas = {
-				remove_idea = PB_Govidea_Planned_Economy
-				add_idea = PB_Govidea_State_Capitalism
-			}
-			}		
+			
 		prerequisite = {
 			focus = hun_lift_the_ban_opposition
 		}
-		prerequisite = {
-			focus = hun_allow_religion
-		}
-		prerequisite = {
-			focus = hun_approve_criticism
-		}
-		x = 20
-		y = 9
+		x = 26
+		y = 8
 
 	}
+	
 	focus = {
 		id = hun_introduce_market_mechanisms
-		icon = GFX_hun_introduce_market_mechanisms
-		cost = 0
-		
+		icon = GFX_HUN_capitalism
+		cost = 35
+			
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }
+			  
 			completion_reward = {		
 		
 			swap_ideas = {
 				remove_idea = closed_economy
-				add_idea = limited_export
+				add_idea = limited_exports				
 			}
-			}			
+			
+			swap_ideas = {
+				remove_idea = PB_Govidea_Planned_Economy
+				add_idea = PB_Govidea_State_Capitalism				
+			}		
+		}	
+		
 		prerequisite = {
-			focus = hun_democratic_socialism
+			focus = hun_garbai
 		}
-		x = 18
-		y = 10
+		
+		x = 20
+		y = 7
 
 	}
 	focus = {
 		id = hun_enter_special_economic_zones
 		icon = GFX_hun_enter_special_economic_zones
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }		
 		
 			completion_reward = {	
 		
@@ -1216,37 +1501,55 @@ custom_effect_tooltip = HUN_Increase_prison_450
 				}
 			}
 		}
-			
+		
 		prerequisite = {
-			focus = hun_found_sasah
+			focus = hun_ease_tensions_with_capitalists
 		}
-		prerequisite = {
-			focus = hun_sell_unprofitable_enterpises
-		}
-		x = 16
-		y = 13
+		x = 21
+		y = 9
 
 	}
 	focus = {
 		id = hun_ease_tensions_with_capitalists
 		icon = GFX_hun_ease_tensions_with_capitalists
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }		
 		
 			completion_reward = {		
 		
 			add_stability = 0.05
-			}			
+			
+			}		
+			
 		prerequisite = {
-			focus = hun_democratic_socialism
+			focus = hun_introduce_market_mechanisms
 		}
+				
 		x = 20
-		y = 10
+		y = 8
 
 	}
 	focus = {
 		id = hun_establishment_of_a_parliament
 		icon = GFX_hun_establishment_of_a_parliament
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }		
 		
 			completion_reward = {
            
@@ -1268,16 +1571,30 @@ custom_effect_tooltip = HUN_Increase_prison_450
         }			
 				
 		prerequisite = {
-			focus = hun_democratic_socialism
+			focus = hun_protection_of_human_rights
 		}
-		x = 22
-		y = 10
+		
+		prerequisite = {
+			focus = hun_approve_criticism
+		}
+		
+		x = 25
+		y = 9
 
 	}
 	focus = {
 		id = hun_regional_elections
 		icon = GFX_hun_regional_elections
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }		
 		
 			completion_reward = {	
 
@@ -1297,48 +1614,69 @@ custom_effect_tooltip = HUN_Increase_prison_450
 				remove_idea = PB_Limited_Autonomy
 				add_idea = PB_Significant_Autonomy
 			}
-			}			
+		}	
+		
+		prerequisite = {
+			focus = hun_open_the_borders
+		}
+		
 		prerequisite = {
 			focus = hun_establishment_of_a_parliament
 		}
 		
-		prerequisite = {
-			focus = hun_ease_tensions_with_capitalists
-		}
-		
-		x = 21
-		y = 11
+		x = 22
+		y = 10
 
 	}
 	
 	focus = {
 		id = hun_demorcratic_laws
 		icon = GFX_hun_demorcratic_laws
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }		
 		
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = PB_Public_Meetings_Monitored
 				add_idea = PB_Public_Meetings_Allowed
 			}
-			}			
+                add_idea = HUN_democratic_hungary				
+		}			
+		
 		prerequisite = {
-			focus = hun_regional_elections
+			focus = hun_gradual_privatization
 		}
 		
 		prerequisite = {
-			focus = hun_open_the_borders
-		}
+			focus = hun_enter_special_economic_zones
+		}		
 		
-		x = 22
-		y = 12
+		x = 20
+		y = 10
 
 	}
 
 	focus = {
 		id = hun_protection_of_human_rights
 		icon = GFX_hun_protection_of_human_rights
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }		
 		
 		completion_reward = {
 			swap_ideas = {
@@ -1347,16 +1685,25 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			}
 			}			
 		prerequisite = {
-			focus = hun_democratic_socialism
+			focus = hun_lift_the_ban_opposition
 		}
 		x = 24
-		y = 10
+		y = 8
 
 	}
 	focus = {
 		id = hun_open_the_borders
 		icon = GFX_hun_open_the_borders
-		cost = 0
+		cost = 28
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }		
 		
 		completion_reward = {
 			
@@ -1381,17 +1728,30 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}		
 		
 		prerequisite = {
-			focus = hun_protection_of_human_rights
+			focus = hun_allow_religion
 		}
 		
+		prerequisite = {
+			focus = hun_protection_of_human_rights
+		}		
+		
 		x = 23
-		y = 11
+		y = 9
 
 	}
 	focus = {
 		id = hun_memory_Wall
 		icon = GFX_hun_memory_Wall
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }		
 		
 	    completion_reward = {
 		country_event = {
@@ -1400,72 +1760,17 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		  }
 		} 		
 		prerequisite = {
-			focus = hun_protection_of_human_rights
+			focus = hun_establishment_of_a_parliament
 		}
-		x = 25
-		y = 11
-
-	}
-	focus = {
-		id = hun_stop_the_separatism
-		icon = GFX_hun_stop_the_separatism
-		cost = 0
 		
-	    completion_reward = {
-		
-		add_political_power = -100
-      }		
-	
 		prerequisite = {
 			focus = hun_open_the_borders
-		}
-		prerequisite = {
-			focus = hun_memory_Wall
-		}
-		
+		}		
 		x = 24
-		y = 12
+		y = 10
 
 	}
-	focus = {
-		id = hun_entry_troops_into_slovakia
-		icon = GFX_hun_entry_troops_into_slovakia
-		cost = 0
-		
-		completion_reward = {
-		
-					HUN = {
-				add_state_core = 70
-				add_state_core = 71
-				add_state_core = 664
-			}		
-
-		70 = {
-			set_demilitarized_zone = no
-		}
-
-		664 = {
-			set_demilitarized_zone = no
-		}	
-
-		71 = {
-			set_demilitarized_zone = no
-		}		
-		
-			hidden_effect = {
-				news_event = {
-				    id = hungary.4
-				    days = 1
-			    }
-			}
-		}		
-		prerequisite = {
-			focus = hun_stop_the_separatism
-		}
-		x = 24
-		y = 13
-
-	}
+	
 	focus = {
 		id = hun_military_exercise
 		icon = GFX_hun_military_exercise
@@ -1521,39 +1826,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		y = 20
 
 	}
-	focus = {
-		id = hun_armed_neutrality
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_world_war_two
-		}
-		x = 29
-		y = 10
-
-	}
-	focus = {
-		id = hun_reinforce_the_border_with_russia
-		icon = GFX_hun_reinforce_the_border_with_russia
-		cost = 0
-		prerequisite = {
-			focus = hun_armed_neutrality
-		}
-		x = 28
-		y = 11
-
-	}
-	focus = {
-		id = hun_reinforce_the_border_ger
-		icon = GFX_hun_reinforce_the_border_ger
-		cost = 0
-		prerequisite = {
-			focus = hun_armed_neutrality
-		}
-		x = 30
-		y = 11
-
-	}
+	
 	focus = {
 		id = hun_defence_of_revolution
 		icon = GFX_hun_defence_of_revolution
@@ -1632,60 +1905,6 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}
 		x = 31
 		y = 5
-
-	}
-	
-	focus = {
-		id = hun_spread_the_Revolution
-		icon = GFX_hun_spread_the_revolution
-		cost = 0
-		prerequisite = {
-			focus = hun_reinforce_the_border_with_russia
-		}
-		prerequisite = {
-			focus = hun_reinforce_the_border_ger
-		}
-		x = 29
-		y = 12
-
-	}
-	focus = {
-		id = hun_march_to_the_south
-		icon = GFX_hun_revolutionary_bulgaria
-		cost = 0
-		
-			completion_reward = {
-			
-			hidden_effect = {
-			GRE = {
-				    id = greece.1
-				    days = 10
-			    }
-			}			
-			
-			BUL = {
-			country_event = {
-		    id = albanian.2
-		    hours = 1
-		   }
-		}	
-			
-			declare_war_on = {
-            target = ALB
-            type = topple_government
-            }
-			
-			declare_war_on = {
-            target = BUL
-            type = topple_government
-            }
-	  }
-			
-		prerequisite = {
-			focus = hun_spread_the_Revolution
-		}
-		x = 29
-		y = 13
 
 	}
 	
@@ -2481,7 +2700,17 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = HUN_BANOPPOSITION
 		icon = GFX_hun_ban_oppostition
-		cost = 3
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}
+		
 		prerequisite = {
 			focus = HUN_ESTABLISHPENAL
 		}
@@ -2514,6 +2743,16 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		id = HUN_EXECUTEREFORMISTS
 		icon = GFX_hun_execute_reformists
 		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}
+		
 		prerequisite = {
 			focus = HUN_ESTABLISHPENAL
 		}
@@ -2548,7 +2787,17 @@ custom_effect_tooltip = HUN_Increase_prison_300
 	focus = {
 		id = HUN_RENEWTHERED
 		icon = GFX_HUN_renewthered
-		cost = 0
+		cost = 42
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}
+		
 		prerequisite = {
 			focus = HUN_BLOCKLITERATU
 		}
@@ -2582,6 +2831,16 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		id = HUN_BLOCKLITERATU
 		icon = GFX_HUN_BLOCKLITERATU
 		cost = 28
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}
+		
 		prerequisite = {
 			focus = HUN_BANOPPOSITION
 		}
@@ -2603,7 +2862,17 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = HUN_ESTABLISHPENAL
 		icon = GFX_hun_establish_penal
-		cost = 5
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}
+		
 		prerequisite = {
 			focus = HUN_BELAKUN
 		}
@@ -2622,7 +2891,16 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = HUN_THEFATHER
 		icon = GFX_father
-		cost = 10
+		cost = 70
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+			}				
+		}		
 		
 		prerequisite = {
 			focus = HUN_RENEWTHERED
@@ -2637,10 +2915,32 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}		
 		
 	    completion_reward = {
+		
 		country_event = {
 		id = hungarian.25
 		days = 1
 		}
+		
+		set_cosmetic_tag = HUN_wkr
+		
+		custom_effect_tooltip = HUN_PartyUnity_0.04_increase
+			add_to_variable = {
+				var = HUN_PartyUnity
+				value = 0.04
+			}
+
+        custom_effect_tooltip = Revolutionary_Zeal_0.04_increase 		
+		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = 0.04
+			}
+
+		swap_ideas = {
+		remove_idea = PB_HUN_Revolution_Home
+		add_idea = PB_HUN_Revolution_Home_1
+		}			
+		
      }
 	 
 		x = 5
@@ -4861,187 +5161,88 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	}
 	
 	focus = {
-		id = hun_workers_balkan_league
-		icon = GFX_hun_workers_balkan_league
-		cost = 0
-		
-		completion_reward = {
-			
-			BUL = {
-
-		set_cosmetic_tag = BUL_League
-		
-			create_country_leader = {
-			name = "Christian Rakovsky"
-			desc = " "
-			picture = "gfx/leaders/BUL/Portrait_Christian_Rakovsky.dds"
-			expire = "1965.1.1"
-			ideology = jc
-		}
-		
-			create_country_leader = {
-			name = "Christian Rakovsky"
-			desc = " "
-			picture = "gfx/leaders/BUL/Portrait_Christian_Rakovsky.dds"
-			expire = "1965.1.1"
-			ideology = ss
-		}		
-
-             annex_country = {
-             target = ALB
-             transfer_troops = no
-              }
-			  
-             annex_country = {
-             target = KSV
-             transfer_troops = no
-              }
-			  
-             annex_country = {
-             target = MAC
-             transfer_troops = no
-              }			  
-			  
-			}		
-		}
-		
-		
-		prerequisite = {
-			focus = hun_march_to_the_south
-		}
-		
-		x = 29
-		y = 14
-
-	}
-	focus = {
 		id = hun_gradual_privatization
 		icon = GFX_hun_gradual_privatization
-		cost = 0
+		cost = 42
 		
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = PB_Govidea_State_Capitalism
 				add_idea = PB_Govidea_Welfare_Capitalism
 			}
-		}		
-		prerequisite = {
-			focus = hun_introduce_market_mechanisms
-		}
-		x = 17
-		y = 11
-
-	}
-	focus = {
-		id = hun_sell_unprofitable_enterpises
-		icon = GFX_hun_sell_unprofitable_enterpises
-		cost = 0
-		
-			completion_reward = {
-				
-			155 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			664 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
 			
-			43 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}			
+		hidden_effect = {
+	    
+		HUN = {
+		country_event = {
+		id = hungarian.45
+		days = 14
+		
+		       }
+		     }
+          }			
 		}
 		
 		prerequisite = {
-			focus = hun_gradual_privatization
-		}
-		x = 19
-		y = 12
-
-	}
-	focus = {
-		id = hun_found_sasah
-		icon = GFX_hun_found_sasah
-		cost = 0
-		prerequisite = {
-			focus = hun_gradual_privatization
-		}
-		x = 17
-		y = 12
-
-	}
-	
-	focus = {
-		id = hun_limited_export
-		icon = GFX_hun_limited_export
-		cost = 0
-		prerequisite = {
-			focus = hun_introduce_market_mechanisms
+		focus = hun_stop_five_year_plans	
 		}
 		
 		prerequisite = {
-			focus = hun_ease_tensions_with_capitalists
-		}		
-
+		focus = hun_ease_tensions_with_capitalists	
+		}	
+		
 		x = 19
-		y = 11
+		y = 9
 
 	}
 	
-	focus = {
-		id = hun_avoid_concetration_of_capital
-		icon = GFX_hun_avoid_concetration_of_capital
-		cost = 0
-		prerequisite = {
-			focus = hun_found_sasah
-		}
-		prerequisite = {
-			focus = hun_sell_unprofitable_enterpises
-		}
-		x = 18
-		y = 13
-
-	}
 	focus = {
 		id = hun_president_of_hungary
-		icon = GFX_goal_unknown
-		cost = 0
+		icon = GFX_HUN_Liberal_Hungary
+		cost = 70
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }
+			  
 		prerequisite = {
-			focus = hun_entry_troops_into_slovakia
+			focus = hun_regional_elections
 		}
 		prerequisite = {
-			focus = hun_avoid_concetration_of_capital
-		}
-		prerequisite = {
-			focus = hun_stop_five_year_plans
+			focus = hun_memory_Wall
 		}
 		
 		prerequisite = {
-			focus = hun_enter_special_economic_zones
-		}		
+			focus = hun_demorcratic_laws
+		}
+		
+	    completion_reward = {
+		set_cosmetic_tag = HUN_LB 	
+		   }		
 			
-		x = 20
-		y = 14
+		x = 22
+		y = 11
 
 	}
 	focus = {
 		id = hun_socialist_self_management
 		icon = GFX_hun_socialist_self_management
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = hun_continuation_former_policy
 		}
@@ -5063,7 +5264,17 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_direct_democracy
 		icon = GFX_hun_direct_democracy
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = HUN_VAGO
 		}
@@ -5082,10 +5293,27 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_weaking_of_the_center
 		icon = GFX_hun_weaking_of_the_center
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = hun_continuation_former_policy
 		}
+		
+			completion_reward = {
+			swap_ideas = {
+				remove_idea = PB_Limited_Autonomy
+				add_idea = PB_Significant_Autonomy
+			}			
+		}		
 		
 		x = 14
 		y = 8
@@ -5094,7 +5322,17 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_huge_child_support
 		icon = GFX_hun_huge_child_support
-		cost = 0
+		cost = 28
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = hun_brotherhood_and_unity
 		}
@@ -5112,10 +5350,38 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_small_market_elements
 		icon = GFX_hun_small_market_elements
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 		    focus = hun_direct_democracy	
 		}
+		
+			completion_reward = {		
+		
+			swap_ideas = {
+				remove_idea = closed_economy
+				add_idea = limited_exports
+				remove_idea = PB_Govidea_Planned_Economy
+				add_idea = PB_Govidea_State_Capitalism				
+			}
+
+        custom_effect_tooltip = Revolutionary_Zeal_0.04_decrease		
+		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = -0.04
+			}
+          }			
+			
 		x = 10
 		y = 8
 
@@ -5123,7 +5389,17 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_forget_the_past_Embrace_the_future
 		icon = GFX_hun_forget_the_past_Embrace_the_future
-		cost = 0
+		cost = 70
+		
+		available = {
+			OR = {	
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = hun_force_improvement_welfare
 		}
@@ -5134,6 +5410,18 @@ custom_effect_tooltip = HUN_Increase_prison_450
 
 	    completion_reward = {
 		set_cosmetic_tag = HUN_SOC
+		
+		swap_ideas = {
+		remove_idea = PB_Govidea_Planned_Economy
+		add_idea = PB_Govidea_Hungarian_Socialism
+		}
+		
+        custom_effect_tooltip = Revolutionary_Zeal_0.06_increase 		
+		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = 0.06
+			}		
 		}
 		
 		x = 13
@@ -5143,15 +5431,28 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_stop_five_year_plans
 		icon = GFX_hun_stop_five_year_plans
-		cost = 0
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+               }				
+		      }
+			  
 		prerequisite = {
-			focus = hun_sell_unprofitable_enterpises
+			focus = hun_introduce_market_mechanisms
 		}
-		prerequisite = {
-			focus = hun_found_sasah
-		}
-		x = 20
-		y = 13
+		
+        completion_reward = {
+		
+		custom_effect_tooltip = 5year_plans_stopped
+        set_country_flag = plans_stopped		
+		
+		x = 18
+		y = 8
 
 	}
 	focus = {

@@ -37,7 +37,6 @@ set_research_slots = 3
 add_to_farleft_coalition_jc = yes
 add_to_farleft_coalition_ss = yes
 add_to_farleft_coalition_lb = yes
-add_to_farleft_coalition_cn = yes
 
 add_ideas = {
 

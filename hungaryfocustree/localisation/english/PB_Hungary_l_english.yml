@@ -1,5 +1,16 @@
 ﻿  l_english:
   
+  HUN_shock_therapy_1:0 "Shock Therapy"
+  HUN_shock_therapy_1_desc:0 "A complex of radical economic reforms aimed at weakening state regulation in the field of pricing and mass privatization of unprofitable state enterprises. Despite the fact that these reforms cause great temporary damage to the population, such as increased unemployment and high inflation, there is no other way out of this situation."
+  HUN_shock_therapy_2:0 "Shock Therapy"
+  HUN_shock_therapy_2_desc:0 "A complex of radical economic reforms aimed at weakening state regulation in the field of pricing and mass privatization of unprofitable state enterprises. Despite the fact that these reforms cause great temporary damage to the population, such as increased unemployment and high inflation, there is no other way out of this situation."
+  HUN_shock_therapy_3:0 "Shock Therapy"
+  HUN_shock_therapy_3_desc:0 "A complex of radical economic reforms aimed at weakening state regulation in the field of pricing and mass privatization of unprofitable state enterprises. Despite the fact that these reforms cause great temporary damage to the population, such as increased unemployment and high inflation, there is no other way out of this situation."  
+ 
+
+
+  PB_HUN_Revolution_Home_1:0 "Home of the Revolution"
+  PB_HUN_Revolution_Home_1_desc:0 "The Hungarian People's Republic is the only major revolutionary republic in existence in continental Europe and, if the reactionary powers had their way, it would be the last. Following the Great War, Hungary found itself in crisis. Their allegiance to Germany had cost nearly a million lives, economic collapse and reduced much of the nation to near famine conditions. The touchpaper of Revolution was easily lit in 1912, when the Royal Hungarian Army attempted to crack down on protests in Budapest.\n\nVeteran's militias, trained and hardened by fighting on the Romanian and North Italian fronts, quickly turned the tables on the pro-German protectorate government. Within a matter of days, the nation descended into civil war and revolutionary violence. The regime that emerged from the revolution would be one founded not on Imperial obligations or bourgeois capitalism, but on revolutionary republi
   
   PB_HUN_Revolution_Home:0 "Home of the Revolution"
   PB_HUN_Revolution_Home_desc:0 "The Hungarian People's Republic is the only major revolutionary republic in existence in continental Europe and, if the reactionary powers had their way, it would be the last. Following the Great War, Hungary found itself in crisis. Their allegiance to Germany had cost nearly a million lives, economic collapse and reduced much of the nation to near famine conditions. The touchpaper of Revolution was easily lit in 1912, when the Royal Hungarian Army attempted to crack down on protests in Budapest.\n\nVeteran's militias, trained and hardened by fighting on the Romanian and North Italian fronts, quickly turned the tables on the pro-German protectorate government. Within a matter of days, the nation descended into civil war and revolutionary violence. The regime that emerged from the revolution would be one founded not on Imperial obligations or bourgeois capitalism, but on revolutionary republicanism. Hungary is the vanguard of the revolution in the Balkans, and her people are dedicated to the ideas upon which the new republic was founded."
@@ -8,7 +19,7 @@
   
   PB_HUN_German_Disarmament:0 "German Imposed Disarmament"
   PB_HUN_German_Disarmament_desc:0 "Our Republic has agreed to accept the terms of the German Ultimatum and disarmed it's army. This has greatly destroyed the support and stability of the Republic."
-  #temporary here until we have serbian locals
+  
   PB_SER_German_Disarmament:0 "German Imposed Disarmament"
   PB_SER_German_Disarmament_desc:0 "Our Empire has agreed to accept the terms of the German Ultimatum and disarmed it's army. This has greatly destroyed the support and stability of the Empire."
 
@@ -18,6 +29,8 @@
   
   #Tooltips#
   
+  5year_plans_stopped:0 "The five-year plans were stopped"
+  hun_starting_crisis_tt:0 "§YThe starting crisis is over§!"
   HUN_Resistance_twentyfive:0 "\n\n§GResistance readiness is 25%§!"
   HUN_Resistance_fifty:0 "\n\n§GResistance readiness is 50%§!"
   HUN_Resistance_seventyfive:0 "\n\n§GResistance readiness is 75%§!"
@@ -107,6 +120,34 @@
   
   #DECISIONS#
   
+  #SHOCK Therapy
+  
+  HUN_open_decision:0 "Crisis recovery decisions open"
+  
+  HUN_shock_therapy:0 "Shock Therapy"
+  HUN_shock_therapy_desc:0 "\n\n\n\n\n\nShock therapy is a group of policies intended to be implemented simultaneously in order to transition a planned economy to a market economy. The plan for reform is: \n\n§BLiberalization of all prices§!\n§BPrivatization§!\n§BTrade liberalization§!\n§Bstabilization via tight monetary policies and fiscal policies§!.\n\nThis policy  has many negative consequences, such as lower living standards, a massive increase in unemployment, high inflation, and much more that our country must face."
+  
+  HUN_Universal_Minimum_Employment_Act:0 "The Universal Minimum Employment Act"
+  HUN_Universal_Minimum_Employment_Act_2:0 "The Universal Minimum Employment Act"
+  HUN_Universal_Minimum_Employment_Act_3:0 "The Universal Minimum Employment Act"
+  HUN_National_Industrial_Recovery:0 "Freedom of Commerce Ordinance"
+  HUN_capital_industry:0 "«On measures to liberalize prices»"
+  HUN_First_Shock:0 "Complete Stage 1 of Shock Therapy"
+  HUN_Rebuilding_Slovakia:0 "Foreign Trade Liberalization"
+  HUN_monetary_reform:0 "Monetary Reform"
+  HUN_Second_Shock:0 "Complete Stage 2 of Shock Therapy"
+  HUN_speed_up_privatization:0 "Speed up Privatization"
+  HUN_Allow_foreign_investments:0 "Allow Foreign Investments"
+  HUN_Third_Shock:0 "Complete Stage 3 of Shock Therapy"
+  
+  HUN_capital_industry_tt:0 "Has completed Decision §Y"«On measures to liberalize prices»"§!"
+  hun_employment_act_tt:0 "Has completed Decision §Y"The Universal Minimum Employment Act"§!"
+  hun_industrial_recovery_tt:0 "Has completed Decision §Y"Freedom of Commerce Ordinance"§!"
+  HUN_monetary_reform_tt:0 "Has completed Decision §Y"Monetary Reform"§!"
+  HUN_rebuild_slovakia_tt:0 "Has completed Decision §Y"Foreign Trade Liberalization§!"
+  hun_allow_investments_tt:0 "Has completed Decision §Y"Allow Foreign Investments§!"
+  hun_privatization_speed_tt:0 "Has completed Decision §Y"Speed up Privatization§!"
+
   #Revive Organisms#
   HUN_revive_body:0 "Experiments on Human Revitalization."
   HUN_revive_body_desc:0 "\n\n\n\n\n\nAs industry developed rapidly, Hungary  faced a labor shortage. Practice showed that policies to stimulate population growth, while helpful, but don't solve the problem. As a result, a group of scientists, previously rejected by Hungary's scientific community, proposed a risky solution to the problem: the government was invited to invest in a program to create so-called artificial humans, created by using electricity from the remains of people who had already died, to be used later for work. This is much cheaper than creating robots or something like that. \n\n§HStage 1:§! §OElectricity in Physiology§! is currently at §L[?HUN_revival_stage_one|%0]§! \n\n§HStage 2:§! §OExperiments to Revive the Heart§! is currently at §L[?HUN_revival_stage_two|%0]§! \n\n§HStage 3:§! §OExperiments to Revitalize the Body§! is currently at §L[?HUN_revival_stage_three|%0]§! \n\n§HStage 4:§! §OHuman Revitalization§! is currently at §L[?HUN_revival_stage_four|%0]§! \n\n§C*As your research progresses, you will receive new technologies.§!"
@@ -177,7 +218,9 @@
   HUN_status_info:0 "Status:"
   HUN_Translyvania_magyarization:0 "Magyarization"
   
+  HUN_CountryDesc_Topbar:0 "§YThe Common Republic of Hungary§! is the only §RRevolutionary Republic§! in continental Europe.\n\n§YThe Kingdom of Hungary§! gained independence as a nation in 1866, when the Austrian Empire unified Germany and gave its Non-German territories independence. However the independence was only nominal. Karl Ludwig of Habsburg would become the King of Hungary and maintain loyalty to the Habsburg family and subsequently to Germany. Hungary would continue to be an ally of Germany or rather in the eyes of the Hungarian people be a exploited puppet.\n\nThe Downfall of the Kingdom began with the outbreak of the §YGreat War§! in 1905 where the nation would immediatly join the Imperial Powers in their war against the Bourbons. The Hungarian People were dragged into a war they had no motivation or interest fighting in greatly increasing their dissent with the Royal Leadership. With Hungarian Soldiers being used as cannon fodder on the alpine front and the citiziens themself experiencing food shortages, the old Jacobine ideas born in 1790 would again gain support among the common people. In the end over 300 thousand soldiers would give their lives for the war effort and in the Treaty of Tours the Kingdom would only be awarded some small reperations as compensation. §RThe Spark was lit!§!\n\nThe following collapsing economy in 1911 would lead to bread riots which would escalate as Hungarian troops would fire on the protestors. From there on the situation rapidly escalated with Troops defecting on mass. §RThe Revolution§! had began, the Hungarian civil war between the Jacobin Revolutionaries and the German Backed Whites started. At the same time Romania would invade and steal Translyvanian territory. However despite these setback the Revolution would suceed under the guidance of Vilmos Böhm and the §YCommon Republic of Hungary§! would be declared on 6th March 1912. \n\nAfter 8 years of recovering the Hungarian Republic would declare war upon Romania trying to reclaim their lost territories. The war would be the most brutal one both countries had ever experienced and after 3 years of gruesome fighting the Great Powers of Europe forced a peace. Hungary reclaimed the majority of its former Translyvanian States and would be seen as the victor. However its following and current problems would be internally. Ethnic tension in Slovakia and the Slavic border regions begin to cause issues, the ruling party §RForradalmi Tanács§! is splitting into two conflicting branches, the §YReformists§! and §YVanguardists§! and lastly the hero of the revolution Vilmos Böhm is losing his shine and motivation to rule this nation. On top of all of this, the is a feeling in the air that the Balkan is soon reaching its §R"Boiling Point"§!."   
   
+  PB_Sphere_MM_Hungarian:0 "[From.Controller.GetNameWithFlag] is within the §RHungarian§! sphere of influence"
   
   
   
