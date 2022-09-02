@@ -169,6 +169,11 @@ spriteTypes = {
 		name = "GFX_idea_hungarian_socialism"
 		texturefile = "gfx/interface/ideas/Government_Ideas/hungarian_socialism.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_presidental_republic"
+		texturefile = "gfx/interface/ideas/Government_Ideas/presidental_republic.dds"
+	}	
 
 	spriteType = {
 		name = "GFX_idea_HUN_child_support"
@@ -223,5 +228,5 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_democratic_hungary"
 		texturefile = "gfx/interface/ideas/Hungary/HUN_democratic_hungary.dds"
-	}	
+	}
 }

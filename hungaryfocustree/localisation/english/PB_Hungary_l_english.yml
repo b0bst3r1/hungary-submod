@@ -6,9 +6,10 @@
   HUN_shock_therapy_2_desc:0 "A complex of radical economic reforms aimed at weakening state regulation in the field of pricing and mass privatization of unprofitable state enterprises. Despite the fact that these reforms cause great temporary damage to the population, such as increased unemployment and high inflation, there is no other way out of this situation."
   HUN_shock_therapy_3:0 "Shock Therapy"
   HUN_shock_therapy_3_desc:0 "A complex of radical economic reforms aimed at weakening state regulation in the field of pricing and mass privatization of unprofitable state enterprises. Despite the fact that these reforms cause great temporary damage to the population, such as increased unemployment and high inflation, there is no other way out of this situation."  
- 
+   
 
-
+  PB_Presidental_Republic:0 "Presidental Republic"
+  
   PB_HUN_Revolution_Home_1:0 "Home of the Revolution"
   PB_HUN_Revolution_Home_1_desc:0 "The Hungarian People's Republic is the only major revolutionary republic in existence in continental Europe and, if the reactionary powers had their way, it would be the last. Following the Great War, Hungary found itself in crisis. Their allegiance to Germany had cost nearly a million lives, economic collapse and reduced much of the nation to near famine conditions. The touchpaper of Revolution was easily lit in 1912, when the Royal Hungarian Army attempted to crack down on protests in Budapest.\n\nVeteran's militias, trained and hardened by fighting on the Romanian and North Italian fronts, quickly turned the tables on the pro-German protectorate government. Within a matter of days, the nation descended into civil war and revolutionary violence. The regime that emerged from the revolution would be one founded not on Imperial obligations or bourgeois capitalism, but on revolutionary republi
   
@@ -29,7 +30,7 @@
   
   #Tooltips#
   
-  5year_plans_stopped:0 "The five-year plans were stopped"
+  5year_plans_stopped:0 "§YThe five-year plans are stopped§!"
   hun_starting_crisis_tt:0 "§YThe starting crisis is over§!"
   HUN_Resistance_twentyfive:0 "\n\n§GResistance readiness is 25%§!"
   HUN_Resistance_fifty:0 "\n\n§GResistance readiness is 50%§!"

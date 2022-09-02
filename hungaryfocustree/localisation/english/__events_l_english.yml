@@ -53,7 +53,7 @@
  newbalkchaos.6.a:0 "New round of Balkan wars"
  
  hungarian.4.t:0 "Commissioner of Internal Affairs" 
- hungarian.4.d:0 "Commissioner of Internal Affairs Sandor Garbai has been an active political figure of the Hungarian Common Republic since the beginning of the revolution. He was the first Prime Minister of the republic, but then he was deposed and he received his current position as Commissioner of Internal Affairs. \n\ \n\Now Garbai supports a reformists social democratic policy, the addition of market elements and a limited lifting of tensions with capitalist powers. He has great population support because of a promises to significantly increase the welfare of the population if he gets the post of Prime Minister once again."
+ hungarian.4.d:0 "Commissioner of Internal Affairs Sandor Garbai has been an active political figure of the Hungarian Common Republic since the beginning of the revolution. He was the first Prime Minister of the republic, but then he was deposed and he received his current position as Commissioner of Internal Affairs. \n\ \n\Now Garbai supports a reformists social democratic policy, the addition of market elements and a limited lifting of tensions with capitalist powers. He has great population support because of a promises to significantly increase the welfare of the population if he gets the post of Prime Minister once again." 
  hungarian.4.a:0 "Wonderful" 
   
  hungarian.5.t:0 "Commissioner of Foreign Affairs" 
@@ -223,6 +223,11 @@
  hungarian.45.t:0 "Economic Collapse"
  hungarian.45.d:0 "Rapidly implemented market reforms have led to unexpected consequences: in the hands of new owners, industry has lost its former productivity, it is reflected mainly in high-tech areas. Inflation reaches enormous proportions, making the population often unable to provide for even the most basic goods, and poverty is rampant.\n\nForeign powers are trying to pressurize Hungary and try to establish control over various parts of the economy through various investments, which puts Hungarian industrialists in a worse position. At the same time, social tensions between classes continue to rise, crime and death rates are rising. All this has a great impact on the popularity of the ruling party."
  hungarian.45.a:0 "Oh no..."
+ 
+ hungarian.46.t:0 "Elections"
+ hungarian.46.d:0 "The natural outcome of the past reforms in Hungary was an early presidential election. On the one hand the current president of the state is Sandor Garbai. On the other side is self-nominated Karoly Huszar. As a result of the shock therapy, Garbai lost a significant part of support, which puts his victory in the current election in question."
+ hungarian.46.a:0 "Garbai holds the Power!"
+ hungarian.46.b:0 "The country needs a new face"
  
  hungary.1.t:0 "Horthy in Budapest" 
  hungary.1.d:0 "Today, Miklos Horthy entered the city of Budapest and announced to the crowd that he forgives the "sinful capital" that defiled the motherland.\n\ \n\ Then Horthy said that one day Hungary would regain its former greatness and the enemies of the motherland would be defeated. The crowd cheered. Horthy left the square."

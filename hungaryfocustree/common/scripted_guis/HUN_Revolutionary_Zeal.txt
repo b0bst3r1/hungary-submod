@@ -5,6 +5,12 @@ scripted_gui = {
 		window_name = "Revolutionary_Zeal_container"
 		visible = {
 			original_tag = HUN
+			
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+			}			
 		}
 
 	}

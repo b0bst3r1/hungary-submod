@@ -33,7 +33,6 @@ set_war_support = 0.3
 
 set_convoys = 0
 
-set_country_flag = PB_WAR_SYSTEM_Slovakian_Revolution
 set_country_flag = hungarian_starting
 set_country_flag = Tag_in_Hungarian_Sphere
 
@@ -98,6 +97,7 @@ set_variable = {
 
 add_ideas = {
 
+    jc_coalition_leader
     HUN_Med_Revolutionary_Zeal_Idea
 	HUN_Low_Party_Unity_Idea
 	

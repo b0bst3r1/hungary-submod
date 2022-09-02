@@ -319,8 +319,11 @@ HUN_domestic_policy = {
 		effect = {
 		
 		country_event = {
+		
+		HUN = {
 		id = hungarian.44
 		days = 1
+		      }
 		  }			
 	   }
 	}
