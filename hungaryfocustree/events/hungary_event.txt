@@ -1520,7 +1520,6 @@ create_country_leader = {
 				limit = {
 					has_completed_focus = hun_garbai_arrest
 				}
-				add_popularity = {
 					remove_ideas = HUN_party_opposition
 				}
 			}
@@ -1569,7 +1568,6 @@ create_country_leader = {
 				limit = {
 					has_completed_focus = hun_belakun_arrest
 				}
-				add_popularity = {
 					remove_ideas = HUN_party_opposition
 				}
 			}		   

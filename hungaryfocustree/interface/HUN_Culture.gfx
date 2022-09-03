@@ -25,5 +25,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_PB_Culture_446"
 		texturefile = "gfx/interface/culture/Balkan/Danubian.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_PB_Culture_447"
+		texturefile = "gfx/interface/culture/Balkan/hungaro-slovak.dds"
 	}	
 }

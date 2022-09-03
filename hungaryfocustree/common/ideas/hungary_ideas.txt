@@ -101,7 +101,70 @@ hidden_ideas = {
                         research_speed_factor = -0.03
 			}
 		}
+		
+		HUN_Ethnic_Tensions = {
+			
+			
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_Ethnic_Tensions
+			
+			removal_cost = -1
+	
+			modifier = {
+            stability_factor = -0.2
+			non_core_manpower = -0.5
+			}
+		}
+		
+		HUN_Ethnic_Tensions_1 = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_Ethnic_Tensions
+			
+			removal_cost = -1
+	
+			modifier = {
+            stability_factor = -0.1
+			non_core_manpower = -0.33
+			}
+		}
+
+		HUN_Ethnic_Tensions_2 = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_Ethnic_Tensions
+			
+			removal_cost = -1
+	
+			modifier = {
+            stability_factor = -0.05
+			non_core_manpower = -0.15
+			}
+		}		
+		
 		HUN_Collapsing_Government = {
 			
 			

@@ -1,4 +1,4 @@
-HUN_economic_dec = {
+HUN_economic_dec = { 
 	icon = generic_economy
 
 	picture = GFX_decision_cat_PB_FRA_European_Commonwealth_Picture
@@ -8,26 +8,30 @@ HUN_economic_dec = {
 	}
 
 	visible = {
-		has_completed_focus = hun_collectivization
+		has_completed_focus = hun_collectivization     
 	}
 
 	priority = 170
 }
 
-HUN_unrest_mechanic = {
+HUN_culture_war = {
 	icon = usa_congress
 	
 	allowed = {
 		original_tag = HUN
 	}
 
-	visible = { 
-			has_country_flag = hungarian_starting
-        }
+	visible = {
+		OR = {
+			has_idea = HUN_Ethnic_Tensions
+			has_idea = HUN_Ethnic_Tensions_1
+			has_idea = HUN_Ethnic_Tensions_2
+		}
+	}
 		
-    scripted_gui = GER_Kingdoms_Influence_Scripted_GUI			
+    scripted_gui = HUN_culture_war_gui			
 
-	picture = GFX_decision_cat_GER_Federation_Picture
+	picture = GFX_decision_category_culture_war_dec
 
 	priority = 250
 }

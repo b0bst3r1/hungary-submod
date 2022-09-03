@@ -1,0 +1,69 @@
+defined_text = { 
+    name = get_transylvania_culture_war_loc
+    
+    text = { 
+        trigger = {
+            has_country_flag = transylvania_undefined
+        }
+        localization_key = "Culture_war_transylvania_undefined"
+    }
+    text = { 
+        trigger = {
+            has_country_flag = HUN_start_transylvania_magyarization
+        }
+        localization_key = "Culture_war_transylvania_magyarization"
+    }
+    text = { 
+        trigger = {
+            has_country_flag = HUN_start_transylvania_autonomization
+        }
+        localization_key = "Culture_war_transylvania_autonomization"
+    }    
+}
+
+defined_text = { 
+    name = get_slovakia_culture_war_loc
+    
+    text = { 
+        trigger = {
+            has_country_flag = slovakia_undefined
+        }
+        localization_key = "Culture_war_slovakia_undefined"
+    }
+    text = { 
+        trigger = {
+            has_country_flag = HUN_start_slovakia_magyarization
+        }
+        localization_key = "Culture_war_slovakia_magyarization"
+    }
+    text = { 
+        trigger = {
+            has_country_flag = HUN_start_slovakia_autonomization
+        }
+        localization_key = "Culture_war_slovakia_autonomization"
+    }    
+}
+
+defined_text = { 
+    name = get_ruthenia_culture_war_loc
+    
+    text = { 
+        trigger = {
+            has_country_flag = ruthenia_undefined
+        }
+        localization_key = "Culture_war_ruthenia_undefined"
+    }
+    text = { 
+        trigger = {
+            has_country_flag = HUN_start_ruthenia_magyarization
+        }
+        localization_key = "Culture_war_ruthenia_magyarization"
+    }
+    text = { 
+        trigger = {
+            has_country_flag = HUN_start_ruthenia_autonomization
+        }
+        localization_key = "Culture_war_ruthenia_autonomization"
+    }    
+}
+

@@ -78,6 +78,7 @@ focus_tree = {
 		y = 1
 
 	}
+	
 	focus = {
 		id = hun_economyof_hungary
 		icon = GFX_hun_economyof_hungary

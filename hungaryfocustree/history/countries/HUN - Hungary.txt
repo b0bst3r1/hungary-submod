@@ -35,6 +35,9 @@ set_convoys = 0
 
 set_country_flag = hungarian_starting
 set_country_flag = Tag_in_Hungarian_Sphere
+set_country_flag = transylvania_undefined
+set_country_flag = slovakia_undefined
+set_country_flag = ruthenia_undefined
 
 set_research_slots = 3
 
@@ -105,7 +108,7 @@ add_ideas = {
 	PB_HUN_Revolution_Home
 	HUN_Croatian_Support
 	HUN_Collapsing_Government
-	PB_HUN_Ethnic_Tensions
+	HUN_Ethnic_Tensions
     PB_HUN_Balkan_Powderkeg
 	#HUN_United_Country
 

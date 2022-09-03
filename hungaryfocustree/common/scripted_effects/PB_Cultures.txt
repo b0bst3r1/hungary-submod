@@ -1783,6 +1783,8 @@ PB_Setup_Cultures = {
 	### ---- Danubian Culture ---- ###
 	
 	967 = { set_variable = { culture_id = 446 } }
+	
+	### ---- Hungarian-Slovak ---- ###	
 }
 
 ## Changes the culture of the state scope into the culture specified in `temp_culture`

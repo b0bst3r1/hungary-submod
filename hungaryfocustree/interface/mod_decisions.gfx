@@ -23,5 +23,10 @@ spriteTypes = {
     spriteType = {
 		name = "GFX_decision_category_shock_therapy_dec"
 		texturefile = "gfx/interface/decisions/shock_therapy_dec.dds"
+	}
+
+    spriteType = {
+		name = "GFX_decision_category_culture_war_dec"
+		texturefile = "gfx/interface/decisions/culture_war_dec.dds"
 	}	
 }

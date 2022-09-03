@@ -36,7 +36,14 @@ defined_text = {
             check_variable = { culture_id = 446 }
         }
         localization_key = "PB_Culture_Danubian_tt"
-		   }
+	}
+	
+    text = { 
+        trigger = {
+            check_variable = { culture_id = 447 }
+        }
+        localization_key = "PB_Culture_HungarianSlovakian_tt"
+	}	
 
     # BRITAIN #
 	
@@ -1951,7 +1958,14 @@ defined_text = {
             check_variable = { culture_id = 446 }
         }
         localization_key = "PB_Culture_Danubian_tt_delayed"
-    }	
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { culture_id = 447 }
+        }
+        localization_key = "PB_Culture_HungarianSlovakian_tt_delayed"
+	}	
 
     # BRITAIN #
 	

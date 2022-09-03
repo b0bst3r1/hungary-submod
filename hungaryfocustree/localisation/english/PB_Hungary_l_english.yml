@@ -100,7 +100,7 @@
   Revolutionary_Zeal_0.02_increase:0 "Revolutionary Zeal: §G+2%§!."
   Revolutionary_Zeal_0.04_increase:0 "Revolutionary Zeal: §G+4%§!."
   Revolutionary_Zeal_0.06_increase:0 "Revolutionary Zeal: §G+6%§!."
-  GER_unrest_impact_rhinelands_low:0 "smth"
+  
   #Party Unity#
   HUN_High_Party_Unity:0 "§GUnity§!"
   HUN_Medium_Party_Unity:0 "§HMedium§!"
@@ -202,22 +202,105 @@
   HUN_mobilize_the_economy:0 "Mobilize the Economy"
   
   
-  #Culture War#
+  #Culture War
   
-  HUN_unrest_mechanic:0 "Culture War"
-  HUN_unrest_mechanic_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n asasdasd"
-  Hungary_button_tt:0 "Hungary"
-  Transylvania_button_tt:0 "Transylvania"
-  Ruthenia_button_tt:0 "Carpathian Ruthenia"
-  Slovakia_button_tt:0 "Slovakia"
+  HUN_culture_war:0 "Culture War"
+  HUN_culture_war_desc:0 "\n\n\n\n\n\nThe Hungarian People's Republic is made up of many different peoples: Magyars, Slovaks, Rusyns, Wallachians, Croatians, and many others. In order to keep the country stable, it is important to keep all the nationalities at peace. In order to do this Hungary has two different ways. The first is Magyarization, the assimilation of non-Hungarian peoples and their assimilation of Hungarian culture. The second way is autonomization that is the establishment of autonomous regions with greater minority rights."
   
-  HUN_Hungary_Text:0 "Hungary"
-  HUN_Transylvania_Text:0 "Transylvania"
-  HUN_Ruthenia_Text:0 "Carpathian Ruthenia"
-  HUN_Slovakia_Text:0 "Slovakia"
+  #TRANSYLVANIA
   
-  HUN_status_info:0 "Status:"
-  HUN_Translyvania_magyarization:0 "Magyarization"
+  Give_Transylvania_an_autonomy:0 "Grant Autonomy for Translyvania"
+  
+  begin_automatization_transylvania:0 "Decisions on Granting §GAutonomy§! to §YTransylvania§! will be opened"
+  begin_magyarization_transylvania:0 "Decisions on §RMagyarization§! of §YTransylvania§! will be opened"
+  
+  transylvania_magyarization:0 "Begin §RMagyarization§! of §YTransylvania§!"
+  transylvania_autonomization:0 "Begin the §GAutonomization§! of §YTransylvania§!"
+  replacing_the_national_language_tra:0 "Replace the National Wallach Language"
+  replacing_the_national_language_tra_tt:0 "Has completed Decision §Y"Replace the National Wallach Language"§!"
+  deportations_of_the_wallahs:0 "Deportation of Wallachs"
+  deportations_of_the_wallahs_tt:0 "Has completed Decision §Y"Deportation of Wallachs"§!"
+  political_magyarization_tra:0 "Political Magyarization of Transylvania"
+  political_magyarization_tra_tt:0 "Has completed Decision §Y"Political Magyarization of Transylvania"§!"
+  magyarize_transylvania:0 "Magyarize Transylvania"
+  Hungarian_Transylvania:0 "§RHungarian Culture§! will be established in §YSiebenburgen§!"
+  wallachians_in_politics:0 "Put the Wallahs in Politics"
+  wallachians_in_politics_tt:0 "Has completed Decision §Y"Put the Wallahs in Politics"§!"
+  development_of_national_language:0 "Development of National Language"
+  development_of_national_language_tt:0 "Has completed Decision §Y"Development of National Language"§!"
+  send_the_hungarians_home:0 "Send the Hungarians Home"
+  send_the_hungarians_home_desc:0 "Transylvania is home to a large number of Hungarians. It would be better for the development of national culture if they were back in Hungary."
+  send_the_hungarians_home_tt:0 "Has completed Decision §Y"Send the Hungarians Home"§!"
+  hun_tran_accepted:0 "§YWallachian Culture§! will be accepted"
+  
+  #Slovakia
+  
+  magyarize_slovakia:0 "Magyarize Slovakia"
+  Give_slovakia_an_autonomy:0 "Grant Autonomy for Slovakia"  
+  slovakia_magyarization:0 "Begin §RMagyarization§! of §YSlovakia§!"
+  slovakia_autonomization:0 "Begin the §GAutonomization§! of §YSlovakia§!"
+  begin_magyarization_slovakia:0 "Decisions on §RMagyarization§! of §YSlovakia§! will be opened"
+  Deportation_of_Slovaks_near_Budapest:0 "Deport Slovaks to Near Budapest"
+  Deportation_of_Slovaks_near_Budapest_tt:0 "Has completed Decision §Y"Deport Slovaks to Near Budapest"§!"
+  crush_slovak_elite:0 "Crush Slovak Elite"
+  crush_slovak_elite_tt:0 "Has completed Decision §Y"Crush Slovak Elite"§!"
+  continue_affirm_hungarian_language:0 "Continue to Affirm Hungarian Language"
+  continue_affirm_hungarian_language_tt:0 "Has completed Decision §Y"Continue to Affirm Hungarian Language"§!" 
+  Hungarian_Slovakia:0 "§RHungarian Culture§! will be established in §YSlovakia§!"
+  hun_south_slovakia:0 "Stop §RMagyarization§ in §BSouth Slovakia§!"
+  hun_slo_accepted:0 "§YSlovakian Culture§! will be accepted"
+  stop_magyarization_in_southern_slovakia:0 "Stop §RMagyarization§ in §YSouth Slovakia§!"
+  stop_magyarization_in_southern_slovakia_tt:0 "Has completed Decision §Y"Stop §RMagyarization§ in §YSouth Slovakia§!"§!"
+  Stimulation_of_Slovak_culture:0 "Stimulation of Slovakian Culture"
+  Stimulation_of_Slovak_culture_tt:0 "Has completed Decision §Y"Stimulation of Slovakian Culture"§!" 
+  population_exchange_slov:0 "Population Exchange"
+  population_exchange_slov_tt:0 "Has completed Decision §Y"Population Exchange"§!" 
+  begin_autonomization_slovakia:0 "Decisions on Granting §GAutonomy§! to §YSlovakia§! will be opened"
+  
+  #Ruthenia
+  
+  magyarize_ruthenia:0 "Magyarize Ruthenia" 
+  Give_ruthenia_an_autonomy:0 "Grant Autonomy for Ruthenia"
+  begin_autonomization_ruthenia:0 "Decisions on Granting §GAutonomy§! to §YRuthenia§! will be opened"
+  ruthenia_magyarization:0 "Begin §RMagyarization§! of §YRuthenia§!"
+  ruthenia_autonomization:0 "Begin the §GAutonomization§! of §YRuthenia§!"
+  begin_magyarization_ruthenia:0 "Decisions on §RMagyarization§! of §YRuthenia§! will be opened"
+  Deportation_of_Ruthenians_in_poland:0 "Deportations of Ukranians in Poland"
+  Deportation_of_Ruthenians_in_poland_tt:0 "Has completed Decision §Y"Deportations of Ukranians in Poland"§!"
+  Close_down_national_schools:0 "Close down National Schools"
+  Close_down_national_schools_tt:0 "Has completed Decision §Y"Close down National Schools"§!"
+  ban_orthodoxy:0 "Ban Orthodoxy"
+  ban_orthodoxy_tt:0 "Has completed Decision §Y"Ban Orthodoxy"§!"
+  reukranization:0 "ReUkranization"
+  reukranization_tt:0 "Has completed Decision §Y"ReUkranization"§!"
+  mass_opening_of_ruthenian_language_schools:0 "Mass Opening of the Ruthenian-Language Schools"
+  mass_opening_of_ruthenian_language_schools_tt:0 "Has completed Decision §Y"Mass Opening of the Ruthenian-Language Schools"§!"
+  Career_Opportunities_for_Ruthenians:0 "Career Opportunities for Ruthenians"
+  Career_Opportunities_for_Ruthenians_tt:0 "Has completed Decision §Y"Career Opportunities for Ruthenians"§!"
+  Hungarian_Ruthenia:0 "§RHungarian Culture§! will be established in §YKarpatenruthenen§!"
+  magyarize_ruthenia:0 ""Magyarize Ruthenia"
+  
+  
+  
+  
+  transylvania_status:0 "§YStatus of Transylvania§!"
+  ruthenia_status:0 "§YStatus of Ruthenia§!"
+  slovakia_status:0 "§YStatus of Slovakia§!"    
+ 
+  Culture_war_transylvania_undefined:0 "§BUndefined§!"
+  Culture_war_slovakia_undefined:0 "§BUndefined§!"
+  Culture_war_ruthenia_undefined:0 "§BUndefined§!"
+  
+  
+  Culture_war_transylvania_magyarization:0 "§RMagyarization§!"
+  Culture_war_slovakia_magyarization:0 "§RMagyarization§!"
+  Culture_war_ruthenia_magyarization:0 "§RMagyarization§!"
+
+  Culture_war_transylvania_autonomization:0 "§GAutonomization§!"
+  Culture_war_slovakia_autonomization:0 "§GAutonomization§!"
+  Culture_war_ruthenia_autonomization:0 "§GAutonomization§!"  
+  
+  #####
   
   HUN_CountryDesc_Topbar:0 "§YThe Common Republic of Hungary§! is the only §RRevolutionary Republic§! in continental Europe.\n\n§YThe Kingdom of Hungary§! gained independence as a nation in 1866, when the Austrian Empire unified Germany and gave its Non-German territories independence. However the independence was only nominal. Karl Ludwig of Habsburg would become the King of Hungary and maintain loyalty to the Habsburg family and subsequently to Germany. Hungary would continue to be an ally of Germany or rather in the eyes of the Hungarian people be a exploited puppet.\n\nThe Downfall of the Kingdom began with the outbreak of the §YGreat War§! in 1905 where the nation would immediatly join the Imperial Powers in their war against the Bourbons. The Hungarian People were dragged into a war they had no motivation or interest fighting in greatly increasing their dissent with the Royal Leadership. With Hungarian Soldiers being used as cannon fodder on the alpine front and the citiziens themself experiencing food shortages, the old Jacobine ideas born in 1790 would again gain support among the common people. In the end over 300 thousand soldiers would give their lives for the war effort and in the Treaty of Tours the Kingdom would only be awarded some small reperations as compensation. §RThe Spark was lit!§!\n\nThe following collapsing economy in 1911 would lead to bread riots which would escalate as Hungarian troops would fire on the protestors. From there on the situation rapidly escalated with Troops defecting on mass. §RThe Revolution§! had began, the Hungarian civil war between the Jacobin Revolutionaries and the German Backed Whites started. At the same time Romania would invade and steal Translyvanian territory. However despite these setback the Revolution would suceed under the guidance of Vilmos Böhm and the §YCommon Republic of Hungary§! would be declared on 6th March 1912. \n\nAfter 8 years of recovering the Hungarian Republic would declare war upon Romania trying to reclaim their lost territories. The war would be the most brutal one both countries had ever experienced and after 3 years of gruesome fighting the Great Powers of Europe forced a peace. Hungary reclaimed the majority of its former Translyvanian States and would be seen as the victor. However its following and current problems would be internally. Ethnic tension in Slovakia and the Slavic border regions begin to cause issues, the ruling party §RForradalmi Tanács§! is splitting into two conflicting branches, the §YReformists§! and §YVanguardists§! and lastly the hero of the revolution Vilmos Böhm is losing his shine and motivation to rule this nation. On top of all of this, the is a feeling in the air that the Balkan is soon reaching its §R"Boiling Point"§!."   
   

@@ -1,41 +1,5 @@
 #ECONOMICDECISIONS
 
-HUN_unrest_mechanic = {
-
-	HUN_collectivize_hungary = {
-
-		icon = GFX_decision_ger_military_buildup
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-		has_completed_focus = hun_collectivization
-		}
-
-		days_remove = 30
-
-		fire_only_once = yes
-
-		remove_effect = {
-		add_stability = -0.02
-			701 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			43 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			155 = {
-				add_extra_state_shared_building_slots = 2
-			}			
-			
-		}
-	}
-}
-	
 HUN_economic_dec = {
 
 	HUN_collectivize_hungary = {
@@ -864,45 +828,7 @@ HUN_domestic_policy = {
 				add_idea = partial_economic_mobilisation
 			}			
 		}
-	}	
-}
-
-HUN_unrest_mechanic = {
-
-	HUN_increase_revolutionary_zeasl = {
-
-		icon = GFX_decision_category_generic_communism
-
-		cost = 20
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-			OR = {
-				has_government = jc
-				has_government = ss
-				has_government = lb
-			}
-		}
-
-		days_remove = 1
-		
-		days_re_enable = 30
-
-		remove_effect = {
-		
-		set_country_flag = HUN_magyarization
-		
-		custom_effect_tooltip = Revolutionary_Zeal_0.04_increase
-			add_to_variable = {
-				var = HUN_Revolutionary_Zeal
-				value = 0.04
-			}			
-			
-		}
-	}
+	}	  
 }
 
 HUN_shock_therapy = {
