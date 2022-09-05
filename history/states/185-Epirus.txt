@@ -2,13 +2,9 @@
 state={
 	id=185
 	name="STATE_185"
-	manpower = 501424
-	
-	state_category = town
-	
 	resources={
-		chromium=13
-		steel = 12
+		chromium=13.000
+		steel=12.000
 	}
 
 	history={
@@ -18,12 +14,19 @@ state={
 			air_base = 3
 			9805 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = GRE
+
 	}
 
 	provinces={
-		1106 1205 3914 9805 9916 10203 11786 11895 12001 
+		3914 9805 9916 10203 11786 
 	}
+	manpower=501424
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

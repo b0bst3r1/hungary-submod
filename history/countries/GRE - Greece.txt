@@ -25,8 +25,8 @@ set_technology = {
 	interwar_antiair = 1
 }
 
-set_stability = 0.5
-set_war_support = 0.3
+set_stability = 0.70
+set_war_support = 0.1
 
 set_convoys = 184
 
@@ -118,10 +118,13 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Total Chaos"
 	desc = ""
 	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
-	ideology = CN_VARIANT_01
+	ideology = SS_VARIANT_02
+	traits = {
+		PB_Total_Anarchy
+	}
 }
 
 
