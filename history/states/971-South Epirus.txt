@@ -1,0 +1,29 @@
+
+state={
+	id=971
+	name="STATE_971"
+	
+	state_category = town
+	
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 4
+			air_base = 3
+			1106 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = GRE
+
+	}
+	
+	provinces={
+		1106 1205 11895 12001 
+	}
+	manpower=200134
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+}
