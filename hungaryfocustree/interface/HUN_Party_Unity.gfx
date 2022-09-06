@@ -1,0 +1,7 @@
+spriteTypes = {
+
+SpriteType = {
+	name = "GFX_HUN_PartyUnity_icon"
+	texturefile = "gfx/interface/HUN_Party_Unity.dds"
+}
+}

@@ -1,0 +1,15 @@
+scripted_gui = {
+    HUN_culture_war_gui = {
+    
+        context_type = decision_category
+		window_name = "HUN_culture_war_gui"
+		
+		visible = {
+			always = yes
+		}
+		ai_enabled = {
+			always = no
+		}
+	}
+}
+

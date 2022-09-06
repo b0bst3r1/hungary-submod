@@ -1,0 +1,89 @@
+ideas = {
+
+	head_of_government = { 
+		law = yes
+
+		#HUNGARY#
+
+		HUN_Revai_HOG = { 
+					
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = HUN
+			}
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+			
+			picture = GFX_idea_HUN_Revai_HOG
+
+			traits = {
+				PB_jc_trait
+				PB_Futurist
+			}
+			
+			cancel_if_invalid = no
+	   }
+	   
+		HUN_Garbai_HOG = { 
+					
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = HUN
+			}
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+			
+			picture = GFX_idea_HUN_Garbai_IM
+
+			traits = {
+				PB_ss_trait
+				PB_Administrator
+			}
+			
+			cancel_if_invalid = no
+	   }
+
+		HUN_BelaKun_HOG = { 
+					
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = HUN
+			}
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+			
+			picture = GFX_idea_HUN_BelaKun_HOG	
+
+			traits = {
+				PB_js_trait
+				PB_Man_of_the_People
+			}
+			
+			cancel_if_invalid = no
+	   }	   
+	 }
+   }

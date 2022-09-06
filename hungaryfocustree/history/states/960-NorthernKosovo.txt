@@ -1,0 +1,20 @@
+state=
+{
+	id=960
+	name="STATE_960" #kosovo
+	manpower = 200124
+	
+	state_category = rural
+	
+	history={
+		owner = SER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = SER
+		add_core_of = ALB
+	} 
+	provinces={	
+		9890 6940
+	}
+}

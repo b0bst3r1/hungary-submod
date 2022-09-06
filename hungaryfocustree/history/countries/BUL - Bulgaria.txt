@@ -1,0 +1,154 @@
+﻿starting_train_buffer = 2
+capital = 48
+
+oob = "BUL_1933"
+
+set_country_flag = Tag_in_Russian_Sphere
+set_country_flag = Megacorp_Tesla_Dominant
+set_country_flag = PB_Russian_Autonomy
+
+# Accepted Cultures
+
+set_variable = { PB_main_culture = 53 }
+add_to_array = { PB_accepted_cultures = 53 }
+
+
+# Starting tech
+set_technology = { 
+	infantry_rations = 1
+	basic_train = 1
+	infantry_weapons1930 = 1
+	infantry_weapons1933 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	fuel_silos = 1
+	gw_artillery = 1
+}
+
+set_stability = 0.5
+set_war_support = 0.1
+
+set_convoys = 21
+
+set_research_slots = 3
+
+add_to_farleft_coalition_jc = yes
+add_to_farleft_coalition_ss = yes
+add_to_farleft_coalition_lb = yes
+
+add_ideas = {
+
+    BUL_imro_support
+	BUL_balkan_prussia
+	BUL_rus_influence
+	BUL_unpopular_tsar
+	
+	PB_HUN_Balkan_Powderkeg
+
+	limited_conscription
+
+	PB_Universal_Citizenship
+	PB_Fully_Westernized
+	PB_Govidea_Free_Market_Capitalism
+	PB_Prussian_Constitutionalism
+	PB_Great_War_Military
+	PB_NI_Revanchism
+	PB_Limited_Censorship
+
+	PB_Public_Meetings_Allowed
+	PB_Full_Womens_Equality
+	PB_Significant_Autonomy
+	PB_Law_Standard_Policing
+
+	PB_12_Hour_Workday
+	PB_Basic_Healthcare
+	PB_Basic_Education
+	PB_Basic_Welfare
+	PB_Sociogenetics_Allowed
+	PB_Augmentation_No_Legislation
+
+	PB_Significant_Poverty
+	PB_Semi_Industrialized
+	PB_Significant_Illiteracy
+	PB_Market_Underperformance
+}
+
+set_cosmetic_tag = BUL_TSA
+
+
+set_politics = {
+	ruling_party = ds
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	ni = 14
+	ds = 21
+	rc = 16
+	cn = 12
+	lb = 15
+	an = 0
+	ss = 19
+	jc = 3
+                   }
+
+create_country_leader = {
+	name = "Nikolay II"
+	desc = "PB_BUL_Nikolay_II_DESC"
+	picture = "Portrait_BUL_Nikolay_II.dds"
+	ideology = CN_VARIANT_02
+}
+
+
+create_country_leader = {
+	name = "No Leader"
+	desc = ""
+	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	ideology = NI_VARIANT_01
+}
+
+create_country_leader = {
+	name = "Nikolay II"
+	desc = "PB_BUL_Nikolay_II_DESC"
+	picture = "Portrait_BUL_Nikolay_II.dds"
+	ideology = DS_VARIANT_01
+}
+
+create_country_leader = {
+	name = "No Leader"
+	desc = ""
+	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	ideology = RC_VARIANT_01
+}
+
+create_country_leader = {
+	name = "No Leader"
+	desc = ""
+	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	ideology = AN_VARIANT_01
+}
+
+create_country_leader = {
+	name = "No Leader"
+	desc = ""
+	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	ideology = LB_VARIANT_01
+}
+
+create_country_leader = {
+	name = "Georgi Dimitrov"
+	desc = ""
+	picture = "gfx/leaders/BUL/Portrait_georgidimitrow.dds"
+	ideology = SS_VARIANT_01
+}
+
+create_country_leader = {
+	name = "Georgi Dimitrov"
+	desc = ""
+	picture = "gfx/leaders/BUL/Portrait_georgidimitrow.dds"
+	ideology = JC_VARIANT_01
+}

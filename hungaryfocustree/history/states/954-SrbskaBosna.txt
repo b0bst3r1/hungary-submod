@@ -1,0 +1,32 @@
+
+state={
+	id=954
+	name="STATE_954"
+	manpower =1423123
+	
+	
+	state_category = town
+	
+	resources={
+		aluminium=6
+	}
+
+	history={
+		owner = SER
+		victory_points = {
+			11899 5 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			air_base = 2
+		}
+		add_core_of = BOS
+		add_core_of = SER
+		add_claim_by = CRO
+	}
+
+	provinces={
+		953 982 11899 11741 606 11574 9591 9588 6619
+	}
+}

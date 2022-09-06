@@ -1,0 +1,1263 @@
+#ECONOMICDECISIONS
+
+HUN_economic_dec = {
+
+	HUN_collectivize_hungary = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		has_completed_focus = hun_collectivization
+		}
+		
+        highlight_states = { 
+		highlight_state_targets = { state = 701 }
+		highlight_state_targets = { state = 43 }
+		highlight_state_targets = { state = 155 }
+	    }		
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+		add_stability = -0.02
+			701 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			43 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			155 = {
+				add_extra_state_shared_building_slots = 2
+			}			
+			
+		}
+	}
+
+	HUN_collectivize_slovak_ruthenia = {
+
+		icon = GFX_decision_steelworks
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+		has_completed_focus = hun_collectivization
+		}
+
+        highlight_state_targets = { state = 664 }
+        highlight_state_targets = { state = 71 }
+        highlight_state_targets = { state = 70 }
+        highlight_state_targets = { state = 73 }		
+       		
+		
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+		add_stability = -0.02
+			664 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			71 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			70 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			73 = {
+				add_extra_state_shared_building_slots = 2
+			}			
+			
+		}
+	}
+	
+	HUN_collectivize_transylvania = {
+
+		icon = GFX_decision_steelworks
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+		has_completed_focus = hun_collectivization
+		}
+
+        highlight_state_targets = { state = 76 }
+        highlight_state_targets = { state = 83 }
+        highlight_state_targets = { state = 84 }		
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+		add_stability = -0.02
+			76 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			83 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			84 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	HUN_collectivize_croatia = {
+
+		icon = GFX_decision_steelworks
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+		has_completed_focus = hun_collectivization
+		}
+		
+        highlight_state_targets = { state = 957 }
+        highlight_state_targets = { state = 109 }
+        highlight_state_targets = { state = 794 }		
+		
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+		add_stability = -0.02
+			957 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			109 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			794 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	HUN_collectivize_south_lands = {
+
+		icon = GFX_decision_steelworks
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+		has_completed_focus = hun_collectivization
+		}
+
+        highlight_state_targets = { state = 45 }
+        highlight_state_targets = { state = 764 }
+        highlight_state_targets = { state = 82 }		
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+		add_stability = -0.02
+			45 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			764 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			82 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+}
+
+HUN_domestic_policy = {
+
+	HUN_increase_revolutionary_zeal = {
+
+		icon = GFX_decision_category_hun_comm
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+			}
+		}
+
+		days_remove = 15
+		
+		days_re_enable = 30
+
+		remove_effect = {
+		
+		custom_effect_tooltip = Revolutionary_Zeal_0.04_increase
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = 0.04
+			}			
+			
+		}
+	}
+
+	HUN_increase_party_unity = {
+
+		icon = GFX_decision_category_hun_comm
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+			}
+		}
+
+		days_remove = 15
+		
+		days_re_enable = 30
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_PartyUnity_0.04_increase
+			add_to_variable = {
+				var = HUN_PartyUnity
+				value = 0.04
+			}			
+			
+		}
+	}
+
+	HUN_Friedrich_Engels_legacy = {
+
+		icon = GFX_decision_category_hun_comm
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+			}
+		}
+
+		fire_only_once = yes
+
+		effect = {
+		
+		country_event = {
+		
+		HUN = {
+		id = hungarian.44
+		days = 1
+		      }
+		  }			
+	   }
+	}
+
+	HUN_Propaganda_in_Schools = {
+
+		icon = GFX_decision_category_hun_comm
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		days_remove = 25
+
+		days_re_enable = 50
+
+		remove_effect = {
+			add_war_support = 0.025
+
+			if = {
+				limit = {
+					has_government = jc
+				}
+				add_popularity = {
+					ideology = jc
+					popularity = 0.05
+				}
+			}
+
+			if = {
+				limit = {
+					has_government = ss
+				}
+				add_popularity = {
+					ideology = ss
+					popularity = 0.05
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = lb
+				}
+				add_popularity = {
+					ideology = lb
+					popularity = 0.05
+				}
+			}			
+		}
+	}
+
+	HUN_Fighting_the_Counterrevolution = {
+
+		icon = GFX_decision_category_hun_comm
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+			}
+		}
+		
+			modifier = {
+			
+			political_power_gain = -0.05
+			
+				ni_drift = -0.01
+				ds_drift = -0.01
+				ss_drift = 0.02
+				jc_drift = 0.02
+				lb_drift = 0.01
+		}	
+		
+        days_remove = 30
+		
+		days_re_enable = 50
+
+		remove_effect = {
+		}
+	}
+	
+	HUN_organize_party_meeting = {
+
+		icon = GFX_decision_category_hun_comm
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+			}
+		}
+
+		days_remove = 30
+		
+		days_re_enable = 120
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_PartyUnity_0.1_increase
+			add_to_variable = {
+				var = HUN_PartyUnity
+				value = 0.10
+			}			
+		}
+	}		
+ }
+  
+ HUN_war_on_horizon = {
+
+	HUN_arpad_line_one = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+		
+			modifier = {
+
+			consumer_goods_factor = 0.05
+		}		
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		set_country_flag = HUN_arpad_line_one	
+		
+			76 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 727
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6731
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 9672
+				}
+			}
+			83 = {
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3694
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11622
+				}
+		    }
+		}				
+	}
+	
+	HUN_arpad_line_two = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+			custom_trigger_tooltip = {
+			    tooltip = HUN_arpad_line_one_tt
+				has_country_flag = HUN_arpad_line_one			
+		}
+		}
+		
+			modifier = {
+			consumer_goods_factor = 0.05
+		}		
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		set_country_flag = HUN_arpad_line_two	
+		
+			82 = {
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 662
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11592
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3649
+				}
+			}	
+			
+			764 = {
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 614
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3614
+				}
+			}
+		}				
+	}
+
+	HUN_arpad_line_three = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+			custom_trigger_tooltip = {
+			    tooltip = HUN_arpad_line_two_tt
+				has_country_flag = HUN_arpad_line_two			
+		}
+		}
+		
+			modifier = {
+			consumer_goods_factor = 0.05
+		}		
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+			109 = {
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11580
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11577
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6647
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 9595
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 624
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3596
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3592
+				}
+			}
+
+			794 = { 
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3601
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6611
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 984
+				}
+				
+					add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11901
+				}
+			}
+		}				
+	}
+
+	HUN_invest_in_military_industry = {
+
+		icon = GFX_decision_generic_construction
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			}
+
+		days_remove = 30
+		
+		days_re_enable = 60
+
+		remove_effect = {
+		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+	}
+
+	HUN_invest_in_civil = {
+
+		icon = GFX_decision_generic_construction
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			}
+
+		days_remove = 30
+		
+		days_re_enable = 60
+
+		remove_effect = {
+		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+	}	
+	
+	HUN_increase_conscription = {
+
+		icon = GFX_decision_generic_construction
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			}
+
+		days_remove = 15
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+			swap_ideas = {
+				remove_idea = volunteer_only
+				add_idea = limited_conscription
+			}			
+		}
+	}
+
+	HUN_mobilize_the_economy = {
+
+		icon = GFX_decision_generic_construction
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			}
+
+		days_remove = 15
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+			swap_ideas = {
+				remove_idea = civilian_economy
+				add_idea = partial_economic_mobilisation
+			}			
+		}
+	}	  
+}
+
+HUN_shock_therapy = {
+
+	HUN_Universal_Minimum_Employment_Act = {
+
+		icon = generic_decision
+
+		available = {
+			has_idea = HUN_shock_therapy_1
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_1
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.05
+            consumer_goods_factor = 0.1
+		}
+
+		days_remove = 35
+		fire_only_once = yes
+
+		remove_effect = {
+			add_political_power = 25
+			add_stability = 0.005
+			PB_Poverty_Small_Progress_Increase = yes
+			set_country_flag = hun_employment_act
+		}
+	}
+	
+	HUN_National_Industrial_Recovery = {
+
+		icon = generic_construction
+
+		available = {
+			has_idea = HUN_shock_therapy_1
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_1
+		}
+
+		cost = 40
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.05
+			production_speed_buildings_factor = 0.25
+		}
+
+		days_remove = 60
+		fire_only_once = yes
+
+		remove_effect = {
+			add_political_power = 25
+			add_stability = 0.005
+			set_country_flag = hun_industrial_recovery
+		}
+	}
+	
+	HUN_capital_industry = {
+
+		icon = generic_construction
+
+		available = {
+			has_idea = HUN_shock_therapy_1
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_1
+		}
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+			consumer_goods_factor = 0.05
+		}
+
+		days_remove = 50
+		fire_only_once = yes
+
+		remove_effect = {
+			add_political_power = 25
+			add_stability = -0.1
+			set_country_flag = HUN_capital_industry
+		}
+	}	
+	
+	HUN_First_Shock = {
+
+		icon = generic_health_cross
+
+		available = {
+			has_idea = HUN_shock_therapy_1
+			custom_trigger_tooltip = {
+			    tooltip = HUN_capital_industry_tt
+				has_country_flag = HUN_capital_industry
+			}
+			custom_trigger_tooltip = {
+				tooltip = hun_employment_act_tt
+				has_country_flag = hun_employment_act
+			}
+			custom_trigger_tooltip = {
+				tooltip = hun_industrial_recovery_tt
+				has_country_flag =  hun_industrial_recovery
+			}
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_1
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.25
+		}
+
+		days_remove = 7
+		fire_only_once = yes
+
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = HUN_shock_therapy_1
+				add_idea = HUN_shock_therapy_2
+			}
+		}
+	}
+
+	HUN_Universal_Minimum_Employment_Act_2 = {
+
+		icon = generic_decision
+
+		available = {
+			has_idea = HUN_shock_therapy_2
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_2
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.05
+            consumer_goods_factor = 0.1
+		}
+
+		days_remove = 35
+		fire_only_once = yes
+
+		remove_effect = {
+			add_political_power = 40
+			add_stability = 0.02
+			PB_Poverty_Small_Progress_Increase = yes
+			set_country_flag = hun_employment_act_2
+		}
+	}
+
+	HUN_Rebuilding_Slovakia = {
+
+		icon = generic_construction
+
+		available = {
+			has_idea = HUN_shock_therapy_2
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_2
+		}
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		days_remove = 50
+		fire_only_once = yes
+
+		remove_effect = {
+		add_political_power = -30
+		add_stability = 0.03
+        set_country_flag = HUN_rebuild_slovakia		
+     }	
+   }
+
+	HUN_monetary_reform = {
+
+		icon = generic_construction
+
+		available = {
+			has_idea = HUN_shock_therapy_2
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_2
+		}
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+		}
+
+		days_remove = 60
+		fire_only_once = yes
+
+		remove_effect = {
+			PB_Economy_Small_Progress_Increase = yes
+									
+			set_country_flag = HUN_monetary_reform
+		}
+	 }
+
+	HUN_Second_Shock = {
+
+		icon = generic_health_cross
+
+		available = {
+			has_idea = HUN_shock_therapy_1
+			custom_trigger_tooltip = {
+			    tooltip = HUN_monetary_reform_tt
+				has_country_flag = HUN_monetary_reform
+			}
+			custom_trigger_tooltip = {
+				tooltip = HUN_rebuild_slovakia_tt
+				has_country_flag = HUN_rebuild_slovakia
+			}
+			custom_trigger_tooltip = {
+				tooltip = hun_employment_act_tt
+				has_country_flag =  hun_employment_act_2
+			}
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_2
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.25
+		}
+
+		days_remove = 7
+		fire_only_once = yes
+
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = HUN_shock_therapy_2
+				add_idea = HUN_shock_therapy_3
+			}
+		}
+	}
+
+	HUN_Universal_Minimum_Employment_Act_3 = {
+
+		icon = generic_decision
+
+		available = {
+			has_idea = HUN_shock_therapy_3
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_3
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.05
+            consumer_goods_factor = 0.1
+		}
+
+		days_remove = 35
+		fire_only_once = yes
+
+		remove_effect = {
+			add_political_power = 50
+			add_stability = 0.03
+			PB_Poverty_Small_Progress_Increase = yes
+			set_country_flag = hun_employment_act_3
+		}
+	}
+
+	HUN_speed_up_privatization = {
+
+		icon = generic_decision
+
+		available = {
+			has_idea = HUN_shock_therapy_3
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_3
+		}
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = 0.15
+		}
+
+		days_remove = 35
+		fire_only_once = yes
+
+		remove_effect = {
+			PB_Economy_Small_Progress_Increase = yes
+			set_country_flag = hun_privatization_speed
+		}
+	}
+
+	HUN_Allow_foreign_investments = {
+
+		icon = generic_decision
+
+		available = {
+			has_idea = HUN_shock_therapy_3
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_3
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+		}
+
+		days_remove = 25
+		fire_only_once = yes
+
+		remove_effect = {
+		    add_political_power = 50
+			set_country_flag = hun_allow_investments
+		}
+	}
+
+	HUN_Third_Shock = {
+
+		icon = generic_health_cross
+
+		available = {
+			has_idea = HUN_shock_therapy_3
+			custom_trigger_tooltip = {
+			    tooltip = hun_allow_investments_tt
+				has_country_flag = hun_allow_investments
+			}
+			custom_trigger_tooltip = {
+				tooltip = hun_privatization_speed_tt
+				has_country_flag = hun_privatization_speed
+			}
+			custom_trigger_tooltip = {
+				tooltip = hun_employment_act_tt
+				has_country_flag =  hun_employment_act_3
+			}
+		}
+
+		visible = {
+			has_idea = HUN_shock_therapy_3
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		modifier = {
+			political_power_gain = -0.25
+		}
+
+		days_remove = 7
+		fire_only_once = yes
+
+		remove_effect = {
+				remove_idea = HUN_shock_therapy_3
+				clr_country_flag = shock_therapy
+		}
+	}
+}	

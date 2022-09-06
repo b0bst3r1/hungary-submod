@@ -1,0 +1,119 @@
+ideas = {
+
+	economics_minister = { 
+		law = yes
+
+		# Hungary #
+		
+		HUN_Vago_EM = { 
+						
+			cost = 150
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = HUN
+			}
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+			available = { 
+				always = no
+			}
+			
+            picture = GFX_idea_HUN_Vago_EM
+			
+			traits = {
+				PB_jc_trait
+				PB_Budget_Balancer
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		#BelaKunAdministration
+		HUN_Nagy_EM = { 
+						
+			cost = 150
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = HUN
+			}
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+			available = { 
+				always = no
+			}
+			
+            picture = GFX_idea_HUN_Nagy_EM
+			
+			traits = {
+				PB_jc_trait
+				PB_Silent_Workhorse
+			}
+			
+			cancel_if_invalid = no
+		}
+        
+		#GARBAIAdministration
+		HUN_Varga_EM = { 
+						
+			cost = 150
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = HUN
+			}
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+			available = { 
+				always = no
+			}
+			
+            picture = GFX_idea_HUN_Varga_EM
+			
+			traits = {
+				PB_ss_trait
+				PB_Industrialist
+			}
+			
+			cancel_if_invalid = no
+		}
+
+        #RevaiAdministration
+		HUN_Arpad_EM = { 
+						
+			cost = 150
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = HUN
+			}
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+			available = { 
+				always = no
+			}
+			
+            picture = GFX_idea_HUN_Arpad_EM
+			
+			traits = {
+				PB_jc_trait
+				PB_Political_Architect
+			}
+			
+			cancel_if_invalid = no
+		}		
+      }
+	}

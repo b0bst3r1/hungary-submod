@@ -1,0 +1,318 @@
+﻿  l_english:
+  
+  HUN_shock_therapy_1:0 "Shock Therapy"
+  HUN_shock_therapy_1_desc:0 "A complex of radical economic reforms aimed at weakening state regulation in the field of pricing and mass privatization of unprofitable state enterprises. Despite the fact that these reforms cause great temporary damage to the population, such as increased unemployment and high inflation, there is no other way out of this situation."
+  HUN_shock_therapy_2:0 "Shock Therapy"
+  HUN_shock_therapy_2_desc:0 "A complex of radical economic reforms aimed at weakening state regulation in the field of pricing and mass privatization of unprofitable state enterprises. Despite the fact that these reforms cause great temporary damage to the population, such as increased unemployment and high inflation, there is no other way out of this situation."
+  HUN_shock_therapy_3:0 "Shock Therapy"
+  HUN_shock_therapy_3_desc:0 "A complex of radical economic reforms aimed at weakening state regulation in the field of pricing and mass privatization of unprofitable state enterprises. Despite the fact that these reforms cause great temporary damage to the population, such as increased unemployment and high inflation, there is no other way out of this situation."  
+   
+
+  PB_Presidental_Republic:0 "Presidental Republic"
+  
+  PB_HUN_Revolution_Home_1:0 "Home of the Revolution"
+  PB_HUN_Revolution_Home_1_desc:0 "The Hungarian People's Republic is the only major revolutionary republic in existence in continental Europe and, if the reactionary powers had their way, it would be the last. Following the Great War, Hungary found itself in crisis. Their allegiance to Germany had cost nearly a million lives, economic collapse and reduced much of the nation to near famine conditions. The touchpaper of Revolution was easily lit in 1912, when the Royal Hungarian Army attempted to crack down on protests in Budapest.\n\nVeteran's militias, trained and hardened by fighting on the Romanian and North Italian fronts, quickly turned the tables on the pro-German protectorate government. Within a matter of days, the nation descended into civil war and revolutionary violence. The regime that emerged from the revolution would be one founded not on Imperial obligations or bourgeois capitalism, but on revolutionary republi
+  
+  PB_HUN_Revolution_Home:0 "Home of the Revolution"
+  PB_HUN_Revolution_Home_desc:0 "The Hungarian People's Republic is the only major revolutionary republic in existence in continental Europe and, if the reactionary powers had their way, it would be the last. Following the Great War, Hungary found itself in crisis. Their allegiance to Germany had cost nearly a million lives, economic collapse and reduced much of the nation to near famine conditions. The touchpaper of Revolution was easily lit in 1912, when the Royal Hungarian Army attempted to crack down on protests in Budapest.\n\nVeteran's militias, trained and hardened by fighting on the Romanian and North Italian fronts, quickly turned the tables on the pro-German protectorate government. Within a matter of days, the nation descended into civil war and revolutionary violence. The regime that emerged from the revolution would be one founded not on Imperial obligations or bourgeois capitalism, but on revolutionary republicanism. Hungary is the vanguard of the revolution in the Balkans, and her people are dedicated to the ideas upon which the new republic was founded."
+  PB_HUN_Balkan_Powderkeg:0 "The Balkan Powderkeg"
+  PB_HUN_Balkan_Powderkeg_desc:0 "The Balkans have always been a region of conflict and the years since the war have seen the region descend into armed camps, mimicking the web of alliances prior to the larger global conflict. With a revanchist Romania and expansionist Serbia, revolutionary fervor in Bulgaria and the Dinarics having split, the Balkans are a single crisis away from exploding into general war. The coming conflict has been predicted by nearly every advisor in every Balkan capital, and thus a palpable sense of tension has overtaken the region. No one knows quite when the Great Balkan War will begin, but everyone is jockeying to be in a position to fire the first shot."
+  
+  PB_HUN_German_Disarmament:0 "German Imposed Disarmament"
+  PB_HUN_German_Disarmament_desc:0 "Our Republic has agreed to accept the terms of the German Ultimatum and disarmed it's army. This has greatly destroyed the support and stability of the Republic."
+  
+  PB_SER_German_Disarmament:0 "German Imposed Disarmament"
+  PB_SER_German_Disarmament_desc:0 "Our Empire has agreed to accept the terms of the German Ultimatum and disarmed it's army. This has greatly destroyed the support and stability of the Empire."
+
+  PB_HUN_German_Eco_Treaty:0 "German Economic Treaty"
+  
+  PB_ROM_German_Eco_Treaty:0 "German Economic Treaty"
+  
+  #Tooltips#
+  
+  HUN_albanian_revolution:0 "Chance for a §RSocialist Revolution§! in §RAlbania§! is 40%§!\nIn the case of failure, §RAlbania§! will have a §GNeo-Imperialist Government§!"
+  5year_plans_stopped:0 "§YThe five-year plans are stopped§!"
+  hun_starting_crisis_tt:0 "§YThe starting crisis is over§!"
+  HUN_Resistance_twentyfive:0 "\n\n§GResistance readiness is 25%§!"
+  HUN_Resistance_fifty:0 "\n\n§GResistance readiness is 50%§!"
+  HUN_Resistance_seventyfive:0 "\n\n§GResistance readiness is 75%§!"
+  HUN_Resistance_hundred:0 "\n\n§GResistance readiness is 100%§!"
+  HUN_Increase_prison_300:0 "§GIncrease the number of prisoners to 300,000§!"
+  HUN_Increase_prison_450:0 "§GIncrease the number of prisoners to 450,000§!"
+  russia_oil_romania:0 "\n\n§RRussia controls Romanian oil fields§!"
+  HUN_stage_one_begin_tt:0 "The §GFirst§! stage is began"
+  HUN_stage_two_begin_tt:0 "The §GSecond§! stage is began"
+  HUN_stage_three_begin_tt:0 "The §GThird§! stage is began"
+  HUN_stage_four_begin_tt:0 "The §GFourth§! stage is began"
+  HUN_first_stage_over:0 "First stage of researchment is §Gcompleted§!"
+  HUN_second_stage_over:0 "Second stage of researchment is §Gcompleted§!"
+  HUN_third_stage_over:0 "Third stage of researchment is §Gcompleted§!"
+  HUN_four_stage_over:0 "Fourth stage of researchment is §Gcompleted§!"
+  begin_stage_one:0 "Begin the §GFirst§! stage of research" 
+  begin_stage_two:0 "Begin the §GSecond§! stage of research" 
+  begin_stage_three:0""Begin the §GThird§! stage of research" 
+  HUN_25percent_to_research:0 "§GAdd 25%§! to research\n\n"
+  HUN_10percent_to_research:0 "§GAdd 20%§! to research\n\n" 
+  HUN_15percent_to_research:0 "§GAdd 15%§! to research\n\n"
+  HUN_10percent_to_research:0 "§GAdd 10%§! to research\n\n"
+  HUN_arpad_line_one_tt:0 "The first part of the Arpad line is built"
+  HUN_arpad_line_two_tt:0 "The second part of the Arpad line is built"
+  
+  #MINISTERS#
+  
+  HUN_PB_Bohm_HOG:0 "Vilmos Böhm"
+  HUN_PB_Vago_IM:0 "Béla Vágó"
+  HUN_PB_Dezso_EM:0 "Dezső Bokányi"
+  HUN_PB_Garbai_FM:0 "Sándor Garbai"
+  HUN_PB_Rakosi:0 "Mátyás Rákosi"
+
+  HUN_Garbai_IM:0 "Sándor Garbai"
+  HUN_Vago_EM:0 "Bela Vago"
+  HUN_BelaKun_FM:0 "Béla Kun"
+  #BELAKUNadministration
+  HUN_Munnich_FM:0 "Ferenc Münnich"
+  HUN_Erno_IM:0 "Ernő Garami"
+  HUN_Nagy_EM:0 "Imre Nagy"
+  #GARBAIadministration
+  HUN_Varga_EM:0 "Jenő Varga"
+  HUN_Hamburger_FM:0 "Jenő Hamburger"
+  HUN_Gyula_IM:0 "Gyula Peidl"
+  #RevaiAdministration
+  HUN_Arpad_EM:0 "Szakasits Árpád"
+  HUN_Kunfi_FM:0 "Kunfi Zsigmond"
+  HUN_Gyorgy_IM:0 "György Lukács"
+  #HOGs
+  HUN_Revai_HOG:0 "József Révai"
+  HUN_Garbai_HOG:0 "Sándor Garbai"
+  HUN_BelaKun_HOG:0 "Béla Kun"
+  
+  #REV ZEAL#
+  HUN_High_Revolutionary_Zeal:0 "§GHigh§!"
+  HUN_Medium_Revolutionary_Zeal:0 "§YMedium§!"
+  HUN_Low_Revolutionary_Zeal:0 "§RLow§!"
+  Revolutionary_Zeal_tt:0 "§ORevolutionary Zeal§! is currently at [?HUN_Revolutionary_Zeal|%0]"
+  Revolutionary_Zeal_tt_delayed:0 "The people of Hungary should not forget the 1912 revolution, honouring its heroes and the main founder of the Hungarian People's Republic, Vilmos Böhm. The foreign imperialists are trying in every way to suppress Hungary, but in spite of this we must continue the cause of the revolution.\n\nDepending on your level of Revolutionary Zeal various military modifers will apply. The Revolutionary Zeal modifier will also tick down by a variable of §R-1§! every month so be sure to keep it maintained!\n\nThese modifiers adjust §YMonthly§! and are as follows:\n\nLow Revolutionary Zeal:\n      Monthly Population: §R-5.00%§!\n      Surrender Limit: §R-5.00%§!\n      Recruitable Population Factor: §R-3.00%§!\n      Division Defense On Core Territory: §R-5.00%§!\n      Division Attack On Core Territory: §R-5.00%§!\n\nMedium Revolutionary Zeal:\n      Monthly Population: §G+5.00%§!\n      Surrender Limit: §G+5.00%§!\n      Recruitable Population Factor: §G+1.00%§!\n      Division Defense On Core Territory: §G+5.00%§!\n      Division Attack On Core Territory: §G+5.00%§!\n\nHigh Revolutionary Zeal       :\n      Monthly Population: §G+10.00%§!\n      Surrender Limit: §G+10.00%§!\n      Recruitable Population Factor: §G+3.00%§!\n      Division Defense On Core Territory: §G+15.00%§!\n      Division Attack On Core Territory: §G+15.00%§!"
+  HUN_Low_Revolutionary_Zeal_Idea:0 "Low Revolutionary Zeal" 
+  HUN_Med_Revolutionary_Zeal_Idea:0 "Medium Revolutionary Zeal"
+  HUN_High_Revolutionary_Zeal_Idea:0 "High Revolutionary Zeal"
+  Revolutionary_Zeal_0.02_decrease:0 "Revolutionary Zeal: §R-2%§!."
+  Revolutionary_Zeal_0.04_decrease:0 "Revolutionary Zeal: §R-4%§!."
+  Revolutionary_Zeal_0.06_decrease:0 "Revolutionary Zeal: §R-6%§!."
+  Revolutionary_Zeal_0.02_increase:0 "Revolutionary Zeal: §G+2%§!."
+  Revolutionary_Zeal_0.04_increase:0 "Revolutionary Zeal: §G+4%§!."
+  Revolutionary_Zeal_0.06_increase:0 "Revolutionary Zeal: §G+6%§!."
+  
+  #Party Unity#
+  HUN_High_Party_Unity:0 "§GUnity§!"
+  HUN_Medium_Party_Unity:0 "§HMedium§!"
+  HUN_Low_Party_Unity:0 "§RDivided§!"  
+  PartyUnity_tt:0 "§OParty Unity§! is currently at [?HUN_PartyUnity|%0]"
+  PartyUnity_tt_delayed:0 "The Forradalmi Tanács party finds itself in a very difficult situation - on the eve of the long-awaited change in the central government, the ruling party has divided into several different factions. \n\nModifiers adjust §YMonthly§! and are as follows:\n\nDivided Party:\n      Surrender Limit: §R-5.00%§!\n      Stability Factor: §R-15.00%§!\n      Political Power Gain: §R-15.00%§!\n\nMiddle Party Unity:\n      Stability Factor: §R-10.00%§!\n      Political Power Gain: §R-10.00%§!\n\nUnited Party:\n      Surrender Limit: §G+00.00%§!\n      Stability Factor: §G+10.00%§!\n      Political Power Gain =: §G+20.00%§!"
+  HUN_High_Party_Unity_Idea:0 "Party is United" 
+  HUN_Med_Party_Unity_Idea:0 "Medium Party Unity"
+  HUN_Low_Party_Unity_Idea:0 "The party is split"
+  HUN_PartyUnity_0.02_decrease:0 "Party Unity: §R-2%§!."
+  HUN_PartyUnity_0.04_decrease:0 "Party Unity: §R-4%§!."
+  HUN_PartyUnity_0.06_decrease:0 "Party Unity: §R-6%§!."
+  HUN_PartyUnity_0.02_increase:0 "Party Unity: §G+2%§!."
+  HUN_PartyUnity_0.04_increase:0 "Party Unity: §G+4%§!."
+  HUN_PartyUnity_0.06_increase:0 "Party Unity: §G+6%§!."
+  HUN_PartyUnity_0.1_increase:0 "Party Unity: §G+10%§!."  
+  
+  
+  #DECISIONS#
+  
+  #SHOCK Therapy
+  
+  HUN_open_decision:0 "Crisis recovery decisions open"
+  
+  HUN_shock_therapy:0 "Shock Therapy"
+  HUN_shock_therapy_desc:0 "\n\n\n\n\n\nShock therapy is a group of policies intended to be implemented simultaneously in order to transition a planned economy to a market economy. The plan for reform is: \n\n§BLiberalization of all prices§!\n§BPrivatization§!\n§BTrade liberalization§!\n§Bstabilization via tight monetary policies and fiscal policies§!.\n\nThis policy  has many negative consequences, such as lower living standards, a massive increase in unemployment, high inflation, and much more that our country must face."
+  
+  HUN_Universal_Minimum_Employment_Act:0 "The Universal Minimum Employment Act"
+  HUN_Universal_Minimum_Employment_Act_2:0 "The Universal Minimum Employment Act"
+  HUN_Universal_Minimum_Employment_Act_3:0 "The Universal Minimum Employment Act"
+  HUN_National_Industrial_Recovery:0 "Freedom of Commerce Ordinance"
+  HUN_capital_industry:0 "«On measures to liberalize prices»"
+  HUN_First_Shock:0 "Complete Stage 1 of Shock Therapy"
+  HUN_Rebuilding_Slovakia:0 "Foreign Trade Liberalization"
+  HUN_monetary_reform:0 "Monetary Reform"
+  HUN_Second_Shock:0 "Complete Stage 2 of Shock Therapy"
+  HUN_speed_up_privatization:0 "Speed up Privatization"
+  HUN_Allow_foreign_investments:0 "Allow Foreign Investments"
+  HUN_Third_Shock:0 "Complete Stage 3 of Shock Therapy"
+  
+  HUN_capital_industry_tt:0 "Has completed Decision §Y"«On measures to liberalize prices»"§!"
+  hun_employment_act_tt:0 "Has completed Decision §Y"The Universal Minimum Employment Act"§!"
+  hun_industrial_recovery_tt:0 "Has completed Decision §Y"Freedom of Commerce Ordinance"§!"
+  HUN_monetary_reform_tt:0 "Has completed Decision §Y"Monetary Reform"§!"
+  HUN_rebuild_slovakia_tt:0 "Has completed Decision §Y"Foreign Trade Liberalization§!"
+  hun_allow_investments_tt:0 "Has completed Decision §Y"Allow Foreign Investments§!"
+  hun_privatization_speed_tt:0 "Has completed Decision §Y"Speed up Privatization§!"
+
+  #Revive Organisms#
+  HUN_revive_body:0 "Experiments on Human Revitalization."
+  HUN_revive_body_desc:0 "\n\n\n\n\n\nAs industry developed rapidly, Hungary  faced a labor shortage. Practice showed that policies to stimulate population growth, while helpful, but don't solve the problem. As a result, a group of scientists, previously rejected by Hungary's scientific community, proposed a risky solution to the problem: the government was invited to invest in a program to create so-called artificial humans, created by using electricity from the remains of people who had already died, to be used later for work. This is much cheaper than creating robots or something like that. \n\n§HStage 1:§! §OElectricity in Physiology§! is currently at §L[?HUN_revival_stage_one|%0]§! \n\n§HStage 2:§! §OExperiments to Revive the Heart§! is currently at §L[?HUN_revival_stage_two|%0]§! \n\n§HStage 3:§! §OExperiments to Revitalize the Body§! is currently at §L[?HUN_revival_stage_three|%0]§! \n\n§HStage 4:§! §OHuman Revitalization§! is currently at §L[?HUN_revival_stage_four|%0]§! \n\n§C*As your research progresses, you will receive new technologies.§!"
+  HUN_begin_research_stage_one:0 "Begin the first stage of research"
+  HUN_japanese_scient:0 "Invite Japanese scientists"
+  HUN_large_investments_research:0 "Large investments in research"
+  HUN_use_foreign_literacy:0 "Use foreign academic literature"
+  HUN_Direct_more_scientists:0 "Direct more scientists"
+  HUN_active_animal_experiments:0 "Active animal research"
+  HUN_begin_the_stage_two:0 "Begin the second stage of research"
+  HUN_Experiments_on_psychotics:0 "Experiments on Psychotcs"
+  HUN_revive_dogs_head:0 "Revive the dog's head"
+  HUN_large_two_investments_research:0 "Large investments in research"
+  HUN_Call_for_rejected_foreign_scientists:0 "Call for more rejected scientists"
+  HUN_create_Cardiopulmonary_bypass:0 "Create the Cardiopulmonary bypass"
+  HUN_begin_the_stage_three:0 "Begin the third stage of research"
+  HUN_large_three_investments_research:0 "Large investments in research"
+  HUN_Further_Experiments_in_Reviving_the_Heart:0 "Further Experiments in reviving the Heart"
+  HUN_forced_research_on_prisoners:0 "Forced research on prisoners"
+  HUN_Extracorporeal_membrane_oxygenation:0 "Discover the Extracorporeal membrane oxygenation"
+  HUN_brain_repair_experiments:0 "Brain repair experiments"
+  HUN_begin_the_stage_four:0 "Begin the fourth stage of research"
+  HUN_large_four_investments_research:0 "Large investments in research"
+  HUN_final_experiments_in_Revival_of_Organisms:0 "Final experiments in Revival of Organisms"
+  HUN_Revival_of_central_nervous_system:0 "Revival of central nervous system"
+  HUN_artificial_lungs:0 "Discover the Artifical Lungs"
+  HUN_gastrointestinal_tract:0 "Pathological Processes of the Gastrointestinal tract"
+  HUN_final_research:0 "Revival of the Organisms"
+
+  #Domestic Policy#
+  
+  HUN_domestic_policy:0 "Jacobin way of the life"
+  HUN_domestic_policy_desc:0 "\n\n\n\n\n\nThe Hungarian People's Republic is entering a new phase of its development. The party splits into several on the eve of Vilmos Bom's departure from office, which threatens the country with at least internal collapse, while revolutionary fervor in the face of falling living standards fades in the eyes of the people"
+  HUN_increase_revolutionary_zeal:0 "Increase Revolutionary Zeal"
+  HUN_increase_party_unity:0 "Maintain Party Unity"
+  HUN_Friedrich_Engels_legacy:0 "Legacy of Friedrich Engels"
+  HUN_Propaganda_in_Schools:0 "Jacobin Propaganda in schools"
+  HUN_Fighting_the_Counterrevolution:0 "Fighting the CounterRevolution"
+  HUN_organize_party_meeting:0 "Organize Party meeting"
+  
+  #War is upon us#
+  
+  HUN_war_on_horizon:0 "The war is upon us"
+  HUN_war_on_horizon_desc:0 "\n\n\n\n\n\nAfter 20 years of armistice, war is coming to the Balkans again. Russian influence in the region is fading and the countries of its zone of influence are beginning to threaten each other. Romania claims the territory of North Dobruja, Bulgaria claims Thrace as well as Serbian and Greek Macedonia, Serbia threatens Croatia and Bulgaria in order to unite the South Slavic peoples. Hungary should be ready for the confrontation, which will certainly begin soon."
+  HUN_arpad_line_one:0 "Build the first part of Arpad Line"
+  HUN_arpad_line_two:0 "Build the second part of Arpad Line"
+  HUN_arpad_line_three:0 "Build the third part of Arpad Line"
+  HUN_invest_in_military_industry:0 "Invest in Military Industry"
+  HUN_invest_in_civil:0 "Invest in Civilian Industry"
+  HUN_increase_conscription:0 "Increase Conscription Policy"
+  HUN_mobilize_the_economy:0 "Mobilize the Economy"
+  
+  
+  #Culture War
+  
+  HUN_culture_war:0 "Culture War"
+  HUN_culture_war_desc:0 "\n\n\n\n\n\nThe Hungarian People's Republic is made up of many different peoples: Magyars, Slovaks, Rusyns, Wallachians, Croatians, and many others. In order to keep the country stable, it is important to keep all the nationalities at peace. In order to do this Hungary has two different ways. The first is Magyarization, the assimilation of non-Hungarian peoples and their assimilation of Hungarian culture. The second way is autonomization that is the establishment of autonomous regions with greater minority rights."
+  
+  #TRANSYLVANIA
+  
+  Give_Transylvania_an_autonomy:0 "Grant Autonomy for Translyvania"
+  
+  begin_automatization_transylvania:0 "Decisions on Granting §GAutonomy§! to §YTransylvania§! will be opened"
+  begin_magyarization_transylvania:0 "Decisions on §RMagyarization§! of §YTransylvania§! will be opened"
+  
+  transylvania_magyarization:0 "Begin §RMagyarization§! of §YTransylvania§!"
+  transylvania_autonomization:0 "Begin the §GAutonomization§! of §YTransylvania§!"
+  replacing_the_national_language_tra:0 "Replace the National Wallach Language"
+  replacing_the_national_language_tra_tt:0 "Has completed Decision §Y"Replace the National Wallach Language"§!"
+  deportations_of_the_wallahs:0 "Deportation of Wallachs"
+  deportations_of_the_wallahs_tt:0 "Has completed Decision §Y"Deportation of Wallachs"§!"
+  political_magyarization_tra:0 "Political Magyarization of Transylvania"
+  political_magyarization_tra_tt:0 "Has completed Decision §Y"Political Magyarization of Transylvania"§!"
+  magyarize_transylvania:0 "Magyarize Transylvania"
+  Hungarian_Transylvania:0 "§RHungarian Culture§! will be established in §YSiebenburgen§!"
+  wallachians_in_politics:0 "Put the Wallahs in Politics"
+  wallachians_in_politics_tt:0 "Has completed Decision §Y"Put the Wallahs in Politics"§!"
+  development_of_national_language:0 "Development of National Language"
+  development_of_national_language_tt:0 "Has completed Decision §Y"Development of National Language"§!"
+  send_the_hungarians_home:0 "Send the Hungarians Home"
+  send_the_hungarians_home_desc:0 "Transylvania is home to a large number of Hungarians. It would be better for the development of national culture if they were back in Hungary."
+  send_the_hungarians_home_tt:0 "Has completed Decision §Y"Send the Hungarians Home"§!"
+  hun_tran_accepted:0 "§YWallachian Culture§! will be accepted"
+  
+  #Slovakia
+  
+  magyarize_slovakia:0 "Magyarize Slovakia"
+  Give_slovakia_an_autonomy:0 "Grant Autonomy for Slovakia"  
+  slovakia_magyarization:0 "Begin §RMagyarization§! of §YSlovakia§!"
+  slovakia_autonomization:0 "Begin the §GAutonomization§! of §YSlovakia§!"
+  begin_magyarization_slovakia:0 "Decisions on §RMagyarization§! of §YSlovakia§! will be opened"
+  Deportation_of_Slovaks_near_Budapest:0 "Deport Slovaks to Near Budapest"
+  Deportation_of_Slovaks_near_Budapest_tt:0 "Has completed Decision §Y"Deport Slovaks to Near Budapest"§!"
+  crush_slovak_elite:0 "Crush Slovak Elite"
+  crush_slovak_elite_tt:0 "Has completed Decision §Y"Crush Slovak Elite"§!"
+  continue_affirm_hungarian_language:0 "Continue to Affirm Hungarian Language"
+  continue_affirm_hungarian_language_tt:0 "Has completed Decision §Y"Continue to Affirm Hungarian Language"§!" 
+  Hungarian_Slovakia:0 "§RHungarian Culture§! will be established in §YSlovakia§!"
+  hun_south_slovakia:0 "Stop §RMagyarization§ in §BSouth Slovakia§!"
+  hun_slo_accepted:0 "§YSlovakian Culture§! will be accepted"
+  stop_magyarization_in_southern_slovakia:0 "Stop §RMagyarization§ in §YSouth Slovakia§!"
+  stop_magyarization_in_southern_slovakia_tt:0 "Has completed Decision §Y"Stop §RMagyarization§ in §YSouth Slovakia§!"§!"
+  Stimulation_of_Slovak_culture:0 "Stimulation of Slovakian Culture"
+  Stimulation_of_Slovak_culture_tt:0 "Has completed Decision §Y"Stimulation of Slovakian Culture"§!" 
+  population_exchange_slov:0 "Population Exchange"
+  population_exchange_slov_tt:0 "Has completed Decision §Y"Population Exchange"§!" 
+  begin_autonomization_slovakia:0 "Decisions on Granting §GAutonomy§! to §YSlovakia§! will be opened"
+  
+  #Ruthenia
+  
+  magyarize_ruthenia:0 "Magyarize Ruthenia" 
+  Give_ruthenia_an_autonomy:0 "Grant Autonomy for Ruthenia"
+  begin_autonomization_ruthenia:0 "Decisions on Granting §GAutonomy§! to §YRuthenia§! will be opened"
+  ruthenia_magyarization:0 "Begin §RMagyarization§! of §YRuthenia§!"
+  ruthenia_autonomization:0 "Begin the §GAutonomization§! of §YRuthenia§!"
+  begin_magyarization_ruthenia:0 "Decisions on §RMagyarization§! of §YRuthenia§! will be opened"
+  Deportation_of_Ruthenians_in_poland:0 "Deportations of Ukranians in Poland"
+  Deportation_of_Ruthenians_in_poland_tt:0 "Has completed Decision §Y"Deportations of Ukranians in Poland"§!"
+  Close_down_national_schools:0 "Close down National Schools"
+  Close_down_national_schools_tt:0 "Has completed Decision §Y"Close down National Schools"§!"
+  ban_orthodoxy:0 "Ban Orthodoxy"
+  ban_orthodoxy_tt:0 "Has completed Decision §Y"Ban Orthodoxy"§!"
+  reukranization:0 "ReUkranization"
+  reukranization_tt:0 "Has completed Decision §Y"ReUkranization"§!"
+  mass_opening_of_ruthenian_language_schools:0 "Mass Opening of the Ruthenian-Language Schools"
+  mass_opening_of_ruthenian_language_schools_tt:0 "Has completed Decision §Y"Mass Opening of the Ruthenian-Language Schools"§!"
+  Career_Opportunities_for_Ruthenians:0 "Career Opportunities for Ruthenians"
+  Career_Opportunities_for_Ruthenians_tt:0 "Has completed Decision §Y"Career Opportunities for Ruthenians"§!"
+  Hungarian_Ruthenia:0 "§RHungarian Culture§! will be established in §YKarpatenruthenen§!"
+  magyarize_ruthenia:0 ""Magyarize Ruthenia"
+  
+  
+  
+  
+  transylvania_status:0 "§YStatus of Transylvania§!"
+  ruthenia_status:0 "§YStatus of Ruthenia§!"
+  slovakia_status:0 "§YStatus of Slovakia§!"    
+ 
+  Culture_war_transylvania_undefined:0 "§BUndefined§!"
+  Culture_war_slovakia_undefined:0 "§BUndefined§!"
+  Culture_war_ruthenia_undefined:0 "§BUndefined§!"
+  
+  
+  Culture_war_transylvania_magyarization:0 "§RMagyarization§!"
+  Culture_war_slovakia_magyarization:0 "§RMagyarization§!"
+  Culture_war_ruthenia_magyarization:0 "§RMagyarization§!"
+
+  Culture_war_transylvania_autonomization:0 "§GAutonomization§!"
+  Culture_war_slovakia_autonomization:0 "§GAutonomization§!"
+  Culture_war_ruthenia_autonomization:0 "§GAutonomization§!"  
+  
+  #####
+  
+  HUN_CountryDesc_Topbar:0 "§YThe Common Republic of Hungary§! is the only §RRevolutionary Republic§! in continental Europe.\n\n§YThe Kingdom of Hungary§! gained independence as a nation in 1866, when the Austrian Empire unified Germany and gave its Non-German territories independence. However the independence was only nominal. Karl Ludwig of Habsburg would become the King of Hungary and maintain loyalty to the Habsburg family and subsequently to Germany. Hungary would continue to be an ally of Germany or rather in the eyes of the Hungarian people be a exploited puppet.\n\nThe Downfall of the Kingdom began with the outbreak of the §YGreat War§! in 1905 where the nation would immediatly join the Imperial Powers in their war against the Bourbons. The Hungarian People were dragged into a war they had no motivation or interest fighting in greatly increasing their dissent with the Royal Leadership. With Hungarian Soldiers being used as cannon fodder on the alpine front and the citiziens themself experiencing food shortages, the old Jacobine ideas born in 1790 would again gain support among the common people. In the end over 300 thousand soldiers would give their lives for the war effort and in the Treaty of Tours the Kingdom would only be awarded some small reperations as compensation. §RThe Spark was lit!§!\n\nThe following collapsing economy in 1911 would lead to bread riots which would escalate as Hungarian troops would fire on the protestors. From there on the situation rapidly escalated with Troops defecting on mass. §RThe Revolution§! had began, the Hungarian civil war between the Jacobin Revolutionaries and the German Backed Whites started. At the same time Romania would invade and steal Translyvanian territory. However despite these setback the Revolution would suceed under the guidance of Vilmos Böhm and the §YCommon Republic of Hungary§! would be declared on 6th March 1912. \n\nAfter 8 years of recovering the Hungarian Republic would declare war upon Romania trying to reclaim their lost territories. The war would be the most brutal one both countries had ever experienced and after 3 years of gruesome fighting the Great Powers of Europe forced a peace. Hungary reclaimed the majority of its former Translyvanian States and would be seen as the victor. However its following and current problems would be internally. Ethnic tension in Slovakia and the Slavic border regions begin to cause issues, the ruling party §RForradalmi Tanács§! is splitting into two conflicting branches, the §YReformists§! and §YVanguardists§! and lastly the hero of the revolution Vilmos Böhm is losing his shine and motivation to rule this nation. On top of all of this, the is a feeling in the air that the Balkan is soon reaching its §R"Boiling Point"§!."   
+  
+  PB_Sphere_MM_Hungarian:0 "[From.Controller.GetNameWithFlag] is within the §RHungarian§! sphere of influence"
+  
+  
+  
+  
+
+  
+
+  
+
+  

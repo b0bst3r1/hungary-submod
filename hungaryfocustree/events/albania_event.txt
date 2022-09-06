@@ -1,0 +1,112 @@
+##################
+####albanian#####
+#####events#######
+##################
+
+add_namespace = albanian
+add_namespace = alban
+
+	news_event = {		
+	id = alban.1
+	title = alban.1.t
+	desc = alban.1.d
+	picture = GFX_news_event_alb_900
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = alban.1.a
+	  }
+    }
+	
+	news_event = { #CounterRevolution 
+	id = alban.2 
+	title = alban.2.t
+	desc = alban.2.d
+	picture = GFX_news_event_alb_901
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = alban.2.a
+	  }
+    }
+
+	news_event = { #Revolution
+	id = alban.3
+	title = alban.3.t
+	desc = alban.3.d
+	picture = GFX_news_event_alb_902
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = alban.3.a
+	  }
+    }	
+	 
+    country_event = {
+	id = albanian.1
+	title = albanian.1.t
+	desc = albanian.1.d
+	picture = GFX_
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	fire_only_once = yes
+	
+	 immediate = { news_event = {
+           id = alban.1
+            }
+          }
+	
+	option = {
+		name = albanian.1.a
+		
+		ALB = {
+		transfer_state = 163
+		} 
+		
+		ai_chance = {
+			factor = 100
+		}
+	  }
+	}
+	
+	country_event = {
+	id = albanian.2
+	title = albanian.2.t
+	desc = albanian.2.d
+	picture = GFX_
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = albanian.2.a
+		
+		BUL = {
+	    create_faction = Sofia_Entente
+		add_to_faction = ALB
+		}
+		
+		
+		ai_chance = {
+			factor = 100
+		}
+	   }
+	  }
+	 }
+       
+	   
+ 
+	

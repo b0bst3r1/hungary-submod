@@ -1,0 +1,122 @@
+ideas = {
+
+	foreign_minister = { 
+		
+		law = yes
+
+		# Hungary #
+		
+		HUN_BelaKun_FM = { 
+						
+			
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = HUN
+			}
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+			
+            picture = GFX_idea_HUN_BelaKun_FM		
+
+			traits = {
+				PB_jc_trait
+				PB_Man_of_the_People
+			}
+			
+			cancel_if_invalid = no
+		}
+
+        #BelaKunAdministration
+		HUN_Munnich_FM = { 
+						
+			
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = HUN
+			}
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+			
+            picture = GFX_idea_HUN_Munnich_FM	
+
+			traits = {
+				PB_jc_trait
+				PB_Talented_Diplomat
+			}
+			
+			cancel_if_invalid = no
+		}
+        
+		#GarbaiAdministration
+		HUN_Hamburger_FM = { 
+						
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = HUN
+			}
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+			
+            picture = GFX_idea_HUN_Hamburger_FM
+
+			traits = {
+				PB_ss_trait
+				PB_Benevolent
+			}
+			
+			cancel_if_invalid = no
+		}
+
+        #RevaiAdministration
+		HUN_Kunfi_FM = { 
+						
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = HUN
+			}
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+			
+            picture = GFX_idea_HUN_Kunfi_FM
+
+			traits = {
+				PB_jc_trait
+				PB_Demagogue
+			}
+			
+			cancel_if_invalid = no
+		}		
+	}
+}
