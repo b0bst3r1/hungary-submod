@@ -100,7 +100,7 @@ focus_tree = {
 	focus = {
 		id = the_red_tide
 		icon = GFX_hun_red_tide
-		cost = 0
+		cost = 35
 		
 		available = {
 			custom_trigger_tooltip = {
@@ -108,6 +108,25 @@ focus_tree = {
 				has_country_flag = hun_starting_crisis
 			}
 		}
+
+	    completion_reward = {
+		
+		add_political_power = 100		
+		
+        custom_effect_tooltip = Revolutionary_Zeal_0.04_increase 		
+		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = 0.04
+			}
+
+		custom_effect_tooltip = HUN_PartyUnity_0.04_increase
+		
+			add_to_variable = {
+				var = HUN_PartyUnity
+				value = 0.04
+			}
+      }			
 		
 		x = 31
 		y = 1
@@ -117,7 +136,11 @@ focus_tree = {
 	focus = {
 		id = hun_befriend_japan
 		icon = GFX_befriend_japan
-		cost = 0
+		cost = 49
+		
+		available = {
+				has_government = jc
+			}
 		
 		prerequisite = {
 			focus = hun_lonely_way
@@ -141,11 +164,18 @@ focus_tree = {
 	focus = {
 		id = hun_international_support
 		icon = GFX_HUN_international_support
-		cost = 0		
+		cost = 49		
 		
 		prerequisite = {
 			focus = hun_socialist_front
 		}
+
+	    completion_reward = {
+		
+         set_rule = {
+         can_send_volunteers = yes
+        }
+      }		
 		
 		x = 31
 		y = 3
@@ -155,11 +185,15 @@ focus_tree = {
 	focus = {
 		id = hun_budapest_research_centr
 		icon = GFX_HUN_research_center_shine
-		cost = 0	
+		cost = 49	
 		
 		prerequisite = {
 			focus = hun_talk_with_capitalist
 		}
+		
+	completion_reward = {
+		add_to_tech_sharing_group = Budapest_research 
+	}		
 		
 		x = 33
 		y = 3
@@ -169,7 +203,7 @@ focus_tree = {
 	focus = {
 		id = hun_zagreb_treaty
 		icon = GFX_hun_zagreb_front
-		cost = 0
+		cost = 56
 
 		mutually_exclusive = {
 			focus = hun_budapest_entente
@@ -208,7 +242,7 @@ focus_tree = {
 	focus = {
 		id = hun_budapest_entente
 		icon = GFX_hun_balkan_liberation
-		cost = 0
+		cost = 56
 
 		mutually_exclusive = {
 			focus = hun_zagreb_treaty
@@ -241,7 +275,7 @@ focus_tree = {
 	focus = {
 		id = reborn_of_croatian_hungarian_settlement
 		icon = GFX_HUN_reborn_treaty
-		cost = 0
+		cost = 56
 		
 		mutually_exclusive = {
 			focus = hun_eternal_friendship
@@ -252,16 +286,15 @@ focus_tree = {
 			focus = hun_budapest_entente
 		}
 		
-	    completion_reward = {
+	    completion_reward = {		
 		
 		HUN = {
+		
 			annex_country = {
 				target = CRO
 				transfer_troops = yes
 			}
-		add_state_core = 109
-		add_state_core = 794
-
+			
 		custom_effect_tooltip = hun_cro_accepted		
 		     
 			 hidden_effect = {
@@ -273,6 +306,9 @@ focus_tree = {
 					}   
 				}		
             }
+			
+		add_state_core = 109
+		add_state_core = 794			
         }			  
 		
 		x = 30
@@ -283,7 +319,7 @@ focus_tree = {
 	focus = {
 		id = hun_eternal_friendship
 		icon = GFX_eternal_friendship_cro
-		cost = 0
+		cost = 56
 		
 		mutually_exclusive = {
 			focus = reborn_of_croatian_hungarian_settlement
@@ -330,12 +366,26 @@ create_country_leader = {
 	
 	focus = {
 		id = hun_socialist_front
-		icon = GFX_eternal_friendship_cro
-		cost = 0		
+		icon = GFX_hun_socialism_front
+		cost = 42
+
+		available = {
+				has_government = ss
+			}		
 		
 		prerequisite = {
 			focus = the_red_tide
 		}
+		
+		completion_reward = {
+		
+		add_political_power = 50	
+		
+			add_popularity = {
+				ideology = ss
+				popularity = 0.05
+			}
+       }			
 		
 		x = 31
 		y = 2
@@ -345,7 +395,11 @@ create_country_leader = {
 	focus = {
 		id = hun_talk_with_capitalist
 		icon = GFX_HUN_democratic
-		cost = 0		
+		cost = 42
+
+		available = {
+				has_government = lb
+			}		
 		
 		prerequisite = {
 			focus = the_red_tide
@@ -404,7 +458,7 @@ create_country_leader = {
 	focus = {
 		id = hun_lonely_way
 		icon = GFX_Communist_Pride
-		cost = 0	
+		cost = 42	
 		
 		prerequisite = {
 			focus = the_red_tide
@@ -414,20 +468,22 @@ create_country_leader = {
 
 			if = {
 				limit = {
-					HUN = {
-					  has_idea = PB_HUN_Revolution_Home
-					}
+					NOT = {
+					has_completed_focus = HUN_THEFATHER
 				}
+				}
+				
+		         swap_ideas = {
 		         remove_ideas = PB_HUN_Revolution_Home
 		         add_ideas = PB_HUN_Revolution_Home1
+		          }				
 			}
 
 			if = {
 				limit = {
-					HUN = {
-					  has_idea = PB_HUN_Revolution_Home1
-					}
+					has_completed_focus = HUN_THEFATHER
 				}
+				
 		         swap_ideas = {
 		         remove_ideas = PB_HUN_Revolution_Home1
 		         add_ideas = PB_HUN_Revolution_Home2
@@ -443,7 +499,7 @@ create_country_leader = {
 	focus = {
 		id = hun_help_albania
 		icon = GFX_HUN_help_albania
-		cost = 0
+		cost = 56
 		
 		mutually_exclusive = {
 			focus = hun_albanian_revolution
@@ -458,11 +514,13 @@ create_country_leader = {
 		
   custom_effect_tooltip = HUN_albania_neutrality
   
+  ALB = {
 		swap_ideas = {
 		remove_idea = ALB_economic_collapse
 		add_idea = ALB_economic_collapse_1
 		}
-     }		
+     }
+ }	 
 		
 		x = 32
 		y = 6
@@ -472,7 +530,7 @@ create_country_leader = {
 	focus = {
 		id = hun_albanian_revolution
 		icon = GFX_albanian_revolution
-		cost = 0
+		cost = 56
 		
 		mutually_exclusive = {
 			focus = hun_help_albania
@@ -594,12 +652,41 @@ create_country_leader = {
 	focus = {
 		id = hun_aliance_bulgaria
 		icon = GFX_aliance_with_bulgaria
-		cost = 0		
+		cost = 56		
 		
 		prerequisite = {
 			focus = hun_albanian_revolution
 			focus = hun_help_albania
-		}		
+		}
+	
+	    completion_reward = {
+		
+					HUN = {				
+                    add_to_faction = BUL				
+			        }		
+		
+			if = {
+				limit = {
+					HUN = {
+					has_completed_focus = hun_zagreb_treaty	
+					}
+				}
+					BUL = {			
+            add_ideas = HUN_zagreb_treaty
+			}
+		}
+
+			if = {
+				limit = {
+					HUN = {
+					has_completed_focus = hun_budapest_entente	
+					}
+				}
+					BUL = {			
+            add_ideas = HUN_Budapest_Entente
+			}
+		  }
+        }		  
 		
 		x = 31
 		y = 7
@@ -3155,27 +3242,29 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	    completion_reward = {
 		
 			if = {
-				limit = {	
-					HUN = {
-					  has_idea = PB_HUN_Revolution_Home
-					}
+				limit = {
+					NOT = {
+					has_completed_focus = hun_lonely_way
 				}
+				}
+				
+		         swap_ideas = {
 		         remove_ideas = PB_HUN_Revolution_Home
 		         add_ideas = PB_HUN_Revolution_Home1
+		          }				
 			}
 
 			if = {
 				limit = {
-					HUN = {
-					  has_idea = PB_HUN_Revolution_Home1
-					}
+					has_completed_focus = hun_lonely_way
 				}
+				
 		         swap_ideas = {
 		         remove_ideas = PB_HUN_Revolution_Home1
 		         add_ideas = PB_HUN_Revolution_Home2
 		          }
-              }				  
-		
+			}
+				  
 		country_event = {
 		id = hungarian.25
 		days = 1

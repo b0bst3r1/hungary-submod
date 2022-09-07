@@ -17,6 +17,15 @@ on_actions = {
 					days = 1
 				}
 			}
+		}
+
+		effect = {
+			HUN = {
+				country_event = { 	#HungaryMartians
+					id = hungarian.31
+					days = 80
+				}
+			}
 		}		
 	}
  }

@@ -328,7 +328,8 @@ PB_Setup_Cultures = {
 
 	44 = { set_variable = { culture_id = 45 } }	
 	163 = { set_variable = { culture_id = 45 } }
-	961 = { set_variable = { culture_id = 45 } }	
+	961 = { set_variable = { culture_id = 45 } }
+	972 = { set_variable = { culture_id = 45 } }	
 
 	### ---- Slovenian Culture ---- ###
 

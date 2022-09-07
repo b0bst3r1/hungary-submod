@@ -351,7 +351,7 @@ set_convoys = 366
 
 set_autonomy = {
 	target = BUL
-	autonomous_state = autonomy_Formal_Imperial_Autonomy
+	autonomous_state = autonomy_PB_Imperial_Autonomy
 	freedom_level = 0.6
 }
 

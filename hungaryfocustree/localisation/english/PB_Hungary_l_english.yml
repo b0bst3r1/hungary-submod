@@ -119,7 +119,11 @@
   HUN_PartyUnity_0.02_increase:0 "Party Unity: §G+2%§!."
   HUN_PartyUnity_0.04_increase:0 "Party Unity: §G+4%§!."
   HUN_PartyUnity_0.06_increase:0 "Party Unity: §G+6%§!."
-  HUN_PartyUnity_0.1_increase:0 "Party Unity: §G+10%§!."  
+  HUN_PartyUnity_0.1_increase:0 "Party Unity: §G+10%§!."
+
+  Budapest_research_name:0 "Budapest Research Collaboration"
+  Budapest_research_desc:0 "The Budapest Research Cooperation was founded in Budapest with the goal of exchanging technological discoveries between Hungarian scientists and furthering their joint advancement for the benefit of mankind."  
+  BOSPHORUS2_STRAIT:0 "Bosphorus Strait"
   
   
   #DECISIONS#

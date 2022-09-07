@@ -6,6 +6,11 @@ spriteTypes = {
     }
 	
 	SpriteType = {
+	    name = "GFX_hun_socialism_front"
+        texturefile = "gfx/interface/goals/HUN_socialist_front.dds"
+    }	
+	
+	SpriteType = {
 	    name = "GFX_aliance_with_bulgaria"
         texturefile = "gfx/interface/goals/HUN_aliance_bulgaria.dds"
     }	

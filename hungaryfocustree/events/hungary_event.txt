@@ -1552,7 +1552,16 @@ create_country_leader = {
 	title = hungarian.31.t
 	desc = hungarian.31.d
 	picture = GFX_report_event_hun_925
-	is_triggered_only = yes
+
+	trigger = {
+		tag = HUN
+		date > 1933.3.1
+	}
+
+	mean_time_to_happen = {
+		days = 300
+	}
+	
 	fire_only_once = yes
 	
 	option = {
@@ -1602,8 +1611,7 @@ create_country_leader = {
 					remove_ideas = HUN_party_opposition
 				}
 			}
-         }
-      }		 
+         }		 
 
      	   country_event = { #GarbaiTrial
 	id = hungarian.33
@@ -1650,7 +1658,6 @@ create_country_leader = {
 					remove_ideas = HUN_party_opposition
 				}
 			}		   
-         }
 		 
 	option = {
 		name = hungarian.33.b #ExecuteAllButGenerals
