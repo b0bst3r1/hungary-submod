@@ -937,5 +937,10 @@ CRO_COM = {
 	color_ui = rgb { 110 24 13 }
 }
 
+CRO_SLA = {
+	color = rgb { 130 24 13 }
+	color_ui = rgb { 130 24 13 }
+}
+
 
 

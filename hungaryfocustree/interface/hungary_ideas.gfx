@@ -233,5 +233,15 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_HUN_Ethnic_Tensions"
 		texturefile = "gfx/interface/ideas/Hungary/HUN_Ethnic_Tensions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HUN_zagreb_treaty"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_zagreb_treaty.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_HUN_budapest_entente"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_budapest_entente.dds"
 	}	
 }

@@ -777,9 +777,86 @@ hidden_ideas = {
 				political_power_factor = 0.10
 				jc_drift = 0.05
                 war_support_factor = 0.10
-                army_core_defence_factor = 0.125
+                army_core_defence_factor = 0.13
 
 			}
-		}	   
+		}
+		
+		PB_HUN_Revolution_Home_2 = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = PB_HUN_Revolution_Home
+			
+			removal_cost = -1
+	
+			modifier = {
+                stability_factor = 0.15
+				political_power_factor = 0.10
+				jc_drift = 0.1
+                war_support_factor = 0.15
+                army_core_defence_factor = 0.15
+
+			}
+		}		
+
+		HUN_zagreb_treaty = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_zagreb_treaty
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_morale_factor = 0.05
+				training_time_army_factor = -0.1
+                army_org = 5				
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+			   }
+			}				
+		  }
+	   }
+
+		HUN_Budapest_Entente = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_budapest_entente
+			
+			removal_cost = -1
+	
+			modifier = {
+          		army_leader_start_level = 1
+				military_leader_cost_factor = -0.33
+				army_morale_factor = 0.1
+				training_time_army_factor = -0.1
+				political_power_gain = 0.15
+		    }
+		}					   
 	}	
  } 

@@ -30,7 +30,9 @@
   
   #Tooltips#
   
-  HUN_albanian_revolution:0 "Chance for a §RSocialist Revolution§! in §RAlbania§! is 40%§!\nIn the case of failure, §RAlbania§! will have a §GNeo-Imperialist Government§!"
+  HUN_albania_neutrality:0 "§RAlbania§! will keep §Gneutrality§! in the §RGreat Balkan War§!"
+  hun_cro_accepted:0 "§RCroatian Culture§! will be §Gaccepted§!"
+  HUN_albanian_revolution:0 "Chance for a §RSocialist Revolution§! in §RAlbania§! is 40%§!\nIn the case of failure, a §GNeo-Imperialist Government§! will install in §RAlbania§!"
   5year_plans_stopped:0 "§YThe five-year plans are stopped§!"
   hun_starting_crisis_tt:0 "§YThe starting crisis is over§!"
   HUN_Resistance_twentyfive:0 "\n\n§GResistance readiness is 25%§!"

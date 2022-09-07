@@ -312,8 +312,10 @@ PB_Setup_Cultures = {
 
 	### ---- Hellenic Culture ---- ###
 	
+	970 = { set_variable = { culture_id = 44 } }
+	971 = { set_variable = { culture_id = 44 } }	
 	186 = { set_variable = { culture_id = 44 } }
-	47 = 	{ set_variable = { culture_id = 44 } }
+	47 = { set_variable = { culture_id = 44 } }
 	185 = { set_variable = { culture_id = 44 } }
 	731 = { set_variable = { culture_id = 44 } }
 	182 = { set_variable = { culture_id = 44 } }

@@ -123,6 +123,16 @@ focus_tree = {
 			focus = hun_lonely_way
 		}
 		
+	    completion_reward = {
+	
+			JAP = {
+				add_opinion_modifier = {
+					target = HUN
+					modifier = large_increase
+				}
+			}
+        }			
+		
 		x = 29
 		y = 3
 	
@@ -170,10 +180,30 @@ focus_tree = {
 			focus = hun_international_support
 		}
 		
+	    completion_reward = {
+		
+		HUN = {
+		
+	    create_faction = zagreb_treaty
+		
+		add_ideas = HUN_zagreb_treaty
+		}
+		
+		CRO = {
+		add_ideas = HUN_zagreb_treaty
+		}
+
+		JAP = {
+		add_ideas = HUN_zagreb_treaty
+		}
+      }		
+        		
+		
 		x = 30
 		y = 4
 	
 	}
+
 	
 	focus = {
 		id = hun_budapest_entente
@@ -188,6 +218,20 @@ focus_tree = {
 			focus = hun_budapest_research_centr
 			focus = hun_international_support
 		}
+		
+	    completion_reward = {
+		
+		HUN = {
+		
+	    create_faction = budapest_entente
+		
+		add_ideas = HUN_Budapest_Entente
+		}
+		
+		CRO = {
+		add_ideas = HUN_Budapest_Entente
+		}
+      }		
 		
 		x = 32
 		y = 4
@@ -208,6 +252,29 @@ focus_tree = {
 			focus = hun_budapest_entente
 		}
 		
+	    completion_reward = {
+		
+		HUN = {
+			annex_country = {
+				target = CRO
+				transfer_troops = yes
+			}
+		add_state_core = 109
+		add_state_core = 794
+
+		custom_effect_tooltip = hun_cro_accepted		
+		     
+			 hidden_effect = {
+				109 = {
+					set_temp_variable = { temp_culture = culture_id }
+					ROOT = { 
+						  PB_Cultures_add_accepted_culture = yes 
+					       }
+					}   
+				}		
+            }
+        }			  
+		
 		x = 30
 		y = 5
 
@@ -226,6 +293,35 @@ focus_tree = {
 			focus = hun_zagreb_treaty
 			focus = hun_budapest_entente
 		}
+		
+	    completion_reward = {
+		
+		CRO = {
+
+set_cosmetic_tag = CRO_SLA		
+		
+create_country_leader = {
+	name = "Ribar-Tito Duumvirate"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/CRO/cro_duovirate.dds"
+	ideology = JC_VARIANT_01
+    }
+
+create_country_leader = {
+	name = "Ribar-Tito Duumvirate"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/CRO/cro_duovirate.dds"
+	ideology = SS_VARIANT_01
+    }
+
+create_country_leader = {
+	name = "Ribar-Tito Duumvirate"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/CRO/cro_duovirate.dds"
+	ideology = LB_VARIANT_01
+    }
+  }
+}  
 		
 		x = 32
 		y = 5
@@ -255,10 +351,55 @@ focus_tree = {
 			focus = the_red_tide
 		}
 		
+	    completion_reward = {
+	
+		PB_Poverty_Moderate_Progress_Increase = yes
+	
+			GER = {
+				add_opinion_modifier = {
+					target = HUN
+					modifier = medium_increase
+				}
+			}
+
+			RUS = {
+				add_opinion_modifier = {
+					target = HUN
+					modifier = medium_increase
+				}
+			}
+
+			POL = {
+				add_opinion_modifier = {
+					target = HUN
+					modifier = medium_increase
+				}
+
+			AME = {
+				add_opinion_modifier = {
+					target = HUN
+					modifier = medium_increase
+				}
+			}
+
+			ENG = {
+				add_opinion_modifier = {
+					target = HUN
+					modifier = medium_increase
+				}
+			}
+
+			FRA = {
+				add_opinion_modifier = {
+					target = HUN
+					modifier = medium_increase
+				}				
+		  }
+	}
+}
 		x = 33
 		y = 2
-
-	}	
+}		
 
 	focus = {
 		id = hun_lonely_way
@@ -268,6 +409,31 @@ focus_tree = {
 		prerequisite = {
 			focus = the_red_tide
 		}
+
+	    completion_reward = {
+
+			if = {
+				limit = {
+					HUN = {
+					  has_idea = PB_HUN_Revolution_Home
+					}
+				}
+		         remove_ideas = PB_HUN_Revolution_Home
+		         add_ideas = PB_HUN_Revolution_Home1
+			}
+
+			if = {
+				limit = {
+					HUN = {
+					  has_idea = PB_HUN_Revolution_Home1
+					}
+				}
+		         swap_ideas = {
+		         remove_ideas = PB_HUN_Revolution_Home1
+		         add_ideas = PB_HUN_Revolution_Home2
+		          }
+			   }
+			}
 		
 		x = 29
 		y = 2
@@ -286,7 +452,17 @@ focus_tree = {
 		prerequisite = {
 			focus = reborn_of_croatian_hungarian_settlement
 			focus = hun_eternal_friendship
-		}		
+		}
+
+	    completion_reward = {
+		
+  custom_effect_tooltip = HUN_albania_neutrality
+  
+		swap_ideas = {
+		remove_idea = ALB_economic_collapse
+		add_idea = ALB_economic_collapse_1
+		}
+     }		
 		
 		x = 32
 		y = 6
@@ -308,14 +484,18 @@ focus_tree = {
 		}
 		
 	    completion_reward = {
-		
+			
   custom_effect_tooltip = HUN_albanian_revolution	
 
         hidden_effect = {		
 			
 			random_list = {
 				40 = {
-			
+				
+					HUN = {				
+                    add_to_faction = ALB				
+			        }
+					
 			     news_event = {
 			     id = alban.3
 			     days = 1
@@ -2432,8 +2612,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 
 	}
 	focus = {
-		id = hun_strengthen_the_monarchy
-		icon = GFX_hun_strengthen_the_monarchy
+		id = hun_strHUNthen_the_monarchy
+		icon = GFX_hun_strHUNthen_the_monarchy
 		cost = 0
 		prerequisite = {
 			focus = hun_anastasia_romanova
@@ -2447,7 +2627,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		icon = GFX_hun_call_on_russian_troops
 		cost = 0
 		prerequisite = {
-			focus = hun_strengthen_the_monarchy
+			focus = hun_strHUNthen_the_monarchy
 		}
 		x = 69
 		y = 9
@@ -2974,6 +3154,28 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		
 	    completion_reward = {
 		
+			if = {
+				limit = {	
+					HUN = {
+					  has_idea = PB_HUN_Revolution_Home
+					}
+				}
+		         remove_ideas = PB_HUN_Revolution_Home
+		         add_ideas = PB_HUN_Revolution_Home1
+			}
+
+			if = {
+				limit = {
+					HUN = {
+					  has_idea = PB_HUN_Revolution_Home1
+					}
+				}
+		         swap_ideas = {
+		         remove_ideas = PB_HUN_Revolution_Home1
+		         add_ideas = PB_HUN_Revolution_Home2
+		          }
+              }				  
+		
 		country_event = {
 		id = hungarian.25
 		days = 1
@@ -2992,13 +3194,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			add_to_variable = {
 				var = HUN_Revolutionary_Zeal
 				value = 0.04
-			}
-
-		swap_ideas = {
-		remove_idea = PB_HUN_Revolution_Home
-		add_idea = PB_HUN_Revolution_Home_1
-		}			
-		
+			}							
      }
 	 
 		x = 5
@@ -3540,8 +3736,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 
 	}
 	focus = {
-		id = hun_revenge_is_sweet
-		icon = GFX_hun_revenge_is_sweet
+		id = hun_revHUNe_is_sweet
+		icon = GFX_hun_revHUNe_is_sweet
 		cost = 0
 		prerequisite = {
 			focus = hun_demand_transylvania
@@ -4768,7 +4964,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			focus = hun_infantry_cult
 		}
 		prerequisite = {
-			focus = hun_small_army_engineering
+			focus = hun_small_army_HUNineering
 		}
 		x = 27
 		y = 20
@@ -4971,8 +5167,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 
 	}
 	focus = {
-		id = hun_small_army_engineering
-		icon = GFX_hun_small_army_engineering
+		id = hun_small_army_HUNineering
+		icon = GFX_hun_small_army_HUNineering
 		cost = 0
 		prerequisite = {
 			focus = hun_prepare_for_long_war

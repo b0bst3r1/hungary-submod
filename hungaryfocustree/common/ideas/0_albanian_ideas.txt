@@ -1,5 +1,5 @@
 ##################
-##BulgariaNmodIDEAS#
+##AlbanianmodIDEAS#
 ##################
 
 ideas = {
@@ -85,6 +85,27 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.15				
 			
 			}
-		  }			  
+		  }
+
+		ALB_economic_collapse_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+                        picture = ALB_economic_collapse
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+                consumer_goods_factor = 0.15
+				production_factory_max_efficiency_factor = -0.1				
+			
+			}
+		  }		  
         }	
       }
