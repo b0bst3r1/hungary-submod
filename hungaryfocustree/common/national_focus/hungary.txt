@@ -2612,8 +2612,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 
 	}
 	focus = {
-		id = hun_strHUNthen_the_monarchy
-		icon = GFX_hun_strHUNthen_the_monarchy
+		id = hun_strengthen_the_monarchy
+		icon = GFX_hun_strengthen_the_monarchy
 		cost = 0
 		prerequisite = {
 			focus = hun_anastasia_romanova
@@ -2627,7 +2627,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		icon = GFX_hun_call_on_russian_troops
 		cost = 0
 		prerequisite = {
-			focus = hun_strHUNthen_the_monarchy
+			focus = hun_strengthen_the_monarchy
 		}
 		x = 69
 		y = 9
@@ -3736,8 +3736,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 
 	}
 	focus = {
-		id = hun_revHUNe_is_sweet
-		icon = GFX_hun_revHUNe_is_sweet
+		id = hun_revenge_is_sweet
+		icon = GFX_hun_revenge_is_sweet
 		cost = 0
 		prerequisite = {
 			focus = hun_demand_transylvania
@@ -4964,7 +4964,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			focus = hun_infantry_cult
 		}
 		prerequisite = {
-			focus = hun_small_army_HUNineering
+			focus = hun_small_army_engineering
 		}
 		x = 27
 		y = 20
@@ -5167,8 +5167,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 
 	}
 	focus = {
-		id = hun_small_army_HUNineering
-		icon = GFX_hun_small_army_HUNineering
+		id = hun_small_army_engineering
+		icon = GFX_hun_small_army_engineering
 		cost = 0
 		prerequisite = {
 			focus = hun_prepare_for_long_war

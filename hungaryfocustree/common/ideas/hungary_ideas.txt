@@ -757,7 +757,7 @@ hidden_ideas = {
 		   }  
 	   }
 
-		PB_HUN_Revolution_Home_1 = {
+		PB_HUN_Revolution_Home1 = {
 			
 			
 			allowed = {
@@ -782,7 +782,7 @@ hidden_ideas = {
 			}
 		}
 		
-		PB_HUN_Revolution_Home_2 = {
+		PB_HUN_Revolution_Home2 = {
 			
 			
 			allowed = {
