@@ -557,15 +557,23 @@ country_event = {
 	option = {
 		name = hungarian.9.a
 		
-	hidden_effect = {
+		ai_chance = {
+			factor = 60
+		}		
+		
+	hidden_effect = { #CoupFailes
 	HUN = {
 	country_event = { id = hungarian.10 days = 3 }
 	 }
 	  }
     }
 	
-		option = {
+		option = { #CoupFailes
 		name = hungarian.9.b
+		
+		ai_chance = {
+			factor = 10
+		}		
 		
 	hidden_effect = {
 	
@@ -577,6 +585,10 @@ country_event = {
 	
 		option = {
 		name = hungarian.9.c
+		
+		ai_chance = {
+			factor = 30
+		}		
 		
 	hidden_effect = {
 	
@@ -596,7 +608,11 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-		name = hungarian.10.a
+		name = hungarian.10.a #BelaKun
+		
+		ai_chance = {
+			factor = 60
+		}		
 		
 	hidden_effect = {
 	
@@ -607,7 +623,11 @@ country_event = {
     }
 	
 		option = {
-		name = hungarian.10.b
+		name = hungarian.10.b #Garbai
+		
+		ai_chance = {
+			factor = 40
+		}		
 		
 	hidden_effect = {
 	

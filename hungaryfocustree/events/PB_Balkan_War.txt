@@ -4,475 +4,288 @@
 
 add_namespace = balkwar
 
-country_event = {		#Violence on the Border
+country_event = {		#PrepareForWar - Romania
 	id = balkwar.1
 	title = balkwar.1.t
 	desc = balkwar.1.d
 	picture = GFX_report_PB_Generic_War_Event
 
-	is_triggered_only = yes
+	trigger = {
+		tag = ROM
+		date > 1934.4.1
+	}
+
+	mean_time_to_happen = {
+		days = 90
+	}
 
 	fire_only_once = yes
 
-	option = { #Demand the Romanians withdraw
+	option = { #Ok
 		name = balkwar.1.a
 
 		ai_chance = {
-			factor = 50
-		}
-
-		add_political_power = -50
+			factor = 100
+        }
 
 		add_war_support = 0.1
 
-		83 = {
-			set_demilitarized_zone = yes
-		}
-
-		76 = {
-			set_demilitarized_zone = yes
-		}
+       hidden_effect = {
 
 		ROM = {
+			country_event = { id = balkwar.7 days = 14 }
+		}	   
+	   
+		BUL = {
 			country_event = { id = balkwar.2 days = 1 }
 		}
+		
+		HUN = {
+			country_event = { id = balkwar.2 days = 1 }
+		}
+
+		SER = {
+			country_event = { id = balkwar.2 days = 1 }
+		}
+
+		GRE = {
+			country_event = { id = balkwar.2 days = 1 }
+		}
+
+		TUR = {
+			country_event = { id = balkwar.2 days = 1 }
+		}		
 	}
-
-	option = { #Move troops in to pacify the attacks
-		name = balkwar.1.b
-
-		ai_chance = {
-			factor = 50
-		}
-
-		add_war_support = 0.3
-
-		add_political_power = -150
-
-		83 = {
-			set_demilitarized_zone = yes
-		}
-
-		76 = {
-			set_demilitarized_zone = yes
-		}
-
-		ROM = {
-			country_event = { id = balkwar.3 days = 1 }
-		}
-	}
+  }
 }
 
-country_event = {		#Violence on the Border - Hungarian Ultimatum
+
+country_event = {		#PrepareForWar - Everyone
 	id = balkwar.2
 	title = balkwar.2.t
 	desc = balkwar.2.d
 	picture = GFX_report_PB_Generic_War_Event
-
 	is_triggered_only = yes
 
-	fire_only_once = yes
-
-	option = { #Refuse and Seek Serbian support
+	option = { #Ok
 		name = balkwar.2.a
 
 		ai_chance = {
 			factor = 100
-		}
+        }
 
-		add_war_support = 0.2
-
-		add_political_power = -15
-
-		SER = {
-			country_event = { id = balkwar.4 days = 1 }
-		}
-	}
-
-	option = { #Agree to the ultimatum
-		name = balkwar.2.b
-
-		ai_chance = {
-			factor = 0
-		}
-
-		add_war_support = -0.2
-
-		add_political_power = -200
-
-		83 = {
-			set_demilitarized_zone = no
-		}
-
-		76 = {
-			set_demilitarized_zone = no
-		}
-
-		HUN = {
-			country_event = { id = balkwar.x days = 1 }
-		}
+		add_war_support = 0.1
 	}
 }
 
-country_event = {		#Violence on the Border - Hungarians attack Romanian Militias
+country_event = {		#JoinTheWar as Greece
 	id = balkwar.3
 	title = balkwar.3.t
 	desc = balkwar.3.d
 	picture = GFX_report_PB_Generic_War_Event
-
 	is_triggered_only = yes
 
 	fire_only_once = yes
 
-	option = { #Escalate and contact Serbia
+	option = { #Declare on em
 		name = balkwar.3.a
 
 		ai_chance = {
 			factor = 100
+        }
+		
+		hidden_effect = { 
+		TUR = {
+			country_event = { id = balkwar.4 days = 4 }
 		}
+       }		
+		
+			SER = {				
+               add_to_faction = GRE				
+			      }		
 
-		add_war_support = 0.1
+declare_war_on = {
+    target = BUL
+    type = annex_everything
+        }
 
-		SER = {
-			country_event = { id = balkwar.4 days = 1 }
-		}
+declare_war_on = {
+    target = HUN
+    type = annex_everything
+        }
+
+add_ideas = ROM_russian_help		
 	}
 }
 
-country_event = {		#Romania seeks Serbian Support
+country_event = {		#JoinTheWar as Turkey
 	id = balkwar.4
 	title = balkwar.4.t
 	desc = balkwar.4.d
 	picture = GFX_report_PB_Generic_War_Event
-
 	is_triggered_only = yes
 
 	fire_only_once = yes
 
-	option = { #Agree to Support the Romanians
+	option = { #Declare on em
 		name = balkwar.4.a
 
 		ai_chance = {
 			factor = 100
+        }
+		
+			HUN = {				
+               add_to_faction = TUR				
+			      }
+
+			if = {
+				limit = {
+					HUN = {
+					has_completed_focus = hun_zagreb_treaty	
+					}
+				}
+					TUR = {			
+            add_ideas = HUN_zagreb_treaty
+			}
 		}
 
-		add_war_support = 0.1
+			if = {
+				limit = {
+					HUN = {
+					has_completed_focus = hun_budapest_entente	
+					}
+				}
+					TUR = {			
+            add_ideas = HUN_Budapest_Entente
+			}
+		  }				  
 
-		add_political_power = -50
-
-		create_faction = Balk_Rom
-
-		SER = { add_to_faction = ROM }
-
-		HUN = {
-			country_event = { id = balkwar.5 days = 1 }
-		}
+declare_war_on = {
+    target = GRE
+    type = annex_everything
+        }		
 	}
 }
 
-country_event = {		#Hungary - Serbia backs up Romania
+country_event = {		#JoinTheWar as Serbia
 	id = balkwar.5
 	title = balkwar.5.t
 	desc = balkwar.5.d
 	picture = GFX_report_PB_Generic_War_Event
-
 	is_triggered_only = yes
 
 	fire_only_once = yes
 
-	option = { #Declare War
-		name = balkwar.5.a
-
-		ai_chance = {
-			factor = 100
-		}
-
-		add_war_support = 0.1
-
-		add_political_power = -50
-
-		HUN = {
-			declare_war_on = {
-				target = ROM
-				type = annex_everything
-			}
-
-			declare_war_on = {
-				target = SER
-				type = annex_everything
-			}
-
-			remove_ideas = PB_HUN_Balkan_Powderkeg
-			add_ideas = PB_HUN_Great_Balkan_War
-		}
-
-		SER = {
-			remove_ideas = PB_HUN_Balkan_Powderkeg
-			add_ideas = PB_HUN_Great_Balkan_War
-		}
-
-		ROM = {
-			remove_ideas = PB_HUN_Balkan_Powderkeg
-			add_ideas = PB_HUN_Great_Balkan_War
-
-			set_major = yes
-		}
-
-		BUL = {
-			country_event = { id = balkwar.6 days = 1 }
-		}
-
-		GRE = {
-			country_event = { id = balkwar.7 days = 5 }
-		}
-		
-		every_country = {
-			set_temp_variable = { super_id = 9 }
-			PB_Fire_Super_Event = yes
-		}
-
-		set_global_flag = Great_Balkan_War_Fired
-	}
-}
-
-country_event = {		#Great Balkan War - Bulgarian Response
-	id = balkwar.6
-	title = balkwar.6.t
-	desc = balkwar.6.d
-	picture = GFX_report_PB_Generic_War_Event
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = { #Declare War on Serbia and Romania
+	option = { #Declare on em
 		name = balkwar.6.a
 
 		ai_chance = {
 			factor = 100
-		}
-
-		add_war_support = 0.1
-
-		add_political_power = 150
-
-		set_global_flag = PB_GBW_Bulgars_Join
-
-        RUS = {
-            country_event = { days = 3 id = russia.68 }
         }
 
-		BUL = {
-			declare_war_on = {
-				target = ROM
-				type = annex_everything
-			}
-
-			declare_war_on = {
-				target = SER
-				type = annex_everything
-			}
-
-			remove_ideas = PB_HUN_Balkan_Powderkeg
-			add_ideas = PB_HUN_Great_Balkan_War
+		hidden_effect = { 
+		GRE = {
+			country_event = { id = balkwar.4 days = 7 }
 		}
+     }		
+		
+			SER = {
+			
+			create_faction = Balk_Rom
+			
+            add_to_faction = ROM				
+			      }		
 
-		HUN = {
-			country_event = { id = balkwar.8 days = 1 }
-		}
-	}
+declare_war_on = {
+    target = BUL
+    type = annex_everything
+        }
 
-	option = { #Maintain Neutrality
-		name = balkwar.6.b
+declare_war_on = {
+    target = HUN
+    type = annex_everything
+        }
+		
+			HUN = {
+            add_to_faction = BUL
+            HUN_great_patriotic_war			
+			      }		
 
-		ai_chance = {
-			factor = 0
-		}
-
-		add_political_power = -200
-
-		set_global_flag = PB_GBW_Bulgars_Neutral
-
+add_ideas = ROM_russian_help
+		
 	}
 }
 
-country_event = {		#Great Balkan War - Greek Response
+country_event = {		#JoinTheWar as Hungary
+	id = balkwar.6
+	title = balkwar.6.t
+	desc = balkwar.6.d
+	picture = GFX_report_PB_Generic_War_Event
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Declare on em
+		name = balkwar.6.a
+
+		ai_chance = {
+			factor = 100
+        }
+		
+		hidden_effect = { 
+		GRE = {
+			country_event = { id = balkwar.4 days = 7 }
+		}
+     }		
+		
+			HUN = {
+            add_to_faction = BUL				
+			      }		
+
+declare_war_on = {
+    target = ROM
+    type = annex_everything
+        }
+		
+declare_war_on = {
+    target = SER
+    type = annex_everything
+        }		
+
+add_ideas = HUN_great_patriotic_war		
+	}
+}
+
+country_event = {		#JoinTheWar as Romania
 	id = balkwar.7
 	title = balkwar.7.t
 	desc = balkwar.7.d
 	picture = GFX_report_PB_Generic_War_Event
-
 	is_triggered_only = yes
 
 	fire_only_once = yes
 
-	option = { #Declare War on Serbia and Romania
+	option = { #Declare on em
 		name = balkwar.7.a
 
 		ai_chance = {
-			factor = 50
-		}
+			factor = 100
+        }
 
-		add_war_support = 0.1
-
-		add_political_power = 150
-
-		set_global_flag = PB_GBW_Greeks_Join
-
-		GRE = {
-			declare_war_on = {
-				target = BUL
-				type = annex_everything
-			}
-
-			declare_war_on = {
-				target = HUN
-				type = annex_everything
-			}
-
-			remove_ideas = PB_HUN_Balkan_Powderkeg
-			add_ideas = PB_HUN_Great_Balkan_War
-		}
-
+		hidden_effect = { 
+		
 		SER = {
-			country_event = { id = balkwar.9 days = 1 }
-		}
-	}
+			country_event = { id = balkwar.5 days = 2 }
+		}		
+       }		
 
-	option = { #Maintain Neutrality
-		name = balkwar.7.b
+declare_war_on = {
+    target = BUL
+    type = annex_everything
+        }
 
-		ai_chance = {
-			factor = 50
-		}
-
-		add_political_power = -200
-
-		set_global_flag = PB_GBW_Greeks_Neutral
-	}
-}
-
-country_event = {		#Great Balkan War - Hungary - Bulgars join against Serbia
-	id = balkwar.8
-	title = balkwar.8.t
-	desc = balkwar.8.d
-	picture = GFX_report_PB_Generic_War_Event
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = {
-		name = balkwar.8.a
-
-		ai_chance = {
-			factor = 50
-		}
-
-		HUN = { add_to_faction = BUL }
-
-		add_political_power = 150
-
-	}
-}
-
-country_event = {		#Great Balkan War - Hungary - Greeks join against Serbia
-	id = balkwar.9
-	title = balkwar.9.t
-	desc = balkwar.9.d
-	picture = GFX_report_PB_Generic_War_Event
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = {
-		name = balkwar.9.a
-
-		ai_chance = {
-			factor = 50
-		}
-
-		SER = { add_to_faction = GRE }
-
-		add_political_power = 150
-
-	}
-}
-
-country_event = {		#Great Balkan War Defeat - Greece - Athens Revolution
-	id = balkwar.17
-	title = balkwar.17.t
-	desc = balkwar.17.d
-	picture = GFX_report_PB_Generic_War_Event
-
-	is_triggered_only = yes
-
-
-	option = { #Republic is Declared
-		name = balkwar.17.a
-
-		ai_chance = {
-			factor = 60
-		}
-
-		add_political_power = -200
-
-		add_stability = -0.5
-
-		add_ideas = PB_Parliamentary_Republic
-		add_ideas = PB_Free_Press
-		add_ideas = PB_Universal_Suffrage
-
-		set_politics = {
-			ruling_party = cn
-		}
-
-		add_popularity = {
-			ideology = cn
-			popularity = 0.2
-		}
-
-		create_country_leader = {
-			name = "Panagis Tsaldaris"
-			desc = "PB_NO_DESC"
-			picture = "Portrait_GRE_Panagis_Tsaldaris.dds"
-			expire = "1965.1.1"
-			ideology = CN_VARIANT_02
-		}
-	}
-
-	option = { #Military Seizes Control
-		name = balkwar.17.b
-
-		ai_chance = {
-			factor = 40
-		}
-
-		add_political_power = -200
-
-		add_stability = -0.5
-
-		add_ideas = PB_Military_Government
-		add_ideas = PB_State_Press
-		add_ideas = PB_No_Voting
-
-		set_politics = {
-			ruling_party = ds
-		}
-
-		add_popularity = {
-			ideology = ds
-			popularity = 0.2
-		}
-
-		create_country_leader = {
-			name = "Alexandros Papagos"
-			desc = "PB_NO_DESC"
-			picture = "Portrait_GRE_Alexandros_Papagos.dds"
-			expire = "1965.1.1"
-			ideology = DS_VARIANT_01
-		}
+add_ideas = ROM_russian_help
+		
 	}
 }
 

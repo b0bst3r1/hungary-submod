@@ -2,7 +2,9 @@
   
   
   PB_SER_Alexander_I_DESC:0 "§YBorn:§! 4/12/1888\n\nAlexandar I, King of Serbia, who succeeded in conquering all the lands of so-called Greater Serbia and established it as a major European power for the first time in its history. In fact, a personal dictatorship of the monarch was established in the state, for which he was repeatedly criticised. Dependence on Russian resources and Romanian oil (which in fact also belongs to Russia) has also been established. But despite this, the people honour Aleksandar for his services to Serbia.\n\nOn the eve of the war, the political repression of the Jacobins is growing, religious propaganda is increasing and there is even talk of legalising the Chetniks. Local government newspapers are trying to stir up hatred between the peoples, to boost national morale. Sacrificing sovereignty, Serbia receives large investments from Russia in the military-industrial complex, as well as military trainers, so that the country is ready for war against revolutionary Hungary."
-  
+
+  BOS_patriotic_war:0 "Bosnian Patriotic War"
+  BOS_patriotic_war_desc:0 "Bosnia has been under the control of foreign goverments for centuries. The people have been enslaved by foreign overlords. Turkey, Serbia, Croatia and, until recently, Hungary did not allow the Bosnian people to live freely. \n\nNow that Bosnia is finally independent, the invaders are encroaching on Bosnian territory again. This is an ideal chance for the Bosnian people. We must not find ourselves again under foreign domination. \n\n§RThere can be no peaceful coexistence between the Islamic faith and non-Islamic society and political institutions.§!"   
   SER_chetnik_issue:0 "The Chetnik Issue"
   SER_chetnik_issue_desc:0 "§RThe Chetniks§! is a Serbian royalist and nationalist movement and guerrilla force. They proved themselves during the wars with the Ottoman Empire as partisan units fighting for Serbian independence. The Chetniks are now recognised as a terrorist illegal organisation in Serbia, but nevertheless many of them actually serve in the Royal Serbian Army."
   SER_ethnic_conflicts:0 "Ethnic Conflicts"
