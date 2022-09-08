@@ -474,8 +474,8 @@ create_country_leader = {
 				}
 				
 		         swap_ideas = {
-		         remove_ideas = PB_HUN_Revolution_Home
-		         add_ideas = PB_HUN_Revolution_Home1
+		         remove_idea = PB_HUN_Revolution_Home
+		         add_idea = PB_HUN_Revolution_Home1
 		          }				
 			}
 
@@ -485,8 +485,8 @@ create_country_leader = {
 				}
 				
 		         swap_ideas = {
-		         remove_ideas = PB_HUN_Revolution_Home1
-		         add_ideas = PB_HUN_Revolution_Home2
+		         remove_idea = PB_HUN_Revolution_Home1
+		         add_idea = PB_HUN_Revolution_Home2
 		          }
 			   }
 			}
@@ -1628,8 +1628,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}
 			completion_reward = {
 			swap_ideas = {
-				remove_idea = PB_Basic_Welfare
-				add_idea = PB_Limited_Welfare
+				remove_ideas = PB_Basic_Welfare
+				add_ideas = PB_Limited_Welfare
 			}			
 		}		
 	}
@@ -3088,8 +3088,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		HUN = {
 		
 		swap_ideas = {
-			remove_idea = add_ideas = HUN_labor_camps
-			add_idea = add_ideas = HUN_labor_camps_two
+			remove_ideas = HUN_labor_camps
+			add_ideas = HUN_labor_camps_two
 			}		
 		}
       }	  
@@ -3136,8 +3136,8 @@ custom_effect_tooltip = HUN_Increase_prison_300
 		hidden_effect = {
 		HUN = {
 		swap_ideas = {
-			remove_idea = add_ideas = HUN_labor_camps_two
-			add_idea = add_ideas = HUN_labor_camps_three
+			remove_ideas = HUN_labor_camps_two
+			add_ideas = HUN_labor_camps_three
 			}
 		}
       }		
@@ -3249,8 +3249,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 				}
 				
 		         swap_ideas = {
-		         remove_ideas = PB_HUN_Revolution_Home
-		         add_ideas = PB_HUN_Revolution_Home1
+		         remove_idea = PB_HUN_Revolution_Home
+		         add_idea = PB_HUN_Revolution_Home1
 		          }				
 			}
 
@@ -3260,8 +3260,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 				}
 				
 		         swap_ideas = {
-		         remove_ideas = PB_HUN_Revolution_Home1
-		         add_ideas = PB_HUN_Revolution_Home2
+		         remove_idea = PB_HUN_Revolution_Home1
+		         add_idea = PB_HUN_Revolution_Home2
 		          }
 			}
 				  

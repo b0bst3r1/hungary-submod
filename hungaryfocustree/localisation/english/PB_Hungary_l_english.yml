@@ -402,6 +402,7 @@
   
   HUN_albania_neutrality:0 "§RAlbania§! will keep §Gneutrality§! in the §RGreat Balkan War§!"
   hun_cro_accepted:0 "§RCroatian Culture§! will be §Gaccepted§!"
+  hun_rut_accepted:0 "§YRuthenian Culture§! will be §Gaccepted§!"  
   HUN_albanian_revolution:0 "Chance for a §RSocialist Revolution§! in §RAlbania§! is 40%§!\nIn the case of failure, a §GNeo-Imperialist Government§! will install in §RAlbania§!"
   5year_plans_stopped:0 "§YThe five-year plans are stopped§!"
   hun_starting_crisis_tt:0 "§YThe starting crisis is over§!"
@@ -503,8 +504,24 @@
   balkan_union:0 "Balkan Union"
   zagreb_treaty:0 "Organization of Zagreb Treaty"
   budapest_entente:0 "Budapest Entente"  
-    
+  
   #DECISIONS#
+  
+  #The Great Balkan War
+  
+  HUN_great_balkan_war:0 "The Great Balkan War"
+  
+  
+  
+  HUN_mobilization_efforts:0 "Mobilization Effots"
+  HUN_ask_japan_for_equipment:0 "Ask Japan for Equipment"
+  HUN_ask_japan_for_fuel:0 "Ask Japan for Fuel"
+  HUN_operation_alexander:0 "Operation Alexander"
+  HUN_operation_villamlas:0 "Operation Villámháború"
+  HUN_operation_Gorogorszag:0 "Operation Görögország"
+  HUN_found_the_romanian_red_army:0 "Found the Romanian Red Army"
+  HUN_found_the_serbian_red_army:0 "Found the Serbian Red Army"  
+  
   
   #SHOCK Therapy
   

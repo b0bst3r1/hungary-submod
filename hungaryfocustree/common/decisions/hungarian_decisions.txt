@@ -422,7 +422,7 @@ HUN_domestic_policy = {
 		}
 	}		
  }
-  
+   
  HUN_war_on_horizon = {
 
 	HUN_arpad_line_one = {
@@ -1260,4 +1260,359 @@ HUN_shock_therapy = {
 				clr_country_flag = shock_therapy
 		}
 	}
-}	
+}
+
+HUN_great_balkan_war = {
+
+	HUN_mobilization_efforts = {
+
+		icon = generic_health_cross
+
+		available = {
+			HUN = {
+				has_war = yes
+			}		
+		}
+
+		visible = {
+			HUN = {
+				has_war = yes
+			}
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		days_remove = 7
+		
+		days_re_enable = 50
+
+		remove_effect = {
+				add_manpower = 50000
+		}
+	}
+
+	HUN_ask_japan_for_equipment = {
+
+		icon = generic_health_cross
+
+		available = {
+			OR = {
+				has_government = jc 
+				has_government = ss
+			}
+		}
+
+		visible = {
+			HUN = {
+				has_war = yes
+			}
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		days_remove = 1
+		
+		days_re_enable = 60
+
+		remove_effect = {
+		HUN = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+				producer = JAP
+			}
+		 }
+	   }
+	}
+
+	HUN_ask_japan_for_fuel = {
+
+		icon = generic_health_cross
+
+		available = {
+			OR = {
+				has_government = jc 
+				has_government = ss
+			}
+		}
+
+		visible = {
+			HUN = {
+				has_war = yes
+			}
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		days_remove = 7
+		
+		days_re_enable = 60
+
+		remove_effect = {
+		HUN = {
+			add_fuel = 1000
+			}
+		 }
+	  }
+
+	HUN_operation_alexander = {
+
+		icon = generic_health_cross
+
+		available = {
+			HUN = {
+				has_war_with = SER
+			}
+		}
+
+		visible = {
+			HUN = {
+				has_war = yes
+			}
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 60
+		}
+		
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+            targeted_modifier = { 
+                tag = SER
+                attack_bonus_against = 0.1 
+            }		
+
+		days_remove = 60
+		
+		fire_only_once
+
+		remove_effect = {
+		 }
+	  }
+
+	HUN_operation_villamlas = {
+
+		icon = generic_health_cross
+
+		available = {
+			HUN = {
+				has_war_with = ROM
+			}
+		}
+
+		visible = {
+			HUN = {
+				has_war = yes
+			}
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 60
+		}
+		
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+            targeted_modifier = { 
+                tag = ROM
+                attack_bonus_against = 0.1 
+            }		
+
+		days_remove = 60
+		
+		fire_only_once
+
+		remove_effect = {
+		 }
+	  }
+
+	HUN_operation_Gorogorszag = {
+
+		icon = generic_health_cross
+
+		available = {
+			HUN = {
+				has_war_with = GRE
+			}
+		}
+
+		visible = {
+			HUN = {
+				has_war = yes
+			}
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 60
+		}
+		
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+            targeted_modifier = { 
+                tag = GRE
+                attack_bonus_against = 0.1 
+            }		
+
+		days_remove = 60
+		
+		fire_only_once
+
+		remove_effect = {
+		 }
+	   }
+
+	HUN_found_the_romanian_red_army = {
+
+		icon = generic_health_cross
+
+		available = {
+			HUN = {
+				controls_province = 1239
+			}
+		}
+
+		visible = {
+			HUN = {
+				has_war = yes
+			}
+		}
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 60
+		}	
+
+		days_remove = 10
+		
+		fire_only_once
+
+		remove_effect = {
+		
+		hidden_effect = {
+		    division_template = {
+				name = "Romanian Division"
+				is_locked = yes
+				regiments = {
+				    elite_infantry = {
+					    x = 0 y = 0
+					}
+					elite_infantry = {
+						x = 0 y = 1
+					}
+					elite_infantry = {
+					    x = 0 y = 2
+					}
+					elite_infantry = {
+					    x = 1 y = 0
+					}
+					elite_infantry = {
+					    x = 1 y = 1
+					}
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+		            artillery = { x = 0 y = 1 }
+				}
+			}		
+		
+			    limit = {
+				    is_in_home_area = yes
+				}
+                create_unit = {
+                    division = "name = \"Romanian Division\" division_template = \"Romanian Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = HUN
+                }
+            }				
+		 }
+	   }
+
+	HUN_found_the_serbian_red_army = {
+
+		icon = generic_health_cross
+
+		available = {
+			HUN = {
+				controls_province = 1239
+			}
+		}
+
+		visible = {
+			HUN = {
+				has_war = yes
+			}
+		}
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 60
+		}	
+
+		days_remove = 10
+		
+		fire_only_once
+
+		remove_effect = {
+		
+		hidden_effect = {
+		    division_template = {
+				name = "Serbian Division"
+				is_locked = yes
+				regiments = {
+				    elite_infantry = {
+					    x = 0 y = 0
+					}
+					elite_infantry = {
+						x = 0 y = 1
+					}
+					elite_infantry = {
+					    x = 0 y = 2
+					}
+					elite_infantry = {
+					    x = 1 y = 0
+					}
+					elite_infantry = {
+					    x = 1 y = 1
+					}
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+		            artillery = { x = 0 y = 1 }
+				}
+			}		
+		
+			    limit = {
+				    is_in_home_area = yes
+				}
+                create_unit = {
+                    division = "name = \"Serbian Division\" division_template = \"Serbian Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = HUN
+                }
+            }				
+		 }
+	   }	   
+	 }	 

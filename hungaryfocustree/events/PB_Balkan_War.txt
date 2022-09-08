@@ -2,12 +2,12 @@
 # GREAT BALKAN WAR EVENTS
 ##################
 
-add_namespace = balkwar
+add_namespace = greatbalkwar
 
 country_event = {		#PrepareForWar - Romania
-	id = balkwar.1
-	title = balkwar.1.t
-	desc = balkwar.1.d
+	id = greatbalkwar.1
+	title = greatbalkwar.1.t
+	desc = greatbalkwar.1.d
 	picture = GFX_report_PB_Generic_War_Event
 
 	trigger = {
@@ -22,7 +22,7 @@ country_event = {		#PrepareForWar - Romania
 	fire_only_once = yes
 
 	option = { #Ok
-		name = balkwar.1.a
+		name = greatbalkwar.1.a
 
 		ai_chance = {
 			factor = 100
@@ -33,27 +33,27 @@ country_event = {		#PrepareForWar - Romania
        hidden_effect = {
 
 		ROM = {
-			country_event = { id = balkwar.7 days = 14 }
+			country_event = { id = greatbalkwar.7 days = 14 }
 		}	   
 	   
 		BUL = {
-			country_event = { id = balkwar.2 days = 1 }
+			country_event = { id = greatbalkwar.2 days = 1 }
 		}
 		
 		HUN = {
-			country_event = { id = balkwar.2 days = 1 }
+			country_event = { id = greatbalkwar.2 days = 1 }
 		}
 
 		SER = {
-			country_event = { id = balkwar.2 days = 1 }
+			country_event = { id = greatbalkwar.2 days = 1 }
 		}
 
 		GRE = {
-			country_event = { id = balkwar.2 days = 1 }
+			country_event = { id = greatbalkwar.2 days = 1 }
 		}
 
 		TUR = {
-			country_event = { id = balkwar.2 days = 1 }
+			country_event = { id = greatbalkwar.2 days = 1 }
 		}		
 	}
   }
@@ -61,14 +61,14 @@ country_event = {		#PrepareForWar - Romania
 
 
 country_event = {		#PrepareForWar - Everyone
-	id = balkwar.2
-	title = balkwar.2.t
-	desc = balkwar.2.d
+	id = greatbalkwar.2
+	title = greatbalkwar.2.t
+	desc = greatbalkwar.2.d
 	picture = GFX_report_PB_Generic_War_Event
 	is_triggered_only = yes
 
 	option = { #Ok
-		name = balkwar.2.a
+		name = greatbalkwar.2.a
 
 		ai_chance = {
 			factor = 100
@@ -79,16 +79,16 @@ country_event = {		#PrepareForWar - Everyone
 }
 
 country_event = {		#JoinTheWar as Greece
-	id = balkwar.3
-	title = balkwar.3.t
-	desc = balkwar.3.d
+	id = greatbalkwar.3
+	title = greatbalkwar.3.t
+	desc = greatbalkwar.3.d
 	picture = GFX_report_PB_Generic_War_Event
 	is_triggered_only = yes
 
 	fire_only_once = yes
 
 	option = { #Declare on em
-		name = balkwar.3.a
+		name = greatbalkwar.3.a
 
 		ai_chance = {
 			factor = 100
@@ -96,7 +96,7 @@ country_event = {		#JoinTheWar as Greece
 		
 		hidden_effect = { 
 		TUR = {
-			country_event = { id = balkwar.4 days = 4 }
+			country_event = { id = greatbalkwar.4 days = 2 }
 		}
        }		
 		
@@ -119,16 +119,16 @@ add_ideas = ROM_russian_help
 }
 
 country_event = {		#JoinTheWar as Turkey
-	id = balkwar.4
-	title = balkwar.4.t
-	desc = balkwar.4.d
+	id = greatbalkwar.4
+	title = greatbalkwar.4.t
+	desc = greatbalkwar.4.d
 	picture = GFX_report_PB_Generic_War_Event
 	is_triggered_only = yes
 
 	fire_only_once = yes
 
 	option = { #Declare on em
-		name = balkwar.4.a
+		name = greatbalkwar.4.a
 
 		ai_chance = {
 			factor = 100
@@ -168,16 +168,16 @@ declare_war_on = {
 }
 
 country_event = {		#JoinTheWar as Serbia
-	id = balkwar.5
-	title = balkwar.5.t
-	desc = balkwar.5.d
+	id = greatbalkwar.5
+	title = greatbalkwar.5.t
+	desc = greatbalkwar.5.d
 	picture = GFX_report_PB_Generic_War_Event
 	is_triggered_only = yes
 
 	fire_only_once = yes
 
 	option = { #Declare on em
-		name = balkwar.6.a
+		name = greatbalkwar.5.a
 
 		ai_chance = {
 			factor = 100
@@ -185,7 +185,7 @@ country_event = {		#JoinTheWar as Serbia
 
 		hidden_effect = { 
 		GRE = {
-			country_event = { id = balkwar.4 days = 7 }
+			country_event = { id = greatbalkwar.3 days = 7 }
 		}
      }		
 		
@@ -194,7 +194,15 @@ country_event = {		#JoinTheWar as Serbia
 			create_faction = Balk_Rom
 			
             add_to_faction = ROM				
-			      }		
+			      }
+
+			ROM = {
+			
+declare_war_on = {
+    target = HUN
+    type = annex_everything
+        }				
+			      }				  
 
 declare_war_on = {
     target = BUL
@@ -208,7 +216,7 @@ declare_war_on = {
 		
 			HUN = {
             add_to_faction = BUL
-            HUN_great_patriotic_war			
+            add_ideas = HUN_great_patriotic_war			
 			      }		
 
 add_ideas = ROM_russian_help
@@ -217,10 +225,10 @@ add_ideas = ROM_russian_help
 }
 
 country_event = {		#JoinTheWar as Hungary
-	id = balkwar.6
-	title = balkwar.6.t
+	id = greatbalkwar.6
+	title = greatbalkwar.6.t
 	desc = balkwar.6.d
-	picture = GFX_report_PB_Generic_War_Event
+	picture = greatbalkwar
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -234,12 +242,13 @@ country_event = {		#JoinTheWar as Hungary
 		
 		hidden_effect = { 
 		GRE = {
-			country_event = { id = balkwar.4 days = 7 }
+			country_event = { id = greatbalkwar.4 days = 7 }
 		}
      }		
 		
 			HUN = {
-            add_to_faction = BUL				
+            add_to_faction = BUL
+            add_ideas = HUN_great_patriotic_war			
 			      }		
 
 declare_war_on = {
@@ -250,32 +259,34 @@ declare_war_on = {
 declare_war_on = {
     target = SER
     type = annex_everything
-        }		
-
-add_ideas = HUN_great_patriotic_war		
+        }			
 	}
 }
 
 country_event = {		#JoinTheWar as Romania
-	id = balkwar.7
-	title = balkwar.7.t
-	desc = balkwar.7.d
+	id = greatbalkwar.7
+	title = greatbalkwar.7.t
+	desc = greatbalkwar.7.d
 	picture = GFX_report_PB_Generic_War_Event
 	is_triggered_only = yes
 
 	fire_only_once = yes
 
 	option = { #Declare on em
-		name = balkwar.7.a
+		name = greatbalkwar.7.a
 
 		ai_chance = {
 			factor = 100
         }
+		
+		HUN = {
+			set_country_flag = set_global_flag = great_balk_war
+		}			
 
 		hidden_effect = { 
 		
 		SER = {
-			country_event = { id = balkwar.5 days = 2 }
+			country_event = { id = greatbalkwar.5 days = 2 }
 		}		
        }		
 

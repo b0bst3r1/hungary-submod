@@ -3,33 +3,33 @@
   ##########################
   # EVENTS
   ##########################
-  balkwar.1.t:0 "Begin Preparing for War"
-  balkwar.1.d:0 ""
-  balkwar.1.a:0 "Okay"
+  greatbalkwar.1.t:0 "Begin Preparing for War"
+  greatbalkwar.1.d:0 ""
+  greatbalkwar.1.a:0 "Okay"
 
-  balkwar.2.t:0 "Romania is mobilizing!"
-  balkwar.2.d:0 ""
-  balkwar.2.a:0 "We must be prepared!"
+  greatbalkwar.2.t:0 "Romania is mobilizing!"
+  greatbalkwar.2.d:0 ""
+  greatbalkwar.2.a:0 "We must be prepared!"
 
-  balkwar.3.t:0 "Bucharest seeks Support"
-  balkwar.3.d:0 ""
-  balkwar.3.a:0 "We must crush the Hungarian Menace!"
+  greatbalkwar.3.t:0 "Bucharest seeks Support"
+  greatbalkwar.3.d:0 ""
+  greatbalkwar.3.a:0 "We must crush the Hungarian Menace!"
 
-  balkwar.4.t:0 "Athens Supports Romania"
-  balkwar.4.d:0 ""
-  balkwar.4.a:0 "We will tolerate the two of them no longer"
+  greatbalkwar.4.t:0 "Athens Supports Romania"
+  greatbalkwar.4.d:0 ""
+  greatbalkwar.4.a:0 "We will tolerate the two of them no longer"
 
-  balkwar.5.t:0 "Bucharest seeks Support"
-  balkwar.5.d:0 ""
-  balkwar.5.a:0 "We will take back what is ours!"
+  greatbalkwar.5.t:0 "Bucharest seeks Support"
+  greatbalkwar.5.d:0 ""
+  greatbalkwar.5.a:0 "We will take back what is ours!"
 
-  balkwar.6.t:0 "Romania Invades Bulgaria"
-  balkwar.6.d:0 ""
-  balkwar.6.a:0 "A surpise to be sure, but a welcome one."
+  greatbalkwar.6.t:0 "Romania Invades Bulgaria"
+  greatbalkwar.6.d:0 ""
+  greatbalkwar.6.a:0 "A surpise to be sure, but a welcome one."
   
-  balkwar.7.t:0 "Invade Bulgaria"
-  balkwar.7.d:0 ""
-  balkwar.7.a:0 "Do It!"
+  greatbalkwar.7.t:0 "Invade Bulgaria"
+  greatbalkwar.7.d:0 ""
+  greatbalkwar.7.a:0 "Do It!"
   
   ##########################
   # IDEAS
