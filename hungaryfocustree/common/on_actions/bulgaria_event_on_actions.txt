@@ -1,0 +1,15 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			BUL = {
+				country_event = { 	#MonarchyCrisis
+					id = bul.1
+					days = 200
+				}
+			}
+		}		
+	}
+ }
+  
+  

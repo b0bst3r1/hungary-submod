@@ -509,7 +509,7 @@ HUN_culture_war = {
 
 		remove_effect = {
 					
-        add_stability
+        add_stability = -0.02
 		
 		set_country_flag = crush_slovak_elite		
 		}

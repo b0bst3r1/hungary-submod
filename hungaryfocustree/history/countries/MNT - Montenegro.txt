@@ -61,13 +61,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Duro Pucar"
-	desc = ""
-	picture = "gfx/leaders/MNT/Portrait_jovanovic_montenegro.dds"
-	ideology = JC_VARIANT_01
-}
-
-create_country_leader = {
     name = "Nicholas II"
     desc = "PB_NO_DESC"
     picture = "Portrait_MNT_Nicholas_II.dds"
@@ -100,9 +93,16 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Duro Pucar"
+	name = "Blagoje Nešković"
 	desc = ""
-	picture = "gfx/leaders/MNT/Portrait_jovanovic_montenegro.dds"
+	picture = "gfx/leaders/MNT/portrait_blagoje_neskovic.dds"
+	ideology = JC_VARIANT_01
+}
+
+create_country_leader = {
+	name = "Blagoje Nešković"
+	desc = ""
+	picture = "gfx/leaders/MNT/portrait_blagoje_neskovic.dds"
     expire = "1965.1.1"
     ideology = SS_VARIANT_01
 }

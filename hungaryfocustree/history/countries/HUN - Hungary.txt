@@ -65,6 +65,7 @@ recruit_character = HUN_farkas_mihaly
 recruit_character = HUN_Gabor_Peter
 recruit_character = HUN_Erno_Gero
 
+create_faction = workers_front
 
 set_cosmetic_tag = HUN_COM
 
@@ -235,6 +236,9 @@ create_country_leader = {
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "gfx/leaders/HUN/bohm.dds"
 	ideology = JC_VARIANT_01
+	traits = {
+		PB_The_Great_Founder
+	}
 }
 
 create_country_leader = {

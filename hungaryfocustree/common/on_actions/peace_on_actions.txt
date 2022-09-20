@@ -34,42 +34,46 @@ limit = {
  }
  
 	
-on_daily_HUN = {	
+on_daily_HUN = {	#RomaniaCapitulation
 	
 effect = { 
 if = {
 limit = {
 
-	has_war_with = ROM
-	
-	ROM = {
-	surrender_progress > 0.8
-	 }
-   }	
-	
+    HUN = {
+	controls_province = 6652 
+	controls_province = 9617
+	controls_province = 9716
+	 }     
+    } 
+		 
 	ROM = {
 	
     leave_faction = yes
 	white_peace = HUN
+	white_peace = BUL
 	remove_ideas = PB_HUN_Balkan_Powderkeg	
 	
 	}	   
 	   HUN = {
-	   country_event = { id = hungarian.7}
+	   country_event = { id = balkwarpeace.1}
 	  }
 	}
   }
- }
-on_daily_HUN = {	
+}
+ 
+on_daily_HUN = {	#SerbiaCapitulation
 	
 effect = { 
 if = {
 limit = {
 
-	has_war_with = SER
-	
-	SER = {
-	surrender_progress > 0.85
+    HUN = {
+	controls_province = 11899
+	controls_province = 9809
+	controls_province = 11586
+	controls_province = 3882
+	   }
 	 }
    }	
 	
@@ -77,11 +81,41 @@ limit = {
 	
     leave_faction = yes
 	white_peace = HUN
+	white_peace = BUL
 	remove_ideas = PB_HUN_Balkan_Powderkeg		
 	
 	}	   
 	   HUN = {
-	   country_event = { id = hungarian.2}
+	   country_event = { id = balkwarpeace.3}
+	  }
+	}
+  }   
+
+on_daily_HUN = {	#GreeceCapitulation
+	
+effect = { 
+if = {
+limit = {
+
+    HUN = {
+	controls_province = 9906
+	controls_province = 3882
+	controls_province = 949
+	controls_province = 6923
+	controls_province = 9783
+	  }
+	}	
+	
+	GRE = {
+	
+    leave_faction = yes
+	white_peace = HUN
+	white_peace = BUL	
+	remove_ideas = PB_HUN_Balkan_Powderkeg		
+	
+	}	   
+	   HUN = {
+	   country_event = { id = balkwarpeace.3}
 	  }
 	}
    }   

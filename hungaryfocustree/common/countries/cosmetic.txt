@@ -912,6 +912,11 @@ BUL_TSA = {
 	color_ui = rgb { 66 94 23 }
 }
 
+BUL_after_tsar = {
+	color = rgb { 40 80 0 }
+	color_ui = rgb { 40 80 0 }
+}
+
 HUN_COM = {
 	color = rgb { 127 24 13 }
 	color_ui = rgb { 127 24 13 }
@@ -940,6 +945,11 @@ CRO_COM = {
 CRO_SLA = {
 	color = rgb { 130 24 13 }
 	color_ui = rgb { 130 24 13 }
+}
+
+MOL_RUS = {
+	color = rgb { 46 102 63 }
+	color_ui = rgb { 46 102 63 }
 }
 
 

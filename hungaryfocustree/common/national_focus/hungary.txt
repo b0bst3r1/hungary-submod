@@ -1626,13 +1626,12 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			idea = HUN_force_welfare
 			days = 365
 		}
-			completion_reward = {
+		
 			swap_ideas = {
-				remove_ideas = PB_Basic_Welfare
-				add_ideas = PB_Limited_Welfare
+				remove_idea = PB_Basic_Welfare
+				add_idea = PB_Limited_Welfare
 			}			
 		}		
-	}
 	  
 		x = 12
 		y = 10
@@ -3085,14 +3084,12 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		completion_reward = {
 		
 		hidden_effect = {
-		HUN = {
 		
 		swap_ideas = {
-			remove_ideas = HUN_labor_camps
-			add_ideas = HUN_labor_camps_two
+			remove_idea = HUN_labor_camps
+			add_idea = HUN_labor_camps_two
 			}		
-		}
-      }	  
+		}	  
 
 custom_effect_tooltip = HUN_Increase_prison_300
 		
@@ -3134,13 +3131,11 @@ custom_effect_tooltip = HUN_Increase_prison_300
 		completion_reward = {
 		
 		hidden_effect = {
-		HUN = {
 		swap_ideas = {
 			remove_ideas = HUN_labor_camps_two
 			add_ideas = HUN_labor_camps_three
 			}
-		}
-      }		
+		}		
 
 custom_effect_tooltip = HUN_Increase_prison_450
 		

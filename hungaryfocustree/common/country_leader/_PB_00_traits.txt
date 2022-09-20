@@ -1,0 +1,15 @@
+leader_traits = {
+
+	#### LEADER TRAITS ####
+
+	PB_The_Great_Founder = {
+
+		stability_factor = 0.1
+		
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

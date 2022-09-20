@@ -6,46 +6,6 @@
 add_namespace = hungarian
 add_namespace = russs
 
-	country_event = {
-	id = russs.1
-	title = russs.1.t
-	desc = russs.1.d
-	picture = GFX
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	immediate = { news_event = {
-         id = hungary.5
-          }
-        }	
-	
-	option = {
-		name = russs.1.a
-		
-		MRD = {
-			transfer_state = 79
-			transfer_state = 80
-		    add_state_core = 79
-		    add_state_core = 80			
-		
-        }
-		
-		RUS = {
-		puppet = MRD
-		
-			set_autonomy = {
-                target = MRD
-                 autonomy_state = autonomy_PB_Imperial_Autonomy
-                }		
-		}
-		
-		ai_chance = {
-			factor = 100
-		}
-	   }
-	  }
-	  
 	country_event = { #GREATELLADA
 	id = russs.2
 	title = russs.2.t
@@ -105,232 +65,6 @@ country_event = {
           }
 		 }
        
-	   
-	   country_event = { #SERBIAasksPEACE
-	id = hungarian.2
-	title = hungarian.2.t
-	desc = hungarian.2.d
-	picture = GFX_report_event_hun_916
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = {
-		name = hungarian.2.a
-		
-			hidden_effect = {
-			ALB = {
-			country_event = { id = albanian.1 days = 2 }
-		}
-	}
-	
-			hidden_effect = {
-		news_event = {
-			id = hungary.8
-			days = 9
-		}
-	}	
-	         HUN = {
-         puppet = BOS
-         puppet = MNT
-         puppet = SER  	
-		 
-	     hidden_effect = {
-			set_autonomy = {
-                target = BOS
-                 autonomy_state = autonomy_PB_Sister_Republic
-                }
-			}
-			
-			set_autonomy = {
-                target = MNT
-                 autonomy_state = autonomy_PB_Sister_Republic
-                }
-				
-			set_autonomy = {
-                target = SER
-                 autonomy_state = autonomy_PB_Sister_Republic
-                }				
-		    }
-	
-		SER = {
-	
-	set_cosmetic_tag = Ser_Jacobin
-	
-	  set_politics = {
-	  ruling_party = JC
-      last_election = "1936.1.1"
-	  election_frequency = 48
-	  elections_allowed = no
-      long_name = Jacobins
-      name = Jacobins
-    }
-	
-	remove_ideas = {
-	PB_Absolute_Monarchy
-	PB_NI_Order
-	PB_State_Press
-	PB_Universal_Citizenship
-	PB_Public_Meetings_Monitored
-	PB_Limited_Womens_Rights
-	PB_Limited_Autonomy
-	PB_Law_Prev_Policing
-	PB_8_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Basic_Education
-	PB_No_Welfare
-	PB_Trade_Unions_Banned
-	PB_Slavery_Abolished
-	PB_Significant_Poverty
-	PB_Semi_Industrialized
-	PB_Significant_Illiteracy
-	PB_Stagnating_Growth
-	PB_Fully_Westernized
-	PB_Govidea_Mixed_Market_Capitalism
-	PB_Great_War_Military
-}
-	add_ideas = {
-	PB_Fully_Westernized
-	PB_Govidea_Planned_Economy
-	PB_Revolutionary_Republic
-	PB_Great_War_Military
-	PB_NI_Revolution
-	PB_Limited_Censorship
-	PB_Single_Party_State
-	PB_Full_Womens_Equality
-	PB_Public_Meetings_Monitored
-	PB_Limited_Autonomy
-	PB_Law_Intimidation_Policing
-	PB_8_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Universal_Basic
-    PB_Generous_Welfare
-	PB_Trade_Unions_All_Allowed
-    PB_Slavery_Abolished
-	PB_Significant_Poverty
-    PB_Semi_Industrialized
-	PB_Minor_Illiteracy
-	PB_Middling_Consumer_Confidence
-}
-	
-   
-	set_popularities = {
-	       ni = 0
-	       ds = 0
-	       rc = 0
-	       cn = 0
-	       lb = 0
-	       an = 0
-	       ss = 30
-	       jc = 70
-      }
-	}
-	 
-	  
-	  		BOS = {
-			
-		transfer_state = 104
-		
-	  set_politics = {
-	  ruling_party = JC
-      last_election = "1936.1.1"
-	  election_frequency = 48
-	  elections_allowed = no
-      long_name = Jacobins
-      name = Jacobins
-    }
-	
-	add_ideas = {
-	PB_Fully_Westernized
-	PB_Govidea_Planned_Economy
-	PB_Revolutionary_Republic
-	PB_Great_War_Military
-	PB_NI_Revolution
-	PB_Limited_Censorship
-	PB_Single_Party_State
-	PB_Full_Womens_Equality
-	PB_Public_Meetings_Monitored
-	PB_Limited_Autonomy
-	PB_Law_Intimidation_Policing
-	PB_8_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Universal_Basic
-    PB_Generous_Welfare
-	PB_Trade_Unions_All_Allowed
-    PB_Slavery_Abolished
-	PB_Significant_Poverty
-    PB_Semi_Industrialized
-	PB_Minor_Illiteracy
-	PB_Middling_Consumer_Confidence
-}
-	
-	set_popularities = {
-	       ni = 0
-	       ds = 0
-	       rc = 0
-	       cn = 0
-	       lb = 0
-	       an = 0
-	       ss = 30
-	       jc = 70
-      }
-
-	set_cosmetic_tag = BOS_Jacobin
-
-      } 
-
-	  		MNT = {
-			
-		transfer_state = 105			
-		
-	  set_politics = {
-	  ruling_party = JC
-      last_election = "1936.1.1"
-	  election_frequency = 48
-	  elections_allowed = no
-      long_name = Jacobins
-      name = Jacobins
-    }
-	
-	add_ideas = {
-	PB_Fully_Westernized
-	PB_Govidea_Planned_Economy
-	PB_Revolutionary_Republic
-	PB_Great_War_Military
-	PB_NI_Revolution
-	PB_Limited_Censorship
-	PB_Single_Party_State
-	PB_Full_Womens_Equality
-	PB_Public_Meetings_Monitored
-	PB_Limited_Autonomy
-	PB_Law_Intimidation_Policing
-	PB_8_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Universal_Basic
-    PB_Generous_Welfare
-	PB_Trade_Unions_All_Allowed
-    PB_Slavery_Abolished
-	PB_Significant_Poverty
-    PB_Semi_Industrialized
-	PB_Minor_Illiteracy
-	PB_Middling_Consumer_Confidence
-}
-	
-	set_popularities = {
-	       ni = 0
-	       ds = 0
-	       rc = 0
-	       cn = 0
-	       lb = 0
-	       an = 0
-	       ss = 30
-	       jc = 70
-      }
-
-	set_cosmetic_tag = MNT_Jacobin
-
-      }
-	  }
-	  }
   
   	   country_event = { #UDWR
 	id = hungarian.3
@@ -422,110 +156,6 @@ country_event = {
 
    }
   }
-
-	   country_event = { #ROMANIAPEACE
-	id = hungarian.7
-	title = hungarian.7.t
-	desc = hungarian.7.d
-	picture = GFX_report_event_hun_917
-	is_triggered_only = yes
-	fire_only_once = yes
-		
-	option = {
-	
-			hidden_effect = {
-			RUS = {
-			country_event = { id = russs.1 days = 1 }
-		}
-	}	
-	
-	         HUN = {
-         puppet = ROM
-		 
-	     hidden_effect = {
-			set_autonomy = {
-                target = ROM
-                 autonomy_state = autonomy_PB_Sister_Republic
-                }
-			}
-		}		
-	  
-	  	  		ROM = {
-		
-	  set_politics = {
-	  ruling_party = JC
-      last_election = "1936.1.1"
-	  election_frequency = 48
-	  elections_allowed = no
-      long_name = Jacobins
-      name = Jacobins
-    }
-	
-	remove_ideas = { 
-	PB_Universal_Citizenship
-	PB_Fully_Westernized
-	PB_Govidea_Mixed_Market_Capitalism
-	PB_Great_War_Military
-	PB_Limited_Censorship
-	PB_Public_Meetings_Allowed
-	PB_Parliamentary_Monarchy 
-	PB_NI_Order
-	PB_Limited_Womens_Rights
-	PB_Racial_Segregation
-	PB_Law_Intimidation_Policing
-    PB_8_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Basic_Education
-	PB_No_Welfare
-	PB_Trade_Unions_Banned
-	PB_Slavery_Abolished
-	PB_Significant_Poverty
-	PB_Semi_Industrialized
-	PB_Minor_Illiteracy
-	PB_Middling_Consumer_Confidence
-}
-
-	add_ideas = {
-	PB_Fully_Westernized
-	PB_Govidea_Planned_Economy
-	PB_Revolutionary_Republic
-	PB_Great_War_Military
-	PB_NI_Revolution
-	PB_Limited_Censorship
-	PB_Single_Party_State
-	PB_Full_Womens_Equality
-	PB_Public_Meetings_Monitored
-	PB_Limited_Autonomy
-	PB_Law_Intimidation_Policing
-	PB_8_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Universal_Basic
-    PB_Generous_Welfare
-	PB_Trade_Unions_All_Allowed
-    PB_Slavery_Abolished
-	PB_Significant_Poverty
-    PB_Semi_Industrialized
-	PB_Minor_Illiteracy
-	PB_Middling_Consumer_Confidence
-}
-	
-	set_popularities = {
-	       ni = 0
-	       ds = 0
-	       rc = 0
-	       cn = 0
-	       lb = 0
-	       an = 0
-	       ss = 30
-	       jc = 70
-      }
-
-	set_cosmetic_tag = ROM_Jacobin
-
-      }
-    }
-  }
-
      	   country_event = { #Congress
 	id = hungarian.8
 	title = hungarian.8.t
@@ -1016,7 +646,7 @@ set_popularities = {
 		
 			hidden_effect = {
 			HUN = {
-			country_event = { id = hungarian.20 days = 8 }
+			country_event = { id = hungarian.20 days = 6 }
 		  }
 	    }		
 	  }
@@ -1072,7 +702,7 @@ set_popularities = {
 	fire_only_once = yes
 	
 	option = {
-		name = hungarian.18.a
+		name = hungarian.19.a
 		
 		ai_chance = {
 			factor = 100
@@ -1105,7 +735,7 @@ set_popularities = {
   }
   
   
-	country_event = {#AssasinateVago
+	country_event = { #AssasinateVago
 	id = hungarian.20
 	title = hungarian.20.t
 	desc = hungarian.20.d
@@ -2051,4 +1681,39 @@ create_country_leader = {
 			ideology = CN_VARIANT_01
 		 }	   
        }
-     }	 
+     }
+
+     	   country_event = { #Revolutionary's Guide to Warfare - credit to beigeBoy
+	id = hungarian.47
+	title = hungarian.47.t
+	desc = hungarian.47.d
+	picture = GFX_report_event_hun_940
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.47.a	
+		
+		custom_effect_tooltip = Revolutionary_Zeal_0.02_increase
+		  add_to_variable = {
+			var = HUN_Revolutionary_Zeal
+			value = 0.02
+	    }		
+       }
+      }
+
+	       	   country_event = { #Opium, Alcohol and Other Vices - credit to beigeBoy
+	id = hungarian.48
+	title = hungarian.48.t
+	desc = hungarian.48.d
+	picture = GFX_report_event_hun_940
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.48.a	
+		
+		add_stability = 0.02
+		
+	    }		 
+      }

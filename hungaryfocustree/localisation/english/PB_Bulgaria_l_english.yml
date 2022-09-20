@@ -15,3 +15,11 @@
   BUL_unpopular_tsar_desc:0 "Nikolay I Dadiani became king of Bulgaria on 6 August 1877 at the request of the Russian Empire. His regime, like that of his successor Nikolay II, was kept in check by a Russian garrison which stopped any attempts at protest. When the Russian garrison left Bulgaria almost entirely, Dadiani's monarchy was left in great threat.\n\nFor three years now the Bulgarian regime has miraculously held on, but this may soon be over. Opposition movements are rapidly gaining strength and are already threatening the Tsarist regime right now.\n\nOne of the proposed leaders of the new Bulgaria is also from the Dadiani family, but despite his kinship, the socialist  §OShalva Dadiani§!, who holds opposition views. Also one of the candidates is the leader of the §CLiberal Party of Bulgaria Alexander Girkinov§!, who advocates close cooperation with Britain and Germany.\n\n§RBulgaria is in a precarious position and no one knows what will happen to it in the near future.§!"
   
   autonomy_Formal_Imperial_Autonomy:0 "Nominal Imperial Autonomy"
+  
+  hungary.21.t:0 "CRISIS IN BULGARIA"
+  hungary.21.d:0 "The Bulgarian monarchy seems to be going under. Nicholas II has been tsar of Bulgaria for almost 30 years and has recently come under great criticism from the opposition, resulting in his popularity among the people. In recent weeks, angry people have taken to the streets demanding radical social reforms and the abolition of absolute monarchy. Nicholas II could not resist the onslaught and abdicated the throne.\n\nShalva Dadiani took over, social reforms were immediately instituted, and a constitutional monarchy was established. The overthrow of the former monarchy effectively meant the fall of Russian rule over Bulgaria, but Russia's response had not yet been forthcoming."
+  hungary.21.a:0 "Expected"
+  
+  bul.1.t:0 "Crisis of Monarchy"
+  bul.1.d:0 "The Bulgarian monarchy came under popular pressure. People are going out in droves and demanding the abdication of Nicholas II. While the opposition presses the government for more and more reforms."
+  bul.1.a:0 "There is no choice.. anymore"

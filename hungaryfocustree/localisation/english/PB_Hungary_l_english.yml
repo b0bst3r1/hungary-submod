@@ -1,5 +1,9 @@
 ﻿  l_english:
   
+  #Leader Trait
+  
+  PB_The_Great_Founder:0 "The Great Founder"
+  
   #FOCUS
   
   HUN_Partycrisis:0 "Jacobin's Party Crisis" 
@@ -498,7 +502,7 @@
   Budapest_research_desc:0 "The Budapest Research Cooperation was founded in Budapest with the goal of exchanging technological discoveries between Hungarian scientists and furthering their joint advancement for the benefit of mankind."  
   BOSPHORUS2_STRAIT:0 "Bosphorus Strait"
   
-  workers_front:0 "International Workers Front"
+  workers_front:0 "Europe Workers Front"
   Sofia_Entente:0 "Sofian Entente"
   anti_romanian:0 "Anti-Romanian Front"
   balkan_union:0 "Balkan Union"
@@ -510,8 +514,7 @@
   #The Great Balkan War
   
   HUN_great_balkan_war:0 "The Great Balkan War"
-  
-  
+  HUN_great_balkan_war_desc:0 "\n\n\n\n\n\nThe Hungarian People's Republic came under attack by reactionary powers wishing to destroy the legacy of the revolution. The Romanian and Serbian armies have sneakily entered Hungarian and Bulgarian territory. The enemy enjoys great support from the foreign powers [§GRussia§! and §BFrance§!], who are interested in defeating the revolution. Our great nation is forced to unite together to expel the enemy from our territory and defeat them!\n\nTo capitulate §HUnited Principalities of Moldavia and Wallachia§! you need to controle §Ylasi§! and §YBucharest§!\nTo capitulate §RSerbia§! you need to controle §YBelgrade§!, §YSarajevo§!, §YPodgorica§! and §YSkopje§!"
   
   HUN_mobilization_efforts:0 "Mobilization Effots"
   HUN_ask_japan_for_equipment:0 "Ask Japan for Equipment"

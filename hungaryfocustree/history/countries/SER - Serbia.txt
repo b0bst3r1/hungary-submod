@@ -116,7 +116,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Alexander I"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "gfx/leaders/SER/Portrait_alexander.dds"
+	picture = "gfx/leaders/SER/Portrait_Alexander_I.dds"
 	ideology = CN_VARIANT_01
 }
 
@@ -135,9 +135,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Jože Moskrič"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/SER/Portrait_ser_Jože_Moskrič.dds"
 	ideology = SS_VARIANT_01
 }
 

@@ -1,4 +1,23 @@
 spriteTypes = {
+
+   #Fall of Cities#
+  
+	  spriteType = {
+		name = "GFX_PB_0_news_event_PBNews_Fall_of_Bucharest"
+		texturefile = "GFX/event_pictures/captured_cities/fall_of_bucharest.dds"
+	}
+	
+		  spriteType = {
+		name = "GFX_PB_0_news_event_PBNews_Fall_of_lasi"
+		texturefile = "GFX/event_pictures/captured_cities/fall_of_lasi.dds"
+	}
+	
+		  spriteType = {
+		name = "GFX_PB_0_news_event_PBNews_Fall_of_athens"
+		texturefile = "GFX/event_pictures/captured_cities/fall_of_athens.dds"
+	}	
+
+  ############
 		
 	  spriteType = {
 		name = "GFX_news_event_hun_900"
@@ -168,7 +187,10 @@ spriteTypes = {
 			  spriteType = {
 		name = "GFX_news_event_hun_931"
 		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_931.dds"
+	}
+
+			  spriteType = {
+		name = "GFX_news_event_hun_932"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/news_event_hun_932.dds"
 	}	
-	
-	
 }

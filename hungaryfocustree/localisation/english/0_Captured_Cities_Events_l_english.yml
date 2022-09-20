@@ -1,0 +1,33 @@
+﻿l_english:
+
+  ##########################
+  # EVENTS
+  ##########################
+  # NOTE - EVENTS WILL GO OVER FRAME IF LONGER THAN TEN (10) LINES. CHECK YOUR TEXT.
+  ##########################
+  
+  
+SMcity.1.t:0 "Reds in Belgrade"
+SMcity.1.d:0 "The capital of Greater Serbia, Belgrade, after bloody battles ended up in the hands of the Hungarian Red Army. Serbia, together with Romania, resolutely attacked Bulgaria and Hungary, but unexpectedly encountered considerable resistance and retreated as far as Belgrade. Some of the elite who had not managed to escape from the capital were arrested while the monarch fled to the south of the country."
+SMcity.1.a:0 "The revolution spreads"
+SMcity.1.b:0 "The beginning of the end"
+SMcity.1.c:0 "The fight goes on!"
+
+SMcity.2.t:0 "Fall of Iasi"
+SMcity.2.d:0 "The former capital of the Principality of Moldavia and the current capital of the Danubian principalities, Iasi, fell under the onslaught of Hungarian troops. The city was firmly defended by Moldovans and Russian volunteers, but despite this the capital fell in an unequal battle. Probably the fall of this city means the fall of the entire state of the united Danubian principalities and a significant weakening of Russian influence in the Balkans."
+SMcity.2.a:0 "Another Win of Red Army"
+SMcity.2.b:0 "Moldova in the Our Hands!"
+SMcity.2.c:0 "The fight goes on!"
+
+SMcity.3.t:0 "Fall of Bucharest"
+SMcity.3.d:0 "The former capital of the Principality of Wallachia, Bucharest, fell under the onslaught of Hungarian troops. The city was the main line of defense on the Romanian-Hungarian front and its fall makes it many times more difficult for the anti-Hungarian coalition to continue the war. In the event of a final Hungarian victory in the war, the city is planned to become the capital of the new Romanian workers' state."
+SMcity.3.a:0 "Is this the end?"
+SMcity.3.b:0 "Wallachia is defeated!"
+SMcity.3.c:0 "It doesn't mean anything for us"
+
+SMcity.4.t:0 "Fall of Athens"
+SMcity.4.d:0 "Hungarian-Bulgarian troops after bloody battles were able to take Athens by storm. Despite the resilience of Greek fighters defending everything from a simple village to the Parthenon or Acropolis, the city fell. Now the city is ruled by the occupation administration, but it is likely that a peace treaty will soon be concluded between the two sides."
+SMcity.4.a:0 "Greek monarchy goes down"
+SMcity.4.b:0 "Long live the revolution!"
+SMcity.4.c:0 "The fight goes on!"
+

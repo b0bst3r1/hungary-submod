@@ -405,7 +405,6 @@ set_autonomy = {
 
 give_guarantee = PRS
 give_military_access = PRS
-give_guarantee = GRE
 give_military_access = GRE
 
 RUS = { 
