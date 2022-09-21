@@ -44,7 +44,16 @@ on_actions = {
 					days = 150
 				}
 			}
-		}		
+		}
+
+		#effect = {
+			#BUL = {
+				#country_event = { 	#shit doesnt work in bulgaria file 
+				  #id = bul.1
+					#days = 200
+				#}
+			#}
+		#}		
 	}
  }
   

@@ -5,17 +5,40 @@
 add_namespace = greatbalkwar
 add_namespace = balkwarpeace
 
+add_namespace = balkan.test
+
+country_event = {		#Test balkan war
+	id =  balkan.test.1
+	title =  balkan.test.1.t
+	desc =  balkan.test.1.d
+	picture = GFX_report_PB_Generic_War_Event
+	is_triggered_only = yes
+	fire_only_once = yes	
+	
+	option = { 
+		name =  balkan.test.1.a
+
+		ai_chance = {
+			factor = 100
+        }
+
+		ROM = {
+			country_event = { id = greatbalkwar.7 days = 2 }
+		}	   
+	   
+		BUL = {
+			country_event = { id = bul.1 days = 1 }
+		}
+    }
+}
+
 country_event = {		#PrepareForWar - Romania
 	id = greatbalkwar.1
 	title = greatbalkwar.1.t
 	desc = greatbalkwar.1.d
-	picture = GFX_report_PB_Generic_War_Event
-
-	trigger = {
-		tag = ROM
-		date > 1934.4.1
-	}
-
+	picture = GFX_report_PB_Generic_War_Event	
+	is_triggered_only = yes
+	
 	mean_time_to_happen = {
 		days = 90
 	}
@@ -56,8 +79,8 @@ country_event = {		#PrepareForWar - Romania
 		TUR = {
 			country_event = { id = greatbalkwar.2 days = 1 }
 		}		
-	}
-  }
+	 }
+   }
 }
 
 

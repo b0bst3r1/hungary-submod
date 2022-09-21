@@ -70,7 +70,7 @@ country_event = {
 	id = hungarian.3
 	title = hungarian.3.t
 	desc = hungarian.3.d
-	picture = GFX)news_event_hun_900
+	picture = GFX_news_event_hun_900
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -746,6 +746,10 @@ set_popularities = {
 	option = {
 		name = hungarian.20.a
 		
+		HUN = {
+			country_event = { id = hungarian.29 days = 5 }		
+		      }
+			  
 	remove_ideas = {
 	HUN_Vago_EM
 	}	
@@ -754,14 +758,10 @@ set_popularities = {
 		news_event = {
 			id = hungary.10
 			days = 1
-			
-			HUN = {
-			country_event = { id = hungarian.29 days = 5 }			
-		}	
-      }				   
-    }
+			}	
+         }				   
+      }
   }
-}
 	
       	   country_event = {  #BALKCHAOS
 	id = hungarian.21
@@ -1079,7 +1079,6 @@ set_popularities = {
         custom_effect_tooltip = Revolutionary_Zeal_0.04_increase 		
 		
 		add_stability = 0.1
-		popularity = 0.05
 		add_war_support = 0.1
 		
 			add_to_variable = {
@@ -1339,7 +1338,8 @@ create_country_leader = {
 				add_popularity = {
 					remove_ideas = HUN_party_opposition
 				}
-			}			
+			}
+        }			
       
 	option = {
 		name = hungarian.33.c #Forgive	
@@ -1366,7 +1366,6 @@ create_country_leader = {
 			}		
          }		 
       }
-   }
    
      	   country_event = { #PurgeGeneralsBelaKun
 	id = hungarian.34

@@ -41,7 +41,8 @@ set_country_flag = ruthenia_undefined
 
 set_research_slots = 3
 
-#CHARACTERS
+#Characters
+
 recruit_character = HUN_Rakosi
 recruit_character = HUN_Jozsef_Pogan
 recruit_character = HUN_Otto_Korvin

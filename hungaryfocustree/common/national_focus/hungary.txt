@@ -92,6 +92,14 @@ focus_tree = {
 		id = hun_victory
 		icon = GFX_hun_victory
 		cost = 0
+		
+		available = {
+			has_country_leader = {
+				name = "idk"
+				ruling_only = yes
+			}
+		}
+		
 		x = 41
 		y = 1
 

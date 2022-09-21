@@ -1,0 +1,15 @@
+#on_actions = {
+
+	#on_startup = {
+		#effect = {
+			#ROM = {
+				#country_event = {
+				  #id = greatbalkwar.1
+					#days = 450
+				#}
+			#}
+		#}
+	#}
+#} 
+  
+  

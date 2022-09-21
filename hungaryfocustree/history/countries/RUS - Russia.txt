@@ -348,13 +348,6 @@ PB_Set_Max_State_Focus = yes
 
 set_convoys = 366
 
-
-set_autonomy = {
-	target = BUL
-	autonomous_state = autonomy_PB_Imperial_Autonomy
-	freedom_level = 0.6
-}
-
 set_autonomy = {
 	target = POL
 	autonomous_state = autonomy_PB_Imperial_Autonomy

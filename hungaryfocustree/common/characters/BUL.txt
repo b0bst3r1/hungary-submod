@@ -1,0 +1,117 @@
+characters={
+	
+	BUL_Damyan_Velchev={
+		name="Damyan Velchev"
+		portraits={
+			army={
+				large="GFX_portrait_general_BUL_Damyan_Velchev"
+				small="GFX_portrait_general_BUL_Damyan_Velchev"		
+			}
+		}
+	field_marshal = {
+	traits = { trickster infantry_expert logistics_wizard harsh_leader }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+	legacy_id = 00001	
+		}
+	}
+	
+	BUL_Vladimir_Stoychev={
+		name="Vladimir Stoychev"
+		portraits={
+			army={
+				large="GFX_portrait_general_BUL_Vladimir_Stoychev"
+				small="GFX_portrait_general_BUL_Vladimir_Stoychev"
+			}
+		}
+	corps_commander = {
+	traits = { brilliant_strategist infantry_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+	legacy_id = 00002
+		}
+	}
+	
+	BUL_Vasil_Tenev_Boydev={
+		name="Vasil Tenev Boydev"
+		portraits={
+			army={
+				large="GFX_portrait_general_BUL_Vasil_Boydev"
+				small="GFX_portrait_general_BUL_Vasil_Boydev"	
+			}
+		}
+	corps_commander = {
+	traits = { trait_reckless harsh_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+	legacy_id = 00003
+		}
+	}
+	
+	BUL_Konstantin_Ivanov_Bekyarov={
+		name="Konstantin Ivanov Bekyarov"
+		portraits={
+			army={
+				large="GFX_portrait_general_BUL_Bekyarov"
+				small="GFX_portrait_general_BUL_Bekyarov"			
+			}
+		}
+	corps_commander = {
+	traits = { career_officer infantry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+	legacy_id = 00004	
+		}
+	}
+	
+	BUL_Konstantin_Ludvig_Lukash={
+		name="Konstantin Ludvig Lukash"
+		portraits={
+			army={
+				large="GFX_portrait_general_BUL_Konstantin"
+				small="GFX_portrait_general_BUL_Konstantin"		
+			}
+		}
+	corps_commander = {
+	traits = { infantry_officer war_hero skilled_staffer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	legacy_id = 00005	
+		}
+	}
+	
+	
+	BUL_prince_kirill={
+		name="Kirill of Saxe-Coburg and Gotha"
+		portraits={
+			army={
+				large="GFX_portrait_general_BUL_Prince_Kirill"
+				small="GFX_portrait_general_BUL_Prince_Kirill"				
+			}
+		}
+	field_marshal = {
+	traits = { career_officer politically_connected art_leader fortress_buster }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	legacy_id = 00006	
+		}
+	}
+}

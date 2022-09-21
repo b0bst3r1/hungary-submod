@@ -1,30 +1,34 @@
 #Bulgarian Events#
 
-add_namespace = bul
+add_namespace = bulgar
 
 country_event = {
-	id = bul.1
-	title = bul.1.t
-	desc = bul.1.d
-	picture = GFX
+	id = bulgar.1
+	title = bulgar.1.t
+	desc = bulgar.1.d
+	picture = GFX_report_PB_Soldiers_Riot
+	
 	is_triggered_only = yes
 	
 	fire_only_once = yes
 	
 	option = {
-		name = bul.1.a
+		name = bulgar.1.a
 		
-		RUS = {
-		end_puppet = BUL
-		   }
+			hidden_effect = {
+		news_event = {
+			id = hungary.21
+			days = 1
+		} 
+      }		
 		   
        set_politics = {
 	     ruling_party = ss
        }
 
 	   remove_ideas = {
-		remove_idea = BUL_rus_influence
-		remove_idea = BUL_unpopular_tsar				
+	     BUL_rus_influence
+	     BUL_unpopular_tsar				
 		}	   
 		
 		set_cosmetic_tag = BUL_after_tsar
@@ -39,8 +43,7 @@ country_event = {
 		ideology = SS_VARIANT_01
 		
         clr_country_flag = Tag_in_Russian_Sphere
-        clr_country_flag = Megacorp_Tesla_Dominant
-        clr_country_flag = PB_Russian_Autonomy		
+        clr_country_flag = Megacorp_Tesla_Dominant	
 		
 		}
 	 }
