@@ -141,6 +141,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_TUR_Liberation_War"
+		texturefile = "gfx/interface/ideas/Turkey/TUR_liberation_war.dds"
+	}	
+	
+	spriteType = {
 		name = "GFX_idea_TUR_national_disgrace"
 		texturefile = "gfx/interface/ideas/Turkey/TUR_national_disgrace.dds"
 	}	

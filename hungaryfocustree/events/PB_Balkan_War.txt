@@ -25,10 +25,6 @@ country_event = {		#Test balkan war
 		ROM = {
 			country_event = { id = greatbalkwar.7 days = 2 }
 		}	   
-	   
-		BUL = {
-			country_event = { id = bulgar.1 days = 1 }
-		}
     }
 }
 
@@ -190,7 +186,8 @@ country_event = {		#JoinTheWar as Turkey
 			}
 			
 		remove_ideas = PB_HUN_Balkan_Powderkeg
-        add_ideas = PB_HUN_Great_Balkan_War		
+        add_ideas = PB_HUN_Great_Balkan_War
+        add_ideas = TUR_Liberation_War		
 		  }				  
 
 declare_war_on = {
@@ -525,6 +522,10 @@ set_popularities = {
 			country_event = { id = balkwarpeace.5 days = 2 }			
 		}
 		
+		GRE = {
+			country_event = { id = balkwarpeace.7 days = 10 }			
+		}		
+		
 		news_event = {
 			id = hungary.8
 			days = 9
@@ -723,4 +724,205 @@ set_popularities = {
 		name = balkwarpeace.5.b #What is MNT
 	 	  
    }
+}
+
+country_event = {		#Great Balkan War - Serbian Victory against Hungary
+	id = balkwarpeace.5
+	title = balkwarpeace.5.t
+	desc = balkwarpeace.5.d
+	picture = GFX_report_PB_Generic_War_Event
+
+	is_triggered_only = yes
+
+	option = {
+		name = balkwarpeace.5.a
+
+		ai_chance = {
+			factor = 50
+		}
+		
+		SER = {
+			annex_country = {
+				target = CRO
+				transfer_troops = yes
+			}
+
+			annex_country = {
+				target = BUL
+				transfer_troops = yes
+			}
+
+			transfer_state = 45
+			add_state_core = 45
+			add_state_core = 109
+			add_state_core = 794
+		}
+
+		ROM = {
+			transfer_state = 764
+			transfer_state = 82
+			transfer_state = 83
+			transfer_state = 76
+
+			add_state_core = 764
+			add_state_core = 82
+			add_state_core = 83
+			add_state_core = 76
+		}
+	}		
+
+		add_political_power = 150
+
+		HUN = {
+			add_timed_idea = {
+				idea = PB_HUN_Great_Balkan_War_Disarmament
+				days = 2000
+			}
+
+			country_event = { id = balkwar.6 days = 5 }
+		}
+
+		ROM = {
+			remove_ideas = PB_HUN_Balkan_Powderkeg
+		}
+
+		SER = {
+			remove_ideas = PB_HUN_Balkan_Powderkeg
+		}
+
+
+		SER = {
+			dismantle_faction = yes
+		}
+				
+
+		news_event = {
+			id = PBNews.24
+			days = 1
+		}
+	}
+}
+
+country_event = {		#Great Balkan War Defeat - Hungary - Reactionary Coup
+	id = balkwarpeace.6
+	title = balkwarpeace.6.t
+	desc = balkwarpeace.6.d
+	picture = GFX_report_PB_Generic_War_Event
+
+	is_triggered_only = yes
+
+	option = { #Royalists retake control
+		name = balkwarpeace.6.a
+
+		ai_chance = {
+			factor = 50
+		}
+
+		add_political_power = -200
+
+		add_stability = -0.3
+
+		add_ideas = PB_Military_Government
+		add_ideas = PB_State_Press
+		add_ideas = PB_No_Voting
+
+		set_politics = {
+			ruling_party = ds
+		}
+
+		add_popularity = {
+			ideology = ds
+			popularity = 0.2
+		}
+
+		create_country_leader = {
+			name = "Regency Council"
+			desc = "PB_NO_DESC"
+			picture = "Portrait_HUN_Regency_Council.dds"
+			expire = "1965.1.1"
+			ideology = DS_VARIANT_02
+		}
+
+		set_cosmetic_tag = HUN_Monarchy_Restored
+	}
+}
+
+country_event = {		#Great Balkan War Defeat - Greece - Athens Revolution
+	id = balkwarpeace.7
+	title = balkwarpeace.7.t
+	desc = balkwarpeace.7.d
+	picture = GFX_report_PB_Generic_War_Event
+
+	is_triggered_only = yes
+
+
+	option = { #Republic is Declared
+		name = balkwarpeace.7.a
+
+		ai_chance = {
+			factor = 60
+		}
+
+		add_political_power = -200
+
+		add_stability = -0.5
+
+		add_ideas = PB_Parliamentary_Republic
+		add_ideas = PB_Free_Press
+		add_ideas = PB_Universal_Suffrage
+
+		remove_ideas = PB_GRE_Fading_Democracy
+
+		set_politics = {
+			ruling_party = cn
+		}
+
+		add_popularity = {
+			ideology = cn
+			popularity = 0.2
+		}
+
+		create_country_leader = {
+			name = "Panagis Tsaldaris"
+			desc = "PB_NO_DESC"
+			picture = "Portrait_GRE_Panagis_Tsaldaris.dds"
+			expire = "1965.1.1"
+			ideology = CN_VARIANT_02
+		}
+	}
+
+	option = { #Military Seizes Control
+		name = balkwarpeace.7.b
+
+		ai_chance = {
+			factor = 40
+		}
+
+		add_political_power = -200
+
+		add_stability = -0.5
+
+		add_ideas = PB_Military_Government
+		add_ideas = PB_State_Press
+		add_ideas = PB_No_Voting
+
+		remove_ideas = PB_GRE_Fading_Democracy
+
+		set_politics = {
+			ruling_party = rc
+		}
+
+		add_popularity = {
+			ideology = rc
+			popularity = 0.2
+		}
+
+		create_country_leader = {
+			name = "Alexandros Papagos"
+			desc = "PB_NO_DESC"
+			picture = "Portrait_GRE_Alexandros_Papagos.dds"
+			expire = "1965.1.1"
+			ideology = RC_VARIANT_01
+		}
+	}
 }      

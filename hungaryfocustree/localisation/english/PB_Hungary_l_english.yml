@@ -347,8 +347,6 @@
   HUN_revival_of_organisms_desc:0 "The tremendous success of our scientists in the field of physiology provides the country with several significant advantages: we get a large number of workers at a relatively low cost compared to robots, and in consequence, many workers are freed from their current duties and can be assigned to any other needs of the state."
   HUN_party_opposition:0 "Party Opposition"
   HUN_party_opposition_desc:0 "After the coup d'état, the country was faced with the issue of unresolved party opposition. Although the leaders of the §Bright-wing§! and §Rleft-wing§! party opposition are already in custody, the rest are still fulfilling their roles. They act badly for the state and try to make it worse."
-  TUR_national_disgrace:0 "National Disgrace"
-  TUR_national_disgrace_desc:0 "Recently the Ottoman Empire stretched from Constantinople to Alexandria and Mecca, but the Empire was defeated under the onslaught of Russia. Only the name remains of the once greatest Empire, the menace of Europe and defender of the Islamic world. The Ottomans are disgraced - Kurdistan has gained independence, Greece controls the west coast of Anatolia, and the Russian vassal controls the eastern part.\n\nAfter all the defeats, people no longer believe in the Ottoman Empire. Maybe Turkey should begin a new phase in its history: §Ba republic.§!"
   HUN_socialist_self_managment:0 "Socialist Self-Managment"
   HUN_socialist_self_managment_desc:0 "The basic idea was to transfer the management of enterprises, organizations, institutions and administrative-territorial commonwealths of the state (cities, communities, federal entities) directly into the hands of works councils, factory administrations, various associations and communities of citizens at each region of Hungary, thereby separating the state from internal economic processes and personnel issues, which were now the responsibility of regional authorities, formed on the principles of self-government."
   HUN_socialism_human_face:0 "Socialism with the Human Face"
@@ -409,6 +407,11 @@
   PB_HUN_German_Eco_Treaty:0 "German Economic Treaty"
   
   PB_ROM_German_Eco_Treaty:0 "German Economic Treaty"
+  
+  TUR_national_disgrace:0 "National Disgrace"
+  TUR_national_disgrace_desc:0 "Recently the Ottoman Empire stretched from Constantinople to Alexandria and Mecca, but the Empire was defeated under the onslaught of Russia. Only the name remains of the once greatest Empire, the menace of Europe and defender of the Islamic world. The Ottomans are disgraced - Kurdistan has gained independence, Greece controls the west coast of Anatolia, and the Russian vassal controls the eastern part.\n\nAfter all the defeats, people no longer believe in the Ottoman Empire. Maybe Turkey should begin a new phase in its history: §Ba republic.§!"
+  TUR_Liberation_War:0 "National-Liberation War"
+  TUR_Liberation_War_desc:0 " "  
   
   #Tooltips#
   

@@ -125,14 +125,9 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-		name = hungarian.4.a
-		
-		every_country = {
-			set_temp_variable = { super_id = 81 }
-			PB_Fire_Super_Event = yes
-		}		
+		name = hungarian.4.a		
 
-   }
+    }
   }
      	   country_event = {
 	id = hungarian.5

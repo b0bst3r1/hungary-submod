@@ -152,7 +152,8 @@ on_daily_TUR = {	#TurkeyCapitulation
 	white_peace = SER
 	white_peace = ROM
 	white_peace = GRE	
-	remove_ideas = PB_HUN_Great_Balkan_War	
+	remove_ideas = PB_HUN_Great_Balkan_War
+    remove_ideas = TUR_Liberation_War	
 	
 	  }
 
@@ -176,6 +177,11 @@ on_daily_HUN = {	#HungaryWonPeace
 			PB_Fire_Super_Event = yes
 		}
 		
+		news_event = {
+			id = PBNews.23
+			hours = 1 
+		}		
+		
 	 	   country_event = { id = balkwarpeace.1}
            country_event = { id = balkwarpeace.3}		   
 	    }
@@ -196,8 +202,21 @@ on_daily_SER = {	#SerbiaWonPeace
 			PB_Fire_Super_Event = yes
 		}
 		
-	 	   country_event = { id = balkwarpeace.1}
-	 	   country_event = { id = balkwarpeace.1}		   
+		news_event = {
+			id = PBNews.24
+			hours = 1
+		}		
+		
+		RUS = {
+		
+set_autonomy = {
+	target = ROM
+	autonomous_state = autonomy_PB_Imperial_Autonomy
+	freedom_level = 0.3
+   }
+ }		
+		
+	 	   country_event = { id = balkwarpeace.5}		   
 	    }
       }
     }	
