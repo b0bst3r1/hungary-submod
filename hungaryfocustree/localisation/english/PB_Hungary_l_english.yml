@@ -1,5 +1,13 @@
 ﻿  l_english:
   
+  SPEVNT_Hungary_Win_Balkan_War:0 "HUNGARY DOMINATES THE BALKANS"
+  SPEVNT_Hungary_Win_Balkan_War_TEXT:0 "Communism is the riddle of history solved, and it knows itself to be this solution.\n\n§O-Karl Marx-§!"
+  SPEVNT_Hungary_Win_Balkan_War_CLOSETEXT:0 "§OREDS MARCH THE BALKANS§!"
+  
+  SPEVNT_Serbia_Win_Balkan_War:0 "NEW ORDER IN THE BALKANS"
+  SPEVNT_Serbia_Win_Balkan_War_TEXT:0 "The Communists are waging an unending war against civilization to destroy all institutions of power, all governments, all states in the world. They seek to create an international alliance of beggars, criminals, mediocrities, rebels, sick, retards, and fools to encompass the whole world.\n\n§O-Winston Churchill-§!"
+  SPEVNT_Serbia_Win_Balkan_War_CLOSETEXT:0 "§OTRIUPH OF ANTI-JACOBIN COALITION§!"  
+  
   #Leader Trait
   
   PB_The_Great_Founder:0 "The Great Founder"
@@ -404,6 +412,8 @@
   
   #Tooltips#
   
+  HUN_serbian_red_army:0 "Two Serbian divisions will be created" 
+  HUN_romanian_red_army:0 "Two Romanian divisions will be created"  
   HUN_albania_neutrality:0 "§RAlbania§! will keep §Gneutrality§! in the §RGreat Balkan War§!"
   hun_cro_accepted:0 "§RCroatian Culture§! will be §Gaccepted§!"
   hun_rut_accepted:0 "§YRuthenian Culture§! will be §Gaccepted§!"  
@@ -502,19 +512,22 @@
   Budapest_research_desc:0 "The Budapest Research Cooperation was founded in Budapest with the goal of exchanging technological discoveries between Hungarian scientists and furthering their joint advancement for the benefit of mankind."  
   BOSPHORUS2_STRAIT:0 "Bosphorus Strait"
   
+  #Aliances 
+  
   workers_front:0 "Europe Workers Front"
   Sofia_Entente:0 "Sofian Entente"
   anti_romanian:0 "Anti-Romanian Front"
   balkan_union:0 "Balkan Union"
   zagreb_treaty:0 "Organization of Zagreb Treaty"
-  budapest_entente:0 "Budapest Entente"  
+  budapest_entente:0 "Budapest Entente"
+  anti_jacob:0 "Counter-Revolutionary Front"  
   
   #DECISIONS#
   
   #The Great Balkan War
   
   HUN_great_balkan_war:0 "The Great Balkan War"
-  HUN_great_balkan_war_desc:0 "\n\n\n\n\n\nThe Hungarian People's Republic came under attack by reactionary powers wishing to destroy the legacy of the revolution. The Romanian and Serbian armies have sneakily entered Hungarian and Bulgarian territory. The enemy enjoys great support from the foreign powers [§GRussia§! and §BFrance§!], who are interested in defeating the revolution. Our great nation is forced to unite together to expel the enemy from our territory and defeat them!\n\nTo capitulate §HUnited Principalities of Moldavia and Wallachia§! you need to controle §Ylasi§! and §YBucharest§!\nTo capitulate §RSerbia§! you need to controle §YBelgrade§!, §YSarajevo§!, §YPodgorica§! and §YSkopje§!"
+  HUN_great_balkan_war_desc:0 "\n\n\n\n\n\n§RThe Hungarian People's Republic§! came under attack by reactionary powers wishing to destroy the legacy of the revolution. The Romanian and Serbian armies have sneakily entered Hungarian and Bulgarian territory. The enemy enjoys great support from the foreign powers [§GRussia§! and §BFrance§!], who are interested in defeating the revolution. Our great nation is forced to unite together to expel the enemy from our territory and defeat them!\n\nTo capitulate a country you must occupy all of its important cities (this also applies to us and our allies):\n\n [get_bucharest_control]                           [get_budapest_control]\n [get_lasi_control]                                        [get_novisad_control]\n                                                                                             [get_debrecen_control]\n [get_belgrade_control]                                    [get_uschgorod_control]\n [get_sarajevo_control]\n [get_skopje_control]                                  [get_sofia_control]\n                                                                                             [get_plovdiv_control]\n [get_constantinoples_control]                 [get_pleven_control]\n [get_izmir_control]\n [get_aydin_control]                                    [get_osman_control]\n                                                                                             [get_antalya_control]\n                                                                                             [get_adana_control]"
   
   HUN_mobilization_efforts:0 "Mobilization Effots"
   HUN_ask_japan_for_equipment:0 "Ask Japan for Equipment"
@@ -523,7 +536,83 @@
   HUN_operation_villamlas:0 "Operation Villámháború"
   HUN_operation_Gorogorszag:0 "Operation Görögország"
   HUN_found_the_romanian_red_army:0 "Found the Romanian Red Army"
-  HUN_found_the_serbian_red_army:0 "Found the Serbian Red Army"  
+  HUN_found_the_serbian_red_army:0 "Found the Serbian Red Army"
+  HUN_Grain_Stocks_for_War_Emergency:0 "Reduce Civilian Rations for the War Effort"
+  HUN_Grain_Stocks_for_War_Emergency_desc:0 "Our Army is running out of rations! Without a full belly a soldier can not fight and if the soldier does not fight, the war is lost! We are forced to greatly reduce civilian rations to our soldiers can eat."
+  HUN_Trains_for_Army_Emergency:0 "Confiscate Civilian Trains for the War Effort"
+  PB_Trains_for_Army_Emergency_desc:0 "We are criticially running low on trains for the war effort! Something drastic has to be down or our supply system will collapse. To avoid this catastrophy we have to confiscate several civilian used trains, no matter how the public thinks about this."  
+
+  GBW_Bucharest_under_hun:0 "§YBucharest§! is under §Gour§! control"
+  GBW_Bucharest_under_friend:0 "§YBucharest§! is under §Cfriendly§! control"
+  GBW_Bucharest_under_enemy:0 "§YBucharest§! is under §Renemy§! control"
+  
+  GBW_lasi_under_hun:0 "§Ylasi§! is under §Gour§! control"
+  GBW_lasi_under_friend:0 "§Ylasi§! is under §Cfriendly§! control"
+  GBW_lasi_under_enemy:0 "§Ylasi§! is under §Renemy§! control"
+
+  GBW_belgrade_under_hun:0 "§YBelgrade§! is under §Gour§! control"
+  GBW_belgrade_under_friend:0 "§YBelgrade§! is under §Cfriendly§! control"
+  GBW_belgrade_under_enemy:0 "§YBelgrade§! is under §Renemy§! control"
+
+  GBW_sarajevo_under_hun:0 "§YSarajevo§! is under §Gour§! control"
+  GBW_sarajevo_under_friend:0 "§YSarajevo§! is under §Cfriendly§! control"
+  GBW_sarajevo_under_enemy:0 "§YSarajevo§! is under §Renemy§! control"
+
+  GBW_skopje_under_hun:0 "§YShkupi§! is under §Gour§! control"
+  GBW_skopje_under_friend:0 "§YShkupi§! is under §Cfriendly§! control"
+  GBW_skopje_under_enemy:0 "§YShkupi§! is under §Renemy§! control"
+  
+  GBW_constantinoples_under_hun:0 "§YConstantinople§! is under §Gour§! control"
+  GBW_constantinoples_under_friend:0 "§YConstantinople§! is under §Cfriendly§! control"
+  GBW_constantinoples_under_enemy:0 "§YConstantinople§! is under §Renemy§! control"
+
+  GBW_izmir_under_hun:0 "§YIzmir§! is under §Gour§! control"
+  GBW_izmir_under_friend:0 "§YIzmir§! is under §Cfriendly§! control"
+  GBW_izmir_under_enemy:0 "§YIzmir§! is under §Renemy§! control"
+
+  GBW_aydin_under_hun:0 "§YAydın§! is under §Gour§! control"
+  GBW_aydin_under_friend:0 "§YAydın§! is under §Cfriendly§! control"
+  GBW_aydin_under_enemy:0 "§YAydın§! is under §Renemy§! control"
+
+  GBW_budapest_under_hun:0 "§YBudapest§! is under §Gour§! control"
+  GBW_budapest_under_friend:0 "§YBudapest§! is under §Cfriendly§! control"
+  GBW_budapest_under_enemy:0 "§YBudapest§! is under §Renemy§! control"  
+
+  GBW_novisad_under_hun:0 "§YNovi Sad§! is under §Gour§! control"
+  GBW_novisad_under_friend:0 "§YNovi Sad§! is under §Cfriendly§! control"
+  GBW_novisad_under_enemy:0 "§YNovi Sad§! is under §Renemy§! control"
+
+  GBW_debrecen_under_hun:0 "§YDebrecen§! is under §Gour§! control"
+  GBW_debrecen_under_friend:0 "§YDebrecen§! is under §Cfriendly§! control"
+  GBW_debrecen_under_enemy:0 "§YDebrecen§! is under §Renemy§! control"
+
+  GBW_uschgorod_under_hun:0 "§Yschgorod§! is under §Gour§! control"
+  GBW_uschgorod_under_friend:0 "§YUschgorod§! is under §Cfriendly§! control"
+  GBW_uschgorod_under_enemy:0 "§YUschgorod§! is under §Renemy§! control"
+
+  GBW_sofia_under_hun:0 "§YSofia§! is under §Gour§! control"
+  GBW_sofia_under_friend:0 "§YSofia§! is under §Cfriendly§! control"
+  GBW_sofia_under_enemy:0 "§YSofia§! is under §Renemy§! control" 
+
+  GBW_plovdiv_under_hun:0 "§YPlovdiv§! is under §Gour§! control"
+  GBW_plovdiv_under_friend:0 "§YPlovdiv§! is under §Cfriendly§! control"
+  GBW_plovdiv_under_enemy:0 "§YPlovdiv§! is under §Renemy§! control"
+
+  GBW_pleven_under_hun:0 "§YPleven§! is under §Gour§! control"
+  GBW_pleven_under_friend:0 "§YPleven§! is under §Cfriendly§! control"
+  GBW_pleven_under_enemy:0 "§YPleven§! is under §Renemy§! control"
+
+  GBW_osman_under_hun:0 "§YOsman§! is under §Gour§! control"
+  GBW_osman_under_friend:0 "§YOsman§! is under §Cfriendly§! control"
+  GBW_osman_under_enemy:0 "§YOsman§! is under §Renemy§! control"
+
+  GBW_antalya_under_hun:0 "§YAntalya§! is under §Gour§! control"
+  GBW_antalya_under_friend:0 "§YAntalya§! is under §Cfriendly§! control"
+  GBW_antalya_under_enemy:0 "§YAntalya§! is under §Renemy§! control"
+
+  GBW_adana_under_hun:0 "§YAdana§! is under §Gour§! control"
+  GBW_adana_under_friend:0 "§YAdana§! is under §Cfriendly§! control"
+  GBW_adana_under_enemy:0 "§YAdana§! is under §Renemy§! control"  
   
   
   #SHOCK Therapy
@@ -596,6 +685,10 @@
   
   #War is upon us#
   
+  HUN_Grain_Stocks_for_War:0 "Open the Grains Stocks for the Army"
+  HUN_Grain_Stocks_for_War_desc:0 "Our quartermaster generals have suggested to gather more unused grain stocks for food supplies for the army."  
+  HUN_Trains_for_Army:0 "Trains for the Army"
+  HUN_Trains_for_Army_desc:0 "Our army is running low on Trains. To ensure that the army will not face a supply crisis we will use unused civilian trains to help supply the army."    
   HUN_war_on_horizon:0 "The war is upon us"
   HUN_war_on_horizon_desc:0 "\n\n\n\n\n\nAfter 20 years of armistice, war is coming to the Balkans again. Russian influence in the region is fading and the countries of its zone of influence are beginning to threaten each other. Romania claims the territory of North Dobruja, Bulgaria claims Thrace as well as Serbian and Greek Macedonia, Serbia threatens Croatia and Bulgaria in order to unite the South Slavic peoples. Hungary should be ready for the confrontation, which will certainly begin soon."
   HUN_arpad_line_one:0 "Build the first part of Arpad Line"

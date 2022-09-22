@@ -126,6 +126,11 @@ country_event = {
 	
 	option = {
 		name = hungarian.4.a
+		
+		every_country = {
+			set_temp_variable = { super_id = 81 }
+			PB_Fire_Super_Event = yes
+		}		
 
    }
   }
@@ -648,6 +653,10 @@ set_popularities = {
 			HUN = {
 			country_event = { id = hungarian.20 days = 6 }
 		  }
+		  
+			HUN = {
+			country_event = { id = hungarian.29 days = 11 }
+		  }		  
 	    }		
 	  }
     }
@@ -745,22 +754,18 @@ set_popularities = {
 	
 	option = {
 		name = hungarian.20.a
-			  
-	remove_ideas = {
-	HUN_Vago_EM
-	}	
 		
 			hidden_effect = {
-			
-		    HUN = {
-			country_event = { id = hungarian.29 days = 5 }		
-		      }
 			  
 		news_event = {
 			id = hungary.10
 			days = 1
-			}	
-         }				   
+			}
+          }			
+		 
+	remove_ideas = {
+	HUN_Vago_EM   	  
+		  } 
       }
   }
 	

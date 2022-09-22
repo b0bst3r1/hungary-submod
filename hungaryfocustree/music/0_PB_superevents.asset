@@ -1,0 +1,11 @@
+
+
+music = {
+	name = "Super_Event_Sound_80"
+	file = "SPEVNT_Hungary_Win_Balkan_War.ogg"
+}
+
+music = {
+	name = "Super_Event_Sound_81"
+	file = "SPEVNT_Serbia_Win_Balkan_War.ogg"
+}

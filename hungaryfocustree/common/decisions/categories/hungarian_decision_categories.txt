@@ -5,12 +5,11 @@ HUN_economic_dec = {
 
 	allowed = {
 		original_tag = HUN
-	}
+	}  
 
 	visible = {
 		has_completed_focus = hun_collectivization     
 	}
-
 	priority = 170
 }
 
@@ -27,7 +26,7 @@ HUN_great_balkan_war = {
 		has_global_flag = great_balk_war
 	}
 
-	priority = 70
+	priority = 30
 }
 
 HUN_culture_war = {

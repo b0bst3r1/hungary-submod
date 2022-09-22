@@ -55,8 +55,8 @@ news_event = {		#Fall of Lasi to Hungary
 	major = yes
 	
 	trigger = {
-		107 = { is_controlled_by = HUN }
-		107 = { is_owned_by = ROM }
+		79 = { is_controlled_by = HUN }
+		79 = { is_owned_by = ROM }
 		HUN = { has_war_with = ROM }
 		NOT = { has_global_flag = fall_of_lasi_hun }
 	}
@@ -98,8 +98,8 @@ news_event = {		#Fall of Bucharest to Hungary
 	major = yes
 	
 	trigger = {
-		107 = { is_controlled_by = HUN }
-		107 = { is_owned_by = ROM }
+		46 = { is_controlled_by = HUN }
+		46 = { is_owned_by = ROM }
 		HUN = { has_war_with = ROM }
 		NOT = { has_global_flag = fall_of_athenss }
 	}
@@ -133,7 +133,7 @@ news_event = {		#Fall of Bucharest to Hungary
 	}
 }
 
-news_event = {		#Fall of Athens
+news_event = {		#Fall of Constantinople
 	id = SMcity.4
 	title = SMcity.4.t
 	desc = SMcity.4.d
@@ -141,8 +141,8 @@ news_event = {		#Fall of Athens
 	major = yes
 	
 	trigger = {
-		107 = { is_controlled_by = HUN }
-		107 = { is_owned_by = GRE }
+		341 = { is_controlled_by = HUN }
+		341 = { is_owned_by = GRE }
 		HUN = { has_war_with = GRE }
 		NOT = { has_global_flag = fall_of_athens_hun }
 	}

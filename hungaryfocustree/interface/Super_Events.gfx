@@ -1,0 +1,12 @@
+spriteTypes = {
+	
+	spriteType = {
+  		name = "GFX_SPEVNT_80"
+		texturefile = "gfx/super_events/SPEVNT_Hungary_Win_Balkan_War.dds"
+	}
+	
+	spriteType = {
+  		name = "GFX_SPEVNT_81"
+		texturefile = "gfx/super_events/SPEVNT_Serbia_Win_Balkan_War.dds"
+	}	
+}

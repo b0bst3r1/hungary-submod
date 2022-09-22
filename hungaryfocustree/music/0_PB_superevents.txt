@@ -1,0 +1,18 @@
+
+music = {
+	song = "Super_Event_Sound_80"
+	chance = {
+		modifier = {
+			factor = 0
+		}		
+	}
+}
+
+music = {
+	song = "Super_Event_Sound_81"
+	chance = {
+		modifier = {
+			factor = 0
+		}		
+	}
+}

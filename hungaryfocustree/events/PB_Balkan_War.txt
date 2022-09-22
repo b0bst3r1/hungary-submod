@@ -27,7 +27,7 @@ country_event = {		#Test balkan war
 		}	   
 	   
 		BUL = {
-			country_event = { id = bul.1 days = 1 }
+			country_event = { id = bulgar.1 days = 1 }
 		}
     }
 }
@@ -36,7 +36,7 @@ country_event = {		#PrepareForWar - Romania
 	id = greatbalkwar.1
 	title = greatbalkwar.1.t
 	desc = greatbalkwar.1.d
-	picture = GFX_report_PB_Generic_War_Event	
+	picture = GFX_report_event_Generic_Tanks_Highway	
 
 	trigger = {
 		tag = ROM
@@ -92,7 +92,7 @@ country_event = {		#PrepareForWar - Everyone
 	id = greatbalkwar.2
 	title = greatbalkwar.2.t
 	desc = greatbalkwar.2.d
-	picture = GFX_report_PB_Generic_War_Event
+	picture = GFX_report_event_Generic_Tanks_Highway
 	is_triggered_only = yes
 
 	option = { #Ok
@@ -142,7 +142,9 @@ declare_war_on = {
     type = annex_everything
         }
 
-add_ideas = ROM_russian_help		
+add_ideas = ROM_russian_help
+remove_ideas = PB_HUN_Balkan_Powderkeg
+add_ideas = PB_HUN_Great_Balkan_War		
 	}
 }
 
@@ -150,7 +152,7 @@ country_event = {		#JoinTheWar as Turkey
 	id = greatbalkwar.4
 	title = greatbalkwar.4.t
 	desc = greatbalkwar.4.d
-	picture = GFX_report_PB_Generic_War_Event
+	picture = GFX_report_Generic_Trench_Warfare
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -184,8 +186,11 @@ country_event = {		#JoinTheWar as Turkey
 					}
 				}
 					TUR = {			
-            add_ideas = HUN_Budapest_Entente
+            add_ideas = HUN_Budapest_Entente			
 			}
+			
+		remove_ideas = PB_HUN_Balkan_Powderkeg
+        add_ideas = PB_HUN_Great_Balkan_War		
 		  }				  
 
 declare_war_on = {
@@ -199,7 +204,7 @@ country_event = {		#JoinTheWar as Serbia
 	id = greatbalkwar.5
 	title = greatbalkwar.5.t
 	desc = greatbalkwar.5.d
-	picture = GFX_report_PB_Generic_War_Event
+	picture = GFX_report_event_Generic_Soldiers_Charging
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -218,7 +223,7 @@ country_event = {		#JoinTheWar as Serbia
      }		
 		
 			SER = {
-			create_faction = Balk_Rom
+			create_faction = anti_jacob
             add_to_faction = ROM				
 			      }
 
@@ -236,7 +241,9 @@ country_event = {		#JoinTheWar as Serbia
 			
             add_to_faction = ROM						  
 
-            add_ideas = ROM_russian_help
+        add_ideas = ROM_russian_help
+		remove_ideas = PB_HUN_Balkan_Powderkeg
+        add_ideas = PB_HUN_Great_Balkan_War			
 		
            declare_war_on = {
             target = BUL
@@ -267,7 +274,7 @@ country_event = {		#JoinTheWar as Hungary
 	id = greatbalkwar.6
 	title = greatbalkwar.6.t
 	desc = balkwar.6.d
-	picture = greatbalkwar
+	picture = GFX_report_Generic_Trench_Warfare
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -287,7 +294,9 @@ country_event = {		#JoinTheWar as Hungary
 		
 			HUN = {
             add_to_faction = BUL
-            add_ideas = HUN_great_patriotic_war			
+            add_ideas = HUN_great_patriotic_war
+		    remove_ideas = PB_HUN_Balkan_Powderkeg
+            add_ideas = PB_HUN_Great_Balkan_War			
 			      }		
 
 declare_war_on = {
@@ -306,7 +315,7 @@ country_event = {		#JoinTheWar as Romania
 	id = greatbalkwar.7
 	title = greatbalkwar.7.t
 	desc = greatbalkwar.7.d
-	picture = GFX_report_PB_Generic_War_Event
+	picture = GFX_report_event_Generic_Soldiers_Charging
 	is_triggered_only = yes
 	
 	immediate = {
@@ -322,7 +331,11 @@ country_event = {		#JoinTheWar as Romania
 			factor = 100
         }			
 
-		hidden_effect = { 
+		hidden_effect = {
+
+		remove_ideas = PB_HUN_Balkan_Powderkeg
+        add_ideas = ROM_russian_help
+        add_ideas = PB_HUN_Great_Balkan_War		
 		
 		SER = {
 			country_event = { id = greatbalkwar.5 days = 2 }
@@ -332,10 +345,7 @@ country_event = {		#JoinTheWar as Romania
 declare_war_on = {
     target = BUL
     type = annex_everything
-        }
-
-add_ideas = ROM_russian_help
-		
+        }	
 	}
 }
 
@@ -343,12 +353,12 @@ add_ideas = ROM_russian_help
 	id = balkwarpeace.1
 	title = balkwarpeace.1.t
 	desc = balkwarpeace.1.d
-	picture = GFX_report_event_hun_917
+	picture = GFX_report_PB_Conference
 	is_triggered_only = yes
 	fire_only_once = yes
 		
 	option = {
-		name = balkwarpeace.1.a
+		name = balkwarpeace.1.a		
 	
 			hidden_effect = {
 			RUS = {
@@ -436,7 +446,7 @@ add_ideas = ROM_russian_help
 	id = balkwarpeace.2
 	title = balkwarpeace.2.t
 	desc = balkwarpeace.2.d
-	picture = GFX
+	picture = GFX_report_PB_Military_Parade
 	is_triggered_only = yes
 	
 	fire_only_once = yes
@@ -501,7 +511,7 @@ set_popularities = {
 	id = balkwarpeace.3
 	title = balkwarpeace.3.t
 	desc = balkwarpeace.3.d
-	picture = GFX_report_event_hun_916
+	picture = GFX_report_PB_Conference
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -509,6 +519,12 @@ set_popularities = {
 		name = balkwarpeace.3.a
 	
 			hidden_effect = {
+			
+		HUN = {
+			country_event = { id = balkwarpeace.4 days = 1 }
+			country_event = { id = balkwarpeace.5 days = 2 }			
+		}
+		
 		news_event = {
 			id = hungary.8
 			days = 9
@@ -516,7 +532,6 @@ set_popularities = {
 	}	
 	         HUN = {
          puppet = BOS
-         puppet = MNT
          puppet = SER  	
 		 
 	     hidden_effect = {
@@ -525,11 +540,6 @@ set_popularities = {
                  autonomy_state = autonomy_PB_Sister_Republic
                 }
 			}
-			
-			set_autonomy = {
-                target = MNT
-                 autonomy_state = autonomy_PB_Sister_Republic
-                }
 				
 			set_autonomy = {
                 target = SER
@@ -624,4 +634,93 @@ set_popularities = {
 
       }
    }
-}   
+}
+
+	   country_event = { #QuestionOfBosnia
+	id = balkwarpeace.4
+	title = balkwarpeace.4.t
+	desc = balkwarpeace.4.d
+	picture = GFX_report_PB_Conference3
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = balkwarpeace.4.a #Give more lands to BOS
+	 	  
+	  		BOS = {
+			
+		transfer_state = 104
+		transfer_state = 104
+		
+      }
+   }
+   
+	option = {
+		name = balkwarpeace.4.b #DivideBosnia
+	 	  
+	  		CRO = {
+			
+		transfer_state = 104
+		
+      }
+   }   
+}
+
+	   country_event = { #QuestionOfMontenegro
+	id = balkwarpeace.5
+	title = balkwarpeace.5.t
+	desc = balkwarpeace.5.d
+	picture = GFX_report_PB_Conference3
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = balkwarpeace.5.a #Montenegro is exist
+		
+	  		MNT = {
+			
+		transfer_state = 104
+		
+			if = {
+				limit = {
+					HUN = {
+					has_government = jc
+					}
+				}
+			   set_politics = {
+		       ruling_party = JC
+		       }
+			}
+
+			if = {
+				limit = {
+					HUN = {
+					has_government = ss
+					}
+				}
+			   set_politics = {
+		       ruling_party = SS
+		       }
+			  }
+	
+	set_popularities = {
+	       ni = 0
+	       ds = 0
+	       rc = 0
+	       cn = 0
+	       lb = 0
+	       an = 0
+	       ss = 50
+	       jc = 50
+      }
+
+	set_cosmetic_tag = MNT_Jacobin
+
+      }		
+   }
+   
+	option = {
+		name = balkwarpeace.5.b #What is MNT
+	 	  
+   }
+}      
