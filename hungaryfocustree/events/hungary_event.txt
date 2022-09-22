@@ -745,16 +745,17 @@ set_popularities = {
 	
 	option = {
 		name = hungarian.20.a
-		
-		HUN = {
-			country_event = { id = hungarian.29 days = 5 }		
-		      }
 			  
 	remove_ideas = {
 	HUN_Vago_EM
 	}	
 		
 			hidden_effect = {
+			
+		    HUN = {
+			country_event = { id = hungarian.29 days = 5 }		
+		      }
+			  
 		news_event = {
 			id = hungary.10
 			days = 1

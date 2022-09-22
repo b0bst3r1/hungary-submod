@@ -108,7 +108,7 @@ focus_tree = {
 	focus = {
 		id = the_red_tide
 		icon = GFX_hun_red_tide
-		cost = 35
+		cost = 21
 		
 		available = {
 			custom_trigger_tooltip = {
@@ -144,7 +144,7 @@ focus_tree = {
 	focus = {
 		id = hun_befriend_japan
 		icon = GFX_befriend_japan
-		cost = 49
+		cost = 28
 		
 		available = {
 				has_government = jc
@@ -172,7 +172,7 @@ focus_tree = {
 	focus = {
 		id = hun_international_support
 		icon = GFX_HUN_international_support
-		cost = 49		
+		cost = 28	
 		
 		prerequisite = {
 			focus = hun_socialist_front
@@ -193,7 +193,7 @@ focus_tree = {
 	focus = {
 		id = hun_budapest_research_centr
 		icon = GFX_HUN_research_center_shine
-		cost = 49	
+		cost = 28
 		
 		prerequisite = {
 			focus = hun_talk_with_capitalist
@@ -211,7 +211,7 @@ focus_tree = {
 	focus = {
 		id = hun_zagreb_treaty
 		icon = GFX_hun_zagreb_front
-		cost = 56
+		cost = 35
 
 		mutually_exclusive = {
 			focus = hun_budapest_entente
@@ -250,7 +250,7 @@ focus_tree = {
 	focus = {
 		id = hun_budapest_entente
 		icon = GFX_hun_balkan_liberation
-		cost = 56
+		cost = 35
 
 		mutually_exclusive = {
 			focus = hun_zagreb_treaty
@@ -283,7 +283,7 @@ focus_tree = {
 	focus = {
 		id = reborn_of_croatian_hungarian_settlement
 		icon = GFX_HUN_reborn_treaty
-		cost = 56
+		cost = 42
 		
 		mutually_exclusive = {
 			focus = hun_eternal_friendship
@@ -327,7 +327,7 @@ focus_tree = {
 	focus = {
 		id = hun_eternal_friendship
 		icon = GFX_eternal_friendship_cro
-		cost = 56
+		cost = 35
 		
 		mutually_exclusive = {
 			focus = reborn_of_croatian_hungarian_settlement
@@ -375,7 +375,7 @@ create_country_leader = {
 	focus = {
 		id = hun_socialist_front
 		icon = GFX_hun_socialism_front
-		cost = 42
+		cost = 28
 
 		available = {
 				has_government = ss
@@ -403,7 +403,7 @@ create_country_leader = {
 	focus = {
 		id = hun_talk_with_capitalist
 		icon = GFX_HUN_democratic
-		cost = 42
+		cost = 28
 
 		available = {
 				has_government = lb
@@ -466,7 +466,11 @@ create_country_leader = {
 	focus = {
 		id = hun_lonely_way
 		icon = GFX_Communist_Pride
-		cost = 42	
+		cost = 28
+		
+		available = {
+				has_government = jc
+			}		
 		
 		prerequisite = {
 			focus = the_red_tide
@@ -507,7 +511,7 @@ create_country_leader = {
 	focus = {
 		id = hun_help_albania
 		icon = GFX_HUN_help_albania
-		cost = 56
+		cost = 35
 		
 		mutually_exclusive = {
 			focus = hun_albanian_revolution
@@ -538,7 +542,7 @@ create_country_leader = {
 	focus = {
 		id = hun_albanian_revolution
 		icon = GFX_albanian_revolution
-		cost = 56
+		cost = 35
 		
 		mutually_exclusive = {
 			focus = hun_help_albania
@@ -660,7 +664,7 @@ create_country_leader = {
 	focus = {
 		id = hun_aliance_bulgaria
 		icon = GFX_aliance_with_bulgaria
-		cost = 56		
+		cost = 35		
 		
 		prerequisite = {
 			focus = hun_albanian_revolution
@@ -836,7 +840,7 @@ create_country_leader = {
 	focus = {
 		id = HUN_Foreighnaffairs
 		icon = GFX_hun_belakun_takes_over
-		cost = 7
+		cost = 3
 
 	    completion_reward = {
 		country_event = {
@@ -855,7 +859,7 @@ create_country_leader = {
 	focus = {
 		id = HUN_PRIMEmi
 		icon = GFX_hun_vago_takes
-		cost = 7
+		cost = 3
 	    
 		completion_reward = {
 		country_event = {
@@ -874,7 +878,7 @@ create_country_leader = {
 	focus = {
 		id = HUN_commisarinterior
 		icon = GFX_hun_garbai_two
-		cost = 7
+		cost = 3
 		
 	    completion_reward = {
 		country_event = {

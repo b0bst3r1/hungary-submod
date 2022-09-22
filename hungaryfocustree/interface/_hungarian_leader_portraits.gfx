@@ -1,5 +1,22 @@
 spriteTypes = {
 
+    #Albania
+
+	spriteType = {
+		name = "GFX_portrait_general_ALB_Prenk_Pervizi"
+		texturefile = "gfx/leaders/ALB/general_ALB_Prenk_Pervizi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_general_ALB_Mehmet_Shenu"
+		texturefile = "gfx/leaders/ALB/general_ALB_Mehmet_Shenu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_general_ALB_Ndok_Gjeloshi"
+		texturefile = "gfx/leaders/ALB/general_ALB_Ndok_Gjeloshi.dds"
+	}
+
     #Bulgaria
 	
 	spriteType = {
@@ -36,7 +53,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_portrait_general_ROM_Gheorghe-Manoliu"
-		texturefile = "gfx/leaders/ROM/general_ROM_Gheorghe-Manoliu.dds"
+		texturefile = "gfx/leaders/ROM/general_ROM_GheorgheManoliu.dds"
 	}
 
 	spriteType = {

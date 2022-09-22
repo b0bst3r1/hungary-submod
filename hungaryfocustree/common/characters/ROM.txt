@@ -4,8 +4,8 @@ characters={
 		name="Gheorghe Manoliu"
 		portraits={
 			army={
-				large="GFX_portrait_general_ROM_Gheorghe"
-				small="GFX_portrait_general_ROM_Gheorghe"		
+				large="GFX_portrait_general_ROM_Gheorghe-Manoliu"
+				small="GFX_portrait_general_ROM_Gheorghe-Manoliu"		
 			}
 		}
 	field_marshal = {
