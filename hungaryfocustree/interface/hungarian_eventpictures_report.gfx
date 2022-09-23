@@ -203,6 +203,16 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_report_event_hun_940"
 		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_940.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_report_event_hun_alcohol"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_alcohol.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_hun_wolf"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_wolf.dds"
 	}	
 
 }	

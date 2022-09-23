@@ -2,21 +2,20 @@
 # GREAT BALKAN WAR EVENTS
 ##################
 
+add_namespace = balkantest
 add_namespace = greatbalkwar
 add_namespace = balkwarpeace
 
-add_namespace = balkan.test
-
 country_event = {		#Test balkan war
-	id =  balkan.test.1
-	title =  balkan.test.1.t
-	desc =  balkan.test.1.d
+	id =  balkantest.1
+	title =  balkantest.1.t
+	desc =  balkantest.1.d
 	picture = GFX_report_PB_Generic_War_Event
 	is_triggered_only = yes
 	fire_only_once = yes	
 	
 	option = { 
-		name =  balkan.test.1.a
+		name =  balkantest.1.a
 
 		ai_chance = {
 			factor = 100
@@ -25,6 +24,30 @@ country_event = {		#Test balkan war
 		ROM = {
 			country_event = { id = greatbalkwar.7 days = 2 }
 		}	   
+    }
+}
+
+country_event = {		#Test balkan war
+	id =  balkantest.2
+	title =  balkantest.2.t
+	desc =  balkantest.2.d
+	picture = GFX_report_PB_Generic_War_Event
+	is_triggered_only = yes
+	
+	   immediate = {
+	    set_global_flag = gbw_romania_lost
+	    set_global_flag = gbw_serbia_lost
+	    set_global_flag = gbw_greece_lost		 
+	     }
+		 
+	fire_only_once = yes	
+	
+	option = { 
+		name =  balkantest.2.a
+
+		ai_chance = {
+			factor = 100
+        }   
     }
 }
 
@@ -436,7 +459,13 @@ declare_war_on = {
 	set_cosmetic_tag = ROM_Jacobin
 
       }
-    }
+	  
+		BUL = {
+			transfer_state = 955
+
+			add_state_core = 955
+		}	  
+     }
   }
   
 	country_event = { #RussianIntervention
@@ -490,6 +519,9 @@ set_popularities = {
         }
 		
 		RUS = {
+		
+		transfer_state = 3701
+		
 		puppet = MOL
 		
 			set_autonomy = {
@@ -500,9 +532,9 @@ set_popularities = {
 		
 		ai_chance = {
 			factor = 100
-		}
-	   }
-	  }
+		     }
+	     }
+	 }
 
 	   country_event = { #SERBIAasksPEACE
 	id = balkwarpeace.3
@@ -522,8 +554,12 @@ set_popularities = {
 			country_event = { id = balkwarpeace.5 days = 2 }			
 		}
 		
+		TUR = {
+			country_event = { id = balkwarpeace.9 days = 1 }
+		}		
+		
 		GRE = {
-			country_event = { id = balkwarpeace.7 days = 10 }			
+			country_event = { id = balkwarpeace.8 days = 10 }			
 		}		
 		
 		news_event = {
@@ -547,6 +583,20 @@ set_popularities = {
                  autonomy_state = autonomy_PB_Sister_Republic
                 }				
 		    }
+			
+		BUL = {
+			transfer_state = 106
+			transfer_state = 108
+			transfer_state = 972
+
+			add_state_core = 106
+		}
+
+	  		CRO = {			
+		transfer_state = 103
+		transfer_state = 959		
+		
+      }		
 	
 		SER = {
 	
@@ -650,8 +700,8 @@ set_popularities = {
 	 	  
 	  		BOS = {
 			
-		transfer_state = 104
-		transfer_state = 104
+		transfer_state = 956
+		transfer_state = 954
 		
       }
    }
@@ -661,7 +711,7 @@ set_popularities = {
 	 	  
 	  		CRO = {
 			
-		transfer_state = 104
+		transfer_state = 956
 		
       }
    }   
@@ -678,9 +728,20 @@ set_popularities = {
 	option = {
 		name = balkwarpeace.5.a #Montenegro is exist
 		
+	         HUN = {
+         puppet = MNT 	
+		 
+	     hidden_effect = {
+			set_autonomy = {
+                target = MNT
+                 autonomy_state = autonomy_PB_Sister_Republic
+                }
+			}		
+		
 	  		MNT = {
 			
-		transfer_state = 104
+		transfer_state = 105
+		transfer_state = 961		
 		
 			if = {
 				limit = {
@@ -717,8 +778,9 @@ set_popularities = {
 
 	set_cosmetic_tag = MNT_Jacobin
 
-      }		
-   }
+       }		
+    }
+ }
    
 	option = {
 		name = balkwarpeace.5.b #What is MNT
@@ -727,25 +789,24 @@ set_popularities = {
 }
 
 country_event = {		#Great Balkan War - Serbian Victory against Hungary
-	id = balkwarpeace.5
-	title = balkwarpeace.5.t
-	desc = balkwarpeace.5.d
+	id = balkwarpeace.6
+	title = balkwarpeace.6.t
+	desc = balkwarpeace.6.d
 	picture = GFX_report_PB_Generic_War_Event
 
 	is_triggered_only = yes
 
 	option = {
-		name = balkwarpeace.5.a
-
-		ai_chance = {
-			factor = 50
-		}
+		name = balkwarpeace.6.a
 		
 		SER = {
+		
+   set_cosmetic_tag = PB_YUGOSLAVIA
+  
 			annex_country = {
 				target = CRO
 				transfer_troops = yes
-			}
+			}		
 
 			annex_country = {
 				target = BUL
@@ -768,8 +829,7 @@ country_event = {		#Great Balkan War - Serbian Victory against Hungary
 			add_state_core = 82
 			add_state_core = 83
 			add_state_core = 76
-		}
-	}		
+		}		
 
 		add_political_power = 150
 
@@ -779,8 +839,12 @@ country_event = {		#Great Balkan War - Serbian Victory against Hungary
 				days = 2000
 			}
 
-			country_event = { id = balkwar.6 days = 5 }
+			country_event = { id = balkwar.7 days = 5 }
 		}
+		
+		GRE = {
+			country_event = { id = balkwar.10 days = 1 }
+		}		
 
 		ROM = {
 			remove_ideas = PB_HUN_Balkan_Powderkeg
@@ -794,25 +858,19 @@ country_event = {		#Great Balkan War - Serbian Victory against Hungary
 		SER = {
 			dismantle_faction = yes
 		}
-				
-
-		news_event = {
-			id = PBNews.24
-			days = 1
-		}
 	}
 }
 
 country_event = {		#Great Balkan War Defeat - Hungary - Reactionary Coup
-	id = balkwarpeace.6
-	title = balkwarpeace.6.t
-	desc = balkwarpeace.6.d
+	id = balkwarpeace.7
+	title = balkwarpeace.7.t
+	desc = balkwarpeace.7.d
 	picture = GFX_report_PB_Generic_War_Event
 
 	is_triggered_only = yes
 
 	option = { #Royalists retake control
-		name = balkwarpeace.6.a
+		name = balkwarpeace.7.a
 
 		ai_chance = {
 			factor = 50
@@ -848,16 +906,16 @@ country_event = {		#Great Balkan War Defeat - Hungary - Reactionary Coup
 }
 
 country_event = {		#Great Balkan War Defeat - Greece - Athens Revolution
-	id = balkwarpeace.7
-	title = balkwarpeace.7.t
-	desc = balkwarpeace.7.d
+	id = balkwarpeace.8
+	title = balkwarpeace.8.t
+	desc = balkwarpeace.8.d
 	picture = GFX_report_PB_Generic_War_Event
 
 	is_triggered_only = yes
 
 
 	option = { #Republic is Declared
-		name = balkwarpeace.7.a
+		name = balkwarpeace.8.a
 
 		ai_chance = {
 			factor = 60
@@ -892,7 +950,7 @@ country_event = {		#Great Balkan War Defeat - Greece - Athens Revolution
 	}
 
 	option = { #Military Seizes Control
-		name = balkwarpeace.7.b
+		name = balkwarpeace.8.b
 
 		ai_chance = {
 			factor = 40
@@ -924,5 +982,72 @@ country_event = {		#Great Balkan War Defeat - Greece - Athens Revolution
 			expire = "1965.1.1"
 			ideology = RC_VARIANT_01
 		}
+	}
+}
+
+country_event = {		# Great Balkan War - Question of Greece
+	id = balkwarpeace.9
+	title = balkwarpeace.9.t
+	desc = balkwarpeace.9.d
+	picture = GFX_report_PB_Generic_War_Event
+
+	is_triggered_only = yes
+
+	option = {
+		name = balkwarpeace.9.a
+		
+		BUL = {
+
+			transfer_state = 958
+			transfer_state = 731
+			transfer_state = 184
+			transfer_state = 821
+			
+			add_state_core = 731
+			add_state_core = 958
+		}
+
+		TUR = {
+		
+			leave_faction = yes
+			
+			transfer_state = 962
+			transfer_state = 823
+			transfer_state = 339
+			transfer_state = 340
+			transfer_state = 822
+			transfer_state = 968
+			transfer_state = 341
+			
+            add_political_power = 150			
+
+			set_capital = {state = 341}
+		}		
+	}
+}
+
+country_event = {		# Great Balkan War - Question of Turkey
+	id = balkwarpeace.10
+	title = balkwarpeace.10.t
+	desc = balkwarpeace.10.d
+	picture = GFX_report_PB_Generic_War_Event
+
+	is_triggered_only = yes
+
+	option = {
+		name = balkwarpeace.10.a
+		
+		GRE = {
+			
+			transfer_state = 342
+			transfer_state = 343
+			transfer_state = 345
+			transfer_state = 346
+			transfer_state = 49
+			transfer_state = 347
+			transfer_state = 341
+			
+            add_political_power = 150			
+		}		
 	}
 }      

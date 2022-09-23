@@ -25,9 +25,15 @@ SMcity.3.a:0 "Is this the end?"
 SMcity.3.b:0 "Wallachia is defeated!"
 SMcity.3.c:0 "It doesn't mean anything for us"
 
-SMcity.4.t:0 "Fall of Athens"
-SMcity.4.d:0 "Hungarian-Bulgarian troops after bloody battles were able to take Athens by storm. Despite the resilience of Greek fighters defending everything from a simple village to the Parthenon or Acropolis, the city fell. Now the city is ruled by the occupation administration, but it is likely that a peace treaty will soon be concluded between the two sides."
+SMcity.4.t:0 "Fall of Constantinople"
+SMcity.4.d:0 "Hungarian-Bulgarian troops after bloody battles were able to take Constantinople by storm. Despite the resilience of Greek fighters defending everything from a simple village to the Hagia Sophia, the city fell. Now the city is ruled by the occupation administration, but it is likely that a peace treaty will soon be concluded between the two sides."
 SMcity.4.a:0 "Greek monarchy goes down"
 SMcity.4.b:0 "Long live the revolution!"
 SMcity.4.c:0 "The fight goes on!"
+
+SMcity.5.t:0 "Fall of Sofia"
+SMcity.5.d:0 "The streets of Sofia have been almost cleared of civilians, and is eerily silent. The garrison of the city refused to capitulate, because of which the Serbian army was bogged down in a bloody urban battle. The Serbian headquarters decided to carry out shelling of strategic buildings, which damaged the historic city center.\n\nThis effectively means the complete downfall of Bulgaria. Hungary was left alone."
+SMcity.5.a:0 "Can the war be considered over?"
+SMcity.5.b:0 "Now we stand alone!"
+SMcity.5.c:0 "Gospodi!"
 

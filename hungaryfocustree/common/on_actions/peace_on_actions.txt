@@ -182,6 +182,14 @@ on_daily_HUN = {	#HungaryWonPeace
 			hours = 1 
 		}		
 		
+		   set_global_flag = gbw_hungary_won
+		
+		   clr_global_flag = great_balk_war
+		   
+	       clr_global_flag = gbw_romania_lost
+	       clr_global_flag = gbw_serbia_lost
+	       clr_global_flag = gbw_greece_lost	   
+		   
 	 	   country_event = { id = balkwarpeace.1}
            country_event = { id = balkwarpeace.3}		   
 	    }
@@ -214,9 +222,17 @@ set_autonomy = {
 	autonomous_state = autonomy_PB_Imperial_Autonomy
 	freedom_level = 0.3
    }
- }		
-		
-	 	   country_event = { id = balkwarpeace.5}		   
+ }
+ 
+		  set_global_flag = gbw_serbia_won
+ 
+		  clr_global_flag = great_balk_war
+		   
+	      clr_global_flag = gbw_bulgaria_lost
+	      clr_global_flag = gbw_serbia_lost
+	      clr_global_flag = gbw_turkey_lost		   
+		   
+	 	  country_event = { id = balkwarpeace.6}		   
 	    }
       }
     }	

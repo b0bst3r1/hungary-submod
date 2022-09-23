@@ -1706,7 +1706,7 @@ create_country_leader = {
 	id = hungarian.48
 	title = hungarian.48.t
 	desc = hungarian.48.d
-	picture = GFX_report_event_hun_940
+	picture = GFX_report_event_hun_alcohol
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -1717,3 +1717,44 @@ create_country_leader = {
 		
 	    }		 
       }
+	  
+	       	   country_event = { #First cloned wild wolf 
+	id = hungarian.49
+	title = hungarian.49.t
+	desc = hungarian.49.d
+	picture = GFX_report_event_hun_wolf
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.49.a	
+		
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 1
+				category = flamethrowers_tech
+			}
+		 }		 
+      }	  
+	  
+country_event = {#Hungarian Support
+	id = 	
+	title = hungarian.1000.t
+	desc = hungarian.1000.d
+	picture = GFX_report_event_hun_905
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Agree
+		name = hungarian.1000.a
+
+		ai_chance = {
+			factor = 100
+		}
+
+		add_political_power = 50
+	}
+}	  

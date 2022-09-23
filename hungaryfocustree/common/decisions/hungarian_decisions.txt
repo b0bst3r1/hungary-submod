@@ -377,8 +377,7 @@ HUN_great_balkan_war = {
 	}	 
   }		 
 
-
-HUN_economic_dec = {
+HUN_domestic_policy = {
 
 	HUN_collectivize_hungary = {
 
@@ -387,11 +386,25 @@ HUN_economic_dec = {
 		cost = 25
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 967 }
+     	}
+
+		on_map_mode = map_and_decisions_view		
 
 		available = {
 		has_completed_focus = hun_collectivization
+		}
+		
+		visible = {
+			has_completed_focus = hun_collectivization
+		}			
+
+		modifier = {
+			civilian_factory_use = 1
 		}		
 
 		days_remove = 30
@@ -408,6 +421,10 @@ HUN_economic_dec = {
 			}
 			155 = {
 				add_extra_state_shared_building_slots = 2
+			}
+
+			967 = {
+				add_extra_state_shared_building_slots = 2
 			}			
 			
 		}
@@ -420,12 +437,26 @@ HUN_economic_dec = {
 		cost = 25
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 71 }
+     	}
+
+		on_map_mode = map_and_decisions_view		
 		
 		available = {
 		has_completed_focus = hun_collectivization
 		}
+		
+		visible = {
+			has_completed_focus = hun_collectivization
+		}		
+		
+		modifier = {
+			civilian_factory_use = 1
+		}		
 		
 		days_remove = 30
 
@@ -456,12 +487,26 @@ HUN_economic_dec = {
 		cost = 25
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 84 }
+     	}
+
+		on_map_mode = map_and_decisions_view		
 		
 		available = {
 		has_completed_focus = hun_collectivization
-		}	
+		}
+		
+		visible = {
+			has_completed_focus = hun_collectivization
+		}		
+
+		modifier = {
+			civilian_factory_use = 1
+		}		
 
 		days_remove = 30
 
@@ -488,12 +533,26 @@ HUN_economic_dec = {
 		cost = 25
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 		
 		available = {
 		has_completed_focus = hun_collectivization
-		}	
+		}
+		
+		visible = {
+			has_completed_focus = hun_collectivization
+		}		
+		
+        highlight_states = {
+		highlight_state_targets = { state = 109 }
+     	}
+
+		on_map_mode = map_and_decisions_view		
+
+		modifier = {
+			civilian_factory_use = 1
+		}		
 		
 		days_remove = 30
 
@@ -520,12 +579,26 @@ HUN_economic_dec = {
 		cost = 25
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 		
 		available = {
 		has_completed_focus = hun_collectivization
-		}	
+		}
+		
+		visible = {
+			has_completed_focus = hun_collectivization
+		}		
+		
+        highlight_states = {
+		highlight_state_targets = { state = 82 }
+     	}
+
+		on_map_mode = map_and_decisions_view		
+
+		modifier = {
+			civilian_factory_use = 1
+		}		
 
 		days_remove = 30
 
@@ -544,9 +617,67 @@ HUN_economic_dec = {
 			}
 		}
 	}
-}
 
-HUN_domestic_policy = {
+	HUN_Promote_Jacobin_Youth = {
+
+		icon = GFX_decision_generic_socialism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+			OR = {
+				has_government = jc 
+				has_government = ss
+				has_government = lb				
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 15
+
+		days_re_enable = 50
+
+		remove_effect = {
+			add_war_support = 0.025
+
+			if = {
+				limit = {
+					has_government = jc
+				}
+				add_popularity = {
+					ideology = jc
+					popularity = 0.05
+				}
+			}
+
+			if = {
+				limit = {
+					has_government = ss
+				}
+				add_popularity = {
+					ideology = ss
+					popularity = 0.05
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = lb
+				}
+				add_popularity = {
+					ideology = lb
+					popularity = 0.05
+				}
+			}			
+		}
+	}
 
 	HUN_increase_revolutionary_zeal = {
 
@@ -555,7 +686,7 @@ HUN_domestic_policy = {
 		cost = 20
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 
 		available = {
@@ -588,7 +719,7 @@ HUN_domestic_policy = {
 		cost = 20
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 
 		available = {
@@ -649,7 +780,7 @@ HUN_domestic_policy = {
 
 	HUN_Propaganda_in_Schools = {
 
-		icon = GFX_decision_category_hun_comm
+		icon = GFX_decision_generic_propaganda
 
 		cost = 50
 
@@ -710,7 +841,7 @@ HUN_domestic_policy = {
 
 	HUN_Fighting_the_Counterrevolution = {
 
-		icon = GFX_decision_category_hun_comm
+		icon = GFX_decision_generic_pistol
 
 		cost = 50
 
@@ -747,7 +878,7 @@ HUN_domestic_policy = {
 	
 	HUN_organize_party_meeting = {
 
-		icon = GFX_decision_category_hun_comm
+		icon = GFX_decision_generic_socialism
 
 		cost = 100
 
@@ -775,8 +906,75 @@ HUN_domestic_policy = {
 				value = 0.10
 			}			
 		}
-	}		
- }
+	}
+
+	PB_Support_Pan_Arabians = {
+
+		icon = generic_operation
+		
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+			OR = {
+				has_government = jc
+				has_government = ss
+            }
+			
+			UAR = {
+				has_war_with = SYR
+				has_government = jc				
+			}
+			
+			HUN = {
+				OR = {
+					has_equipment = {
+						infantry_equipment_0 > 2000
+					}
+					has_equipment = {
+						infantry_equipment_1933 > 2000
+					}
+					has_equipment = {
+						infantry_equipment_1 > 2000
+					}
+					has_equipment = {
+						infantry_equipment_2 > 2000
+					}
+					has_equipment = {
+						infantry_equipment_3 > 2000
+					}
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 25
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			UAR = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 2000
+					producer = HUN
+				}
+
+				country_event = {
+					id = hungarian.1000
+					days = 3
+				}
+			}
+		}
+	}
+}	
    
  HUN_war_on_horizon = {
 

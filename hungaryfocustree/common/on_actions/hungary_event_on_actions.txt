@@ -35,6 +35,15 @@ on_actions = {
 					days = 70
 				}
 			}
+		}
+
+		effect = {
+			HUN = {
+				country_event = { 	#First cloned wild wolf 
+					id = hungarian.49
+					days = 90
+				}
+			}
 		}		
 
 		effect = {

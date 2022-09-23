@@ -15,6 +15,11 @@ spriteTypes = {
 		  spriteType = {
 		name = "GFX_PB_0_news_event_PBNews_Fall_of_athens"
 		texturefile = "GFX/event_pictures/captured_cities/fall_of_athens.dds"
+	}
+
+		  spriteType = {
+		name = "GFX_PB_0_news_event_PBNews_Fall_of_sofia"
+		texturefile = "GFX/event_pictures/captured_cities/fall_of_sofia.dds"
 	}	
 
   ############

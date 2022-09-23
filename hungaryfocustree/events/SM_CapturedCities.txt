@@ -144,11 +144,11 @@ news_event = {		#Fall of Constantinople
 		341 = { is_controlled_by = HUN }
 		341 = { is_owned_by = GRE }
 		HUN = { has_war_with = GRE }
-		NOT = { has_global_flag = fall_of_athens_hun }
+		NOT = { has_global_flag = fall_of_constantinople_hun }
 	}
 	
 	immediate = {
-		set_global_flag = fall_of_athens_hun
+		set_global_flag = fall_of_constantinople_hun
 	}
 	
 	mean_time_to_happen = {
@@ -173,5 +173,48 @@ news_event = {		#Fall of Constantinople
 	option = {
 		name = SMcity.4.c
 		trigger = { TAG = GRE }
+	}
+}
+
+news_event = {		#Fall of Sofia
+	id = SMcity.5
+	title = SMcity.5.t
+	desc = SMcity.5.d
+	picture = GFX_PB_0_news_event_PBNews_Fall_of_sofia
+	major = yes
+	
+	trigger = {
+		949 = { is_controlled_by = SER }
+		949 = { is_owned_by = BUL }
+		BUL = { has_war_with = SER }
+		NOT = { has_global_flag = fall_of_sofia_hun }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_sofia_hun
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = SMcity.5.a
+		trigger = {
+			NOT = {
+				TAG = HUN
+				TAG = BUL
+			}
+		}
+	}
+	
+	option = {
+		name = SMcity.5.b
+		trigger = { TAG = HUN }
+	}
+	
+	option = {
+		name = SMcity.5.c
+		trigger = { TAG = BUL }
 	}
 }
