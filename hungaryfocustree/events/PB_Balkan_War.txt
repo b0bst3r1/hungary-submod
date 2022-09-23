@@ -399,6 +399,9 @@ declare_war_on = {
 	  
 	  	  		ROM = {
 				
+		clr_country_flag = Tag_in_Russian_Sphere
+        set_country_flag = Tag_in_Hungarian_Sphere				
+				
 			remove_ideas = {
              ROM_russian_rule
 	         ROM_political_turmoil
@@ -568,6 +571,19 @@ set_popularities = {
 		}
 	}	
 	         HUN = {
+			 
+			if = {
+				limit = {
+					HUN = {
+					  is_in_faction_with = ALB
+					}
+		         NOT = {
+			      has_global_flag = gbw_albania_lost
+		           } 					
+				}
+			    country_event = { id = balkwarpeace.12 days = 1 }			
+		     }
+			
          puppet = BOS
          puppet = SER  	
 		 
@@ -576,13 +592,13 @@ set_popularities = {
                 target = BOS
                  autonomy_state = autonomy_PB_Sister_Republic
                 }
-			}
 				
 			set_autonomy = {
                 target = SER
                  autonomy_state = autonomy_PB_Sister_Republic
-                }				
-		    }
+                }
+             }				
+		  }
 			
 		BUL = {
 			transfer_state = 106
@@ -599,6 +615,9 @@ set_popularities = {
       }		
 	
 		SER = {
+		
+		clr_country_flag = Tag_in_Russian_Sphere
+        set_country_flag = Tag_in_Hungarian_Sphere		
 	
 	set_cosmetic_tag = Ser_Jacobin
 	
@@ -646,6 +665,8 @@ set_popularities = {
 	  
 	  		BOS = {
 			
+        set_country_flag = Tag_in_Hungarian_Sphere
+		
 		transfer_state = 104
 		
 			if = {
@@ -739,6 +760,8 @@ set_popularities = {
 			}		
 		
 	  		MNT = {
+			
+        set_country_flag = Tag_in_Hungarian_Sphere			
 			
 		transfer_state = 105
 		transfer_state = 961		
@@ -1050,4 +1073,122 @@ country_event = {		# Great Balkan War - Question of Turkey
             add_political_power = 150			
 		}		
 	}
+}
+
+country_event = {		# Great Balkan War - Question of Albania
+	id = balkwarpeace.11
+	title = balkwarpeace.11.t
+	desc = balkwarpeace.11.d
+	picture = GFX_report_PB_Generic_War_Event
+
+	trigger = {
+		original_tag = HUN
+		has_global_flag = gbw_albania_lost
+	}
+
+	option = {
+		name = balkwarpeace.11.a
+		
+		HUN = {
+			country_event = { id = balkwarpeace.12 days = 1 }
+		}		
+		
+					ALB = {
+					
+            remove_ideas = ALB_german_dependency					
+					
+			clr_country_flag = Tag_in_German_Sphere
+            set_country_flag = Tag_in_Hungarian_Sphere				
+			
+			if = {
+				limit = {
+					HUN = {
+					has_government = jc
+					}
+				}
+			   set_politics = {
+		       ruling_party = JC
+		       }
+			}
+
+			if = {
+				limit = {
+					HUN = {
+					has_government = ss
+					}
+				}
+			   set_politics = {
+		       ruling_party = SS
+		       }
+			  }
+			
+			if = {
+				limit = {
+					HUN = {
+					has_government = lb
+					}
+				}
+				
+			   kill_country_leader = yes
+			   
+			   set_politics = {
+		       ruling_party = LB
+		       }
+			}
+			
+create_country_leader = {
+	name = "Enver Hoxha"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/ALB/portrait_enver_hoxha.dds"
+	ideology = JC_VARIANT_01
+}
+
+create_country_leader = {
+	name = "Enver Hoxha"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/ALB/portrait_enver_hoxha.dds"
+	ideology = SS_VARIANT_01
+}
+
+create_country_leader = {
+	name = "Theofan Stilian Noli"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/ALB/ALB_Fan_Noli.dds"
+	ideology = LB_VARIANT_01
+             }			
+		}		
+	}
+}
+
+	   country_event = { #QuestionOfKosovo
+	id = balkwarpeace.12
+	title = balkwarpeace.12.t
+	desc = balkwarpeace.12.d
+	picture = GFX_report_PB_Conference3
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = balkwarpeace.12.a #Give Kosovo to Serbia
+   }
+   
+	option = {
+		name = balkwarpeace.12.b #Divide Kosovo
+	 	  
+	  		ALB = {
+			
+		transfer_state = 956
+		
+      }
+   }
+
+	option = {
+		name = balkwarpeace.12.c #Give Kosovo to Albania
+	 	  
+	  		ALB = {
+			
+		transfer_state = 956
+		
+      }
+   }   
 }      

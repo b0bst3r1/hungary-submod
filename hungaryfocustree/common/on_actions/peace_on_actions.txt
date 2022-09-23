@@ -1,5 +1,51 @@
 on_actions = {
 	
+on_daily_ALB = {	#Albania joins the war	
+  effect = { 
+    if = {
+      limit = {
+	    has_global_flag = gbw_albanian_revolution_failed
+		
+		SER = {
+		has_war_with = BUL
+		}
+    }
+	
+	  add_ideas = PB_HUN_Great_Balkan_War
+	
+	  SER = {
+	   add_to_faction = ALB
+	}
+	set_global_flag = gbw_albania_ni_joined_war
+	clr_global_flag = gbw_albanian_revolution_failed
+    }
+  }	
+}
+
+on_daily_ALB = {	#Albania Capitulation	
+  effect = { 
+    if = {
+      limit = {
+	     NOT = {	  
+          controls_province = 9914	   
+          }
+
+        has_global_flag = gbw_albania_ni_joined_war		  
+       }
+	
+	leave_faction = yes
+	white_peace = HUN
+	white_peace = BUL
+	white_peace = TUR
+	remove_ideas = PB_HUN_Great_Balkan_War
+
+    clr_global_flag = gbw_albania_ni_joined_war
+    set_global_flag = gbw_albania_lost
+	
+	}
+  }
+}  
+	
 on_daily_HUN = {	#RomaniaCapitulation	
   effect = { 
     if = {

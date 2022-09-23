@@ -562,6 +562,8 @@ create_country_leader = {
 			random_list = {
 				40 = {
 				
+	   set_global_flag = gbw_albanian_revolution_success			
+				
 					HUN = {				
                     add_to_faction = ALB				
 			        }
@@ -636,6 +638,8 @@ create_country_leader = {
 		}
 	}
 				60 = {
+				
+	set_global_flag = gbw_albanian_revolution_failed		
 				
 			     news_event = {
 			     id = alban.2

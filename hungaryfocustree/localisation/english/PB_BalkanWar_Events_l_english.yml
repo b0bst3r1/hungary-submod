@@ -54,8 +54,8 @@
   balkwarpeace.6.a:0 "The New Order rises! 
   
   balkwarpeace.7.t:0 "Counter-Revolutionary Coup!"
-  balkwarpeace.7.d:0 ""
-  balkwarpeace.7.a:0 "The Military establishes a Regency Council"
+  balkwarpeace.7.d:0 ""When radicalism reached its peak, Hungary's military decided to seize the opportunity. The revolutionary Hungarian government has collapsed. Everyone in it was a traitor who spoiled the legacy of the great Hungarian people with every petty squabble. Only the army remains the country's only hope for a bright future. On a single order, the military marched into every city of the state and moved on all government buildings. Those hitherto supporting the revolutionary government were immediately arrested, while the top leadership was summarily executed. As the fascist street thugs have began to vandalize undesirablle properties, as political violence steadily worsens\n\nThe conservative military, after a brief debate, decided to declare a Regency Council until the right monarch, Habsburg or possibly someone else, could be found for Hungary. With such radical ideas and a dramatic change of course, Hungary will undoubtedly experience great turmoil in the coming months."
+  balkwarpeace.7.a:0 "The rise of a new era..."
 
   balkwarpeace.8.t:0 "Revolution in Athens"
   balkwarpeace.8.d:0 ""
@@ -68,7 +68,17 @@
   
   balkwarpeace.10.t:0 "The Partition of Turkey"
   balkwarpeace.10.d:0 ""
-  balkwarpeace.10.a:0 "Great Hellas on the horizon"  
+  balkwarpeace.10.a:0 "Great Hellas on the horizon"
+
+  balkwarpeace.11.t:0 "Question of Albania"
+  balkwarpeace.11.d:0 "After the fall of Albania, we will have to decide how to establish a new Albanian state."
+  balkwarpeace.11.a:0 "A new Balkan Order" 
+
+  balkwarpeace.12.t:0 "Question of Kosovo"
+  balkwarpeace.12.d:0 "Kosovo is populated by Albanians and Serbs, so it is up to the new state to decide whether to keep it intact or divide it between Albania and Serbia."
+  balkwarpeace.12.a:0 "Keep Kosovo Serbian"
+  balkwarpeace.12.b:0 "Divide between two nations"
+  balkwarpeace.12.c:0 "Give Kosovo to Albania"   
   
   ##########################    
   # IDEAS
