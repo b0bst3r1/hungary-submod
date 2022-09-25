@@ -206,6 +206,11 @@ spriteTypes = {
 	}
 	
 		spriteType = {
+		name = "GFX_report_event_hun_941"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_941.dds"
+	}	
+	
+		spriteType = {
 		name = "GFX_report_event_hun_alcohol"
 		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_alcohol.dds"
 	}
@@ -213,6 +218,16 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_report_event_hun_wolf"
 		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_wolf.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_report_event_hungary_parade"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hungary_parade.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_mihailovich"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_mihailovich.dds"
 	}	
 
 }	

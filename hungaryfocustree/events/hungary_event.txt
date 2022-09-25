@@ -1254,7 +1254,7 @@ create_country_leader = {
 				}
 			}
 
-			if = {
+			else_if = {
 				limit = {
 					has_completed_focus = hun_garbai_arrest
 				}
@@ -1301,7 +1301,7 @@ create_country_leader = {
 				}
 			}
 
-			if = {
+			else_if = {
 				limit = {
 					has_completed_focus = hun_belakun_arrest
 				}
@@ -1332,7 +1332,7 @@ create_country_leader = {
 				}
 			}
 
-			if = {
+			else_if = {
 				limit = {
 					has_completed_focus = hun_belakun_arrest
 				}
@@ -1357,7 +1357,7 @@ create_country_leader = {
 				}
 			}
 
-			if = {
+			else_if = {
 				limit = {
 					has_completed_focus = hun_belakun_arrest
 				}
@@ -1736,10 +1736,88 @@ create_country_leader = {
 				category = flamethrowers_tech
 			}
 		 }		 
-      }	  
+      }
+
+	       	   country_event = { #Diamond and Vengeance
+	id = hungarian.50
+	title = hungarian.50.t
+	desc = hungarian.50.d
+	picture = GFX_report_event_hun_941
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.50.a	
+		
+		add_political_power = 10
+		 }		 
+      }
+
+	       	   country_event = { #Victory Parade
+	id = hungarian.51
+	title = hungarian.51.t
+	desc = hungarian.51.d
+	picture = GFX_report_event_hungary_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.51.a	
+		
+		custom_effect_tooltip = Revolutionary_Zeal_0.06_increase
+		  add_to_variable = {
+			var = HUN_Revolutionary_Zeal
+			value = 0.06
+			
+			add_war_support = 0.1
+			
+	        }
+		 }		 
+      }
+
+	       	   country_event = { #Trial of Mihailovic
+	id = hungarian.52
+	title = hungarian.52.t
+	desc = hungarian.52.d
+	picture = GFX_report_event_mihailovich
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.52.a
+
+		SER = {		
+         remove_ideas = SER_Generals_Resistance
+           }		
+		
+		custom_effect_tooltip = Revolutionary_Zeal_0.02_increase
+		  add_to_variable = {
+			var = HUN_Revolutionary_Zeal
+			value = 0.02
+			
+	        }
+		 }		 
+      }
+
+	       	   country_event = { #Break Relations with Russia
+	id = hungarian.53
+	title = hungarian.53.t
+	desc = hungarian.53.d
+	picture = GFX_report_PB_Diplomatic_Agreement
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.53.a		
+		
+		add_opinion_modifier = {
+		  target = RUS modifier = outraged
+	   }
+	}
+ }		 	  
 	  
-country_event = {#Hungarian Support
-	id = 	
+country_event = { #Hungarian Support
+	id = hungarian.1000
 	title = hungarian.1000.t
 	desc = hungarian.1000.d
 	picture = GFX_report_event_hun_905

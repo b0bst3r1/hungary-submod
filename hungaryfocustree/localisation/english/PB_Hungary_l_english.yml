@@ -5,8 +5,15 @@
   SPEVNT_Hungary_Win_Balkan_War_CLOSETEXT:0 "§OREDS MARCH THE BALKANS§!"
   
   SPEVNT_Serbia_Win_Balkan_War:0 "NEW ORDER IN THE BALKANS"
-  SPEVNT_Serbia_Win_Balkan_War_TEXT:0 "The Communists are waging an unending war against civilization to destroy all institutions of power, all governments, all states in the world. They seek to create an international alliance of beggars, criminals, mediocrities, rebels, sick, retards, and fools to encompass the whole world.\n\n§O-Winston Churchill-§!"
-  SPEVNT_Serbia_Win_Balkan_War_CLOSETEXT:0 "§OTRIUPH OF ANTI-JACOBIN COALITION§!"  
+  SPEVNT_Serbia_Win_Balkan_War_TEXT:0 "Either communism must die or Christianity must die because it's actually a battle between Christ and Anti-Christ.\n\n§O-Billy Graham-§!"
+  SPEVNT_Serbia_Win_Balkan_War_CLOSETEXT:0 "§OTRIUPH OF ANTI-JACOBIN COALITION§!" 
+
+  SPEVNT_Hungary_Unites_Balkan:0 "HUNGARY UNITES BALKANS"
+  SPEVNT_Hungary_Unites_Balkan_TEXT: "A communist is like a crocodile: when it opens its mouth you cannot tell whether it is trying to smile or preparing to eat you up.\n\n§O-Winston Churchill-§!"
+  SPEVNT_Hungary_Unites_Balkan_CLOSETEXT:0 "§OTHE REVOLUTION IS SECURE§!"
+  
+  0_autonomous_region:0 "Autonomous Region"
+  0_autonomous_region_desc:0 "The Region has great national autonomy"
   
   #Leader Trait
   
@@ -264,16 +271,16 @@
  hun_tribunaloverromanians_desc:0 "Military tribunal over Romanian war criminals." 
  hun_tribunaloverserbs:0 "Tribunal Over Serb Generals"
  hun_tribunaloverserbs_desc:0 "Military tribunal over Serbian war criminals."
- hun_tribunaloverbosniaks:0 "Tribunal Over Bosniak Generals"
- hun_tribunaloverbosniaks_desc: "Military tribunal over Bosniak war criminals."
+ hun_tribunalovergreeks:0 "Tribunal Over Greek Generals"
+ hun_tribunalovergreeks_desc: "Military tribunal over Greek war criminals."
  hun_victory_parade:0 "Victory Parade"
  hun_victory_parade_desc:0 ""
  hun_demobilization: "Demobilization"
  hun_demobilization_desc:0 "Since the war is over with our victory, we don't have to worry anymore. The economy should not be in such a position in the condition of peace."
  hun_pensionwarveterans:0 "Pension for War Veterans"
  hun_pensionwarveterans_desc:0 "War veterans sacrificed their years and health in order to win the war, so everyone is obliged to give a small part of their income to provision for combat veterans of any age. They deserved it."
- hun_break_relations_with_Alb_rus:0 "Break Relations with Albania"
- hun_break_relations_with_Alb_rus_desc:0 "Albania completely illegaly seized Kosovo without coordinating with the Serbian goverment. We cannot afford to have any relations with such state."
+ hun_break_relations_with_Alb_rus:0 "Break Relations with Russia"
+ hun_break_relations_with_Alb_rus_desc:0 "Russia completely illegaly seized Moldova without coordinating with the Romanian goverment. We cannot afford to have any relations with such state."
  hun_split_with_Bulgaria:0 "Split with Bulgaria"
  hun_split_with_Bulgaria_desc:0 "Our opinions with Bulgaria in relation to many important things are absolutely at odds. The Bulgarian goverment believes that Hungary received too many territories as a result of Great Balkan War. Also Bulgaria didn't condemn the intervention of Russia and Albania. This inevitably leads to a split between our two countries."
  hun_support_serbs_kosovo:0 "Support Serbs in Kosovo" 
@@ -290,10 +297,12 @@
  hun_develop_romanian_oil_desc:0 " "
  hun_financial_support_forrepublics:0 "Financial Support for Republics"
  hun_financial_support_forrepublics_desc: " "
- hun_proclaim_UDWR:0 "Proclaim UDWR"
+ hun_proclaim_UDWR:0 "Balkan Unification"
  hun_proclaim_UDWR_desc:0 " "
  hun_integrate_with_new_republics:0 "Integration with New Republics"
  hun_integrate_with_new_republics_desc:0 " "
+ hun_south_curtain:0 "South Curtain"
+ hun_south_curtain_desc:0 " "
  
  hun_expandtheredair:0 "Expand the Red Air" 
  hun_expandtheredair_desc:0 "Our airforce must be fully coordinated with the army to intercept enemy ground attacks and support the vast offensives, this will require a large amount of new airplanes and pilots."
@@ -310,7 +319,14 @@
   
   PB_Govidea_Hungarian_Socialism:0 "Hungarian Socialism"
   
-  
+  HUN_integrating_with_republics2:0 "Investments in the Worker Republics"
+  HUN_integrating_with_republics2_desc:0 "The integration process with the Union workers' republics consumes a great deal of resources. To bring them closer to the level of development of Hungary itself, a huge amount of money has to be spent. But it will all inevitably pay off."  
+  HUN_integrating_with_republics:0 "Investments in the Worker Republics"
+  HUN_integrating_with_republics_desc:0 "The integration process with the Union workers' republics consumes a great deal of resources. To bring them closer to the level of development of Hungary itself, a huge amount of money has to be spent. But it will all inevitably pay off."
+  HUN_Recovery_from_the_war:0 "Recovery from the war"
+  HUN_Recovery_from_the_war_desc:0 " "
+  HUN_Pension_War_Veterans:0 "Pension for War Veterans"
+  HUN_Pension_War_Veterans_desc:0 ""
   HUN_great_patriotic_war:0 "The Great Patriotic War"
   HUN_great_patriotic_war_desc:0 "The reactionary powers are encroaching on the revolutionary dignity of the Hungarian People's Republic. They invaded independent Bulgaria, apparently fulfilling the wishes of the Russian Empire. We fulfilled our obligations and protected the Bulgarian state, otherwise Hungary would obviously have been their next victim."  
   HUN_United_Country:0 "United Country"
@@ -415,6 +431,10 @@
   
   #Tooltips#
   
+  HUN_FORMS_UDWR:0 "The following nations will be annexed if they exist:\n\n-[CRO.GetFlag] Croatia\n-[SER.GetFlag] Serbia\n-[ROM.GetFlag] Romania\n-[MNT.GetFlag] Montenegro\n-[ALB.GetFlag] Albania."
+  
+  hun_parade_was_held:0 "The Military Parade was held"
+  hun_won_in_the_gbw_tt:0 "We won the Great Balkan War"
   HUN_serbian_red_army:0 "Two Serbian divisions will be created" 
   HUN_romanian_red_army:0 "Two Romanian divisions will be created"  
   HUN_albania_neutrality:0 "§RAlbania§! will keep §Gneutrality§! in the §RGreat Balkan War§!"

@@ -204,7 +204,14 @@ defined_text = { #SUPER EVENT TITLES
             check_variable = { Active_Superevent_ID = 81 }
         }
         localization_key = "SPEVNT_Serbia_Win_Balkan_War"
-    }	
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 82 }
+        }
+        localization_key = "SPEVNT_Hungary_Unites_Balkan"
+    }		
 }
 
 defined_text = { #SUPER EVENT QUOTES
@@ -411,6 +418,13 @@ defined_text = { #SUPER EVENT QUOTES
             check_variable = { Active_Superevent_ID = 81 }
         }
         localization_key = "SPEVNT_Serbia_Win_Balkan_War_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 82 }
+        }
+        localization_key = "SPEVNT_Hungary_Unites_Balkan_TEXT"
     }	
 }
 
@@ -618,5 +632,12 @@ defined_text = { #SUPER EVENT QUOTES
             check_variable = { Active_Superevent_ID = 81 }
         }
         localization_key = "SPEVNT_Serbia_Win_Balkan_War_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 82 }
+        }
+        localization_key = "SPEVNT_Hungary_Unites_Balkan_CLOSETEXT"
     }	
 }

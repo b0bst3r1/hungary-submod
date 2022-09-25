@@ -9,3 +9,8 @@ music = {
 	name = "Super_Event_Sound_81"
 	file = "SPEVNT_Serbia_Win_Balkan_War.ogg"
 }
+
+music = {
+	name = "Super_Event_Sound_82"
+	file = "SPEVNT_Hungary_Unites_Balkan.ogg"
+}

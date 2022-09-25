@@ -881,6 +881,88 @@ hidden_ideas = {
 				training_time_army_factor = -0.1
 				political_power_gain = 0.15
 		    }
-		}					   
-	}	
+		}
+
+		HUN_Pension_War_Veterans = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_pension_war_veterans
+			
+			removal_cost = -1
+	
+			modifier = {
+                consumer_goods_factor = 0.1
+                stability_factor = 0.05
+			}
+		}
+
+		HUN_Recovery_from_the_war = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_recovery_from_the_war
+			
+			removal_cost = -1
+	
+			modifier = {
+                production_speed_buildings_factor = 0.2      	
+                industry_repair_factor = 0.25			
+			}
+		}
+
+		HUN_integrating_with_republics = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = PB_FRA_City_Investments
+			
+			removal_cost = -1
+	
+			modifier = {
+                consumer_goods_factor = 0.05     				
+			}
+		}
+
+		HUN_integrating_with_republics2 = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = PB_FRA_City_Investments
+			
+			removal_cost = -1
+	
+			modifier = {
+                consumer_goods_factor = 0.1     				
+			}
+		}		
+	 }	
  } 

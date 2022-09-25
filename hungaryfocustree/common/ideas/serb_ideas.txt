@@ -69,5 +69,68 @@ ideas = {
 			}
 		}
 		
-	}	
+		SER_Generals_Resistance= {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+                        picture = general_staff
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				political_power_factor = -0.2			
+			}
+		}
+
+		SER_help_from_hungary = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+                        picture = SER_help_from_hungary
+			
+			removal_cost = -1
+	
+			modifier = {
+	            consumer_goods_factor = -0.05
+                production_speed_buildings_factor = 0.2		
+			}
+		}
+
+		SER_help_from_hungary2 = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+                        picture = SER_help_from_hungary
+			
+			removal_cost = -1
+	
+			modifier = {
+	            consumer_goods_factor = -0.1
+                production_speed_buildings_factor = 0.35		
+			}
+		}		
+	 }	
  }	

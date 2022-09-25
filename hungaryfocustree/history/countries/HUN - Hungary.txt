@@ -38,6 +38,7 @@ set_country_flag = Tag_in_Hungarian_Sphere
 set_country_flag = transylvania_undefined
 set_country_flag = slovakia_undefined
 set_country_flag = ruthenia_undefined
+set_country_flag = PB_content_country
 
 set_research_slots = 3
 

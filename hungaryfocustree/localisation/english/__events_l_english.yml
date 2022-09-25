@@ -240,7 +240,22 @@
  hungarian.49.t:0 "First cloned wild wolf"
  hungarian.49.d:0 "A Budapest-based gene firm on Monday announced the debut of the world's first cloned wild wolf via video, 100 days after its birth in a Budapest lab. Experts said its birth pioneers the breeding of more rare and endangered animals through cloning technology.\n\n"To save the endangered animal, we started the research on cloning the wolf. After two years of painstaking efforts, the wolf was cloned successfully. It is the first case of its kind in the world," company's general manager of the Budapest-based Sinogene Biotechnology Co, said at a press conference\n\nBorn on June 10, the wolf, named Maya, is in very good health, as the video showed. The birth of the world's first cloned wild wolf is a milestone for the application of cloning technology, which is of great significance to the conservation of rare and endangered animals and biodiversity, experts believe."
  hungarian.49.a:0 "Is this the future?" 
-  
+ 
+ hungarian.50.t:0 "Diamond and Vengeance"
+ hungarian.50.d:0 "Népszabadság\n\nPERSONALLY RESPONSIBLE\n\nDiamond and Vengeance\n\nIn 1801, Tóth was engaged to marry a rich woman, but three jealous friends — Ferenc, Máté, and Szabó — falsely accused him of being a spy for France(a fourth friend, Allut, knew of their conspiracy, but did not report it). He was imprisoned in the Eger Castle for seven years, not even learning why until his second year there. During his imprisonment he ground a small passageway into a neighboring cell and befriended a wealthy Austrian priest named Father Alois who was also held in the fortress. A year later, a dying Alois bequeathed to Tóth a treasure he had hidden in Wien. When Tóth was released he took possession of the treasure, returned under another name to Pest and spent 10 years plotting revenge against his former friends.\n\nTóth first murdered Szabó or had him murdered. Tóth's former fiancée had, two years after his disappearance, married his former friend Ferenc, who became the subject of his most brutal revenge. Tóth tricked Ferenc's daughter into marrying a criminal, whom he then had arrested. Ferenc's daughter promptly died of shock. Tóth then burned down Ferenc's restaurant, or arranged to have it burned down, leaving Ferenc impoverished. Next, he fatally poisoned Máté and either manipulated Ferenc's son into stealing some gold jewelry or framed him for committing the crime. The boy was sent to jail, and Tóth stabbed Ferenc to death. He was himself then abducted by a vengeful Allut, who seriously injured Tóth while holding him captive. Tóth was eventually found by the Austrian police, and they recorded his confession before he died of his injuries."
+ hungarian.50.a:0 "A fascinating story"
+ 
+ hungarian.51.t:0 "Victory Parade"
+ hungarian.51.d:0 "[GetDateText]\n(signed) Leader of the [HUN.GetNameDefCap] [From.GetLeader]\nSupreme Commander-in-Chief, Armed Forces of the Hungary\n\nA total of 27,212 people participated in the parade, including:\nSergeants and Privates - 23018\nOfficers - 3,010 people, including 110 generals\nCombined military band - 1,400 people.\n\nDisplays of the Red Army vehicles were some of the focal points of the ceremony. This historic two-hour parade remains the longest and largest military parade history involved a lot of soldiers and military vehicles and other military hardware." 
+ hungarian.51.a:0 "Hurray!"
+ 
+ hungarian.52.t:0 "Trial of Mihailović"
+ hungarian.52.d:0 "Mihailović was tried as a leader of the Chetnik movement. Along with him, many nationalist figures of Serbia were put on trial, such as the Nedić and Velibor Jonić. Mihailović and others were tried mainly for their activities against Hungarian and Bulgarian forces and for war crimes against civilians. Despite attempts by Russia and France to influence the decisions of the court in order to save the main leaders of Serbia, which was allied to them, in the end they failed.\n\nThe court often decided upon handing out the death penalty or life sentences, with only a handful of individuals escaping the conference as free men. The main defendant Mihailović was indicted on 47 counts. He was found guilty of all charges and sentenced to death. He was executed by hanging, followed by cremation of his body in an undisclosed place."
+ hungarian.52.a:0 "Deserved punishment"
+ 
+ hungarian.53.t:0 "Breaking Relations with Russia"
+ hungarian.53.d:0 "In response to Russia's intervention in Moldavia and the establishment of Imperial Autonomy there, the Hungarian Foreign Ministry decided to break off relations with Russia. Today the Russian ambassador was summoned to Budapest and received a note about the severance of diplomatic relations. This means that all Hungarian and Russian diplomats stop their work. Until now, Russia had an embassy in Budapest and consulates in Uzhgorod. The Hungarian embassy worked in Moscow, and consulates in St. Petersburg and Warsaw.\n\n"This would be a highly undesirable scenario that would probably make things even more difficult, and more importantly, not only for the states, but also for the peoples of the two countries", the Russian foreign minister commented on the events."
+ hungarian.53.a:0 "Okay"
  
  hungarian.1000.t:0 "Hungarian Material Support" ##Doesn't Need Loc
  hungarian.1000.d:0 ""
@@ -252,9 +267,9 @@
  hungary.1.d:0 "Today, Miklos Horthy entered the city of Budapest and announced to the crowd that he forgives the "sinful capital" that defiled the motherland.\n\ \n\ Then Horthy said that one day Hungary would regain its former greatness and the enemies of the motherland would be defeated. The crowd cheered. Horthy left the square."
  hungary.1.a:0 "Alarming"
  
- hungary.2.t:0 "Proclamation of UDWR"
- hungary.2.d:0 " The leaders of all six national republics finally signed an agreement that has been discussed for many months. Unification into one single state - Union of Danubian Worker's Republics! \n\ \n\ Each republic of the state (Croatian, Bosnian, Hungarian, Montenegrin, Serbian and Romanian Workers Republics) will have formal sovereignty and also an opportunity to exit from the union." 
- hungary.2.a:0 "Great Day!"
+ hungary.2.t:0 "BALKAN UNITES"
+ hungary.2.d:0 "The Hungarian government announced the creation of a unified Danubian state consisting of the lands of Hungary, the former possessions of the Serbian monarchy and Wallachia. The dream of unifying the Balkans has long been on the minds of local thinkers and it seems that Hungary is making the dreams true. It is quite possible that a strong Danubian state will soon turn its gaze southward - the lands of Bulgaria and even Greece. There is hardly anything to stop it from doing so. There was no official reaction from the Great Powers, but they were obviously alarmed by Hungary's ascent." 
+ hungary.2.a:0 "Dreams become reality.."
  
  hungary.3.t:0 "THIRD BALKAN WAR"
  hungary.3.d:0 "The day after the Hungarian ultimatum to Albania on granting independence to Kosovo, Albania refused. After Bulgaria officially announced the guaraantees of the Albanian goverment, nothing else could have happened. \n\n Hungary had nothing else to do. This morning, the Hungarian Red Army crossed the Albanian and Bulgarian borders. The war has began."

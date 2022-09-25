@@ -1,0 +1,39 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_modifiers_0_autonomous_region_icon"
+		textureFile = "gfx/interface/modifiers_autonomous_region_icon.dds"
+	}   
+
+	# Unique Terrain
+
+	spriteType = {
+		name = "GFX_modifiers_terrain_nikolaegrad_icon"
+		textureFile = "gfx/interface/terrain/nikolaegrad_terrain.dds"
+	}  
+	
+	spriteType = {
+		name = "GFX_modifiers_terrain_lasi_icon"
+		textureFile = "gfx/interface/terrain/terrain_lasi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_modifiers_terrain_osman_icon"
+		textureFile = "gfx/interface/terrain/terrain_osman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifiers_terrain_sarajevo_icon"
+		textureFile = "gfx/interface/terrain/terrain_sarajevo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifiers_terrain_sopron_icon"
+		textureFile = "gfx/interface/terrain/terrain_sopron.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifiers_terrain_uzhgorod_icon"
+		textureFile = "gfx/interface/terrain/terrain_uzhgorod.dds"
+	}	
+}

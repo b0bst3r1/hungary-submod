@@ -1,15 +1,17 @@
-#on_actions = {
-
-	#on_startup = {
-		#effect = {
-			#ROM = {
-				#country_event = {
-				  #id = greatbalkwar.1
-					#days = 450
-				#}
-			#}
-		#}
-	#}
-#} 
+on_actions = {
+     effect = {
+	 
+			#Russia controls romanian oil
+			
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				ROM = {
+					give_resource_rights = { receiver = RUS state = 46 }
+				}
+			}
+		}
+	}
   
   
