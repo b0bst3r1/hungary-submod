@@ -143,9 +143,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Georgi Dimitrov"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/BUL/Portrait_georgidimitrow.dds"
 	ideology = LB_VARIANT_01
 }
 

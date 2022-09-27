@@ -211,7 +211,28 @@ defined_text = { #SUPER EVENT TITLES
             check_variable = { Active_Superevent_ID = 82 }
         }
         localization_key = "SPEVNT_Hungary_Unites_Balkan"
-    }		
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 83 }
+        }
+        localization_key = "SPEVNT_third_balkan_war"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 84 }
+        }
+        localization_key = "SPEVNT_Romanian_Uprising"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 85 }
+        }
+        localization_key = "SPEVNT_Turkey_War_For_Independence"
+    }	
 }
 
 defined_text = { #SUPER EVENT QUOTES
@@ -425,6 +446,27 @@ defined_text = { #SUPER EVENT QUOTES
             check_variable = { Active_Superevent_ID = 82 }
         }
         localization_key = "SPEVNT_Hungary_Unites_Balkan_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 83 }
+        }
+        localization_key = "SPEVNT_third_balkan_war_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 84 }
+        }
+        localization_key = "SPEVNT_Romanian_Uprising_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 85 }
+        }
+        localization_key = "SPEVNT_Turkey_War_For_Independence_TEXT"
     }	
 }
 
@@ -639,5 +681,26 @@ defined_text = { #SUPER EVENT QUOTES
             check_variable = { Active_Superevent_ID = 82 }
         }
         localization_key = "SPEVNT_Hungary_Unites_Balkan_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 83 }
+        }
+        localization_key = "SPEVNT_third_balkan_war_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 84 }
+        }
+        localization_key = "SPEVNT_Romanian_Uprising_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 85 }
+        }
+        localization_key = "SPEVNT_Turkey_War_For_Independence_CLOSETEXT"
     }	
 }

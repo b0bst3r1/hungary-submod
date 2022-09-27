@@ -13,5 +13,20 @@ spriteTypes = {
 	spriteType = {
   		name = "GFX_SPEVNT_82"
 		texturefile = "gfx/super_events/SPEVNT_Hungary_Unites_Balkan.dds"
+	}
+	
+	spriteType = {
+  		name = "GFX_SPEVNT_83"
+		texturefile = "gfx/super_events/SPEVNT_third_balkan_war.dds"
+	}
+
+	spriteType = {
+  		name = "GFX_SPEVNT_84"
+		texturefile = "gfx/super_events/SPEVNT_Romanian_Uprising.dds"
+	}
+	
+	spriteType = {
+  		name = "GFX_SPEVNT_85"
+		texturefile = "gfx/super_events/SPEVNT_Turkey_War_For_Independence.dds"
 	}	
 }

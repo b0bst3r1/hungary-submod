@@ -281,5 +281,80 @@ set_autonomy = {
 	 	  country_event = { id = balkwarpeace.6}		   
 	    }
       }
+    }
+
+on_daily_HUN = {	# Third Balkan War - Bulgaria Capitulation	
+  effect = { 
+    if = {
+      limit = {
+	  
+	    has_global_flag = third_balkan_war_started
+		
+          controls_province = 9617
+          controls_province = 9716		  
+    }
+	
+	country_event = { id = hungarian.15}
+
+    set_global_flag = third_balkan_war_bulgaria_lost
+	
+	      }
+       }
+    }
+
+on_daily_HUN = {	# Third Balkan War - Albania Capitulation	
+  effect = { 
+    if = {
+      limit = {
+	  
+	    has_global_flag = third_balkan_war_started
+		
+          controls_province = 9617		  
+    }
+	
+	country_event = { id = hungarian.57}
+
+    set_global_flag = third_balkan_war_albania_lost
+	
+	      }
+       }
+    }
+
+on_daily_HUN = {	# Third Balkan War - Greece Capitulation	
+  effect = { 
+    if = {
+      limit = {
+
+	    has_global_flag = third_balkan_war_started
+		
+          controls_province = 9617		  
+    }
+
+    set_global_flag = third_balkan_war_greece_lost
+	
+	      }
+       }
+    }
+
+on_daily_HUN = {	# Third Balkan War - Final Peace Deal
+  effect = { 
+    if = {
+      limit = { 
+	    has_global_flag = third_balkan_war_bulgaria_lost
+	    has_global_flag = third_balkan_war_greece_lost	
+    }
+ 
+		  set_global_flag = third_balkan_war_hungary_win
+ 
+		  clr_global_flag = great_balk_war
+		   
+	      clr_global_flag = third_balkan_war_bulgaria_lost
+	      clr_global_flag = third_balkan_war_greece_lost
+	      clr_global_flag = gbw_turkey_lost		   
+		   
+	 	  country_event = { id = hungarian.58}	
+		  
+	      }
+       }
     }	
-  }  
+ } 

@@ -128,9 +128,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Jože Moskrič"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/SER/Portrait_ser_Jože_Moskrič.dds"
 	ideology = AN_VARIANT_01
 }
 

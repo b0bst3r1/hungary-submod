@@ -1796,7 +1796,11 @@ PB_Setup_Cultures = {
 	
 	### ---- Austro-Hungarian Culture ---- ###
 	
-	975 = { set_variable = { culture_id = 448 } }	
+	975 = { set_variable = { culture_id = 448 } }
+	
+	### ---- Jewish Culture ---- ###
+	
+	            #Culture_id = 449	
 
     	
 }

@@ -12,12 +12,26 @@
   SPEVNT_Hungary_Unites_Balkan_TEXT: "A communist is like a crocodile: when it opens its mouth you cannot tell whether it is trying to smile or preparing to eat you up.\n\n§O-Winston Churchill-§!"
   SPEVNT_Hungary_Unites_Balkan_CLOSETEXT:0 "§OTHE REVOLUTION IS SECURE§!"
   
+  SPEVNT_third_balkan_war:0 "THIRD BALKAN WAR"
+  SPEVNT_third_balkan_war_TEXT: "I love the combination of the words 'spies' and 'Balkans.' It's like meat and potatoes.\n\n§O-Alan Furst-§!"
+  SPEVNT_third_balkan_war_CLOSETEXT:0 "§OHERE WE GO AGAIN§!" 
+
+  SPEVNT_Romanian_Uprising:0 "ROMANIAN UPRISING"
+  SPEVNT_Romanian_Uprising_TEXT: "Freedom, in any case, is only possible by constantly struggling for it.\n\n§O-Albert Einstein-§!"
+  SPEVNT_Romanian_Uprising_CLOSETEXT:0 "§OTHE BEGINNING OF THE END OF RUSSIA?§!" 
+
+  SPEVNT_Turkey_War_For_Independence:0 "TURKISH INDEPENDENCE WAR"
+  SPEVNT_Turkey_War_For_Independence_TEXT: "Happy is he who says, "I am a Turk".\n\n§O-Mustafa Kemal Ataturk-§!"
+  SPEVNT_Turkey_War_For_Independence_CLOSETEXT:0 "§OFREEDOM REQUIRES BLOOD§!"  
+  
   0_autonomous_region:0 "Autonomous Region"
   0_autonomous_region_desc:0 "The Region has great national autonomy"
   
   #Leader Trait
   
   PB_The_Great_Founder:0 "The Great Founder"
+  PB_Pers_Chief:0 "Chief"
+  PB_Pers_First_Hungarian_Democrat:0 "First Hungarian Democrat"
   
   #FOCUS
   
@@ -293,7 +307,7 @@
  hun_road-bdpst-srjvo-blgrd_desc:0 " "
  hun_road_budapest-buharest:0 "Railway Budapest-Buharest"
  hun_road_budapest-buharest_desc:0 " "
- hun_develop_romanian_oil:0 "Develop Romanian Oil"
+ hun_develop_romanian_oil:0 "Romanian Gold"
  hun_develop_romanian_oil_desc:0 " "
  hun_financial_support_forrepublics:0 "Financial Support for Republics"
  hun_financial_support_forrepublics_desc: " "
@@ -314,6 +328,37 @@
  hun_foundworkersfront_desc:0 "Today, the General Secretary of the Party announced the creation of the Workers' Front - an international alliance of workers in the struggle for world revolution and the destruction of capital!" 
  hun_heavyindustry:0 "Prepare Heavy Industry" 
  hun_heavyindustry_desc:0 "With the threat of war we are looking to create a lot more of military factories in order to destroy the enemies."  
+ 
+ #Communist endgame tree
+ 
+  hun_revolution_goes_on:0 "REVOLUTION GOES ON"
+  hun_revolution_goes_on_desc:0 "We have already made tremendous progress in the development of socialist society, but everything is still to come. We still have many goals in front of us, like the unification of the Balkans under the red banner, as well as the industrialization of the state."
+  hun_project_riese:0 "Project "GIANT""
+  hun_project_riese_desc:0 "The Giant Plan provided for the construction of seven underground facilities, mostly for heavy industry, located in the mountains of Transylvania. A network of roads, bridges, and narrow-gauge railroads was created for transportation between the construction sites and the nearest railroad stations. Prisoners reloaded building materials, cut down trees, and dug ponds and drainage ditches. Small dams were erected on streams to create water supply and sewage systems."
+  hun_new_element_of_resettlement:0 "Ideal City"
+  hun_new_element_of_resettlement_desc:0 "The concept of the ideal city is to build an ideal city to live in. This idea dates back to Aristotle and many other thinkers. It is planned to reconstruct Budapest so that significantly more people could live in the city than currently live there."
+  hun_industrialisation:0 "Industrialization"
+  hun_industrialisation_desc:0 "Now in the country most of the population works in the agricultural sector of the economy, which is inevitably necessary to correct. The reactionary powers will unequivocally pressurize us for the decay of the state, but we will not allow it! Industrialization is required for potential protection against foreign intervention, as we currently lag far behind such giants as Russia or Great Britain militarily. But it won't be for long."
+  hun_industrial_society:0 "Industrial Society"
+  hun_industrial_society_desc:0 "After spending considerable time and resources, the industrialization plan succeeded! Most of the population was transferred from the agrarian sector to the industrial sector of the economy. A considerable amount of military and civilian industry, railroads, and many other things were successfully built."
+  hun_jewish_autonomy:0 "Establish Jewish Autonomy"
+  hun_jewish_autonomy_desc:0 "The Jews are a repressed people throughout Europe. The French ruthlessly massacre Jews all over the country. While in Russia, Germany and Serbia the Jews are greatly restricted in their rights and are far below any other people. Hungary can become a haven for Jews all over Europe, which has many advantages, such as an increase in population and manpower, as well as an increase in international prestige among the adequate world."
+  hun_project_horus:0 "Project "HORUS""
+  hun_project_horus_desc:0 "The idea of developing weapons of mass destruction has long been on the minds of politicians and scientists in our country. But now it has the greatest relevance. The world powers are trying to cut their own throats and the world is probably moving into a stage of unipolarity. The capitalist countries will definitely try to destroy the legacy of the revolution, perhaps even with nuclear weapons. Therefore, we must be prepared to respond decisively and forcefully to enemy territory."
+  hun_armed_neutrality:0 "Armed Neutrality"
+  hun_armed_neutrality_desc:0 "The armed forces must be ready to defeat a potential enemy in the event of a new war. In such a tense time, one must not relax."
+  hun_prepare_a_new_hike:0 "Prepare a New Hike"
+  hun_prepare_a_new_hike_desc:0 "When the capitalist powers cut each other's throats we should take advantage of this and expand our zone of influence. The obvious option for this is Bulgaria and Greece. The Red Army must be ready to strike south and defeat the enemy swiftly. The war is once again advancing in the Balkans..."
+  hun_revolutionary_bulgaria:0 "§ROPERATION PHOBOS§!"
+  hun_revolutionary_bulgaria_desc:0 "Now that the Red Army is sufficiently prepared we are ready to go on another campaign. Bulgaria and Greece have long had a grudge against us, so we must strike first while the enemy is not yet ready. In the event of victory, one common state will be organized on the territory of Bulgaria and Greece, which will probably later be integrated into the Danubian Federation."
+  hun_way_forward:0 "A Step Forward"
+  hun_way_forward_desc:0 "The previous doctrine has successfully outlived its usefulness and, accordingly, a new strategy for development in the new postwar world should be devised."
+  hun_europe_last_chance:0 "Last Chance of Europe"
+  hun_europe_last_chance_desc:0 "After the logical defeat of Bulgaria and Greece, the question arises what to do with their territory. A provisional government of the Balkan League of Jacobins was established, but it was obvious that it would not last long. The only proper continuation is integration with the revolutionary homeland."
+  hun_heart_of_revolution:0 "Heart of Revolution"
+  hun_heart_of_revolution_desc:0 "Hungary is still the only revolutionary power in all of Europe, but nevertheless we have succeeded in greatly expanding our zone of influence by defeating the imperialists. We are the heart of the revolution."
+  hun_second_december:0 "Second December"
+  hun_second_december_desc:0 "Despite all the difficulties and pressure, Hungary was able to cope with everything and successfully continue the cause of the December Revolution and the great revolutionary Vilmos Böhm. There is still much to come for Hungary, but it is clear to all that the revolutionary state will cope with all difficulties."
   
   ###IDEAS###
   
@@ -433,6 +478,10 @@
   
   HUN_FORMS_UDWR:0 "The following nations will be annexed if they exist:\n\n-[CRO.GetFlag] Croatia\n-[SER.GetFlag] Serbia\n-[ROM.GetFlag] Romania\n-[MNT.GetFlag] Montenegro\n-[ALB.GetFlag] Albania."
   
+  electrification_decisions_tt:0 "§YOpens decisions§! for §GElectrification§! of the country"  
+  urbanization_decisions_tt:0 "§YOpens decisions§! to §GUrbanize§! the country"  
+  industrialization_decisions_tt:0 "§YOpens decisions§! to §GIndustrialize§! the country"  
+  Jew_in_Guta_tt:0 "§RJewish Culture§! will be established in §YGúta§!"
   hun_parade_was_held:0 "The Military Parade was held"
   hun_won_in_the_gbw_tt:0 "We won the Great Balkan War"
   HUN_serbian_red_army:0 "Two Serbian divisions will be created" 
@@ -510,7 +559,7 @@
   Revolutionary_Zeal_0.06_decrease:0 "Revolutionary Zeal: §R-6%§!."
   Revolutionary_Zeal_0.02_increase:0 "Revolutionary Zeal: §G+2%§!."
   Revolutionary_Zeal_0.04_increase:0 "Revolutionary Zeal: §G+4%§!."
-  Revolutionary_Zeal_0.06_increase:0 "Revolutionary Zeal: §G+6%§!."
+  Revolutionary_Zeal_0.06_increase:0 "Revolutionary Zeal: §G+6%§!." 
   
   #Party Unity#
   HUN_High_Party_Unity:0 "§GUnity§!"
@@ -546,6 +595,36 @@
   anti_jacob:0 "Counter-Revolutionary Front"  
   
   #DECISIONS#
+  
+  #Industrialization
+  
+  industr_loc:0 "Industrialization Progress is\n[?HUN_industr_progress|%0]"
+  
+  HUN_industrialisation:0 "Industrialization"
+  HUN_industrialisation_desc:0 "\n\n\n\n\n\nNow in the country most of the population works in the agricultural sector of the economy, which is inevitably necessary to correct. The reactionary powers will unequivocally pressurize us for the decay of the state, but we will not allow it! Industrialization is reguired for potential protection against foreign intervention, as we currently far behind such gians as Russia or Great Britain in millitary technologies. But it won't be for long!"
+  
+  HUN_industr_progress_0.01_increase:0 "Industrialization Progress: §G+1%§!."  
+  HUN_industr_progress_0.02_increase:0 "Industrialization Progress: §G+2%§!."
+  HUN_industr_progress_0.03_increase:0 "Industrialization Progress: §G+3%§!." 
+  HUN_industr_progress_0.04_increase:0 "Industrialization Progress: §G+4§!." 
+  HUN_industr_progress_0.05_increase:0 "Industrialization Progress: §G+5%§!."
+  HUN_industr_progress_0.10_increase:0 "Industrialization Progress: §G+10%§!." 
+  
+  HUNG_invest_in_military_industry:0 "Invest in Military Industry"
+  HUNG_invest_in_civil:0 "Invest in Civilian Industry"
+  HUN_build_supply_node:0 "Build Supply Node"
+  HUN_build_tunnels_transylvania:0 "Build Tunnels through Transylvania"
+  HUN_urbanize_north:0 "Urbanize North part of Country"
+  HUN_urbanize_romania:0 "Urbanize Romania"
+  HUN_urbanize_south:0 "Urbanize South part of Country"
+  HUN_mass_electrification_of_north:0 "Mass Electrification of the North"
+  HUN_mass_electrification_of_central:0 "Mass Electrification of the Central part of the Country"
+  HUN_mass_electrification_of_south:0 "Mass Electrification of the South"
+  hun_ask_for_foreign_investment:0 "Ask for Foreign Investments"
+  hun_importance_of_science:0 "Importance of Science"
+  hun_importance_of_science_desc:0 "The development of science unambiguously plays a major role in the development of the state, so it is necessary to invest resources there as well."
+  hun_romanian_oil:0 "Develop Romanian Oil"
+  hun_call_for_foreign_specs:0 "Call for Foreign Specialists"  
   
   #The Great Balkan War
   
@@ -809,9 +888,6 @@
   Hungarian_Ruthenia:0 "§RHungarian Culture§! will be established in §YKarpatenruthenen§!"
   magyarize_ruthenia:0 ""Magyarize Ruthenia"
   
-  
-  
-  
   transylvania_status:0 "§YStatus of Transylvania§!"
   ruthenia_status:0 "§YStatus of Ruthenia§!"
   slovakia_status:0 "§YStatus of Slovakia§!"    
@@ -834,13 +910,3 @@
   HUN_CountryDesc_Topbar:0 "§YThe Common Republic of Hungary§! is the only §RRevolutionary Republic§! in continental Europe.\n\n§YThe Kingdom of Hungary§! gained independence as a nation in 1866, when the Austrian Empire unified Germany and gave its Non-German territories independence. However the independence was only nominal. Karl Ludwig of Habsburg would become the King of Hungary and maintain loyalty to the Habsburg family and subsequently to Germany. Hungary would continue to be an ally of Germany or rather in the eyes of the Hungarian people be a exploited puppet.\n\nThe Downfall of the Kingdom began with the outbreak of the §YGreat War§! in 1905 where the nation would immediatly join the Imperial Powers in their war against the Bourbons. The Hungarian People were dragged into a war they had no motivation or interest fighting in greatly increasing their dissent with the Royal Leadership. With Hungarian Soldiers being used as cannon fodder on the alpine front and the citiziens themself experiencing food shortages, the old Jacobine ideas born in 1790 would again gain support among the common people. In the end over 300 thousand soldiers would give their lives for the war effort and in the Treaty of Tours the Kingdom would only be awarded some small reperations as compensation. §RThe Spark was lit!§!\n\nThe following collapsing economy in 1911 would lead to bread riots which would escalate as Hungarian troops would fire on the protestors. From there on the situation rapidly escalated with Troops defecting on mass. §RThe Revolution§! had began, the Hungarian civil war between the Jacobin Revolutionaries and the German Backed Whites started. At the same time Romania would invade and steal Translyvanian territory. However despite these setback the Revolution would suceed under the guidance of Vilmos Böhm and the §YCommon Republic of Hungary§! would be declared on 6th March 1912. \n\nAfter 8 years of recovering the Hungarian Republic would declare war upon Romania trying to reclaim their lost territories. The war would be the most brutal one both countries had ever experienced and after 3 years of gruesome fighting the Great Powers of Europe forced a peace. Hungary reclaimed the majority of its former Translyvanian States and would be seen as the victor. However its following and current problems would be internally. Ethnic tension in Slovakia and the Slavic border regions begin to cause issues, the ruling party §RForradalmi Tanács§! is splitting into two conflicting branches, the §YReformists§! and §YVanguardists§! and lastly the hero of the revolution Vilmos Böhm is losing his shine and motivation to rule this nation. On top of all of this, the is a feeling in the air that the Balkan is soon reaching its §R"Boiling Point"§!."   
   
   PB_Sphere_MM_Hungarian:0 "[From.Controller.GetNameWithFlag] is within the §RHungarian§! sphere of influence"
-  
-  
-  
-  
-
-  
-
-  
-
-  

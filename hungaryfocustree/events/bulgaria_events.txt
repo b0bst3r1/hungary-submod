@@ -21,6 +21,8 @@ country_event = {
 	
 	option = {
 		name = bulgar.1.a
+
+			country_event = { id = bulgar.2 days = 33 }
 		
 			hidden_effect = {
 		news_event = {
@@ -54,4 +56,71 @@ country_event = {
 		
 		}
 	 }
-  }
+  } 
+
+country_event = {
+	id = bulgar.2
+	title = bulgar.2.t
+	desc = bulgar.2.d
+	picture = GFX_report_PB_Soldiers_Riot	
+	fire_only_once = yes
+	
+	option = {
+		name = bulgar.2.a
+
+		ai_chance = {
+			factor = 40
+		}		
+		   
+        set_politics = {
+	    ruling_party = ni
+        }  
+		
+		drop_cosmetic_tag = yes
+		
+		kill_country_leader = yes
+		
+	    create_country_leader = {
+		name = "Alexander Tsankov"
+		desc = " "
+		picture = "gfx/leaders/BUL/Portrait_Alexander_Tsankovy.dds"
+		expire = "1965.1.1"
+		ideology = NI_VARIANT_01
+		
+		}
+	 }
+	 
+	option = {
+		name = bulgar.2.b
+
+		ai_chance = {
+			factor = 40
+		}		
+		   
+        set_politics = {
+	    ruling_party = ds
+        }  
+		
+		drop_cosmetic_tag = yes
+		
+		kill_country_leader = yes
+		
+	    create_country_leader = {
+		name = "Nikola Zhekov"
+		desc = " "
+		picture = "gfx/leaders/BUL/Portrait_Nikola_Zhekov.dds"
+		expire = "1965.1.1"
+		ideology = DS_VARIANT_01
+		
+		}
+	 }
+
+	option = {
+		name = bulgar.2.c
+
+		ai_chance = {
+			factor = 20
+	
+		}
+	 }	 
+  }  

@@ -884,6 +884,556 @@ focus_tree = {
 		x = 41
 		y = 6
 
+	}
+
+	focus = {
+		id = hun_revolution_goes_on
+		icon = GFX_revolution_goes_on
+		cost = 35
+		
+		prerequisite = {
+		}		
+
+	    completion_reward = {
+		
+		add_political_power = 50
+			
+        custom_effect_tooltip = Revolutionary_Zeal_0.04_increase 		
+		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = 0.04
+			}
+
+		custom_effect_tooltip = HUN_PartyUnity_0.04_increase
+		
+			add_to_variable = {
+				var = HUN_PartyUnity
+				value = 0.04
+			}
+      }			
+		
+		x = 36
+		y = 7
+
+	}
+
+	focus = {
+		id = hun_industrialisation
+		icon = GFX_hun_industrialization
+		cost = 35
+		
+		prerequisite = {
+			focus = hun_revolution_goes_on
+		}		
+
+	    completion_reward = {
+		
+		custom_effect_tooltip = industrialization_decisions_tt
+		
+        set_country_flag = hungarian_industrialization		
+		
+		hidden_effect = {
+		  country_event = {
+		   id = hungarian.60
+		   days = 1
+		  }
+       }		  
+    }			
+		
+		x = 40
+		y = 8
+
+	}
+
+	focus = {
+		id = hun_project_riese
+		icon = GFX_project_giant
+		cost = 56
+		
+		prerequisite = {
+			focus = hun_industrialisation
+		}		
+
+	    completion_reward = {
+		
+			add_offsite_building = {
+				type = arms_factory
+				level = 4
+			}
+			
+			add_offsite_building = {
+				type = industrial_complex
+				level = 4
+			}					
+		
+		custom_effect_tooltip = HUN_industr_progress_0.05_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.05		   
+	     }		
+      }			
+		
+		x = 39
+		y = 9
+
+	}
+
+	focus = {
+		id = hun_new_element_of_resettlement
+		icon = GFX_ideal_city
+		cost = 70
+		
+		prerequisite = {
+			focus = hun_industrialisation
+		}		
+
+	    completion_reward = {
+		
+		  country_event = {
+		   id = hungarian.54
+		    days = 1
+		  }   		   		
+		
+		set_province_name = { id = 9660 name = "Danube"}		
+		
+		967 = {
+		add_extra_state_shared_building_slots = 10
+		add_building_construction = {
+		  type = industrial_complex
+		   level = 5
+			instant_build = yes
+			}
+		}
+		
+			967 = {
+					add_manpower = 1500000				
+			}		 
+
+			43 = {
+					add_manpower = -500000				
+			}
+
+			155 = {
+				add_manpower = -400000
+			}
+
+			154 = {
+				add_manpower = -600000
+			}		
+		
+		custom_effect_tooltip = HUN_industr_progress_0.10_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.10		   
+	     }		 			
+      }	  
+		
+		x = 41
+		y = 9
+
+	}	
+
+	focus = {
+		id = hun_industrial_society
+		icon = GFX_hun_industrial_society
+		cost = 70
+		
+		available = {
+		check_variable = { HUN_industr_progress = 100 }
+		}
+		
+		prerequisite = {
+			focus = hun_new_element_of_resettlement
+		}
+		
+		prerequisite = {
+			focus = hun_project_riese
+		}		
+		
+		
+	    completion_reward = {
+
+        clr_country_flag = hungarian_industrialization		
+			
+		      swap_ideas = {
+			   remove_idea = PB_Semi_Industrialized
+			   add_idea = PB_Industrialized
+		       }		   
+	      }		
+		
+		x = 40
+		y = 10
+
+	}
+
+	focus = {
+		id = hun_way_forward
+		icon = GFX_hun_continue_our_way
+		cost = 35
+		
+		prerequisite = {
+			focus = hun_revolution_goes_on
+		}		
+
+	    completion_reward = {
+		
+		custom_effect_tooltip = HUN_PartyUnity_0.04_increase
+		
+			add_to_variable = {
+				var = HUN_PartyUnity
+				value = 0.04
+			}
+
+		add_political_power = 50			
+		
+      }			
+		
+		x = 32
+		y = 8
+
+	}
+
+	focus = {
+		id = hun_jewish_autonomy
+		icon = GFX_HUN_jew_autonomy
+		cost = 56
+		
+		prerequisite = {
+			focus = hun_way_forward
+		}		
+
+	    completion_reward = {
+		
+		add_political_power = 75		
+
+	    973 = { set_variable = { culture_id = 449 } }
+		custom_effect_tooltip = Jew_in_Guta_tt
+
+        hidden_effect = {
+
+		973 = {
+			set_temp_variable = { temp_culture = culture_id }
+			  ROOT = { 
+				PB_Cultures_add_accepted_culture = yes 
+					}
+			 }		
+      }
+}	  
+		
+		x = 31
+		y = 9
+
+}
+
+	focus = {
+		id = hun_heart_of_revolution
+		icon = GFX_hun_heart_of_revoltuion
+		cost = 70
+		
+		prerequisite = {
+			focus = hun_way_forward
+		}	
+		
+	    completion_reward = {
+		
+			OR = {
+				has_country_leader = {
+					name = "Sandor Garbai"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Bela Kun"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Jozsef Revai"
+					ruling_only = yes
+				}				
+			}		
+		
+			if = {
+			  limit = {
+				 has_country_leader = {
+				   name = "Sandor Garbai"
+					ruling_only = yes
+				    }
+				  }	
+				  
+		       add_country_leader_trait = PB_Pers_First_Hungarian_Democrat
+		       }				
+
+			else_if = {
+			  limit = {
+				 has_country_leader = {
+				   name = "Bela Kun"
+					 ruling_only = yes
+				  }
+				}
+				
+		       add_country_leader_trait = PB_Pers_Chief
+			   }
+
+			else_if = {
+			  limit = {
+				 has_country_leader = {
+				   name = "Jozsef Revai"
+					 ruling_only = yes
+				  }
+				}
+				
+		       add_country_leader_trait = PB_Pers_Intelligent
+			   }		
+		
+        custom_effect_tooltip = Revolutionary_Zeal_0.04_increase 		
+		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = 0.04
+			}
+
+		custom_effect_tooltip = HUN_PartyUnity_0.04_increase
+		
+			add_to_variable = {
+				var = HUN_PartyUnity
+				value = 0.04
+			}
+      }			
+		
+		x = 33
+		y = 9
+
+	}
+
+	focus = {
+		id = hun_second_december
+		icon = GFX_hun_second_december
+		cost = 70
+		
+		prerequisite = {
+			focus = hun_heart_of_revolution
+		}
+
+		prerequisite = {
+			focus = hun_jewish_autonomy
+		}		
+		
+	    completion_reward = {
+		
+		  country_event = {
+		   id = hungarian.55
+		    days = 1
+		  }		
+		
+        custom_effect_tooltip = Revolutionary_Zeal_0.06_increase 		
+		  add_to_variable = {
+			var = HUN_Revolutionary_Zeal
+			  value = 0.06
+		  }
+      }			
+		
+		x = 32
+		y = 10
+
+	}
+	
+	focus = {
+		id = hun_armed_neutrality
+		icon = GFX_hun_armed_neutrality
+		cost = 35
+		
+		prerequisite = {
+		focus = hun_revolution_goes_on		
+		}		
+
+	    completion_reward = {
+		
+         set_rule = {
+         can_send_volunteers = yes
+        }		
+		
+	    army_experience = 15
+		navy_experience = 15
+		air_experience = 15
+	
+        }			
+		
+		x = 36
+		y = 8
+
+	}	
+	
+	focus = {
+		id = hun_prepare_a_new_hike
+		icon = GFX_hun_prepare_anew_hike
+		cost = 56
+		
+		prerequisite = {
+		focus = hun_armed_neutrality		
+		}		
+
+	    completion_reward = {
+		
+		  country_event = {
+		   id = hungarian.59
+		   days = 1
+          }			
+
+	      add_tech_bonus = {
+		    name = armor_bonus
+		    bonus = 0.5
+		    uses = 2
+		    category = armor
+		  }
+
+		  add_tech_bonus = {
+			name = arty_bonus
+			bonus = 1.0
+			uses = 1
+			category = artillery
+		  }		  
+      }			
+		
+		x = 35
+		y = 9
+
+	}	
+	
+	focus = {
+		id = hun_project_horus
+		icon = GFX_hun_project_horus
+		cost = 70
+		
+		prerequisite = {
+		focus = hun_armed_neutrality
+		}		
+		
+	    completion_reward = {
+		
+		  country_event = {
+		   id = hungarian.56
+		    days = 1
+		  }
+		  
+		     add_tech_bonus = {
+			   name = secret_bonus
+			   bonus = 2
+			   uses = 1
+			   category = nuclear
+		    }
+		  
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 1
+				category = flamethrowers_tech
+			}
+			
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 1
+				category = cat_terror_weapons
+			}		  
+      }			
+		
+		x = 37
+		y = 9
+
+	}	
+
+	focus = {
+		id = hun_revolutionary_bulgaria
+		icon = GFX_hun_revolutionary_bulgaria
+		cost = 56
+		
+		prerequisite = {
+		focus = hun_prepare_a_new_hike
+		}
+
+		prerequisite = {
+		focus = hun_project_horus
+		}		
+
+	    completion_reward = {
+		
+		hidden_effect = {
+		
+		every_country = {
+		  set_temp_variable = { super_id = 83 }
+			PB_Fire_Super_Event = yes
+		  }
+        }		
+		
+	   set_global_flag = third_balkan_war_started	
+		
+            HUN = {			
+            declare_war_on = {
+             target = BUL
+             type = annex_everything
+            }
+		 }
+		 
+            BUL = {
+	    create_faction = Sofia_Entente
+            }		
+
+			if = {
+				limit = {	  
+			      ALB = {
+			       exists = yes
+			        }	   
+                  }
+			
+            HUN = {			
+            declare_war_on = {
+             target = ALB
+             type = annex_everything
+            }
+		 }
+		 
+			BUL = {				
+              add_to_faction = ALB				
+			 }
+	    }
+
+           hidden_effect = {
+		   
+		GRE = {
+			country_event = { id = greece.4 days = 5 }
+		 }		       		   
+     }		 
+ }   
+		
+		x = 36
+		y = 10
+
+}
+
+	focus = {
+		id = hun_europe_last_chance
+		icon = GFX_hun_europe_last_chance
+		cost = 70
+		
+		prerequisite = {
+		focus = hun_revolutionary_bulgaria
+		}
+
+		prerequisite = {
+		focus = hun_second_december
+		}
+
+		prerequisite = {
+		focus = hun_industrial_society
+		}		
+
+	    completion_reward = {
+      }			
+		
+		x = 36
+		y = 11
+
 	}	
 	
 	focus = {
@@ -1850,7 +2400,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = HUN_Legacy_of_Bohm
 		icon = GFX_HUN_Bohm_Resigns
-		cost = 28
+		cost = 35
 		
 		available = {
 			OR = {

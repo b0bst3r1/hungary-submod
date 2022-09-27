@@ -257,6 +257,36 @@
  hungarian.53.d:0 "In response to Russia's intervention in Moldavia and the establishment of Imperial Autonomy there, the Hungarian Foreign Ministry decided to break off relations with Russia. Today the Russian ambassador was summoned to Budapest and received a note about the severance of diplomatic relations. This means that all Hungarian and Russian diplomats stop their work. Until now, Russia had an embassy in Budapest and consulates in Uzhgorod. The Hungarian embassy worked in Moscow, and consulates in St. Petersburg and Warsaw.\n\n"This would be a highly undesirable scenario that would probably make things even more difficult, and more importantly, not only for the states, but also for the peoples of the two countries", the Russian foreign minister commented on the events."
  hungarian.53.a:0 "Okay"
  
+ hungarian.54.t:0 "Ideal City"
+ hungarian.54.d:0 "PROJECT "IDEAL CITY"\n\nDescription:\n\nStylistically, the scheme of the Ideal City should resemble a transistor circuit. In the geometric center of the city was the public center. On the four sides of the world from the main center were the public centers of the districts. Around them, there were residential complexes. In the corners of the city there were school and sports complexes, around which, at the edges, there were residential blocks of boarding schools. Along the perimeter of the square in plan with rounded corners ran the main road, serving the city. In the middle part there was a ring line of off-street high-speed transport. The buildings of the residential blocks were adjoined by kindergartens and service facilities. All plastic architectural elements were to be placed not on the facades of the buildings, but in the pedestrian zone."
+ hungarian.54.a:0 "Is this a new reality?"
+ 
+ hungarian.55.t:0 "Second December"
+ hungarian.55.d:0 "Before the speech [From.GetLeader] looked confident, but a little nervous. With a little preparation he took the stage and began to read a statement:\n\n "After the great war, the Hungarian people were left without a livelihood, most of the able-bodied male population perished, many cities were destroyed by the onslaught of war, and only the revolution helped people out of this chaos. Under the revolutionary Hungarian government, Hungary was able to achieve results that could not even be dreamed of. In the economy, the country was able to emerge from the crisis and take the path of rapid development. In foreign policy, the reactionary governments of Serbia and Romania, which wanted to tear our country apart and destroy the legacy of the revolution, were defeated. All of the Northern Balkans found themselves united under the revolutionary banner and this is far from over. It is now clear to the whole world - Hungary has departed from all its problems and is now a much stronger power, equal to the former Great Powers!\n\nTo the cheers of the audience, the leader left the stage. It was obvious to all: something epochal is coming.."
+ hungarian.55.a:0 "Long Live the Revolution!"
+ 
+ hungarian.56.t:0 "PROJECT "HORUS""
+ hungarian.56.d:0 "XX/XX/19XX\n\nTOP SECRET\n\nPROJECT "HORUS"\n\nDescription:\n\nIn response to the possible aggression of the reactionary powers in our direction, we will apply the strategy Massive Retaliation - massive use of n*c***r and c*e***al weapons on enemy territory.\n\nBasic materials:\nIn order to create the plutonium needed for n*c***r weapons, the plan is to run heavy water reactors where uranium would be turned into plutonium-239 (Pu-239). The basic materials needed in large amounts included, uranium, heavy water, and graphite.\n\nThe research plan:\n\n1. Once funds are allocated, begin a carefully orchestrated and resourced research program disguised as "civilian defense research"\n2. Under secrecy we will purchased five tons of heavy water from Japan.\n3. Develop methods to produce uranium for both peaceful and military applications, and build nuclear reactors.\n4. CLASSIFIED\n5. Further instructions will be given at a later time.\n\n[From.GetLeader] put the folder in the drawer with a sneering smile."
+ hungarian.56.a:0 "The future is safe."
+ 
+ hungarian.57.t:0 "Albania is defeated!"
+ hungarian.57.d:0 " "
+ hungarian.57.a:0 "Revolution is secured"
+ 
+ hungarian.58.t:0 "Balkan Workers League"
+ hungarian.58.d:0 " "
+ hungarian.58.a:0 "Revolution is secured" 
+ 
+ hungarian.59.t:0 "A day on the Job"
+ hungarian.59.d:0 "[From.GetLeader] was sitting at his desk, reading papers that his assistant had planted on his desk. He was in an anxious state of mind, knowing what would happen in a few minutes. A few hours earlier he had summoned Mátyás Rákosi, the Minister of Defense, to his office to tell him of his new plans. A panting Mátyás knocked and entered the leader's office, knowing that he doesn't like it when someone is late. \n\nThe Minister of Defense said hello to the National Leader and sat down at the table across from him. "So after several years of peace, war is coming upon our country again. While the world powers suffer the consequences of the outbreak of the seconnd Great War, we must make our move," [From.GetLeader] said. Rákosi already knew what he was talking about. "In the near future I order to prepare the Red Army for a new military campaign in the south, on the side of Bulgaria. More than one million combat-ready soldiers, capable of defeating the enemy in the shortest possible time, should be prepared in perfect secrecy." Despite his experience, Rákosi was more agitated than ever, but he had no choice but to acquiesce to his superior's demands." 
+ hungarian.59.a:0 "Stressful days."
+ 
+ hungarian.60.t:0 "A tough choice"
+ hungarian.60.d:0 "On the [From.GetLeader]'s desk there are two folders from the assistant. 1 - Describes the plan for the mass urbanization of the country. 2 - describes the plan of mass electrification of the country. For the implementation of both resources is clearly not enough, respectively, you need to make a choice. Which is more important?"
+ hungarian.60.a:0 "Urbanization."
+ hungarian.60.b:0 "Electrification."
+ 
+ 
  hungarian.1000.t:0 "Hungarian Material Support" ##Doesn't Need Loc
  hungarian.1000.d:0 ""
  hungarian.1000.a:0 "Excellent!"  
@@ -343,3 +373,7 @@
  hungary.20.t:0 "IT'S ALIVE"
  hungary.20.d:0 "It's hard to believe, but today a group of Hungarian scientists made a statement that they have finally succeeded in reviving the human body from components that are no longer working. Hungary has set itself such a goal in the face of a colossal labor shortage. \n\nThe Hungarian People's Republic is now many times ahead of the rest of the world in the aspect of physiology, who could not even think that this could be possible. Now many scientific communities have also set themselves the goal of making such a discovery, but it is far from certain that they will succeed."
  hungary.20.a:0 "Outstanding achievement"
+ 
+ hungary.21.t:0 "TURKEY REVOLTS"
+ hungary.21.d:0 "Today in the Capital of Ottoman Emprie Ottoman sultanate Abdulmejid II announced that the Ottoman Empire, once de facto ruled by the Russians, was no longer under the grasp of Moscow. He also informed the world that the nation would swiftly join Britain in its conflict against Russia, officaly proclaiming the nations willingess to join the British-German alliance. Moscow has openly stated that it will restore its overlordship over the Anatolia region through military might. It seems that that the on going conflict in Europe may just have another frontline to deal with."
+ hungary.21.a:0 "Loyalty is a mere illusion" 

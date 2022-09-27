@@ -1873,4 +1873,5 @@ HUN_shock_therapy = {
 				clr_country_flag = shock_therapy
 		}
 	}
-}	 
+}
+	 

@@ -224,6 +224,11 @@ spriteTypes = {
 		name = "GFX_report_event_hungary_parade"
 		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hungary_parade.dds"
 	}
+	
+		spriteType = {
+		name = "GFX_report_event_ideal_city"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_ideal_city.dds"
+	}	
 
 		spriteType = {
 		name = "GFX_report_event_mihailovich"

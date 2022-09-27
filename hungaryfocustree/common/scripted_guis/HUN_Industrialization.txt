@@ -1,0 +1,16 @@
+
+scripted_gui = {
+    HUN_industrialization_gui = {
+    
+        context_type = decision_category
+		window_name = "HUN_industrialization_gui"
+		
+		visible = {
+		  has_country_flag = hungarian_industrialization
+		}
+		
+		ai_enabled = {
+			always = yes
+		}
+	}
+}

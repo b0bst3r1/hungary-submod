@@ -85,9 +85,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Nicholas II"
-    desc = "PB_NO_DESC"
-    picture = "Portrait_MNT_Nicholas_II.dds"
+	name = "Blagoje Nešković"
+	desc = ""
+	picture = "gfx/leaders/MNT/portrait_blagoje_neskovic.dds"
     expire = "1965.1.1"
     ideology = LB_VARIANT_01
 }

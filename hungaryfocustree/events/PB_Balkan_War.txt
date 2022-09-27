@@ -44,9 +44,10 @@ country_event = {		#Test balkan war
         }
 
 		every_country = {
-			set_temp_variable = { super_id = 81 }
+			set_temp_variable = { super_id = 84 }
 			PB_Fire_Super_Event = yes
-		    }		
+		    }
+			
     }
 }
 
@@ -484,7 +485,15 @@ declare_war_on = {
 			picture = "gfx/leaders/ROM/Portrait_barbu_lazareanu.dds"
 			expire = "1965.1.1"
 			ideology = SS_VARIANT_01
-		}		
+		}
+
+		create_country_leader = {
+			name = "Barbu Lazareanu"
+			desc = " "
+			picture = "gfx/leaders/ROM/Portrait_barbu_lazareanu.dds"
+			expire = "1965.1.1"
+			ideology = LB_VARIANT_01
+		}			
 
 	set_cosmetic_tag = ROM_Jacobin
 

@@ -33,5 +33,10 @@ spriteTypes = {
     spriteType = {
 		name = "GFX_decision_category_hun_great_balkan_war"
 		texturefile = "gfx/interface/decisions/hun_great_balk_war_dec.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_decision_category_industrialisation"
+		texturefile = "gfx/interface/decisions/industrialisation_dec.dds"
 	}	
 }
