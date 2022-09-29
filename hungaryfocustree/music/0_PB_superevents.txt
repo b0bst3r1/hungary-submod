@@ -52,3 +52,21 @@ music = {
 		}		
 	}
 }
+
+music = {
+	song = "Super_Event_Sound_86"
+	chance = {
+		modifier = {
+			factor = 0
+		}		
+	}
+}
+
+music = {
+	song = "Super_Event_Sound_87"
+	chance = {
+		modifier = {
+			factor = 0
+		}		
+	}
+}

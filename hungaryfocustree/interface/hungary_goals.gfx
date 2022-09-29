@@ -6,6 +6,11 @@ spriteTypes = {
     }
 	
 	SpriteType = {
+	    name = "GFX_hun_letter_to_tesla"
+        texturefile = "gfx/interface/goals/hun_letter_to_tesla.dds"
+    }	
+	
+	SpriteType = {
 	    name = "GFX_hun_europe_last_chance"
         texturefile = "gfx/interface/goals/hun_europe_last_chance.dds"
     }

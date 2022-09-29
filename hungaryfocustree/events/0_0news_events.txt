@@ -328,7 +328,67 @@ add_namespace = hungary
 	option = {
 		name = hungary.21.a
 	}
-        }		
+        }
+
+	news_event = { # Turkey Revolts
+	id = hungary.22
+	title = hungary.22.t
+	desc = hungary.22.d
+	picture = GFX_PB_news_event_PBNews_Postwar_Ottoman_Dismantling
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.22.a
+	}
+        }
+
+	news_event = { # Romania Revolts
+	id = hungary.23
+	title = hungary.23.t
+	desc = hungary.23.d
+	picture = GFX_PB_news_event_PBNews_Postwar_Ottoman_Dismantling
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.23.a
+	   }
+    }
+
+	news_event = { # Tesla is Back
+	id = hungary.24
+	title = hungary.24.t
+	desc = hungary.24.d
+	picture = GFX_PB_News_Tesla_is_Back
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.24.a
+	   }
+    }
+
+	news_event = { # Tesla is Dead
+	id = hungary.25
+	title = hungary.25.t
+	desc = hungary.25.d
+	picture = GFX_PB_News_Tesla_is_Dead
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.25.a
+	   }
+    }	
 
  
 

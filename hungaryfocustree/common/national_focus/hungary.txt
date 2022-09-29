@@ -71,6 +71,10 @@ focus_tree = {
 			}
 		}
 		
+	    completion_reward = {
+	    set_global_flag = third_balkan_war_started		
+		}		
+		
 		x = 53
 		y = 1
 
@@ -659,7 +663,7 @@ focus_tree = {
 		46 = {
 		    add_building_construction = {
 		    	type = infrastructure
-		    	level = 6
+		    	level = 5
 		    	instant_build = yes
 		    }
           }
@@ -687,6 +691,7 @@ focus_tree = {
 		}
 		
 	    completion_reward = {
+		
          PB_Literacy_Moderate_Progress_Increase = yes
 		 
 			add_tech_bonus = {
@@ -728,7 +733,7 @@ focus_tree = {
 		
 		hidden_effect = {
 	
-	    set_cosmetic_tag = HUN_UDWR	
+	    set_cosmetic_tag = HUN_Danube_PR 	
 		
 				if = {
 				    limit = {
@@ -739,7 +744,7 @@ focus_tree = {
 				    HUN = {
 					    annex_country = {
                             target = ALB
-                            transfer_troops = no
+                            transfer_troops = yes
                         }
 						
 	              add_state_core = 44
@@ -764,7 +769,7 @@ focus_tree = {
 				    HUN = {
 					    annex_country = {
                             target = MNT
-                            transfer_troops = no
+                            transfer_troops = yes
                         }
 						
 		              add_state_core = 105	
@@ -787,7 +792,7 @@ focus_tree = {
 				    HUN = {
 					    annex_country = {
                             target = CRO
-                            transfer_troops = no
+                            transfer_troops = yes
                         }
 						
 		              add_state_core = 957
@@ -808,17 +813,17 @@ focus_tree = {
 				    HUN = {			
 					    annex_country = {
                             target = SER
-                            transfer_troops = no
+                            transfer_troops = yes
                         }
 						
 					    annex_country = {
                             target = ROM
-                            transfer_troops = no
+                            transfer_troops = yes
                         }
 
 					    annex_country = {
                             target = BOS
-                            transfer_troops = no
+                            transfer_troops = yes
                         }
 
 		              add_state_core = 107
@@ -1007,7 +1012,7 @@ focus_tree = {
 		}
 		
 			967 = {
-					add_manpower = 1500000				
+					add_manpower = 2000000				
 			}		 
 
 			43 = {
@@ -1348,6 +1353,15 @@ focus_tree = {
 		icon = GFX_hun_revolutionary_bulgaria
 		cost = 56
 		
+		available = {
+			is_subject = no
+			has_army_manpower = { size > 1199999 }
+		}
+		
+		cancel = {
+			 has_army_manpower = { size < 1199999 }
+		}		
+		
 		prerequisite = {
 		focus = hun_prepare_a_new_hike
 		}
@@ -1429,7 +1443,14 @@ focus_tree = {
 		}		
 
 	    completion_reward = {
-      }			
+		
+		HUN = {			
+		 annex_country = {
+         target = BUL
+            transfer_troops = yes
+                        }					
+          }
+      }		
 		
 		x = 36
 		y = 11
@@ -1852,6 +1873,13 @@ create_country_leader = {
 			focus = reborn_of_croatian_hungarian_settlement
 			focus = hun_eternal_friendship
 		}
+		
+        bypass = {
+		OR = {
+		 has_global_flag = gbw_serbia_won
+		 has_global_flag = gbw_hungary_won		 
+        }
+     }		
 
 	    completion_reward = {
 		
@@ -1883,6 +1911,13 @@ create_country_leader = {
 			focus = reborn_of_croatian_hungarian_settlement
 			focus = hun_eternal_friendship
 		}
+		
+        bypass = {
+		OR = {
+		 has_global_flag = gbw_serbia_won
+		 has_global_flag = gbw_hungary_won		 
+        }
+     }		
 		
 	    completion_reward = {
 			
@@ -1997,8 +2032,8 @@ create_country_leader = {
 	}
 
 	focus = {
-		id = hun_aliance_bulgaria
-		icon = GFX_aliance_with_bulgaria
+		id = hun_letter_to_tesla
+		icon = GFX_hun_letter_to_tesla
 		cost = 35		
 		
 		prerequisite = {
@@ -2008,32 +2043,11 @@ create_country_leader = {
 	
 	    completion_reward = {
 		
-					HUN = {				
-                    add_to_faction = BUL				
-			        }		
-		
-			if = {
-				limit = {
-					HUN = {
-					has_completed_focus = hun_zagreb_treaty	
-					}
-				}
-					BUL = {			
-            add_ideas = HUN_zagreb_treaty
-			}
-		}
-
-			else_if = {
-				limit = {
-					HUN = {
-					has_completed_focus = hun_budapest_entente	
-					}
-				}
-					BUL = {			
-            add_ideas = HUN_Budapest_Entente
-			}
-		  }
-        }		  
+		  country_event = {
+		   id = hungarian.61
+		    days = 1
+		}		
+	}	  
 		
 		x = 31
 		y = 7

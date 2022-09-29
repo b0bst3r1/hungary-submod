@@ -23,6 +23,16 @@ spriteTypes = {
 	}	
 
   ############
+  
+	  spriteType = {
+		name = "GFX_PB_News_Tesla_is_Dead"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/PB_News_Tesla_is_Dead.dds"
+	}
+
+	  spriteType = {
+		name = "GFX_PB_News_Tesla_is_Back"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/PB_News_Tesla_is_Back.dds"
+	}	
 		
 	  spriteType = {
 		name = "GFX_news_event_hun_900"

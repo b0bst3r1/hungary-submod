@@ -1,3 +1,38 @@
+dec_influence_on_hungary = {
+	icon = usa_congress
+	
+	allowed = {
+		original_tag = GER
+		original_tag = RUS		
+	}
+
+	visible = {
+	    has_global_flag = hun_influence_mechanic_started
+	}
+
+	picture = GFX_decision_cat_PB_espionage_decisions
+
+	priority = 900 
+}
+
+HUN_foreign_influence = {
+	icon = usa_congress
+	
+	allowed = {
+		original_tag = HUN
+	}
+
+	visible = {
+	    has_country_flag = hungarian_starting 
+	}
+		
+    scripted_gui = HUN_foreign_influence_mechanic_gui	
+
+	picture = GFX_decision_cat_PB_espionage_decisions
+
+	priority = 999
+}
+
 HUN_industrialisation = { 
 	icon = generic_economy
 

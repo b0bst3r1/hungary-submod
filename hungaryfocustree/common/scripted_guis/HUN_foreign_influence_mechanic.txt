@@ -1,14 +1,15 @@
 scripted_gui = {
-    HUN_culture_war_gui = {
+    HUN_foreign_influence_mechanic_gui = {
     
         context_type = decision_category
-		window_name = "HUN_culture_war_gui"
+		window_name = "foreign_influence_container"
 		
 		visible = {
 			always = yes
 		}
+		
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 	}
 }

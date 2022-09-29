@@ -29,3 +29,13 @@ music = {
 	name = "Super_Event_Sound_85"
 	file = "SPEVNT_Turkey_War_For_Independence.ogg"
 }
+
+music = {
+	name = "Super_Event_Sound_86"
+	file = "SPEVNT_Tesla_Is_Back.ogg"
+}
+
+music = {
+	name = "Super_Event_Sound_87"
+	file = "SPEVNT_Tesla_Is_Dead.ogg"
+}

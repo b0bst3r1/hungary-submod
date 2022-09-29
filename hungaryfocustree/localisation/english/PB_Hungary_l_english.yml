@@ -22,10 +22,20 @@
 
   SPEVNT_Turkey_War_For_Independence:0 "TURKISH INDEPENDENCE WAR"
   SPEVNT_Turkey_War_For_Independence_TEXT: "Happy is he who says, "I am a Turk".\n\n§O-Mustafa Kemal Ataturk-§!"
-  SPEVNT_Turkey_War_For_Independence_CLOSETEXT:0 "§OFREEDOM REQUIRES BLOOD§!"  
+  SPEVNT_Turkey_War_For_Independence_CLOSETEXT:0 "§OFREEDOM REQUIRES BLOOD§!"
+
+  SPEVNT_Tesla_Is_Back:0 "NIKOLA TESLA IS BACK"
+  SPEVNT_Tesla_Is_Back_TEXT: "The present is theirs; the future, for which I really worked, is mine."\n\n§O-Nikola Tesla-§!"
+  SPEVNT_Tesla_Is_Back_CLOSETEXT:0 "§OTHE FUTURE BECKONS§!"
+
+  SPEVNT_Tesla_Is_Dead:0 "NIKOLA TESLA IS DEAD"
+  SPEVNT_Tesla_Is_Dead_TEXT: "You may live to see man-made horrors beyond your comprehension.."\n\n§O-Nikola Tesla-§!"
+  SPEVNT_Tesla_Is_Dead_CLOSETEXT:0 "§OOH MY GODNESS§!"  
   
   0_autonomous_region:0 "Autonomous Region"
   0_autonomous_region_desc:0 "The Region has great national autonomy"
+  
+  HUN_Danube_PR:0 "Danubian Peasants And Workers Republic"  
   
   #Leader Trait
   
@@ -100,7 +110,7 @@
   HUN_SIXTHCONGRESS_desc:0 "Begin the Sixth Congress of Jacobin Party of Hungary."
   HUN_Legacy_of_Bohm:0 "Legacy of Vilmos Böhm"
   HUN_Legacy_of_Bohm_desc:0 "Vilmos Böhm led the young Republic of Hungary from 1911 to 1933, guided it through the revolution and managed to establish stability after it, successfully passing through several crises, but unfortunately his time had come to an end. The only thing left for us to do is to remember him as a great leader and follow his principles."
-  HUN_Spartakiad:0 "Establish the Spartakiad"
+  HUN_Spartakiad:0 "would rework this shit later"
   HUN_Spartakiad_desc:0 "As a result of international isolation, our government decided to organise an international Spartakiade. The Spartakiade is an international sporting event that takes place in a huge variety of sports."
   HUN_artist_union:0 "Hungarian Artists' Union"
   HUN_artist_union_desc:0 "Union of Hungarian Artists is a creative union that brings together artists and art historians. The goal of the Union of Artists is to create ideological, highly artistic works of art of all kinds and genres and works of art history, to strengthen the bond between the members of the Union of Artists and Hungary with the practice of building an equal society, to develop the Jacobin content and national form of art of the peoples of the Hungarian Common Republic and to assert the ideals of patriotism and proletarian internationalism in the work of artists. AU going to hold meetings, conferences, exhibitions, organised and funded creative work, including free workshops for members, and organised creative trips to the regions."
@@ -220,6 +230,8 @@
   hun_albanian_revolution_desc:0 " "
   hun_aliance_bulgaria:0 "Aliance with Bulgaria"
   hun_aliance_bulgaria_desc:0 " "
+  hun_letter_to_tesla:0 "A letter to Tesla"
+  hun_letter_to_tesla_desc:0 ""
   
   
  hun_world_war_two:0 "World War Two"
@@ -594,8 +606,86 @@
   budapest_entente:0 "Budapest Entente"
   anti_jacob:0 "Counter-Revolutionary Front"  
   
-  #DECISIONS#
+  #DECISIONS
   
+  #Foreign Influence Mechanic
+  
+  HUN_foreign_influence:0 "Foreign Influence"
+  HUN_foreign_influence_desc:0 "\n\n\n\n\n\nAfter our defeat in the Great Balkan War, foreign powers are takind advantage of our weakness and trying to increase their influence in Hungary. Russia and Germany are trying to put pressure on our military sphere. It's up to us to decide whether to accept their handouts or not.\n\nIf the influence of a foreign country reaches §H100%§!, we will be their puppet."
+  
+  dec_influence_on_hungary:0 "Influence on Hungary"
+  dec_influence_on_hungary_desc:0 "After Hungary's defeat in the Balkan War, they were in a weak position, so we can try to establish a puppet regime there.\n\nIn order for Hungary to become our vassal, our influence must reach §G100%§!\n\nCurrent German influence: [?HUN_german_influence_var|%0]\nCurrent Russian influence: [?HUN_russian_influence_var|%0]"
+  
+  HUN_Kirill_Vladimirovich_Text_tt:0 "Russian Henchman:\nKirill Vladimirovich Romanov"
+  HUN_Karl_Von_Habsburg_Text_tt:0 "German Henchman:\nKarl Von Habsburg"
+  german_influence_text_tt:0 "German Influence\nis:\n[?HUN_german_influence_var|%0]"
+  russian_influence_text_tt:0 "Russian Influence\nis:\n[?HUN_russian_influence_var|%0]"
+  
+  German_Influence_0.10_decrease:0 "German Influence: §G-10%§!."
+  German_Influence_0.05_decrease:0 "German Influence: §G-5%§!."
+  German_Influence_0.20_decrease:0 "German Influence: §G-20%§!."
+  German_Influence_0.30_decrease:0 "German Influence: §G-30%§!."  
+  German_Influence_0.10_increase:0 "German Influence: §R+10%§!."
+  German_Influence_0.15_increase:0 "German Influence: §R+15%§!."  
+  German_Influence_0.05_increase:0 "German Influence: §R+5%§!."
+  German_Influence_0.20_increase:0 "German Influence: §R+20%§!."
+  German_Influence_0.30_increase:0 "German Influence: §R+30%§!."
+  
+  if_hungary_agrees_German_Influence_0.10_increase:0 "If hungary agrees "German Influence: §G+10%§!."
+  if_hungary_agrees_German_Influence_0.20_increase:0 "If hungary agrees "German Influence: §G+20%§!."
+
+  Russian_Influence_0.10_decrease:0 "Russian Influence: §G-10%§!."
+  Russian_Influence_0.05_decrease:0 "Russian Influence: §G-5%§!."
+  Russian_Influence_0.20_decrease:0 "Russian Influence: §G-20%§!."
+  Russian_Influence_0.30_decrease:0 "Russian Influence: §G-30%§!."  
+  Russian_Influence_0.10_increase:0 "Russian Influence: §R+10%§!."
+  Russian_Influence_0.15_increase:0 "Russian Influence: §R+15%§!."   
+  Russian_Influence_0.05_increase:0 "Russian Influence: §R+5%§!."
+  Russian_Influence_0.20_increase:0 "Russian Influence: §R+20%§!."
+  Russian_Influence_0.30_increase:0 "Russian Influence: §R+30%§!." 
+
+  German_influence_30_or_more:0 "German influence is §R30%§! or more"
+  Russian_influence_30_or_more:0 "Russian influence is §R30%§! or more"
+  
+  HUN_lower_german_influence:0 "Lower German influence"
+  HUN_lower_russian_influence:0 "Lower Russian influence"
+  HUN_ask_for_russian_investments:0 "Ask for Russian Investments"
+  HUN_ask_for_german_investments:0 "Ask for German Investments"
+  HUN_ask_for_ger_military_advisers:0 "Ask for German Military Advisers"
+  HUN_ask_for_rus_military_advisers:0 "Ask for Russian Military Advisers"
+  HUN_ask_for_rus_tehhs:0 "Request Russian electrical technologies"
+  HUN_ask_for_ger_tehhs:0 "Request German armor technologies"
+  
+  GER_Offer_Hungary_Military_Investment:0 "Offer Hungary military investments"
+  GER_Offer_joint_mil_exercises_to_Hungary:0 "Offer joint military exercises to Hungary"
+  
+  RUS_Offer_Hungary_Military_Investment:0 "Offer Hungary military investments"
+  RUS_Offer_joint_mil_exercises_to_Hungary:0 "Offer joint military exercises to Hungary"  
+
+  foreigninfluence.1.t:0 "Offer from Germany"
+  foreigninfluence.1.d:0 "Germany offers us investment in the military industry."
+  foreigninfluence.1.a:0 "We agree!"
+  foreigninfluence.1.b:0 "No!"
+
+  foreigninfluence.2.t:0 "Offer from Germany"
+  foreigninfluence.2.d:0 "Germany offers us joint military exercises"
+  foreigninfluence.2.a:0 "We agree!"
+  foreigninfluence.2.b:0 "No!"
+
+  foreigninfluence.3.t:0 "Offer from Russia"
+  foreigninfluence.3.d:0 "Russia offers us investment in the military industry."
+  foreigninfluence.3.a:0 "We agree!"
+  foreigninfluence.3.b:0 "No!"
+
+  foreigninfluence.4.t:0 "Offer from Russia"
+  foreigninfluence.4.d:0 "Russia offers us joint military exercises"
+  foreigninfluence.4.a:0 "We agree!"
+  foreigninfluence.4.b:0 "No!"
+  
+  foreigninfluence.5.t:0 "Hungary declined our offer"
+  foreigninfluence.5.d:0 " "
+  foreigninfluence.5.a:0 "Shit."  
+ 
   #Industrialization
   
   industr_loc:0 "Industrialization Progress is\n[?HUN_industr_progress|%0]"
@@ -781,11 +871,13 @@
   HUN_domestic_policy:0 "Jacobin way of the life"
   HUN_domestic_policy_desc:0 "\n\n\n\n\n\nThe Hungarian People's Republic is entering a new phase of its development. The party splits into several on the eve of Vilmos Bom's departure from office, which threatens the country with at least internal collapse, while revolutionary fervor in the face of falling living standards fades in the eyes of the people"
   HUN_increase_revolutionary_zeal:0 "Increase Revolutionary Zeal"
-  HUN_increase_party_unity:0 "Maintain Party Unity"
+  HUN_increase_party_unity:0 "Maintain Russian Influence"
   HUN_Friedrich_Engels_legacy:0 "Legacy of Friedrich Engels"
   HUN_Propaganda_in_Schools:0 "Jacobin Propaganda in schools"
   HUN_Fighting_the_Counterrevolution:0 "Fighting the CounterRevolution"
   HUN_organize_party_meeting:0 "Organize Party meeting"
+  
+  HUN_teslafication_of_zagreb:0 "Teslafication of Zagreb"
   
   HUN_collectivize_hungary:0 "Collectivize Hungary"
   HUN_collectivize_slovak_ruthenia:0 "Collectivize Slovakia and Ruthenia"
@@ -907,6 +999,6 @@
   
   #####
   
-  HUN_CountryDesc_Topbar:0 "§YThe Common Republic of Hungary§! is the only §RRevolutionary Republic§! in continental Europe.\n\n§YThe Kingdom of Hungary§! gained independence as a nation in 1866, when the Austrian Empire unified Germany and gave its Non-German territories independence. However the independence was only nominal. Karl Ludwig of Habsburg would become the King of Hungary and maintain loyalty to the Habsburg family and subsequently to Germany. Hungary would continue to be an ally of Germany or rather in the eyes of the Hungarian people be a exploited puppet.\n\nThe Downfall of the Kingdom began with the outbreak of the §YGreat War§! in 1905 where the nation would immediatly join the Imperial Powers in their war against the Bourbons. The Hungarian People were dragged into a war they had no motivation or interest fighting in greatly increasing their dissent with the Royal Leadership. With Hungarian Soldiers being used as cannon fodder on the alpine front and the citiziens themself experiencing food shortages, the old Jacobine ideas born in 1790 would again gain support among the common people. In the end over 300 thousand soldiers would give their lives for the war effort and in the Treaty of Tours the Kingdom would only be awarded some small reperations as compensation. §RThe Spark was lit!§!\n\nThe following collapsing economy in 1911 would lead to bread riots which would escalate as Hungarian troops would fire on the protestors. From there on the situation rapidly escalated with Troops defecting on mass. §RThe Revolution§! had began, the Hungarian civil war between the Jacobin Revolutionaries and the German Backed Whites started. At the same time Romania would invade and steal Translyvanian territory. However despite these setback the Revolution would suceed under the guidance of Vilmos Böhm and the §YCommon Republic of Hungary§! would be declared on 6th March 1912. \n\nAfter 8 years of recovering the Hungarian Republic would declare war upon Romania trying to reclaim their lost territories. The war would be the most brutal one both countries had ever experienced and after 3 years of gruesome fighting the Great Powers of Europe forced a peace. Hungary reclaimed the majority of its former Translyvanian States and would be seen as the victor. However its following and current problems would be internally. Ethnic tension in Slovakia and the Slavic border regions begin to cause issues, the ruling party §RForradalmi Tanács§! is splitting into two conflicting branches, the §YReformists§! and §YVanguardists§! and lastly the hero of the revolution Vilmos Böhm is losing his shine and motivation to rule this nation. On top of all of this, the is a feeling in the air that the Balkan is soon reaching its §R"Boiling Point"§!."   
+  HUN_CountryDesc_Topbar:0 "§YThe Common Republic of Hungary§! is the only §RRevolutionary Republic§! in continental Europe.\n\n§YThe Kingdom of Hungary§! gained independence as a nation in 1866, when the Austrian Empire unified Russiany and gave its Non-Russian territories independence. However the independence was only nominal. Karl Ludwig of Habsburg would become the King of Hungary and maintain loyalty to the Habsburg family and subsequently to Russiany. Hungary would continue to be an ally of Russiany or rather in the eyes of the Hungarian people be a exploited puppet.\n\nThe Downfall of the Kingdom began with the outbreak of the §YGreat War§! in 1905 where the nation would immediatly join the Imperial Powers in their war against the Bourbons. The Hungarian People were dragged into a war they had no motivation or interest fighting in greatly increasing their dissent with the Royal Leadership. With Hungarian Soldiers being used as cannon fodder on the alpine front and the citiziens themself experiencing food shortages, the old Jacobine ideas born in 1790 would again gain support among the common people. In the end over 300 thousand soldiers would give their lives for the war effort and in the Treaty of Tours the Kingdom would only be awarded some small reperations as compensation. §RThe Spark was lit!§!\n\nThe following collapsing economy in 1911 would lead to bread riots which would escalate as Hungarian troops would fire on the protestors. From there on the situation rapidly escalated with Troops defecting on mass. §RThe Revolution§! had began, the Hungarian civil war between the Jacobin Revolutionaries and the Russian Backed Whites started. At the same time Romania would invade and steal Translyvanian territory. However despite these setback the Revolution would suceed under the guidance of Vilmos Böhm and the §YCommon Republic of Hungary§! would be declared on 6th March 1912. \n\nAfter 8 years of recovering the Hungarian Republic would declare war upon Romania trying to reclaim their lost territories. The war would be the most brutal one both countries had ever experienced and after 3 years of gruesome fighting the Great Powers of Europe forced a peace. Hungary reclaimed the majority of its former Translyvanian States and would be seen as the victor. However its following and current problems would be internally. Ethnic tension in Slovakia and the Slavic border regions begin to cause issues, the ruling party §RForradalmi Tanács§! is splitting into two conflicting branches, the §YReformists§! and §YVanguardists§! and lastly the hero of the revolution Vilmos Böhm is losing his shine and motivation to rule this nation. On top of all of this, the is a feeling in the air that the Balkan is soon reaching its §R"Boiling Point"§!."   
   
   PB_Sphere_MM_Hungarian:0 "[From.Controller.GetNameWithFlag] is within the §RHungarian§! sphere of influence"

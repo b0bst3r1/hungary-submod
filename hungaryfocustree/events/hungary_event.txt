@@ -4,7 +4,262 @@
 ##################
 
 add_namespace = hungarian
+add_namespace = foreigninfluence
 add_namespace = russs
+
+	country_event = { # Germany offers investments
+	id = foreigninfluence.1
+	title = foreigninfluence.1.t
+	desc = foreigninfluence.1.d
+	picture = GFX_report_PB_Construction
+	is_triggered_only = yes
+	
+	fire_only_once = yes	
+	
+	option = {
+		name = foreigninfluence.1.a
+		
+		ai_chance = {
+			factor = 40
+		}
+
+		  custom_effect_tooltip = German_Influence_0.10_increase
+		   add_to_variable = {
+		 	var = HUN_german_influence_var
+			value = 0.10	   
+	         }		
+		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			 }
+			 
+			hidden_effect = {
+		     GER = {
+		      country_event = {
+		      id = foreigninfluence.5
+		      days = 1
+		     }
+          }			
+       }			 
+    }
+
+	option = {
+		name = foreigninfluence.2.b
+		
+		ai_chance = {
+			factor = 60
+		  }		
+	  }
+  }
+  
+	country_event = { # Germany offers military exercises
+	id = foreigninfluence.2
+	title = foreigninfluence.2.t
+	desc = foreigninfluence.2.d
+	picture = GFX_report_PB_Soldiers_Marching
+	is_triggered_only = yes
+	
+	fire_only_once = yes  
+  
+	option = {
+		name = foreigninfluence.2.a
+		
+		ai_chance = {
+			factor = 60
+		}
+
+		  custom_effect_tooltip = German_Influence_0.20_increase
+		   add_to_variable = {
+		 	var = HUN_german_influence_var
+			value = 0.20	   
+	         }		
+		
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
+			
+			hidden_effect = {
+		     GER = {
+		      country_event = {
+		      id = foreigninfluence.5
+		      days = 1
+		     }
+          }			
+       }			
+    }
+
+	option = {
+		name = foreigninfluence.2.b
+		
+		ai_chance = {
+			factor = 40
+		  }			
+	  }
+  }
+  
+	country_event = { # Russia offers investments
+	id = foreigninfluence.3
+	title = foreigninfluence.3.t
+	desc = foreigninfluence.3.d
+	picture = GFX_report_PB_Construction
+	is_triggered_only = yes
+	
+	fire_only_once = yes	
+	
+	option = {
+		name = foreigninfluence.3.a
+		
+		ai_chance = {
+			factor = 40
+		}
+
+		  custom_effect_tooltip = Russian_Influence_0.10_increase
+		   add_to_variable = {
+		 	var = HUN_russian_influence_var
+			value = 0.10	   
+	         }		
+		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			 }
+			 
+			hidden_effect = {
+		     RUS = {
+		      country_event = {
+		      id = foreigninfluence.5
+		      days = 1
+		     }
+          }			
+       }			 
+    }
+
+	option = {
+		name = foreigninfluence.3.b
+		
+		ai_chance = {
+			factor = 60
+		  }		
+	  }
+  }
+
+	country_event = { # Russia offers military exercises
+	id = foreigninfluence.4
+	title = foreigninfluence.4.t
+	desc = foreigninfluence.4.d
+	picture = GFX_report_PB_Soldiers_Marching
+	is_triggered_only = yes
+	
+	fire_only_once = yes  
+  
+	option = {
+		name = foreigninfluence.4.a
+		
+		ai_chance = {
+			factor = 60
+		}
+
+		  custom_effect_tooltip = Russian_Influence_0.20_increase
+		   add_to_variable = {
+		 	var = HUN_russian_influence_var
+			value = 0.20	   
+	         }		
+		
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
+			
+			hidden_effect = {
+		     RUS = {
+		      country_event = {
+		      id = foreigninfluence.5
+		      days = 1
+		     }
+          }			
+       }
+	}
+
+	option = {
+		name = foreigninfluence.4.b
+		
+		ai_chance = {
+			factor = 40
+		  }			
+	  }
+  }
+
+	country_event = { # Hungary declines
+	id = foreigninfluence.5
+	title = foreigninfluence.5.t
+	desc = foreigninfluence.5.d
+	picture = GFX_report_PB_Diplomatic_Agreement
+	is_triggered_only = yes
+	
+	fire_only_once = yes  
+  
+	option = {
+		name = foreigninfluence.5.a
+	
+    }
+}	
+	  
 
 	country_event = { #GREATELLADA
 	id = russs.2
@@ -1991,7 +2246,7 @@ create_country_leader = {
 		}
 
 		create_country_leader = {
-			name = "Balkan Jacobin League"
+			name = "Balkan Workers' League"
 			desc = " "
 			picture = "gfx/leaders/RUS/Portrait_RUS_Moscow_Jacobin_Revolt.tga"
 			expire = "1965.1.1"
@@ -1999,7 +2254,7 @@ create_country_leader = {
 		}
 
 		create_country_leader = {
-			name = "Balkan Jacobin League"
+			name = "Federal Parliament"
 			desc = " "
 			picture = "gfx/leaders/RUS/Portrait_RUS_Moscow_Jacobin_Revolt.tga"
 			expire = "1965.1.1"
@@ -2097,7 +2352,146 @@ create_country_leader = {
 		
 		set_country_flag = hun_electrification	  		
      }	 
-  }  
+  }
+
+    country_event = { # A letter to Tesla
+	id = hungarian.61
+	title = hungarian.61.t
+	desc = hungarian.61.d
+	picture = GFX_report_event_a_letter_to_tesla
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.61.a
+
+			hidden_effect = {
+		     HUN = {
+		      country_event = {
+		      id = hungarian.62
+		      days = 10
+		      }
+           }			
+        }		
+     }	 
+  }
+
+    country_event = { # Tesla's Responce
+	id = hungarian.62
+	title = hungarian.62.t
+	desc = hungarian.62.d
+	picture = GFX_report_event_a_letter_to_tesla
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.62.a
+
+			hidden_effect = {
+			
+			random_list = {
+				60 = {
+				
+		     HUN = {
+		      country_event = {
+		      id = hungarian.63
+		      days = 20
+		        }
+            }								
+		}
+				40 = {
+								
+			 
+		     HUN = {
+		      country_event = {
+		      id = hungarian.64
+		      days = 20
+	    	      }
+               } 			
+            }		
+         }
+      }
+   }
+}
+
+    country_event = { # Meeting in Lwow
+	id = hungarian.63
+	title = hungarian.63.t
+	desc = hungarian.63.d
+	picture = GFX_report_event_a_meeting_with_tesla
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.63.a
+
+			hidden_effect = {
+			
+		every_country = {
+		  set_temp_variable = { super_id = 86 }
+			PB_Fire_Super_Event = yes
+		}
+		
+		news_event = {
+			id = hungary.24
+			hours = 1 
+		    }
+
+		     HUN = {
+		      country_event = {
+		      id = hungarian.65
+		      days = 30
+	    	   }
+            }			
+         }		
+      }	  
+   }
+   
+    country_event = { # Tesla is Killed
+	id = hungarian.64
+	title = hungarian.64.t
+	desc = hungarian.64.d
+	picture = GFX_report_event_a_meeting_with_tesla
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.64.a
+
+			hidden_effect = {
+			
+		every_country = {
+		  set_temp_variable = { super_id = 87 }
+			PB_Fire_Super_Event = yes
+		}
+		
+		news_event = {
+			id = hungary.25
+			hours = 1 
+		    }							
+         }		
+      }	  
+   }
+
+    country_event = { # Teslafication of Zagreb
+	id = hungarian.65
+	title = hungarian.65.t
+	desc = hungarian.65.d
+	picture = GFX_report_event_teslafication_of_zagreb
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.65.a
+
+       set_country_flag = hun_teslafication_of_zagreb		
+      }	  
+   }   
 	  
 country_event = { #Hungarian Support
 	id = hungarian.1000

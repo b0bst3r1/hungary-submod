@@ -364,6 +364,12 @@ country_event = {		#JoinTheWar as Romania
 	
 	immediate = {
 		set_global_flag = great_balk_war
+		set_global_flag = gbw_serbia_joins
+		set_global_flag = gbw_romania_joins
+		set_global_flag = gbw_greece_joins
+		set_global_flag = gbw_bulgaria_joins
+		set_global_flag = gbw_hungary_joins
+		set_global_flag = gbw_turkey_joins			
 	}	
 
 	fire_only_once = yes

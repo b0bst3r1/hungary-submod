@@ -232,6 +232,20 @@ defined_text = { #SUPER EVENT TITLES
             check_variable = { Active_Superevent_ID = 85 }
         }
         localization_key = "SPEVNT_Turkey_War_For_Independence"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 86 }
+        }
+        localization_key = "SPEVNT_Tesla_Is_Back"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 87 }
+        }
+        localization_key = "SPEVNT_Tesla_Is_Dead"
     }	
 }
 
@@ -467,6 +481,20 @@ defined_text = { #SUPER EVENT QUOTES
             check_variable = { Active_Superevent_ID = 85 }
         }
         localization_key = "SPEVNT_Turkey_War_For_Independence_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 86 }
+        }
+        localization_key = "SPEVNT_Tesla_Is_Back_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 87 }
+        }
+        localization_key = "SPEVNT_Tesla_Is_Dead_TEXT"
     }	
 }
 
@@ -702,5 +730,19 @@ defined_text = { #SUPER EVENT QUOTES
             check_variable = { Active_Superevent_ID = 85 }
         }
         localization_key = "SPEVNT_Turkey_War_For_Independence_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 86 }
+        }
+        localization_key = "SPEVNT_Tesla_Is_Back_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 87 }
+        }
+        localization_key = "SPEVNT_Tesla_Is_Dead_CLOSETEXT"
     }	
 }

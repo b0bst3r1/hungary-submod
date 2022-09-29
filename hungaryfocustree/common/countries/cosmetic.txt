@@ -808,29 +808,31 @@ DAF_FRK = {
 	color_ui = rgb { 165 163 39 }
 }
 
+#SUBMOD 
+
 MRD_Bess = {
 	color = rgb { 46 102 63 }
 	color_ui = rgb { 18 130 52 }
 }
 
 Ser_Jacobin = {
-	color = rgb { 255 43 43 }
-	color_ui = rgb { 255 43 43 }
+	color = rgb { 155 45 48 }
+	color_ui = rgb { 155 45 48 }
 }
 
 BOS_Jacobin = {
-	color = rgb { 255 43 43 }
-	color_ui = rgb { 255 43 43 }
+	color = rgb { 155 45 48 }
+	color_ui = rgb { 155 45 48 }
 }
 
 MNT_Jacobin = {
-	color = rgb { 255 43 43 }
-	color_ui = rgb { 255 43 43 }
+	color = rgb { 155 45 48 }
+	color_ui = rgb { 155 45 48 }
 }
 
 ROM_Jacobin = {
-	color = rgb { 255 43 43 }
-	color_ui = rgb { 255 43 43 }
+	color = rgb { 155 45 48 }
+	color_ui = rgb { 155 45 48 }
 }
 
 HUN_UDWR = {
@@ -951,6 +953,3 @@ MOL_RUS = {
 	color = rgb { 46 102 63 }
 	color_ui = rgb { 46 102 63 }
 }
-
-
-

@@ -233,7 +233,21 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_report_event_mihailovich"
 		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_mihailovich.dds"
-	}	
+	}
+	
+		spriteType = {
+		name = "GFX_report_event_a_letter_to_tesla"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_a_letter_to_tesla.dds"
+	}
 
+		spriteType = {
+		name = "GFX_report_event_a_meeting_with_tesla"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_a_meeting_with_tesla.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_teslafication_of_zagreb"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_teslafication_of_zagreb.dds"
+	}		
 }	
 	

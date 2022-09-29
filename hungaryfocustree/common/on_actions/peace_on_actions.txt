@@ -50,8 +50,11 @@ on_daily_HUN = {	#RomaniaCapitulation
   effect = { 
     if = {
       limit = {
-          controls_province = 9617
-          controls_province = 9716		  
+	  
+        has_global_flag = gbw_romania_joins
+		
+        controls_province = 9617
+        controls_province = 9716		  
     }
 	
 	
@@ -66,6 +69,8 @@ on_daily_HUN = {	#RomaniaCapitulation
 	remove_ideas = ROM_russian_help	
 	
 	  }
+	  
+    clr_global_flag = gbw_romania_joins	  
 
     set_global_flag = gbw_romania_lost
 	
@@ -77,6 +82,9 @@ on_daily_HUN = {	#SerbiaCapitulation
   effect = { 
     if = {
       limit = {
+	  
+        has_global_flag = gbw_serbia_joins
+		
           controls_province = 11586
           controls_province = 11899
           controls_province = 3882		  
@@ -94,6 +102,7 @@ on_daily_HUN = {	#SerbiaCapitulation
 	
 	  }
 
+    clr_global_flag = gbw_serbia_joins	
     set_global_flag = gbw_serbia_lost
 	
 	}
@@ -104,6 +113,9 @@ on_daily_HUN = {	#GreeceCapitulation
   effect = { 
     if = {
       limit = {
+	  
+        has_global_flag = gbw_greece_joins
+		
           controls_province = 9833
           controls_province = 4122
           controls_province = 10038		  
@@ -119,6 +131,7 @@ on_daily_HUN = {	#GreeceCapitulation
 	
 	  }
 
+    clr_global_flag = gbw_greece_joins
     set_global_flag = gbw_greece_lost
 	
 	}
@@ -128,7 +141,10 @@ on_daily_HUN = {	#GreeceCapitulation
 on_daily_HUN = {	#HungaryCapitulation
   effect = { 
     if = {
-      limit = { 
+      limit = {
+
+	   has_global_flag = gbw_hungary_joins
+	   
 	    NOT = {	  
        controls_province = 9660
        controls_province = 3617
@@ -147,7 +163,8 @@ on_daily_HUN = {	#HungaryCapitulation
     remove_ideas = HUN_great_patriotic_war	
 	
 	  }
-
+	  
+	clr_global_flag = gbw_hungary_joins
     set_global_flag = gbw_hungary_lost
 	
 	    }
@@ -157,7 +174,10 @@ on_daily_HUN = {	#HungaryCapitulation
 on_daily_BUL = {	#BulgariaCapitulation
   effect = { 
     if = {
-      limit = { 
+      limit = {
+
+	   has_global_flag = gbw_bulgaria_joins
+	   
 	    NOT = {	  
        controls_province = 3796
        controls_province = 949
@@ -174,7 +194,8 @@ on_daily_BUL = {	#BulgariaCapitulation
 	remove_ideas = PB_HUN_Great_Balkan_War	
 	
 	  }
-
+	  
+	clr_global_flag = gbw_bulgaria_joins
     set_global_flag = gbw_bulgaria_lost
 	
 	    }
@@ -184,7 +205,10 @@ on_daily_BUL = {	#BulgariaCapitulation
 on_daily_TUR = {	#TurkeyCapitulation
   effect = { 
     if = {
-      limit = { 
+      limit = {
+
+	   has_global_flag = gbw_turkey_joins
+	   
 	    NOT = {	  
        controls_province = 11747
        controls_province = 1005
@@ -202,7 +226,8 @@ on_daily_TUR = {	#TurkeyCapitulation
     remove_ideas = TUR_Liberation_War	
 	
 	  }
-
+	  
+    clr_global_flag = gbw_turkey_joins
     set_global_flag = gbw_turkey_lost
 	
 	    }
@@ -234,7 +259,10 @@ on_daily_HUN = {	#HungaryWonPeace
 		   
 	       clr_global_flag = gbw_romania_lost
 	       clr_global_flag = gbw_serbia_lost
-	       clr_global_flag = gbw_greece_lost	   
+	       clr_global_flag = gbw_greece_lost
+           clr_global_flag = gbw_turkey_joins
+           clr_global_flag = gbw_hungary_joins
+           clr_global_flag = gbw_bulgaria_joins		   
 		   
 	 	   country_event = { id = balkwarpeace.1}
            country_event = { id = balkwarpeace.3}		   
@@ -276,7 +304,12 @@ set_autonomy = {
 		   
 	      clr_global_flag = gbw_bulgaria_lost
 	      clr_global_flag = gbw_serbia_lost
-	      clr_global_flag = gbw_turkey_lost		   
+	      clr_global_flag = gbw_turkey_lost
+		  
+          clr_global_flag = gbw_greece_joins
+          clr_global_flag = gbw_romania_joins
+          clr_global_flag = gbw_serbia_joins
+		  
 		   
 	 	  country_event = { id = balkwarpeace.6}		   
 	    }

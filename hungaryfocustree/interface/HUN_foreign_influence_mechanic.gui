@@ -1,0 +1,78 @@
+guiTypes = {
+	containerWindowType = {
+		name = "foreign_influence_container"
+        position = { x = 0 y = 100 }
+		size = { width = 300 height = 450 }
+		Orientation = center
+		
+		buttonType = {
+			name = "russian_henchman"
+			position = { x = 60 y = 150 }			
+			quadTextureSprite = "GFX_HUN_anatoly_pepelyaev_icon"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "russian_henchman_tooltip"
+		}
+		
+		buttonType = {
+			name = "german_henchman"
+			position = { x = 300 y = 150 }		
+			quadTextureSprite = "GFX_HUN_Karl_Von_Habsburg_icon"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "german_henchman_tooltip"
+		}
+
+		iconType = {
+			name ="german_flagicon"
+			quadTextureSprite = "GFX_HUN_hre_flag_icon"
+			position = { x = 330 y = 10 }
+		}
+
+		iconType = {
+			name ="russian_flagicon"
+			quadTextureSprite = "GFX_HUN_rus_flag_icon"
+			position = { x = 95 y = 10 }
+		}
+
+		instantTextBoxType = {
+			name = "HUN_Kirill_Vladimirovich_Text"
+			position = { x = -55 y = 90 }
+			font = "hoi_36mbs"
+			text = "HUN_Kirill_Vladimirovich_Text_tt"
+			format = center
+			maxWidth = 400
+			maxHeight = 250
+		}
+
+		instantTextBoxType = {
+			name = "HUN_Karl_Von_Habsburg_Text"
+			position = { x = 250 y = 90 }
+			font = "hoi_36mbs"
+			text = "HUN_Karl_Von_Habsburg_Text_tt"
+			format = center
+			maxWidth = 250
+			maxHeight = 250
+		}
+
+		instantTextBoxType = {
+			name ="russian_influence_text"
+			position = { x = -10 y = 350 }
+			font = "hoi_30header"
+			text = "russian_influence_text_tt"
+			format = center
+			maxWidth = 300
+			maxHeight = 150
+		}
+
+		instantTextBoxType = {
+			name ="german_influence_text"
+			position = { x = 230 y = 350 }
+			font = "hoi_30header"
+			text = "german_influence_text_tt"
+			format = center
+			maxWidth = 300
+			maxHeight = 150
+		}				
+    }
+}
