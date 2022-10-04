@@ -375,10 +375,41 @@ add_ideas = {
 
 		ai_chance = {
 			factor = 100
-		 }
-	    }
+		  }
 	   }
+    }
+ }
+
+	country_event = { #Treaty with Bulgaria
+	id = greece.4
+	title = greece.4.t
+	desc = greece.4.d
+	picture = GFX
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = greece.4.a
+		
+	 GRE = {			
+     declare_war_on = {
+     target = HUN
+     type = annex_everything
+         }
+		 
+	set_major = yes		 		 
+		 
+	 transfer_state = 731
+	 transfer_state = 958	 
+	 
+      }
+	  
+	 BUL = {				
+       add_to_faction = GRE				
 	  }	  
+   }      
+}
        
 	   
  

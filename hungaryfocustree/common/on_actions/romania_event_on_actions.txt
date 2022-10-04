@@ -1,0 +1,17 @@
+on_actions = {
+     effect = {
+	 
+			#Russia controls romanian oil
+			
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				ROM = {
+					give_resource_rights = { receiver = RUS state = 46 }
+				}
+			}
+		}
+	}
+  
+  

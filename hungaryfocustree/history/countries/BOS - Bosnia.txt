@@ -78,9 +78,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Duro Pucar"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/BOS/Portrait_BOS_Duro_Pucar.dds"
 	ideology = LB_VARIANT_01
 }
 

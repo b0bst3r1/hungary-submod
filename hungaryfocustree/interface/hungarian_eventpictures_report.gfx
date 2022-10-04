@@ -198,7 +198,56 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_report_event_hun_939"
 		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_939.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_hun_940"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_940.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_report_event_hun_941"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_941.dds"
+	}	
+	
+		spriteType = {
+		name = "GFX_report_event_hun_alcohol"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_alcohol.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_hun_wolf"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_wolf.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_report_event_hungary_parade"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hungary_parade.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_report_event_ideal_city"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_ideal_city.dds"
 	}	
 
+		spriteType = {
+		name = "GFX_report_event_mihailovich"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_mihailovich.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_report_event_a_letter_to_tesla"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_a_letter_to_tesla.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_a_meeting_with_tesla"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_a_meeting_with_tesla.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_teslafication_of_zagreb"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_teslafication_of_zagreb.dds"
+	}		
 }	
 	

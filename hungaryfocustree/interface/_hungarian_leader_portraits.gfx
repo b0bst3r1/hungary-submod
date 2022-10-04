@@ -1,5 +1,88 @@
 spriteTypes = {
 
+    #Albania
+
+	spriteType = {
+		name = "GFX_portrait_general_ALB_Prenk_Pervizi"
+		texturefile = "gfx/leaders/ALB/general_ALB_Prenk_Pervizi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_general_ALB_Mehmet_Shenu"
+		texturefile = "gfx/leaders/ALB/general_ALB_Mehmet_Shenu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_general_ALB_Ndok_Gjeloshi"
+		texturefile = "gfx/leaders/ALB/general_ALB_Ndok_Gjeloshi.dds"
+	}
+
+    #Bulgaria
+	
+	spriteType = {
+		name = "GFX_portrait_general_BUL_Damyan_Velchev"
+		texturefile = "gfx/leaders/BUL/general_BUL_Damyan_Velchev.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_general_BUL_Vladimir_Stoychev"
+		texturefile = "gfx/leaders/BUL/general_BUL_Vladimir_Stoychev.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_general_BUL_Vasil_Boydev"
+		texturefile = "gfx/leaders/BUL/general_BUL_Vasil_Boydev.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_general_BUL_Bekyarov"
+		texturefile = "gfx/leaders/BUL/general_BUL_Bekyarov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_general_BUL_Konstantin"
+		texturefile = "gfx/leaders/BUL/general_BUL_Konstantin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_general_BUL_Prince_Kirill"
+		texturefile = "gfx/leaders/BUL/general_BUL_Prince_Kirill.dds"
+	}
+
+    #Romania
+
+	spriteType = {
+		name = "GFX_portrait_general_ROM_Gheorghe-Manoliu"
+		texturefile = "gfx/leaders/ROM/general_ROM_GheorgheManoliu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_general_ROM_Balan"
+		texturefile = "gfx/leaders/ROM/general_ROM_Balan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_general_ROM_Dumitrache"
+		texturefile = "gfx/leaders/ROM/general_ROM_Dumitrache.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_general_ROM_IlieSteflea"
+		texturefile = "gfx/leaders/ROM/general_ROM_IlieSteflea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_general_ROM_Ciuperca_Nicolae"
+		texturefile = "gfx/leaders/ROM/general_ROM_Ciuperca_Nicolae.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_general_ROM_Neamul_Romanesc"
+		texturefile = "gfx/leaders/ROM/general_ROM_Neamul_Romanesc.dds"
+	}	
+	
+	#Hungary
+
 	spriteType = {
 		name = "GFX_portrait_pogany_jozsef"
 		texturefile = "gfx/leaders/HUN/pogany_jozsef.dds"

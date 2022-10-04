@@ -1,0 +1,59 @@
+characters={
+	
+	ALB_Prenk_Pervizi={
+		name="Prenk Pervizi"
+		portraits={
+			army={
+				large="GFX_portrait_general_ALB_Prenk_Pervizi"
+				small="GFX_portrait_general_ALB_Prenk_Pervizi"		
+			}
+		}
+	field_marshal = {
+	traits = { trait_mountaineer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+	legacy_id = 00030	
+		}
+	}
+	
+	ALB_Ndok_Gjeloshi ={
+		name="Ndok Gjeloshi"
+		portraits={
+			army={
+				large="GFX_portrait_general_ALB_Ndok_Gjeloshi"
+				small="GFX_portrait_general_ALB_Ndok_Gjeloshi"
+			}
+		}
+	corps_commander = {
+	traits = { infantry_officer brilliant_strategist }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 3
+	legacy_id = 00031
+		}
+	}
+	
+	ALB_Mehmet_Shehu ={
+		name="Mehmet Shehu"
+		portraits={
+			army={
+				large="GFX_portrait_general_ALB_Mehmet_Shenu"
+				small="GFX_portrait_general_ALB_Mehmet_Shenu"	
+			}
+		}
+	corps_commander = {
+	traits = { infantry_officer trait_reckless }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+	legacy_id = 00032
+		}
+	}
+}

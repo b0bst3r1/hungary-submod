@@ -9,7 +9,7 @@ characters={
 			}
 		}
 		corps_commander = {
-		traits = { Jacobin }
+		traits = { Jacobin old_guard infantry_leader}
 	    skill = 3
 	    attack_skill = 2
 	    defense_skill = 3

@@ -10,7 +10,7 @@ state={
 	state_category = city
 
 	history={
-		owner = BUL
+		owner = ROM
 		victory_points = { 657 5 }
 		victory_points = { 687 1 }
 		buildings = {
@@ -25,7 +25,7 @@ state={
 			dockyard = 1
 		}
 		add_core_of = ROM
-        add_core_of = BUL		
+        add_claim_by = BUL		
 	}
 
 	provinces={

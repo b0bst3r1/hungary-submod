@@ -141,6 +141,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_TUR_Liberation_War"
+		texturefile = "gfx/interface/ideas/Turkey/TUR_liberation_war.dds"
+	}	
+	
+	spriteType = {
 		name = "GFX_idea_TUR_national_disgrace"
 		texturefile = "gfx/interface/ideas/Turkey/TUR_national_disgrace.dds"
 	}	
@@ -243,5 +248,30 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_HUN_budapest_entente"
 		texturefile = "gfx/interface/ideas/Hungary/HUN_budapest_entente.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HUN_great_patriotic"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_great_patriotic.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_HUN_pension_war_veterans"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_pension_war_veterans.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HUN_recovery_from_the_war"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_recovery_from_the_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SER_help_from_hungary"
+		texturefile = "gfx/interface/ideas/Serbia/SER_help_from_hungary.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_ROM_russianhelp"
+		texturefile = "gfx/interface/ideas/Romania/ROM_russianhelp.dds"
 	}	
 }

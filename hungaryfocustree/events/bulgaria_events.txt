@@ -1,0 +1,126 @@
+#Bulgarian Events#
+
+add_namespace = bulgar
+
+country_event = {
+	id = bulgar.1
+	title = bulgar.1.t
+	desc = bulgar.1.d
+	picture = GFX_report_PB_Soldiers_Riot
+	
+	trigger = {
+		tag = BUL
+		date > 1933.5.1
+	}
+
+	mean_time_to_happen = {
+		days = 90
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = bulgar.1.a
+
+			country_event = { id = bulgar.2 days = 33 }
+		
+			hidden_effect = {
+		news_event = {
+			id = hungary.21
+			days = 1
+		} 
+      }		
+		   
+       set_politics = {
+	     ruling_party = ss
+       }
+
+	   remove_ideas = {
+	     BUL_rus_influence
+	     BUL_unpopular_tsar				
+		}	   
+		
+		set_cosmetic_tag = BUL_after_tsar
+		
+		kill_country_leader = yes
+		
+	    create_country_leader = {
+		name = "Shalva Dadiani"
+		desc = " "
+		picture = "gfx/leaders/BUL/Portrait_Dadiani.dds"
+		expire = "1965.1.1"
+		ideology = SS_VARIANT_01
+		
+        clr_country_flag = Tag_in_Russian_Sphere
+        clr_country_flag = Megacorp_Tesla_Dominant	
+		
+		}
+	 }
+  } 
+
+country_event = {
+	id = bulgar.2
+	title = bulgar.2.t
+	desc = bulgar.2.d
+	picture = GFX_report_PB_Soldiers_Riot	
+	fire_only_once = yes
+	
+	option = {
+		name = bulgar.2.a
+
+		ai_chance = {
+			factor = 40
+		}		
+		   
+        set_politics = {
+	    ruling_party = ni
+        }  
+		
+		drop_cosmetic_tag = yes
+		
+		kill_country_leader = yes
+		
+	    create_country_leader = {
+		name = "Alexander Tsankov"
+		desc = " "
+		picture = "gfx/leaders/BUL/Portrait_Alexander_Tsankovy.dds"
+		expire = "1965.1.1"
+		ideology = NI_VARIANT_01
+		
+		}
+	 }
+	 
+	option = {
+		name = bulgar.2.b
+
+		ai_chance = {
+			factor = 40
+		}		
+		   
+        set_politics = {
+	    ruling_party = ds
+        }  
+		
+		drop_cosmetic_tag = yes
+		
+		kill_country_leader = yes
+		
+	    create_country_leader = {
+		name = "Nikola Zhekov"
+		desc = " "
+		picture = "gfx/leaders/BUL/Portrait_Nikola_Zhekov.dds"
+		expire = "1965.1.1"
+		ideology = DS_VARIANT_01
+		
+		}
+	 }
+
+	option = {
+		name = bulgar.2.c
+
+		ai_chance = {
+			factor = 20
+	
+		}
+	 }	 
+  }  

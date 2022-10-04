@@ -1,0 +1,117 @@
+characters={
+	
+	ROM_Gheorghe_Manoliu={
+		name="Gheorghe Manoliu"
+		portraits={
+			army={
+				large="GFX_portrait_general_ROM_Gheorghe-Manoliu"
+				small="GFX_portrait_general_ROM_Gheorghe-Manoliu"		
+			}
+		}
+	field_marshal = {
+	traits = { war_hero trait_mountaineer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	legacy_id = 00020	
+		}
+	}
+	
+	ROM_Balan ={
+		name="Grigore Balan"
+		portraits={
+			army={
+				large="GFX_portrait_general_ROM_Balan"
+				small="GFX_portrait_general_ROM_Balan"
+			}
+		}
+	corps_commander = {
+	traits = { infantry_officer trait_mountaineer }
+		skill = 2
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 3
+	legacy_id = 00021
+		}
+	}
+	
+	ROM_Dumitrache={
+		name="Ioan Dumitrache"
+		portraits={
+			army={
+				large="GFX_portrait_general_ROM_Dumitrache"
+				small="GFX_portrait_general_ROM_Dumitrache"	
+			}
+		}
+	corps_commander = {
+	traits = { armor_officer infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+	legacy_id = 00022
+		}
+	}
+	
+	ROM_IlieSteflea ={
+		name="Ilie Steflea"
+		portraits={
+			army={
+				large="GFX_portrait_general_ROM_IlieSteflea"
+				small="GFX_portrait_general_ROM_IlieSteflea"			
+			}
+		}
+	corps_commander = {
+	traits = { infantry_leader winter_specialist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+	legacy_id = 00023	
+		}
+	}
+	
+	ROM_Nicolae_Ciuperca={
+		name="Nicolae Ciuperca"
+		portraits={
+			army={
+				large="GFX_portrait_general_ROM_Ciuperca_Nicolae"
+				small="GFX_portrait_general_ROM_Ciuperca_Nicolae"		
+			}
+		}
+	corps_commander = {
+	traits = { cavalry_officer hill_fighter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	legacy_id = 00024	
+		}
+	}
+	
+	
+	ROM_Neamul_Romanesc={
+		name="Neamul Romanesc"
+		portraits={
+			army={
+				large="GFX_portrait_general_ROM_Neamul_Romanesc"
+				small="GFX_portrait_general_ROM_Neamul_Romanesc"				
+			}
+		}
+	field_marshal = {
+	traits = { war_hero career_officer infantry_officer trickster art_leader fortress_buster }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+	legacy_id = 00025	
+		}
+	}
+}

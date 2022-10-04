@@ -1,0 +1,830 @@
+defined_text = { 
+    name = get_bucharest_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 9617
+        }
+	 }
+        localization_key = "GBW_Bucharest_under_hun"
+    }
+    text = { 
+        trigger = {
+            ROM = {
+			 controls_province = 9617
+          }
+        }
+        localization_key = "GBW_Bucharest_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 9617
+          }
+		  
+            CRO = {
+			 controls_province = 9617
+          }
+
+            TUR = {
+			 controls_province = 9617
+          }	  
+        }
+      }
+        localization_key = "GBW_Bucharest_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_lasi_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 9716
+        }
+	 }
+        localization_key = "GBW_lasi_under_hun"
+    }
+    text = { 
+        trigger = {
+            ROM = {
+			 controls_province = 9716
+          }
+        }
+        localization_key = "GBW_lasi_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 9716
+          }
+		  
+            CRO = {
+			 controls_province = 9716
+          }
+
+            TUR = {
+			 controls_province = 9716
+          }	  
+        }
+      }
+        localization_key = "GBW_lasi_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_belgrade_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 11586
+        }
+	 }
+        localization_key = "GBW_belgrade_under_hun"
+    }
+    text = { 
+        trigger = {
+            SER = {
+			 controls_province = 11586
+          }
+        }
+        localization_key = "GBW_belgrade_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 11586
+          }
+		  
+            CRO = {
+			 controls_province = 11586
+          }
+
+            TUR = {
+			 controls_province = 11586
+          }	  
+        }
+      }
+        localization_key = "GBW_belgrade_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_sarajevo_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 11899
+        }
+	 }
+        localization_key = "GBW_sarajevo_under_hun"
+    }
+    text = { 
+        trigger = {
+            SER = {
+			 controls_province = 11899
+          }
+        }
+        localization_key = "GBW_sarajevo_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 11899
+          }
+		  
+            CRO = {
+			 controls_province = 11899
+          }
+
+            TUR = {
+			 controls_province = 11899
+          }	  
+        }
+      }
+        localization_key = "GBW_sarajevo_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_skopje_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 3882
+        }
+	 }
+        localization_key = "GBW_skopje_under_hun"
+    }
+    text = { 
+        trigger = {
+            SER = {
+			 controls_province = 3882
+          }
+        }
+        localization_key = "GBW_skopje_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 3882
+          }
+		  
+            CRO = {
+			 controls_province = 3882
+          }
+
+            TUR = {
+			 controls_province = 3882
+          }	  
+        }
+      }
+        localization_key = "GBW_skopje_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_constantinoples_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 9833
+        }
+	 }
+        localization_key = "GBW_constantinoples_under_hun"
+    }
+    text = { 
+        trigger = {
+            GRE = {
+			 controls_province = 9833
+          }
+        }
+        localization_key = "GBW_constantinoples_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 9833
+          }
+		  
+            CRO = {
+			 controls_province = 9833
+          }
+
+            TUR = {
+			 controls_province = 9833
+          }	  
+        }
+      }
+        localization_key = "GBW_constantinoples_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_izmir_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 4112
+        }
+	 }
+        localization_key = "GBW_izmir_under_hun"
+    }
+    text = { 
+        trigger = {
+            GRE = {
+			 controls_province = 4112
+          }
+        }
+        localization_key = "GBW_izmir_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 4112
+          }
+		  
+            CRO = {
+			 controls_province = 4112
+          }
+
+            TUR = {
+			 controls_province = 4112
+          }	  
+        }
+      }
+        localization_key = "GBW_izmir_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_aydin_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 10038
+        }
+	 }
+        localization_key = "GBW_aydin_under_hun"
+    }
+    text = { 
+        trigger = {
+            GRE = {
+			 controls_province = 10038
+          }
+        }
+        localization_key = "GBW_aydin_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 10038
+          }
+		  
+            CRO = {
+			 controls_province = 10038
+          }
+
+            TUR = {
+			 controls_province = 10038
+          }	  
+        }
+      }
+        localization_key = "GBW_aydin_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_budapest_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 9660
+        }
+	 }
+        localization_key = "GBW_budapest_under_hun"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			SER = {
+			 controls_province = 9660
+          }
+		  
+            ROM = {
+			 controls_province = 9660
+          }
+
+            GRE = {
+			 controls_province = 9660
+          }	  
+        }
+      }
+        localization_key = "GBW_budapest_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 9660
+          }
+		  
+            CRO = {
+			 controls_province = 9660
+          }
+
+            TUR = {
+			 controls_province = 9660
+          }	  
+        }
+      }
+        localization_key = "GBW_budapest_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_novisad_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 3617
+        }
+	 }
+        localization_key = "GBW_novisad_under_hun"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			SER = {
+			 controls_province = 3617
+          }
+		  
+            ROM = {
+			 controls_province = 3617
+          }
+
+            GRE = {
+			 controls_province = 3617
+          }	  
+        }
+      }
+        localization_key = "GBW_novisad_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 3617
+          }
+		  
+            CRO = {
+			 controls_province = 3617
+          }
+
+            TUR = {
+			 controls_province = 3617
+          }	  
+        }
+      }
+        localization_key = "GBW_novisad_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_debrecen_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 11659
+        }
+	 }
+        localization_key = "GBW_debrecen_under_hun"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			SER = {
+			 controls_province = 11659
+          }
+		  
+            ROM = {
+			 controls_province = 11659
+          }
+
+            GRE = {
+			 controls_province = 11659
+          }	  
+        }
+      }
+        localization_key = "GBW_debrecen_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 11659
+          }
+		  
+            CRO = {
+			 controls_province = 11659
+          }
+
+            TUR = {
+			 controls_province = 11659
+          }	  
+        }
+      }
+        localization_key = "GBW_debrecen_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_uschgorod_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 11691
+        }
+	 }
+        localization_key = "GBW_uschgorod_under_hun"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			SER = {
+			 controls_province = 11691
+          }
+		  
+            ROM = {
+			 controls_province = 11691
+          }
+
+            GRE = {
+			 controls_province = 11691
+          }	  
+        }
+      }
+        localization_key = "GBW_uschgorod_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 11691
+          }
+		  
+            CRO = {
+			 controls_province = 11691
+          }
+
+            TUR = {
+			 controls_province = 11691
+          }	  
+        }
+      }
+        localization_key = "GBW_uschgorod_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_sofia_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 949
+        }
+	 }
+        localization_key = "GBW_sofia_under_hun"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			SER = {
+			 controls_province = 949
+          }
+		  
+            ROM = {
+			 controls_province = 949
+          }
+
+            GRE = {
+			 controls_province = 949
+          }	  
+        }
+      }
+        localization_key = "GBW_sofia_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 949
+          }
+		  
+            CRO = {
+			 controls_province = 949
+          }
+
+            TUR = {
+			 controls_province = 949
+          }	  
+        }
+      }
+        localization_key = "GBW_sofia_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_plovdiv_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 6923
+        }
+	 }
+        localization_key = "GBW_plovdiv_under_hun"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			SER = {
+			 controls_province = 6923
+          }
+		  
+            ROM = {
+			 controls_province = 6923
+          }
+
+            GRE = {
+			 controls_province = 6923
+          }	  
+        }
+      }
+        localization_key = "GBW_plovdiv_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 6923
+          }
+		  
+            CRO = {
+			 controls_province = 6923
+          }
+
+            TUR = {
+			 controls_province = 6923
+          }	  
+        }
+      }
+        localization_key = "GBW_plovdiv_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_pleven_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 3796
+        }
+	 }
+        localization_key = "GBW_pleven_under_hun"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			SER = {
+			 controls_province = 3796
+          }
+		  
+            ROM = {
+			 controls_province = 3796
+          }
+
+            GRE = {
+			 controls_province = 3796
+          }	  
+        }
+      }
+        localization_key = "GBW_pleven_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 3796
+          }
+		  
+            CRO = {
+			 controls_province = 3796
+          }
+
+            TUR = {
+			 controls_province = 3796
+          }	  
+        }
+      }
+        localization_key = "GBW_pleven_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_osman_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 11747
+        }
+	 }
+        localization_key = "GBW_osman_under_hun"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			SER = {
+			 controls_province = 11747
+          }
+		  
+            ROM = {
+			 controls_province = 11747
+          }
+
+            GRE = {
+			 controls_province = 11747
+          }	  
+        }
+      }
+        localization_key = "GBW_osman_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 11747
+          }
+		  
+            CRO = {
+			 controls_province = 11747
+          }
+
+            TUR = {
+			 controls_province = 11747
+          }	  
+        }
+      }
+        localization_key = "GBW_osman_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_antalya_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 1005
+        }
+	 }
+        localization_key = "GBW_antalya_under_hun"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			SER = {
+			 controls_province = 1005
+          }
+		  
+            ROM = {
+			 controls_province = 1005
+          }
+
+            GRE = {
+			 controls_province = 1005
+          }	  
+        }
+      }
+        localization_key = "GBW_antalya_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 1005
+          }
+		  
+            CRO = {
+			 controls_province = 1005
+          }
+
+            TUR = {
+			 controls_province = 1005
+          }	  
+        }
+      }
+        localization_key = "GBW_antalya_under_friend"
+    }   
+}
+
+defined_text = { 
+    name = get_adana_control
+    
+    text = { 
+        trigger = {
+            HUN = {
+			 controls_province = 11746
+        }
+	 }
+        localization_key = "GBW_adana_under_hun"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			SER = {
+			 controls_province = 11746
+          }
+		  
+            ROM = {
+			 controls_province = 11746
+          }
+
+            GRE = {
+			 controls_province = 11746
+          }	  
+        }
+      }
+        localization_key = "GBW_adana_under_enemy"
+    }
+    text = { 
+        trigger = {
+           OR = {
+            
+			BUL = {
+			 controls_province = 11746
+          }
+		  
+            CRO = {
+			 controls_province = 11746
+          }
+
+            TUR = {
+			 controls_province = 11746
+          }	  
+        }
+      }
+        localization_key = "GBW_adana_under_friend"
+    }   
+}
+

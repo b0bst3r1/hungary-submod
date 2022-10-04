@@ -1,0 +1,39 @@
+RUS_Send_Volunteers_to_Romania = {
+	allowed = { 
+		original_tag = RUS 
+	}
+
+    enable = {
+        ROM = {
+			has_war_with = HUN
+		}
+    }
+
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = send_volunteers_desire
+        id = ROM
+        value = 1000
+    }
+}
+
+RUS_Send_Volunteers_to_Serbia = {
+	allowed = { 
+		original_tag = RUS 
+	}
+
+    enable = {
+        SER = {
+			has_war_with = HUN
+		}
+    }
+
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = send_volunteers_desire
+        id = SER
+        value = 1000
+    }
+}	

@@ -1,9 +1,84 @@
 spriteTypes = {	
-	
+
 	SpriteType = {
 	    name = "GFX_hun_political_crisis"
         texturefile = "gfx/interface/goals/hun_political_crisis.dds"
     }
+	
+	SpriteType = {
+	    name = "GFX_hun_letter_to_tesla"
+        texturefile = "gfx/interface/goals/hun_letter_to_tesla.dds"
+    }	
+	
+	SpriteType = {
+	    name = "GFX_hun_europe_last_chance"
+        texturefile = "gfx/interface/goals/hun_europe_last_chance.dds"
+    }
+
+	SpriteType = {
+	    name = "GFX_hun_industrialization"
+        texturefile = "gfx/interface/goals/hun_industrialization.dds"
+    }	
+	
+	SpriteType = {
+	    name = "GFX_hun_prepare_anew_hike"
+        texturefile = "gfx/interface/goals/hun_prepare_anew_hike.dds"
+    }	
+	
+	SpriteType = {
+	    name = "GFX_hun_armed_neutrality"
+        texturefile = "gfx/interface/goals/hun_armed_neutrality.dds"
+    }	
+	
+	SpriteType = {
+	    name = "GFX_hun_project_horus"
+        texturefile = "gfx/interface/goals/hun_project_horus.dds"
+    }	
+	
+	SpriteType = {
+	    name = "GFX_hun_second_december"
+        texturefile = "gfx/interface/goals/HUN_second_december.dds"
+    }	
+	
+	SpriteType = {
+	    name = "GFX_hun_heart_of_revoltuion"
+        texturefile = "gfx/interface/goals/hun_heart_of_revolution.dds"
+    }	
+
+	SpriteType = {
+	    name = "GFX_HUN_jew_autonomy"
+        texturefile = "gfx/interface/goals/HUN_jew_autonomy.dds"
+    }	
+	
+	SpriteType = {
+	    name = "GFX_hun_continue_our_way"
+        texturefile = "gfx/interface/goals/hun_continue_our_way.dds"
+    }	
+	
+	SpriteType = {
+	    name = "GFX_hun_industrial_society"
+        texturefile = "gfx/interface/goals/hun_industrial_society.dds"
+    }	
+	
+	SpriteType = {
+	    name = "GFX_revolution_goes_on"
+        texturefile = "gfx/interface/goals/revolution_goes_on.dds"
+    }
+
+	SpriteType = {
+	    name = "GFX_project_giant"
+        texturefile = "gfx/interface/goals/project_giant.dds"
+    }
+
+	SpriteType = {
+	    name = "GFX_ideal_city"
+        texturefile = "gfx/interface/goals/ideal_city.dds"
+    }			
+	
+	SpriteType = {
+	    name = "GFX_hun_socialism_front"
+        texturefile = "gfx/interface/goals/HUN_socialist_front.dds"
+    }	
 	
 	SpriteType = {
 	    name = "GFX_aliance_with_bulgaria"

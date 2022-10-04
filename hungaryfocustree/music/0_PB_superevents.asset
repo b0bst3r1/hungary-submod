@@ -1,0 +1,41 @@
+
+
+music = {
+	name = "Super_Event_Sound_80"
+	file = "SPEVNT_Hungary_Win_Balkan_War.ogg"
+}
+
+music = {
+	name = "Super_Event_Sound_81"
+	file = "SPEVNT_Serbia_Win_Balkan_War.ogg"
+}
+
+music = {
+	name = "Super_Event_Sound_82"
+	file = "SPEVNT_Hungary_Unites_Balkan.ogg"
+}
+
+music = {
+	name = "Super_Event_Sound_83"
+	file = "SPEVNT_third_balkan_war.ogg"
+}
+
+music = {
+	name = "Super_Event_Sound_84"
+	file = "SPEVNT_Romanian_Uprising.ogg"
+}
+
+music = {
+	name = "Super_Event_Sound_85"
+	file = "SPEVNT_Turkey_War_For_Independence.ogg"
+}
+
+music = {
+	name = "Super_Event_Sound_86"
+	file = "SPEVNT_Tesla_Is_Back.ogg"
+}
+
+music = {
+	name = "Super_Event_Sound_87"
+	file = "SPEVNT_Tesla_Is_Dead.ogg"
+}

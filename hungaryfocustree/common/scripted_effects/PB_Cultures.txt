@@ -18,7 +18,7 @@ PB_Setup_Cultures = {
 	131 = { set_variable = { culture_id = 1 } }
 	299 = { set_variable = { culture_id = 1 } }
 	720 = { set_variable = { culture_id = 1 } }
-	704 = { set_variable = { culture_id = 1 } }
+	704 = { set_variable = { culture_id = 1 } } 
 	703 = { set_variable = { culture_id = 1 } }
 	713 = { set_variable = { culture_id = 1 } }
 
@@ -328,12 +328,14 @@ PB_Setup_Cultures = {
 
 	44 = { set_variable = { culture_id = 45 } }	
 	163 = { set_variable = { culture_id = 45 } }
-	961 = { set_variable = { culture_id = 45 } }	
+	961 = { set_variable = { culture_id = 45 } }
+	972 = { set_variable = { culture_id = 45 } }	
 
 	### ---- Slovenian Culture ---- ###
 
 	102 = { set_variable = { culture_id = 46 } }
 	736 = { set_variable = { culture_id = 46 } }
+	974 = { set_variable = { culture_id = 46 } }	
 
 	### ---- Macedonian "Culture" ---- ###
 
@@ -374,7 +376,9 @@ PB_Setup_Cultures = {
 	### ---- Romanian Culture ---- ###
 
 	### ---- Hungarian Culture ---- ###
-
+	
+	973 = { set_variable = { culture_id = 55 } }	
+	765 = { set_variable = { culture_id = 55 } }
 	764 = { set_variable = { culture_id = 55 } }
 	45 = { set_variable = { culture_id = 55 } }
 	154 = { set_variable = { culture_id = 55 } }
@@ -1763,7 +1767,7 @@ PB_Setup_Cultures = {
 
 	### ---- Transylvanian Culture ---- ###
 	
-     # DEAD #
+          # DEAD # culture_id = 443 #
 	
 	### ---- Serbo-Croatian Culture ---- ###
 
@@ -1786,7 +1790,19 @@ PB_Setup_Cultures = {
 	
 	967 = { set_variable = { culture_id = 446 } }
 	
-	### ---- Hungarian-Slovak ---- ###	
+	### ---- Hungarian-Slovak ---- ###
+	
+	        #culture_id = 448#
+	
+	### ---- Austro-Hungarian Culture ---- ###
+	
+	975 = { set_variable = { culture_id = 448 } }
+	
+	### ---- Jewish Culture ---- ###
+	
+	            #Culture_id = 449	
+
+    	
 }
 
 ## Changes the culture of the state scope into the culture specified in `temp_culture`

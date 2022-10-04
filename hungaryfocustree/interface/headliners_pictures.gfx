@@ -1,9 +1,0 @@
-spriteTypes = {
-
-	# UNIQUE HEADLINERS
-
-	spriteType = {
-		name = "GFX_magyar_nezmet"
-		textureFile = "gfx/interface/magyar nezmet.dds"
-	}   	
-}

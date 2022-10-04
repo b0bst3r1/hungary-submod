@@ -1,0 +1,860 @@
+ HUN_industrialisation = {						
+
+	HUNG_invest_in_military_industry = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		}
+
+		days_remove = 1
+		
+		days_re_enable = 50
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_industr_progress_0.02_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.02		   
+	     }		
+		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+	}	
+
+	HUNG_invest_in_civil = {	
+
+		icon = GFX_decision_generic_construction
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		}
+
+		days_remove = 30
+		
+		days_re_enable = 60
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_industr_progress_0.02_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.02		   
+	     }		
+		 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+	}
+	
+	HUN_build_supply_node = {	
+
+		icon = GFX_decision_generic_construction
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		}
+
+		days_remove = 75
+		
+		days_re_enable = 150
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_industr_progress_0.03_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.03		   
+	     }		
+		 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = supply_node
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = supply_node
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+	}
+	
+	HUN_build_tunnels_transylvania = {	
+
+		icon = GFX_decision_generic_construction
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		}
+
+		days_remove = 150
+
+		remove_effect = {
+		
+		build_railway = {
+			path = { 6679 11639 3676 690 9668 711 }
+		     }		
+		
+		custom_effect_tooltip = HUN_industr_progress_0.10_increase
+		
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.10
+			}
+	     }		 			
+	  }	
+
+	HUN_urbanize_hungary = {	
+
+		icon = GFX_decision_generic_construction
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		 }
+			
+	visible = {
+		has_country_flag = hun_urbanization
+	}			
+
+		days_remove = 50
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_industr_progress_0.03_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.03		   
+	     }		
+		 
+			59 = {
+				add_building_construction = {
+					type =  infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			66 = {
+				add_building_construction = {
+					type =  infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			59 = {
+				add_building_construction = {
+					type =  infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+	}
+
+	HUN_urbanize_north = {	
+
+		icon = GFX_decision_generic_construction
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		}
+			
+	visible = {
+		has_country_flag = hun_urbanization
+	}			
+
+		days_remove = 50
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_industr_progress_0.03_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.03		   
+	     }		
+		 
+			59 = {
+				add_building_construction = {
+					type =  infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			66 = {
+				add_building_construction = {
+					type =  infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			59 = {
+				add_building_construction = {
+					type =  infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+	}
+
+	HUN_urbanize_romania = {	
+
+		icon = GFX_decision_generic_construction
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		}
+			
+	visible = {
+		has_country_flag = hun_urbanization
+	}			
+
+		days_remove = 50
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_industr_progress_0.03_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.03	   
+	     }		
+		 
+			59 = {
+				add_building_construction = {
+					type =  infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			66 = {
+				add_building_construction = {
+					type =  infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			59 = {
+				add_building_construction = {
+					type =  infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+	}
+
+	HUN_urbanize_south = {	
+
+		icon = GFX_decision_generic_construction
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		}
+			
+	visible = {
+		has_country_flag = hun_urbanization
+	}			
+
+		days_remove = 100
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_industr_progress_0.05_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.05		   
+	     }		
+		 
+			59 = {
+				add_building_construction = {
+					type =  infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			66 = {
+				add_building_construction = {
+					type =  infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			59 = {
+				add_building_construction = {
+					type =  infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+	}
+
+	HUN_mass_electrification_of_north = {	
+
+		icon = GFX_decision_generic_construction
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		}
+			
+	visible = {
+		has_country_flag = hun_electrification
+	}			
+
+		days_remove = 100
+		
+		fire_only_once = yes
+
+		remove_effect = {		
+		
+		custom_effect_tooltip = HUN_industr_progress_0.05_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.05		   
+	     }		
+		 
+			50 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = tesla_tower
+					level = 3
+					instant_build = yes
+				}
+			}
+			51 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = tesla_tower
+					level = 3
+					instant_build = yes
+				}
+			}
+			52 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = tesla_tower
+					level = 3
+					instant_build = yes
+				}
+			}			
+		}
+	}
+
+	HUN_mass_electrification_of_central = {	
+
+		icon = GFX_decision_generic_construction
+
+		cost = 60
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		}
+			
+	visible = {
+		has_country_flag = hun_electrification
+	}			
+
+		days_remove = 100
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		add_tech_bonus = {
+		  name = land_doc_bonus
+		  bonus = 1
+		  uses = 1
+		  category = electronics
+		}		
+		
+		custom_effect_tooltip = HUN_industr_progress_0.05_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.05		   
+	     }		
+		 
+			50 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = tesla_tower
+					level = 3
+					instant_build = yes
+				}
+			}
+			51 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = tesla_tower
+					level = 3
+					instant_build = yes
+				}
+			}
+			52 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = tesla_tower
+					level = 3
+					instant_build = yes
+				}
+			}			
+		}
+	}
+
+	HUN_mass_electrification_of_south = {	
+
+		icon = GFX_decision_generic_construction
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		}
+			
+	visible = {
+		has_country_flag = hun_electrification
+	}			
+
+		days_remove = 100
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_industr_progress_0.05_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.05		   
+	     }		
+		 
+			50 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = tesla_tower
+					level = 3
+					instant_build = yes
+				}
+			}
+			51 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = tesla_tower
+					level = 3
+					instant_build = yes
+				}
+			}
+			52 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = tesla_tower
+					level = 3
+					instant_build = yes
+				}
+			}			
+		}
+	}
+
+	hun_ask_for_foreign_investment = {	
+
+		icon = GFX_decision_generic_money
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		}
+
+		days_remove = 30
+		
+		days_re_enable = 60
+
+		remove_effect = {
+		
+        custom_effect_tooltip = Revolutionary_Zeal_0.06_decrease		
+		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = -0.06
+			}		
+		
+		custom_effect_tooltip = HUN_industr_progress_0.03_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.03		   
+	     }		
+		 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+	}
+
+	hun_importance_of_science = {	
+
+		icon = GFX_decision_generic_research
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		}
+
+		days_remove = 50
+		
+		days_re_enable = 100
+
+		remove_effect = {		
+		
+		custom_effect_tooltip = HUN_industr_progress_0.03_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.03		   
+	     }		
+		 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = research_center
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = research_center
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = research_center
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+	}
+
+	hun_romanian_oil = {	
+
+		icon = GFX_decision_OBW_Fuel_Parts
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		}
+
+		days_remove = 75
+		
+        fire_only_once = yes 
+		
+		remove_effect = {		
+		
+		custom_effect_tooltip = HUN_industr_progress_0.05_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.05		   
+	     }		
+		 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = fuel_silo
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = fuel_silo
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = fuel_silo
+					level = 3
+					instant_build = yes
+				}
+				
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type =  synthetic_refinery
+					level = 2
+					instant_build = yes
+				}				
+			}			
+		}
+	}
+
+	hun_call_for_foreign_specs = {	
+
+		icon = GFX_decision_generic_money
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		 NOT = {
+	      has_country_flag = industrialization_over		
+			}
+		}
+
+		days_remove = 30
+		
+        fire_only_once = yes 
+		
+		remove_effect = {		
+		
+		custom_effect_tooltip = HUN_industr_progress_0.03_increase
+		  add_to_variable = {
+			var = HUN_industr_progress
+			value = 0.03		   					
+			}
+
+        custom_effect_tooltip = Revolutionary_Zeal_0.04_decrease		
+		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = -0.04
+			}					
+		}
+	}	
+}

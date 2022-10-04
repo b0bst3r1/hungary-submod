@@ -26,6 +26,10 @@ set_war_support = 0.75
 
 set_convoys = 5
 
+recruit_character = ALB_Prenk_Pervizi
+recruit_character = ALB_Ndok_Gjeloshi
+recruit_character = ALB_Mehmet_Shehu
+
 add_ideas = {
 
     ALB_economic_collapse

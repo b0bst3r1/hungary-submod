@@ -348,13 +348,6 @@ PB_Set_Max_State_Focus = yes
 
 set_convoys = 366
 
-
-set_autonomy = {
-	target = BUL
-	autonomous_state = autonomy_Formal_Imperial_Autonomy
-	freedom_level = 0.6
-}
-
 set_autonomy = {
 	target = POL
 	autonomous_state = autonomy_PB_Imperial_Autonomy
@@ -405,7 +398,6 @@ set_autonomy = {
 
 give_guarantee = PRS
 give_military_access = PRS
-give_guarantee = GRE
 give_military_access = GRE
 
 RUS = { 

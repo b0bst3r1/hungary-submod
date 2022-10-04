@@ -26,6 +26,17 @@ set_cosmetic_tag = ROM_RUS
 
 set_research_slots = 3
 
+#Characters
+
+recruit_character = ROM_Gheorghe_Manoliu
+recruit_character = ROM_Balan
+recruit_character = ROM_Dumitrache
+recruit_character = ROM_IlieSteflea
+recruit_character = ROM_Nicolae_Ciuperca
+recruit_character = ROM_Neamul_Romanesc
+
+#Coalition
+
 add_to_farleft_coalition_jc = yes
 add_to_farleft_coalition_ss = yes
 add_to_farleft_coalition_lb = yes

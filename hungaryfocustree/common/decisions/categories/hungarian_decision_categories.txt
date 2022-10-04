@@ -1,17 +1,70 @@
-HUN_economic_dec = { 
+dec_influence_on_hungary = {
+	icon = usa_congress
+	
+	allowed = {
+		original_tag = GER
+		original_tag = RUS		
+	}
+
+	visible = {
+	    has_global_flag = hun_influence_mechanic_started
+	}
+
+	picture = GFX_decision_cat_PB_espionage_decisions
+
+	priority = 900 
+}
+
+HUN_foreign_influence = {
+	icon = usa_congress
+	
+	allowed = {
+		original_tag = HUN
+	}
+
+	visible = {
+	    has_country_flag = hungarian_starting 
+	}
+		
+    scripted_gui = HUN_foreign_influence_mechanic_gui	
+
+	picture = GFX_decision_cat_PB_espionage_decisions
+
+	priority = 999
+}
+
+HUN_industrialisation = { 
 	icon = generic_economy
 
-	picture = GFX_decision_cat_PB_FRA_European_Commonwealth_Picture
+	picture = GFX_decision_category_industrialisation
+
+	allowed = {
+		original_tag = HUN 
+	}  
+
+	visible = {
+		has_country_flag = hungarian_industrialization    
+	}
+	
+    scripted_gui = HUN_industrialization_gui
+	
+	priority = 950  
+}
+
+HUN_great_balkan_war = { 
+	icon = ger_military_buildup
+
+	picture = GFX_decision_category_hun_great_balkan_war
 
 	allowed = {
 		original_tag = HUN
 	}
 
 	visible = {
-		has_completed_focus = hun_collectivization     
+		has_global_flag = great_balk_war
 	}
 
-	priority = 170
+	priority = 900
 }
 
 HUN_culture_war = {
@@ -29,11 +82,11 @@ HUN_culture_war = {
 		}
 	}
 		
-    scripted_gui = HUN_culture_war_gui			
+    scripted_gui = HUN_culture_war_gui   		
 
 	picture = GFX_decision_category_culture_war_dec
 
-	priority = 250
+	priority = 650
 }
 
 HUN_revive_body = {
@@ -49,7 +102,7 @@ HUN_revive_body = {
 			has_country_flag = hungarian_starting
         }
 
-	priority = 75
+	priority = 400
 }
 
 HUN_domestic_policy = {
@@ -65,7 +118,7 @@ HUN_domestic_policy = {
 			has_country_flag = hungarian_starting
         }
 
-	priority = 85
+	priority = 700
 }
 
 HUN_war_on_horizon = { 
@@ -81,11 +134,11 @@ HUN_war_on_horizon = {
 			has_country_flag = hungarian_starting
         }
 
-	priority = 80
+	priority = 500
 }
 
 HUN_shock_therapy = {
-	icon = generic_economy
+	icon = GFX_decision_category_generic_crisis
 
 	picture = GFX_decision_category_shock_therapy_dec
 
@@ -97,5 +150,5 @@ HUN_shock_therapy = {
 		has_country_flag = shock_therapy
 	}
 
-	priority = 150
+	priority = 600
 }

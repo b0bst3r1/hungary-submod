@@ -1,0 +1,32 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_HUN_anatoly_pepelyaev_icon"
+		texturefile = "gfx/interface/Foreign_Influence_Mechanic/anatoly_pepelyaev.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_Bela_Von_Imredy_icon"
+		texturefile = "gfx/interface/Foreign_Influence_Mechanic/Bela_Von_Imredy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_Heinrich_of_York_icon"
+		texturefile = "gfx/interface/Foreign_Influence_Mechanic/Heinrich_of_York.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_Karl_Von_Habsburg_icon"
+		texturefile = "gfx/interface/Foreign_Influence_Mechanic/Karl_Von_Habsburg.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_hre_flag_icon"
+		texturefile = "gfx/interface/Foreign_Influence_Mechanic/hre_flag.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_rus_flag_icon"
+		texturefile = "gfx/interface/Foreign_Influence_Mechanic/rus_flag.dds"
+	}	
+}

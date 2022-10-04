@@ -1,0 +1,425 @@
+HUN_make_units = {
+	allowed = { original_tag = HUN }
+	enable = {
+		num_divisions < 60
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { 
+		type = build_army 
+		id = infantry                              
+		value = 500
+	}
+}
+
+HUN_stop_bordering_these_nations = {
+	allowed = {
+		original_tag = HUN 
+	}
+	enable = { 
+		OR = {
+			GER = {
+				exists = yes
+			}
+			POL = {
+				exists = yes
+			}
+			CRO = {
+				exists = yes
+			}
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = { 
+		type = dont_defend_ally_borders id = "GER" 
+		value = 500 
+	}
+	ai_strategy = { 
+		type = dont_defend_ally_borders id = "POL" 
+		value = 500 
+	}
+	ai_strategy = { 
+		type = dont_defend_ally_borders id = "CRO" 
+		value = 500 
+	}
+}
+
+HUN_prepare_for_war = {
+	allowed = { 
+		original_tag = HUN
+	}
+	enable = {
+		AND =  {
+			date > 1933.6.1
+			date < 1935.1.1
+		}
+
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 100
+    }
+	
+ai_strategy = {
+    type = prepare_for_war
+    id = SER
+    value = 1000
+  }
+
+ai_strategy = {
+    type = prepare_for_war
+    id = ROM
+    value = 100
+  }	
+}
+
+HUN_dont_border_Germany = {
+	allowed = {
+		original_tag = HUN
+	}
+	enable = {
+		country_exists = GER
+		GER = {
+			NOT = {
+				has_war_with = GER
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = ignore
+		id = "GER"
+		value = 4000
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = GER
+		value = -4000
+	}
+}
+
+HUN_dont_border_Poland = {
+	allowed = {
+		original_tag = HUN
+	}
+	enable = {
+		country_exists = POL
+		GER = {
+			NOT = {
+				has_war_with = POL
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = ignore
+		id = "POL"
+		value = 2000
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = POL
+		value = -4000
+	}
+}
+
+dont_border_Italian_Kingdom = {
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		country_exists = ITA
+		GER = {
+			NOT = {
+				has_war_with = ITA
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = ignore
+		id = "ITA"
+		value = 2000
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = ITA
+		value = -4000
+	}
+}
+
+HUN_wants_civ = {
+	allowed = {
+		original_tag = HUN
+	}
+	enable = {
+		date < 1935.4.1
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 35
+	}
+}
+
+GER_wants_mils = {
+	allowed = {
+		original_tag = HUN
+	}
+	enable = {
+		date > 1933.2.1
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 40
+	}
+}
+
+HUN_defend_Romanian_invasion  = {
+	allowed = {
+		original_tag = HUN
+	}
+
+	enable = {
+		has_war_with = ROM
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+
+		tag = ROM
+
+		ratio = 0.5
+
+		priority = 100
+		ordertype = front
+		execution_type = careful
+		execute_order = yes
+	}
+}
+
+HUN_defend_Serbia_invasion  = {
+	allowed = {
+		original_tag = HUN
+	}
+
+	enable = {
+		has_war_with = SER
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+
+		tag = SER
+
+		ratio = 0.5
+
+		priority = 100
+		ordertype = front
+		execution_type = careful
+		execute_order = yes
+	}
+}
+
+HUN_unit_production = {
+	allowed = {
+		original_tag = HUN
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 4
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 1
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry 
+		value = -100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 20 
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 20 
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 20 
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 80
+	}
+	
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 60 
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 40
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 20
+	}
+	
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 15
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 60
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 30
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 40
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 175
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 100
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = 80
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 50
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_air
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 35
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 40
+	} 
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = 30
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = artillery
+		value = 3
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value 10
+	}
+	
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = support_equipment
+		value = 35
+	}
+}	

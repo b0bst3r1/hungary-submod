@@ -1,0 +1,37 @@
+leader_traits = {
+
+	#### LEADER TRAITS ####
+
+	PB_The_Great_Founder = {
+
+		stability_factor = 0.1
+		
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	PB_Pers_First_Hungarian_Democrat = {
+
+		political_power_gain = 0.3		
+		
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	PB_Pers_Chief = {
+
+		stability_factor = 0.15
+		
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}

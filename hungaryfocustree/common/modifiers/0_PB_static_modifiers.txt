@@ -1,0 +1,16 @@
+# All global modifiers are here. They are applied from certain game-features.
+# Effects are fully scriptable here.
+# These names can NOT be removed or changes, as the code uses them....
+
+0_autonomous_region = {
+	local_manpower = 0.05
+	local_resources = -0.05
+}
+
+terrain_nikolaegrad = { }
+terrain_lasi = { }
+terrain_osman = { }
+terrain_sarajevo = {}
+terrain_sopron = {}
+terrain_uzhgorod = {}
+

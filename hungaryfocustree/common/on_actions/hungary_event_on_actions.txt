@@ -17,6 +17,42 @@ on_actions = {
 					days = 1
 				}
 			}
+		}
+		
+		effect = {
+			HUN = {
+				country_event = { 	#Revolutionary's Guide to Warfare
+					id = hungarian.47
+					days = 45
+				}
+			}
+		}
+
+		effect = {
+			HUN = {
+				country_event = { 	#Opium, Alcohol and Other Vices
+					id = hungarian.48
+					days = 70
+				}
+			}
+		}
+
+		effect = {
+			HUN = {
+				country_event = { 	#First cloned wild wolf 
+					id = hungarian.49
+					days = 90
+				}
+			}
+		}		
+
+		effect = {
+			HUN = {
+				country_event = { 	#Martians
+					id = hungarian.31
+					days = 150
+				}
+			}
 		}		
 	}
  }

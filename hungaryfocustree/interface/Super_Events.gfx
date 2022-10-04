@@ -1,0 +1,42 @@
+spriteTypes = {
+	
+	spriteType = {
+  		name = "GFX_SPEVNT_80"
+		texturefile = "gfx/super_events/SPEVNT_Hungary_Win_Balkan_War.dds"
+	}
+	
+	spriteType = {
+  		name = "GFX_SPEVNT_81"
+		texturefile = "gfx/super_events/SPEVNT_Serbia_Win_Balkan_War.dds"
+	}
+	
+	spriteType = {
+  		name = "GFX_SPEVNT_82"
+		texturefile = "gfx/super_events/SPEVNT_Hungary_Unites_Balkan.dds"
+	}
+	
+	spriteType = {
+  		name = "GFX_SPEVNT_83"
+		texturefile = "gfx/super_events/SPEVNT_third_balkan_war.dds"
+	}
+
+	spriteType = {
+  		name = "GFX_SPEVNT_84"
+		texturefile = "gfx/super_events/SPEVNT_Romanian_Uprising.dds"
+	}
+	
+	spriteType = {
+  		name = "GFX_SPEVNT_85"
+		texturefile = "gfx/super_events/SPEVNT_Turkey_War_For_Independence.dds"
+	}
+	
+	spriteType = {
+  		name = "GFX_SPEVNT_86"
+		texturefile = "gfx/super_events/SPEVNT_Tesla_Is_Back.dds"
+	}
+
+	spriteType = {
+  		name = "GFX_SPEVNT_87"
+		texturefile = "gfx/super_events/SPEVNT_Tesla_Is_Dead.dds"
+	}		
+}

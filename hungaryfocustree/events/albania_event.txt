@@ -103,9 +103,8 @@ add_namespace = alban
 		ai_chance = {
 			factor = 100
 		}
-	   }
 	  }
-	 }
+	}
        
 	   
  

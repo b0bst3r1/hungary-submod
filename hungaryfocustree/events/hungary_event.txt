@@ -4,48 +4,263 @@
 ##################
 
 add_namespace = hungarian
+add_namespace = foreigninfluence
 add_namespace = russs
 
-	country_event = {
-	id = russs.1
-	title = russs.1.t
-	desc = russs.1.d
-	picture = GFX
+	country_event = { # Germany offers investments
+	id = foreigninfluence.1
+	title = foreigninfluence.1.t
+	desc = foreigninfluence.1.d
+	picture = GFX_report_PB_Construction
 	is_triggered_only = yes
 	
-	fire_only_once = yes
-	
-	immediate = { news_event = {
-         id = hungary.5
-          }
-        }	
+	fire_only_once = yes	
 	
 	option = {
-		name = russs.1.a
-		
-		MRD = {
-			transfer_state = 79
-			transfer_state = 80
-		    add_state_core = 79
-		    add_state_core = 80			
-		
-        }
-		
-		RUS = {
-		puppet = MRD
-		
-			set_autonomy = {
-                target = MRD
-                 autonomy_state = autonomy_PB_Imperial_Autonomy
-                }		
-		}
+		name = foreigninfluence.1.a
 		
 		ai_chance = {
-			factor = 100
+			factor = 40
 		}
-	   }
+
+		  custom_effect_tooltip = German_Influence_0.10_increase
+		   add_to_variable = {
+		 	var = HUN_german_influence_var
+			value = 0.10	   
+	         }		
+		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			 }
+			 
+			hidden_effect = {
+		     GER = {
+		      country_event = {
+		      id = foreigninfluence.5
+		      days = 1
+		     }
+          }			
+       }			 
+    }
+
+	option = {
+		name = foreigninfluence.2.b
+		
+		ai_chance = {
+			factor = 60
+		  }		
 	  }
+  }
+  
+	country_event = { # Germany offers military exercises
+	id = foreigninfluence.2
+	title = foreigninfluence.2.t
+	desc = foreigninfluence.2.d
+	picture = GFX_report_PB_Soldiers_Marching
+	is_triggered_only = yes
+	
+	fire_only_once = yes  
+  
+	option = {
+		name = foreigninfluence.2.a
+		
+		ai_chance = {
+			factor = 60
+		}
+
+		  custom_effect_tooltip = German_Influence_0.20_increase
+		   add_to_variable = {
+		 	var = HUN_german_influence_var
+			value = 0.20	   
+	         }		
+		
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
+			
+			hidden_effect = {
+		     GER = {
+		      country_event = {
+		      id = foreigninfluence.5
+		      days = 1
+		     }
+          }			
+       }			
+    }
+
+	option = {
+		name = foreigninfluence.2.b
+		
+		ai_chance = {
+			factor = 40
+		  }			
+	  }
+  }
+  
+	country_event = { # Russia offers investments
+	id = foreigninfluence.3
+	title = foreigninfluence.3.t
+	desc = foreigninfluence.3.d
+	picture = GFX_report_PB_Construction
+	is_triggered_only = yes
+	
+	fire_only_once = yes	
+	
+	option = {
+		name = foreigninfluence.3.a
+		
+		ai_chance = {
+			factor = 40
+		}
+
+		  custom_effect_tooltip = Russian_Influence_0.10_increase
+		   add_to_variable = {
+		 	var = HUN_russian_influence_var
+			value = 0.10	   
+	         }		
+		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			 }
+			 
+			hidden_effect = {
+		     RUS = {
+		      country_event = {
+		      id = foreigninfluence.5
+		      days = 1
+		     }
+          }			
+       }			 
+    }
+
+	option = {
+		name = foreigninfluence.3.b
+		
+		ai_chance = {
+			factor = 60
+		  }		
+	  }
+  }
+
+	country_event = { # Russia offers military exercises
+	id = foreigninfluence.4
+	title = foreigninfluence.4.t
+	desc = foreigninfluence.4.d
+	picture = GFX_report_PB_Soldiers_Marching
+	is_triggered_only = yes
+	
+	fire_only_once = yes  
+  
+	option = {
+		name = foreigninfluence.4.a
+		
+		ai_chance = {
+			factor = 60
+		}
+
+		  custom_effect_tooltip = Russian_Influence_0.20_increase
+		   add_to_variable = {
+		 	var = HUN_russian_influence_var
+			value = 0.20	   
+	         }		
+		
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
+			
+			hidden_effect = {
+		     RUS = {
+		      country_event = {
+		      id = foreigninfluence.5
+		      days = 1
+		     }
+          }			
+       }
+	}
+
+	option = {
+		name = foreigninfluence.4.b
+		
+		ai_chance = {
+			factor = 40
+		  }			
+	  }
+  }
+
+	country_event = { # Hungary declines
+	id = foreigninfluence.5
+	title = foreigninfluence.5.t
+	desc = foreigninfluence.5.d
+	picture = GFX_report_PB_Diplomatic_Agreement
+	is_triggered_only = yes
+	
+	fire_only_once = yes  
+  
+	option = {
+		name = foreigninfluence.5.a
+	
+    }
+}	
 	  
+
 	country_event = { #GREATELLADA
 	id = russs.2
 	title = russs.2.t
@@ -105,238 +320,12 @@ country_event = {
           }
 		 }
        
-	   
-	   country_event = { #SERBIAasksPEACE
-	id = hungarian.2
-	title = hungarian.2.t
-	desc = hungarian.2.d
-	picture = GFX_report_event_hun_916
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = {
-		name = hungarian.2.a
-		
-			hidden_effect = {
-			ALB = {
-			country_event = { id = albanian.1 days = 2 }
-		}
-	}
-	
-			hidden_effect = {
-		news_event = {
-			id = hungary.8
-			days = 9
-		}
-	}	
-	         HUN = {
-         puppet = BOS
-         puppet = MNT
-         puppet = SER  	
-		 
-	     hidden_effect = {
-			set_autonomy = {
-                target = BOS
-                 autonomy_state = autonomy_PB_Sister_Republic
-                }
-			}
-			
-			set_autonomy = {
-                target = MNT
-                 autonomy_state = autonomy_PB_Sister_Republic
-                }
-				
-			set_autonomy = {
-                target = SER
-                 autonomy_state = autonomy_PB_Sister_Republic
-                }				
-		    }
-	
-		SER = {
-	
-	set_cosmetic_tag = Ser_Jacobin
-	
-	  set_politics = {
-	  ruling_party = JC
-      last_election = "1936.1.1"
-	  election_frequency = 48
-	  elections_allowed = no
-      long_name = Jacobins
-      name = Jacobins
-    }
-	
-	remove_ideas = {
-	PB_Absolute_Monarchy
-	PB_NI_Order
-	PB_State_Press
-	PB_Universal_Citizenship
-	PB_Public_Meetings_Monitored
-	PB_Limited_Womens_Rights
-	PB_Limited_Autonomy
-	PB_Law_Prev_Policing
-	PB_8_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Basic_Education
-	PB_No_Welfare
-	PB_Trade_Unions_Banned
-	PB_Slavery_Abolished
-	PB_Significant_Poverty
-	PB_Semi_Industrialized
-	PB_Significant_Illiteracy
-	PB_Stagnating_Growth
-	PB_Fully_Westernized
-	PB_Govidea_Mixed_Market_Capitalism
-	PB_Great_War_Military
-}
-	add_ideas = {
-	PB_Fully_Westernized
-	PB_Govidea_Planned_Economy
-	PB_Revolutionary_Republic
-	PB_Great_War_Military
-	PB_NI_Revolution
-	PB_Limited_Censorship
-	PB_Single_Party_State
-	PB_Full_Womens_Equality
-	PB_Public_Meetings_Monitored
-	PB_Limited_Autonomy
-	PB_Law_Intimidation_Policing
-	PB_8_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Universal_Basic
-    PB_Generous_Welfare
-	PB_Trade_Unions_All_Allowed
-    PB_Slavery_Abolished
-	PB_Significant_Poverty
-    PB_Semi_Industrialized
-	PB_Minor_Illiteracy
-	PB_Middling_Consumer_Confidence
-}
-	
-   
-	set_popularities = {
-	       ni = 0
-	       ds = 0
-	       rc = 0
-	       cn = 0
-	       lb = 0
-	       an = 0
-	       ss = 30
-	       jc = 70
-      }
-	}
-	 
-	  
-	  		BOS = {
-			
-		transfer_state = 104
-		
-	  set_politics = {
-	  ruling_party = JC
-      last_election = "1936.1.1"
-	  election_frequency = 48
-	  elections_allowed = no
-      long_name = Jacobins
-      name = Jacobins
-    }
-	
-	add_ideas = {
-	PB_Fully_Westernized
-	PB_Govidea_Planned_Economy
-	PB_Revolutionary_Republic
-	PB_Great_War_Military
-	PB_NI_Revolution
-	PB_Limited_Censorship
-	PB_Single_Party_State
-	PB_Full_Womens_Equality
-	PB_Public_Meetings_Monitored
-	PB_Limited_Autonomy
-	PB_Law_Intimidation_Policing
-	PB_8_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Universal_Basic
-    PB_Generous_Welfare
-	PB_Trade_Unions_All_Allowed
-    PB_Slavery_Abolished
-	PB_Significant_Poverty
-    PB_Semi_Industrialized
-	PB_Minor_Illiteracy
-	PB_Middling_Consumer_Confidence
-}
-	
-	set_popularities = {
-	       ni = 0
-	       ds = 0
-	       rc = 0
-	       cn = 0
-	       lb = 0
-	       an = 0
-	       ss = 30
-	       jc = 70
-      }
-
-	set_cosmetic_tag = BOS_Jacobin
-
-      } 
-
-	  		MNT = {
-			
-		transfer_state = 105			
-		
-	  set_politics = {
-	  ruling_party = JC
-      last_election = "1936.1.1"
-	  election_frequency = 48
-	  elections_allowed = no
-      long_name = Jacobins
-      name = Jacobins
-    }
-	
-	add_ideas = {
-	PB_Fully_Westernized
-	PB_Govidea_Planned_Economy
-	PB_Revolutionary_Republic
-	PB_Great_War_Military
-	PB_NI_Revolution
-	PB_Limited_Censorship
-	PB_Single_Party_State
-	PB_Full_Womens_Equality
-	PB_Public_Meetings_Monitored
-	PB_Limited_Autonomy
-	PB_Law_Intimidation_Policing
-	PB_8_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Universal_Basic
-    PB_Generous_Welfare
-	PB_Trade_Unions_All_Allowed
-    PB_Slavery_Abolished
-	PB_Significant_Poverty
-    PB_Semi_Industrialized
-	PB_Minor_Illiteracy
-	PB_Middling_Consumer_Confidence
-}
-	
-	set_popularities = {
-	       ni = 0
-	       ds = 0
-	       rc = 0
-	       cn = 0
-	       lb = 0
-	       an = 0
-	       ss = 30
-	       jc = 70
-      }
-
-	set_cosmetic_tag = MNT_Jacobin
-
-      }
-	  }
-	  }
   
   	   country_event = { #UDWR
 	id = hungarian.3
 	title = hungarian.3.t
 	desc = hungarian.3.d
-	picture = GFX)news_event_hun_900
+	picture = GFX_news_event_hun_900
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -391,9 +380,9 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-		name = hungarian.4.a
+		name = hungarian.4.a		
 
-   }
+    }
   }
      	   country_event = {
 	id = hungarian.5
@@ -422,110 +411,6 @@ country_event = {
 
    }
   }
-
-	   country_event = { #ROMANIAPEACE
-	id = hungarian.7
-	title = hungarian.7.t
-	desc = hungarian.7.d
-	picture = GFX_report_event_hun_917
-	is_triggered_only = yes
-	fire_only_once = yes
-		
-	option = {
-	
-			hidden_effect = {
-			RUS = {
-			country_event = { id = russs.1 days = 1 }
-		}
-	}	
-	
-	         HUN = {
-         puppet = ROM
-		 
-	     hidden_effect = {
-			set_autonomy = {
-                target = ROM
-                 autonomy_state = autonomy_PB_Sister_Republic
-                }
-			}
-		}		
-	  
-	  	  		ROM = {
-		
-	  set_politics = {
-	  ruling_party = JC
-      last_election = "1936.1.1"
-	  election_frequency = 48
-	  elections_allowed = no
-      long_name = Jacobins
-      name = Jacobins
-    }
-	
-	remove_ideas = { 
-	PB_Universal_Citizenship
-	PB_Fully_Westernized
-	PB_Govidea_Mixed_Market_Capitalism
-	PB_Great_War_Military
-	PB_Limited_Censorship
-	PB_Public_Meetings_Allowed
-	PB_Parliamentary_Monarchy 
-	PB_NI_Order
-	PB_Limited_Womens_Rights
-	PB_Racial_Segregation
-	PB_Law_Intimidation_Policing
-    PB_8_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Basic_Education
-	PB_No_Welfare
-	PB_Trade_Unions_Banned
-	PB_Slavery_Abolished
-	PB_Significant_Poverty
-	PB_Semi_Industrialized
-	PB_Minor_Illiteracy
-	PB_Middling_Consumer_Confidence
-}
-
-	add_ideas = {
-	PB_Fully_Westernized
-	PB_Govidea_Planned_Economy
-	PB_Revolutionary_Republic
-	PB_Great_War_Military
-	PB_NI_Revolution
-	PB_Limited_Censorship
-	PB_Single_Party_State
-	PB_Full_Womens_Equality
-	PB_Public_Meetings_Monitored
-	PB_Limited_Autonomy
-	PB_Law_Intimidation_Policing
-	PB_8_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Universal_Basic
-    PB_Generous_Welfare
-	PB_Trade_Unions_All_Allowed
-    PB_Slavery_Abolished
-	PB_Significant_Poverty
-    PB_Semi_Industrialized
-	PB_Minor_Illiteracy
-	PB_Middling_Consumer_Confidence
-}
-	
-	set_popularities = {
-	       ni = 0
-	       ds = 0
-	       rc = 0
-	       cn = 0
-	       lb = 0
-	       an = 0
-	       ss = 30
-	       jc = 70
-      }
-
-	set_cosmetic_tag = ROM_Jacobin
-
-      }
-    }
-  }
-
      	   country_event = { #Congress
 	id = hungarian.8
 	title = hungarian.8.t
@@ -557,15 +442,23 @@ country_event = {
 	option = {
 		name = hungarian.9.a
 		
-	hidden_effect = {
+		ai_chance = {
+			factor = 60
+		}		
+		
+	hidden_effect = { #CoupFailes
 	HUN = {
 	country_event = { id = hungarian.10 days = 3 }
 	 }
 	  }
     }
 	
-		option = {
+		option = { #CoupFailes
 		name = hungarian.9.b
+		
+		ai_chance = {
+			factor = 10
+		}		
 		
 	hidden_effect = {
 	
@@ -577,6 +470,10 @@ country_event = {
 	
 		option = {
 		name = hungarian.9.c
+		
+		ai_chance = {
+			factor = 30
+		}		
 		
 	hidden_effect = {
 	
@@ -596,7 +493,11 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-		name = hungarian.10.a
+		name = hungarian.10.a #BelaKun
+		
+		ai_chance = {
+			factor = 60
+		}		
 		
 	hidden_effect = {
 	
@@ -607,7 +508,11 @@ country_event = {
     }
 	
 		option = {
-		name = hungarian.10.b
+		name = hungarian.10.b #Garbai
+		
+		ai_chance = {
+			factor = 40
+		}		
 		
 	hidden_effect = {
 	
@@ -784,56 +689,7 @@ country_event = {
 	
 	  set_politics = {
 	  ruling_party = JC
-      last_election = "1936.1.1"
     }
-	
-	remove_ideas = {
-	PB_NI_Order
-	PB_Absolute_Monarchy
-	PB_Limited_censorship
-	PB_No_Voting
-	PB_Universal_Citizenship
-	PB_Partially_Westernized
-	PB_Govidea_Free_Market_Capitalism
-	PB_No_Limit_Workday
-	PB_No_Healthcare
-	PB_No_Formal_Education
-	PB_No_Welfare
-	PB_Trade_Unions_State_Controlled
-	PB_No_Womens_Legal_Protections
-	PB_Limited_Autonomy
-	PB_Slavery_Abolished
-	PB_Rampant_Poverty
-	PB_Subsistence_Agriculture
-	PB_Rampant_Illiteracy
-	PB_Stagnating_Growth
-	PB_Pre_Great_War_Army
-	PB_Law_Standard_Policing
-	PB_Public_Meetings_Monitored
-}
-	add_ideas = {
-	PB_Fully_Westernized
-	PB_Govidea_Planned_Economy
-	PB_Revolutionary_Republic
-	PB_Great_War_Military
-	PB_NI_Revolution
-	PB_Limited_Censorship
-	PB_Single_Party_State
-	PB_Full_Womens_Equality
-	PB_Public_Meetings_Monitored
-	PB_Limited_Autonomy
-	PB_Law_Intimidation_Policing
-	PB_8_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Universal_Basic
-    PB_Generous_Welfare
-	PB_Trade_Unions_All_Allowed
-    PB_Slavery_Abolished
-	PB_Significant_Poverty
-    PB_Semi_Industrialized
-	PB_Minor_Illiteracy
-	PB_Middling_Consumer_Confidence
-}
 	
    
 	set_popularities = {
@@ -862,13 +718,160 @@ country_event = {
 	option = {
 		name = hungarian.15.a	
 		
+	hidden_effect = {			
+		
+	BUL = {
+	
+	white_peace = HUN	
+	
+	set_cosmetic_tag = BUL_Jacobin
+	
+			if = {
+				limit = {
+					HUN = {
+					has_government = jc
+					}
+				}
+			   set_politics = {
+		       ruling_party = JC
+		       }
+			}
+
+			else_if = {
+				limit = {
+					HUN = {
+					has_government = ss
+					}
+				}
+			   set_politics = {
+		       ruling_party = SS
+		       }
+			  }
+			
+			else_if = {
+				limit = {
+					HUN = {
+					has_government = lb
+					}
+				}
+				
+			   kill_country_leader = yes
+			   
+			   set_politics = {
+		       ruling_party = LB
+		       }
+			}
+
+set_popularities = {
+	       ni = 0
+	       ds = 0
+	       rc = 1
+	       cn = 0
+	       lb = 33
+	       an = 0
+	       ss = 33
+	       jc = 33
+      }
+   }
+
+	MAC = {
+	
+			if = {
+				limit = {
+					HUN = {
+					has_government = jc
+					}
+				}
+			   set_politics = {
+		       ruling_party = JC
+		       }
+			}
+
+			else_if = {
+				limit = {
+					HUN = {
+					has_government = ss
+					}
+				}
+			   set_politics = {
+		       ruling_party = SS
+		       }
+			  }
+			
+			else_if = {
+				limit = {
+					HUN = {
+					has_government = lb
+					}
+				}
+				
+			   kill_country_leader = yes
+			   
+			   set_politics = {
+		       ruling_party = LB
+		       }
+			}	
+	
+		transfer_state = 106
+	    transfer_state = 731
+		add_state_core = 731
+		add_state_core = 106
+	
+	set_cosmetic_tag = MAC_Jacobin
+	}
+	
+    KSV = {
+	
+			if = {
+				limit = {
+					HUN = {
+					has_government = jc
+					}
+				}
+			   set_politics = {
+		       ruling_party = JC
+		       }
+			}
+
+			else_if = {
+				limit = {
+					HUN = {
+					has_government = ss
+					}
+				}
+			   set_politics = {
+		       ruling_party = SS
+		       }
+			  }
+			
+			else_if = {
+				limit = {
+					HUN = {
+					has_government = lb
+					}
+				}
+				
+			   kill_country_leader = yes
+			   
+			   set_politics = {
+		       ruling_party = LB
+		       }
+			}	
+	
+		transfer_state = 163
+		add_state_core = 163
+	
+	set_cosmetic_tag = KSV_Jacobin
+	      }
+		  
+      }
+	  
 	         HUN = {
 			 
          puppet = BUL
          puppet = KSV		 
          puppet = MAC
 		 
-	     hidden_effect = {
 			set_autonomy = {
                 target = BUL
                  autonomy_state = autonomy_PB_Sister_Republic
@@ -883,103 +886,9 @@ country_event = {
                 target = KSV
                  autonomy_state = autonomy_PB_Sister_Republic
                 }				
-			}
-		}			
-		
-	BUL = {
-	
-	set_cosmetic_tag = BUL_Jacobin
-	
-	  set_politics = {
-	  ruling_party = JC
-      last_election = "1936.1.1"
-	  election_frequency = 48
-	  elections_allowed = no
-      long_name = Jacobins
-      name = Jacobins
-    }
-	
-	remove_ideas = {
-	
-	PB_HUN_Balkan_Powderkeg
-	PB_Universal_Citizenship
-	PB_Fully_Westernized
-	PB_Govidea_Free_Market_Capitalism
-	PB_Parliamentary_Republic
-	PB_Great_War_Military
-	PB_NI_Revanchism
-	PB_Limited_Censorship
-	PB_Universal_Suffrage
-	PB_Public_Meetings_Allowed
-	PB_Full_Womens_Equality
-	PB_Significant_Autonomy
-	PB_Law_Standard_Policing
-	PB_12_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Basic_Education
-	PB_Basic_Welfare
-	PB_Trade_Unions_All_Allowed
-	PB_Slavery_Abolished
-	PB_Significant_Poverty
-	PB_Semi_Industrialized
-	PB_Significant_Illiteracy
-	PB_Market_Underperformance
-}
-	add_ideas = {
-	PB_Fully_Westernized
-	PB_Govidea_Planned_Economy
-	PB_Revolutionary_Republic
-	PB_Great_War_Military
-	PB_NI_Revolution
-	PB_Limited_Censorship
-	PB_Single_Party_State
-	PB_Full_Womens_Equality
-	PB_Public_Meetings_Monitored
-	PB_Limited_Autonomy
-	PB_Law_Intimidation_Policing
-	PB_8_Hour_Workday
-	PB_Basic_Healthcare
-	PB_Universal_Basic
-    PB_Generous_Welfare
-	PB_Trade_Unions_All_Allowed
-    PB_Slavery_Abolished
-	PB_Significant_Poverty
-    PB_Semi_Industrialized
-	PB_Minor_Illiteracy
-	PB_Middling_Consumer_Confidence
-}
-
-set_popularities = {
-	       ni = 0
-	       ds = 0
-	       rc = 0
-	       cn = 0
-	       lb = 0
-	       an = 0
-	       ss = 30
-	       jc = 70
-      }
-
-	MAC = {
-	
-		transfer_state = 106
-	    transfer_state = 731
-		add_state_core = 731
-		add_state_core = 106
-	
-	set_cosmetic_tag = MAC_Jacobin
-	}
-	
-    KSV = {
-	
-		transfer_state = 163
-		add_state_core = 163
-	
-	set_cosmetic_tag = KSV_Jacobin
-	}
+			}			
    }
-  }
- }
+}
  
 	country_event = { #POLITICLCRISIS
 	id = hungarian.16
@@ -996,8 +905,12 @@ set_popularities = {
 		
 			hidden_effect = {
 			HUN = {
-			country_event = { id = hungarian.20 days = 8 }
+			country_event = { id = hungarian.20 days = 6 }
 		  }
+		  
+			HUN = {
+			country_event = { id = hungarian.29 days = 11 }
+		  }		  
 	    }		
 	  }
     }
@@ -1052,7 +965,7 @@ set_popularities = {
 	fire_only_once = yes
 	
 	option = {
-		name = hungarian.18.a
+		name = hungarian.19.a
 		
 		ai_chance = {
 			factor = 100
@@ -1085,7 +998,7 @@ set_popularities = {
   }
   
   
-	country_event = {#AssasinateVago
+	country_event = { #AssasinateVago
 	id = hungarian.20
 	title = hungarian.20.t
 	desc = hungarian.20.d
@@ -1096,22 +1009,19 @@ set_popularities = {
 	option = {
 		name = hungarian.20.a
 		
-	remove_ideas = {
-	HUN_Vago_EM
-	}	
-		
 			hidden_effect = {
+			  
 		news_event = {
 			id = hungary.10
 			days = 1
-			
-			HUN = {
-			country_event = { id = hungarian.29 days = 5 }			
-		}	
-      }				   
-    }
+			}
+          }			
+		 
+	remove_ideas = {
+	HUN_Vago_EM   	  
+		  } 
+      }
   }
-}
 	
       	   country_event = {  #BALKCHAOS
 	id = hungarian.21
@@ -1429,7 +1339,6 @@ set_popularities = {
         custom_effect_tooltip = Revolutionary_Zeal_0.04_increase 		
 		
 		add_stability = 0.1
-		popularity = 0.05
 		add_war_support = 0.1
 		
 			add_to_variable = {
@@ -1552,7 +1461,16 @@ create_country_leader = {
 	title = hungarian.31.t
 	desc = hungarian.31.d
 	picture = GFX_report_event_hun_925
-	is_triggered_only = yes
+
+	trigger = {
+		tag = HUN
+		date > 1933.3.1
+	}
+
+	mean_time_to_happen = {
+		days = 300
+	}
+	
 	fire_only_once = yes
 	
 	option = {
@@ -1595,15 +1513,14 @@ create_country_leader = {
 				}
 			}
 
-			if = {
+			else_if = {
 				limit = {
 					has_completed_focus = hun_garbai_arrest
 				}
 					remove_ideas = HUN_party_opposition
 				}
 			}
-         }
-      }		 
+         }		 
 
      	   country_event = { #GarbaiTrial
 	id = hungarian.33
@@ -1643,14 +1560,13 @@ create_country_leader = {
 				}
 			}
 
-			if = {
+			else_if = {
 				limit = {
 					has_completed_focus = hun_belakun_arrest
 				}
 					remove_ideas = HUN_party_opposition
 				}
 			}		   
-         }
 		 
 	option = {
 		name = hungarian.33.b #ExecuteAllButGenerals
@@ -1675,14 +1591,15 @@ create_country_leader = {
 				}
 			}
 
-			if = {
+			else_if = {
 				limit = {
 					has_completed_focus = hun_belakun_arrest
 				}
 				add_popularity = {
 					remove_ideas = HUN_party_opposition
 				}
-			}			
+			}
+        }			
       
 	option = {
 		name = hungarian.33.c #Forgive	
@@ -1699,7 +1616,7 @@ create_country_leader = {
 				}
 			}
 
-			if = {
+			else_if = {
 				limit = {
 					has_completed_focus = hun_belakun_arrest
 				}
@@ -1709,7 +1626,6 @@ create_country_leader = {
 			}		
          }		 
       }
-   }
    
      	   country_event = { #PurgeGeneralsBelaKun
 	id = hungarian.34
@@ -2024,4 +1940,576 @@ create_country_leader = {
 			ideology = CN_VARIANT_01
 		 }	   
        }
+     }
+
+     	   country_event = { #Revolutionary's Guide to Warfare - credit to beigeBoy
+	id = hungarian.47
+	title = hungarian.47.t
+	desc = hungarian.47.d
+	picture = GFX_report_event_hun_940
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.47.a	
+		
+		custom_effect_tooltip = Revolutionary_Zeal_0.02_increase
+		  add_to_variable = {
+			var = HUN_Revolutionary_Zeal
+			value = 0.02
+	    }		
+       }
+      }
+
+	       	   country_event = { #Opium, Alcohol and Other Vices - credit to beigeBoy
+	id = hungarian.48
+	title = hungarian.48.t
+	desc = hungarian.48.d
+	picture = GFX_report_event_hun_alcohol
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.48.a	
+		
+		add_stability = 0.02
+		
+	    }		 
+      }
+	  
+	       	   country_event = { #First cloned wild wolf 
+	id = hungarian.49
+	title = hungarian.49.t
+	desc = hungarian.49.d
+	picture = GFX_report_event_hun_wolf
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.49.a	
+		
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 1
+				category = flamethrowers_tech
+			}
+		 }		 
+      }
+
+	       	   country_event = { #Diamond and Vengeance
+	id = hungarian.50
+	title = hungarian.50.t
+	desc = hungarian.50.d
+	picture = GFX_report_event_hun_941
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.50.a	
+		
+		add_political_power = 10
+		 }		 
+      }
+
+	       	   country_event = { #Victory Parade
+	id = hungarian.51
+	title = hungarian.51.t
+	desc = hungarian.51.d
+	picture = GFX_report_event_hungary_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.51.a	
+		
+		custom_effect_tooltip = Revolutionary_Zeal_0.06_increase
+		  add_to_variable = {
+			var = HUN_Revolutionary_Zeal
+			value = 0.06
+			
+			add_war_support = 0.1
+			
+	        }
+		 }		 
+      }
+
+	       	   country_event = { #Trial of Mihailovic
+	id = hungarian.52
+	title = hungarian.52.t
+	desc = hungarian.52.d
+	picture = GFX_report_event_mihailovich
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.52.a
+
+		SER = {		
+         remove_ideas = SER_Generals_Resistance
+           }		
+		
+		custom_effect_tooltip = Revolutionary_Zeal_0.02_increase
+		  add_to_variable = {
+			var = HUN_Revolutionary_Zeal
+			value = 0.02
+			
+	        }
+		 }		 
+      }
+
+	       	   country_event = { #Break Relations with Russia
+	id = hungarian.53
+	title = hungarian.53.t
+	desc = hungarian.53.d
+	picture = GFX_report_PB_Diplomatic_Agreement
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.53.a		
+		
+		add_opinion_modifier = {
+		  target = RUS modifier = outraged
+	   }
+	}
+ }
+
+	       	   country_event = { #Project - Ideal City
+	id = hungarian.54
+	title = hungarian.54.t
+	desc = hungarian.54.d
+	picture = GFX_report_event_ideal_city
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.54.a	
+	   }
+ }
+ 
+	       	   country_event = { # Second December
+	id = hungarian.55
+	title = hungarian.55.t
+	desc = hungarian.55.d
+	picture = GFX_report_German_Jacobin_March
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.55.a	
+	   }
+ }
+
+	       	   country_event = { #Project - Horus
+	id = hungarian.56
+	title = hungarian.56.t
+	desc = hungarian.56.d
+	picture = GFX_report_PB_Nuclear_Espionage
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = hungarian.56.a	
+	   }
+ }
+
+    country_event = { #Third Balkan War - Albania Peace
+	id = hungarian.57
+	title = hungarian.57.t
+	desc = hungarian.57.d
+	picture = GFX_report_event_hun_910
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.57.a
+
+					ALB = {
+
+            white_peace = HUN					
+					
+            remove_ideas = ALB_german_dependency					
+					
+			clr_country_flag = Tag_in_German_Sphere
+			clr_country_flag = Tag_in_Russian_Sphere			
+            set_country_flag = Tag_in_Hungarian_Sphere			
+			
+			if = {
+				limit = {
+					HUN = {
+					has_government = jc
+					}
+				}
+			   set_politics = {
+		       ruling_party = JC
+		       }
+			}
+
+			else_if = {
+				limit = {
+					HUN = {
+					has_government = ss
+					}
+				}
+			   set_politics = {
+		       ruling_party = SS
+		       }
+			  }
+			
+			else_if = {
+				limit = {
+					HUN = {
+					has_government = lb
+					}
+				}
+				
+			   kill_country_leader = yes
+			   
+			   set_politics = {
+		       ruling_party = LB
+		       }
+			}
+			
+create_country_leader = {
+	name = "Enver Hoxha"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/ALB/portrait_enver_hoxha.dds"
+	ideology = JC_VARIANT_01
+}
+
+create_country_leader = {
+	name = "Enver Hoxha"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/ALB/portrait_enver_hoxha.dds"
+	ideology = SS_VARIANT_01
+}
+
+create_country_leader = {
+	name = "Theofan Stilian Noli"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/ALB/ALB_Fan_Noli.dds"
+	ideology = LB_VARIANT_01
+           }			
+		}		
+		
+	         HUN = {
+			 
+         puppet = ALB
+		 
+		 hidden_effect = {
+		 
+			set_autonomy = {
+                target = BUL
+                 autonomy_state = autonomy_PB_Sister_Republic
+                }
+				
+			set_autonomy = {
+                target = MAC
+                 autonomy_state = autonomy_PB_Sister_Republic
+                }
+				
+			set_autonomy = {
+                target = KSV
+                 autonomy_state = autonomy_PB_Sister_Republic
+             }				
+		  }								
+	   } 
+    } 
+ }
+ 
+    country_event = { #Third Balkan War - Final Peace
+	id = hungarian.58
+	title = hungarian.58.t
+	desc = hungarian.58.d
+	picture = GFX_report_event_hun_910
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.58.a
+		
+	         BUL = {
+			 
+		hidden_effect = { 
+
+        kill_country_leader = yes
+
+		create_country_leader = {
+			name = "Balkan Jacobin League"
+			desc = " "
+			picture = "gfx/leaders/RUS/Portrait_RUS_Moscow_Jacobin_Revolt.tga"
+			expire = "1965.1.1"
+			ideology = JC_VARIANT_02
+		}
+
+		create_country_leader = {
+			name = "Balkan Workers' League"
+			desc = " "
+			picture = "gfx/leaders/RUS/Portrait_RUS_Moscow_Jacobin_Revolt.tga"
+			expire = "1965.1.1"
+			ideology = SS_VARIANT_02
+		}
+
+		create_country_leader = {
+			name = "Federal Parliament"
+			desc = " "
+			picture = "gfx/leaders/RUS/Portrait_RUS_Moscow_Jacobin_Revolt.tga"
+			expire = "1965.1.1"
+			ideology = LB_VARIANT_02
+		}
+     }		
+			 
+		set_cosmetic_tag = BUL_League			 
+			 
+			annex_country = {
+				target = MAC
+				transfer_troops = yes
+			}
+
+			annex_country = {
+				target = KSV
+				transfer_troops = yes
+			}
+			
+
+         	add_state_core = 731
+         	add_state_core = 958
+         	add_state_core = 185
+         	add_state_core = 47
+         	add_state_core = 970
+         	add_state_core = 186			
+		    add_state_core = 163
+		    add_state_core = 960
+
+         	transfer_state = 731
+         	transfer_state = 958
+         	transfer_state = 185
+         	transfer_state = 47
+         	transfer_state = 970
+         	transfer_state = 186   			
+	     }
+
+			if = {
+				limit = {	  
+			      ALB = {
+			       exists = yes
+			        }	   
+                  }
+			
+	         BUL = {		 
+			 
+			annex_country = {
+				target = ALB
+				transfer_troops = yes
+		      }
+			  
+		    add_state_core = 44
+         	transfer_state = 44	
+			
+          }		   
+       }
+    }
+ }
+
+    country_event = { # A day on the Job event 
+	id = hungarian.59
+	title = hungarian.59.t
+	desc = hungarian.59.d
+	picture = GFX_report_event_hungary_parade
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.59.a
+     }
+  }
+
+    country_event = { # Urbanization or Elecrification choice
+	id = hungarian.60
+	title = hungarian.60.t
+	desc = hungarian.60.d
+	picture = GFX_report_PB_Construction
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.60.a
+		
+        custom_effect_tooltip = urbanization_decisions_tt		
+		
+		set_country_flag = hun_urbanization	
+     }
+	 
+	option = {
+		name = hungarian.60.b
+		
+        custom_effect_tooltip = electrification_decisions_tt		
+		
+		set_country_flag = hun_electrification	  		
      }	 
+  }
+
+    country_event = { # A letter to Tesla
+	id = hungarian.61
+	title = hungarian.61.t
+	desc = hungarian.61.d
+	picture = GFX_report_event_a_letter_to_tesla
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.61.a
+
+			hidden_effect = {
+		     HUN = {
+		      country_event = {
+		      id = hungarian.62
+		      days = 10
+		      }
+           }			
+        }		
+     }	 
+  }
+
+    country_event = { # Tesla's Responce
+	id = hungarian.62
+	title = hungarian.62.t
+	desc = hungarian.62.d
+	picture = GFX_report_event_a_letter_to_tesla
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.62.a
+
+			hidden_effect = {
+			
+			random_list = {
+				60 = {
+				
+		     HUN = {
+		      country_event = {
+		      id = hungarian.63
+		      days = 20
+		        }
+            }								
+		}
+				40 = {
+								
+			 
+		     HUN = {
+		      country_event = {
+		      id = hungarian.64
+		      days = 20
+	    	      }
+               } 			
+            }		
+         }
+      }
+   }
+}
+
+    country_event = { # Meeting in Lwow
+	id = hungarian.63
+	title = hungarian.63.t
+	desc = hungarian.63.d
+	picture = GFX_report_event_a_meeting_with_tesla
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.63.a
+
+			hidden_effect = {
+			
+		every_country = {
+		  set_temp_variable = { super_id = 86 }
+			PB_Fire_Super_Event = yes
+		}
+		
+		news_event = {
+			id = hungary.24
+			hours = 1 
+		    }
+
+		     HUN = {
+		      country_event = {
+		      id = hungarian.65
+		      days = 30
+	    	   }
+            }			
+         }		
+      }	  
+   }
+   
+    country_event = { # Tesla is Killed
+	id = hungarian.64
+	title = hungarian.64.t
+	desc = hungarian.64.d
+	picture = GFX_report_event_a_meeting_with_tesla
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.64.a
+
+			hidden_effect = {
+			
+		every_country = {
+		  set_temp_variable = { super_id = 87 }
+			PB_Fire_Super_Event = yes
+		}
+		
+		news_event = {
+			id = hungary.25
+			hours = 1 
+		    }							
+         }		
+      }	  
+   }
+
+    country_event = { # Teslafication of Zagreb
+	id = hungarian.65
+	title = hungarian.65.t
+	desc = hungarian.65.d
+	picture = GFX_report_event_teslafication_of_zagreb
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.65.a
+
+       set_country_flag = hun_teslafication_of_zagreb		
+      }	  
+   }   
+	  
+country_event = { #Hungarian Support
+	id = hungarian.1000
+	title = hungarian.1000.t
+	desc = hungarian.1000.d
+	picture = GFX_report_event_hun_905
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Agree
+		name = hungarian.1000.a
+
+		ai_chance = {
+			factor = 100
+		}
+
+		add_political_power = 50
+	}
+}	  

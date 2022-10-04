@@ -103,23 +103,23 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "No Leader"
-	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+    name = "Stojan Protic"
+    desc = "PB_NO_DESC"
+    picture = "gfx/leaders/MNT/portrait_Stojan_Protic.dds"
 	ideology = LB_VARIANT_01
 }
 
 create_country_leader = {
-	name = "Metodija Andonov-Čento"
-	desc = ""
-	picture = "gfx/leaders/MAC/Portrait_cento.dds"
+    name = "Stojan Protic"
+    desc = "PB_NO_DESC"
+    picture = "gfx/leaders/MNT/portrait_Stojan_Protic.dds"
 	ideology = SS_VARIANT_01
 }
 
 create_country_leader = {
-	name = "Metodija Andonov-Čento"
-	desc = ""
-	picture = "gfx/leaders/MAC/Portrait_cento.dds"
+    name = "Stojan Protic"
+    desc = "PB_NO_DESC"
+    picture = "gfx/leaders/MNT/portrait_Stojan_Protic.dds"
 	ideology = JC_VARIANT_01
 }
 

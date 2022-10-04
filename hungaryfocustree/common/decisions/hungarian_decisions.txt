@@ -1,6 +1,432 @@
-#ECONOMICDECISIONS
+HUN_great_balkan_war = {
 
-HUN_economic_dec = {
+	HUN_mobilization_efforts = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			HUN = {
+				has_war = yes
+			}		
+		}
+
+	visible = {
+		has_global_flag = great_balk_war
+	}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		days_remove = 7
+		
+		days_re_enable = 50
+
+		remove_effect = {
+				add_manpower = 50000
+		}
+	}
+
+	HUN_ask_japan_for_equipment = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			OR = {
+				has_government = jc 
+				has_government = ss
+			}
+		}
+
+	visible = {
+		has_global_flag = great_balk_war
+	}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		days_remove = 1
+		
+		days_re_enable = 60
+
+		remove_effect = {
+		HUN = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+				producer = JAP
+			}
+		 }
+	   }
+	}
+
+	HUN_ask_japan_for_fuel = {
+
+		icon = GFX_decision_OBW_Fuel_Parts
+
+		available = {
+			OR = {
+				has_government = jc 
+				has_government = ss
+			}
+		}
+
+	visible = {
+		has_global_flag = great_balk_war
+	}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		days_remove = 7
+		
+		days_re_enable = 60
+
+		remove_effect = {
+		HUN = {
+			add_fuel = 30000
+			}
+		 }
+	  }
+
+	HUN_operation_alexander = {
+
+		icon = border_war
+
+		available = {
+			HUN = {
+				has_war_with = SER
+			}
+		}
+
+	visible = {
+		has_global_flag = great_balk_war
+	}
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 60
+		}
+		
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+            targeted_modifier = { 
+                tag = SER
+                attack_bonus_against = 0.1 
+            }		
+
+		days_remove = 60
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		 }
+	  }
+
+	HUN_operation_villamlas = {
+
+		icon = border_war
+
+		available = {
+			HUN = {
+				has_war_with = ROM
+			}
+		}
+
+	visible = {
+		has_global_flag = great_balk_war
+	}
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 60
+		}
+		
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+            targeted_modifier = { 
+                tag = ROM
+                attack_bonus_against = 0.1 
+            }		
+
+		days_remove = 60
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		 }
+	  }
+
+	HUN_operation_Gorogorszag = {
+
+		icon = border_war
+
+		available = {
+			HUN = {
+				has_war_with = GRE
+			}
+		}
+
+	visible = {
+		has_global_flag = great_balk_war
+	}
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 60
+		}
+		
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+            targeted_modifier = { 
+                tag = GRE
+                attack_bonus_against = 0.1 
+            }		
+
+		days_remove = 60
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		 }
+	   }
+
+	HUN_found_the_romanian_red_army = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			HUN = {
+				controls_province = 690
+			}
+		}
+
+	visible = {
+		has_global_flag = great_balk_war
+	}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 60
+		}
+		
+		available = {
+			HUN = {
+				controls_province = 690
+			}
+		}		
+
+		visible = {
+			HUN = {
+				has_war = yes
+			}
+		}		
+
+		days_remove = 10
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_romanian_red_army	 
+		
+		hidden_effect = {		
+		
+			    84 = {
+                create_unit = {
+                    division = "name = \"Romanian Division\" division_template = \"Romanian Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = HUN
+                   }
+				   
+                create_unit = {
+                    division = "name = \"Romanian Division\" division_template = \"Romanian Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = HUN
+                   }				   
+				}
+             }				
+		  }
+	   }
+
+	HUN_found_the_serbian_red_army = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			HUN = {
+				controls_province = 3617
+			}
+		}
+
+		visible = {
+			HUN = {
+				has_war = yes
+			}
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 60
+		}	
+
+		days_remove = 10
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_serbian_red_army		
+		
+		hidden_effect = {	
+		
+			    45 = {
+                create_unit = {
+                    division = "name = \"Serbian Division\" division_template = \"Serbian Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = HUN
+                }
+				
+                create_unit = {
+                    division = "name = \"Serbian Division\" division_template = \"Serbian Division\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = HUN
+                   }				   
+			   }
+           }				
+	   }
+	}
+	
+	HUN_Trains_for_Army_Emergency = {
+
+		icon = eng_trade_unions_support
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		available = {
+			has_equipment = {
+				train_equipment_1 < 20
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 25
+			}
+			add_stability = -0.025
+		}
+
+		days_re_enable = 300
+	 }
+	 
+	HUN_Grain_Stocks_for_War_Emergency = {
+
+		icon = ger_mefo_bills
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		available = {
+			has_war = yes
+			has_war_support > 0.5
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = rations_equipment_1
+				amount = 5000
+			}
+			add_stability = -0.05
+			add_war_support  = -0.05
+		}
+
+		days_re_enable = 360
+	}	 
+  }		 
+
+HUN_domestic_policy = {
+
+	HUN_teslafication_of_zagreb = {
+
+		icon = GFX_decision_ger_military_buildup
+
+        activation = { 
+			has_country_flag = hun_teslafication_of_zagreb
+        }
+
+		available = {
+		}
+
+        highlight_states = {
+		highlight_state_targets = { state = 109 }
+     	}
+
+		on_map_mode = map_and_decisions_view		
+
+		selectable_mission = no
+		is_good = no
+		fire_only_once = yes
+               
+        days_mission_timeout = 150
+
+		complete_effect = {
+			109 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = tesla_tower
+					level = 3
+					instant_build = yes
+				}
+				
+			    add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes				
+			}
+			
+            add_manpower = 100000			
+        }
+		
+		add_victory_points = {
+			province = 109
+			value = 20
+		}		
+
+		timeout_effect = {
+			}
+        }
+	}
 
 	HUN_collectivize_hungary = {
 
@@ -9,18 +435,26 @@ HUN_economic_dec = {
 		cost = 25
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 967 }
+     	}
+
+		on_map_mode = map_and_decisions_view		
 
 		available = {
 		has_completed_focus = hun_collectivization
 		}
 		
-        highlight_states = { 
-		highlight_state_targets = { state = 701 }
-		highlight_state_targets = { state = 43 }
-		highlight_state_targets = { state = 155 }
-	    }		
+		visible = {
+			has_completed_focus = hun_collectivization
+		}			
+
+		modifier = {
+			civilian_factory_use = 1
+		}		
 
 		days_remove = 30
 
@@ -36,6 +470,10 @@ HUN_economic_dec = {
 			}
 			155 = {
 				add_extra_state_shared_building_slots = 2
+			}
+
+			967 = {
+				add_extra_state_shared_building_slots = 2
 			}			
 			
 		}
@@ -48,18 +486,26 @@ HUN_economic_dec = {
 		cost = 25
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 71 }
+     	}
+
+		on_map_mode = map_and_decisions_view		
 		
 		available = {
 		has_completed_focus = hun_collectivization
 		}
-
-        highlight_state_targets = { state = 664 }
-        highlight_state_targets = { state = 71 }
-        highlight_state_targets = { state = 70 }
-        highlight_state_targets = { state = 73 }		
-       		
+		
+		visible = {
+			has_completed_focus = hun_collectivization
+		}		
+		
+		modifier = {
+			civilian_factory_use = 1
+		}		
 		
 		days_remove = 30
 
@@ -90,16 +536,26 @@ HUN_economic_dec = {
 		cost = 25
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 84 }
+     	}
+
+		on_map_mode = map_and_decisions_view		
 		
 		available = {
 		has_completed_focus = hun_collectivization
 		}
+		
+		visible = {
+			has_completed_focus = hun_collectivization
+		}		
 
-        highlight_state_targets = { state = 76 }
-        highlight_state_targets = { state = 83 }
-        highlight_state_targets = { state = 84 }		
+		modifier = {
+			civilian_factory_use = 1
+		}		
 
 		days_remove = 30
 
@@ -119,23 +575,33 @@ HUN_economic_dec = {
 		}
 	}
 
-	HUN_collectivize_croatia = {
+	HUN_collectivize_croatia = {	
 
 		icon = GFX_decision_steelworks
 
 		cost = 25
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 		
 		available = {
 		has_completed_focus = hun_collectivization
 		}
 		
-        highlight_state_targets = { state = 957 }
-        highlight_state_targets = { state = 109 }
-        highlight_state_targets = { state = 794 }		
+		visible = {
+			has_completed_focus = hun_collectivization
+		}		
+		
+        highlight_states = {
+		highlight_state_targets = { state = 109 }
+     	}
+
+		on_map_mode = map_and_decisions_view		
+
+		modifier = {
+			civilian_factory_use = 1
+		}		
 		
 		days_remove = 30
 
@@ -162,16 +628,26 @@ HUN_economic_dec = {
 		cost = 25
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 		
 		available = {
 		has_completed_focus = hun_collectivization
 		}
+		
+		visible = {
+			has_completed_focus = hun_collectivization
+		}		
+		
+        highlight_states = {
+		highlight_state_targets = { state = 82 }
+     	}
 
-        highlight_state_targets = { state = 45 }
-        highlight_state_targets = { state = 764 }
-        highlight_state_targets = { state = 82 }		
+		on_map_mode = map_and_decisions_view		
+
+		modifier = {
+			civilian_factory_use = 1
+		}		
 
 		days_remove = 30
 
@@ -190,9 +666,67 @@ HUN_economic_dec = {
 			}
 		}
 	}
-}
 
-HUN_domestic_policy = {
+	HUN_Promote_Jacobin_Youth = {
+
+		icon = GFX_decision_generic_socialism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+			OR = {
+				has_government = jc 
+				has_government = ss
+				has_government = lb				
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 15
+
+		days_re_enable = 50
+
+		remove_effect = {
+			add_war_support = 0.025
+
+			if = {
+				limit = {
+					has_government = jc
+				}
+				add_popularity = {
+					ideology = jc
+					popularity = 0.05
+				}
+			}
+
+			if = {
+				limit = {
+					has_government = ss
+				}
+				add_popularity = {
+					ideology = ss
+					popularity = 0.05
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = lb
+				}
+				add_popularity = {
+					ideology = lb
+					popularity = 0.05
+				}
+			}			
+		}
+	}
 
 	HUN_increase_revolutionary_zeal = {
 
@@ -201,7 +735,7 @@ HUN_domestic_policy = {
 		cost = 20
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 
 		available = {
@@ -234,7 +768,7 @@ HUN_domestic_policy = {
 		cost = 20
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 
 		available = {
@@ -279,22 +813,23 @@ HUN_domestic_policy = {
 		}
 
 		fire_only_once = yes
-
-		effect = {
 		
-		country_event = {
+        days_remove = 7		
+
+		remove_effect = {
 		
 		HUN = {
+		country_event = {
 		id = hungarian.44
 		days = 1
 		      }
-		  }			
-	   }
-	}
+		   }			
+	    }
+	 }
 
 	HUN_Propaganda_in_Schools = {
 
-		icon = GFX_decision_category_hun_comm
+		icon = GFX_decision_generic_propaganda
 
 		cost = 50
 
@@ -311,7 +846,7 @@ HUN_domestic_policy = {
 		}
 
 		modifier = {
-			civilian_factory_use = 1
+			civilian_factory_use = 3
 		}
 
 		days_remove = 25
@@ -355,7 +890,7 @@ HUN_domestic_policy = {
 
 	HUN_Fighting_the_Counterrevolution = {
 
-		icon = GFX_decision_category_hun_comm
+		icon = GFX_decision_generic_pistol
 
 		cost = 50
 
@@ -392,7 +927,7 @@ HUN_domestic_policy = {
 	
 	HUN_organize_party_meeting = {
 
-		icon = GFX_decision_category_hun_comm
+		icon = GFX_decision_generic_socialism
 
 		cost = 100
 
@@ -420,9 +955,76 @@ HUN_domestic_policy = {
 				value = 0.10
 			}			
 		}
-	}		
- }
-  
+	}
+
+	PB_Support_Pan_Arabians = {
+
+		icon = generic_operation
+		
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+			OR = {
+				has_government = jc
+				has_government = ss
+            }
+			
+			UAR = {
+				has_war_with = SYR
+				has_government = jc				
+			}
+			
+			HUN = {
+				OR = {
+					has_equipment = {
+						infantry_equipment_0 > 2000
+					}
+					has_equipment = {
+						infantry_equipment_1933 > 2000
+					}
+					has_equipment = {
+						infantry_equipment_1 > 2000
+					}
+					has_equipment = {
+						infantry_equipment_2 > 2000
+					}
+					has_equipment = {
+						infantry_equipment_3 > 2000
+					}
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 25
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			UAR = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 2000
+					producer = HUN
+				}
+
+				country_event = {
+					id = hungarian.1000
+					days = 3
+				}
+			}
+		}
+	}
+}	
+   
  HUN_war_on_horizon = {
 
 	HUN_arpad_line_one = {
@@ -776,6 +1378,66 @@ HUN_domestic_policy = {
 				}
 			}			
 		}
+	}
+
+	HUN_Grain_Stocks_for_War = {
+
+		icon = POL_looming_peasants_strike
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		available = {
+			has_war = yes
+			has_war_support > 0.1
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = rations_equipment_1
+				amount = 1000
+			}
+			
+		}
+
+		days_re_enable = 100
+	}
+
+	HUN_Trains_for_Army = {
+
+		icon = generic_operation
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#visible = {
+		#	has_war = yes
+		#}
+
+		available = {
+			has_equipment = {
+				train_equipment_1 < 6
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 5
+			}
+		}
+
+		days_re_enable = 365
 	}	
 	
 	HUN_increase_conscription = {
@@ -828,7 +1490,7 @@ HUN_domestic_policy = {
 				add_idea = partial_economic_mobilisation
 			}			
 		}
-	}	  
+	}	
 }
 
 HUN_shock_therapy = {
@@ -1256,8 +1918,9 @@ HUN_shock_therapy = {
 		fire_only_once = yes
 
 		remove_effect = {
-				remove_idea = HUN_shock_therapy_3
+				remove_ideas = HUN_shock_therapy_3
 				clr_country_flag = shock_therapy
 		}
 	}
-}	
+}
+	 

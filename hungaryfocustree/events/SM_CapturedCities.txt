@@ -1,0 +1,220 @@
+﻿##################
+# CAPTURED CITIES EVENTS 
+##################
+
+add_namespace = SMcity
+
+news_event = {		#Fall of Belgrade to Hungary
+	id = SMcity.1
+	title = SMcity.1.t
+	desc = SMcity.1.d
+	picture = GFX_PB_news_event_PBNews_Fall_of_Belgrade
+	major = yes
+	
+	trigger = {
+		107 = { is_controlled_by = HUN }
+		107 = { is_owned_by = SER }
+		HUN = { has_war_with = SER }
+		NOT = { has_global_flag = fall_of_belgrade_hun }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_belgrade_hun
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = SMcity.1.a
+		trigger = {
+			NOT = {
+				TAG = HUN
+				TAG = SER
+			}
+		}
+	}
+	
+	option = {
+		name = SMcity.1.b
+		trigger = { TAG = HUN }
+	}
+	
+	option = {
+		name = SMcity.1.c
+		trigger = { TAG = SER }
+	}
+}
+
+news_event = {		#Fall of Lasi to Hungary
+	id = SMcity.2
+	title = SMcity.2.t
+	desc = SMcity.2.d
+	picture = GFX_PB_0_news_event_PBNews_Fall_of_lasi
+	major = yes
+	
+	trigger = {
+		79 = { is_controlled_by = HUN }
+		79 = { is_owned_by = ROM }
+		HUN = { has_war_with = ROM }
+		NOT = { has_global_flag = fall_of_lasi_hun }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_lasi_hun
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = SMcity.2.a
+		trigger = {
+			NOT = {
+				TAG = HUN
+				TAG = ROM
+			}
+		}
+	}
+	
+	option = {
+		name = SMcity.2.b
+		trigger = { TAG = HUN }
+	}
+	
+	option = {
+		name = SMcity.2.c
+		trigger = { TAG = ROM }
+	}
+}
+
+news_event = {		#Fall of Bucharest to Hungary
+	id = SMcity.3
+	title = SMcity.3.t
+	desc = SMcity.3.d
+	picture = GFX_PB_0_news_event_PBNews_Fall_of_Bucharest
+	major = yes
+	
+	trigger = {
+		46 = { is_controlled_by = HUN }
+		46 = { is_owned_by = ROM }
+		HUN = { has_war_with = ROM }
+		NOT = { has_global_flag = fall_of_athenss }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_athenss
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = SMcity.3.a
+		trigger = {
+			NOT = {
+				TAG = HUN
+				TAG = ROM
+			}
+		}
+	}
+	
+	option = {
+		name = SMcity.3.b
+		trigger = { TAG = HUN }
+	}
+	
+	option = {
+		name = SMcity.3.c
+		trigger = { TAG = ROM }
+	}
+}
+
+news_event = {		#Fall of Constantinople
+	id = SMcity.4
+	title = SMcity.4.t
+	desc = SMcity.4.d
+	picture = GFX_PB_0_news_event_PBNews_Fall_of_athens
+	major = yes
+	
+	trigger = {
+		341 = { is_controlled_by = HUN }
+		341 = { is_owned_by = GRE }
+		HUN = { has_war_with = GRE }
+		NOT = { has_global_flag = fall_of_constantinople_hun }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_constantinople_hun
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = SMcity.4.a
+		trigger = {
+			NOT = {
+				TAG = HUN
+				TAG = GRE
+			}
+		}
+	}
+	
+	option = {
+		name = SMcity.4.b
+		trigger = { TAG = HUN }
+	}
+	
+	option = {
+		name = SMcity.4.c
+		trigger = { TAG = GRE }
+	}
+}
+
+news_event = {		#Fall of Sofia
+	id = SMcity.5
+	title = SMcity.5.t
+	desc = SMcity.5.d
+	picture = GFX_PB_0_news_event_PBNews_Fall_of_sofia
+	major = yes
+	
+	trigger = {
+		949 = { is_controlled_by = SER }
+		949 = { is_owned_by = BUL }
+		BUL = { has_war_with = SER }
+		NOT = { has_global_flag = fall_of_sofia_hun }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_sofia_hun
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = SMcity.5.a
+		trigger = {
+			NOT = {
+				TAG = HUN
+				TAG = BUL
+			}
+		}
+	}
+	
+	option = {
+		name = SMcity.5.b
+		trigger = { TAG = HUN }
+	}
+	
+	option = {
+		name = SMcity.5.c
+		trigger = { TAG = BUL }
+	}
+}

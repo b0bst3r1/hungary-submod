@@ -1,0 +1,18 @@
+guiTypes = {
+	containerWindowType = { 
+		name = "HUN_industrialization_gui"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height = 110 }
+		Orientation = center
+		
+		instantTextBoxType = {
+			name ="industrialization_scripted_gui"
+			position = { x = 100 y = 0 }
+			font = "hoi_36header"
+			text = "industr_loc"
+			format = center
+			maxWidth = 300
+			maxHeight = 54
+		}				
+	}
+}

@@ -8,7 +8,7 @@ scripted_gui = {
 			always = yes
 		}
 		ai_enabled = {
-			always = no
+			always = yes
 		}
 	}
 }
