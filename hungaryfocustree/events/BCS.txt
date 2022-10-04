@@ -1,0 +1,21 @@
+##################
+####Saul#####
+#####events#######
+##################
+
+add_namespace = BCS
+
+	news_event = {		
+	id = BCS.1
+	title = BCS.1.t
+	desc = BCS.1.d
+	picture = news_event_apa_900.dds
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = BCS.1.a
+	  }
+    }

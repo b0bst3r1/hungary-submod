@@ -1,0 +1,14 @@
+scripted_gui = {
+	GRE_Political_Stable = {
+		context_type = player_context
+		window_name = "Party_unity_container"
+		visible = {
+			original_tag = GRE
+		}
+
+		effects = {
+			PartyUnity_bg_click = {
+			}
+		}
+	}
+}

@@ -1,0 +1,491 @@
+﻿focus_tree = {
+	id = greek_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 5000 }
+
+	focus = {
+		id = GRE_A_day_in_the_palace
+		icon = GFX_hun_return_the_nobility
+		x = 12
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 1
+		#prerequisite = { focus = AST_workers_paradise }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 1000 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	focus = {
+		id = GRE_the_medical_staff_is_worried
+		icon = GFX_medicine_for_needy
+		x = 13
+		y = 6
+		#relative_position_id = GRE_A_day_in_the_palace
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 12
+		prerequisite = { focus = GRE_A_day_in_the_palace }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	focus = {
+		id = GRE_politics_and_other_nonsense
+		icon = GFX_hun_renegatiate_buharest_treaty
+		x = 11
+		y = 6
+		#relative_position_id = GRE_the_medical_staff_is_worried
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 30
+		prerequisite = { focus = GRE_A_day_in_the_palace }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_stability = .12
+		}
+			
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	focus = {
+		id = GRE_The_House_Of_The_Setting_Sun
+		icon = GFX_hun_mass_clericalization
+		x = 13
+		y = 7
+		#relative_position_id = GRE_the_medical_staff_is_worried
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		prerequisite = { focus =  GRE_the_medical_staff_is_worried }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		 completion_reward = {
+		 start_civil_war = {
+		 ruling_party = ROOT
+		 ideology = jc
+		 size = 0.8
+		 capital = 282
+		 states = { 
+		 186 }
+		 }	
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	focus = {
+		id = GRE_A_quiet_day_in_athens
+		icon = GFX_JAP_Rebuilding_the_Cities
+		x = 11
+		y = 7
+		#relative_position_id = GRE_politics_and_other_nonsense
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		prerequisite = { focus =  GRE_politics_and_other_nonsense }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		 completion_reward = {
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	focus = {
+		id = GRE_Death_of_the_King
+		icon = GFX_HUN_renewthered
+		x = 12
+		y = 8
+		#relative_position_id = GRE_politics_and_other_nonsense
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		prerequisite = { focus =  GRE_The_House_Of_The_Setting_Sun }
+		prerequisite = { focus =  GRE_A_quiet_day_in_athens }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		 completion_reward = {
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = GRE_A_Crown_with_no_King
+		#icon = GFX_HUN_renewthered
+		x = 12
+		y = 9
+		#relative_position_id = GRE_Death_of_the_King
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		prerequisite = { focus =  GRE_Death_of_the_King }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		 completion_reward = {
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = GRE_eeath_of_the_King
+		#icon = GFX_HUN_renewthered
+		x = 12
+		y = 10
+		#relative_position_id = GRE_A_Crown_with_no_King
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		prerequisite = { focus =  GRE_A_Crown_with_no_King }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		 completion_reward = {
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = GRE_number1
+		#icon = GFX_HUN_renewthered
+		x = 12
+		y = 11
+		#relative_position_id = GRE_eeath_of_the_King
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		prerequisite = { focus =  GRE_eeath_of_the_King }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		 completion_reward = {
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = GRE_number2
+		#icon = GFX_HUN_renewthered
+		x = 11
+		y = 12
+		#relative_position_id = GRE_number1
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		prerequisite = { focus =  GRE_number1 }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		 completion_reward = {
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = GRE_number3
+		#icon = GFX_HUN_renewthered
+		x = 13
+		y = 12
+		#relative_position_id = GRE_number1
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		prerequisite = { focus =  GRE_number1 }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		 completion_reward = {
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = GRE_number4
+		#icon = GFX_HUN_renewthered
+		x = 11
+		y = 13
+		#relative_position_id = GRE_number2
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		prerequisite = { focus =  GRE_number2 }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		 completion_reward = {
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = GRE_number5
+		#icon = GFX_HUN_renewthered
+		x = 13
+		y = 13
+		#relative_position_id = GRE_number3
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		prerequisite = { focus =  GRE_number3 }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		 completion_reward = {
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = GRE_number6
+		#icon = GFX_HUN_renewthered
+		x = 11
+		y = 14
+		#relative_position_id = GRE_number5
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		prerequisite = { focus =  GRE_number4 }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		 completion_reward = {
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = GRE_number7
+		#icon = GFX_HUN_renewthered
+		x = 13
+		y = 14
+		#relative_position_id = GRE_number4
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		prerequisite = { focus =  GRE_number5 }
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		 completion_reward = {
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}		
