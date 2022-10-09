@@ -1,0 +1,98 @@
+scripted_gui = { 
+    cor_opening_of_window_gui = {
+	
+        context_type = decision_category
+		window_name = "cor_opening_of_window_gui"
+		
+		visible = {
+			is_ai = no
+		}
+		
+		effects = {
+			hun_radicalism_click = {
+				if = {
+					limit = { NOT = { has_variable = global.open_door } }
+					set_variable = { global.open_door = 1 }
+				}
+				else = {
+					clear_variable = global.open_door
+				}
+			}
+		}
+        
+		triggers = {
+        }
+    }
+}
+
+scripted_gui = {
+
+    radicalism_window = {
+    
+        context_type = player_context
+		
+		window_name = "radicalism_window"
+		
+		visible = {
+			is_ai = no
+            has_variable = global.open_door
+		}
+		
+		effects = {
+			cor_close_button_click = {
+				clear_variable = global.open_door
+			}		
+		}
+        
+		triggers = {
+		
+		    # Kingdom Control 
+		
+			budapest_kingdom_control_visible = {
+				check_variable = { hun_radicalism_in_budapest < 0.69 }
+			}
+	
+			hungary_kingdom_control_visible = {
+				check_variable = { hun_radicalism_in_hungary < 0.69 }				 
+			}
+
+			slovakia_kingdom_control_visible = {
+				check_variable = { hun_radicalism_in_slovakia < 0.69 }				 
+			}
+
+			ruthenia_kingdom_control_visible = {
+				check_variable = { hun_radicalism_in_ruthenia < 0.69 }				 
+			}
+
+ 			# Radical Control
+		
+			budapest_radical_control_visible = {
+				check_variable = { hun_radicalism_in_budapest > 0.69 }
+			}
+	
+			hungary_radical_control_visible = {
+				check_variable = { hun_radicalism_in_hungary > 0.69 }				 
+			}
+
+			slovakia_radical_control_visible = {
+				check_variable = { hun_radicalism_in_slovakia > 0.69 }				 
+			}
+
+			ruthenia_radical_control_visible = {
+				check_variable = { hun_radicalism_in_ruthenia > 0.69 }				 
+			}
+
+			szalasi_is_killed_visible = {
+				has_country_flag = hun_szalasi_is_dead_flag
+			}
+
+			bela_impedy_is_killed_visible = {
+				has_country_flag = hun_bela_impedy_is_dead_flag			 
+			}
+
+			pal_pronay_is_killed_visible = {
+				has_country_flag = hun_pal_pronay_is_dead_flag			 
+			}				
+	    }		
+    }
+} 

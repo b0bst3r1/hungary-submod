@@ -388,6 +388,36 @@ add_namespace = hungary
 	option = {
 		name = hungary.25.a
 	   }
+    }
+
+	news_event = { # Habsburg Restoration Hungary
+	id = hungary.26
+	title = hungary.26.t
+	desc = hungary.26.d
+	picture = GFX_PB_News_Event_Habsburg_Restoration
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.26.a
+	   }
+    }
+
+	news_event = { # Romanov in Hungary
+	id = hungary.27
+	title = hungary.27.t
+	desc = hungary.27.d
+	picture = GFX_PB_News_Event_Romanov_In_Hungary
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.2.a
+	   }
     }	
 
  

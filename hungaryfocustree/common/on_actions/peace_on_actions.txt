@@ -379,14 +379,73 @@ on_daily_HUN = {	# Third Balkan War - Final Peace Deal
  
 		  set_global_flag = third_balkan_war_hungary_win
  
-		  clr_global_flag = great_balk_war
+		  clr_global_flag = third_balkan_war_started
 		   
 	      clr_global_flag = third_balkan_war_bulgaria_lost
-	      clr_global_flag = third_balkan_war_greece_lost
-	      clr_global_flag = gbw_turkey_lost		   
+	      clr_global_flag = third_balkan_war_greece_lost		   
 		   
 	 	  country_event = { id = hungarian.58}	
 		  
+	      }
+       }
+    }
+
+on_daily_HUN = {	# Hungarian civil war - start
+  effect = { 
+    if = {
+      limit = { 
+	    NOT = {
+        has_completed_focus = hun_Country_held_on
+
+        owns_state = 70
+        owns_state = 73		
+       }
+    }
+ 
+        declare_war_on = {
+        target = SLO
+        type = annex_everything
+             }
+
+        declare_war_on = {
+        target = RUT
+        type = annex_everything
+             }			 
+	      }
+       }
+    }
+
+on_daily_HUN = {	# Hungarian civil war - Slovakia Capitulation
+  effect = { 
+    if = {
+      limit = { 
+	    NOT = {
+        owns_state = 70	
+       }
+	   SLO = {
+       has_capitulated = yes
+       }	   
+    }
+	   transfer_state = 71
+	   transfer_state = 70   
+	      }
+       }
+    }
+
+on_daily_HUN = {	# Hungarian civil war - Ruthenia Capitulation
+  effect = { 
+    if = {
+      limit = { 
+	    NOT = {
+        owns_state = 73	
+       }
+	   RUT = {
+       has_capitulated = yes
+       }	   
+    }
+	   transfer_state = 73
+
+	   { country_event = { id = hungarian.70 days = 7 } }	   
 	      }
        }
     }	

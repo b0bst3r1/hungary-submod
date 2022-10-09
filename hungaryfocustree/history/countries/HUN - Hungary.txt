@@ -39,6 +39,7 @@ set_country_flag = transylvania_undefined
 set_country_flag = slovakia_undefined
 set_country_flag = ruthenia_undefined
 set_country_flag = PB_content_country
+set_country_flag = budapest_under_radical_control
 
 set_research_slots = 3
 
@@ -71,28 +72,12 @@ create_faction = workers_front
 
 set_cosmetic_tag = HUN_COM
 
-clamp_variable = {
-	var = HUN_Revolutionary_Zeal
-	min = 0
-	max = 1
-}
-
-clamp_variable = {
-	var = HUN_PartyUnity
-	min = 0
-	max = 1
-}
 
 set_variable = {
 	var = HUN_Revolutionary_Zeal
 	value = 0.4
 }
 
-clamp_variable = {
-	var = HUN_PartyUnity
-	min = 0
-	max = 1
-}
 
 set_variable = {
 	var = HUN_PartyUnity
@@ -119,37 +104,32 @@ set_variable = {
 	value = 0.0
 }
 
-clamp_variable = {
-var = HUN_industr_progress
-	min = 0
-	max = 1
-}
 		
 set_variable = {
 var = HUN_industr_progress
 value = 0
 }
 
-clamp_variable = {
-var = HUN_german_influence_var
-	min = 0
-	max = 1
-}
 		
 set_variable = {
 var = HUN_german_influence_var
 value = 0.3
 }
 
-clamp_variable = {
-var = HUN_russian_influence_var
-	min = 0
-	max = 1
-}
 		
 set_variable = {
 var = HUN_russian_influence_var
 value = 0.3
+}
+
+set_variable = {
+var = HUN_Militarism_var
+value = 0.8
+}
+
+set_variable = {
+var = HUN_Peoples_hate
+value = 0.5
 }
 
 add_ideas = {

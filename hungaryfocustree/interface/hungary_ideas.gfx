@@ -273,5 +273,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ROM_russianhelp"
 		texturefile = "gfx/interface/ideas/Romania/ROM_russianhelp.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HUN_guerrilla_arrow_cross"
+		texturefile = "gfx/interface/ideas/Hungary/guerrilla_arrow_cross_party.dds"
 	}	
 }

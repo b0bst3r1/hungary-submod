@@ -38,5 +38,15 @@ spriteTypes = {
 	spriteType = {
   		name = "GFX_SPEVNT_87"
 		texturefile = "gfx/super_events/SPEVNT_Tesla_Is_Dead.dds"
-	}		
+	}
+
+	spriteType = {
+  		name = "GFX_SPEVNT_88"
+		texturefile = "gfx/super_events/SPEVNT_Habsburg_Hungary.dds"
+	}
+
+	spriteType = {
+  		name = "GFX_SPEVNT_89"
+		texturefile = "gfx/super_events/SPEVNT_Romanovs_Hungary.dds"
+	}	
 }

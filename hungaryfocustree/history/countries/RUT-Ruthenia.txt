@@ -1,8 +1,6 @@
 ﻿starting_train_buffer = 2
 capital = 73
 
-oob = "RUT_PB"
-
 # Starting tech
 set_technology = { 
 	infantry_rations = 1
@@ -16,24 +14,28 @@ add_ideas = {
     PB_State_Press
     PB_Govidea_Planned_Economy
     PB_Fully_Westernized
-
-    limited_conscription
-	closed_economy
-	civilian_economy
-	PB_Public_Meetings_Banned 
+	
+	PB_Military_Government 
+	PB_NI_Revanchism
+	PB_Govidea_State_Capitalism
+	PB_Managed_Democracy
+	PB_State_Press
+	PB_Public_Meetings_Monitored
 	PB_Patriarchal_Society
-	PB_Limited_Autonomy
+	PB_Racial_Segregation
 	PB_Law_Secret_Police
 	PB_12_Hour_Workday
 	PB_Basic_Healthcare
-	PB_Basic_Education
+	PB_Universal_Basic
 	PB_Basic_Welfare
-	PB_Trade_Unions_Banned
-	PB_Slavery_Abolished
+	PB_Sociogenetics_Allowed
+	PB_Augmentation_No_Legislation
 	PB_Widespread_Poverty
-	PB_Semi_Industrialized 
-	PB_Significant_Illiteracy
-    PB_Market_Underperformance
+	PB_Agrarianism
+	PB_Minor_Illiteracy
+	PB_Market_Underperformance
+	PB_Pre_Great_War_Army
+	PB_Fully_Westernized	
 }
 
 set_stability = 0.5
@@ -52,7 +54,7 @@ set_popularities = {
 	jc = 0
 }
 set_politics = {
-	ruling_party = ds
+	ruling_party = ni
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -66,9 +68,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Eugene Konovalets"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/RUT/Portrait_Eugene_Konovalets.dds"
 	ideology = NI_VARIANT_01
 }
 

@@ -35,6 +35,10 @@ focus_tree = {
 			}
 		}
 		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
+		
 	    completion_reward = {			  
 	}
 		
@@ -55,30 +59,15 @@ focus_tree = {
 			}
 		}
 		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
+		
 		x = 13
 		y = 24
 
 	}
-	focus = {
-		id = hun_counterrevolution
-		icon = GFX_hun_counterrevolution
-		cost = 0
-		
-		available = {
-			has_country_leader = {
-				name = "Regency Council"
-				ruling_only = yes
-			}
-		}
-		
-	    completion_reward = {
-	    set_global_flag = third_balkan_war_started		
-		}		
-		
-		x = 53
-		y = 1
 
-	}
 	focus = {
 		id = hun_recovery_from_the_war
 		icon = GFX_hun_recovery_from_The_war
@@ -87,6 +76,10 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_demobilization
 		}
+		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		completion_reward = {
 			add_timed_idea = {
@@ -112,6 +105,7 @@ focus_tree = {
 			}
 		}
 		
+		
 		x = 41
 		y = 1
 
@@ -128,6 +122,10 @@ focus_tree = {
 				has_country_flag = hun_victory_parade_flag
 			}
 		}
+		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		prerequisite = {
 			focus = hun_victory
@@ -146,6 +144,10 @@ focus_tree = {
 		prerequisite = {
 			focus = hun_victory_parade
 		}
+		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 	    completion_reward = {
 
@@ -897,6 +899,7 @@ focus_tree = {
 		cost = 35
 		
 		prerequisite = {
+		focus = hun_proclaim_UDWR		
 		}		
 
 	    completion_reward = {
@@ -918,7 +921,7 @@ focus_tree = {
 			}
       }			
 		
-		x = 36
+		x = 41
 		y = 7
 
 	}
@@ -946,7 +949,7 @@ focus_tree = {
        }		  
     }			
 		
-		x = 40
+		x = 45
 		y = 8
 
 	}
@@ -979,7 +982,7 @@ focus_tree = {
 	     }		
       }			
 		
-		x = 39
+		x = 44
 		y = 9
 
 	}
@@ -1034,7 +1037,7 @@ focus_tree = {
 	     }		 			
       }	  
 		
-		x = 41
+		x = 46
 		y = 9
 
 	}	
@@ -1067,7 +1070,7 @@ focus_tree = {
 		       }		   
 	      }		
 		
-		x = 40
+		x = 45
 		y = 10
 
 	}
@@ -1094,7 +1097,7 @@ focus_tree = {
 		
       }			
 		
-		x = 32
+		x = 37
 		y = 8
 
 	}
@@ -1126,7 +1129,7 @@ focus_tree = {
       }
 }	  
 		
-		x = 31
+		x = 36
 		y = 9
 
 }
@@ -1206,7 +1209,7 @@ focus_tree = {
 			}
       }			
 		
-		x = 33
+		x = 38
 		y = 9
 
 	}
@@ -1238,7 +1241,7 @@ focus_tree = {
 		  }
       }			
 		
-		x = 32
+		x = 37
 		y = 10
 
 	}
@@ -1264,7 +1267,7 @@ focus_tree = {
 	
         }			
 		
-		x = 36
+		x = 41
 		y = 8
 
 	}	
@@ -1300,7 +1303,7 @@ focus_tree = {
 		  }		  
       }			
 		
-		x = 35
+		x = 40
 		y = 9
 
 	}	
@@ -1343,7 +1346,7 @@ focus_tree = {
 			}		  
       }			
 		
-		x = 37
+		x = 42
 		y = 9
 
 	}	
@@ -1420,7 +1423,7 @@ focus_tree = {
      }		 
  }   
 		
-		x = 36
+		x = 41
 		y = 10
 
 }
@@ -1452,7 +1455,7 @@ focus_tree = {
           }
       }		
 		
-		x = 36
+		x = 41
 		y = 11
 
 	}	
@@ -2055,19 +2058,6 @@ create_country_leader = {
 	}	
 	
 	focus = {
-		id = hun_seek_for_foreign_specialists
-		icon = GFX_hun_seek_for_foreign_specialists
-		cost = 0
-		
-		prerequisite = {
-			focus = hun_road_to_sovereignity
-		}
-		
-		x = 72
-		y = 20
-
-	}
-	focus = {
 		id = hun_army_reform
 		icon = GFX_hun_army_reform
 		
@@ -2105,36 +2095,7 @@ create_country_leader = {
 		y = 16
 
 	}
-	focus = {
-		id = hun_renegatiate_buharest_treaty
-		icon = GFX_hun_renegatiate_buharest_treaty
-		cost = 0
-		
-		prerequisite = {
-			focus = hun_russo_french_help
-		}
-		
-		bypass = {
-		}		
-		
-		x = 77
-		y = 19
 
-	}
-	
-	focus = {
-		id = hun_first_premier
-		icon = GFX_goal_unknown
-		cost = 0
-		
-		prerequisite = {
-			focus = hun_hold_free_elections
-		}
-		
-		x = 93
-		y = 7
-
-	}
 	focus = {
 		id = hun_development_of_the_steel_industry
 		icon = GFX_hun_development_of_the_steel_industry
@@ -2286,6 +2247,10 @@ create_country_leader = {
 			}				
 		}
 		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
+		
 		completion_reward = {
 		remove_ideas = HUN_Collapsing_Government
 
@@ -2327,6 +2292,10 @@ create_country_leader = {
 			}				
 		}
 		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
+		
 		prerequisite = {
 			focus = HUN_BELAKUN
 		}
@@ -2354,6 +2323,10 @@ create_country_leader = {
 				}
 			}				
 		}
+		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		prerequisite = {
 			focus = HUN_EXECUTEREFORMISTS
@@ -2386,6 +2359,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 				}
 			}				
 		}
+		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		prerequisite = {
 			focus = HUN_BELAKUN
@@ -2425,6 +2402,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			}				
 		}
 		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
+		
 		prerequisite = {
 			focus = HUN_MEMORYOFTHEREVOLU
 		}
@@ -2458,7 +2439,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
 			}				
-		}		
+		}
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		prerequisite = {
 			focus = HUN_artist_union
@@ -2492,7 +2477,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
 			}				
-		}		
+		}
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		prerequisite = {
 			focus = HUN_Legacy_of_Bohm
@@ -2522,7 +2511,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
 			}				
-		}		
+		}
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		prerequisite = {
 			focus = hun_collectivization
@@ -2552,7 +2545,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
 			}				
-		}		
+		}
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		prerequisite = {
 			focus = HUN_compactions
@@ -2583,7 +2580,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
 			}				
-		}		
+		}
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		prerequisite = {
 			focus = hun_collectivization
@@ -2666,7 +2667,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
 			}				
-		}		
+		}
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		prerequisite = {
 			focus = HUN_peoples_communes
@@ -2735,6 +2740,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			}
 		}
 		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
+		
 		prerequisite = {
 			focus = HUN_VAGO
 		}
@@ -2775,6 +2784,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 				}				
 			}
 		}
+		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		prerequisite = {
 			focus = HUN_VAGO
@@ -2820,6 +2833,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		prerequisite = {
 			focus = HUN_VAGO
 		}
+		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 
 	    completion_reward = {
 		country_event = {
@@ -2851,6 +2868,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 				}				
 			}
 		}
+		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		prerequisite = {
 		focus = hun_belakun_arrest
@@ -2884,6 +2905,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			}
 		}
 		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
+		
 		prerequisite = {
 		focus = hun_monetary_reform
 		}
@@ -2916,6 +2941,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			}
 		}
 		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
+		
 		prerequisite = {
 			focus = hun_small_market_elements
 		}
@@ -2944,6 +2973,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 				}				
 			}
 		}
+		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		prerequisite = {
 			focus = hun_socialist_self_management
@@ -2974,6 +3007,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 				}				
 			}
 		}
+		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		prerequisite = {
 			focus = hun_restructing_of_the_collective_farms
@@ -3013,6 +3050,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			}
 		}
 		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
+		
 		prerequisite = {
 			focus = hun_brotherhood_and_unity
 		}
@@ -3044,6 +3085,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 				}				
 			}
 		}
+		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
 		
 		prerequisite = {
 			focus = hun_huge_child_support
@@ -3085,6 +3130,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			}
 		}
 		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
+		
 		completion_reward = {
 		remove_ideas = HUN_Collapsing_Government
 		}		
@@ -3113,7 +3162,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
                }				
-		      }		
+		      }
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes			  
 		
 	    completion_reward = {
 		
@@ -3155,7 +3208,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
                }				
-		      }		
+		      }
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes			  
 		
 			completion_reward = {
 			
@@ -3204,7 +3261,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
                }				
-		      }		
+		      }	
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes			  
 		
 		completion_reward = {		
 		add_ideas = HUN_religion_freedom
@@ -3238,7 +3299,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
                }				
-		      }		
+		      }
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes			  
 		
 			completion_reward = {		
 		
@@ -3275,6 +3340,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
                }				
 		      }
 			  
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes			  
+			  
 			completion_reward = {		
 		
 			swap_ideas = {
@@ -3308,7 +3377,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
                }				
-		      }		
+		      }
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes			  
 		
 			completion_reward = {	
 		
@@ -3363,7 +3436,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
                }				
-		      }		
+		      }
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes			  
 		
 			completion_reward = {		
 		
@@ -3391,7 +3468,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
                }				
-		      }		
+		      }
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes			  
 		
 			completion_reward = {
 			
@@ -3448,7 +3529,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
                }				
-		      }		
+		      }
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes			  
 		
 			completion_reward = {
 
@@ -3501,7 +3586,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
                }				
-		      }		
+		      }
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes			  
 		
 		completion_reward = {
 		
@@ -3538,7 +3627,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
                }				
-		      }		
+		      }
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes			  
 		
 		completion_reward = {
 			swap_ideas = {
@@ -3565,7 +3658,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
                }				
-		      }		
+		      }
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes			  
 		
 		completion_reward = {
 		
@@ -3618,7 +3715,11 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					ruling_only = yes
 				}
                }				
-		      }		
+		      }
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes			  
 		
 	    completion_reward = {
 		
@@ -3762,13 +3863,38 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	}
 	
 	focus = {
+		id = hun_counterrevolution
+		icon = GFX_hun_counterrevolution
+		cost = 0
+		
+		available = {
+			has_country_leader = {
+				name = "Regency Council"
+				ruling_only = yes
+			}
+		}
+		
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes		
+		
+	    completion_reward = {
+	    set_country_flag = radical_mechanic_open		
+		}		
+		
+		x = 60
+		y = 1
+
+	}
+	
+	focus = {
 		id = hun_regency_council
 		icon = GFX_hun_regency_council
 		cost = 0
 		prerequisite = {
 			focus = hun_counterrevolution
 		}
-		x = 53
+		x = 60
 		y = 2
 
 	}
@@ -3779,7 +3905,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		prerequisite = {
 			focus = hun_regency_council
 		}
-		x = 53
+		x = 60
 		y = 3
 
 	}
@@ -3790,7 +3916,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		prerequisite = {
 			focus = hun_chaos_in_hungary
 		}
-		x = 52
+		x = 59
 		y = 4
 
 	}
@@ -3801,7 +3927,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		prerequisite = {
 			focus = hun_chaos_in_hungary
 		}
-		x = 54
+		x = 61
 		y = 4
 
 	}
@@ -3818,10 +3944,433 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		mutually_exclusive = {
 			focus = hun_democratization
 		}
-		x = 50
+		x = 60
 		y = 5
 
 	}
+	
+	focus = {
+		id = hun_military_coup
+		icon = GFX_hun_military_coup
+		cost = 0
+		prerequisite = {
+			focus = hun_Country_held_on
+		}
+		mutually_exclusive = {
+			focus = hun_monarch_elections
+		}
+		x = 57
+		y = 6
+
+	}
+
+	focus = {
+		id = hun_arrow_in_power
+		icon = GFX_arrow_cross_in_power
+		cost = 0
+		prerequisite = {
+			focus = hun_military_coup
+		}
+		mutually_exclusive = {
+			focus = hun_regent_without_king
+		}
+		x = 61
+		y = 7
+
+	}
+	focus = {
+		id = hun_Stabilization_of_the_country
+		icon = GFX_hun_Stabilization_of_the_country
+		cost = 0
+		prerequisite = {
+			focus = hun_arrow_in_power
+		}
+		
+		completion_reward = {	
+			add_ideas = PB_Patriarchal_Society
+			add_ideas = PB_Public_Meetings_Banned		
+        }
+		
+		x = 62
+		y = 8
+
+	}
+	focus = {
+		id = hun_trial_of_horthy
+		icon = GFX_hun_trial_of_horthy
+		cost = 0
+		prerequisite = {
+			focus = hun_Stabilization_of_the_country
+		}
+		x = 62
+		y = 9
+
+	}
+	focus = {
+		id = hun_execute_leaders_rebellion
+		icon = GFX_hun_execute_leaders_rebellion
+		cost = 0
+		prerequisite = {
+			focus = hun_regent_without_king
+			focus = hun_arrow_in_power
+		}
+		x = 60
+		y = 8
+
+	}
+	focus = {
+		id = hun_begin_covert_remilitarization
+		icon = GFX_hun_begin_covert_remilitarization
+		cost = 0
+		prerequisite = {
+			focus = hun_regent_without_king
+			focus = hun_arrow_in_power
+		}
+		x = 56
+		y = 8
+
+	}
+	focus = {
+		id = hun_legitimize_slavery
+		icon = GFX_hun_legitimize_slavery
+		cost = 0
+		prerequisite = {
+			focus = hun_Stabilization_of_the_country
+		}
+		x = 60
+		y = 9
+
+	}
+
+	focus = {
+		id = hun_regent_without_king
+		icon = GFX_hun_regent_without_king
+		cost = 0
+		
+		prerequisite = {
+			focus = hun_military_coup
+		}
+		
+		mutually_exclusive = {
+			focus = hun_arrow_in_power
+		}
+		
+		x = 53
+		y = 7
+
+	}
+	
+	focus = {
+		id = hun_decommunization
+		icon = GFX_hun_decommunization
+		cost = 0
+		prerequisite = {
+			focus = hun_arrow_in_power
+			focus = hun_regent_without_king
+		}
+		x = 58
+		y = 8
+
+	}
+	focus = {
+		id = hun_forgive_sinful_capital
+		icon = GFX_hun_forgive_sinful_capital
+		cost = 0
+		prerequisite = {
+			focus = hun_regent_without_king
+		}
+		x = 52
+		y = 8
+
+	}
+	focus = {
+		id = hun_commemoratethe_victims_of_Jacobinism
+		icon = GFX_hun_commemoratethe_victims_of_Jacobinism
+		cost = 0
+		prerequisite = {
+			focus = hun_regent_without_king
+		}
+		x = 54
+		y = 8
+
+	}
+	
+	focus = {
+		id = hun_clericalization
+		icon = GFX_catholic_education
+		cost = 0
+		prerequisite = {
+			focus = hun_decommunization
+		}
+		x = 58
+		y = 9
+
+	}
+	
+	focus = {
+		id = hun_ignite_the_fire_of_revanchshism
+		icon = GFX_hun_ignite_the_fire_of_revanchshism
+		cost = 0
+		prerequisite = {
+			focus = hun_clericalization
+		}
+		x = 57
+		y = 10
+
+	}
+	
+	focus = {
+		id = hun_eternal_red_menace
+		icon = GFX_hun_eternal_red_menace
+		cost = 0
+		prerequisite = {
+			focus = hun_commemoratethe_victims_of_Jacobinism
+		}
+		x = 52
+		y = 9
+
+	}
+	focus = {
+		id = hun_ask_for_military_advisers
+		icon = GFX_hun_ask_for_military_advisers
+		cost = 0
+		prerequisite = {
+			focus = hun_treaty_with_revanchist_pact
+		}
+		x = 58
+		y = 11
+
+	}
+	focus = {
+		id = hun_anti-Romanianism
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = hun_commemoratethe_victims_of_Jacobinism
+		}
+		
+		prerequisite = {
+			focus = hun_forgive_sinful_capital
+		}		
+		x = 54
+		y = 9
+
+	}
+	focus = {
+		id = hun_found_HNDA
+		icon = GFX_hun_found_HNDA
+		cost = 0
+		prerequisite = {
+			focus = hun_eternal_red_menace
+		}
+		prerequisite = {
+			focus = hun_anti-Romanianism
+		}
+
+		x = 53
+		y = 10
+
+	}
+	focus = {
+		id = hun_natural_borders
+		icon = GFX_hun_natural_borders
+		cost = 0
+		prerequisite = {
+			focus = hun_break_the_peace_deal
+		}
+		x = 58
+		y = 13
+
+	}
+	focus = {
+		id = hun_national-jacobinism
+		icon = GFX_hun_national_state
+		cost = 0
+		prerequisite = {
+			focus = hun_legitimize_slavery
+		}
+		prerequisite = {
+			focus = hun_trial_of_horthy
+		}
+		x = 61
+		y = 10
+
+	}
+	
+	focus = {
+		id = hun_break_the_peace_deal
+		icon = GFX_hun_break_the_peace_deal
+		cost = 0
+		prerequisite = {
+			focus = hun_investments_from_russia
+			focus = hun_ignite_the_fire_of_revanchshism
+			focus = hun_found_HNDA
+		}
+		prerequisite = {
+			focus = hun_ask_for_military_advisers
+		}
+		x = 58
+		y = 12
+
+	}
+	focus = {
+		id = hun_announce_mobilization
+		icon = GFX_hun_announce_mobilization
+		cost = 0
+		prerequisite = {
+			focus = hun_natural_borders
+		}
+		x = 58
+		y = 14
+
+	}
+	focus = {
+		id = hun_demand_transylvania
+		icon = GFX_hun_demand_transylvania
+		cost = 0
+		prerequisite = {
+			focus = hun_announce_mobilization
+		}
+		x = 58
+		y = 15
+
+	}
+	focus = {
+		id = hun_ask_for_russian_intervention
+		icon = GFX_hun_ask_for_russian_intervention
+		cost = 0
+		prerequisite = {
+			focus = hun_demand_transylvania
+		}
+		x = 57
+		y = 17
+
+	}
+	focus = {
+		id = hun_burn_bucharest
+		icon = GFX_hun_burn_bucharest
+		cost = 0
+		prerequisite = {
+			focus = hun_demand_transylvania
+		}
+		x = 58
+		y = 18
+
+	}
+	focus = {
+		id = hun_get_romanian_oil
+		icon = GFX_hun_get_romanian_oil
+		cost = 0
+		prerequisite = {
+			focus = hun_burn_bucharest
+		}
+		x = 58
+		y = 19
+
+	}
+	focus = {
+		id = hun_revenge_is_sweet
+		icon = GFX_hun_revenge_is_sweet
+		cost = 0
+		prerequisite = {
+			focus = hun_demand_transylvania
+		}
+		x = 58
+		y = 18
+
+	}
+	focus = {
+		id = hun_execute_romanian_royal_family
+		icon = GFX_hun_execute_romanian_royal_family
+		cost = 0
+		prerequisite = {
+			focus = hun_demand_transylvania
+		}
+		x = 61
+		y = 17
+
+	}
+	focus = {
+		id = hun_burn_the_bucharest
+		icon = GFX_hun_burn_bucharest
+		cost = 0
+		prerequisite = {
+			focus = hun_demand_transylvania
+		}
+		x = 59
+		y = 17
+
+	}
+	focus = {
+		id = hun_cancel_the_transylvanians
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = hun_burn_bucharest
+		}
+		x = 55
+		y = 19
+
+	}
+	focus = {
+		id = hun_increase_the_garrison
+		icon = GFX_hun_increase_the_garrison
+		
+		prerequisite = {
+		focus = hun_get_romanian_oil
+		}
+	
+		cost = 0
+		
+		x = 60
+		y = 20
+
+	}
+	focus = {
+		id = hun_relocate_industry
+		icon = GFX_hun_relocate_industry
+		cost = 0
+		prerequisite = {
+			focus = hun_get_romanian_oil
+		}
+		x = 58
+		y = 20
+
+	}
+	focus = {
+		id = hun_open_terror
+		icon = GFX_hun_open_terror
+		cost = 0
+		prerequisite = {
+			focus = hun_increase_the_garrison
+		}
+		x = 60
+		y = 21
+
+	}
+	focus = {
+		id = hun_forced_labor_for_romanians
+		icon = GFX_hun_forced_labor_for_romanians
+		cost = 0
+		prerequisite = {
+			focus = hun_relocate_industry
+		}
+		x = 58
+		y = 21
+
+	}
+	focus = {
+		id = hun_execute_leadersforindependence
+		icon = GFX_hun_execute_leadersforindependence
+		cost = 0
+		prerequisite = {
+			focus = hun_cancel_the_transylvanians
+		}
+		x = 55
+		y = 20
+
+	}
+	
 	focus = {
 		id = hun_monarch_elections
 		icon = GFX_hun_monarch_elections
@@ -3836,341 +4385,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		y = 6
 
 	}
-	focus = {
-		id = hun_anastasia_romanova
-		icon = GFX_hun_anastasia_romanova
-		cost = 0
-		prerequisite = {
-			focus = hun_monarch_elections
-		}
-		x = 69
-		y = 7
 
-	}
-	focus = {
-		id = hun_strengthen_the_monarchy
-		icon = GFX_hun_strengthen_the_monarchy
-		cost = 0
-		prerequisite = {
-			focus = hun_anastasia_romanova
-		}
-		x = 69
-		y = 8
-
-	}
-	focus = {
-		id = hun_call_on_russian_troops
-		icon = GFX_hun_call_on_russian_troops
-		cost = 0
-		prerequisite = {
-			focus = hun_strengthen_the_monarchy
-		}
-		x = 69
-		y = 9
-
-	}
-	focus = {
-		id = hun_preferences_for_romanovs
-		icon = GFX_hun_preferences_for_romanovs
-		cost = 0
-		prerequisite = {
-			focus = hun_call_on_russian_troops
-		}
-		x = 66
-		y = 10
-
-	}
-	focus = {
-		id = hun_economic_treaty_russia
-		icon = GFX_hun_economic_treaty_russia
-		cost = 0
-		prerequisite = {
-			focus = hun_call_on_russian_troops
-		}
-		x = 68
-		y = 10
-
-	}
-	focus = {
-		id = hun_condemn_german_imperealism
-		icon = GFX_hun_condemn_german_imperealism
-		cost = 0
-		prerequisite = {
-			focus = hun_economic_treaty_russia
-		}
-		x = 68
-		y = 11
-
-	}
-	focus = {
-		id = hun_ask_for_investments_rus
-		icon = GFX_hun_ask_for_investments_rus
-		cost = 0
-		prerequisite = {
-			focus = hun_call_on_russian_troops
-		}
-		x = 70
-		y = 10
-
-	}
-	focus = {
-		id = hun_ask_for_investment_fra
-		icon = GFX_hun_ask_for_investment_fra
-		cost = 0
-		prerequisite = {
-			focus = hun_ask_for_investments_rus
-		}
-		x = 70
-		y = 11
-
-	}
-	focus = {
-		id = hun_defensive_treaty_with_revanchist
-		icon = GFX_hun_defensive_treaty_with_revanchist
-		cost = 0
-		prerequisite = {
-			focus = hun_condemn_german_imperealism
-		}
-		prerequisite = {
-			focus = hun_ask_for_investment_fra
-		}
-		x = 69
-		y = 12
-
-	}
-	focus = {
-		id = hun_throw_away_the_peace_treaty
-		icon = GFX_hun_throw_away_the_peace_treaty
-		cost = 0
-		prerequisite = {
-			focus = hun_defensive_treaty_with_revanchist
-		}
-		x = 71
-		y = 13
-
-	}
-	focus = {
-		id = hun_hungarian_orthodox_church
-		icon = GFX_hun_hungarian_orthodox_church
-		cost = 0
-		prerequisite = {
-			focus = hun_call_on_russian_troops
-		}
-		x = 74
-		y = 10
-
-	}
-	focus = {
-		id = hun_destroy_protestant_churches
-		icon = GFX_hun_destroy_protestant_churches
-		cost = 0
-		prerequisite = {
-			focus = hun_hungarian_orthodox_church
-		}
-		x = 72
-		y = 11
-
-	}
-	focus = {
-		id = hun_destroy_catholic_churches
-		icon = GFX_hun_destroy_catholic_churches
-		cost = 0
-		prerequisite = {
-			focus = hun_hungarian_orthodox_church
-		}
-		x = 74
-		y = 11
-
-	}
-	focus = {
-		id = hun_mass_clericalization
-		icon = GFX_hun_mass_clericalization
-		cost = 0
-		prerequisite = {
-			focus = hun_hungarian_orthodox_church
-		}
-		x = 76
-		y = 11
-
-	}
-	focus = {
-		id = hun_introduction_orthodoxy_into_education
-		icon = GFX_hun_introduction_orthodoxy_into_education
-		cost = 0
-		prerequisite = {
-			focus = hun_destroy_protestant_churches
-		}
-		prerequisite = {
-			focus = hun_destroy_catholic_churches
-		}
-		prerequisite = {
-			focus = hun_mass_clericalization
-		}
-		x = 74
-		y = 12
-
-	}
-	focus = {
-		id = hun_one_country_one_faith
-		icon = GFX_hun_one_country_one_faith
-		cost = 0
-		prerequisite = {
-			focus = hun_introduction_orthodoxy_into_education
-		}
-		x = 74
-		y = 13
-
-	}
-	focus = {
-		id = hun_reintegration_process
-		icon = GFX_hun_demand_transylvania
-		cost = 0
-		prerequisite = {
-			focus = hun_renegatiate_buharest_treaty
-		}
-		x = 75
-		y = 20
-
-	}
-	focus = {
-		id = hun_otto_von_habsburg
-		icon = GFX_hun_otto_von_habsburg
-		cost = 0
-		prerequisite = {
-			focus = hun_monarch_elections
-		}
-		x = 82
-		y = 7
-
-	}
-	
-	focus = {
-		id = hun_prepare_big_privatization
-		icon = GFX_hun_prepare_big_privatization
-		cost = 0
-		prerequisite = {
-			focus = hun_first_premier
-		}
-		x = 90
-		y = 8
-
-	}
-	focus = {
-		id = hun_privatization_part_one
-		icon = GFX_hun_privatization_part_one
-		cost = 0
-		prerequisite = {
-			focus = hun_prepare_big_privatization
-		}
-		x = 90
-		y = 9
-
-	}
-	focus = {
-		id = hun_privatization_part_two
-		icon = GFX_hun_privatization_part_two
-		cost = 0
-		prerequisite = {
-			focus = hun_privatization_part_one
-		}
-		x = 90
-		y = 10
-
-	}
-	focus = {
-		id = hun_privatization_part_three
-		icon = GFX_hun_privatization_part_three
-		cost = 0
-		prerequisite = {
-			focus = hun_privatization_part_two
-		}
-		x = 90
-		y = 11
-
-	}
-	focus = {
-		id = hun_achieve_neutrallity
-		icon = GFX_hun_achieve_neutrallity
-		cost = 0
-		prerequisite = {
-			focus = hun_first_premier
-		}
-		x = 93
-		y = 8
-
-	}
-	focus = {
-		id = hun_get_guarantees_from_ger
-		icon = GFX_hun_get_guarantees_from_ger
-		cost = 0
-		prerequisite = {
-			focus = hun_achieve_neutrallity
-		}
-		x = 92
-		y = 9
-
-	}
-	focus = {
-		id = hun_get_guarantees_from_brit
-		icon = GFX_hun_get_guarantees_from_brit
-		cost = 0
-		prerequisite = {
-			focus = hun_get_guarantees_from_ger
-		}
-		x = 92
-		y = 10
-
-	}
-	focus = {
-		id = hun_democratization
-		icon = GFX_hun_democratization
-		cost = 0
-		prerequisite = {
-			focus = hun_Rusinia_breaks_away
-		}
-		prerequisite = {
-			focus = hun_slovakia_declared_independence
-		}
-		mutually_exclusive = {
-			focus = hun_Country_held_on
-		}
-		x = 93
-		y = 5
-
-	}
-	focus = {
-		id = hun_hold_free_elections
-		icon = GFX_hun_hold_free_elections
-		cost = 0
-		prerequisite = {
-			focus = hun_democratization
-		}
-		x = 93
-		y = 6
-
-	}
-	focus = {
-		id = hun_get_guarantees_eu_from_ger
-		icon = GFX_hun_get_guarantees_eu_from_ger
-		cost = 0
-		prerequisite = {
-			focus = hun_achieve_neutrallity
-		}
-		x = 94
-		y = 9
-
-	}
-	focus = {
-		id = hun_get_guarantees_from_fra
-		icon = GFX_hun_get_guarantees_from_fra
-		cost = 0
-		prerequisite = {
-			focus = hun_get_guarantees_eu_from_ger
-		}
-		x = 94
-		y = 10
-
-	}
 	focus = {
 		id = HUN_BANOPPOSITION
 		icon = GFX_hun_ban_oppostition
@@ -4502,1374 +4717,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		y = 30
 
 	}
-	focus = {
-		id = hun_military_coup
-		icon = GFX_hun_military_coup
-		cost = 0
-		prerequisite = {
-			focus = hun_Country_held_on
-		}
-		mutually_exclusive = {
-			focus = hun_monarch_elections
-		}
-		x = 50
-		y = 6
-
-	}
-	focus = {
-		id = hun_horthy_takes_power
-		icon = GFX_hun_horthy_takes_power
-		cost = 0
-		prerequisite = {
-			focus = hun_military_coup
-		}
-		x = 50
-		y = 7
-
-	}
-	focus = {
-		id = hun_horthy_arrested
-		icon = GFX_hun_horthy_arrested
-		cost = 0
-		prerequisite = {
-			focus = hun_horthy_takes_power
-		}
-		mutually_exclusive = {
-			focus = hun_regent_without_king
-		}
-		x = 53
-		y = 8
-
-	}
-	focus = {
-		id = hun_Stabilization_of_the_country
-		icon = GFX_hun_Stabilization_of_the_country
-		cost = 0
-		prerequisite = {
-			focus = hun_horthy_arrested
-		}
-		x = 55
-		y = 9
-
-	}
-	focus = {
-		id = hun_trial_of_horthy
-		icon = GFX_hun_trial_of_horthy
-		cost = 0
-		prerequisite = {
-			focus = hun_Stabilization_of_the_country
-		}
-		x = 55
-		y = 10
-
-	}
-	focus = {
-		id = hun_execute_leaders_rebellion
-		icon = GFX_hun_execute_leaders_rebellion
-		cost = 0
-		prerequisite = {
-			focus = hun_regent_without_king
-			focus = hun_horthy_arrested
-		}
-		x = 52
-		y = 9
-
-	}
-	focus = {
-		id = hun_begin_covert_remilitarization
-		icon = GFX_hun_begin_covert_remilitarization
-		cost = 0
-		prerequisite = {
-			focus = hun_regent_without_king
-			focus = hun_horthy_arrested
-		}
-		x = 48
-		y = 9
-
-	}
-	focus = {
-		id = hun_legitimize_slavery
-		icon = GFX_hun_legitimize_slavery
-		cost = 0
-		prerequisite = {
-			focus = hun_Stabilization_of_the_country
-		}
-		x = 53
-		y = 10
-
-	}
 	
-	focus = {
-		id = hun_talk_with_france
-		icon = GFX_hun_talk_with_france
-		cost = 0
-		prerequisite = {
-			focus = hun_begin_covert_remilitarization
-		}
-		x = 48
-		y = 10
-
-	}
-	focus = {
-		id = hun_treaty_with_revanchist_pact
-		icon = GFX_hun_treaty_with_revanchist_pact
-		cost = 0
-		prerequisite = {
-			focus = hun_talk_with_france
-		}
-		x = 51
-		y = 11
-
-	}
-	focus = {
-		id = hun_investment_from_france
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_talk_with_france
-		}
-		x = 49
-		y = 11
-
-	}
-	focus = {
-		id = hun_destroy_the_unions
-		icon = GFX_hun_destroy_the_unions
-		cost = 0
-		prerequisite = {
-			focus = hun_decommunization
-		}
-		x = 50
-		y = 10
-
-	}
-	focus = {
-		id = hun_regent_without_king
-		icon = GFX_hun_regent_without_king
-		cost = 0
-		
-		prerequisite = {
-			focus = hun_horthy_takes_power
-		}
-		
-		mutually_exclusive = {
-			focus = hun_horthy_arrested
-		}
-		
-		x = 47
-		y = 8
-
-	}
-	focus = {
-		id = hun_banishment_of_serbs
-		icon = GFX_hun_banishment_of_serbs
-		cost = 0
-		prerequisite = {
-			focus = hun_nonhumans
-		}
-		x = 57
-		y = 10
-
-	}
-	focus = {
-		id = hun_nonhumans
-		icon = GFX_hun_nonhumans
-		cost = 0
-		prerequisite = {
-			focus = hun_horthy_arrested
-		}
-		x = 57
-		y = 9
-
-	}
-	focus = {
-		id = hun_jewish_genocide
-		icon = GFX_hun_jewish_genocide
-		cost = 0
-		prerequisite = {
-			focus = hun_nonhumans
-		}
-		x = 59
-		y = 10
-
-	}
-	focus = {
-		id = hun_execute_romanian_minority
-		icon = GFX_hun_execute_romanian_minority
-		cost = 0
-		prerequisite = {
-			focus = hun_nonhumans
-		}
-		x = 61
-		y = 10
-
-	}
-	focus = {
-		id = hun_deportation_of_gypsies
-		icon = GFX_hun_deportation_of_gypsies
-		cost = 0
-		prerequisite = {
-			focus = hun_nonhumans
-		}
-		x = 63
-		y = 10
-
-	}
-	focus = {
-		id = hun_forced_assimilation_slovaks
-		icon = GFX_hun_forced_assimilation_slovaks
-		cost = 0
-		prerequisite = {
-			focus = hun_banishment_of_serbs
-			focus = hun_jewish_genocide
-			focus = hun_execute_romanian_minority
-			focus = hun_deportation_of_gypsies
-		}
-		x = 58
-		y = 11
-
-	}
-	focus = {
-		id = hun_clean_country
-		icon = GFX_hun_clean_country
-		cost = 0
-		prerequisite = {
-			focus = hun_forced_assimilation_slovaks
-		}
-		prerequisite = {
-			focus = hun_expel_the_rusyns_to_Russia
-		}
-		x = 60
-		y = 12
-
-	}
-	focus = {
-		id = hun_investments_from_russia
-		icon = GFX_hun_investments_from_russia
-		cost = 0
-		prerequisite = {
-			focus = hun_investment_from_france
-		}
-		x = 49
-		y = 12
-
-	}
-	focus = {
-		id = hun_expel_the_rusyns_to_Russia
-		icon = GFX_hun_expel_the_rusyns_to_Russia
-		cost = 0
-		prerequisite = {
-			focus = hun_jewish_genocide
-			focus = hun_execute_romanian_minority
-			focus = hun_deportation_of_gypsies
-			focus = hun_banishment_of_serbs
-		}
-		x = 62
-		y = 11
-	}
-	focus = {
-		id = hun_decommunization
-		icon = GFX_hun_decommunization
-		cost = 0
-		prerequisite = {
-			focus = hun_horthy_arrested
-			focus = hun_regent_without_king
-		}
-		x = 50
-		y = 9
-
-	}
-	focus = {
-		id = hun_forgive_sinful_capital
-		icon = GFX_hun_forgive_sinful_capital
-		cost = 0
-		prerequisite = {
-			focus = hun_regent_without_king
-		}
-		x = 45
-		y = 9
-
-	}
-	focus = {
-		id = hun_commemoratethe_victims_of_Jacobinism
-		icon = GFX_hun_commemoratethe_victims_of_Jacobinism
-		cost = 0
-		prerequisite = {
-			focus = hun_forgive_sinful_capital
-		}
-		x = 45
-		y = 10
-
-	}
-	focus = {
-		id = hun_clericalization
-		icon = GFX_catholic_education
-		cost = 0
-		prerequisite = {
-			focus = hun_commemoratethe_victims_of_Jacobinism
-		}
-		x = 47
-		y = 11
-
-	}
-	focus = {
-		id = hun_eternal_red_menace
-		icon = GFX_hun_eternal_red_menace
-		cost = 0
-		prerequisite = {
-			focus = hun_commemoratethe_victims_of_Jacobinism
-		}
-		x = 43
-		y = 11
-
-	}
-	focus = {
-		id = hun_ask_for_military_advisers
-		icon = GFX_hun_ask_for_military_advisers
-		cost = 0
-		prerequisite = {
-			focus = hun_treaty_with_revanchist_pact
-		}
-		x = 51
-		y = 12
-
-	}
-	focus = {
-		id = hun_anti-Romanianism
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_commemoratethe_victims_of_Jacobinism
-		}
-		x = 45
-		y = 11
-
-	}
-	focus = {
-		id = hun_found_HNDA
-		icon = GFX_hun_found_HNDA
-		cost = 0
-		prerequisite = {
-			focus = hun_eternal_red_menace
-		}
-		prerequisite = {
-			focus = hun_anti-Romanianism
-		}
-		prerequisite = {
-			focus = hun_clericalization
-		}
-		x = 45
-		y = 12
-
-	}
-	focus = {
-		id = hun_natural_borders
-		icon = GFX_hun_natural_borders
-		cost = 0
-		prerequisite = {
-			focus = hun_break_the_peace_deal
-		}
-		x = 51
-		y = 14
-
-	}
-	focus = {
-		id = hun_national-jacobinism
-		icon = GFX_hun_national_state
-		cost = 0
-		prerequisite = {
-			focus = hun_legitimize_slavery
-		}
-		prerequisite = {
-			focus = hun_trial_of_horthy
-		}
-		x = 54
-		y = 11
-
-	}
-	focus = {
-		id = hun_ignite_the_fire_of_revanchshism
-		icon = GFX_hun_ignite_the_fire_of_revanchshism
-		cost = 0
-		prerequisite = {
-			focus = hun_national-jacobinism
-		}
-		x = 54
-		y = 12
-
-	}
-	focus = {
-		id = hun_break_the_peace_deal
-		icon = GFX_hun_break_the_peace_deal
-		cost = 0
-		prerequisite = {
-			focus = hun_investments_from_russia
-			focus = hun_ignite_the_fire_of_revanchshism
-			focus = hun_found_HNDA
-		}
-		prerequisite = {
-			focus = hun_ask_for_military_advisers
-		}
-		x = 51
-		y = 13
-
-	}
-	focus = {
-		id = hun_announce_mobilization
-		icon = GFX_hun_announce_mobilization
-		cost = 0
-		prerequisite = {
-			focus = hun_natural_borders
-		}
-		x = 51
-		y = 15
-
-	}
-	focus = {
-		id = hun_demand_transylvania
-		icon = GFX_hun_demand_transylvania
-		cost = 0
-		prerequisite = {
-			focus = hun_announce_mobilization
-		}
-		x = 51
-		y = 16
-
-	}
-	focus = {
-		id = hun_ask_for_russian_intervention
-		icon = GFX_hun_ask_for_russian_intervention
-		cost = 0
-		prerequisite = {
-			focus = hun_demand_transylvania
-		}
-		x = 50
-		y = 17
-
-	}
-	focus = {
-		id = hun_burn_bucharest
-		icon = GFX_hun_burn_bucharest
-		cost = 0
-		prerequisite = {
-			focus = hun_demand_transylvania
-		}
-		x = 51
-		y = 18
-
-	}
-	focus = {
-		id = hun_get_romanian_oil
-		icon = GFX_hun_get_romanian_oil
-		cost = 0
-		prerequisite = {
-			focus = hun_burn_bucharest
-		}
-		x = 51
-		y = 19
-
-	}
-	focus = {
-		id = hun_revenge_is_sweet
-		icon = GFX_hun_revenge_is_sweet
-		cost = 0
-		prerequisite = {
-			focus = hun_demand_transylvania
-		}
-		x = 51
-		y = 18
-
-	}
-	focus = {
-		id = hun_execute_romanian_royal_family
-		icon = GFX_hun_execute_romanian_royal_family
-		cost = 0
-		prerequisite = {
-			focus = hun_demand_transylvania
-		}
-		x = 54
-		y = 17
-
-	}
-	focus = {
-		id = hun_burn_the_bucharest
-		icon = GFX_hun_burn_bucharest
-		cost = 0
-		prerequisite = {
-			focus = hun_demand_transylvania
-		}
-		x = 52
-		y = 17
-
-	}
-	focus = {
-		id = hun_cancel_the_transylvanians
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_burn_bucharest
-		}
-		x = 48
-		y = 19
-
-	}
-	focus = {
-		id = hun_increase_the_garrison
-		icon = GFX_hun_increase_the_garrison
-		
-		prerequisite = {
-		focus = hun_get_romanian_oil
-		}
-	
-		cost = 0
-		
-		x = 53
-		y = 20
-
-	}
-	focus = {
-		id = hun_relocate_industry
-		icon = GFX_hun_relocate_industry
-		cost = 0
-		prerequisite = {
-			focus = hun_get_romanian_oil
-		}
-		x = 51
-		y = 20
-
-	}
-	focus = {
-		id = hun_open_terror
-		icon = GFX_hun_open_terror
-		cost = 0
-		prerequisite = {
-			focus = hun_increase_the_garrison
-		}
-		x = 53
-		y = 21
-
-	}
-	focus = {
-		id = hun_forced_labor_for_romanians
-		icon = GFX_hun_forced_labor_for_romanians
-		cost = 0
-		prerequisite = {
-			focus = hun_relocate_industry
-		}
-		x = 51
-		y = 21
-
-	}
-	focus = {
-		id = hun_execute_leadersforindependence
-		icon = GFX_hun_execute_leadersforindependence
-		cost = 0
-		prerequisite = {
-			focus = hun_cancel_the_transylvanians
-		}
-		x = 48
-		y = 20
-
-	}
-	focus = {
-		id = hun_integrate_translyvania_intohungary
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_execute_leadersforindependence
-		}
-		x = 48
-		y = 21
-
-	}
-	focus = {
-		id = hun_romanian_structure
-		icon = GFX_hun_romanian_structure
-		cost = 0
-		prerequisite = {
-			focus = hun_forced_labor_for_romanians
-		}
-		prerequisite = {
-			focus = hun_open_terror
-		}
-		x = 52
-		y = 22
-
-	}
-	focus = {
-		id = hun_romanian_state
-		icon = GFX_hun_romanian_state
-		cost = 0
-		prerequisite = {
-			focus = hun_romanian_structure
-		}
-		mutually_exclusive = {
-			focus = hun_principality_of_Wallachia
-		}
-		x = 51
-		y = 23
-
-	} 
-	focus = {
-		id = hun_principality_of_Wallachia
-		icon = GFX_hun_principality_of_Wallachia
-		cost = 0
-		prerequisite = {
-			focus = hun_romanian_structure
-		}
-		mutually_exclusive = {
-			focus = hun_romanian_state
-		}
-		x = 53
-		y = 23
-
-	}
-	focus = {
-		id = hun_Divide_and_rule
-		icon = GFX_hun_Divide_and_rule
-		cost = 0
-		prerequisite = {
-			focus = hun_principality_of_Wallachia
-			focus = hun_romanian_state
-		}
-		mutually_exclusive = {
-			focus = hun_we_don't_care
-		}
-		x = 53
-		y = 24
-
-	}
-	focus = {
-		id = hun_we_don't_care
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_romanian_state
-			focus = hun_principality_of_Wallachia
-		}
-		mutually_exclusive = {
-			focus = hun_Divide_and_rule
-		}
-		x = 51
-		y = 24
-
-	}
-	focus = {
-		id = hun_Istvan_horty_dobruja
-		icon = GFX_hun_Istvan_horty_dobruja
-		cost = 0
-		prerequisite = {
-			focus = hun_we_don't_care
-			focus = hun_Divide_and_rule
-		}
-		mutually_exclusive = {
-			focus = hun_Gabor_Vajna_dobruja
-			focus = hun_Gabor_Vajna_dobruja
-			focus = hun_drozdovskyy_dobruja
-		}
-		x = 49
-		y = 25
-
-	}
-	focus = {
-		id = hun_Gabor_Vajna_dobruja
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_we_don't_care
-			focus = hun_Divide_and_rule
-		}
-		mutually_exclusive = {
-			focus = hun_drozdovskyy_dobruja
-			focus = hun_Istvan_horty_dobruja
-			focus = hun_Istvan_horty_dobruja
-			focus = hun_drozdovskyy_dobruja
-		}
-		x = 55
-		y = 25
-
-	}
-	focus = {
-		id = hun_drozdovskyy_dobruja
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_we_don't_care
-			focus = hun_Divide_and_rule
-		}
-		mutually_exclusive = {
-			focus = hun_Gabor_Vajna_dobruja
-			focus = hun_Istvan_horty_dobruja
-			focus = hun_Gabor_Vajna_dobruja
-		}
-		x = 52
-		y = 25
-
-	}
-	focus = {
-		id = hun_ask_for_russian_intermediation
-		icon = GFX_hun_ask_for_russian_intermediation
-		cost = 0
-		prerequisite = {
-			focus = hun_negotiate_with_jugoslavia
-		}
-		x = 52
-		y = 28
-
-	}
-	focus = {
-		id = hun_the_enemy_is_defeated
-		icon = GFX_hun_the_enemy_is_defeated
-		cost = 0
-		prerequisite = {
-			focus = hun_Istvan_horty_dobruja
-			focus = hun_drozdovskyy_dobruja
-			focus = hun_Gabor_Vajna_dobruja
-		}
-		x = 52
-		y = 26
-
-	}
-	focus = {
-		id = hun_negotiate_with_jugoslavia
-		icon = GFX_hun_friendship_between_monarchies
-		cost = 0
-		prerequisite = {
-			focus = hun_the_enemy_is_defeated
-		}
-		x = 52
-		y = 27
-
-	}
-	focus = {
-		id = hun_greater_hungary
-		icon = GFX_hun_greater_hungary
-		cost = 0
-		prerequisite = {
-			focus = hun_ask_for_russian_intermediation
-		}
-		x = 52
-		y = 29
-
-	}
-	focus = {
-		id = hun_return_the_nobility
-		icon = GFX_hun_return_the_nobility
-		cost = 0
-		prerequisite = {
-			focus = hun_preferences_for_romanovs
-		}
-		x = 66
-		y = 11
-
-	}
-	focus = {
-		id = hun_Romanov_cult
-		icon = GFX_hun_Romanov_cult
-		cost = 0
-		prerequisite = {
-			focus = hun_return_the_nobility
-		}
-		x = 66
-		y = 12
-
-	}
-	focus = {
-		id = hun_join_the_pact
-		icon = GFX_hun_join_the_pact
-		cost = 0
-		prerequisite = {
-			focus = hun_defensive_treaty_with_revanchist
-		}
-		x = 69
-		y = 13
-
-	}
-	focus = {
-		id = hun_god_save_the_tsarina
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_one_country_one_faith
-		}
-		prerequisite = {
-			focus = hun_join_the_pact
-		}
-		prerequisite = {
-			focus = hun_Romanov_cult
-		}
-		prerequisite = {
-			focus = hun_throw_away_the_peace_treaty
-		}
-		x = 69
-		y = 14
-
-	}
-	
-	focus = {
-		id = hun_destroy_the_legacy_jacobinism
-		icon = GFX_hun_destroy_the_legacy_jacobinism
-		cost = 0
-		prerequisite = {
-			focus = hun_first_premier
-		}
-		x = 96
-		y = 8
-
-	}
-	focus = {
-		id = hun_rebuild_socialist_education
-		icon = GFX_hun_rebuild_socialist_education
-		cost = 0
-		prerequisite = {
-			focus = hun_destroy_the_legacy_jacobinism
-		}
-		x = 96
-		y = 9
-
-	}
-	focus = {
-		id = hun_ban_labor_parties
-		icon = GFX_hun_ban_labor_parties
-		cost = 0
-		prerequisite = {
-			focus = hun_rebuild_socialist_education
-		}
-		x = 96
-		y = 10
-
-	}
-	focus = {
-		id = hun_anti_communism_in_blood
-		icon = GFX_hun_anti_communism_in_blood
-		cost = 0
-		prerequisite = {
-			focus = hun_ban_labor_parties
-		}
-		x = 96
-		y = 11
-
-	}
-	focus = {
-		id = hun_madyar_federation
-		icon = GFX_hun_madyar_federation
-		cost = 0
-		prerequisite = {
-			focus = hun_privatization_part_three
-		}
-		prerequisite = {
-			focus = hun_get_guarantees_from_brit
-		}
-		prerequisite = {
-			focus = hun_get_guarantees_from_fra
-		}
-		prerequisite = {
-			focus = hun_anti_communism_in_blood
-		}
-		x = 93
-		y = 12
-
-	}
-	focus = {
-		id = hun_new_europe
-		icon = GFX_hun_new_europe
-		cost = 0
-		prerequisite = {
-			focus = hun_god_save_the_tsarina
-		}
-		x = 69
-		y = 15
-
-	}
-	focus = {
-		id = hun_excessive_russian_influence
-		icon = GFX_hun_excessive_russian_influence
-		cost = 0
-		prerequisite = {
-			focus = hun_new_europe
-		}
-		x = 65
-		y = 16
-
-	}
-	focus = {
-		id = hun_resolving_issues_with_romania
-		icon = GFX_hun_resolving_issues_with_romania
-		cost = 0
-		prerequisite = {
-			focus = hun_new_europe
-		}
-		x = 73
-		y = 16
-
-	}
-	focus = {
-		id = hun_submissiveness
-		icon = GFX_hun_submissiveness
-		cost = 0
-		prerequisite = {
-			focus = hun_excessive_russian_influence
-		}
-		mutually_exclusive = {
-			focus = hun_road_to_sovereignity
-		}
-		x = 62
-		y = 17
-
-	}
-	focus = {
-		id = hun_road_to_sovereignity
-		icon = GFX_hun_road_to_sovereignity
-		cost = 0
-		prerequisite = {
-			focus = hun_excessive_russian_influence
-		}
-		mutually_exclusive = {
-			focus = hun_submissiveness
-		}
-		x = 68
-		y = 17
-
-	}
-	focus = {
-		id = hun_large_rus_investments
-		icon = GFX_hun_ask_for_investments_rus
-		cost = 0
-		prerequisite = {
-			focus = hun_submissiveness
-		}
-		x = 62
-		y = 18
-
-	}
-	focus = {
-		id = hun_friendship_between_monarchies
-		icon = GFX_hun_friendship_between_monarchies
-		cost = 0
-		prerequisite = {
-			focus = hun_road_to_sovereignity
-			focus = hun_submissiveness
-		}
-		x = 64
-		y = 18
-
-	}
-	focus = {
-		id = hun_population_exchange
-		icon = GFX_hun_population_exchange
-		cost = 0
-		prerequisite = {
-			focus = hun_friendship_between_monarchies
-		}
-		x = 64
-		y = 19
-
-	}
-	focus = {
-		id = hun_reprivatization_of_fields
-		icon = GFX_hun_reprivatization_of_fields
-		cost = 0
-		prerequisite = {
-			focus = hun_large_rus_investments
-		}
-		x = 62
-		y = 19
-
-	}
-	focus = {
-		id = hun_friendship_treaty
-		icon = GFX_hun_friendship_treaty
-		cost = 0
-		prerequisite = {
-			focus = hun_population_exchange
-		}
-		x = 64
-		y = 20
-
-	}
-	focus = {
-		id = hun_business_subsidies
-		icon = GFX_hun_business_subsidies
-		cost = 0
-		prerequisite = {
-			focus = hun_set_up_own_production
-		}
-		x = 69
-		y = 19
-
-	}
-	focus = {
-		id = hun_population_stimulation
-		icon = GFX_hun_population_stimulation
-		cost = 0
-		prerequisite = {
-			focus = hun_set_up_own_production
-		}
-		x = 67
-		y = 19
-
-	}
-	focus = {
-		id = hun_new_cities
-		icon = GFX_hun_revolutionary_cities
-		cost = 0
-		prerequisite = {
-			focus = hun_population_stimulation
-		}
-		prerequisite = {
-			focus = hun_business_subsidies
-		}
-		x = 68
-		y = 20
-
-	}
-	focus = {
-		id = hun_russian_garnisons
-		icon = GFX_hun_russian_garnisons
-		cost = 0
-		prerequisite = {
-			focus = hun_reprivatization_of_fields
-		}
-		x = 62
-		y = 20
-
-	}
-	focus = {
-		id = hun_budapest_area
-		icon = GFX_privatization_part_three
-		cost = 0
-		prerequisite = {
-			focus = hun_new_cities
-		}
-		prerequisite = {
-			focus = hun_seek_for_foreign_specialists
-		}
-		x = 70
-		y = 21
-
-	}
-	focus = {
-		id = hun_slovakia_area
-		icon = GFX_hun_privatization_part_one
-		cost = 0
-		prerequisite = {
-			focus = hun_new_cities
-		}
-		prerequisite = {
-			focus = hun_seek_for_foreign_specialists
-		}
-		x = 72
-		y = 21
-
-	}
-	focus = {
-		id = hun_carpathian_area
-		icon = GFX_hun_privatization_part_two
-		cost = 0
-		prerequisite = {
-			focus = hun_new_cities
-		}
-		prerequisite = {
-			focus = hun_seek_for_foreign_specialists
-		}
-		x = 74
-		y = 21
-
-	}
-	focus = {
-		id = hun_independent_education
-		icon = GFX_hun_rebuild_socialist_education
-		cost = 0
-		prerequisite = {
-			focus = hun_new_cities
-		}
-		x = 68
-		y = 21
-
-	}
-	focus = {
-		id = hun_rus_ministrs
-		icon = GFX_hun_rus_ministrs
-		cost = 0
-		prerequisite = {
-			focus = hun_russian_garnisons
-		}
-		x = 63
-		y = 21
-
-	}
-	focus = {
-		id = hun_unified_education
-		icon = GFX_hun_unify_the_education
-		cost = 0
-		prerequisite = {
-			focus = hun_russian_garnisons
-		}
-		x = 61
-		y = 21
-
-	}
-	focus = {
-		id = hun_nikolays_puppet
-		icon = GFX_hun_nikolays_puppet
-		cost = 0
-		prerequisite = {
-			focus = hun_unified_education
-		}
-		prerequisite = {
-			focus = hun_rus_ministrs
-		}
-		x = 62
-		y = 22
-
-	}
-	focus = {
-		id = hun_balkan_entente
-		icon = GFX_hun_balkan_entente
-		cost = 0
-		prerequisite = {
-			focus = hun_friendship_treaty
-		}
-		prerequisite = {
-			focus = hun_population_stimulation
-		}
-		x = 66
-		y = 21
-
-	}
-	focus = {
-		id = hun_gods_miracle
-		icon = GFX_hun_gods_miracle
-		cost = 0
-		prerequisite = {
-			focus = hun_peak_of_opportunities
-		}
-		prerequisite = {
-			focus = hun_nikolays_puppet
-		}
-		x = 65
-		y = 23
-
-	}
-	focus = {
-		id = hun_start_the_negotiation_process
-		icon = GFX_hun_start_the_negotiation_process
-		cost = 0
-		prerequisite = {
-			focus = hun_resolving_issues_with_romania
-		}
-		x = 77
-		y = 17
-
-	}
-	focus = {
-		id = hun_russo_french_help
-		icon = GFX_hun_get_guarantees_from_fra
-		cost = 0
-		prerequisite = {
-			focus = hun_start_the_negotiation_process
-		}
-		x = 77
-		y = 18
-
-	}
-	focus = {
-		id = hun_war
-		icon = GFX_hun_war
-		cost = 0
-		prerequisite = {
-			focus = hun_renegatiate_buharest_treaty
-		}
-		x = 77
-		y = 20
-
-	}
-	focus = {
-		id = hun_return_of_home_lands
-		icon = GFX_hun_return_of_home_lands
-		cost = 0
-		prerequisite = {
-			focus = hun_war
-		}
-		x = 77
-		y = 21
-
-	}
-	focus = {
-		id = hun_cesarevich_alexey
-		icon = GFX_hun_cesarevich_alexey
-		cost = 0
-		prerequisite = {
-			focus = hun_return_of_home_lands
-		}
-		x = 77
-		y = 22
-
-	}
-	
-	focus = {
-		id = hun_united_army
-		icon = GFX_hun_united_army
-		cost = 0
-		prerequisite = {
-			focus = hun_wien_summit
-		}
-		x = 92
-		y = 18
-
-	}
-	focus = {
-		id = hun_set_up_own_production
-		icon = GFX_hun_set_up_own_production
-		cost = 0
-		prerequisite = {
-			focus = hun_road_to_sovereignity
-		}
-		x = 68
-		y = 18
-
-	}
-	focus = {
-		id = hun_peak_of_opportunities
-		icon = GFX_hun_peak_of_opportunities
-		cost = 0
-		prerequisite = {
-			focus = hun_independent_education
-		}
-		prerequisite = {
-			focus = hun_balkan_entente
-		}
-		prerequisite = {
-			focus = hun_budapest_area
-		}
-		prerequisite = {
-			focus = hun_slovakia_area
-		}
-		prerequisite = {
-			focus = hun_carpathian_area
-		}
-		x = 70
-		y = 22
-
-	}
-	
-	focus = {
-		id = hun_start_integration_in_united_europe
-		icon = GFX_hun_start_integration_in_united_europe
-		cost = 0
-		prerequisite = {
-			focus = hun_madyar_federation
-		}
-		x = 93
-		y = 13
-
-	}
-	
-	focus = {
-		id = hun_association_agreement
-		icon = GFX_hun_association_agreement
-		cost = 0
-		prerequisite = {
-			focus = hun_start_integration_in_united_europe
-		}
-		x = 93
-		y = 14
-
-	}
-	focus = {
-		id = hun_free_trade_agreement
-		icon = GFX_hun_free_trade_agreement
-		cost = 0
-		prerequisite = {
-			focus = hun_association_agreement
-		}
-		x = 90
-		y = 15
-
-	}
-	focus = {
-		id = hun_open_borders
-		icon = GFX_hun_open_the_borders
-		cost = 0
-		prerequisite = {
-			focus = hun_association_agreement
-		}
-		x = 92
-		y = 15
-
-	}
-	focus = {
-		id = hun_united_science
-		icon = GFX_hun_united_science
-		cost = 0
-		prerequisite = {
-			focus = hun_association_agreement
-		}
-		x = 94
-		y = 15
-
-	}
-	focus = {
-		id = hun_unified_eu_education
-		icon = GFX_hun_unify_the_education
-		cost = 0
-		prerequisite = {
-			focus = hun_association_agreement
-		}
-		x = 96
-		y = 15
-
-	}
-	focus = {
-		id = hun_wien_summit
-		icon = GFX_hun_wien_summit
-		cost = 0
-		prerequisite = {
-			focus = hun_free_trade_agreement
-		}
-		prerequisite = {
-			focus = hun_unified_eu_education
-		}
-		
-		prerequisite = {
-			focus = hun_united_science
-		}
-
-		prerequisite = {
-			focus = hun_open_borders
-		}		
-		
-		
-		x = 93
-		y = 17 
-
-	}
-	focus = {
-		id = hun_unified_courts
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_wien_summit
-		}
-		x = 94
-		y = 18
-
-	}
-	
-	focus = {
-		id = hun_join_the_europa
-		icon = GFX_hun_join_the_europa
-		cost = 0
-		prerequisite = {
-			focus = hun_unified_courts
-		}
-		prerequisite = {
-			focus = hun_united_army
-		}
-		x = 93
-		y = 19
-
-	}
 	focus = {
 		id = hun_bomber_improvment
 		icon = GFX_hun_bomber_improvment

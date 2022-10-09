@@ -15,6 +15,24 @@ dec_influence_on_hungary = {
 	priority = 900 
 }
 
+control_of_radicalism_dec = {
+	icon = usa_congress
+	
+	allowed = {
+		original_tag = HUN
+	}
+
+	visible = {
+	    has_country_flag = radical_mechanic_open 
+	}
+		
+    scripted_gui = cor_opening_of_window_gui	
+
+	picture = GFX_decision_cat_PB_espionage_decisions
+
+	priority = 900
+}
+
 HUN_foreign_influence = {
 	icon = usa_congress
 	
@@ -23,14 +41,14 @@ HUN_foreign_influence = {
 	}
 
 	visible = {
-	    has_country_flag = hungarian_starting 
+	    has_country_flag = hun_influence_mechanic_started 
 	}
 		
     scripted_gui = HUN_foreign_influence_mechanic_gui	
 
 	picture = GFX_decision_cat_PB_espionage_decisions
 
-	priority = 999
+	priority = 950
 }
 
 HUN_industrialisation = { 
@@ -131,8 +149,16 @@ HUN_war_on_horizon = {
 	}
 
 	visible = {
-			has_country_flag = hungarian_starting
+	 has_country_flag = hungarian_starting
+	  NOT = {
+	   OR = {
+		has_global_flag = great_balk_war
+        has_global_flag = gbw_hungary_won
+        has_global_flag = gbw_serbia_won		
         }
+	 }
+  }
+ 
 
 	priority = 500
 }

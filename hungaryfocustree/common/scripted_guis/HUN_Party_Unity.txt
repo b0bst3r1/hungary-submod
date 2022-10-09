@@ -4,11 +4,12 @@ scripted_gui = {
 		window_name = "Party_unity_container"
 		visible = {
 			original_tag = HUN
-		}
-
-		effects = {
-			PartyUnity_bg_click = {
-			}
-		}
-	}
-}
+		
+			OR = {
+				has_government = jc
+				has_government = ss
+				has_government = lb
+		   }		
+	    }
+     }
+  }

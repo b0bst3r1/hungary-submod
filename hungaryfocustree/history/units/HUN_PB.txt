@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Independent Battalion"
+	name = "Gyalogsag"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -17,13 +17,72 @@
 }
 
 division_template = {
-	name = "Cavalry Battalion"
+	name = "Motorizált dandár"	
 
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		light_armor = { x = 1 y = 0 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      
+		artillery = { x = 0 y = 1 }  
+	}
+}
+
+division_template = {
+	name = "Automata divízió"		
+	regiments = {
+		gw_basic_automat = { x = 0 y = 0 }
+		gw_basic_automat = { x = 0 y = 1 }
+		gw_basic_automat = { x = 0 y = 2 }
+		gw_basic_automat = { x = 1 y = 0 }
+		gw_basic_automat = { x = 1 y = 1 }
+		gw_basic_automat = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 
+	}
+}
+
+division_template = {
+	name = "Lovasság"
+
+	regiments = {
+		cavalry = {
+			x = 0
+			y = 0
+		}
+		cavalry = {
+			x = 0
+			y = 1
+		}
+		cavalry = {
+			x = 0
+			y = 2
+		}
+		cavalry = {
+			x = 1
+			y = 0
+		}
+		cavalry = {
+			x = 1
+			y = 1
+		}
+		cavalry = {
+			x = 1
+			y = 2
+		}
+		cavalry = {
+			x = 2
+			y = 0
+		}
 
 	}
 	support = {
@@ -34,24 +93,47 @@ division_template = {
 }
 
 division_template = {
+	name = "Őrség"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		elite_infantry = { x = 2 y = 1 }
+		elite_infantry = { x = 2 y = 2 }
+		elite_infantry = { x = 3 y = 0 }		
+		
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
 
 	name = "Serbian Division"
 	
 		is_locked = yes
 			 regiments = {
-				    elite_infantry = {
+				    infantry = {
 					    x = 0 y = 0
 					}
-					elite_infantry = {
+					infantry = {
 						x = 0 y = 1
 					}
-					elite_infantry = {
+					infantry = {
 					    x = 0 y = 2
 					}
-					elite_infantry = {
+					infantry = {
 					    x = 1 y = 0
 					}
-					elite_infantry = {
+					infantry = {
 					    x = 1 y = 1
 					}
 				}
@@ -70,19 +152,19 @@ division_template = {
 	
 		is_locked = yes
 			 regiments = {
-				    elite_infantry = {
+				    infantry = {
 					    x = 0 y = 0
 					}
-					elite_infantry = {
+					infantry = {
 						x = 0 y = 1
 					}
-					elite_infantry = {
+					infantry = {
 					    x = 0 y = 2
 					}
-					elite_infantry = {
+					infantry = {
 					    x = 1 y = 0
 					}
-					elite_infantry = {
+					infantry = {
 					    x = 1 y = 1
 					}
 				}
@@ -96,167 +178,148 @@ division_template = {
 }
 
 units = {
+
+	division = {
+		name = "Forradalom lovasai"
+		location = 11539
+		division_template = "Motorizált dandár"
+		start_experience_factor = 0.97
+		start_equipment_factor = 1.00
+	}
 	
 	division = {
-		name = "1st Independent Battalion"
-		location = 9660
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-
-	division = {
-		name = "2nd Independent Battalion"
-		location = 9660
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-
-	division = {
-		name = "3rd Independent Battalion"
-		location = 9660
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-
-	division = {
-		name = "4th Independent Battalion"
-		location = 11610
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-
-	division = {
-		name = "5th Independent Battalion"
-		location = 11610
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-
-	division = {
-		name = "6th Independent Battalion"
-		location = 11630
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-
-	division = {
-		name = "7th Independent Battalion"
-		location = 3700
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-
-	division = {
-		name = "8th Independent Battalion"
-		location = 6682
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-	division = {
-		name = "9th Independent Battalion"
-		location = 6682
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-
-	division = {
-		name = "10th Independent Battalion"
+		name = "Motorizált brigád"
 		location = 11659
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
+		division_template = "Motorizált dandár"
+		start_experience_factor = 0.50
+		start_equipment_factor = 0.60
+	}	
 
 	division = {
-		name = "11th Independent Battalion"
-		location = 11659
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-
-
-	division = {
-		name = "12th Independent Battalion"
-		location = 11659
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-
-
-	division = {
-		name = "13th Independent Battalion"
-		location = 6711
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-
-
-	division = {
-		name = "14th Independent Battalion"
-		location = 3617
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-
-	division = {
-		name = "15th Independent Battalion"
+		name = "Automata divízió"
 		location = 9563
-		division_template = "Independent Battalion"
+		division_template = "Automata"
+		start_experience_factor = 0.90
+		start_equipment_factor = 1.00
+	}
+	
+	division = {
+		name = "1. Lovassági hadosztály"
+		location = 13284
+		division_template = "Lovasság"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1.00
 	}
 
 	division = {
-		name = "16th Independent Battalion"
-		location = 11691
-		division_template = "Independent Battalion"
+		name = "2. Lovassági hadosztály"
+		location = 11610
+		division_template = "Lovasság"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.80
 	}
 
 	division = {
-		name = "17th Independent Battalion"
-		location = 727
-		division_template = "Independent Battalion"
+		name = "3. Lovassági hadosztály"
+		location = 3713
+		division_template = "Lovasság"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.80
 	}
 
 	division = {
-		name = "18th Independent Battalion"
-		location = 11622
-		division_template = "Independent Battalion"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-
-
-	division = {
-		name = "19th Independent Battalion"
+		name = "1. Gyaloghadosztály"
 		location = 9660
-		division_template = "Cavalry Battalion"
+		division_template = "Gyalogság"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1.00
+	}	
+
+	division = {
+		name = "2. Gyaloghadosztály"
+		location = 11691
+		division_template = "Gyalogság"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.00
 	}
 
 	division = {
-		name = "20th Independent Battalion"
-		location = 3670
-		division_template = "Cavalry Battalion"
+		name = "3. Gyaloghadosztály"
+		location = 11610
+		division_template = "Gyalogság"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 	}
+
+	division = {
+		name = "4. Gyaloghadosztály"
+		location = 11659
+		division_template = "Gyalogság"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.00
+	}
+
+	division = {
+		name = "5. Gyaloghadosztály"
+		location = 11630
+		division_template = "Gyalogság"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.00
+	}
+
+	division = {
+		name = "6. Gyaloghadosztály"
+		location = 3700
+		division_template = "Gyalogság"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+
+	division = {
+		name = "7. Gyaloghadosztály"
+		location = 6700
+		division_template = "Gyalogság"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division = {
+		name = "8. Gyaloghadosztály"
+		location = 6711
+		division_template = "Gyalogság"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+
+	division = {
+		name = "9. Gyaloghadosztály"
+		location = 11630
+		division_template = "Gyalogság"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}	
+	
+	division = {
+		name = "Infantry Guard Division Jozsef Cserny"
+		location = 11539
+		division_template = "Őrség"
+		start_experience_factor = 0.95
+		start_equipment_factor = 1.00
+	}
+	
+	division = {
+		name = "Forradalom Védelmezői"
+		location = 6682
+		division_template = "Őrség"
+		start_experience_factor = 0.95
+		start_equipment_factor = 1.00
+	}	
+	
+	division = {
+		name = "Gárda hadosztály"
+		location = 9606
+		division_template = "Őrség"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.00
+	}	
 }

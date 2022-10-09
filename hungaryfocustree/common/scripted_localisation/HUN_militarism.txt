@@ -1,0 +1,34 @@
+defined_text = { 
+    name = get_HUN_Militarism_Loc
+    
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Militarism_var > 0.74 }
+                check_variable = { HUN_Militarism_var = 0.74 }
+            }
+        }
+        localization_key = "HUN_High_Militarism"
+    }
+    text = { 
+        trigger = {
+            AND = {
+                check_variable = { HUN_Militarism_var < 0.74 }
+                check_variable = { HUN_Militarism_var > 0.49 }
+            }
+        }
+        localization_key = "HUN_Medium_Militarism"
+    }
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Militarism_var < 0.49 }
+                check_variable = { HUN_Militarism_var = 0.49 }
+            }
+        }
+        localization_key = "HUN_Low_Militarism"
+    }
+
+    
+}
+

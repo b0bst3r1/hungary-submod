@@ -258,7 +258,141 @@ add_namespace = russs
 		name = foreigninfluence.5.a
 	
     }
-}	
+}
+
+	country_event = { # Habsburg Restoration
+	id = foreigninfluence.6
+	title = foreigninfluence.6.t
+	desc = foreigninfluence.6.d
+	picture = GFX_report_event_karl_von_habsburg
+	is_triggered_only = yes
+	
+	fire_only_once = yes  
+  
+	option = {
+		name = foreigninfluence.6.a
+		
+	   GER = {
+		
+       set_autonomy = {
+	   target = HUN
+	   autonomous_state = autonomy_client_state
+	   freedom_level = 0.50
+          }			
+       }
+	   
+	   HUN = {
+	   
+       set_politics = {
+	   ruling_party = cn
+	   last_election = "1936.1.1"
+	   election_frequency = 48
+	   elections_allowed = no
+       }
+
+       set_popularities = {
+	   ni = 15
+	   ds = 5
+	   rc = 10
+	   cn = 52
+	   lb = 18
+	   an = 0
+	   ss = 0
+	   jc = 0
+       }
+	   
+		kill_country_leader = yes
+
+		create_country_leader = {
+			name = "Karl I Von Habsburg"
+			desc = ""
+			picture = "gfx/leaders/HUN/Portrait_HUN_Karl.dds"
+			expire = "1965.1.1"
+			ideology = CN_VARIANT_01
+		  }       		  
+       }
+	   
+			hidden_effect = {
+			
+		every_country = {
+		  set_temp_variable = { super_id = 88 }
+			PB_Fire_Super_Event = yes
+		}			
+			
+		    news_event = {
+			id = hungary.26
+			hours = 1
+		  } 
+       }	   
+    }
+ }
+
+	country_event = { # Romanov Coronation
+	id = foreigninfluence.7
+	title = foreigninfluence.7.t
+	desc = foreigninfluence.7.d
+	picture = GFX_report_event_kirill_romanov
+	is_triggered_only = yes
+	
+	fire_only_once = yes  
+  
+	option = {
+		name = foreigninfluence.7.a
+		
+	   RUS = {
+		
+       set_autonomy = {
+	   target = HUN
+	   autonomous_state = autonomy_client_state
+	   freedom_level = 0.50
+          }			
+       }
+	   
+	   HUN = {
+	   
+       set_politics = {
+	   ruling_party = ds
+	   last_election = "1936.1.1"
+	   election_frequency = 48
+	   elections_allowed = no
+       }
+
+       set_popularities = {
+	   ni = 15
+	   ds = 52
+	   rc = 10
+	   cn = 18
+	   lb = 5
+	   an = 0
+	   ss = 0
+	   jc = 0
+       }
+	   
+		kill_country_leader = yes
+
+		create_country_leader = {
+			name = "Cirill I Romanov"
+			desc = ""
+			picture = "gfx/leaders/HUN/Portrait_HUN_Kirill.dds"
+			expire = "1965.1.1"
+			ideology = DS_VARIANT_01
+		  }       		  
+       }
+	   
+			hidden_effect = {
+			
+		every_country = {
+		  set_temp_variable = { super_id = 89 }
+			PB_Fire_Super_Event = yes
+		}			
+			
+		    news_event = {
+			id = hungary.27
+			hours = 1
+		  } 
+       }	   
+    }
+ } 
 	  
 
 	country_event = { #GREATELLADA
@@ -311,16 +445,10 @@ country_event = {
 		name = hungarian.1.a
 		ai_chance = {
 			factor = 100
-		}
-	} 
-	
-    immediate = { news_event = {
-                id = hungary.1
-            }
+		           }
+	          } 
           }
-		 }
-       
-  
+
   	   country_event = { #UDWR
 	id = hungarian.3
 	title = hungarian.3.t
@@ -395,7 +523,7 @@ country_event = {
 	option = {
 		name = hungarian.5.a
 
-   }
+     }
   }
 
      	   country_event = {
@@ -408,8 +536,7 @@ country_event = {
 	
 	option = {
 		name = hungarian.6.a
-
-   }
+     }
   }
      	   country_event = { #Congress
 	id = hungarian.8
@@ -1014,14 +1141,14 @@ set_popularities = {
 		news_event = {
 			id = hungary.10
 			days = 1
-			}
-          }			
+			}			
 		 
 	remove_ideas = {
-	HUN_Vago_EM   	  
-		  } 
-      }
-  }
+	HUN_Vago_EM   
+	        }
+		} 
+    }
+}
 	
       	   country_event = {  #BALKCHAOS
 	id = hungarian.21
@@ -2450,7 +2577,7 @@ create_country_leader = {
       }	  
    }
    
-    country_event = { # Tesla is Killed
+    country_event = { # Tesla is Killed 
 	id = hungarian.64
 	title = hungarian.64.t
 	desc = hungarian.64.d
@@ -2466,7 +2593,7 @@ create_country_leader = {
 			
 		every_country = {
 		  set_temp_variable = { super_id = 87 }
-			PB_Fire_Super_Event = yes
+			PB_Fire_Super_Event = yes 
 		}
 		
 		news_event = {
@@ -2491,7 +2618,614 @@ create_country_leader = {
 
        set_country_flag = hun_teslafication_of_zagreb		
       }	  
-   }   
+   }
+
+    country_event = { # Last Breath 
+	id = hungarian.66
+	title = hungarian.66.t
+	desc = hungarian.66.d
+	picture = GFX_report_generic_event_pistol
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.66.a
+		
+    add_manpower = -1		
+		
+		hidden_effect = {
+		
+		     HUN = {
+			 
+		      country_event = {
+		      id = hungarian.67
+		      days = 7
+	    	}
+			
+		      country_event = {
+		      id = hungarian.68
+		      days = 8
+	    	}
+
+		      country_event = {
+		      id = hungarian.69
+		      days = 10
+	    	}			
+         }		
+      } 	  
+   }
+}
+
+    country_event = { # Slovakia Revolt
+	id = hungarian.67
+	title = hungarian.67.t
+	desc = hungarian.67.d
+	picture = GFX_report_event_slovak_poster
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.67.a
+		
+		hidden_effect = {
+		
+		71 = {
+			set_demilitarized_zone = no
+		    }
+
+		70 = {
+			set_demilitarized_zone = no
+		    }
+			
+		load_oob = "SLO_PB"			
+         }			
+		
+		SLO = {
+		  transfer_state = 70
+		  transfer_state = 71		  
+		}
+     }	  
+  }
+
+    country_event = { # Ruthenia Revolt
+	id = hungarian.68
+	title = hungarian.68.t
+	desc = hungarian.68.d
+	picture = GFX_report_event_ruthenia_poster
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.68.a
+		
+		hidden_effect = {
+		
+		73 = {
+			set_demilitarized_zone = no
+		    }
+			
+		load_oob = "RUT_PB"				
+         }		
+		
+		RUT = {
+		  transfer_state = 73	  
+		}
+     }	  
+  }
+
+    country_event = { # Russia sponsors Ruthenia
+	id = hungarian.69
+	title = hungarian.69.t
+	desc = hungarian.69.d
+	picture = GFX_report_PB_Guns_01
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.69.a
+		
+		RUT = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2500
+				producer = RUS
+			}
+		}
+		
+		  custom_effect_tooltip = Russian_Influence_0.10_decrease
+		   add_to_variable = {
+		 	var = HUN_Russian_influence_var
+			value = -0.1			
+	      }		
+      }	  
+  }
+
+    country_event = { # Massacre in Carpathia
+	id = hungarian.70
+	title = hungarian.70.t
+	desc = hungarian.70.d
+	picture = GFX_generic_event_hungarian_nationalists
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.70.a
+		
+			hidden_effect = {
+		     HUN = {
+		      country_event = {
+		      id = hungarian.71
+		      days = 7
+		     }
+			 
+		      country_event = {
+		      id = hungarian.74
+		      days = 14
+		     }
+
+		      country_event = {
+		      id = hungarian.72
+		      days = 18
+		     }			 
+          }			
+       }		
+		
+		  custom_effect_tooltip = radicals_control_ruthenia_tt
+		  
+		   add_to_variable = {
+		 	var = hun_radicalism_in_ruthenia
+			value = 0.50	   
+	         }		
+		
+		  custom_effect_tooltip = Militarism_0.02_increase
+		   add_to_variable = {
+		 	var = HUN_Militarism_var
+			value = 0.02			
+	        }
+
+       73 = {
+        damage_building = {
+         type = infrastructure
+         damage = 2
+            }
+        add_manpower = -500			
+           }			
+      }	  
+}
+
+    country_event = { # Massacre in Slovakia
+	id = hungarian.71
+	title = hungarian.71.t
+	desc = hungarian.71.d
+	picture = GFX_generic_event_hungarian_nationalists
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.71.a	
+
+	  custom_effect_tooltip = radicals_control_slovakia_tt
+		  
+	  add_to_variable = {
+	  var = hun_radicalism_in_slovakia
+	  value = 0.40	   
+	     }
+		 
+       71 = {
+        damage_building = {
+         type = infrastructure
+         damage = 2
+            }
+        add_manpower = -700			
+        }
+
+       70 = {
+        damage_building = {
+         type = infrastructure
+         damage = 2	
+            }
+        add_manpower = -500			
+        }		
+    }	
+}
+
+    country_event = { # March on Budapest
+	id = hungarian.72
+	title = hungarian.72.t
+	desc = hungarian.72.d
+	picture = GFX_generic_event_hungarian_nationalists
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.72.a
+
+	  custom_effect_tooltip = radicals_control_budapest_plus_20_tt		
+
+	  add_to_variable = {
+	  var = hun_radicalism_in_budapest
+	  value = -0.20	   
+	     }
+		 
+      add_stability = -0.1
+	  
+			hidden_effect = {
+		     HUN = {
+		      country_event = {
+		      id = hungarian.74
+		      days = 12
+		        }
+            }			
+        }
+
+       967 = {
+        damage_building = {
+         type = infrastructure
+         damage = 1
+            }
+        add_manpower = -300			
+        }		
+    }
+
+	option = {
+		name = hungarian.72.b		
+
+	  custom_effect_tooltip = radicals_control_budapest_tt		
+
+	  add_to_variable = {
+	  var = hun_radicalism_in_budapest
+	  value = 0.40	   
+	     }
+		 
+    set_cosmetic_tag = HUN_Szalasi		 
+		 
+	  set_politics = {
+	  ruling_party = NI
+        }
+		
+      kill_country_leader = yes
+	  
+		create_country_leader = {
+			name = "Ferenc Szalasi"
+			desc = ""
+			picture = "gfx/leaders/HUN/portrait_hun_ferenc_szalasi.dds"
+			expire = "1965.1.1"
+			ideology = NI_VARIANT_01
+	        traits = {
+		     PB_HUN_Leader_of_Nation
+	        }			
+		}
+
+      hidden_effect = {
+       add_ideas = {
+        PB_NI_Revanchism
+        PB_Ultranationalist_Dictatorship
+        PB_State_Press
+        PB_No_Voting
+        PB_Law_Secret_Police
+            }
+		}    		
+    }	
+}
+
+   country_event = { # Radicals Take Power
+	id = hungarian.73
+	title = hungarian.73.t
+	desc = hungarian.73.d
+	picture = GFX_generic_event_hungarian_nationalists
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hungarian.73.a
+
+    set_cosmetic_tag = HUN_Szalasi		
+
+	  set_politics = {
+	  ruling_party = NI
+        }
+		
+      kill_country_leader = yes
+	
+			if = {
+				limit = {
+				has_country_flag = hun_szalasi_is_dead_flag
+				}
+				
+		      create_country_leader = {
+			  name = "Pal Pronay"
+			  desc = ""
+			  picture = "gfx/leaders/HUN/pal_pronai.dds"
+			  expire = "1965.1.1"
+			  ideology = NI_VARIANT_01
+	          traits = {
+		      PB_HUN_Dont_Like_Jacobins
+	                }			
+	 	         }
+			  }
+
+			else_if = {
+				limit = {
+				has_country_flag = hun_szalasi_is_dead_flag
+				has_country_flag = hun_pal_pronay_is_dead_flag				
+				}
+				
+		      create_country_leader = {
+			  name = "Bela Imredy"
+			  desc = ""
+			  picture = "gfx/leaders/HUN/Bela_Von_Imredy.dds"
+			  expire = "1965.1.1"
+			  ideology = NI_VARIANT_01		
+	 	         }
+			  }
+			
+			else_if = {
+				limit = {
+					HUN = {
+					has_government = lb
+					}
+				}
+				
+			   kill_country_leader = yes
+			   
+			   set_politics = {
+		       ruling_party = LB
+		       }
+			}
+			
+		create_country_leader = {
+			name = "Ferenc Szalasi"
+			desc = ""
+			picture = "gfx/leaders/HUN/portrait_hun_ferenc_szalasi.dds"
+			expire = "1965.1.1"
+			ideology = NI_VARIANT_01
+	        traits = {
+		     PB_HUN_Leader_of_Nation
+	        }			
+		}
+		
+		add_popularity = {
+			ideology = ni
+			popularity = 0.3
+		}		
+
+          clr_country_flag = hun_bela_impedy_is_dead_flag
+          clr_country_flag = hun_szalasi_is_dead_flag
+          clr_country_flag = hun_pal_pronay_is_dead_flag
+          clr_country_flag = radical_mechanic_open
+
+      hidden_effect = {
+       add_ideas = {
+        PB_NI_Revanchism
+        PB_Ultranationalist_Dictatorship
+        PB_State_Press
+        PB_No_Voting
+        PB_Law_Secret_Police
+            }
+		}		  
+    }	
+}
+
+    country_event = { # Report
+	id = hungarian.74
+	title = hungarian.74.t
+	desc = hungarian.74.d
+	picture = GFX_generic_event_hungarian_nationalists
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.74.a
+
+       73 = {
+        damage_building = {
+         type = infrastructure
+         damage = 3
+            }
+        add_manpower = -5000			
+        }	
+    }
+}
+
+    country_event = { # Interrogation
+	id = hungarian.75
+	title = hungarian.75.t
+	desc = hungarian.75.d
+	picture = GFX_report_event_gombos_Gyula
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.75.a
+		
+		set_country_flag = hun_begin_kill_oper		
+     }	
+}
+
+    country_event = { # Szalasi Trial
+	id = hungarian.76
+	title = hungarian.76.t
+	desc = hungarian.76.d
+	picture = GFX_report_event_szalasi
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.76.a
+		
+		set_country_flag = hun_szalasi_is_dead_flag		
+
+		custom_effect_tooltip = radicals_minus_10
+		
+			add_to_variable = {
+				var = hun_radicalism_in_budapest
+				value = -0.10
+			}
+			
+			add_to_variable = {
+				var = hun_radicalism_in_hungary
+				value = -0.10
+			}
+
+			add_to_variable = {
+				var = hun_radicalism_in_slovakia
+				value = -0.10
+			}
+
+			add_to_variable = {
+				var = hun_radicalism_in_ruthenia
+				value = -0.10
+	      }		
+     }	
+}
+
+    country_event = { # Pronai Trial
+	id = hungarian.77
+	title = hungarian.77.t
+	desc = hungarian.77.d
+	picture = GFX_generic_event_hungarian_nationalists
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.77.a
+		
+		set_country_flag = hun_pal_pronay_is_dead_flag		
+
+		custom_effect_tooltip = radicals_minus_10
+		
+			add_to_variable = {
+				var = hun_radicalism_in_budapest
+				value = -0.10
+			}
+			
+			add_to_variable = {
+				var = hun_radicalism_in_hungary
+				value = -0.10
+			}
+
+			add_to_variable = {
+				var = hun_radicalism_in_slovakia
+				value = -0.10
+			}
+
+			add_to_variable = {
+				var = hun_radicalism_in_ruthenia
+				value = -0.10
+	      }		
+     }	
+}
+
+    country_event = { # Bela Imredy Trial
+	id = hungarian.78
+	title = hungarian.78.t
+	desc = hungarian.78.d
+	picture = GFX_generic_event_hungarian_nationalists
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.78.a
+		
+		set_country_flag = hun_bela_impedy_is_dead_flag		
+
+		custom_effect_tooltip = radicals_minus_10
+		
+			add_to_variable = {
+				var = hun_radicalism_in_budapest
+				value = -0.10
+			}
+			
+			add_to_variable = {
+				var = hun_radicalism_in_hungary
+				value = -0.10
+			}
+
+			add_to_variable = {
+				var = hun_radicalism_in_slovakia
+				value = -0.10
+			}
+
+			add_to_variable = {
+				var = hun_radicalism_in_ruthenia
+				value = -0.10
+	      }		
+     }	
+}
+
+    country_event = { # Operation Failed
+	id = hungarian.79
+	title = hungarian.79.t
+	desc = hungarian.79.d
+	picture = GFX_generic_event_hungarian_nationalists
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.79.a
+     }	
+}
+
+
+    country_event = { # Hungary wants to join Imperial Powers
+	id = hungarian.80
+	title = hungarian.80.t
+	desc = hungarian.80.d
+	picture = GFX_report_PB_Generic_Political_Event
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.80.a
+		
+		ai_chance = {
+			factor = 100
+		}
+
+         ENG = { add_to_faction = HUN }		 
+     }
+
+	option = {
+		name = hungarian.80.b
+		
+		ai_chance = {
+			factor = 0
+		}		
+		
+		HUN = { 
+			country_event = { id = hungarian.81 hours = 1 }
+		}		
+     }	 
+}
+
+    country_event = { # Britain Refuses
+	id = hungarian.81
+	title = hungarian.81.t
+	desc = hungarian.81.d
+	picture = GFX_report_PB_Generic_Political_Event
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.81.a	 
+     }	 
+}	
 	  
 country_event = { #Hungarian Support
 	id = hungarian.1000
@@ -2508,7 +3242,7 @@ country_event = { #Hungarian Support
 
 		ai_chance = {
 			factor = 100
-		}
+		}		
 
 		add_political_power = 50
 	}

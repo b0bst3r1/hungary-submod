@@ -25,23 +25,38 @@
   SPEVNT_Turkey_War_For_Independence_CLOSETEXT:0 "§OFREEDOM REQUIRES BLOOD§!"
 
   SPEVNT_Tesla_Is_Back:0 "NIKOLA TESLA IS BACK"
-  SPEVNT_Tesla_Is_Back_TEXT: "The present is theirs; the future, for which I really worked, is mine."\n\n§O-Nikola Tesla-§!"
+  SPEVNT_Tesla_Is_Back_TEXT: "The present is theirs; the future, for which I really worked, is mine.\n\n§O-Nikola Tesla-§!"
   SPEVNT_Tesla_Is_Back_CLOSETEXT:0 "§OTHE FUTURE BECKONS§!"
 
   SPEVNT_Tesla_Is_Dead:0 "NIKOLA TESLA IS DEAD"
-  SPEVNT_Tesla_Is_Dead_TEXT: "You may live to see man-made horrors beyond your comprehension.."\n\n§O-Nikola Tesla-§!"
-  SPEVNT_Tesla_Is_Dead_CLOSETEXT:0 "§OOH MY GODNESS§!"  
+  SPEVNT_Tesla_Is_Dead_TEXT: "You may live to see man-made horrors beyond your comprehension..\n\n§O-Nikola Tesla-§!"
+  SPEVNT_Tesla_Is_Dead_CLOSETEXT:0 "§OOH MY GODNESS§!"
+  
+  SPEVNT_Romanovs_Hungary:0 "ROMANOVS IN HUNGARY"
+  SPEVNT_Romanovs_Hungary_TEXT:0 "The basic lesson of history is that people do not learn any lessons from history.\n\n§O-Alexander II Romanov-§!"
+  SPEVNT_Romanovs_Hungary_CLOSETEXT:0 "§ORUSSIAN INFLUENCE EXPANDS§!"    
+
+  SPEVNT_Habsburg_Hungary:0 "HABSBURG RESTORATION IN HUNGARY"
+  SPEVNT_Habsburg_Hungary_TEXT:0 "You may come as a proud prince today young Habsburg. But you shall travel many more roads in Castile in death than you ever will in life.\n\n§O-C.W. Gortner-§!"
+  SPEVNT_Habsburg_Hungary_CLOSETEXT:0 "§OHISTORY REPEATS ITSELF§!"    
   
   0_autonomous_region:0 "Autonomous Region"
   0_autonomous_region_desc:0 "The Region has great national autonomy"
   
-  HUN_Danube_PR:0 "Danubian Peasants And Workers Republic"  
+  HUN_Danube_PR:0 "Danubian Peasants And Workers Republic" 
+
+  decision_cost_5_cp: "£command_power §Y5§!"
+  decision_cost_5_cp_blocked: "£command_power §R5§!"
+
+  decision_cost_15_cp: "£command_power §Y15§!"
+  decision_cost_15_cp_blocked: "£command_power §R15§!"  
   
   #Leader Trait
   
   PB_The_Great_Founder:0 "The Great Founder"
   PB_Pers_Chief:0 "Chief"
   PB_Pers_First_Hungarian_Democrat:0 "First Hungarian Democrat"
+  PB_HUN_Leader_of_Nation:0 "Nemzetvezető"
   
   #FOCUS
   
@@ -261,26 +276,28 @@
  hun_Rusinia_breaks_away_desc:0 " "
  hun_Country_held_on:0 "Country Held On"
  hun_Country_held_on_desc:0 " "
- hun_military_coup:0 "Military Coup"
+ hun_military_coup:0 "Monarchy Delayed"
  hun_military_coup_desc:0 " "
- hun_horthy_takes_power:0 "Horthy Takes Power"
- hun_horthy_takes_power_desc:0 " " 
  hun_regent_without_king:0 "Regent Without King"
  hun_regent_without_king_desc:0 " "
- hun_horthy_arrested:0 "Horthy Arrested"
- hun_horthy_arrested_desc:0 " "
+ hun_arrow_in_power:0 "Felebredek, magyar!"
+ hun_arrow_in_power_desc:0 " "
  hun_forgive_sinful_capital:0 "Forgiveness of Sinful Capital"
  hun_forgive_sinful_capital_desc:0 " "
  hun_begin_covert_remilitarization:0 "Covert Remilitarization"
  hun_begin_covert_remilitarization_desc:0 " "
  hun_decommunization:0 "Decommunization"
  hun_decommunization_desc:0 " "
- hun_execute_leaders_rebellion:0 "Execute Leaders of Rebellion"
+ hun_execute_leaders_rebellion:0 "Clean Country"
  hun_execute_leaders_rebellion_desc:0 " "
- hun_Stabilization_of_the_country:0 "Stabilization of the Country"
+ hun_Stabilization_of_the_country:0 "Strong Country"
  hun_Stabilization_of_the_country_desc:0 " "
  hun_nonhumans:0 "Non-Humans"
  hun_nonhumans_desc:0 " "
+ hun_national-jacobinism:0 "A National Renaissance"
+ hun_national-jacobinism_desc:0 ""
+ 
+ 
  HUN_VOEVODINA:0 "Vojvodina"
  HUN_VOEVODINA_desc:0 "Vojvodina is a place of active attacks by Serbian terrorists, and therefore autonomy should be given to this region in order to ease ethnic tensions."
  HUN_ALLOWRUTHENIA:0 "Autonomous Ruthenian Region"
@@ -376,6 +393,8 @@
   
   PB_Govidea_Hungarian_Socialism:0 "Hungarian Socialism"
   
+  HUN_guerrilla_arrow_cross_party:0 "Guerrilla War" 
+  HUN_guerrilla_arrow_cross_party_desc:0 "Nationalists from the Arrow Cross Party organized a real guerrilla war across the country. Administrative buildings are being seized, railroad stations are being bombed, all with the aim of pressuring the national government."
   HUN_integrating_with_republics2:0 "Investments in the Worker Republics"
   HUN_integrating_with_republics2_desc:0 "The integration process with the Union workers' republics consumes a great deal of resources. To bring them closer to the level of development of Hungary itself, a huge amount of money has to be spent. But it will all inevitably pay off."  
   HUN_integrating_with_republics:0 "Investments in the Worker Republics"
@@ -489,7 +508,8 @@
   #Tooltips#
   
   HUN_FORMS_UDWR:0 "The following nations will be annexed if they exist:\n\n-[CRO.GetFlag] Croatia\n-[SER.GetFlag] Serbia\n-[ROM.GetFlag] Romania\n-[MNT.GetFlag] Montenegro\n-[ALB.GetFlag] Albania."
-  
+   
+  hun_lon_formed:0 "§HLeague of Nations§! is formed"
   electrification_decisions_tt:0 "§YOpens decisions§! for §GElectrification§! of the country"  
   urbanization_decisions_tt:0 "§YOpens decisions§! to §GUrbanize§! the country"  
   industrialization_decisions_tt:0 "§YOpens decisions§! to §GIndustrialize§! the country"  
@@ -557,6 +577,42 @@
   HUN_Garbai_HOG:0 "Sándor Garbai"
   HUN_BelaKun_HOG:0 "Béla Kun"
   
+  #Militarism 
+  
+  HUN_High_Militarism:0 "§GHigh§!"
+  HUN_Medium_Militarism:0 "§YMedium§!"
+  HUN_Low_Militarism:0 "§RLow§!"
+
+  Militarism_tt:0 "§OMilitarism§! is currently at [?HUN_Militarism_var|%0]"
+  Militarism_tt_delayed:0 "After the defeat in the Great Balkan War, the Hungarian people were defeated and humiliated. The people are angry and crave military revenge on their opponents.\n\nDepending on your level of Militarism various military modifers will apply. The Militarism modifier will also tick down by a variable of §R-1§! every month so be sure to keep it maintained!\n\nThese modifiers adjust §YMonthly§! and are as follows:\n\nLow Militarism:\n      Recruitable Population Factor: §R-10.00%§!\n      \n      Division Attack On Core Territory: §R-10.00%§!\n\n      Division Defense On Core Territory: §R-10.00%§!      \n\nMedium Militarism:\n      Recruitable Population Factor: §R+5.00%§!\n      Surrender Limit: §G+5.00%§!\n      Division Defense On Core Territory: §G+10.00%§!\n      Division Attack On Core Territory: §G+5.00%§!\n\nHigh Militarism       :\n      Monthly Population:      Surrender Limit: §G+10.00%§!\n      Recruitable Population Factor: §G+10.00%§!\n      Division Defense On Core Territory: §G+15.00%§!\n      Division Attack On Core Territory: §G+15.00%§!"
+  HUN_Low_Militarism_Idea:0 "Low Militarism" 
+  HUN_Med_Militarism_Idea:0 "Medium Militarism"
+  HUN_High_Militarism_Idea:0 "High Militarism"
+  Militarism_0.02_decrease:0 "Militarism: §R-2%§!."
+  Militarism_0.04_decrease:0 "Militarism: §R-4%§!."
+  Militarism_0.06_decrease:0 "Militarism: §R-6%§!."
+  Militarism_0.02_increase:0 "Militarism: §G+2%§!."
+  Militarism_0.04_increase:0 "Militarism: §G+4%§!."
+  Militarism_0.06_increase:0 "Militarism: §G+6%§!."  
+  
+  #Hate
+  
+  HUN_High_Hate:0 "§GHigh§!"
+  HUN_Medium_Hate:0 "§YMedium§!"
+  HUN_Low_Hate:0 "§RLow§!"
+
+  Hate_tt:0 "§OChauvinism§! is currently at [?HUN_Peoples_hate|%0]"
+  Hate_tt_delayed:0 "After the defeat in the Great Balkan War, the Hungarian people were defeated and humiliated. The people are angry and want revenge. Whether to support it or not is our choice.\n\nDepending on your level of Chauvinism various military modifers will apply. The Chauvinism modifier will also tick down by a variable of §R-2§! every month so be sure to keep it maintained!\n\nThese modifiers adjust §YMonthly§! and are as follows:\n\nLow Chauvinism:\n      Monthly Population: §G+10.00%§!\n      Surrender Limit: §R-5.00%§!\n      Production Factory Efficiency: §G+15.00%§!\n      Division Attack On Core Territory: §R-5.00%§!\n\nMedium Chauvinism:\n      Monthly Population: §G+5.00%§!\n      Surrender Limit: §G+5.00%§!\n      Production Factory Efficiency: §G+10.00%§!\n      Division Defense On Core Territory: §G+5.00%§!\n      Division Attack On Core Territory: §G+5.00%§!\n\nHigh Chauvinism       :\n      Monthly Population: §R-5.00%§!\n      Surrender Limit: §G+10.00%§!\n      Recruitable Population Factor: §G+10.00%§!\n      Division Defense On Core Territory: §G+10.00%§!\n      Division Attack On Core Territory: §G+10.00%§!"
+  HUN_Low_Peoples_Hate_Idea:0 "Low Chauvinism" 
+  HUN_Med_Peoples_Hate_Idea:0 "Medium Chauvinism"
+  HUN_High_Peoples_Hate_Idea:0 "High Chauvinism"
+  Peoples_Hate_0.02_decrease:0 "Chauvinism: §R-2%§!."
+  Peoples_Hate_0.04_decrease:0 "Chauvinism: §R-4%§!."
+  Peoples_Hate_0.06_decrease:0 "Chauvinism: §R-6%§!."
+  Peoples_Hate_0.02_increase:0 "Chauvinism: §G+2%§!."
+  Peoples_Hate_0.04_increase:0 "Chauvinism: §G+4%§!."
+  Peoples_Hate_0.06_increase:0 "Chauvinism: §G+6%§!."  
+  
   #REV ZEAL#
   HUN_High_Revolutionary_Zeal:0 "§GHigh§!"
   HUN_Medium_Revolutionary_Zeal:0 "§YMedium§!"
@@ -608,6 +664,31 @@
   
   #DECISIONS
   
+  # Radicals Mechanic 
+  
+  control_of_radicalism_dec:0 "March of Radicals"
+  control_of_radicalism_dec_desc:0 "\n\n\n\n\n\nThe Arrow Cross Party nationalists are trying to seize power in the country by pressuring the government. Many regions, government districts, and more are under attack.\n\nIf §RRadicals§! get more than §Y70%§! of the influence in a region they take it over.\nIf the §RRadicals§! control at least §Ythree regions§!, they seize power in the country.\nKilling §RThree Radical leaders§! would stop the power struggle.\n\n§YFor more information, click on the button.§!"
+  
+  HUN_nationalist_protests:0 "Radicals Protest"
+  HUN_lower_radical_influence:0 "Lower the Influence of Radicals"
+  HUN_Interrogation_Nationalists:0 "Interrogation of Nationalists"
+  HUN_Hunting_for_Szalasi:0 "Hunting for Szalasi"
+  HUN_Hunting_for_pronai:0 "Hunting for Prónay"
+  HUN_Hunting_for_imredy:0 "Hunting for Bela Imredy"
+  
+  hun_begin_kill_oper:0 "Has completed Decision §Y"Interrogation of Nationalists"§!"
+  radicals_control_ruthenia_tt:0 "§RRadicals§! will control Ruthenia"
+  radicals_control_slovakia_tt:0 "§RRadicals§! will control Slovakia"
+  radicals_control_budapest_tt:0 "§RRadicals§! will control Budapest"
+  radicals_control_budapest_plus_20_tt:0 "Radicals Influence in Budapest: §G-20%§!."
+  radicals_plus_10:0 "Radicals Influence in Every State: §R+10%§!."
+  radicals_minus_10:0 "Radicals Influence in Every State: §G-10%§!."
+  
+  budapest_radical_loc:0 "§RRadicals§! influence in Budapest\nis currently at [?hun_radicalism_in_budapest|%0]"
+  hungary_radical_loc:0 "§RRadicals§! influence in Hungary\nis currently at [?hun_radicalism_in_hungary|%0]"
+  slovakia_radical_loc:0 "§RRadicals§! influence in Slovakia\nis currently at [?hun_radicalism_in_slovakia|%0]"
+  ruthenia_radical_loc:0 "§RRadicals§! influence in Ruthenia\nis currently at [?hun_radicalism_in_ruthenia|%0]"  
+
   #Foreign Influence Mechanic
   
   HUN_foreign_influence:0 "Foreign Influence"
@@ -866,12 +947,17 @@
 
   #Domestic Policy#
   
+  HUN_Declare_on_Russia:0 "Declare War on Russian Empire"
+  HUN_Declare_on_Russia_desc:0 "The Russian Empire behaved horribly toward us by taking over Moldova. We must take our revenge!"
+  HUN_Join_League_of_Nations:0 "§CJoin League of Nations§!"
   HUN_Promote_Jacobin_Youth:0 "§YPromote the Youth Pioneers§!"  
-  PB_Support_Pan_Arabians:0 "[UAR.GetFlag] §CSupport Revolutionary Pan-Arabians§!" 
-  HUN_domestic_policy:0 "Jacobin way of the life"
+  PB_Support_Pan_Arabians:0 "[UAR.GetFlag] §CSupport Revolutionary Pan-Arabians§!"
+  Recognize_the_Shanghai_government:0 "[SGH.GetFlag] §CRecognize the Shanghai Government§!"
+  PB_guns_to_ecuador:0 "[ECU.GetFlag] §CSend Guns to the Ecuador§!"   
+  HUN_domestic_policy:0 "Hungarian way of the life"
   HUN_domestic_policy_desc:0 "\n\n\n\n\n\nThe Hungarian People's Republic is entering a new phase of its development. The party splits into several on the eve of Vilmos Bom's departure from office, which threatens the country with at least internal collapse, while revolutionary fervor in the face of falling living standards fades in the eyes of the people"
   HUN_increase_revolutionary_zeal:0 "Increase Revolutionary Zeal"
-  HUN_increase_party_unity:0 "Maintain Russian Influence"
+  HUN_increase_party_unity:0 "Maintain Party Unity"
   HUN_Friedrich_Engels_legacy:0 "Legacy of Friedrich Engels"
   HUN_Propaganda_in_Schools:0 "Jacobin Propaganda in schools"
   HUN_Fighting_the_Counterrevolution:0 "Fighting the CounterRevolution"

@@ -939,6 +939,16 @@ HUN_LB = {
 	color_ui = rgb { 253 124 110 }
 }
 
+HUN_Horthy = {
+	color = rgb { 249 126 98 }
+	color_ui = rgb { 138 163 117 }
+}
+
+HUN_Szalasi = {
+    color = rgb { 45 31 31 }
+    color_ui = rgb { 185 170 167 }
+}
+
 CRO_COM = {
 	color = rgb { 110 24 13 }
 	color_ui = rgb { 110 24 13 }

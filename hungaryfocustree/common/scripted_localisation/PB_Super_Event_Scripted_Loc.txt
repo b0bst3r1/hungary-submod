@@ -246,6 +246,27 @@ defined_text = { #SUPER EVENT TITLES
             check_variable = { Active_Superevent_ID = 87 }
         }
         localization_key = "SPEVNT_Tesla_Is_Dead"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 87 }
+        }
+        localization_key = "SPEVNT_Tesla_Is_Dead"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 88 }
+        }
+        localization_key = "SPEVNT_Habsburg_Hungary"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 89 }
+        }
+        localization_key = "SPEVNT_Romanovs_Hungary"
     }	
 }
 
@@ -495,6 +516,20 @@ defined_text = { #SUPER EVENT QUOTES
             check_variable = { Active_Superevent_ID = 87 }
         }
         localization_key = "SPEVNT_Tesla_Is_Dead_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 88 }
+        }
+        localization_key = "SPEVNT_Habsburg_Hungary_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 89 }
+        }
+        localization_key = "SPEVNT_Romanovs_Hungary_TEXT"
     }	
 }
 
@@ -744,5 +779,19 @@ defined_text = { #SUPER EVENT QUOTES
             check_variable = { Active_Superevent_ID = 87 }
         }
         localization_key = "SPEVNT_Tesla_Is_Dead_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 88 }
+        }
+        localization_key = "SPEVNT_Habsburg_Hungary_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 89 }
+        }
+        localization_key = "SPEVNT_Romanovs_Hungary_CLOSETEXT"
     }	
 }

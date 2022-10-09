@@ -32,6 +32,16 @@ spriteTypes = {
 	  spriteType = {
 		name = "GFX_PB_News_Tesla_is_Back"
 		texturefile = "GFX/event_pictures/hun_news_event/hungary/PB_News_Tesla_is_Back.dds"
+	}
+
+	  spriteType = {
+		name = "GFX_PB_News_Event_Habsburg_Restoration"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/PB_News_Event_Habsburg_Restoration.dds"
+	}
+
+	  spriteType = {
+		name = "GFX_PB_News_Event_Romanov_In_Hungary"
+		texturefile = "GFX/event_pictures/hun_news_event/hungary/PB_News_Event_Romanov_In_Hungary.dds"
 	}	
 		
 	  spriteType = {

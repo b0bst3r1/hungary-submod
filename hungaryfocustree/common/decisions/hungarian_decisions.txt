@@ -1,3 +1,232 @@
+control_of_radicalism_dec = {
+
+	HUN_nationalist_protests = {
+		icon = revolt
+
+		available = {
+			has_country_flag = radical_mechanic_open
+		}
+
+		activation = {   
+			has_country_flag = radical_mechanic_open     
+		}
+
+		is_good = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_mission_timeout = 80
+
+		timeout_effect = {
+
+		custom_effect_tooltip = radicals_plus_10
+		
+			add_to_variable = {
+				var = hun_radicalism_in_budapest
+				value = 0.10
+			}
+			
+			add_to_variable = {
+				var = hun_radicalism_in_hungary
+				value = 0.10
+			}
+
+			add_to_variable = {
+				var = hun_radicalism_in_slovakia
+				value = 0.10
+			}
+
+			add_to_variable = {
+				var = hun_radicalism_in_ruthenia
+				value = 0.10
+			}			
+		}
+	}
+	
+	HUN_lower_radical_influence = {
+		icon = generic_operation
+
+		available = {
+			has_country_flag = radical_mechanic_open
+		}
+
+	    visible = {
+        }
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		days_remove = 40
+		
+		days_re_enable = 15
+
+		remove_effect = {
+		
+		custom_effect_tooltip = radicals_minus_10
+		
+			add_to_variable = {
+				var = hun_radicalism_in_budapest
+				value = -0.10
+			}
+			
+			add_to_variable = {
+				var = hun_radicalism_in_hungary
+				value = -0.10
+			}
+
+			add_to_variable = {
+				var = hun_radicalism_in_slovakia
+				value = -0.10
+			}
+
+			add_to_variable = {
+				var = hun_radicalism_in_ruthenia
+				value = -0.10
+			}
+		}
+	}
+
+	HUN_Interrogation_Nationalists = {
+		icon = generic_operation
+
+		available = {
+			has_country_flag = radical_mechanic_open
+		}
+
+	    visible = {
+        }
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		days_remove = 25
+		
+		days_re_enable = 1
+
+		remove_effect = {
+		HUN = {
+		country_event = {
+		id = hungarian.44
+		days = 1
+		        }
+		    }		
+		}
+	}
+
+	HUN_Hunting_for_Szalasi = {
+		icon = generic_operation
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = hun_begin_kill_oper
+				has_country_flag = hun_begin_kill_oper
+			}
+		}
+
+	    visible = {
+		 NOT = {
+		  has_country_flag = hun_szalasi_is_dead_flag
+		  }
+        }
+
+		cost = 60
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 70
+		
+		days_re_enable = 1
+
+		remove_effect = {
+		 
+		  hidden_effect = {
+		  75 = { country_event = { hours = 1 id = hungarian.76 } } # The operation was successful
+		  25 = { country_event = { hours = 1 id = hungarian.79 } } # The operation was unsuccessful
+		   }
+		}
+	}
+
+	HUN_Hunting_for_pronai = {
+		icon = generic_operation
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = hun_begin_kill_oper
+				has_country_flag = hun_begin_kill_oper
+			}
+		}
+
+	    visible = {
+		 NOT = {
+		  has_country_flag = hun_pal_pronay_is_dead_flag
+		  }
+        }
+
+		cost = 60
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 70
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		 
+		  hidden_effect = {
+		  65 = { country_event = { hours = 1 id = hungarian.77 } } # The operation was successful
+		  35 = { country_event = { hours = 1 id = hungarian.79 } } # The operation was unsuccessful
+		   }
+		}
+	}
+
+	HUN_Hunting_for_imredy = {
+		icon = generic_operation
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = hun_begin_kill_oper
+				has_country_flag = hun_begin_kill_oper
+			}
+		}
+
+	    visible = {
+		 NOT = {
+		  has_country_flag = hun_bela_impedy_is_dead_flag
+		  }
+        }
+
+		cost = 60
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 70
+		
+		days_re_enable = 1
+
+		remove_effect = {
+		 
+		  hidden_effect = {
+		  85 = { country_event = { hours = 1 id = hungarian.78 } } # The operation was successful
+		  15 = { country_event = { hours = 1 id = hungarian.79 } } # The operation was unsuccessful
+		   }
+		}
+	}	
+}
+
 HUN_great_balkan_war = {
 
 	HUN_mobilization_efforts = {
@@ -961,7 +1190,7 @@ HUN_domestic_policy = {
 
 		icon = generic_operation
 		
-		cost = 0
+		cost = 30
 
 		ai_will_do = {
 			factor = 100
@@ -1015,6 +1244,198 @@ HUN_domestic_policy = {
 					amount = 2000
 					producer = HUN
 				}
+
+				country_event = {
+					id = hungarian.1000
+					days = 3
+				}
+			}
+		}
+	}
+	
+	PB_guns_to_ecuador = {
+
+		icon = generic_operation
+		
+		cost = 30
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+			OR = {
+				has_government = jc
+            }
+			
+			ECU = {
+				has_war = yes
+				has_government = jc				
+			}
+			
+			HUN = {
+				OR = {
+					has_equipment = {
+						infantry_equipment_0 > 1000
+					}
+					has_equipment = {
+						infantry_equipment_1933 > 1000
+					}
+					has_equipment = {
+						infantry_equipment_1 > 1000
+					}
+					has_equipment = {
+						infantry_equipment_2 > 1000
+					}
+					has_equipment = {
+						infantry_equipment_3 > 1000
+					}
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		days_remove = 7
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			ECU = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 1000
+					producer = HUN
+				}
+
+				country_event = {
+					id = hungarian.1000
+					days = 1
+				}
+			}
+		}
+	}
+
+	HUN_Join_League_of_Nations = {
+
+		icon = influence_cold_war
+		
+		cost = 30
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		  has_government = lb
+			
+		custom_trigger_tooltip = {
+			tooltip = hun_lon_formed
+			has_global_flag = LON_Formed
+		}
+	 }
+
+		days_remove = 7
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		add_ideas = ENG_League_of_Nations_Council_Member
+		}
+	}
+
+	HUN_Declare_on_Russia = {
+
+		icon = generic_tank
+		
+		custom_cost_trigger = { command_power > 14 }
+		custom_cost_text = decision_cost_15_cp
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+		FRA = {
+		 has_war_with = GER
+		}
+		
+		RUS = {
+		 has_war_with = GER
+		}
+		
+		ENG = {
+		 has_war_with = FRA
+		}
+		
+		 has_government = lb
+        }
+
+		days_remove = 7
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		hidden_effect = {
+		  add_command_power = -15
+		}		
+		
+        declare_war_on = {
+         target = RUS
+          type = annex_everything
+        }		
+		
+		ENG = { 
+			country_event = { id = hungarian.80 hours = 1 }
+		   }
+		}
+	}	
+	
+	Recognize_the_Shanghai_government = {
+
+		icon = generic_political_discourse
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		
+			OR = {
+				has_government = jc
+				has_government = ss
+            }
+			
+			SGH = {
+			  exists = yes			
+			}
+		}
+
+		days_remove = 7
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		    HUN = {
+			
+			add_opinion_modifier = {
+				target = SGH modifier = diplomatic_outreach
+			}
+         }
+		 
+			SGH = {
+			
+			add_opinion_modifier = {
+				target = HUN modifier = diplomatic_outreach
+			}
 
 				country_event = {
 					id = hungarian.1000

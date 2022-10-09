@@ -1,0 +1,180 @@
+# I
+# Hate
+# Myself 
+
+guiTypes = {
+	containerWindowType = {
+		name = "cor_opening_of_window_gui"
+		position = { x = 0 y = 0 }
+		size = { width = 200 height = 200 }
+		Orientation = UPPER_LEFT
+		
+		buttonType = {
+			name = "hun_radicalism"
+			position = { x = 0 y = -100 }			
+			quadTextureSprite = "GFX_cor_open_button"
+			clicksound = click_default
+			Orientation = center
+			pdx_tooltip = ""
+		}
+    }
+}
+
+guiTypes = {
+	containerWindowType = {
+		name = "radicalism_window"
+		position = { x = 0 y = 0}	
+		
+		size = { width = 1280 height = 720 }
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		show_sound = menu_open_window 
+		click_to_front = yes
+        
+		orientation = UPPER_LEFT
+        
+		background = {
+			name = "Background"		
+			quadTextureSprite = "GFX_just_black_background_lol"
+		}			
+						
+           iconType = {
+            name = "szalasi_is_killed"
+            position = {x = 0 y = -270}
+            spriteType = "GFX_cor_leader_is_dead"
+			Orientation = "UPPER_LEFT"
+                }
+
+           iconType = {
+            name = "bela_impedy_is_killed"
+            position = {x = 0 y = 0}
+            spriteType = "GFX_cor_leader_is_dead"
+			Orientation = "UPPER_LEFT"
+                }
+
+           iconType = {
+            name = "pal_pronay_is_killed"
+            position = {x = 160 y = -130}
+            spriteType = "GFX_cor_leader_is_dead"
+			Orientation = "UPPER_LEFT"
+                }				
+                
+           iconType = {
+            name = "hungary_kingdom_control"
+            position = {x = 341 y = 75}
+            spriteType = "GFX_hungary_kingdom"
+			Orientation = "UPPER_LEFT"			
+                }
+                
+            iconType = {
+            name = "ruthenia_kingdom_control"
+            position = {x = 338 y = 74}
+            spriteType = "GFX_ruthenia_kingdom"
+			Orientation = "UPPER_LEFT"
+            }
+		
+            iconType = {
+            name = "slovakia_kingdom_control"
+            position = {x = 340 y = 74}
+            spriteType = "GFX_slovakia_kingdom"
+			Orientation = "UPPER_LEFT"		
+            }
+			
+           iconType = {
+            name = "budapest_kingdom_control"
+            position = {x = 341 y = 75}
+            spriteType = "GFX_budapest_kingdom"
+			Orientation = "UPPER_LEFT"
+                }			
+
+           iconType = {
+            name = "budapest_radical_control"
+            position = {x = 341 y = 75}
+            spriteType = "GFX_budapest_radical"
+			Orientation = "UPPER_LEFT"
+                }
+                
+           iconType = {
+            name = "hungary_radical_control"
+            position = {x = 210 y = 675}
+            spriteType = "GFX_hungary_radical"
+			Orientation = "UPPER_LEFT"
+                }
+                
+            iconType = {
+            name = "ruthenia_radical_control"
+            position = {x = 338 y = 74}
+            spriteType = "GFX_ruthenia_radical"
+			Orientation = "UPPER_LEFT"
+            }
+		
+            iconType = {
+            name = "slovakia_radical_control"
+            position = {x = 340 y = 74}
+            spriteType = "GFX_slovakia_radical"
+			Orientation = "UPPER_LEFT"
+          }
+
+           iconType = {
+            name = "cor_outline"
+            position = {x = 340 y = 74}
+            spriteType = "GFX_cor_outline"
+			Orientation = "UPPER_LEFT"
+             }
+
+			instantTextboxType = {
+				name = "budapest_radicals_control"
+				position = { x = 70 y = 200 }
+				font = "hoi_36mbs"
+				text = "budapest_radical_loc"
+				format = center
+				maxWidth = 300
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "hungary_radicals_control"
+				position = { x = 70 y = 275 }
+				font = "northead"
+				text = "hungary_radical_loc"
+				format = center
+				maxWidth = 300
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "slovakia_radicals_control"
+				position = { x = 70 y = 350 }
+				font = "northead"
+				text = "slovakia_radical_loc"
+				format = center
+				maxWidth = 300
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+			instantTextboxType = {
+				name = "ruthenia_radicals_control"
+				position = { x = 70 y = 425 }
+				font = "northead"
+				text = "ruthenia_radical_loc"
+				format = center
+				maxWidth = 300
+				fixedsize = yes
+				maxHeight = 100
+			}
+
+		buttonType = {
+			name = "cor_close_button"
+			position = { x = 115 y = 150 }			
+			quadTextureSprite = "GFX_cor_close_button"
+			clicksound = click_default
+			Orientation = center
+			pdx_tooltip = ""
+		}			
+    }
+}

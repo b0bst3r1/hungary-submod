@@ -1,0 +1,22 @@
+defined_text = { 
+    name = get_suicide_event_scripted_loc
+    
+    text = { 
+        trigger = {
+            has_completed_focus = hun_garbai
+        }
+        localization_key = "get_garbai_suicide_event_scripted_tt"
+    }
+    text = { 
+        trigger = {
+            has_completed_focus = HUN_BELAKUN
+        }
+        localization_key = "get_belakun_suicide_event_tt"
+    }
+    text = { 
+        trigger = {
+            has_completed_focus = HUN_VAGO
+        }
+        localization_key = "get_revai_suicide_event_tt"
+    }    
+}

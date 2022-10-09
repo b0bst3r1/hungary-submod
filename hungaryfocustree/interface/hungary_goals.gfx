@@ -6,6 +6,11 @@ spriteTypes = {
     }
 	
 	SpriteType = {
+	    name = "GFX_arrow_cross_in_power"
+        texturefile = "gfx/interface/goals/arrow_cross_in_power.dds"
+    }	
+	
+	SpriteType = {
 	    name = "GFX_hun_letter_to_tesla"
         texturefile = "gfx/interface/goals/hun_letter_to_tesla.dds"
     }	

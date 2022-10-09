@@ -13,6 +13,17 @@ leader_traits = {
 		}
 	}
 	
+	PB_HUN_Leader_of_Nation = {
+
+		political_power_gain = 0.15
+		
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
 	PB_Pers_First_Hungarian_Democrat = {
 
 		political_power_gain = 0.3		
@@ -27,6 +38,18 @@ leader_traits = {
 	PB_Pers_Chief = {
 
 		stability_factor = 0.15
+		
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	PB_HUN_Dont_Like_Jacobins = {
+
+	    ni_drift = 0.02
+	    jc_drift = -0.02	
 		
 		random = no
 		

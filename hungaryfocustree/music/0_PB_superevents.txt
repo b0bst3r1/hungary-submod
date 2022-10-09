@@ -70,3 +70,21 @@ music = {
 		}		
 	}
 }
+
+music = {
+	song = "Super_Event_Sound_88"
+	chance = {
+		modifier = {
+			factor = 0
+		}		
+	}
+}
+
+music = {
+	song = "Super_Event_Sound_89"
+	chance = {
+		modifier = {
+			factor = 0
+		}		
+	}
+}

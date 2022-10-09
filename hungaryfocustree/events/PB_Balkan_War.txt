@@ -44,7 +44,7 @@ country_event = {		#Test balkan war
         }
 
 		every_country = {
-			set_temp_variable = { super_id = 84 }
+			set_temp_variable = { super_id = 83 }
 			PB_Fire_Super_Event = yes
 		    }
 			
@@ -890,12 +890,16 @@ country_event = {		#Great Balkan War - Serbian Victory against Hungary
 			transfer_state = 764
 			transfer_state = 82
 			transfer_state = 83
+			transfer_state = 84 			
 			transfer_state = 76
+			transfer_state = 77			
 
 			add_state_core = 764
 			add_state_core = 82
+			add_state_core = 84
 			add_state_core = 83
 			add_state_core = 76
+			add_state_core = 77			
 		}		
 
 		add_political_power = 150
@@ -940,7 +944,7 @@ country_event = {		#Great Balkan War Defeat - Hungary - Reactionary Coup
 		name = balkwarpeace.7.a
 
 		ai_chance = {
-			factor = 50
+			factor = 100
 		}
 
 		add_political_power = -200
@@ -957,8 +961,10 @@ country_event = {		#Great Balkan War Defeat - Hungary - Reactionary Coup
 
 		add_popularity = {
 			ideology = ds
-			popularity = 0.2
+			popularity = 0.3
 		}
+		
+		dismantle_faction = yes
 
 		create_country_leader = {
 			name = "Regency Council"
@@ -967,9 +973,32 @@ country_event = {		#Great Balkan War Defeat - Hungary - Reactionary Coup
 			expire = "1965.1.1"
 			ideology = DS_VARIANT_02
 		}
+		
+		70 = {
+			set_demilitarized_zone = yes
+		}
+
+		73 = {
+			set_demilitarized_zone = yes
+		    }
+				 
+		71 = {
+			set_demilitarized_zone = yes
+		    }  					
 
 		set_cosmetic_tag = HUN_Monarchy_Restored
-	}
+		
+       hidden_effect = {
+
+		HUN = {
+			country_event = { id = hungarian.66 days = 1 }
+
+		    add_ideas = {
+			 HUN_guerrilla_arrow_cross_party
+			    }			
+		    }
+   	    }
+    }
 }
 
 country_event = {		#Great Balkan War Defeat - Greece - Athens Revolution

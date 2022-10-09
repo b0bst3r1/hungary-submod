@@ -304,9 +304,75 @@
  
  hungarian.65.t:0 "Teslafication of Zagreb"
  hungarian.65.d:0 "The first thing Tesla does after his return ten years later is to initiate his "teslasification" plan in the city of Zagreb. The plan is to build a wireless electricity system in the city. This will increase the number of jobs and raise the standard of living in Zagreb. The plan requires a large amount of resources."
- hungarian.65.a:0 "Technological marvel" 
+ hungarian.65.a:0 "Technological marvel"
 
- hungarian.1000.t:0 "Hungarian Material Support" ##Doesn't Need Loc
+ hungarian.66.t:0 "Last Breath of Revolution"
+ hungarian.66.d:0 "After the defeat in the Great Balkan War, people lost faith in the revolution. Hungary itself found itself in a very sad situation. The country was devastated by the war. It was clear to everyone that the former revolutionary government could no longer stand.\n\nNeither could the chairman of the party, [get_suicide_event_scripted_loc].\n\nFanatically following revolutionary ideas, [get_suicide_event_scripted_loc] dreamed of building what he saw as an equal society. However, he failed. All the events that happened in Hungary broke his faith. And, one day, when news of an incipient military coup began to reach the chairman, [get_suicide_event_scripted_loc] would write a farewell letter, put a gun to his head, pull the trigger and...\n\nshot"
+ hungarian.66.a:0 "This is the end."
+
+ hungarian.67.t:0 "Slovak Revolt"
+ hungarian.67.d:0 "After the defeat in the Great Balkan War, the Slovak underground organizations for the independence of the country began to act. A propaganda campaign aimed at inciting hatred against the Hungarian people was quickly launched all over Slovakia. At the same time, the Slovak soldiers began to wage an armed struggle against the Hungarian state. Slovakia was declared an independent country, while the Hungarian troops could not oppose them."
+ hungarian.67.a:0 "War is unavoidable"
+ 
+ hungarian.68.t:0 "Chaos in Ruthenia"
+ hungarian.68.d:0 "Militants from the Carpathian Sich organization entered Uzhgorod as a result of the collapse of our country in the Great Balkan War. They looted arms depots and declared their own Ruthenian state."
+ hungarian.68.a:0 "War is unavoidable"
+ 
+ hungarian.69.t:0 "Russian guns in Ruthenia"
+ hungarian.69.d:0 "News has reached us that the Russian Empire is sending its weapons to the secessionist Ruthenian state."
+ hungarian.69.a:0 "Shit."
+ 
+ hungarian.70.t:0 "Massacre in Carpathian Ukraine"
+ hungarian.70.d:0 "After the defeat of the Carpathian Ruthenia state, the Hungarian ultranationalists decided to deal with the enemy in their own way, without consulting operations with the leadership.\n\nThe railroad track between Slovakia and Uzhgorod was blocked with tree trunks. The attack was commanded by Pál Prónay. The nationalists struck around midnight, when the inhabitants were already asleep or tucking into bed. The settlement was shelled with handguns and machine guns. As they advanced inside the settlement, special assault teams set fire to the houses, throwing bottles with flammable liquids and burning embers at them. Grenades were also thrown at some houses.\n\nSome residents died in the fire, those who tried to get out were killed. The nationalists also set fire to the hospital after the patients of Hungarian nationality were discharged from it. The hospital staff of three were killed with axes, while the Ruthenian and Slovak patients died in the fire or, according to another version, were also killed in front of the building.\n\nBy morning, after destroying the structures and taking some of the property of the murdered people, the nationalist units left the scene.\n\nBetween 1,500 and 1,800 people, including police and civilians, were killed in the action. Many were burned alive. About 200 houses were burned."
+ hungarian.70.a:0 "Brutal."
+ 
+ hungarian.71.t:0 "Revenge"
+ hungarian.71.d:0 "After completing punitive operations in Carpathian Ruthenia, the nationalists began in Slovakia. It was known that probably the leader of the Slovak Insurgent Army, Ján Golian, had not left the country and was hiding somewhere in Slovakia. Therefore, the punishers set a goal to find him.\n\nThe fighters terrorized the whole of Slovakia, entering every house in search of victims. And after several days of endless searching, they reached their goal. Ján Golian was in a typical Slovak village. When the nationalists broke into his house, he did not resist in any way, because he knew it was useless.\n\nHe was beaten unconscious and taken to a secret place, where the victim was placed on a horizontally placed grate with his belly down, and hot coals placed underneath. He was then slowly roasted. Next, the victim was slit along the spine, then the ribs were broken outward so that they resembled the wings of an eagle. Then the lungs were pulled out through the incision and hung from the ribs. All the wounds were sprinkled with salt.\n\nAfter hours of torture, Yang Goliang died. His body was burned and his ashes scattered."
+ hungarian.71.a:0 "Fair punishment."
+ 
+ hungarian.72.t:0 "March on Budapest"
+ hungarian.72.d:0 "After several rallies in Slovakia and northern Hungary, it became clear that a large part of the population supported Szalasi and his statements became more and more open. So at a rally in Pressburg he said: "Our party program is simple: we want to rule Hungary.\n\nMeanwhile, after the conquests of Slovakia and Ruthenia, the Nationalist-led units gradually occupied towns and key positions in northern Hungary. In some towns the Nationalist units met resistance from the army, but for the most part the takeover was bloodless.\n\nA message from the Arrow Cross Party to the people of Hungary about the start of the "March on Budapest" was published in Pressburg. Columns of nationalists (numbering from 10 to 30 thousand people) begin to move towards the capital. The nationalists begin to arm themselves, some rifles are seized from warehouses, some are voluntarily handed over to the radicals by local army units."
+ hungarian.72.a:0 "Bring additional forces into Budapest"
+ hungarian.72.b:0 "it's none of our business."
+
+ hungarian.73.t:0 "Radicals are taking  power!"
+ hungarian.73.d:0 "The Cross Arrow Party radicals have gained too much influence across our country. The nationalists actually control most of our regions and the Hungarian army can do nothing to oppose them. The pressure on the government is so great that there is nothing more we can do. The government is resigning."
+ hungarian.73.a:0 "A New Era"
+ 
+ hungarian.74.t:0 "Report from Security Service"
+ hungarian.74.d:0 "Report from the Security Service of the Hungarian Kingdom:\n\"Hungarian nationalists carry out a brutal massacre of the defenseless Ruthenian population, setting the task of the complete annihilation of the Poles in Transcarpathia. In the Técsői district of Transcarpathia, a hundred nationalists were ordered to exterminate the Ruthenians and burn down all their settlements within a year and a half. The population was exterminated and the settlements burned down: Bustyaháza, Aknaszlatina, Taracköz, Bedőháza and others." "In the district centers the nationalists carry out mass terror against the Ruthenian population and villages, and it should be noted that the nationalists do not shoot the Poles, but cut them up with knives and chop them with axes regardless of age and sex.""
+ hungarian.74.a:0 "That's Awful."
+ 
+ hungarian.75.t:0 "Interrogation"
+ hungarian.75.d:0 "The Hungarian Pressburg police managed to capture the high-ranking far-right politician Gyula Gömbös. At first he did not crack, but when torture began, Gyula could not help himself. "In the Stužica forest I met with Pál Prónay, the chairman of the Partisan Movement stakes. Prónay gave me an order to exterminate all the Ruthenians of the Transcarpathian Region. My personal beliefs prevented me from carrying out the order, but I had no right not to."\n\nGyula Gömbös also confessed the location of several movement headquarters in Slovakia and Transcarpathia. This information will inevitably help us."
+ hungarian.75.a:0 "Would be useful"
+ 
+ hungarian.76.t:0 "Szalasi Trial"
+ hungarian.76.d:0 "On the instructions of Gyula Gömbös, Ferenc Szalasi and other party figures were arrested in a secret residence.\n\nSzálasi was hanged in Budapest, along with Gábor Vajna and Károly Beregfy, and the party ideologist József Gera. The hanging was conducted in the Austrian pole method. A large post had a rope attached to a hook at the top. Szálasi was marched up steps, placed with his back to the post, his legs and arms were tied, the noose placed around his neck, the rope tightened, and the steps were removed. With the post only leaving a couple feet between Szálasi and the ground it is likely that he died slowly due to strangulation rather than being instantaneously rendered unconscious and dying shortly after as would happen when utilizing the standard drop. This would also explain why his arms and legs were bound as to prevent struggle during the process."
+ hungarian.76.a:0 "That's it"
+ 
+ hungarian.77.t:0 "Operation Művelet"
+ hungarian.77.d:0 "After receiving information about the location of Pál Prónay, the Hungarian Special Forces began to prepare an operation to storm the base, training on structures made to resemble their home. Before the operation began, [From.GetLeader] held a meeting with the head of the Security Service and other national security advisors in the diplomatic cabinet and gave the final order for the attack.\n\nIt was known that the house would be heavily defended by nationalist units, so 120 Hungarian troops and even limited aviation were involved in the operation.\n\nThe operation began with the failure of the Hungarian troops. A bomber that flew out to help the advancing ground troops was hit by a Nationalist gunman operating from the roof of the building. The troops then broke through to the building itself, where clashes broke out in the guest hall. The Nationalists were stubbornly defensive, but somehow the royal troops had an advantage in arms.\n\nPál Prónay himself looked out from the 2nd floor and was shot in the leg by a soldier. He tried to shoot back, and even managed to hit one enemy, but he was defenseless nonetheless. He was shot with a machine gun.\n\nThe body of Prónay and the other Nationalists was taken away by the Hungarian military."
+ hungarian.77.a:0 "He's dead!"
+ 
+ hungarian.78.t:0 "Bela Imredy Trial"
+ hungarian.78.d:0 "Bela Imredy was arrested by the Hungarian Special Forces and was soon put on trial, where he was charged with conspiracy against Hungary and waging terror against the people. The tribunal rejected the argument of Imredy's lawyer that he was merely carrying out the orders of Szalasi and Prónay, and found him guilty of all charges.\n\nBela Imredy was sentenced to death by hanging."
+ hungarian.78.a:0 "A well-deserved punishment!"
+ 
+ hungarian.79.t:0 "The Operation Failed" # Doesn't Need Loc
+ hungarian.79.d:0 " "
+ hungarian.79.a:0 "Shit."
+ 
+ hungarian.80.t:0 "Hungary wants to join the Imperial Powers" # Doesn't Need Loc
+ hungarian.80.d:0 " "
+ hungarian.80.a:0 "Of course!"
+ hungarian.80.b:0 "No."
+ 
+ hungarian.81.t:0 "Britain refuses!" # Doesn't Need Loc
+ hungarian.81.d:0 " "
+ hungarian.81.a:0 "Fuck!"
+ 
+ hungarian.1000.t:0 "Hungarian Material Support" # Doesn't Need Loc
  hungarian.1000.d:0 ""
  hungarian.1000.a:0 "Excellent!"  
  
@@ -411,6 +477,13 @@
  
  hungary.25.t:0 "NIKOLA TESLA BACK IS DEAD"
  hungary.25.d:0 "Today the world was shaken by resonant news. Nikola Tesla was blown up in his car on the outskirts of Lviv by a Polish nationalist. No one knows what the famous scientist is doing in Poland, but nevertheless, everyone is stunned by the news. According to the first reports of the investigation, he was planning to meet Hungarian scientist Leó Spitz there. All the developed nations of the world are in mourning, with the exception of the member states of the Pact of the Revanchists."
- hungary.25.a:0 "My god." 
+ hungary.25.a:0 "My god."
 
+ hungary.26.t:0 "HABSBURG RESTORATION IN HUNGARY"
+ hungary.26.d:0 "Germany's influence in Hungary has reached a maximum. German agents have overwhelmed the state, while German industrialists control a large part of the country's economy. All this has led to obvious results. The pressure on the Hungarian led to its overthrow. It was replaced by a pro-German government, which initiated a Habsburg restructuring of the country."
+ hungary.26.a:0 "Germans in Hungary again."
  
+ hungary.27.t:0 "ROMANOV CORONATION IN HUNGARY"
+ hungary.27.d:0 "The influence of the Russian Empire in Hungary had reached a maximum. Russian agents have flooded the state, while Russian industrialists control a large part of the country's economy. All this has had obvious results. The pressure on the Hungarian led to its overthrow. In its place was installed a pro-German government, which initiated the coronation of Kirill Vladimirovich Romanov."
+ hungary.27.a:0 "Interesting times we live in." 
+

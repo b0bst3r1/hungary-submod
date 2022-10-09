@@ -248,6 +248,46 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_report_event_teslafication_of_zagreb"
 		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_teslafication_of_zagreb.dds"
-	}		
+	}
+
+		spriteType = {
+		name = "GFX_report_event_karl_von_habsburg"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_karl_von_habsburg.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_kirill_romanov"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_kirill_romanov.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_generic_event_pistol"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_generic_event_pistol.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_slovak_poster"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_slovak_poster.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_ruthenia_poster"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_ruthenia_poster.dds"
+	}
+
+		spriteType = {
+		name = "GFX_generic_event_hungarian_nationalists"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/generic_event_hungarian_nationalists.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_gombos_Gyula"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_gombos_Gyula.dds"
+	}
+
+		spriteType = {
+		name = "GFX_report_event_szalasi"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_szalasi.dds"
+	}	
 }	
 	

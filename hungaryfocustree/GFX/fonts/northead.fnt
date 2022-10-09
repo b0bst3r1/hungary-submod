@@ -1,0 +1,5 @@
+info face="Northead" size=62 bold=1 italic=0 charset="" unicode=1 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1 outline=0
+common lineHeight=62 base=54 scaleW=256 scaleH=256 pages=1 packed=1 alphaChnl=0 redChnl=3 greenChnl=3 blueChnl=3
+page id=0 file="northead_0.dds"
+chars count=1
+char id=0    x=0     y=0     width=1     height=1     xoffset=0     yoffset=0     xadvance=0     page=0  chnl=1 

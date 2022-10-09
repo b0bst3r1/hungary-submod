@@ -4,4 +4,14 @@ SpriteType = {
 	name = "GFX_HUN_PartyUnity_icon"
 	texturefile = "gfx/interface/HUN_Party_Unity.dds"
 }
+
+SpriteType = {
+	name = "GFX_HUN_Hate_icon"
+	texturefile = "gfx/interface/HUN_Hate.dds"
+}
+
+SpriteType = {
+	name = "GFX_HUN_Militarism_icon"
+	texturefile = "gfx/interface/HUN_Militarism.dds"
+}
 }

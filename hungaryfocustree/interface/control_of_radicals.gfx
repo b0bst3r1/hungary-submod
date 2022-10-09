@@ -1,0 +1,72 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_cor_open_button"
+		textureFile = "gfx/interface/control_of_radicals/cor_open_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_just_black_background_lol"
+		textureFile = "gfx/interface/control_of_radicals/just_black_background_lol.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cor_leader_is_dead"
+		textureFile = "gfx/interface/control_of_radicals/cor_leader_is_dead.dds"
+	}	
+	
+    # Kingdom 
+
+
+	spriteType = {
+		name = "GFX_hungary_kingdom"
+		textureFile = "gfx/interface/control_of_radicals/hungary_kingdom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ruthenia_kingdom"
+		textureFile = "gfx/interface/control_of_radicals/ruthenia_kingdom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_slovakia_kingdom"
+		textureFile = "gfx/interface/control_of_radicals/slovakia_kingdom.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_budapest_kingdom"
+		textureFile = "gfx/interface/control_of_radicals/budapest_kingdom.dds"
+	}	
+
+    # Radical 
+  
+	spriteType = {
+		name = "GFX_slovakia_radical"
+		textureFile = "gfx/interface/control_of_radicals/slovakia_radical.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ruthenia_radical"
+		textureFile = "gfx/interface/control_of_radicals/ruthenia_radical.dds"
+	}
+
+	spriteType = {
+		name = "GFX_hungary_radical"
+		textureFile = "gfx/interface/control_of_radicals/hungary_radical.dds"
+	}
+
+	spriteType = {
+		name = "GFX_budapest_radical"
+		textureFile = "gfx/interface/control_of_radicals/budapest_radical.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cor_outline"
+		textureFile = "gfx/interface/control_of_radicals/cor_outline.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cor_close_button"
+		textureFile = "gfx/interface/control_of_radicals/cor_close_button.dds"
+	}	
+}

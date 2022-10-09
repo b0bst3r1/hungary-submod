@@ -1,0 +1,40 @@
+﻿division_template = {
+	name = "Infantry Division"		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+
+	}
+}
+
+
+units = {
+	######## LAND OOB ########
+	division = {
+		name = "1st infantry division"
+		location = 11691
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "2nd infantry division"
+		location = 3548
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "3rd infantry division"
+		location = 6571
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+}
