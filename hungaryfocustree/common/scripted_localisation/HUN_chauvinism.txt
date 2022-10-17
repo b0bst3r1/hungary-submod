@@ -1,0 +1,34 @@
+defined_text = { 
+    name = get_HUN_chauvinism_Loc
+    
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Chauvinism > 0.74 }
+                check_variable = { HUN_Chauvinism = 0.74 }
+            }
+        }
+        localization_key = "HUN_High_Chauvinism"
+    }
+    text = { 
+        trigger = {
+            AND = {
+                check_variable = { HUN_Chauvinism < 0.74 }
+                check_variable = { HUN_Chauvinism > 0.49 }
+            }
+        }
+        localization_key = "HUN_Medium_Chauvinism"
+    }
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Chauvinism < 0.49 }
+                check_variable = { HUN_Chauvinism = 0.49 }
+            }
+        }
+        localization_key = "HUN_Low_Chauvinism"
+    }
+
+    
+}
+

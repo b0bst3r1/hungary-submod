@@ -167,16 +167,10 @@ add_ideas = {
     PB_Market_Underperformance
     PB_Great_War_Military
     PB_Fully_Westernized
-}
-    		
-		
-		
-		ai_chance = {
-			factor = 100
-		 }
-	    }
-	   }
+                }
+    	   }
 	  }
+}
 	  
 	country_event = {
 	id = greece.2
@@ -265,13 +259,7 @@ add_ideas = {
     PB_Significant_Illiteracy
     PB_Market_Underperformance
     PB_Fully_Westernized
-}
-    		
-		
-		
-		ai_chance = {
-			factor = 100
-		 }
+          }
 	    }
 	   }
 	  }	  
@@ -371,14 +359,12 @@ add_ideas = {
     PB_Middling_Consumer_Confidence
     PB_Semi_Modern_Military
     PB_Fully_Westernized
+            }
+	     }
+      }
+   }
 }
 
-		ai_chance = {
-			factor = 100
-		  }
-	   }
-    }
- }
 
 	country_event = { #Treaty with Bulgaria
 	id = greece.4

@@ -6,6 +6,16 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_HUN_monarchy_without_monarch"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_monarchy_without_monarch.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_HUN_Legacy_Of_Revolution"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_Legacy_Of_Revolution.dds"
+	}	
+	
+	spriteType = {
 		name = "GFX_idea_HUN_balkan_chaos"
 		texturefile = "gfx/interface/ideas/Hungary/HUN_balkan_chaos.dds"
 	}
@@ -278,5 +288,15 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_HUN_guerrilla_arrow_cross"
 		texturefile = "gfx/interface/ideas/Hungary/guerrilla_arrow_cross_party.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HUN_Vengeance"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_Vengeance.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_PB_HUN_MOVE"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_MOVE.dds"
 	}	
 }

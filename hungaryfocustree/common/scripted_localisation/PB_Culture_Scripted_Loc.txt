@@ -5,56 +5,56 @@ defined_text = {
 	
 	text = { 
         trigger = {
-            check_variable = { culture_id = 442 }
+            check_variable = { culture_id = 500 }
         }
         localization_key = "PB_Culture_wallachia_tt"
     }
 
 	text = { 
         trigger = {
-            check_variable = { culture_id = 443 }
+            check_variable = { culture_id = 501 }
         }
         localization_key = "PB_Culture_transylvania_tt"
     }
 
 	text = { 
         trigger = {
-            check_variable = { culture_id = 444 }
+            check_variable = { culture_id = 502 }
         }
         localization_key = "PB_Culture_SerboCroatian_tt"
     }
 
 	text = { 
         trigger = {
-            check_variable = { culture_id = 445 }
+            check_variable = { culture_id = 503 }
         }
         localization_key = "PB_Culture_GrekoTurkish_tt"
     }
 
     text = { 
         trigger = {
-            check_variable = { culture_id = 446 }
+            check_variable = { culture_id = 504 }
         }
         localization_key = "PB_Culture_Danubian_tt"
 	}
 	
     text = { 
         trigger = {
-            check_variable = { culture_id = 447 }
+            check_variable = { culture_id = 505 }
         }
         localization_key = "PB_Culture_HungarianSlovakian_tt"
 	}
 
     text = { 
         trigger = {
-            check_variable = { culture_id = 448 }
+            check_variable = { culture_id = 506 }
         }
         localization_key = "PB_Culture_AustroHungarian_tt"
 	}
 
     text = { 
         trigger = {
-            check_variable = { culture_id = 449 }
+            check_variable = { culture_id = 507 }
         }
         localization_key = "PB_Culture_Jewish_tt"
 	}	

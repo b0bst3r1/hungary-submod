@@ -296,7 +296,7 @@
  
  hungarian.63.t:0 "A Meeting in Lwow"
  hungarian.63.d:0 "When Leó Spitz arrived at the house Tesla met him. He was alone. Nicola looked unkempt, which is basically clear from his way of life. "So, I propose we begin our conversation." Nikola ushered Leó into his office. "Have a seat."\n\nLeó was very nervous and uncomfortable. Tesla noticed this and decided to continue the dialogue himself.\n\n"They...betrayed me... Despite my efforts, they didn't care. They used my weapons against people, and it was my fault. I created it." Tesla began to shake his head rapidly, apparently remembering the emotions he felt after each news of the use of his weapons in war. Spitz was very surprised by his words, but after a few seconds of silence, he tried to change the subject and asked: "Why did you choose... this place?" And Nicola answered: "Privacy. No one's gonna come here."\n\n"So. About my return to Croatia and resuming my scientific work. I've been thinking about it for a long time, but for many reasons I kept refusing and refusing to go over it..." He was silent for a few seconds.\n\nLeo, believe me, I've been followed for a long time and quite possibly now, too. I'd like to get rid of it, but I'm afraid it won't work. Spitz hesitated, because he was sure that this decided the fate of at least his career, and at most the whole of Hungary. "The Hungarian agency can secure your relocation to Croatia. All we need is your consent." He wasn't really sure, but in his heart he hoped it would all work out.\n\n"Really? Hmm... I agree.""
- hungarian.63.a:0 "The future comes, whether they like it or not"
+ hungarian.63.a:0 "The future comes, whether they like it or not."
  
  hungarian.64.t:0 "Tesla is killed"
  hungarian.64.d:0 "Leó Spitz was on his way to the rendezvous point when word began to spread throughout the city. Nikola Tesla had been blown up in his car on the outskirts of Lwow by a Polish nationalist. No one in the country understood what the famous scientist was doing in Poland, but nonetheless, everyone was dumbfounded by the news. Most of all, perhaps, Leó, who hoped to lure Nikola to his side, as well as simply to communicate with such a great scientist.\n\nAfter the news of Tesla's death, Spitz immediately gave orders to turn the wagon around and head back to the Hungarian border. He was utterly shocked by this and did not know what to do."
@@ -304,7 +304,7 @@
  
  hungarian.65.t:0 "Teslafication of Zagreb"
  hungarian.65.d:0 "The first thing Tesla does after his return ten years later is to initiate his "teslasification" plan in the city of Zagreb. The plan is to build a wireless electricity system in the city. This will increase the number of jobs and raise the standard of living in Zagreb. The plan requires a large amount of resources."
- hungarian.65.a:0 "Technological marvel"
+ hungarian.65.a:0 "Technological marvel."
 
  hungarian.66.t:0 "Last Breath of Revolution"
  hungarian.66.d:0 "After the defeat in the Great Balkan War, people lost faith in the revolution. Hungary itself found itself in a very sad situation. The country was devastated by the war. It was clear to everyone that the former revolutionary government could no longer stand.\n\nNeither could the chairman of the party, [get_suicide_event_scripted_loc].\n\nFanatically following revolutionary ideas, [get_suicide_event_scripted_loc] dreamed of building what he saw as an equal society. However, he failed. All the events that happened in Hungary broke his faith. And, one day, when news of an incipient military coup began to reach the chairman, [get_suicide_event_scripted_loc] would write a farewell letter, put a gun to his head, pull the trigger and...\n\nshot"
@@ -312,11 +312,11 @@
 
  hungarian.67.t:0 "Slovak Revolt"
  hungarian.67.d:0 "After the defeat in the Great Balkan War, the Slovak underground organizations for the independence of the country began to act. A propaganda campaign aimed at inciting hatred against the Hungarian people was quickly launched all over Slovakia. At the same time, the Slovak soldiers began to wage an armed struggle against the Hungarian state. Slovakia was declared an independent country, while the Hungarian troops could not oppose them."
- hungarian.67.a:0 "War is unavoidable"
+ hungarian.67.a:0 "War is unavoidable."
  
  hungarian.68.t:0 "Chaos in Ruthenia"
  hungarian.68.d:0 "Militants from the Carpathian Sich organization entered Uzhgorod as a result of the collapse of our country in the Great Balkan War. They looted arms depots and declared their own Ruthenian state."
- hungarian.68.a:0 "War is unavoidable"
+ hungarian.68.a:0 "War is unavoidable."
  
  hungarian.69.t:0 "Russian guns in Ruthenia"
  hungarian.69.d:0 "News has reached us that the Russian Empire is sending its weapons to the secessionist Ruthenian state."
@@ -332,12 +332,12 @@
  
  hungarian.72.t:0 "March on Budapest"
  hungarian.72.d:0 "After several rallies in Slovakia and northern Hungary, it became clear that a large part of the population supported Szalasi and his statements became more and more open. So at a rally in Pressburg he said: "Our party program is simple: we want to rule Hungary.\n\nMeanwhile, after the conquests of Slovakia and Ruthenia, the Nationalist-led units gradually occupied towns and key positions in northern Hungary. In some towns the Nationalist units met resistance from the army, but for the most part the takeover was bloodless.\n\nA message from the Arrow Cross Party to the people of Hungary about the start of the "March on Budapest" was published in Pressburg. Columns of nationalists (numbering from 10 to 30 thousand people) begin to move towards the capital. The nationalists begin to arm themselves, some rifles are seized from warehouses, some are voluntarily handed over to the radicals by local army units."
- hungarian.72.a:0 "Bring additional forces into Budapest"
+ hungarian.72.a:0 "Bring additional forces into Budapest."
  hungarian.72.b:0 "it's none of our business."
 
  hungarian.73.t:0 "Radicals are taking  power!"
  hungarian.73.d:0 "The Cross Arrow Party radicals have gained too much influence across our country. The nationalists actually control most of our regions and the Hungarian army can do nothing to oppose them. The pressure on the government is so great that there is nothing more we can do. The government is resigning."
- hungarian.73.a:0 "A New Era"
+ hungarian.73.a:0 "A New Era."
  
  hungarian.74.t:0 "Report from Security Service"
  hungarian.74.d:0 "Report from the Security Service of the Hungarian Kingdom:\n\"Hungarian nationalists carry out a brutal massacre of the defenseless Ruthenian population, setting the task of the complete annihilation of the Poles in Transcarpathia. In the Técsői district of Transcarpathia, a hundred nationalists were ordered to exterminate the Ruthenians and burn down all their settlements within a year and a half. The population was exterminated and the settlements burned down: Bustyaháza, Aknaszlatina, Taracköz, Bedőháza and others." "In the district centers the nationalists carry out mass terror against the Ruthenian population and villages, and it should be noted that the nationalists do not shoot the Poles, but cut them up with knives and chop them with axes regardless of age and sex.""
@@ -345,11 +345,11 @@
  
  hungarian.75.t:0 "Interrogation"
  hungarian.75.d:0 "The Hungarian Pressburg police managed to capture the high-ranking far-right politician Gyula Gömbös. At first he did not crack, but when torture began, Gyula could not help himself. "In the Stužica forest I met with Pál Prónay, the chairman of the Partisan Movement stakes. Prónay gave me an order to exterminate all the Ruthenians of the Transcarpathian Region. My personal beliefs prevented me from carrying out the order, but I had no right not to."\n\nGyula Gömbös also confessed the location of several movement headquarters in Slovakia and Transcarpathia. This information will inevitably help us."
- hungarian.75.a:0 "Would be useful"
+ hungarian.75.a:0 "Would be useful."
  
  hungarian.76.t:0 "Szalasi Trial"
  hungarian.76.d:0 "On the instructions of Gyula Gömbös, Ferenc Szalasi and other party figures were arrested in a secret residence.\n\nSzálasi was hanged in Budapest, along with Gábor Vajna and Károly Beregfy, and the party ideologist József Gera. The hanging was conducted in the Austrian pole method. A large post had a rope attached to a hook at the top. Szálasi was marched up steps, placed with his back to the post, his legs and arms were tied, the noose placed around his neck, the rope tightened, and the steps were removed. With the post only leaving a couple feet between Szálasi and the ground it is likely that he died slowly due to strangulation rather than being instantaneously rendered unconscious and dying shortly after as would happen when utilizing the standard drop. This would also explain why his arms and legs were bound as to prevent struggle during the process."
- hungarian.76.a:0 "That's it"
+ hungarian.76.a:0 "That's it."
  
  hungarian.77.t:0 "Operation Művelet"
  hungarian.77.d:0 "After receiving information about the location of Pál Prónay, the Hungarian Special Forces began to prepare an operation to storm the base, training on structures made to resemble their home. Before the operation began, [From.GetLeader] held a meeting with the head of the Security Service and other national security advisors in the diplomatic cabinet and gave the final order for the attack.\n\nIt was known that the house would be heavily defended by nationalist units, so 120 Hungarian troops and even limited aviation were involved in the operation.\n\nThe operation began with the failure of the Hungarian troops. A bomber that flew out to help the advancing ground troops was hit by a Nationalist gunman operating from the roof of the building. The troops then broke through to the building itself, where clashes broke out in the guest hall. The Nationalists were stubbornly defensive, but somehow the royal troops had an advantage in arms.\n\nPál Prónay himself looked out from the 2nd floor and was shot in the leg by a soldier. He tried to shoot back, and even managed to hit one enemy, but he was defenseless nonetheless. He was shot with a machine gun.\n\nThe body of Prónay and the other Nationalists was taken away by the Hungarian military."
@@ -372,9 +372,26 @@
  hungarian.81.d:0 " "
  hungarian.81.a:0 "Fuck!"
  
+ hungarian.82.t:0 "Horthy in Budapest"
+ hungarian.82.d:0 "Today Miklós Horthy entered the city of Budapest on a white horse and announced to the crowd that he forgave the "sinful capital" that desecrated the homeland. "By the illegal Belgrade Treaty, Hungary lost vast territories that had previously belonged to her for several centuries... God, unite Hungary!"\n\nThen Horthy said that Hungary would soon regain its former glory. The enemies of the fatherland would be defeated and punished. "For fatherland, property and God!"\n\nThe crowd applauded.\n\nHorthy left the square.\n\nWhen Miklós Horthy returned home after his speech, he began to sign patriotic decrees in a state of euphoria. The first thing he did was to forbid the Hungarian flag to be planted on flagpoles until Hungary was reunited with its lost lands. Further, patriotic prayers were introduced in schools before classes began, and pictures of the regent were hung in every classroom."
+ hungarian.82.a:0 "God, unite Hungary!"
+ 
+ hungarian.83.t:0 "A Night of Vengeance"
+ hungarian.83.d:0 "The day before the incident there was an article in the newspaper Népszava:\n\n"Hundreds of thousands of foreigners control whole sectors of the Hungarian economy, enjoy the fruits of Hungarian labor, while their countrymen in other countries call for war against Hungary and the continuation of its dismemberment. We have drawn the necessary conclusions. The Hungarian people will not tolerate this."\n\nThe next day a decree signed by the national leader [From.GetLeader] came out, suspending all other Jewish, Gypsy, Wallachian, German and Serbian cultural and social activities and stopping the publication of their newspapers and magazines, including those in Hungarian.\n\nOn the evening of the same day, the Hungarian Order Police took action. Ethnic cleansing began in all cities of the country, but mostly in Budapest. Foreign peoples from countries that had divided Hungary, as well as Jews, came under attack.\n\nAt the end of the night, more than 80,000 people were arrested, while more than 2,000 were killed. Four synagogues in Budapest were burned, as well as several Romanian Orthodox churches."
+ hungarian.83.a:0 "We didn't lie."
+ 
+ hungarian.84.t:0 "A day at the Regency Council"
+ hungarian.84.d:0 "Following the defeat of revolutionary Hungary in the Great Balkan War, a military coup took place in the country, after which the Kingdom of Hungary was restored. The Hungarian National Assembly proclaimed a council of regency until a king could be chosen.\n\nThere were two candidates for the position of monarch. The first, Karl Von Habsburg, supported from Germany. But the National Assembly resolutely rejected his candidacy, as it might have aroused resentment from Russia, Serbia and the United Danubian Duchies and caused a new war against Hungary. The second candidate was János Esterházy from a famous noble house with a long history. He positions himself as a more neutral ruler with moderate nationalist views.\n\nBut there were those who could not tolerate these two figures. A large part of the army suggested that the Board of Regents be stopped until a candidate truly worthy of the Hungarian throne could be found. And for that time it is proposed to appoint the former General of the Hungarian Army, Miklós Horthy."
+ hungarian.84.a:0 "The army initiates the regency of Horthy."
+ hungarian.84.b:0 "The Regency Council elects János Esterházy."
+ 
  hungarian.1000.t:0 "Hungarian Material Support" # Doesn't Need Loc
  hungarian.1000.d:0 ""
- hungarian.1000.a:0 "Excellent!"  
+ hungarian.1000.a:0 "Excellent!"
+
+ hungarian.1001.t:0 "Dejacobinization is completed!" # Doesn't Need Loc
+ hungarian.1001.d:0 "" 
+ hungarian.1001.a:0 "Excellent!" 
  
  #News Events
  

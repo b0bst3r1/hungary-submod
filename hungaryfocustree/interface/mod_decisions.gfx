@@ -9,6 +9,11 @@ spriteTypes = {
 		name = "GFX_decision_polit"
 		texturefile = "gfx/interface/decisions/political_dec.dds"
 	}
+	
+    spriteType = {
+		name = "GFX_decision_nationalist_polit"
+		texturefile = "gfx/interface/decisions/nationalist_political_dec.dds"
+	}	
 
     spriteType = {
 		name = "GFX_decision_war_horizon"
@@ -38,5 +43,10 @@ spriteTypes = {
     spriteType = {
 		name = "GFX_decision_category_industrialisation"
 		texturefile = "gfx/interface/decisions/industrialisation_dec.dds"
+	}
+
+    spriteType = {
+		name = "GFX_decision_category_Dejacobinization"
+		texturefile = "gfx/interface/decisions/Dejacobinization_decision_category.dds"
 	}	
 }

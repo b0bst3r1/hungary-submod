@@ -65,6 +65,8 @@ country_event = {
 	picture = GFX_report_PB_Soldiers_Riot	
 	fire_only_once = yes
 	
+	is_triggered_only = yes	
+	
 	option = {
 		name = bulgar.2.a
 

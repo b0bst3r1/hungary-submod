@@ -1,0 +1,30 @@
+guiTypes = {
+
+	containerWindowType = { 
+		name = "chauvinism_container"
+		position = { x = 1120 y = 4 }
+		iconType ={
+			name ="chauvinism_bg"
+			spriteType = "GFX_generic_box_96"
+			position = { x= -12 y=0 }
+		}
+		iconType = {
+			name ="chauvinism_container_icon"
+			spriteType = "GFX_HUN_chauvinism_icon"
+			position = { x = -8 y = 1 }
+			scale = 0.7
+		}
+		instantTextBoxType = {
+			name ="chauvinism_text"
+			position = { x = 2 y = 4 }
+			font = "hoi_18mbs"
+			text = "[get_HUN_chauvinism_Loc]"
+			format = center
+			maxWidth = 80
+			maxHeight = 27
+			fixedsize = yes
+			pdx_tooltip = "chauvinism_tt"
+			pdx_tooltip_delayed = "chauvinism_tt_delayed" 
+		}
+	}
+}

@@ -411,10 +411,11 @@ HUN_unit_production = {
 		id = artillery
 		value = 3
 	}
+	
 	ai_strategy = {
 		type = equipment_production_min_factories
 		id = fighter
-		value 10
+		value = 10
 	}
 	
 	ai_strategy = {

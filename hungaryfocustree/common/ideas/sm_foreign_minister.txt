@@ -4,7 +4,7 @@ ideas = {
 		
 		law = yes
 
-		# Hungary #
+		# Hungary #		
 		
 		HUN_BelaKun_FM = { 
 						
@@ -114,6 +114,34 @@ ideas = {
 			traits = {
 				PB_jc_trait
 				PB_Demagogue
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		HUN_Miklos_Horthy_jr_FM = { 
+						
+			cost = 150
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = HUN
+			}
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+
+			 picture = HUN_Miklos_Horthy_II_FM
+
+			traits = {
+				PB_ni_trait
+				PB_Administrator	
 			}
 			
 			cancel_if_invalid = no

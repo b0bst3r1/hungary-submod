@@ -44,11 +44,14 @@ country_event = {		#Test balkan war
         }
 
 		every_country = {
-			set_temp_variable = { super_id = 83 }
+			set_temp_variable = { super_id = 86 }
 			PB_Fire_Super_Event = yes
 		    }
 			
-    }
+			155 = {
+		    add_dynamic_modifier = { modifier = Burchard_Belavary_Family_state }
+			}					
+      }
 }
 
 country_event = {		#Test balkan war
@@ -995,7 +998,9 @@ country_event = {		#Great Balkan War Defeat - Hungary - Reactionary Coup
 
 		    add_ideas = {
 			 HUN_guerrilla_arrow_cross_party
-			    }			
+			 HUN_legacy_of_revolution
+			 HUN_Monarchy_Without_Monarch
+			    }				
 		    }
    	    }
     }
@@ -1019,7 +1024,7 @@ country_event = {		#Great Balkan War Defeat - Greece - Athens Revolution
 
 		add_political_power = -200
 
-		add_stability = -0.5
+		add_stability = -0.3
 
 		add_ideas = PB_Parliamentary_Republic
 		add_ideas = PB_Free_Press
@@ -1054,7 +1059,7 @@ country_event = {		#Great Balkan War Defeat - Greece - Athens Revolution
 
 		add_political_power = -200
 
-		add_stability = -0.5
+		add_stability = -0.3
 
 		add_ideas = PB_Military_Government
 		add_ideas = PB_State_Press
@@ -1158,10 +1163,7 @@ country_event = {		# Great Balkan War - Question of Albania
 	desc = balkwarpeace.11.d
 	picture = GFX_report_PB_Generic_War_Event
 
-	trigger = {
-		original_tag = HUN
-		has_global_flag = gbw_albania_lost
-	}
+    is_triggered_only = yes
 
 	option = {
 		name = balkwarpeace.11.a

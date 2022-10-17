@@ -1096,9 +1096,7 @@ set_popularities = {
 		
 		ai_chance = {
 			factor = 100
-		}
-		
-		complete_national_focus = hun_stop_the_separatism	
+		}	
 		
 			HUN = {
              
@@ -1121,7 +1119,7 @@ set_popularities = {
 		71 = {
 			set_demilitarized_zone = yes
 		}		
-    }
+     }
   }
   
   
@@ -1992,11 +1990,8 @@ create_country_leader = {
 	
 	option = {
 		name = hungarian.44.a	
-
-		set_province_name = {
-        id = 701
-        name = Engels
-                            }
+		
+		set_province_name = { id = 701 name = "Engels"}		
 		
 		custom_effect_tooltip = Revolutionary_Zeal_0.04_increase
 		  add_to_variable = {
@@ -2758,19 +2753,25 @@ create_country_leader = {
 		
 			hidden_effect = {
 		     HUN = {
+			 
 		      country_event = {
 		      id = hungarian.71
 		      days = 7
 		     }
 			 
 		      country_event = {
+		      id = hungarian.71
+		      days = 7
+		     }			 
+			 
+		      country_event = {
 		      id = hungarian.74
-		      days = 14
+		      days = 15
 		     }
 
 		      country_event = {
 		      id = hungarian.72
-		      days = 18
+		      days = 21
 		     }			 
           }			
        }		
@@ -2910,7 +2911,11 @@ create_country_leader = {
         PB_State_Press
         PB_No_Voting
         PB_Law_Secret_Police
-            }
+        }
+			
+	   remove_ideas = {
+	     HUN_Monarchy_Without_Monarch
+		   }			
 		}    		
     }	
 }
@@ -2969,17 +2974,12 @@ create_country_leader = {
 			
 			else_if = {
 				limit = {
-					HUN = {
-					has_government = lb
-					}
+				 NOT = {
+				  has_country_flag = hun_szalasi_is_dead_flag
+                  }				  
 				}
 				
 			   kill_country_leader = yes
-			   
-			   set_politics = {
-		       ruling_party = LB
-		       }
-			}
 			
 		create_country_leader = {
 			name = "Ferenc Szalasi"
@@ -2991,6 +2991,7 @@ create_country_leader = {
 		     PB_HUN_Leader_of_Nation
 	        }			
 		}
+	}
 		
 		add_popularity = {
 			ideology = ni
@@ -3009,7 +3010,11 @@ create_country_leader = {
         PB_State_Press
         PB_No_Voting
         PB_Law_Secret_Police
-            }
+        }
+			
+	   remove_ideas = {
+	     HUN_Monarchy_Without_Monarch
+		   }
 		}		  
     }	
 }
@@ -3211,7 +3216,7 @@ create_country_leader = {
 			country_event = { id = hungarian.81 hours = 1 }
 		}		
      }	 
-}
+} 
 
     country_event = { # Britain Refuses
 	id = hungarian.81
@@ -3224,6 +3229,166 @@ create_country_leader = {
 	
 	option = {
 		name = hungarian.81.a	 
+     }	 
+}
+
+    country_event = { # Horthy in Budapest
+	id = hungarian.82
+	title = hungarian.82.t
+	desc = hungarian.82.d
+	picture = GFX_report_event_horthy_in_budapest
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.82.a
+		
+		add_political_power = 100
+		
+		custom_effect_tooltip = radicals_minus_10_budapest		
+
+			add_to_variable = {
+				var = hun_radicalism_in_budapest
+				value = -0.10
+			}
+
+		custom_effect_tooltip = Chauvinism_0.04_increase
+			add_to_variable = {
+				var = HUN_Chauvinism
+				value = 0.04
+		  }			
+     }	 
+}
+
+    country_event = { # Budapest Night
+	id = hungarian.83
+	title = hungarian.83.t
+	desc = hungarian.83.d
+	picture = GFX_generic_event_hungarian_nationalists
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.83.a
+		
+	    custom_effect_tooltip = Hungarian_Budapest_tt
+		967 = { set_variable = { culture_id = 55 } }
+
+		967 = {
+		add_manpower = -60000
+
+        damage_building = {
+        type = infrastructure
+        damage = 2
+            }		
+		}		 
+
+		973 = {
+		add_manpower = -2000
+		
+        damage_building = {
+        type = infrastructure
+        damage = 1
+            }		
+	    }
+
+		155 = {
+		add_manpower = -8000
+		
+        damage_building = {
+        type = infrastructure
+        damage = 1
+            }		
+	    }
+
+		154 = {
+		add_manpower = -6000
+
+        damage_building = {
+        type = infrastructure
+        damage = 1
+            }		
+	    }
+
+		71 = {
+		add_manpower = -6000
+
+        damage_building = {
+        type = infrastructure
+        damage = 1
+            }		
+	    }		
+
+		custom_effect_tooltip = Chauvinism_0.06_increase
+			add_to_variable = {
+				var = HUN_Chauvinism
+				value = 0.06
+		  }			
+     }	 
+}
+
+    country_event = { # A day in Regency Council
+	id = hungarian.84
+	title = hungarian.84.t
+	desc = hungarian.84.d
+	picture = GFX_report_PB_Generic_Political_Event
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungarian.84.a
+		
+	   set_cosmetic_tag = HUN_Horthy
+		
+       set_politics = {
+	   ruling_party = ds
+       }
+	   
+	   hidden_effect = {
+	   kill_country_leader = yes
+	   
+		add_popularity = {
+		 ideology = ds	
+		 popularity = 0.2
+		    }
+       remove_ideas = HUN_Collapsing_Government			
+       }
+	   
+	   create_country_leader = {
+		name = "Miklos Horthy"
+		desc = ""
+		picture = "gfx/leaders/HUN/Portrait_Miklos_Horthy.dds"
+		expire = "1965.1.1"
+		ideology = DS_VARIANT_01
+		}       		  					
+     }
+
+	option = {
+		name = hungarian.84.b
+		
+       set_politics = {
+	   ruling_party = cn
+       }
+	   
+	   hidden_effect = {
+	   kill_country_leader = yes
+	   
+		add_popularity = {
+		 ideology = cn	
+		 popularity = 0.2
+		    }	   
+       }
+	   
+	   create_country_leader = {
+		name = "Janos Esterhazy"
+		desc = ""
+		picture = "gfx/leaders/HUN/Portrait_Esterhazy.dds"
+		expire = "1965.1.1"
+		ideology = CN_VARIANT_01
+		 }		
      }	 
 }	
 	  
@@ -3245,5 +3410,23 @@ country_event = { #Hungarian Support
 		}		
 
 		add_political_power = 50
+	}
+}
+
+country_event = { # Dejacobinization over
+	id = hungarian.1001
+	title = hungarian.1001.t
+	desc = hungarian.1001.d
+	picture = GFX_report_event_hun_905
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1001.a
+ 
+    remove_ideas = HUN_legacy_of_revolution
+  
 	}
 }	  

@@ -1,10 +1,1369 @@
+HUN_dejacobinization_dec_category = {
+
+	HUN_Renaming_of_squares_and_streets = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+		}
+
+		days_remove = 100
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		set_country_flag = renaiming_streets_two_flag
+		
+		custom_effect_tooltip = HUN_dejacobinization_progress_0.10_increase
+			add_to_variable = {
+				var = HUN_dejacobinization_progress
+				value = 0.10
+			}
+
+			 add_popularity = {
+			 ideology = jc
+			 popularity = -0.025
+			}			
+		}
+	}
+	
+	HUN_Renaming_of_squares_and_streets2 = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = renaiming_streets_two_flag
+        }
+		
+		days_remove = 100
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		set_country_flag = renaiming_streets_three_flag
+		
+		custom_effect_tooltip = HUN_dejacobinization_progress_0.10_increase
+			add_to_variable = {
+				var = HUN_dejacobinization_progress
+				value = 0.10
+			}
+			 add_popularity = {
+			 ideology = jc
+			 popularity = -0.025
+			}							
+		}
+	}
+
+	HUN_Renaming_of_squares_and_streets3 = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = renaiming_streets_three_flag
+        }
+		
+		days_remove = 100
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_dejacobinization_progress_0.10_increase
+			add_to_variable = {
+				var = HUN_dejacobinization_progress
+				value = 0.10
+			}
+			 add_popularity = {
+			 ideology = jc
+			 popularity = -0.025
+			}							
+		}
+	}	
+	
+	HUN_Dismantling_Revolutionary_symbols = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+		}
+
+		days_remove = 75
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		set_country_flag = HUN_Dismantling_Revolutionary_symbols_flag
+		
+		custom_effect_tooltip = HUN_dejacobinization_progress_0.10_increase
+			add_to_variable = {
+				var = HUN_dejacobinization_progress
+				value = 0.10
+			}
+
+			 add_popularity = {
+			 ideology = jc
+			 popularity = -0.025
+			}			
+		}
+	}
+	
+	HUN_Dismantling_Revolutionary_symbols2 = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = HUN_Dismantling_Revolutionary_symbols_flag
+		}
+
+		days_remove = 75
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_dejacobinization_progress_0.10_increase
+			add_to_variable = {
+				var = HUN_dejacobinization_progress
+				value = 0.10
+			}
+
+			 add_popularity = {
+			 ideology = jc
+			 popularity = -0.025
+			}			
+		}
+	}	
+
+	HUN_Commemoration_of_the_Victims_of_the_Revolution = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+		}
+
+		days_remove = 75
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		set_country_flag = HUN_Commemoration_of_the_Victims_of_the_Revolution_flag
+		
+		custom_effect_tooltip = HUN_dejacobinization_progress_0.10_increase
+			add_to_variable = {
+				var = HUN_dejacobinization_progress
+				value = 0.10
+			}
+
+			 add_popularity = {
+			 ideology = jc
+			 popularity = -0.025
+			}			
+		}
+	}
+	
+	HUN_Commemoration_of_the_Victims_of_the_Revolution2 = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = HUN_Commemoration_of_the_Victims_of_the_Revolution_flag
+		}
+
+		days_remove = 75
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_dejacobinization_progress_0.10_increase
+			add_to_variable = {
+				var = HUN_dejacobinization_progress
+				value = 0.10
+			}
+
+			 add_popularity = {
+			 ideology = jc
+			 popularity = -0.025
+			}			
+		}
+	}	
+
+	HUN_Rename_Bohmvaros_back = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+		has_completed_focus = HUN_Legacy_of_Bohm
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_province_name = { id = 11659 name = "Debrecen"}		
+		
+		custom_effect_tooltip = HUN_dejacobinization_progress_0.05_increase
+			add_to_variable = {
+				var = HUN_dejacobinization_progress
+				value = 0.05
+			}			
+		}
+	}
+	
+	HUN_Rename_Engels_back = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = set_engels_tt
+				has_country_flag = set_engels_flag
+			}		
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_province_name = { id = 701 name = "Engels"}		
+		
+		custom_effect_tooltip = HUN_dejacobinization_progress_0.05_increase
+			add_to_variable = {
+				var = HUN_dejacobinization_progress
+				value = 0.05
+			}			
+		}
+	}
+
+	HUN_Repress_Socialist_Generals = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 20
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_repress_socialist_tt	
+		
+		hidden_effect = {
+          retire_character = HUN_nagy
+		  retire_character = HUN_Karoly
+		  retire_character = HUN_Schon
+		  retire_character = HUN_tibor
+		  retire_character = HUN_farkas_mihaly
+		  retire_character = HUN_Gabor_Peter
+        }		   
+		
+		custom_effect_tooltip = HUN_dejacobinization_progress_0.30_increase
+			add_to_variable = {
+				var = HUN_dejacobinization_progress
+				value = 0.30
+			}			
+		}
+	}
+
+	HUN_Repress_Jacobin_Generals = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 30
+		}
+		
+		fire_only_once = yes
+
+		days_remove = 20
+		
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_repress_jacobin_tt	
+		
+		hidden_effect = {
+          retire_character = HUN_Rakosi
+		  retire_character = HUN_Jozsef_Pogany
+		  retire_character = HUN_Otto_Korvin
+		  retire_character = HUN_Jeno_Landler
+		  retire_character = HUN_arpad_kerekes
+        }		   
+		
+		custom_effect_tooltip = HUN_dejacobinization_progress_0.30_increase
+			add_to_variable = {
+				var = HUN_dejacobinization_progress
+				value = 0.30
+			}			
+		}
+	}	
+}
+
+
+HUN_Nationalist_Domestic_Policy = {
+
+	HUN_increase_militarism = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+		}
+
+		days_remove = 15
+		
+		days_re_enable = 30
+
+		remove_effect = {
+		
+		custom_effect_tooltip = Militarism_0.02_increase
+			add_to_variable = {
+				var = HUN_Militarism_var
+				value = 0.02
+			}					
+		}
+	}
+	
+	HUN_decrease_militarism = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+		}
+
+		days_remove = 15
+		
+		days_re_enable = 30
+
+		remove_effect = {
+		
+		custom_effect_tooltip = Militarism_0.02_decrease
+			add_to_variable = {
+				var = HUN_Militarism_var
+				value = -0.02
+			}			
+			
+		}
+	}	
+
+	HUN_increase_chauvinism = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+		}
+
+		days_remove = 15
+		
+		days_re_enable = 30
+
+		remove_effect = {
+		
+		custom_effect_tooltip = Chauvinism_0.02_increase
+			add_to_variable = {
+				var = HUN_Chauvinism
+				value = 0.02
+			}			
+		}
+	}
+	
+	HUN_decrease_chauvinism = {
+
+		icon = GFX_decision_generic_nationalism
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+		}
+
+		days_remove = 15
+		
+		days_re_enable = 30
+
+		remove_effect = {
+		
+		custom_effect_tooltip = Chauvinism_0.02_decrease
+			add_to_variable = {
+				var = HUN_Chauvinism
+				value = 0.02
+			}			
+		}
+	}
+
+	HUN_Deal_With_Wallachs = {
+
+		icon = GFX_decision_generic_gas_mask
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+	    visible = {
+		has_country_flag = open_genocide_decisions_flag
+        }
+		
+		available = {
+		}
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		967 = {
+		add_manpower = -20000				
+	    }		
+		
+		154 = {
+		add_manpower = -3000				
+	    }		
+		
+		custom_effect_tooltip = Chauvinism_0.02_increase
+			add_to_variable = {
+				var = HUN_Chauvinism
+				value = 0.02
+			}				
+		}
+	}
+
+	HUN_Kill_Jews = {
+
+		icon = GFX_decision_generic_gas_mask
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 973 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_genocide_decisions_flag
+        }		
+
+		available = {
+		}
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		967 = {
+		add_manpower = -25000				
+	    }
+
+		70 = {
+		add_manpower = -5000				
+	    }
+
+		973 = {
+		add_manpower = -10000				
+	    }		
+		
+		custom_effect_tooltip = Chauvinism_0.02_increase
+			add_to_variable = {
+				var = HUN_Chauvinism
+				value = 0.02
+			}				
+		}
+	}
+
+	HUN_Expel_the_Gypsies = {
+
+		icon = GFX_decision_generic_gas_mask
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 967 }		
+     	}		
+
+		available = {
+		}
+		
+	    visible = {
+		has_country_flag = open_genocide_decisions_flag
+        }		
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		967 = {
+		add_manpower = -15000				
+	    }
+
+		154 = {
+		add_manpower = -7000				
+	    }		
+		
+		custom_effect_tooltip = Chauvinism_0.02_increase
+			add_to_variable = {
+				var = HUN_Chauvinism
+				value = 0.02
+			}				
+		}
+	}
+
+	HUN_Crush_the_Serbs = {
+
+		icon = GFX_decision_generic_gas_mask
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 155 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_genocide_decisions_flag
+        }		
+
+		available = {
+		}
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		155 = {
+		add_manpower = -10000				
+	    }		
+		
+		custom_effect_tooltip = Chauvinism_0.02_increase
+			add_to_variable = {
+				var = HUN_Chauvinism
+				value = 0.02
+			}				
+		}
+	}
+
+	HUN_Hungarian_Prekmurje = {
+
+		icon = GFX_decision_generic_gas_mask
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 974 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_genocide_decisions_flag
+        }		
+
+		available = {
+		}
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+	    custom_effect_tooltip = Hungarian_Prekmurje_tt
+		974 = { set_variable = { culture_id = 55 } }		
+		
+		974 = {
+		add_manpower = -20000				
+	    }		
+		
+		custom_effect_tooltip = Chauvinism_0.02_increase
+			add_to_variable = {
+				var = HUN_Chauvinism
+				value = 0.02
+			}				
+		}
+	}
+	
+	HUN_Hungarian_Burgerland = {
+
+		icon = GFX_decision_generic_gas_mask
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 975 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_genocide_decisions_flag
+        }		
+
+		available = {
+		}
+
+		days_remove = 50
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+	    custom_effect_tooltip = Hungarian_Burgenland_tt
+		975 = { set_variable = { culture_id = 55 } }		
+		
+		975 = {
+		add_manpower = -30000				
+	    }		
+		
+		custom_effect_tooltip = Chauvinism_0.02_increase
+			add_to_variable = {
+				var = HUN_Chauvinism
+				value = 0.02
+			}				
+		}
+	}	
+
+	HUN_Slovakia_Banify = {
+
+		icon = influence_cold_war
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 71 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_feudalism_decisions_flag
+		 NOT = {
+		 has_country_flag = set_slovakia_feudal
+		  }		
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_country_flag = set_slovakia_feudal
+		
+			70 = {
+		    add_dynamic_modifier = { modifier = Banify_Family_state }
+			}
+
+			71 = {
+		    add_dynamic_modifier = { modifier = Banify_Family_state }
+			}	
+
+			664 = {
+		    add_dynamic_modifier = { modifier = Banify_Family_state }
+			}				
+		}
+	}
+	
+	HUN_Slovakia_Kohary = {
+
+		icon = influence_cold_war
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 71 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_feudalism_decisions_flag
+		 NOT = {
+		 has_country_flag = set_slovakia_feudal
+		  }		
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_country_flag = set_slovakia_feudal
+		
+			71 = {
+		    add_dynamic_modifier = { modifier = Kohary_Family_state }
+			}
+
+			70 = {
+		    add_dynamic_modifier = { modifier = Kohary_Family_state }
+			}
+
+			664 = {
+		    add_dynamic_modifier = { modifier = Kohary_Family_state }
+			}			
+		}
+	}
+
+	HUN_Slovakia_Burchard = {
+
+		icon = influence_cold_war
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 71 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_feudalism_decisions_flag
+		 NOT = {
+		 has_country_flag = set_slovakia_feudal
+		  }		
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_country_flag = set_slovakia_feudal
+		
+			70 = {
+		    add_dynamic_modifier = { modifier = Burchard_Belavary_Family_state }
+			}
+
+			71 = {
+		    add_dynamic_modifier = { modifier = Burchard_Belavary_Family_state }
+			}
+
+			664 = {
+		    add_dynamic_modifier = { modifier = Burchard_Belavary_Family_state }
+			}			
+		}
+	}	
+
+	HUN_Ruthenia_Banify = {
+
+		icon = influence_cold_war
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 73 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_feudalism_decisions_flag
+		 NOT = {
+		 has_country_flag = set_ruthenia_feudal
+		  }		
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_country_flag = set_ruthenia_feudal
+		
+			73 = {
+		    add_dynamic_modifier = { modifier = Banify_Family_state }
+			}						
+		}
+	}
+	
+	HUN_Ruthenia_Kohary = {
+
+		icon = influence_cold_war
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 73 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_feudalism_decisions_flag
+		 NOT = {
+		 has_country_flag = set_ruthenia_feudal
+		  }		
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_country_flag = set_ruthenia_feudal
+		
+			73 = {
+		    add_dynamic_modifier = { modifier = Kohary_Family_state }
+			}						
+		}
+	}
+
+	HUN_Ruthenia_Burchard = {
+
+		icon = influence_cold_war
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 73 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_feudalism_decisions_flag
+		 NOT = {
+		 has_country_flag = set_ruthenia_feudal
+		  }		
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_country_flag = set_ruthenia_feudal
+		
+			73 = {
+		    add_dynamic_modifier = { modifier = Burchard_Belavary_Family_state }
+			}						
+		}
+	}	
+
+	HUN_Budapest_Banify = {
+
+		icon = influence_cold_war
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 967 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_feudalism_decisions_flag
+		 NOT = {
+		 has_country_flag = set_budapest_feudal
+		  }		
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_country_flag = set_budapest_feudal		
+		
+			967 = {
+		    add_dynamic_modifier = { modifier = Banify_Family_state }
+			}						
+		}
+	}
+	
+	HUN_Budapest_Kohary = {
+
+		icon = influence_cold_war
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 967 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_feudalism_decisions_flag
+		 NOT = {
+		 has_country_flag = set_budapest_feudal
+		  }		
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_country_flag = set_budapest_feudal
+		
+			967 = {
+		    add_dynamic_modifier = { modifier = Kohary_Family_state }
+			}						
+		}
+	}
+
+	HUN_Budapest_Burchard = {
+
+		icon = influence_cold_war
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 967 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_feudalism_decisions_flag
+		 NOT = {
+		 has_country_flag = set_budapest_feudal
+		  }		
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_country_flag = set_budapest_feudal
+		
+			967 = {
+		    add_dynamic_modifier = { modifier = Burchard_Belavary_Family_state }
+			}						
+		}
+	}	
+
+	HUN_Hungary_Banify = {
+
+		icon = influence_cold_war
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 155 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_feudalism_decisions_flag
+		 NOT = {
+		 has_country_flag = set_hungary_feudal
+		  }
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_country_flag = set_hungary_feudal
+		
+			155 = {
+		    add_dynamic_modifier = { modifier = Banify_Family_state }
+			}
+
+			154 = {
+		    add_dynamic_modifier = { modifier = Banify_Family_state }
+			}			
+		}
+	}
+
+	HUN_Hungary_Kohary = {
+
+		icon = influence_cold_war
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 155 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_feudalism_decisions_flag
+		 NOT = {
+		 has_country_flag = set_hungary_feudal
+		  }		
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_country_flag = set_hungary_feudal
+		
+			155 = {
+		    add_dynamic_modifier = { modifier = Kohary_Family_state }
+			}
+
+			154 = {
+		    add_dynamic_modifier = { modifier = Kohary_Family_state }
+			}			
+		}
+	}
+
+	HUN_Hungary_Burchard = {
+
+		icon = influence_cold_war
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 155 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_feudalism_decisions_flag
+		 NOT = {
+		 has_country_flag = set_hungary_feudal
+		  }		
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_country_flag = set_hungary_feudal
+		
+			155 = {
+		    add_dynamic_modifier = { modifier = Burchard_Belavary_Family_state }
+			}
+
+			154 = {
+		    add_dynamic_modifier = { modifier = Burchard_Belavary_Family_state }
+			}			
+		}
+	}
+
+	HUN_Danube_Water_Channel = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 967 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_native_of_magyars_flag		
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 100		
+
+		remove_effect = {
+		
+		967 = {
+		    add_building_construction = {
+		    	type = infrastructure
+		    	level = 5
+		    	instant_build = yes
+		     }
+          }
+
+		45 = {
+		    add_building_construction = {
+		    	type = infrastructure
+		    	level = 3
+		    	instant_build = yes
+		     }
+          }
+
+		154 = {
+		    add_building_construction = {
+		    	type = infrastructure
+		    	level = 3
+		    	instant_build = yes
+		     }
+          }
+
+		973 = {
+		    add_building_construction = {
+		    	type = infrastructure
+		    	level = 6
+		    	instant_build = yes
+		     }
+          }		  
+	   }
+	}
+
+	HUN_Perpetuate_the_Memory_of_Arpad = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 967 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_native_of_magyars_flag		
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 70		
+
+		remove_effect = {
+		
+		custom_effect_tooltip = Militarism_0.02_increase
+			add_to_variable = {
+				var = HUN_Militarism_var
+				value = 0.02
+			}		
+		
+		custom_effect_tooltip = Chauvinism_0.04_increase
+			add_to_variable = {
+				var = HUN_Chauvinism
+				value = 0.04
+			}		
+		
+		add_political_power = 50
+		
+		967 = {
+		    add_building_construction = {
+		    	type = infrastructure
+		    	level = 2
+		    	instant_build = yes
+		     }
+          }			
+	   }
+	}
+
+	HUN_Oil_Repository = {
+
+		icon = GFX_decision_OBW_Fuel_Parts
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+        highlight_states = {
+		highlight_state_targets = { state = 154 }		
+     	}		
+		
+	    visible = {
+		has_country_flag = open_native_of_magyars_flag		
+        }		
+
+		available = {
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 100		
+
+		remove_effect = {		
+		
+			154 = {
+				add_extra_state_shared_building_slots = 5			
+				add_building_construction = {
+					type = fuel_silo
+					level = 5
+					instant_build = yes
+				}
+			}			
+	    }
+	}	
+}
+
 control_of_radicalism_dec = {
 
 	HUN_nationalist_protests = {
 		icon = revolt
 
 		available = {
-			has_country_flag = radical_mechanic_open
 		}
 
 		activation = {   
@@ -49,7 +1408,6 @@ control_of_radicalism_dec = {
 		icon = generic_operation
 
 		available = {
-			has_country_flag = radical_mechanic_open
 		}
 
 	    visible = {
@@ -95,10 +1453,9 @@ control_of_radicalism_dec = {
 		icon = generic_operation
 
 		available = {
-			has_country_flag = radical_mechanic_open
 		}
 
-	    visible = {
+	    visible = {		
         }
 
 		cost = 30
@@ -150,11 +1507,16 @@ control_of_radicalism_dec = {
 		remove_effect = {
 		 
 		  hidden_effect = {
-		  75 = { country_event = { hours = 1 id = hungarian.76 } } # The operation was successful
-		  25 = { country_event = { hours = 1 id = hungarian.79 } } # The operation was unsuccessful
+		  random_list = {		  
+		  75 = { 
+		  country_event = { hours = 1 id = hungarian.76 } # The operation was successful
+		  }
+		  25 = { country_event = { hours = 1 id = hungarian.79 } #The operation was unsuccessful
+		      }
 		   }
 		}
 	}
+}
 
 	HUN_Hunting_for_pronai = {
 		icon = generic_operation
@@ -185,11 +1547,18 @@ control_of_radicalism_dec = {
 		remove_effect = {
 		 
 		  hidden_effect = {
-		  65 = { country_event = { hours = 1 id = hungarian.77 } } # The operation was successful
-		  35 = { country_event = { hours = 1 id = hungarian.79 } } # The operation was unsuccessful
+		  random_list = {		  
+		  65 = { 
+		  country_event = { hours = 1 id = hungarian.77 } # The operation was successful
+		  }
+		  
+		  35 = { 
+		  country_event = { hours = 1 id = hungarian.79 } # The operation was unsuccessful
+		      }
 		   }
 		}
 	}
+}
 
 	HUN_Hunting_for_imredy = {
 		icon = generic_operation
@@ -220,11 +1589,17 @@ control_of_radicalism_dec = {
 		remove_effect = {
 		 
 		  hidden_effect = {
-		  85 = { country_event = { hours = 1 id = hungarian.78 } } # The operation was successful
-		  15 = { country_event = { hours = 1 id = hungarian.79 } } # The operation was unsuccessful
+		  random_list = {		  
+		  85 = { 
+		  country_event = { hours = 1 id = hungarian.78 } # The operation was successful
+		  }
+		  15 = { 
+		  country_event = { hours = 1 id = hungarian.79 } # The operation was unsuccessful
+		      }
 		   }
 		}
-	}	
+	  }	
+   }
 }
 
 HUN_great_balkan_war = {
@@ -629,7 +2004,7 @@ HUN_domestic_policy = {
                
         days_mission_timeout = 150
 
-		complete_effect = {
+		timeout_effect = {
 			109 = {
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
@@ -650,12 +2025,9 @@ HUN_domestic_policy = {
 		add_victory_points = {
 			province = 109
 			value = 20
-		}		
-
-		timeout_effect = {
-			}
-        }
-	}
+		  }		
+       }
+    }
 
 	HUN_collectivize_hungary = {
 
@@ -1046,6 +2418,8 @@ HUN_domestic_policy = {
         days_remove = 7		
 
 		remove_effect = {
+		
+		set_country_flag = set_engels_flag
 		
 		HUN = {
 		country_event = {

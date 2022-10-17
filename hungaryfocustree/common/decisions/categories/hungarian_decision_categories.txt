@@ -1,5 +1,5 @@
 dec_influence_on_hungary = {
-	icon = usa_congress
+	icon = GFX_decision_category_generic_political_actions
 	
 	allowed = {
 		original_tag = GER
@@ -16,7 +16,7 @@ dec_influence_on_hungary = {
 }
 
 control_of_radicalism_dec = {
-	icon = usa_congress
+	icon = GFX_decision_category_generic_political_actions
 	
 	allowed = {
 		original_tag = HUN
@@ -29,6 +29,30 @@ control_of_radicalism_dec = {
     scripted_gui = cor_opening_of_window_gui	
 
 	picture = GFX_decision_cat_PB_espionage_decisions
+
+	priority = 900
+}
+
+HUN_dejacobinization_dec_category = {
+	icon = GFX_decision_category_generic_political_actions
+	
+	allowed = {
+		original_tag = HUN
+	}
+
+	visible = {
+	    NOT = {
+		  OR = {
+			has_government = jc 
+			has_government = ss
+			has_government = lb			
+		  }
+         has_country_flag = dejacobinization_completed_flag		  
+	   }
+	}
+ 
+
+	picture = GFX_decision_category_Dejacobinization
 
 	priority = 900
 }
@@ -134,6 +158,22 @@ HUN_domestic_policy = {
 
 	visible = {
 			has_country_flag = hungarian_starting
+        }
+
+	priority = 700
+}
+
+HUN_Nationalist_Domestic_Policy = {
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = GFX_decision_nationalist_polit
+
+	allowed = {
+		original_tag = HUN
+	}
+
+	visible = {
+			has_completed_focus = hun_counterrevolution
         }
 
 	priority = 700

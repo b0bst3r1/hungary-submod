@@ -6,7 +6,7 @@ SpriteType = {
 }
 
 SpriteType = {
-	name = "GFX_HUN_Hate_icon"
+	name = "GFX_HUN_chauvinism_icon"
 	texturefile = "gfx/interface/HUN_Hate.dds"
 }
 

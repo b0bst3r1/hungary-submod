@@ -20,7 +20,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				montly_population = 0.33
+				monthly_population = 0.33
 				consumer_goods_factor = 0.05
 				production_factory_max_efficiency_factor = -0.05
 			}

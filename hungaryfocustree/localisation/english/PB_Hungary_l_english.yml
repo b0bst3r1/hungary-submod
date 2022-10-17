@@ -40,8 +40,8 @@
   SPEVNT_Habsburg_Hungary_TEXT:0 "You may come as a proud prince today young Habsburg. But you shall travel many more roads in Castile in death than you ever will in life.\n\n§O-C.W. Gortner-§!"
   SPEVNT_Habsburg_Hungary_CLOSETEXT:0 "§OHISTORY REPEATS ITSELF§!"    
   
-  0_autonomous_region:0 "Autonomous Region"
-  0_autonomous_region_desc:0 "The Region has great national autonomy"
+  HUN_Autonomous_state:0 "Autonomous Region"
+  HUN_Autonomous_state_desc:0 "§OThis region has great autonomy§!"
   
   HUN_Danube_PR:0 "Danubian Peasants And Workers Republic" 
 
@@ -113,7 +113,7 @@
   HUN_ESTABLISHPENAL:0 "Establishing of Labor Camps"
   HUN_ESTABLISHPENAL_desc:0 "The Commissarior of Internal Affairs was instructed to organize camps for forced labor for infidels. Enemies of the people shouldn't sit idle."
   HUN_THEFATHER:0 "Father of Hungary"
-  HUN_THEFATHER_desc:0 "Bela Kun is a righteous follower of revolutionary ideas who will undoubtedly lead our proletarian state to greatness and the realization of the idea of world revolution. Hooray!"
+  HUN_THEFATHER_desc:0 "Bela Kun is a righteous follower of revolutionary ideas who will undoubtedly lead our proletarian state to greatness. He continues the work of the great revolutionary Vilmos Böhm, as well as other figures who gave their lives for the cause of the revolution."
   HUN_Foreighnaffairs:0 "The Commissarior of Foreign Affairs"
   HUN_Foreighnaffairs_desc:0 " " 
   HUN_PRIMEmi:0 "Commissarior of Popular Culture"
@@ -149,8 +149,8 @@
   hun_belakun_arrest_desc:0 "The left-wing opposition consists of extreme revolutionaries led by Bela Kun. Since, as we know, the previous government had already reached its peak and eventually failed, these people cannot be allowed to influence our state."
   hun_garbai_arrest:0 "Crush Right Party Opposition"
   hun_garbai_arrest_desc:0 "The right-wing party opposition proposes full market reforms, while retaining some of the political structure of the revolutionary state. The leader of the right-wing opposition is Sandor Garbay. Whether to leave them and use useful elements of it or expel them from the country is a big question."
-  hun_brotherhood_and_unity:0 "Brotherhood and Unity"
-  hun_brotherhood_and_unity_desc:0 "Hungary is made up of a huge number of different ethnic groups ranging from Slovaks and Ruthenians to Wallachians. The only way to keep the country stable is to give equal rights to all peoples and support the idea of Brotherhood and Unity."
+  hun_brotherhood_and_unity:0 "Brotherhood"
+  hun_brotherhood_and_unity_desc:0 "Hungary is made up of a huge number of different ethnic groups ranging from Slovaks and Ruthenians to Wallachians. The only way to keep the country stable is to give equal rights to all peoples and support the idea of Brotherhood."
   hun_socialism_human_face:0 "Socialism with the Human Face"
   hun_socialism_human_face_desc:0 "Socialism with the Human Face launched a programm of liberalizations, which included increasing freedom of the press, freedom of speech, and freedom of movement, with economic emphasis on consumer goods and the possibility of a multiparty government. The programme was based on the view that "Socialism cannot mean only liberation of the working people from the domination of exploiting class relations, but must make more provisions for a fuller life of the personality than any bourgeois democracy. It would limit the power of the secret police and provide for the federalization."
   hun_restructing_of_the_collective_farms:0 "Restructing of the Collective Farms"
@@ -187,7 +187,7 @@
   hun_revise_the_revolutionary_course_desc:0 " " 
   hun_lift_the_ban_opposition:0 "Lift the Opposition Ban"
   hun_lift_the_ban_opposition_desc:0 " "
-  hun_stop_five_year_plans:0 "Stop 5-year Plans"
+  hun_stop_five_year_plans:0 "would rework this shit later"
   hun_stop_five_year_plans_desc:0 " "
   hun_ease_tensions_with_capitalists:0 "Ease Tensions with Capitalists"
   hun_ease_tensions_with_capitalists_desc:0 " "
@@ -264,6 +264,8 @@
  hun_workers_balkan_league:0 "Workers Balkan League"
  hun_workers_balkan_league_desc:0 " "
  
+ ### POST LOST GBW
+ 
  hun_counterrevolution:0 "Counter Revolution"
  hun_counterrevolution_desc:0 "The revolutionary goverment has shown itself to be unable to cope with crisis situations, the country can no longer remain under the leadership of these criminals!"
  hun_regency_council:0 "Regency Council"
@@ -282,7 +284,7 @@
  hun_regent_without_king_desc:0 " "
  hun_arrow_in_power:0 "Felebredek, magyar!"
  hun_arrow_in_power_desc:0 " "
- hun_forgive_sinful_capital:0 "Forgiveness of Sinful Capital"
+ hun_forgive_sinful_capital:0 "Visit to Capital"
  hun_forgive_sinful_capital_desc:0 " "
  hun_begin_covert_remilitarization:0 "Covert Remilitarization"
  hun_begin_covert_remilitarization_desc:0 " "
@@ -296,7 +298,30 @@
  hun_nonhumans_desc:0 " "
  hun_national-jacobinism:0 "A National Renaissance"
  hun_national-jacobinism_desc:0 ""
+ hun_make_them_feel_sorry:0 "Make Them Feel Sorry"
+ hun_make_them_feel_sorry_desc:0 " "
+ hun_clericalization:0 "Clericalization"
+ hun_clericalization_desc:0 " "
+ hun_modern_feudalism:0 "Modern Feudalism"
+ hun_modern_feudalism_desc:0 " "
+ hun_native_of_magyars:0 "Native of Magyars"
+ hun_native_of_magyars_desc:0 " "
+ hun_natural_borders:0 "Magyarország"
+ hun_natural_borders_desc:0 " "
+ hun_nepotism:0 "Nepotism"
+ hun_nepotism_desc:0 " "
+ hun_beauty_of_militarism:0 "Beauty of Militarism"
+ hun_beauty_of_militarism_desc:0 " " 
+ hun_ignite_the_fire_of_revanchshism:0 "Ignite the Fire of Revanchism"
+ hun_ignite_the_fire_of_revanchshism_desc:0 " "
+ hun_eternal_red_menace:0 "Eternal Red Menace"
+ hun_eternal_red_menace_desc:0 " "
+ hun_Blood_and_Honour:0 "Blood and Honour"
+ hun_Blood_and_Honour_desc:0 " " 
+ hun_found_move:0 "Found MOVE"
+ hun_found_move_desc:0 " "
  
+ ### DELETED CONTENT
  
  HUN_VOEVODINA:0 "Vojvodina"
  HUN_VOEVODINA_desc:0 "Vojvodina is a place of active attacks by Serbian terrorists, and therefore autonomy should be given to this region in order to ease ethnic tensions."
@@ -308,6 +333,9 @@
  HUN_MULTINATIONALSTATE_desc:0 "All the minorities of Hungary received their own regional autonomy and now all people of our country live in peace!"
  HUN_AUTONOMYTRANSYLV:0 "Autonomy for Transilvanians"
  HUN_AUTONOMYTRANSYLV_desc:0 "The region of Transylvania has huge own minority, they should have own autonomy."
+ 
+ # POST GBW 
+ 
  hun_victory:0 "Victory!"
  hun_victory_desc:0 "We managed to defeat the Fascist invaders from Serbia and Romania. The enemy is completely defeated! Now a new revolutionary order will be established in the new territory. Hurray!" 
  hun_tribunaloverromanians:0 "Tribunal Over Romanian Generals"
@@ -386,6 +414,8 @@
   hun_europe_last_chance_desc:0 "After the logical defeat of Bulgaria and Greece, the question arises what to do with their territory. A provisional government of the Balkan League of Jacobins was established, but it was obvious that it would not last long. The only proper continuation is integration with the revolutionary homeland."
   hun_heart_of_revolution:0 "Heart of Revolution"
   hun_heart_of_revolution_desc:0 "Hungary is still the only revolutionary power in all of Europe, but nevertheless we have succeeded in greatly expanding our zone of influence by defeating the imperialists. We are the heart of the revolution."
+  hun_budapest_accord:0 "Budapest Accord"
+  hun_budapest_accord_desc:0 "Because the state is made up of so many different peoples. Although the past Hungarian government engaged in a policy of Magyarization, we cannot do so... The Budapest Accords will bring peace to all nations."
   hun_second_december:0 "Second December"
   hun_second_december_desc:0 "Despite all the difficulties and pressure, Hungary was able to cope with everything and successfully continue the cause of the December Revolution and the great revolutionary Vilmos Böhm. There is still much to come for Hungary, but it is clear to all that the revolutionary state will cope with all difficulties."
   
@@ -393,6 +423,18 @@
   
   PB_Govidea_Hungarian_Socialism:0 "Hungarian Socialism"
   
+  HUN_Move_idea:0 "Magyar Országos Véderő Egylet"
+  HUN_Move_idea_desc:0 "Magyar Országos Véderő Egylet or MOVE is a national patriotic movement active in Hungary. The structure of the group is largely militarized. The group calls for changes in land ownership, a more Christian economic policy against capitalism, which they identified as Jewish, and a foreign policy based on revanchism."
+  HUN_Hungarian_Church:0 "Hungarian Catholic Church"
+  HUN_Hungarian_Church_desc:0 "During the Revolution, the Hungarian Catholic Church was virtually destroyed. Temples were destroyed one by one, while priests and other religious figures were repressed.\n\nNow that the revolution had been defeated, the Hungarian Catholic Church had risen from the ashes. Churches are being rebuilt, while the church itself is receiving large investments from the state. Hungary's enemies will be defeated. For God's sake."
+  HUN_Vengeance:0 "Vengeance"
+  HUN_Vengeance_desc:0 "Hungary was dismembered. The Magyar lands are in the hands of the enemy, Serbia and Romania. We cannot just leave it at that. The Belgrade dictate will be broken. The enemies of the Hungarian people will be subdued and the territories will return to their native harbor. Once and for all."
+  HUN_Vengeance1:0 "Vengeance"
+  HUN_Vengeance1_desc:0 "Hungary was dismembered. The Magyar lands are in the hands of the enemy, Serbia and Romania. We cannot just leave it at that. The Belgrade dictate will be broken. The enemies of the Hungarian people will be subdued and the territories will return to their native harbor. Once and for all."  
+  HUN_legacy_of_revolution:0 "Legacy of Revolution"
+  HUN_legacy_of_revolution_desc:0 "The Colossus of the Revolution has fallen. It left only a scorched field in Hungary. The Jacobins lost the war, gave the native Hungarian territories of Transylvania and Banat to their sworn enemies, and gave Croatia to the Serbs.\n\nIn spite of this, the ideas of Jacobinism are still on the minds of our people, so we should gradually get rid of its legacy."
+  HUN_Monarchy_Without_Monarch:0 "Monarchy without Monarch"
+  HUN_Monarchy_Without_Monarch_desc:0 " "
   HUN_guerrilla_arrow_cross_party:0 "Guerrilla War" 
   HUN_guerrilla_arrow_cross_party_desc:0 "Nationalists from the Arrow Cross Party organized a real guerrilla war across the country. Administrative buildings are being seized, railroad stations are being bombed, all with the aim of pressuring the national government."
   HUN_integrating_with_republics2:0 "Investments in the Worker Republics"
@@ -445,8 +487,8 @@
   HUN_socialism_human_face_desc:0 "Socialism with the Human Face means liberalizations, which included increasing freedom of the press, freedom of speech, and freedom of movement, with economic emphasis on consumer goods and the possibility of a multiparty government. The programme was based on the view that "Socialism cannot mean only liberation of the working people from the domination of exploiting class relations, but must make more provisions for a fuller life of the personality than any bourgeois democracy."It would limit the power of the secret police and provide for the federalization of the Hungary. The programme also covered foreign policy, including both the maintenance of good relations with the capitalist countries."
   HUN_direct_democracy:0 "A Pure Democracy"
   HUN_direct_democracy_desc:0 "The idea of direct democracy is to establish a direct relationship between the people and the state, so that the people can say what they want from the country. It will be realized through the mechanisms of citizens' assemblies, as well as through referendums, which will be held on all important issues of governance of the Hungarian People's Republic."
-  HUN_brotherhood_and_unity:0 "Brotherhood and Unity"
-  HUN_brotherhood_and_unity_desc:0 "The Hungarian People's Republic consists of representatives of different nationalities and religions. The only way to keep all these people from ethnic strife is to give each people the maximum rights we can.§RLet us protect brotherhood and unity like the pupil of our eye§!"
+  HUN_brotherhood_and_unity:0 "Brotherhood"
+  HUN_brotherhood_and_unity_desc:0 "The Hungarian People's Republic consists of representatives of different nationalities and religions. The only way to keep all these people from ethnic strife is to give each people the maximum rights we can.§RLet us protect brotherhood like the pupil of our eye§!"
   HUN_child_support:0 "Maintain Population Growth"
   HUN_child_support_desc:0 ""
   HUN_education_reform:0 "Education Reform"
@@ -508,19 +550,28 @@
   #Tooltips#
   
   HUN_FORMS_UDWR:0 "The following nations will be annexed if they exist:\n\n-[CRO.GetFlag] Croatia\n-[SER.GetFlag] Serbia\n-[ROM.GetFlag] Romania\n-[MNT.GetFlag] Montenegro\n-[ALB.GetFlag] Albania."
-   
-  hun_lon_formed:0 "§HLeague of Nations§! is formed"
-  electrification_decisions_tt:0 "§YOpens decisions§! for §GElectrification§! of the country"  
-  urbanization_decisions_tt:0 "§YOpens decisions§! to §GUrbanize§! the country"  
-  industrialization_decisions_tt:0 "§YOpens decisions§! to §GIndustrialize§! the country"  
-  Jew_in_Guta_tt:0 "§RJewish Culture§! will be established in §YGúta§!"
+  
+  HUN_Heart_Of_Revolutin_tt:0 "§RDanubian§! will become §Cmajority culture§! in: \n\n§YHungary§!\n§YWallachia§!\n§YSerbia§!\n§YCroatia§!\n§YSlovakia\n§YTransylvania§!§!"
+  HUN_Budapest_Accord_tt:0 "§OSlovakian, Wallachian, Serbian, Ruthenian, Croatian and Bosnian§! states will gain §CAutonomous Region Modifier§!:\nLocal Manpower:§G+25.00§!\nLocal Resources:§G+10.00§!"
+  
+  Hungarian_Budapest_tt:0 "§RHungarian§! will become §Cmajority culture§! in in §YBudapest§!"
+  Hungarian_Prekmurje_tt:0 "§RHungarian§! will become §Cmajority culture§! in §YPrekmurje§!"
+  Hungarian_Burgenland_tt:0 "§RHungarian§! will become §Cmajority culture§! in §YBurgenland§!"  
+  open_native_of_magyars_tt:0 "§YUnlocks§! §HNative of Magyars§! §Ydecisions§!"
+  open_genocide_decisions_tt:0 "§YUnlocks§! §RDeal with Traitors§! §Ydecisions§!"
+  open_feudalism_decisions_tt:0 "§YUnlocks§! §HModern Feudalism§! §Ydecisions§!"
+  electrification_decisions_tt:0 "§YUnlocks§! §HElectrification§! §Ydecisions§!"
+  urbanization_decisions_tt:0 "§YUnlocks§! §HUrbanization§! §Ydecisions§!"
+  industrialization_decisions_tt:0 "§YUnlocks§! §HIndustrialisation§! §Ydecisions§!"  
+  hun_lon_formed:0 "§HLeague of Nations§! §Yis formed§!" 
+  Jew_in_Guta_tt:0 "§RJewish§! will become §Cmajority culture§! in §YGúta§!"
   hun_parade_was_held:0 "The Military Parade was held"
   hun_won_in_the_gbw_tt:0 "We won the Great Balkan War"
   HUN_serbian_red_army:0 "Two Serbian divisions will be created" 
   HUN_romanian_red_army:0 "Two Romanian divisions will be created"  
   HUN_albania_neutrality:0 "§RAlbania§! will keep §Gneutrality§! in the §RGreat Balkan War§!"
-  hun_cro_accepted:0 "§RCroatian Culture§! will be §Gaccepted§!"
-  hun_rut_accepted:0 "§YRuthenian Culture§! will be §Gaccepted§!"  
+  hun_cro_accepted:0 "§RCroatian§! will become §Raccepted culture§! of the Hungary"
+  hun_rut_accepted:0 "§YRuthenian§! will become §Raccepted culture§! of the Hungary"
   HUN_albanian_revolution:0 "Chance for a §RSocialist Revolution§! in §RAlbania§! is 40%§!\nIn the case of failure, a §GNeo-Imperialist Government§! will install in §RAlbania§!"
   5year_plans_stopped:0 "§YThe five-year plans are stopped§!"
   hun_starting_crisis_tt:0 "§YThe starting crisis is over§!"
@@ -577,6 +628,9 @@
   HUN_Garbai_HOG:0 "Sándor Garbai"
   HUN_BelaKun_HOG:0 "Béla Kun"
   
+  HUN_Istvan_Horthy:0 "István Horthy"
+  HUN_Miklos_Horthy_jr_FM:0 "Miklós Horthy II"
+  
   #Militarism 
   
   HUN_High_Militarism:0 "§GHigh§!"
@@ -584,7 +638,7 @@
   HUN_Low_Militarism:0 "§RLow§!"
 
   Militarism_tt:0 "§OMilitarism§! is currently at [?HUN_Militarism_var|%0]"
-  Militarism_tt_delayed:0 "After the defeat in the Great Balkan War, the Hungarian people were defeated and humiliated. The people are angry and crave military revenge on their opponents.\n\nDepending on your level of Militarism various military modifers will apply. The Militarism modifier will also tick down by a variable of §R-1§! every month so be sure to keep it maintained!\n\nThese modifiers adjust §YMonthly§! and are as follows:\n\nLow Militarism:\n      Recruitable Population Factor: §R-10.00%§!\n      \n      Division Attack On Core Territory: §R-10.00%§!\n\n      Division Defense On Core Territory: §R-10.00%§!      \n\nMedium Militarism:\n      Recruitable Population Factor: §R+5.00%§!\n      Surrender Limit: §G+5.00%§!\n      Division Defense On Core Territory: §G+10.00%§!\n      Division Attack On Core Territory: §G+5.00%§!\n\nHigh Militarism       :\n      Monthly Population:      Surrender Limit: §G+10.00%§!\n      Recruitable Population Factor: §G+10.00%§!\n      Division Defense On Core Territory: §G+15.00%§!\n      Division Attack On Core Territory: §G+15.00%§!"
+  Militarism_tt_delayed:0 "After the defeat in the Great Balkan War, the Hungarian people were defeated and humiliated. The people are angry and crave military revenge on their opponents.\n\nDepending on your level of Militarism various modifers will apply. The Militarism modifier will also tick down by a variable of §R-1§! every month.\n\nThese modifiers adjust §YMonthly§! and are as follows:\n\nLow Militarism:\n      Conscription  Factor: §R-5.00%§!\n            Division Attack On Core Territory: §R-10.00%§!\n      	Production Factory Efficiency Gain Factor: §G+15.00%§!\n      Division Defense On Core Territory: §R-10.00%§!      \n\nMedium Militarism:\n      Conscription  Factor: §R+2.00%§!\n      Surrender Limit: §G+5.00%§!\n      Division Defense On Core Territory: §G+10.00%§!\n      Division Attack On Core Territory: §G+5.00%§!\n\nHigh Militarism       :\n      Monthly Population:§R-10.00%§!\n      Surrender Limit: §G+10.00%§!\n      Conscription  Factor: §G+5.00%§!\n      Division Defense On Core Territory: §G+15.00%§!\n      Division Attack On Core Territory: §G+15.00%§!\n      Production Factory Efficiency Gain Factor: §R-10.00%§!"
   HUN_Low_Militarism_Idea:0 "Low Militarism" 
   HUN_Med_Militarism_Idea:0 "Medium Militarism"
   HUN_High_Militarism_Idea:0 "High Militarism"
@@ -595,23 +649,23 @@
   Militarism_0.04_increase:0 "Militarism: §G+4%§!."
   Militarism_0.06_increase:0 "Militarism: §G+6%§!."  
   
-  #Hate
+  # Chauvinism
   
-  HUN_High_Hate:0 "§GHigh§!"
-  HUN_Medium_Hate:0 "§YMedium§!"
-  HUN_Low_Hate:0 "§RLow§!"
+  HUN_High_Chauvinism:0 "§GHigh§!"
+  HUN_Medium_Chauvinism:0 "§YMedium§!"
+  HUN_Low_Chauvinism:0 "§RLow§!"
 
-  Hate_tt:0 "§OChauvinism§! is currently at [?HUN_Peoples_hate|%0]"
-  Hate_tt_delayed:0 "After the defeat in the Great Balkan War, the Hungarian people were defeated and humiliated. The people are angry and want revenge. Whether to support it or not is our choice.\n\nDepending on your level of Chauvinism various military modifers will apply. The Chauvinism modifier will also tick down by a variable of §R-2§! every month so be sure to keep it maintained!\n\nThese modifiers adjust §YMonthly§! and are as follows:\n\nLow Chauvinism:\n      Monthly Population: §G+10.00%§!\n      Surrender Limit: §R-5.00%§!\n      Production Factory Efficiency: §G+15.00%§!\n      Division Attack On Core Territory: §R-5.00%§!\n\nMedium Chauvinism:\n      Monthly Population: §G+5.00%§!\n      Surrender Limit: §G+5.00%§!\n      Production Factory Efficiency: §G+10.00%§!\n      Division Defense On Core Territory: §G+5.00%§!\n      Division Attack On Core Territory: §G+5.00%§!\n\nHigh Chauvinism       :\n      Monthly Population: §R-5.00%§!\n      Surrender Limit: §G+10.00%§!\n      Recruitable Population Factor: §G+10.00%§!\n      Division Defense On Core Territory: §G+10.00%§!\n      Division Attack On Core Territory: §G+10.00%§!"
-  HUN_Low_Peoples_Hate_Idea:0 "Low Chauvinism" 
-  HUN_Med_Peoples_Hate_Idea:0 "Medium Chauvinism"
-  HUN_High_Peoples_Hate_Idea:0 "High Chauvinism"
-  Peoples_Hate_0.02_decrease:0 "Chauvinism: §R-2%§!."
-  Peoples_Hate_0.04_decrease:0 "Chauvinism: §R-4%§!."
-  Peoples_Hate_0.06_decrease:0 "Chauvinism: §R-6%§!."
-  Peoples_Hate_0.02_increase:0 "Chauvinism: §G+2%§!."
-  Peoples_Hate_0.04_increase:0 "Chauvinism: §G+4%§!."
-  Peoples_Hate_0.06_increase:0 "Chauvinism: §G+6%§!."  
+  chauvinism_tt:0 "§OChauvinism§! is currently at [?HUN_Chauvinism|%0]"
+  chauvinism_tt_delayed:0 "Hungarian chauvinism has its origins in gaining independence from Austria and the further retention of all the multinational lands of the state by oppressing the rights of ethnic groups. After the Revolution, all chauvinistic tendencies were strictly forbidden. But now, after the defeat, Hungarian chauvinism has risen from the ashes.\n\nDepending on your level of Chauvinism various military modifers will apply. The Chauvinism modifier will also tick down by a variable of §R-2§! every month.\n\nThese modifiers adjust §YMonthly§! and are as follows:\n\nLow Chauvinism:\n      Monthly Population: §G+10.00%§!\n      Surrender Limit: §R-5.00%§!\n      Consumer Goods Factor: §G-5%§!\n      Division Attack On Core Territory: §R-10.00%§!\n      Division Defense On Core Territory: §R-10.00%§!\n\nMedium Chauvinism:\n      Monthly Population: §G+5.00%§!\n      Surrender Limit: §G+5.00%§!\n      Production Factory Efficiency Gain Factor: §G+5%§!\n      Division Defense On Core Territory: §G+5.00%§!\n      Division Attack On Core Territory: §G+5.00%§!\n\nHigh Chauvinism:\n      Monthly Population: §R-15.00%§!\n      Consumer Goods Factor: §R-5.00%§!\n      Industrial Capacity Factory Factor: §R-10%§!\n      Surrender Limit: §G+10.00%§!\n      Conscription Factor: §G+5.00%§!\n      Division Defense On Core Territory: §G+10.00%§!\n      Division Attack On Core Territory: §G+10.00%§!"
+  HUN_Low_Chauvinism_Idea:0 "Low Chauvinism" 
+  HUN_Med_Chauvinism_Idea:0 "Medium Chauvinism"
+  HUN_High_Chauvinism_Idea:0 "High Chauvinism"
+  Chauvinism_0.02_decrease:0 "Chauvinism: §R-2%§!."
+  Chauvinism_0.04_decrease:0 "Chauvinism: §R-4%§!."
+  Chauvinism_0.06_decrease:0 "Chauvinism: §R-6%§!."
+  Chauvinism_0.02_increase:0 "Chauvinism: §G+2%§!."
+  Chauvinism_0.04_increase:0 "Chauvinism: §G+4%§!."
+  Chauvinism_0.06_increase:0 "Chauvinism: §G+6%§!."  
   
   #REV ZEAL#
   HUN_High_Revolutionary_Zeal:0 "§GHigh§!"
@@ -664,6 +718,76 @@
   
   #DECISIONS
   
+  # Dejacobinization
+  
+  HUN_dejacobinization_dec_category:0 "Dejacobinization"
+  HUN_dejacobinization_dec_category_desc:0 "\n\n\n\n\n\nFor more than twenty years the era of Jacobinism lasted in Hungary. But now it is over. Revolutionary ideas are still hovering in the minds of our people. Throughout the country there are still many symbols of the past government, from the symbols to the names of cities. And this needs to be corrected.\n\nThe dejacobinization plan is §C[?HUN_dejacobinization_progress|%0]§! completed."
+  HUN_dejacobinization_progress_0.10_increase:0 "§G+10%§! §Yto the Progress of Dejacobinization§!"
+  HUN_dejacobinization_progress_0.05_increase:0 "§G+5%§! §Yto the Progress of Dejacobinization§!"
+  HUN_dejacobinization_progress_0.30_increase:0 "§G+30%§! §Yto the Progress of Dejacobinization§!"
+  
+  
+  HUN_Renaming_of_squares_and_streets:0 "Renaming of Squares and Streets"
+  HUN_Renaming_of_squares_and_streets2:0 "Renaming of Squares and Streets"
+  HUN_Renaming_of_squares_and_streets3:0 "Renaming of Squares and Streets"
+  HUN_Dismantling_Revolutionary_symbols:0 "Dismantling Revolutionary symbols"
+  HUN_Dismantling_Revolutionary_symbols2:0 "Dismantling Revolutionary symbols"  
+  HUN_Commemoration_of_the_Victims_of_the_Revolution:0 "Commemoration of the Victims of the Revolution"
+  HUN_Commemoration_of_the_Victims_of_the_Revolution2:0 "Commemoration of the Victims of the Revolution"  
+  HUN_Rename_Bohmvaros_back:0 "Rename city of Bohmvaros back"
+  HUN_Rename_Engels_back:0 "Rename city of Engels back"
+  HUN_Repress_Socialist_Generals:0 "Repress Socialist Generals"
+  HUN_Repress_Jacobin_Generals:0 "Repress Jacobin Generals"
+  
+  set_engels_tt:0 "The city of Engels exists"
+  HUN_repress_socialist_tt:0 "§YGenerals with the trait§! §RSocialist§! §Ywill be§! §Rrepressed§!"
+  HUN_repress_jacobin_tt:0 "§YGenerals with the trait§! §RJacobin§! §Ywill be§! §Rrepressed§!"
+  
+  # Nationalist Domestic Policy
+  
+  HUN_Nationalist_Domestic_Policy:0 "A New Era"
+  HUN_Nationalist_Domestic_Policy_desc:0 "\n\n\n\n\n\nAfter the defeat in the Great Balkan War, everything changed. The revolutionary government fell and a new, fair government took its place. It will not make the same mistakes as before. Hungary will avenge its enemies. It will achieve greatness again."
+  
+  HUN_increase_militarism:0 "Increase Militarism"
+  HUN_decrease_militarism:0 "Decrease Militarism"
+  HUN_increase_chauvinism:0 "Increase Chauvinism"
+  HUN_decrease_chauvinism:0 "Decrease Chauvinism"
+  
+  HUN_Deal_With_Wallachs:0 "Deal With Wallachs"
+  HUN_Kill_Jews:0 "Genocide of the Jews"
+  HUN_Expel_the_Gypsies:0 "Expel the Gypsies"
+  HUN_Crush_the_Serbs:0 "Crush the Serbs"
+  HUN_Hungarian_Prekmurje:0 "Hungarian Prekmurje"
+  HUN_Hungarian_Burgerland:0 "Hungarian Burgerland"
+  
+  HUN_Slovakia_Banify:0 "Hand over Slovakia to the Bánffy family"
+  HUN_Slovakia_Kohary:0 "Hand over Slovakia to the Koháry family"
+  HUN_Slovakia_Burchard:0 "Hand over Slovakia to the Burchard-Bélaváry family"
+  
+  HUN_Ruthenia_Banify:0 "Hand over Ruthenia to the Bánffy family"
+  HUN_Ruthenia_Kohary:0 "Hand over Ruthenia to the Koháry family"
+  HUN_Ruthenia_Burchard:0 "Hand over Ruthenia to the Burchard-Bélaváry family"
+  
+  HUN_Budapest_Banify:0 "Hand over Budapest to the Bánffy family"
+  HUN_Budapest_Kohary:0 "Hand over Budapest to the Koháry family"
+  HUN_Budapest_Burchard:0 "Hand over Ruthenia to the Burchard-Bélaváry family"
+  
+  HUN_Hungary_Banify:0 "Hand over Rest of Hungary to the Bánffy family"
+  HUN_Hungary_Kohary:0 "Hand over Rest of Hungary to the Koháry family"
+  HUN_Hungary_Burchard:0 "Hand over Rest of Hungary to the Burchard-Bélaváry family"
+  
+  Burchard_Belavary_Family_state:0 "The region is controlled by Burchard-Bélaváry family"
+  Burchard_Belavary_Family_state_desc:0 " "
+  Kohary_Family_state:0 "The region is controlled by Koháry family"
+  Kohary_Family_state_desc:0 " "
+  Banify_Family_state:0 "The region is controlled by Bánffy family"
+  Banify_Family_state_desc:0 " "
+  
+  HUN_Danube_Water_Channel:0 "Danube Water Channel"
+  HUN_Perpetuate_the_Memory_of_Arpad:0 "Perpetuate the Memory of Árpád"
+  HUN_Perpetuate_the_Memory_of_Arpad_desc:0 "Árpád is the great king of Hungary, who led the country through difficulties to greatness. He led several campaigns against the Bulgarian Kingdom, Lombardy, and many other states. His memory should live on forever. For the sake of Hungary."
+  HUN_Oil_Repository:0 "Fuel Repository 'Mátyás I'"
+  
   # Radicals Mechanic 
   
   control_of_radicalism_dec:0 "March of Radicals"
@@ -683,6 +807,7 @@
   radicals_control_budapest_plus_20_tt:0 "Radicals Influence in Budapest: §G-20%§!."
   radicals_plus_10:0 "Radicals Influence in Every State: §R+10%§!."
   radicals_minus_10:0 "Radicals Influence in Every State: §G-10%§!."
+  radicals_minus_10_budapest:0 "Radicals Influence in Budapest: §G-10%§!."  
   
   budapest_radical_loc:0 "§RRadicals§! influence in Budapest\nis currently at [?hun_radicalism_in_budapest|%0]"
   hungary_radical_loc:0 "§RRadicals§! influence in Hungary\nis currently at [?hun_radicalism_in_hungary|%0]"
@@ -692,7 +817,7 @@
   #Foreign Influence Mechanic
   
   HUN_foreign_influence:0 "Foreign Influence"
-  HUN_foreign_influence_desc:0 "\n\n\n\n\n\nAfter our defeat in the Great Balkan War, foreign powers are takind advantage of our weakness and trying to increase their influence in Hungary. Russia and Germany are trying to put pressure on our military sphere. It's up to us to decide whether to accept their handouts or not.\n\nIf the influence of a foreign country reaches §H100%§!, we will be their puppet."
+  HUN_foreign_influence_desc:0 "\n\n\n\n\n\nAfter our defeat in the Great Balkan War, foreign powers are takind advantage of our weakness and trying to increase their influence in Hungary. Russia and Germany are trying to put pressure on our military sphere. It's up to us to decide whether to accept their handouts or not.\n\nIf the influence of a foreign country reaches §H100%§!, we will become their puppet."
   
   dec_influence_on_hungary:0 "Influence on Hungary"
   dec_influence_on_hungary_desc:0 "After Hungary's defeat in the Balkan War, they were in a weak position, so we can try to establish a puppet regime there.\n\nIn order for Hungary to become our vassal, our influence must reach §G100%§!\n\nCurrent German influence: [?HUN_german_influence_var|%0]\nCurrent Russian influence: [?HUN_russian_influence_var|%0]"
@@ -1009,7 +1134,7 @@
   political_magyarization_tra:0 "Political Magyarization of Transylvania"
   political_magyarization_tra_tt:0 "Has completed Decision §Y"Political Magyarization of Transylvania"§!"
   magyarize_transylvania:0 "Magyarize Transylvania"
-  Hungarian_Transylvania:0 "§RHungarian Culture§! will be established in §YSiebenburgen§!"
+  Hungarian_Transylvania:0 "§RHungarian§! will become §Cmajority culture§! in §YSiebenburgen§!"
   wallachians_in_politics:0 "Put the Wallahs in Politics"
   wallachians_in_politics_tt:0 "Has completed Decision §Y"Put the Wallahs in Politics"§!"
   development_of_national_language:0 "Development of National Language"
@@ -1017,7 +1142,7 @@
   send_the_hungarians_home:0 "Send the Hungarians Home"
   send_the_hungarians_home_desc:0 "Transylvania is home to a large number of Hungarians. It would be better for the development of national culture if they were back in Hungary."
   send_the_hungarians_home_tt:0 "Has completed Decision §Y"Send the Hungarians Home"§!"
-  hun_tran_accepted:0 "§YWallachian Culture§! will be accepted"
+  hun_tran_accepted:0 "§YWallachian§! will become §Gaccepted§! culture of Hungary"
   
   #Slovakia
   
@@ -1032,9 +1157,9 @@
   crush_slovak_elite_tt:0 "Has completed Decision §Y"Crush Slovak Elite"§!"
   continue_affirm_hungarian_language:0 "Continue to Affirm Hungarian Language"
   continue_affirm_hungarian_language_tt:0 "Has completed Decision §Y"Continue to Affirm Hungarian Language"§!" 
-  Hungarian_Slovakia:0 "§RHungarian Culture§! will be established in §YSlovakia§!"
+  Hungarian_Slovakia:0 "§RHungarian§! will become §Cmajority culture§! in §YSlovakia§!"
   hun_south_slovakia:0 "Stop §RMagyarization§ in §BSouth Slovakia§!"
-  hun_slo_accepted:0 "§YSlovakian Culture§! will be accepted"
+  hun_slo_accepted:0 "§YSlovakian§! will become §Raccepted culture§! of Hungary"
   stop_magyarization_in_southern_slovakia:0 "Stop §RMagyarization§ in §YSouth Slovakia§!"
   stop_magyarization_in_southern_slovakia_tt:0 "Has completed Decision §Y"Stop §RMagyarization§ in §YSouth Slovakia§!"§!"
   Stimulation_of_Slovak_culture:0 "Stimulation of Slovakian Culture"
@@ -1063,7 +1188,7 @@
   mass_opening_of_ruthenian_language_schools_tt:0 "Has completed Decision §Y"Mass Opening of the Ruthenian-Language Schools"§!"
   Career_Opportunities_for_Ruthenians:0 "Career Opportunities for Ruthenians"
   Career_Opportunities_for_Ruthenians_tt:0 "Has completed Decision §Y"Career Opportunities for Ruthenians"§!"
-  Hungarian_Ruthenia:0 "§RHungarian Culture§! will be established in §YKarpatenruthenen§!"
+  Hungarian_Ruthenia:0 "§RHungarian§! will become §Cmajority culture§! in §YKarpatenruthenen§!"
   magyarize_ruthenia:0 ""Magyarize Ruthenia"
   
   transylvania_status:0 "§YStatus of Transylvania§!"

@@ -1,0 +1,33 @@
+Burchard_Belavary_Family_state = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_Burchard_Belavary_Family_state_icon
+	
+    local_building_slots = 2
+	state_production_speed_buildings_factor = 0.20
+}
+
+Banify_Family_state = {
+	icon = GFX_modifiers_Banify_Family_state_icon
+	enable = { always = yes }
+	
+	local_manpower = 0.15
+	local_org_regain = 0.15	local_supplies = 0.15
+}
+
+Kohary_Family_state = {
+	icon = GFX_modifiers_Kohary_Family_state_icon
+	enable = { always = yes }
+	
+	state_resources_factor = 0.20
+	local_supplies = 0.15	
+}
+
+HUN_Autonomous_state = {
+	icon = GFX_modifiers_autonomous_region_icon
+	enable = { always = yes }
+	
+	local_manpower = 0.25
+	local_resources = 0.10		
+}
+

@@ -20,7 +20,7 @@ set_country_flag = PB_Russian_Autonomy
 
 set_variable = { PB_main_culture = 61 }
 add_to_array = { PB_accepted_cultures = 61 }
-add_to_array = { PB_accepted_cultures = 442 }
+add_to_array = { PB_accepted_cultures = 500 }
 
 set_cosmetic_tag = ROM_RUS
 

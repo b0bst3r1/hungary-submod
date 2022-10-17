@@ -1084,82 +1084,7 @@ focus_tree = {
 			focus = hun_revolution_goes_on
 		}		
 
-	    completion_reward = {
-		
-		custom_effect_tooltip = HUN_PartyUnity_0.04_increase
-		
-			add_to_variable = {
-				var = HUN_PartyUnity
-				value = 0.04
-			}
-
-		add_political_power = 50			
-		
-      }			
-		
-		x = 37
-		y = 8
-
-	}
-
-	focus = {
-		id = hun_jewish_autonomy
-		icon = GFX_HUN_jew_autonomy
-		cost = 56
-		
-		prerequisite = {
-			focus = hun_way_forward
-		}		
-
-	    completion_reward = {
-		
-		add_political_power = 75		
-
-	    973 = { set_variable = { culture_id = 449 } }
-		custom_effect_tooltip = Jew_in_Guta_tt
-
-        hidden_effect = {
-
-		973 = {
-			set_temp_variable = { temp_culture = culture_id }
-			  ROOT = { 
-				PB_Cultures_add_accepted_culture = yes 
-					}
-			 }		
-      }
-}	  
-		
-		x = 36
-		y = 9
-
-}
-
-	focus = {
-		id = hun_heart_of_revolution
-		icon = GFX_hun_heart_of_revoltuion
-		cost = 70
-		
-		prerequisite = {
-			focus = hun_way_forward
-		}	
-		
-	    completion_reward = {
-		
-			OR = {
-				has_country_leader = {
-					name = "Sandor Garbai"
-					ruling_only = yes
-				}
-				has_country_leader = {
-					name = "Bela Kun"
-					ruling_only = yes
-				}
-				
-				has_country_leader = {
-					name = "Jozsef Revai"
-					ruling_only = yes
-				}				
-			}		
+	    completion_reward = {		
 		
 			if = {
 			  limit = {
@@ -1209,10 +1134,230 @@ focus_tree = {
 			}
       }			
 		
+		x = 37
+		y = 8
+
+	}
+
+	focus = {
+		id = hun_jewish_autonomy
+		icon = GFX_HUN_jew_autonomy
+		cost = 56
+		
+		prerequisite = {
+			focus = hun_way_forward
+		}		
+
+	    completion_reward = {
+		
+		add_political_power = 75		
+
+	    973 = { set_variable = { culture_id = 5 } }
+		custom_effect_tooltip = Jew_in_Guta_tt
+
+        hidden_effect = {
+
+		973 = {
+			set_temp_variable = { temp_culture = culture_id }
+			  ROOT = { 
+				PB_Cultures_add_accepted_culture = yes 
+					}
+			 }		
+      }
+}	  
+		
 		x = 38
 		y = 9
 
+}
+
+	focus = {
+		id = hun_heart_of_revolution
+		icon = GFX_hun_heart_of_revoltuion
+		cost = 70
+		
+		prerequisite = {
+			focus = hun_way_forward
+		}
+
+		mutually_exclusive = {
+			focus = hun_budapest_accord
+		}		
+		
+	    completion_reward = {
+		
+		custom_effect_tooltip = HUN_Heart_Of_Revolutin_tt		
+
+		71 = { set_variable = { culture_id = 504 } }
+		155 = { set_variable = { culture_id = 504 } }
+		154 = { set_variable = { culture_id = 504 } }
+		70 = { set_variable = { culture_id = 504 } }
+		664 = { set_variable = { culture_id = 504 } }
+		76 = { set_variable = { culture_id = 504 } }
+		73 = { set_variable = { culture_id = 504 } }
+		83 = { set_variable = { culture_id = 504 } }
+		82 = { set_variable = { culture_id = 504 } }
+		45 = { set_variable = { culture_id = 504 } }
+		764 = { set_variable = { culture_id = 504 } }
+		975 = { set_variable = { culture_id = 504 } }
+		957 = { set_variable = { culture_id = 504 } }
+		109 = { set_variable = { culture_id = 504 } }
+		84 = { set_variable = { culture_id = 504 } }
+		46 = { set_variable = { culture_id = 504 } }
+		81 = { set_variable = { culture_id = 504 } }
+		107 = { set_variable = { culture_id = 504 } }
+		954 = { set_variable = { culture_id = 504 } }
+		104 = { set_variable = { culture_id = 504 } }
+		956 = { set_variable = { culture_id = 504 } }
+		103 = { set_variable = { culture_id = 504 } }
+		959 = { set_variable = { culture_id = 504 } }
+		105 = { set_variable = { culture_id = 504 } }
+		794 = { set_variable = { culture_id = 504 } }
+		43 = { set_variable = { culture_id = 504 } }
+		974 = { set_variable = { culture_id = 504 } }	
+
+			if = {
+				limit = {
+				    NOT = {	has_completed_focus = hun_jewish_autonomy }
+				  }			  
+		    973 = { set_variable = { culture_id = 504 } }				
+		  }		
+      }			
+		
+		x = 36
+		y = 9
+
 	}
+	
+	focus = {
+		id = hun_budapest_accord
+		icon = GFX_HUN_Budapest_Accord
+		cost = 70
+		
+		prerequisite = {
+			focus = hun_way_forward
+		}
+
+		mutually_exclusive = {
+			focus = hun_heart_of_revolution
+		}		
+		
+	    completion_reward = {
+		
+		custom_effect_tooltip = HUN_Budapest_Accord_tt		
+		
+		hidden_effect = {
+		
+		71 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		70 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		664 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}	
+
+		76 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		73 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		83 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}	
+
+		82 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		45 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		764 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}	
+
+		975 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		957 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		109 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}	
+
+		84 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		46 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		81 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}	
+
+		107 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		954 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		104 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}	
+
+		956 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		103 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		959 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}	
+
+		105 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		794 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		43 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}	
+
+		974 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		}
+
+		973 = {
+		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
+		      }				
+           }
+        }		
+		
+		x = 34
+		y = 9
+
+	}	
 
 	focus = {
 		id = hun_second_december
@@ -1221,6 +1366,7 @@ focus_tree = {
 		
 		prerequisite = {
 			focus = hun_heart_of_revolution
+			focus = hun_budapest_accord
 		}
 
 		prerequisite = {
@@ -2700,27 +2846,18 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			}
 		}
 		
-		completion_reward = {
-		remove_ideas = HUN_Collapsing_Government
-
-		hidden_effect = {
-	    
-		HUN = {
-		country_event = {
-		id = hungarian.27
-		days = 27
-		  }
-		}
-      }
-   }	  
-	
 		prerequisite = {
 			focus = HUN_SIXTHCONGRESS
 		}
 		mutually_exclusive = {
 			focus = hun_garbai
 			focus = HUN_BELAKUN
-		}
+		}		
+		
+		completion_reward = {
+		remove_ideas = HUN_Collapsing_Government
+     }	  
+	
 		x = 13
 		y = 6
 
@@ -2922,7 +3059,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		add_ideas = HUN_socialism_human_face
 		}
       }		
-		x = 14
+		x = 13
 		y = 10	
 
 	}
@@ -2956,7 +3093,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		add_ideas = HUN_restructed_farms
 		}
 		
-		x = 11
+		x = 10
 		y = 9
 
 	}
@@ -2990,7 +3127,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					PB_Economy_Moderate_Progress_Increase = yes
         }
 		
-		x = 13
+		x = 12
 		y = 9
 
 	}
@@ -3031,7 +3168,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			}			
 		}		
 	  
-		x = 12
+		x = 11
 		y = 10
 
     }
@@ -3067,7 +3204,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
         PB_Literacy_Moderate_Progress_Increase = yes		
 	}		
 		
-		x = 17
+		x = 16
 		y = 9
 
     }
@@ -3111,7 +3248,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}		
 	}
 		
-		x = 16
+		x = 15
 		y = 10
 
     }	
@@ -3530,36 +3667,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 				}
                }				
 		      }
-
-	available_if_capitulated = no
-
-	cancel_if_invalid = yes			  
-		
-			completion_reward = {
-
-		custom_effect_tooltip = HUN_PartyUnity_0.06_decrease
-		
-			add_to_variable = {
-				var = HUN_PartyUnity
-				value = -0.06
-			}			
-			
-		hidden_effect = {
-	    
-		HUN = {
-		country_event = {
-		id = hungarian.19
-		days = 40
-		  
-		  }
-		}
-      } 			
-		
-			swap_ideas = {
-				remove_idea = PB_Limited_Autonomy
-				add_idea = PB_Significant_Autonomy
-			}
-		}	
+			  
 		
 		prerequisite = {
 			focus = hun_open_the_borders
@@ -3567,7 +3675,26 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		
 		prerequisite = {
 			focus = hun_establishment_of_a_parliament
-		}
+		}			  
+
+	available_if_capitulated = no
+
+	cancel_if_invalid = yes			  
+		
+		completion_reward = {
+
+		custom_effect_tooltip = HUN_PartyUnity_0.06_decrease
+		
+			add_to_variable = {
+				var = HUN_PartyUnity
+				value = -0.06
+			}			 			
+		
+			swap_ideas = {
+				remove_idea = PB_Limited_Autonomy
+				add_idea = PB_Significant_Autonomy
+			}
+		}	
 		
 		x = 22
 		y = 10
@@ -3879,9 +4006,17 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	cancel_if_invalid = yes		
 		
 	    completion_reward = {
-	    set_country_flag = radical_mechanic_open		
-		}		
-		
+	    set_country_flag = radical_mechanic_open
+
+        hidden_effect = { 
+         unban_party_ni = yes
+         unban_party_ds = yes
+         unban_party_rc = yes
+         unban_party_cn = yes
+         unban_party_an = yes		
+		}
+     } 		
+
 		x = 60
 		y = 1
 
@@ -3935,15 +4070,15 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		id = hun_Country_held_on
 		icon = GFX_hun_Country_held_on
 		cost = 0
+		
 		prerequisite = {
 			focus = hun_slovakia_declared_independence
 		}
+		
 		prerequisite = {
 			focus = hun_Rusinia_breaks_away
 		}
-		mutually_exclusive = {
-			focus = hun_democratization
-		}
+		
 		x = 60
 		y = 5
 
@@ -3962,7 +4097,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		x = 57
 		y = 6
 
-	}
+	}	
 
 	focus = {
 		id = hun_arrow_in_power
@@ -3974,19 +4109,100 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		mutually_exclusive = {
 			focus = hun_regent_without_king
 		}
+				
+		cancel_if_invalid = yes
+	
 		x = 61
 		y = 7
 
 	}
+	
 	focus = {
-		id = hun_Stabilization_of_the_country
-		icon = GFX_hun_Stabilization_of_the_country
-		cost = 0
+		id = hun_execute_leaders_rebellion
+		icon = GFX_hun_execute_leaders_rebellion
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Ferenc Szalasi"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Pal Pronay"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Bela Imredy"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = hun_arrow_in_power
 		}
+				
+		cancel_if_invalid = yes
 		
-		completion_reward = {	
+		completion_reward = {
+		custom_effect_tooltip = open_genocide_decisions_tt
+        set_country_flag = open_genocide_decisions_flag
+        }    		
+	
+		x = 60
+		y = 8
+
+	}
+	
+	focus = {
+		id = hun_Stabilization_of_the_country
+		icon = GFX_hun_Stabilization_of_the_country
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Ferenc Szalasi"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Pal Pronay"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Bela Imredy"
+					ruling_only = yes
+				}				
+			}
+		}
+		
+		prerequisite = {
+			focus = hun_arrow_in_power
+		}
+				
+		cancel_if_invalid = yes
+	
+		
+		completion_reward = {
+		
+        ban_party_lb = yes
+        ban_party_ds = yes
+        ban_party_rc = yes
+        ban_party_cn = yes
+        ban_party_an = yes		
+
+        add_stability = 0.10
+		
+		add_political_power = 50	
+		
+			add_popularity = {
+				ideology = ni
+				popularity = 0.10
+			}
+ 		
 			add_ideas = PB_Patriarchal_Society
 			add_ideas = PB_Public_Meetings_Banned		
         }
@@ -3995,50 +4211,124 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		y = 8
 
 	}
+	
 	focus = {
-		id = hun_trial_of_horthy
-		icon = GFX_hun_trial_of_horthy
-		cost = 0
+		id = hun_modern_feudalism
+		icon = GFX_HUN_modern_feudal
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Ferenc Szalasi"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Pal Pronay"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Bela Imredy"
+					ruling_only = yes
+				}				
+			}
+		}
+		
 		prerequisite = {
 			focus = hun_Stabilization_of_the_country
 		}
+				
+		cancel_if_invalid = yes
+		
+		completion_reward = {
+		custom_effect_tooltip = open_feudalism_decisions_tt
+        set_country_flag = open_feudalism_decisions_flag		
+	    }
+		
 		x = 62
 		y = 9
 
 	}
+	
 	focus = {
-		id = hun_execute_leaders_rebellion
-		icon = GFX_hun_execute_leaders_rebellion
-		cost = 0
-		prerequisite = {
-			focus = hun_regent_without_king
-			focus = hun_arrow_in_power
+		id = hun_national-jacobinism
+		icon = GFX_hun_national_state
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Ferenc Szalasi"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Pal Pronay"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Bela Imredy"
+					ruling_only = yes
+				}				
+			}
 		}
-		x = 60
-		y = 8
-
-	}
-	focus = {
-		id = hun_begin_covert_remilitarization
-		icon = GFX_hun_begin_covert_remilitarization
-		cost = 0
+		
 		prerequisite = {
-			focus = hun_regent_without_king
-			focus = hun_arrow_in_power
+			focus = hun_execute_leaders_rebellion
 		}
-		x = 56
-		y = 8
-
-	}
-	focus = {
-		id = hun_legitimize_slavery
-		icon = GFX_hun_legitimize_slavery
-		cost = 0
 		prerequisite = {
 			focus = hun_Stabilization_of_the_country
 		}
+				
+		cancel_if_invalid = yes
+	
 		x = 60
 		y = 9
+
+	}
+	
+	focus = {
+		id = hun_make_them_feel_sorry
+		icon = GFX_hun_make_them_feel_sorry
+		cost = 56
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Ferenc Szalasi"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Pal Pronay"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Bela Imredy"
+					ruling_only = yes
+				}				
+			}
+		}
+		
+		prerequisite = {
+			focus = hun_national-jacobinism
+		}
+		prerequisite = {
+			focus = hun_modern_feudalism
+		}
+				
+		cancel_if_invalid = yes
+		
+	    completion_reward = {
+		country_event = {
+		id = hungarian.83
+		days = 1
+		}   		   
+    }		
+	
+		x = 61
+		y = 10
 
 	}
 
@@ -4047,6 +4337,24 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		icon = GFX_hun_regent_without_king
 		cost = 0
 		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Ferenc Szalasi"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Pal Pronay"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Bela Imredy"
+					ruling_only = yes
+				}				
+			}
+		}		
+		
 		prerequisite = {
 			focus = hun_military_coup
 		}
@@ -4054,6 +4362,9 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		mutually_exclusive = {
 			focus = hun_arrow_in_power
 		}
+				
+		cancel_if_invalid = yes
+	
 		
 		x = 53
 		y = 7
@@ -4061,164 +4372,472 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	}
 	
 	focus = {
-		id = hun_decommunization
-		icon = GFX_hun_decommunization
-		cost = 0
+		id = hun_beauty_of_militarism
+		icon = GFX_goal_RUS_Armored_Warfare
+		cost = 35
+		
+		available = {
+		      
+			  OR = {
+			  
+				has_country_leader = {
+					name = "Miklos Horthy"
+					ruling_only = yes
+				}
+
+				has_country_leader = {
+					name = "Ferenc Szalasi"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Pal Pronay"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Bela Imredy"
+					ruling_only = yes
+				}				
+		    }
+		}
+		
 		prerequisite = {
 			focus = hun_arrow_in_power
 			focus = hun_regent_without_king
 		}
+				
+		cancel_if_invalid = yes
+		
+		completion_reward = {
+		
+		add_tech_bonus = {
+		 name = land_doc_bonus
+		 bonus = 1
+		 uses = 1
+		 category = flamethrowers_tech
+		}		
+		
+	    army_experience = 15
+		air_experience = 15		
+
+		custom_effect_tooltip = Militarism_0.04_increase
+			add_to_variable = {
+				var = HUN_Militarism_var
+				value = 0.04
+		}
+    }		
+	
 		x = 58
-		y = 8
+		y = 8		
 
-	}
+	}	
+
 	focus = {
-		id = hun_forgive_sinful_capital
-		icon = GFX_hun_forgive_sinful_capital
-		cost = 0
+		id = hun_native_of_magyars
+		icon = GFX_hun_decommunization
+		cost = 35
+		
+		available = {
+				has_country_leader = {
+					name = "Miklos Horthy"
+					ruling_only = yes
+				}				
+		}
+		
 		prerequisite = {
 			focus = hun_regent_without_king
 		}
-		x = 52
-		y = 8
-
-	}
-	focus = {
-		id = hun_commemoratethe_victims_of_Jacobinism
-		icon = GFX_hun_commemoratethe_victims_of_Jacobinism
-		cost = 0
-		prerequisite = {
-			focus = hun_regent_without_king
-		}
+				
+		cancel_if_invalid = yes
+		
+		completion_reward = {
+		custom_effect_tooltip = open_native_of_magyars_tt
+        set_country_flag = open_native_of_magyars_flag
+        }		
+	
 		x = 54
 		y = 8
 
 	}
 	
 	focus = {
-		id = hun_clericalization
-		icon = GFX_catholic_education
-		cost = 0
-		prerequisite = {
-			focus = hun_decommunization
+		id = hun_forgive_sinful_capital
+		icon = GFX_hun_forgive_sinful_capital
+		cost = 35
+		
+		available = {
+				has_country_leader = {
+					name = "Miklos Horthy"
+					ruling_only = yes
+				}				
 		}
+		
+		prerequisite = {
+			focus = hun_regent_without_king
+		}
+				
+		cancel_if_invalid = yes
+		
+		completion_reward = {
+		  country_event = {
+		   id = hungarian.82
+		   days = 1
+		  }
+        }		  
+	
+		x = 52
+		y = 8
+
+	}
+	
+	focus = {
+		id = hun_nepotism
+		icon = GFX_HUN_Istvan_Horthy
+		cost = 35
+		
+		available = {
+				has_country_leader = {
+					name = "Miklos Horthy"
+					ruling_only = yes
+				}				
+		}
+		
+		prerequisite = {
+			focus = hun_forgive_sinful_capital
+		}
+				
+		cancel_if_invalid = yes
+		
+		completion_reward = {
+		add_ideas = HUN_Miklos_Horthy_jr_FM
+		add_ideas = HUN_Istvan_Horthy
+		}
+	
+		
+		x = 52
+		y = 9
+
+	}	
+	
+	focus = {
+		id = hun_Blood_and_Honour
+		icon = GFX_Focus_Bloody_Purge
+		cost = 35
+		
+		available = {
+				has_country_leader = {
+					name = "Miklos Horthy"
+					ruling_only = yes
+				}				
+		}
+		
+		prerequisite = {
+			focus = hun_native_of_magyars
+		}
+				
+		cancel_if_invalid = yes
+		
+		completion_reward = {
+		
+        ban_party_lb = yes
+        ban_party_an = yes		
+		
+		add_political_power = 50
+		
+		custom_effect_tooltip = Militarism_0.04_increase
+			add_to_variable = {
+				var = HUN_Militarism_var
+				value = 0.04
+		}
+
+		custom_effect_tooltip = Chauvinism_0.04_increase
+			add_to_variable = {
+				var = HUN_Chauvinism
+				value = 0.04
+		}
+        }		
+	
+		x = 54
+		y = 9
+
+	}
+	
+	focus = {
+		id = hun_found_move
+		icon = GFX_hun_found_HNDA
+		cost = 56
+		
+		available = {
+				has_country_leader = {
+					name = "Miklos Horthy"
+					ruling_only = yes
+				}				
+		}
+		
+		prerequisite = {
+			focus = hun_Blood_and_Honour
+		}
+		prerequisite = {
+			focus = hun_nepotism
+		}
+				
+		cancel_if_invalid = yes
+		
+		completion_reward = {
+	    add_ideas = HUN_Move_idea
+        }		
+
+		x = 53
+		y = 10
+
+	}	
+	
+	focus = {
+		id = hun_clericalization
+		icon = GFX_HUN_clericalization
+		cost = 35
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Ferenc Szalasi"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Pal Pronay"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Bela Imredy"
+					ruling_only = yes
+				}
+
+				has_country_leader = {
+					name = "Miklos Horthy"
+					ruling_only = yes
+				}				
+			}
+		}
+		
+		prerequisite = {
+			focus = hun_beauty_of_militarism
+		}
+				
+		cancel_if_invalid = yes
+		
+		completion_reward = {
+		
+        add_ideas = HUN_Hungarian_Church
+
+        }
+		
 		x = 58
 		y = 9
 
 	}
 	
 	focus = {
-		id = hun_ignite_the_fire_of_revanchshism
-		icon = GFX_hun_ignite_the_fire_of_revanchshism
-		cost = 0
-		prerequisite = {
-			focus = hun_clericalization
-		}
-		x = 57
-		y = 10
+		id = hun_begin_covert_remilitarization
+		icon = GFX_hun_begin_covert_remilitarization
+		cost = 35
 
-	}
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Ferenc Szalasi"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Pal Pronay"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Bela Imredy"
+					ruling_only = yes
+				}
+
+				has_country_leader = {
+					name = "Miklos Horthy"
+					ruling_only = yes
+				}				
+			}
+		}
+		
+		prerequisite = {
+			focus = hun_regent_without_king
+			focus = hun_arrow_in_power
+		}
+		
+		cancel_if_invalid = yes
+		
+		x = 56
+		y = 8
+
+	}	
 	
 	focus = {
 		id = hun_eternal_red_menace
 		icon = GFX_hun_eternal_red_menace
 		cost = 0
-		prerequisite = {
-			focus = hun_commemoratethe_victims_of_Jacobinism
-		}
-		x = 52
-		y = 9
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Ferenc Szalasi"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Pal Pronay"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Bela Imredy"
+					ruling_only = yes
+				}
 
-	}
-	focus = {
-		id = hun_ask_for_military_advisers
-		icon = GFX_hun_ask_for_military_advisers
-		cost = 0
-		prerequisite = {
-			focus = hun_treaty_with_revanchist_pact
-		}
-		x = 58
-		y = 11
-
-	}
-	focus = {
-		id = hun_anti-Romanianism
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_commemoratethe_victims_of_Jacobinism
+				has_country_leader = {
+					name = "Miklos Horthy"
+					ruling_only = yes
+				}				
+			}
 		}
 		
 		prerequisite = {
-			focus = hun_forgive_sinful_capital
-		}		
-		x = 54
+			focus = hun_begin_covert_remilitarization
+		}
+				
+		cancel_if_invalid = yes
+	
+		
+		completion_reward = {
+		
+         ban_party_jc = yes
+         ban_party_ss = yes	
+		
+         every_country = {
+         limit = {
+                has_government = JC
+         }
+         HUN = {
+         add_opinion_modifier = {
+         target = PREV
+         modifier = large_decrease
+                    }
+                }
+             }
+         }	   
+		
+		x = 56
 		y = 9
 
-	}
-	focus = {
-		id = hun_found_HNDA
-		icon = GFX_hun_found_HNDA
-		cost = 0
-		prerequisite = {
-			focus = hun_eternal_red_menace
-		}
-		prerequisite = {
-			focus = hun_anti-Romanianism
-		}
+	}	
 
-		x = 53
-		y = 10
-
-	}
 	focus = {
 		id = hun_natural_borders
 		icon = GFX_hun_natural_borders
 		cost = 0
-		prerequisite = {
-			focus = hun_break_the_peace_deal
-		}
-		x = 58
-		y = 13
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Ferenc Szalasi"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Pal Pronay"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Bela Imredy"
+					ruling_only = yes
+				}
 
-	}
-	focus = {
-		id = hun_national-jacobinism
-		icon = GFX_hun_national_state
-		cost = 0
-		prerequisite = {
-			focus = hun_legitimize_slavery
+				has_country_leader = {
+					name = "Miklos Horthy"
+					ruling_only = yes
+				}				
+			}
 		}
+		
 		prerequisite = {
-			focus = hun_trial_of_horthy
+			focus = hun_eternal_red_menace
 		}
-		x = 61
+				
+		cancel_if_invalid = yes
+		
+		completion_reward = {
+
+		add_ideas = HUN_Vengeance
+
+        }		
+	
+		x = 57
 		y = 10
 
-	}
+	}	
 	
 	focus = {
-		id = hun_break_the_peace_deal
-		icon = GFX_hun_break_the_peace_deal
+		id = hun_ignite_the_fire_of_revanchshism
+		icon = GFX_hun_ignite_the_fire_of_revanchshism
 		cost = 0
+		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Ferenc Szalasi"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Pal Pronay"
+					ruling_only = yes
+				}
+				
+				has_country_leader = {
+					name = "Bela Imredy"
+					ruling_only = yes
+				}
+
+				has_country_leader = {
+					name = "Miklos Horthy"
+					ruling_only = yes
+				}				
+			}
+		}		
+		
 		prerequisite = {
-			focus = hun_investments_from_russia
-			focus = hun_ignite_the_fire_of_revanchshism
-			focus = hun_found_HNDA
+			focus = hun_clericalization
 		}
+		
 		prerequisite = {
-			focus = hun_ask_for_military_advisers
+			focus = hun_found_move
+			focus = hun_make_them_feel_sorry
 		}
-		x = 58
-		y = 12
+				
+		cancel_if_invalid = yes
+		
+		completion_reward = {
+		
+		swap_ideas = {
+	     remove_idea =  HUN_Vengeance
+	     add_idea = HUN_Vengeance1
+		}
+    }		
+		
+		x = 57
+		y = 11
 
 	}
+
 	focus = {
 		id = hun_announce_mobilization
 		icon = GFX_hun_announce_mobilization
 		cost = 0
 		prerequisite = {
-			focus = hun_natural_borders
+			
 		}
 		x = 58
 		y = 14
@@ -4603,6 +5222,13 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		
 			if = {
 				limit = {
+					NOT = { has_completed_focus = hun_proclaim_UDWR }
+				  }	
+		    set_cosmetic_tag = HUN_wkr				
+			}
+		
+			if = {
+				limit = {
 					NOT = {
 					has_completed_focus = hun_lonely_way
 				}
@@ -4628,9 +5254,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		country_event = {
 		id = hungarian.25
 		days = 1
-		}
-		
-		set_cosmetic_tag = HUN_wkr
+		}		
 		
 		custom_effect_tooltip = HUN_PartyUnity_0.04_increase
 			add_to_variable = {
@@ -5306,8 +5930,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 					name = "Sandor Garbai"
 					ruling_only = yes
 				}
-               }				
-		      }
+             }				
+		  }
 			  
 		prerequisite = {
 			focus = hun_regional_elections
@@ -5322,6 +5946,13 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		
 	    completion_reward = {
 		
+			if = {
+				limit = {
+					NOT = { has_completed_focus = hun_proclaim_UDWR }
+				  }	
+		    set_cosmetic_tag = HUN_LB				
+			}		
+		
 		country_event = {
 		id = hungarian.46
 		days = 1
@@ -5331,9 +5962,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 				remove_idea = PB_Workers_Republic
 				add_idea = PB_Presidental_Republic
 			}	
-				
-		set_cosmetic_tag = HUN_LB 	
-		   }		
+		}		
 			
 		x = 22
 		y = 11
@@ -5453,7 +6082,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			days = 300
 		}
 	}
-		x = 15
+		x = 14
 		y = 9		
 	}
 	
@@ -5519,7 +6148,13 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}
 
 	    completion_reward = {
-		set_cosmetic_tag = HUN_SOC
+		
+			if = {
+				limit = {
+					NOT = { has_completed_focus = hun_proclaim_UDWR }
+				  }	
+		    set_cosmetic_tag = HUN_SOC				
+			}
 		
 		swap_ideas = {
 		remove_idea = PB_Govidea_Planned_Economy

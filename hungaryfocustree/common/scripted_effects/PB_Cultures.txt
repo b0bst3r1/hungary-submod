@@ -1760,47 +1760,47 @@ PB_Setup_Cultures = {
 	
 	### ---- Wallachian Culture ---- ###
 
-	81 = { set_variable = { culture_id = 442 } }
-	46 = { set_variable = { culture_id = 442 } }
-	955 = { set_variable = { culture_id = 442 } }
-    84 = { set_variable = { culture_id = 442 } }		
+	81 = { set_variable = { culture_id = 500 } }
+	46 = { set_variable = { culture_id = 500 } }
+	955 = { set_variable = { culture_id = 500 } }
+    84 = { set_variable = { culture_id = 500 } }	 	
 
 	### ---- Transylvanian Culture ---- ###
 	
-          # DEAD # culture_id = 443 #
+          # DEAD # culture_id = 501 #
 	
 	### ---- Serbo-Croatian Culture ---- ###
 
-	959 = { set_variable = { culture_id = 444 } }
-	957 = { set_variable = { culture_id = 444 } }
-	956 = { set_variable = { culture_id = 444 } }	
+	959 = { set_variable = { culture_id = 502 } }
+	957 = { set_variable = { culture_id = 502 } }
+	956 = { set_variable = { culture_id = 502 } }	
 
 	### ---- Greko-Turkish Culture ---- ###
 
-	965 = { set_variable = { culture_id = 445 } }	
-	341 = { set_variable = { culture_id = 445 } }
-	340 = { set_variable = { culture_id = 445 } }
-	822 = { set_variable = { culture_id = 445 } }
-	183 = { set_variable = { culture_id = 445 } }
-	821 = { set_variable = { culture_id = 445 } }
-	339 = { set_variable = { culture_id = 445 } }	
+	965 = { set_variable = { culture_id = 503 } }	
+	341 = { set_variable = { culture_id = 503 } }
+	340 = { set_variable = { culture_id = 503 } }
+	822 = { set_variable = { culture_id = 503 } }
+	183 = { set_variable = { culture_id = 503 } }
+	821 = { set_variable = { culture_id = 503 } }
+	339 = { set_variable = { culture_id = 503 } }	
 
 	
 	### ---- Danubian Culture ---- ###
 	
-	967 = { set_variable = { culture_id = 446 } }
+	967 = { set_variable = { culture_id = 504 } }
 	
 	### ---- Hungarian-Slovak ---- ###
 	
-	        #culture_id = 448#
+	        #culture_id = 505#
 	
 	### ---- Austro-Hungarian Culture ---- ###
 	
-	975 = { set_variable = { culture_id = 448 } }
+	975 = { set_variable = { culture_id = 506 } }
 	
 	### ---- Jewish Culture ---- ###
 	
-	            #Culture_id = 449	
+	            #Culture_id = 507	
 
     	
 }

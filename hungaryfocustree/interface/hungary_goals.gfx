@@ -6,6 +6,31 @@ spriteTypes = {
     }
 	
 	SpriteType = {
+	    name = "GFX_HUN_Budapest_Accord"
+        texturefile = "gfx/interface/goals/HUN_Budapest_Accord.dds"
+    }	
+
+	SpriteType = {
+	    name = "GFX_HUN_Istvan_Horthy"
+        texturefile = "gfx/interface/goals/HUN_Istvan_Horthy.dds"
+    }
+
+	SpriteType = {
+	    name = "GFX_HUN_modern_feudal"
+        texturefile = "gfx/interface/goals/HUN_modern_feudal.dds"
+    }	
+	
+	SpriteType = {
+	    name = "GFX_HUN_clericalization"
+        texturefile = "gfx/interface/goals/HUN_clericalization.dds"
+    }
+	
+	SpriteType = {
+	    name = "GFX_hun_make_them_feel_sorry"
+        texturefile = "gfx/interface/goals/hun_make_them_feel_sorry.dds"
+    }	
+	
+	SpriteType = {
 	    name = "GFX_arrow_cross_in_power"
         texturefile = "gfx/interface/goals/arrow_cross_in_power.dds"
     }	
@@ -903,11 +928,6 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_hun_decommunization"
 		texturefile = "gfx/interface/goals/hun_decommunization.dds"
-	}
-	
-	SpriteType = { 
-		name = "GFX_catholic_education"
-		texturefile = "gfx/interface/goals/catholic_education.dds"
 	}
 	
 	SpriteType = { 

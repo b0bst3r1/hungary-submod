@@ -1,8 +1,6 @@
 on_actions = {
-     effect = {
-	 
-			#Russia controls romanian oil
-			
+ on_startup = {
+      effect = {
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"
@@ -13,5 +11,6 @@ on_actions = {
 			}
 		}
 	}
+}
   
   

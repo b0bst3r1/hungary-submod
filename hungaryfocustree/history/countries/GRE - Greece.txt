@@ -10,7 +10,7 @@ set_country_flag = Tag_in_Russian_Sphere
 set_variable = { PB_main_culture = 44 }
 add_to_array = { PB_accepted_cultures = 44 }
 add_to_array = { PB_accepted_cultures = 89 }
-add_to_array = { PB_accepted_cultures = 445 }
+add_to_array = { PB_accepted_cultures = 503 }
 
 # Starting tech
 set_technology = { 

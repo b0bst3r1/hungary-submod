@@ -5,6 +5,34 @@ ideas = {
 		
 		# Hungary #
 		
+		HUN_Istvan_Horthy = { 
+						
+			cost = 150
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = HUN
+			}
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+
+			 picture = HUN_Istvan_Horthy_IM
+
+			traits = {
+				PB_ds_trait
+				PB_Pilot	
+			}
+			
+			cancel_if_invalid = no
+		} 		
+		
 		HUN_Garbai_IM = { 
 						
 			cost = 150

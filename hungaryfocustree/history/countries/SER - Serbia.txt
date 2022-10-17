@@ -14,7 +14,7 @@ add_to_array = { PB_accepted_cultures = 50 }
 add_to_array = { PB_accepted_cultures = 52 }
 add_to_array = { PB_accepted_cultures = 45 }
 add_to_array = { PB_accepted_cultures = 53 }
-add_to_array = { PB_accepted_cultures = 444 }
+add_to_array = { PB_accepted_cultures = 502 }
 
 # Starting tech
 set_technology = { 

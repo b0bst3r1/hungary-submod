@@ -59,7 +59,7 @@ spriteTypes = {
     spriteType = {
 		name = "GFX_idea_HUN_Gyorgy_IM"
 		texturefile = "gfx/interface/ideas/Government_Ideas/Internal_Minister/Hungary/HUN_Gyorgy_IM.dds"
-	}
+	}	
 
     spriteType = {
 		name = "GFX_idea_HUN_Revai_HOG"
@@ -74,5 +74,16 @@ spriteTypes = {
     spriteType = {
 		name = "GFX_idea_HUN_Garbai_HOG"
 		texturefile = "gfx/interface/ideas/Government_Ideas/Head_of_Government/Hungary/HUN_Garbai_HOG.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_idea_HUN_Istvan_Horthy_IM"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Internal_Minister/Hungary/HUN_Istvan_Horthy_IM.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_HUN_Miklos_Horthy_II_FM"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Foreign_Minister/Hungary/HUN_Miklos_Horthy_II_FM.dds"
 	}	
+	
 }

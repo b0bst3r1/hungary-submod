@@ -17,11 +17,10 @@ HUN_culture_war = {
 		available = {
 		}
 
-		days_remove = 3
 
 		fire_only_once = yes
 
-		remove_effect = {
+		complete_effect = {
 		
 		custom_effect_tooltip = begin_magyarization_transylvania 
 		
@@ -221,11 +220,9 @@ HUN_culture_war = {
 		available = {
 		}
 
-		days_remove = 3
-
 		fire_only_once = yes
 
-		remove_effect = {
+		complete_effect = {
 		
 		custom_effect_tooltip = begin_automatization_transylvania
 		
@@ -429,11 +426,9 @@ HUN_culture_war = {
 		available = {
 		}
 
-		days_remove = 3
-
 		fire_only_once = yes
 
-		remove_effect = {
+		complete_effect = {
 					
 		custom_effect_tooltip = begin_magyarization_slovakia
 		
@@ -586,8 +581,8 @@ HUN_culture_war = {
 		
 			 hidden_effect = {
 			 
-		    70 = { set_variable = { culture_id = 447 } }
-		    71 = { set_variable = { culture_id = 447 } }
+		    70 = { set_variable = { culture_id = 505 } }
+		    71 = { set_variable = { culture_id = 505 } }
 			
 				71 = {
 					set_temp_variable = { temp_culture = culture_id }
@@ -643,11 +638,9 @@ HUN_culture_war = {
 		available = {
 		}
 
-		days_remove = 3
-
 		fire_only_once = yes
 
-		remove_effect = {	
+		complete_effect = {	
 		
 		custom_effect_tooltip = begin_autonomization_slovakia 
 		
@@ -867,11 +860,9 @@ HUN_culture_war = {
 		available = {
 		}
 
-		days_remove = 3
-
 		fire_only_once = yes
 
-		remove_effect = {
+		complete_effect = {
 		
 		custom_effect_tooltip = begin_magyarization_ruthenia
 		
@@ -1058,11 +1049,9 @@ HUN_culture_war = {
 		available = {
 		}
 
-		days_remove = 3
-
 		fire_only_once = yes
 
-		remove_effect = {	
+		complete_effect = {	
 		
 		custom_effect_tooltip = begin_autonomization_ruthenia
 		

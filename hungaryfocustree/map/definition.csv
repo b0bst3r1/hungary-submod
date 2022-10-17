@@ -13278,7 +13278,7 @@
 13277;233;171;154;land;false;plains;6
 13278;51;107;178;land;false;plains;6
 13279;157;16;195;land;false;hills;6
-13280;240;251;255;land;false;plains;1
+13280;240;251;255;land;true;plains;1
 13281;47;49;239;land;true;plains;1
 13282;0;10;200;land;true;plains;6
 13283;0;11;200;land;false;plains;1
