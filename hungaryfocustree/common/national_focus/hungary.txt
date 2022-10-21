@@ -1338,10 +1338,6 @@ focus_tree = {
 
 		794 = {
 		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
-		}
-
-		43 = {
-		add_dynamic_modifier = { modifier = HUN_Autonomous_state }
 		}	
 
 		974 = {
@@ -1403,9 +1399,14 @@ focus_tree = {
 
 	    completion_reward = {
 		
-         set_rule = {
-         can_send_volunteers = yes
-        }		
+		if = {
+		  limit = {
+		   NOT = { has_completed_focus = hun_international_support }
+		   }			  
+           set_rule = {
+           can_send_volunteers = yes
+            }			
+		  }			
 		
 	    army_experience = 15
 		navy_experience = 15
@@ -1693,7 +1694,7 @@ focus_tree = {
 	
 	focus = {
 		id = hun_budapest_research_centr
-		icon = GFX_HUN_research_center_shine
+		icon = GFX_HUN_research_center
 		cost = 28
 		
 		prerequisite = {
@@ -1727,7 +1728,7 @@ focus_tree = {
 		
 		HUN = {
 		
-	    create_faction = zagreb_treaty
+	    set_faction_name = zagreb_treaty
 		
 		add_ideas = HUN_zagreb_treaty
 		}
@@ -1766,7 +1767,7 @@ focus_tree = {
 		
 		HUN = {
 		
-	    create_faction = budapest_entente
+	    set_faction_name = budapest_entente
 		
 		add_ideas = HUN_Budapest_Entente
 		}
@@ -2480,12 +2481,13 @@ create_country_leader = {
 		
 	    completion_reward = {		
 		hidden_effect = {
-		HUN = {
-		add_ideas = HUN_labor_camps_three
-		}
-      }		
+		swap_ideas = {
+			remove_idea = HUN_labor_camps_two
+			add_idea = HUN_labor_camps_three
+			}
+		}		
 
-custom_effect_tooltip = HUN_Increase_prison_450
+       custom_effect_tooltip = HUN_Increase_prison_450
 		
       }
 		
@@ -2574,8 +2576,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	}
 
 	focus = {
-		id = HUN_Spartakiad
-		icon = GFX_HUN_Spartakiad
+		id = HUN_The_Great_Experiment
+		icon = GFX_PB_JAP_Wild_Promises
 		cost = 35
 		
 		available = {
@@ -2600,10 +2602,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}			
 		
 	    completion_reward = {
-		country_event = {
-		id = hungarian.35
-		days = 1
-		   }
+		add_political_power = 100
+		PB_Poverty_Moderate_Progress_Increase = yes
 		}
   
 		x = 8
@@ -2993,8 +2993,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
      }
 	 
 	focus = {
-		id = hun_brotherhood_and_unity
-		icon = GFX_hun_brotherhood_and_unity
+		id = HUN_Army_issue
+		icon = GFX_HUN_Army_Issue
 		cost = 35
 		
 		available = {
@@ -3018,11 +3018,22 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		focus = hun_garbai_arrest
 		}
 
-	    completion_reward = {		
-		HUN = {
-		add_ideas = HUN_brotherhood_and_unity
-		}
-      }		
+	    completion_reward = {
+		
+		custom_effect_tooltip = Purge_Generals_tt_tt
+		
+		hidden_effect = {
+		retire_character = HUN_Jeno_Landler
+		retire_character = HUN_Rakosi
+		retire_character = HUN_Gabor_Peter
+
+        retire_character = HUN_ivan_hindy
+		retire_character = HUN_Karoly_Bartha		
+        }
+		
+		remove_ideas = HUN_diverse_general_staff
+        }
+		
 		x = 16
 		y = 8	
 
@@ -3089,8 +3100,12 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			focus = hun_socialist_self_management
 		}
 		
-	    completion_reward = {		
-		add_ideas = HUN_restructed_farms
+	    completion_reward = {
+
+		add_timed_idea = {
+		idea = HUN_restructed_farms
+		days = 600
+		   }		
 		}
 		
 		x = 10
@@ -3192,7 +3207,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	cancel_if_invalid = yes		
 		
 		prerequisite = {
-			focus = hun_brotherhood_and_unity
+			focus = HUN_Army_issue
 		}
 		
 		completion_reward = {
@@ -4085,7 +4100,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	}
 	
 	focus = {
-		id = hun_military_coup
+		id = hun_monarchy_delayed
 		icon = GFX_hun_military_coup
 		cost = 0
 		prerequisite = {
@@ -4104,7 +4119,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		icon = GFX_arrow_cross_in_power
 		cost = 0
 		prerequisite = {
-			focus = hun_military_coup
+			focus = hun_monarchy_delayed
 		}
 		mutually_exclusive = {
 			focus = hun_regent_without_king
@@ -4118,8 +4133,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	}
 	
 	focus = {
-		id = hun_execute_leaders_rebellion
-		icon = GFX_hun_execute_leaders_rebellion
+		id = hun_clean_countryy
+		icon = GFX_hun_deportation_of_gypsies
 		cost = 35
 		
 		available = {
@@ -4157,8 +4172,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	}
 	
 	focus = {
-		id = hun_Stabilization_of_the_country
-		icon = GFX_hun_Stabilization_of_the_country
+		id = hun_strong_country
+		icon = GFX_hun_execute_leaders_rebellion
 		cost = 35
 		
 		available = {
@@ -4215,7 +4230,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_modern_feudalism
 		icon = GFX_HUN_modern_feudal
-		cost = 35
+		cost = 42
 		
 		available = {
 			OR = {
@@ -4236,7 +4251,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}
 		
 		prerequisite = {
-			focus = hun_Stabilization_of_the_country
+			focus = hun_clean_countryy
+		}
+		prerequisite = {
+			focus = hun_strong_country
 		}
 				
 		cancel_if_invalid = yes
@@ -4252,9 +4270,9 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	}
 	
 	focus = {
-		id = hun_national-jacobinism
+		id = HUN_National_Renassaince
 		icon = GFX_hun_national_state
-		cost = 35
+		cost = 42
 		
 		available = {
 			OR = {
@@ -4275,10 +4293,10 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}
 		
 		prerequisite = {
-			focus = hun_execute_leaders_rebellion
+			focus = hun_clean_countryy
 		}
 		prerequisite = {
-			focus = hun_Stabilization_of_the_country
+			focus = hun_strong_country
 		}
 				
 		cancel_if_invalid = yes
@@ -4312,7 +4330,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}
 		
 		prerequisite = {
-			focus = hun_national-jacobinism
+			focus = HUN_National_Renassaince
 		}
 		prerequisite = {
 			focus = hun_modern_feudalism
@@ -4356,7 +4374,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}		
 		
 		prerequisite = {
-			focus = hun_military_coup
+			focus = hun_monarchy_delayed
 		}
 		
 		mutually_exclusive = {
@@ -4373,8 +4391,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	
 	focus = {
 		id = hun_beauty_of_militarism
-		icon = GFX_goal_RUS_Armored_Warfare
-		cost = 35
+		icon = GFX_beauty_of_militarism
+		cost = 42
 		
 		available = {
 		      
@@ -4435,7 +4453,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_native_of_magyars
 		icon = GFX_hun_decommunization
-		cost = 35
+		cost = 42
 		
 		available = {
 				has_country_leader = {
@@ -4463,7 +4481,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_forgive_sinful_capital
 		icon = GFX_hun_forgive_sinful_capital
-		cost = 35
+		cost = 42
 		
 		available = {
 				has_country_leader = {
@@ -4493,7 +4511,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_nepotism
 		icon = GFX_HUN_Istvan_Horthy
-		cost = 35
+		cost = 42
 		
 		available = {
 				has_country_leader = {
@@ -4521,8 +4539,8 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	
 	focus = {
 		id = hun_Blood_and_Honour
-		icon = GFX_Focus_Bloody_Purge
-		cost = 35
+		icon = GFX_hun_Blood_and_Honour
+		cost = 42
 		
 		available = {
 				has_country_leader = {
@@ -4595,7 +4613,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_clericalization
 		icon = GFX_HUN_clericalization
-		cost = 35
+		cost = 42
 		
 		available = {
 			OR = {
@@ -4640,7 +4658,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_begin_covert_remilitarization
 		icon = GFX_hun_begin_covert_remilitarization
-		cost = 35
+		cost = 42
 
 		available = {
 			OR = {
@@ -4680,7 +4698,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 	focus = {
 		id = hun_eternal_red_menace
 		icon = GFX_hun_eternal_red_menace
-		cost = 0
+		cost = 42
 		
 		available = {
 			OR = {
@@ -4998,12 +5016,26 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			focus = hun_Country_held_on
 		}
 		mutually_exclusive = {
-			focus = hun_military_coup
+			focus = hun_monarchy_delayed
 		}
 		x = 75
 		y = 6
 
 	}
+	
+	focus = {
+		id = HUN_Esterhazy_Takes
+		icon = GFX_HUN_Esterhazy_Takes
+		cost = 0
+		
+		prerequisite = {
+			focus = hun_monarch_elections
+		}
+		
+		x = 75
+		y = 7
+
+	}	
 
 	focus = {
 		id = HUN_BANOPPOSITION
@@ -5075,7 +5107,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 			}		
 		}	  
 
-custom_effect_tooltip = HUN_Increase_prison_300
+        custom_effect_tooltip = HUN_Increase_prison_300
 		
 			add_popularity = {
 			ideology = ss
@@ -5116,12 +5148,12 @@ custom_effect_tooltip = HUN_Increase_prison_300
 		
 		hidden_effect = {
 		swap_ideas = {
-			remove_idea = HUN_labor_camps_two
-			add_idea = HUN_labor_camps_three
+			remove_idea = HUN_labor_camps_three
+			add_idea = HUN_labor_camps_four
 			}
 		}		
 
-custom_effect_tooltip = HUN_Increase_prison_450
+        custom_effect_tooltip = HUN_Increase_prison_900
 		
 		add_ideas = HUN_red_terror
 		}
@@ -5215,7 +5247,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}
 
 		prerequisite = {
-			focus = HUN_Spartakiad
+			focus = HUN_The_Great_Experiment
 		}		
 		
 	    completion_reward = {
@@ -6019,11 +6051,17 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}
 		
 	    completion_reward = {
-		country_event = {
-		id = hungarian.43
-		days = 1
-		   }
-		}
+		
+        set_party_name = {
+        ideology = ss
+        long_name = HUN_socialist_party_PB_long
+        name = HUN_socialist_party_PB
+           }
+		   
+		add_ideas = {
+        HUN_direct_democracy
+			}		   
+	    }
 		
 		x = 11
 		y = 7
@@ -6073,7 +6111,7 @@ custom_effect_tooltip = HUN_Increase_prison_450
 		}
 		
 		prerequisite = {
-			focus = hun_brotherhood_and_unity
+			focus = HUN_Army_issue
 		}
 		
 		completion_reward = {

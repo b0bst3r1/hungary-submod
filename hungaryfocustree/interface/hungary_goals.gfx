@@ -6,6 +6,26 @@ spriteTypes = {
     }
 	
 	SpriteType = {
+	    name = "GFX_beauty_of_militarism"
+        texturefile = "gfx/interface/goals/beauty_of_militarism.dds"
+    }
+	
+	SpriteType = {
+	    name = "GFX_HUN_Esterhazy_Takes"
+        texturefile = "gfx/interface/goals/HUN_Esterhazy_Takes.dds"
+    }
+
+	SpriteType = {
+	    name = "GFX_HUN_Army_Issue"
+        texturefile = "gfx/interface/goals/HUN_Army_Issue.dds"
+    }	
+
+	SpriteType = {
+	    name = "GFX_hun_Blood_and_Honour"
+        texturefile = "gfx/interface/goals/hun_Blood_and_Honour.dds"
+    }	
+	
+	SpriteType = {
 	    name = "GFX_HUN_Budapest_Accord"
         texturefile = "gfx/interface/goals/HUN_Budapest_Accord.dds"
     }	

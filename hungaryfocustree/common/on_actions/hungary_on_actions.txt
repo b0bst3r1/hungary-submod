@@ -670,7 +670,6 @@ var = HUN_dejacobinization_progress
       effect = { 
        if = {
         limit = {
-        limit = {
 		  check_variable = { HUN_dejacobinization_progress > 0.99 }
 		       }
 	      country_event = { id = hungarian.1001 }

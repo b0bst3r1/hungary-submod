@@ -234,15 +234,15 @@ country_event = {		#JoinTheWar as Turkey
 					TUR = {			
             add_ideas = HUN_Budapest_Entente			
 			}
+		 }
 			
 		remove_ideas = PB_HUN_Balkan_Powderkeg
         add_ideas = PB_HUN_Great_Balkan_War
-        add_ideas = TUR_Liberation_War		
-		  }				  
+        add_ideas = TUR_Liberation_War						  
 
-declare_war_on = {
-    target = GRE
-    type = annex_everything
+       declare_war_on = {
+       target = GRE
+       type = annex_everything
         }		
 	}
 }

@@ -843,7 +843,14 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = hungarian.15.a	
+		name = hungarian.15.a
+
+    HUN = {
+    transfer_state = 955
+	add_state_core = 955
+	transfer_state = 77
+	add_state_core = 77		
+	
 		
 	hidden_effect = {			
 		
@@ -941,8 +948,12 @@ set_popularities = {
 	
 		transfer_state = 106
 	    transfer_state = 731
+	    transfer_state = 958		
 		add_state_core = 731
 		add_state_core = 106
+		add_state_core = 958
+		transfer_state = 972
+		add_state_core = 972		
 	
 	set_cosmetic_tag = MAC_Jacobin
 	}
@@ -1012,10 +1023,11 @@ set_popularities = {
 			set_autonomy = {
                 target = KSV
                  autonomy_state = autonomy_PB_Sister_Republic
-                }				
-			}			
-   }
-}
+              }				
+		   }			
+        }
+     }
+  }
  
 	country_event = { #POLITICLCRISIS
 	id = hungarian.16
@@ -1617,35 +1629,23 @@ create_country_leader = {
 	
 	option = {
 		name = hungarian.32.a #Execute
+		
+		add_popularity = {
+		ideology = jc
+		popularity = -0.05
+		}		
             
-			add_ideas = {
-			remove_idea = HUN_BelaKun_FM	
-			}
-			
-			remove_ideas = {			
-            remove_idea = HUN_Kunfi_FM
-			}
+		remove_ideas = HUN_BelaKun_FM					
+        add_ideas = HUN_Kunfi_FM
 
-			if = {
-				limit = {
-					NOT = {
-					has_completed_focus = hun_garbai_arrest
-				}
-				}
-				add_popularity = {
-					ideology = jc
-					popularity = -0.05
-				}
-			}
-
-			else_if = {
-				limit = {
-					has_completed_focus = hun_garbai_arrest
-				}
-					remove_ideas = HUN_party_opposition
-				}
-			}
-         }		 
+		 if = {
+		 limit = {
+		 has_completed_focus = hun_garbai_arrest
+		 }
+		 remove_ideas = HUN_party_opposition
+		 }
+	  }
+  }		 
 
      	   country_event = { #GarbaiTrial
 	id = hungarian.33
@@ -1666,93 +1666,27 @@ create_country_leader = {
             remove_idea = HUN_Garbai_IM	
 			}
 
-           retire_character = HUN_nagy
-		   retire_character = HUN_Karoly
-		   retire_character = HUN_Schon
-		   retire_character = HUN_tibor
-		   retire_character = HUN_farkas_mihaly
-		   retire_character = HUN_Gabor_Peter
-
 			if = {
-				limit = {
-					NOT = {
-					has_completed_focus = hun_belakun_arrest
-				}
-				}
-				add_popularity = {
-					ideology = lb
-					popularity = -0.05
-				}
-			}
-
-			else_if = {
 				limit = {
 					has_completed_focus = hun_belakun_arrest
 				}
 					remove_ideas = HUN_party_opposition
-				}
-			}		   
-		 
-	option = {
-		name = hungarian.33.b #ExecuteAllButGenerals
-            
-			add_ideas = {
-			HUN_Gyorgy_IM
-			}
-			
-			remove_ideas = {			
-            remove_idea = HUN_Garbai_IM	
-			}
-
-			if = {
-				limit = {
-					NOT = {
-					has_completed_focus = hun_belakun_arrest
-				}
-				}
-				add_popularity = {
-					ideology = lb
-					popularity = -0.05
-				}
-			}
-
-			else_if = {
-				limit = {
-					has_completed_focus = hun_belakun_arrest
-				}
-				add_popularity = {
-					remove_ideas = HUN_party_opposition
-				}
-			}
-        }			
+				 }
+		    }		   			
       
 	option = {
 		name = hungarian.33.c #Forgive	
-		
-			if = {
-				limit = {
-					NOT = {
-					has_completed_focus = hun_belakun_arrest
-				}
-				}
-				add_popularity = {
-					ideology = lb
-					popularity = -0.05
-				}
-			}
 
-			else_if = {
+			 if = {
 				limit = {
 					has_completed_focus = hun_belakun_arrest
 				}
-				add_popularity = {
 					remove_ideas = HUN_party_opposition
-				}
-			}		
-         }		 
+				 }
+			}				 
       }
    
-     	   country_event = { #PurgeGeneralsBelaKun
+    country_event = { #PurgeGeneralsBelaKun
 	id = hungarian.34
 	title = hungarian.34.t
 	desc = hungarian.34.d
@@ -1762,27 +1696,19 @@ create_country_leader = {
 	
 	option = {
 		name = hungarian.34.a #ExecuteALl
-
-           retire_character = HUN_nagy
-		   retire_character = HUN_Karoly
-		   retire_character = HUN_Schon
-		   retire_character = HUN_tibor
-		   retire_character = HUN_farkas_mihaly
-		   retire_character = HUN_Gabor_Peter	
-           retire_character = HUN_ivan_hindy
-		   retire_character = HUN_Karoly_Bartha
-		   retire_character = HUN_Kornel_Radanyi
-		   retire_character = HUN_jeno_sarkany		   
-         }
-		 
-	option = {
-		name = hungarian.34.a #ExecuteEveryoneButSocialists
 		
+		   custom_effect_tooltip = Purge_Generals_tt		
+		
+           hidden_effect = {
            retire_character = HUN_ivan_hindy
 		   retire_character = HUN_Karoly_Bartha
 		   retire_character = HUN_Kornel_Radanyi
-		   retire_character = HUN_jeno_sarkany		   
-         }		 
+		   retire_character = HUN_jeno_sarkany
+
+		   retire_character = HUN_tibor
+		   retire_character = HUN_gordony
+          } 		   
+       }		 
 	}
 	
 
@@ -2248,8 +2174,8 @@ create_country_leader = {
 	option = {
 		name = hungarian.57.a
 
-					ALB = {
-
+					ALB = {					
+			
             white_peace = HUN					
 					
             remove_ideas = ALB_german_dependency					
@@ -2402,12 +2328,14 @@ create_country_leader = {
          	add_state_core = 185
          	add_state_core = 47
          	add_state_core = 970
+         	add_state_core = 971			
          	add_state_core = 186			
 		    add_state_core = 163
 		    add_state_core = 960
 
          	transfer_state = 731
          	transfer_state = 958
+        	transfer_state = 971			
          	transfer_state = 185
          	transfer_state = 47
          	transfer_state = 970

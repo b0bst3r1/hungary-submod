@@ -2336,7 +2336,7 @@ HUN_domestic_policy = {
 		cost = 20
 
 		ai_will_do = {
-			factor = 30
+			factor = 51
 		}
 
 		available = {
@@ -2369,7 +2369,7 @@ HUN_domestic_policy = {
 		cost = 20
 
 		ai_will_do = {
-			factor = 30
+			factor = 51
 		}
 
 		available = {

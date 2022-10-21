@@ -19,11 +19,14 @@
 	fire_only_once = yes
 	
 		remove_effect = {
-				set_country_flag = HUN_stage_one_begin
+		
+		add_ideas = HUN_The_Walking_Dead
+		
+		set_country_flag = HUN_stage_one_begin
 
-			swap_ideas = {
-				remove_idea = PB_Augmentation_No_Legislation
-				add_idea = PB_Augmentation_Encouraged
+		swap_ideas = {
+		remove_idea = PB_Augmentation_No_Legislation
+		add_idea = PB_Augmentation_Encouraged
 			}				
 		}
     }			
@@ -236,7 +239,17 @@
 		fire_only_once = yes
 
 		remove_effect = {
-				set_country_flag = HUN_stage_two_begin			
+
+		swap_ideas = {
+		remove_idea = HUN_The_Walking_Dead
+		add_idea = HUN_The_Walking_Dead1
+			}		
+		
+		country_event = {
+		id = hungarian.38
+		days = 1
+		}		
+		set_country_flag = HUN_stage_two_begin			
 		}
 	}
 
@@ -466,7 +479,17 @@
 		fire_only_once = yes
 
 		remove_effect = {
-				set_country_flag = HUN_stage_three_begin
+		
+		swap_ideas = {
+		remove_idea = HUN_The_Walking_Dead1
+		add_idea = HUN_The_Walking_Dead2
+			}		
+		
+		country_event = {
+		id = hungarian.39
+		days = 1
+		}		
+			set_country_flag = HUN_stage_three_begin
 
 			swap_ideas = {
 				remove_idea = PB_Augmentation_Encouraged
@@ -655,7 +678,12 @@
 			research_speed_factor = -0.03
 		}
 
-		remove_effect = {	
+		remove_effect = {
+
+		country_event = {
+		id = hungarian.40
+		days = 1
+		}		
 		
         custom_effect_tooltip = HUN_20percent_to_research
 
@@ -924,7 +952,12 @@
 		fire_only_once = yes
 
 		remove_effect = {
-				set_country_flag = finalize_the_research	
+		
+		swap_ideas = {
+		remove_idea = HUN_The_Walking_Dead2
+		add_idea = HUN_The_Walking_Dead3
+			}		
+		set_country_flag = finalize_the_research	
 		}
 	  }		
 	}	

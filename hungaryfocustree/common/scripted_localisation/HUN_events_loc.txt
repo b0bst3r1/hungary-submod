@@ -20,3 +20,20 @@ defined_text = {
         localization_key = "get_revai_suicide_event_tt"
     }    
 }
+
+defined_text = { 
+    name = get_the_walking_dead_scripted_loc
+    
+    text = { 
+        trigger = {
+            NOT = { has_country_flag = finalize_the_research}
+        }
+        localization_key = "the_walking_dead_NO"
+    }
+    text = { 
+        trigger = {
+           has_country_flag = finalize_the_research
+        }
+        localization_key = "the_walking_dead_YES"
+    }    
+}

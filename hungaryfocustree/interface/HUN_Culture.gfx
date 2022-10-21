@@ -3,42 +3,42 @@
 spriteTypes = {
 
 	spriteType = {
-		name = "GFX_PB_Culture_442"
+		name = "GFX_PB_Culture_500"
 		texturefile = "gfx/interface/culture/Balkan/Wallachian.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_PB_Culture_443"
+		name = "GFX_PB_Culture_501"
 		texturefile = "gfx/interface/culture/Balkan/Transylvanian.dds"
 	}
 
 	spriteType = {
-		name = "GFX_PB_Culture_444"
+		name = "GFX_PB_Culture_502"
 		texturefile = "gfx/interface/culture/Balkan/serbocroatia.dds"
 	}
 
 	spriteType = {
-		name = "GFX_PB_Culture_445"
+		name = "GFX_PB_Culture_503"
 		texturefile = "gfx/interface/culture/Balkan/Greco-Turkish.dds"
 	}
 
 	spriteType = {
-		name = "GFX_PB_Culture_446"
+		name = "GFX_PB_Culture_504"
 		texturefile = "gfx/interface/culture/Balkan/Danubian.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_PB_Culture_447"
+		name = "GFX_PB_Culture_505"
 		texturefile = "gfx/interface/culture/Balkan/hungaro-slovak.dds"
 	}
 
 	spriteType = {
-		name = "GFX_PB_Culture_448"
+		name = "GFX_PB_Culture_506"
 		texturefile = "gfx/interface/culture/Balkan/austria-hungarian.dds"
 	}
 
 	spriteType = {
-		name = "GFX_PB_Culture_449"
+		name = "GFX_PB_Culture_507"
 		texturefile = "gfx/interface/culture/Other/Jewish.dds"
 	}	
 }

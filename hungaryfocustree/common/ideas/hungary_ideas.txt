@@ -302,7 +302,7 @@ hidden_ideas = {
 	
 			modifier = {
             monthly_population = -0.02 			
-            stability_weekly = -0.001
+            stability_weekly = 0.001
 			}
 		}
 
@@ -453,7 +453,7 @@ hidden_ideas = {
 	
 			modifier = {						
             production_speed_buildings_factor = 0.04
-            stability_factor = -0.05			
+            stability_factor = -0.03			
 			}
 		}
 		
@@ -474,7 +474,7 @@ hidden_ideas = {
 	
 			modifier = {						
             production_speed_buildings_factor = 0.08
-            stability_factor = -0.1			
+            stability_factor = -0.06			
 			}
 		}
 
@@ -495,6 +495,27 @@ hidden_ideas = {
 	
 			modifier = {						
             production_speed_buildings_factor = 0.12
+            stability_factor = -0.09			
+			}
+		}
+
+		HUN_labor_camps_four = { #900k
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HUN_labor_camps
+			
+			removal_cost = -1
+	
+			modifier = {						
+            production_speed_buildings_factor = 0.20
             stability_factor = -0.15			
 			}
 		}		
@@ -520,7 +541,7 @@ hidden_ideas = {
 			}
 		}
 
-		HUN_revival_of_organisms = {
+		HUN_The_Walking_Dead = {
 			
 			
 			allowed = {
@@ -531,16 +552,83 @@ hidden_ideas = {
 				always = yes
 			}
 
-            picture = HUN_revival_of_organisms
+            picture = PB_HUN_The_Walking_Dead
 			
 			removal_cost = -1
 	
 			modifier = {						
-            production_factory_efficiency_gain_factor = 0.1
-            production_factory_max_efficiency_factor = 0.05 
-            monthly_population = 0.05				
+			consumer_goods_factor = 0.025				
 		   }
 	   }
+	   
+		HUN_The_Walking_Dead1 = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = PB_HUN_The_Walking_Dead
+			
+			removal_cost = -1
+	
+			modifier = {
+			consumer_goods_factor = 0.025			
+            army_speed_factor = 0.1
+		   }
+	   }
+
+		HUN_The_Walking_Dead2 = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = PB_HUN_The_Walking_Dead
+			
+			removal_cost = -1
+	
+			modifier = {
+			consumer_goods_factor = 0.025			
+            army_speed_factor = 0.1
+            army_morale = 5
+            army_org_regain = 0.05			
+		   }
+	   }
+
+		HUN_The_Walking_Dead3 = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = PB_HUN_The_Walking_Dead
+			
+			removal_cost = -1
+	
+			modifier = {
+            army_speed_factor = 0.15
+            army_morale = 7.5
+            army_org_regain = 0.1			
+            production_factory_efficiency_gain_factor = 0.1
+            production_factory_max_efficiency_factor = 0.05 
+            monthly_population = 0.1				
+		   }
+	   }	   
 
 		HUN_party_opposition = {
 			
@@ -1062,7 +1150,8 @@ hidden_ideas = {
 	
 			modifier = {
 				stability_factor = -0.10
-				ni_drift = 0.10				
+				ni_drift = 0.10
+			    local_factory_sabotage = 0.15				
 		    }
 		}
 

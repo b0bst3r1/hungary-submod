@@ -298,5 +298,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_PB_HUN_MOVE"
 		texturefile = "gfx/interface/ideas/Hungary/HUN_MOVE.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PB_HUN_The_Walking_Dead"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_The_Walking_Dead.dds"
 	}	
 }

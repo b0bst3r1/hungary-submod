@@ -334,11 +334,11 @@ on_daily_HUN = {	# Third Balkan War - Bulgaria Capitulation
   effect = { 
     if = {
       limit = {
-	  
 	    has_global_flag = third_balkan_war_started
 		
-          controls_province = 9617
-          controls_province = 9716		  
+	   BUL = {
+       has_capitulated = yes
+       }		  
     }
 	
 	country_event = { id = hungarian.15}
@@ -354,9 +354,11 @@ on_daily_HUN = {	# Third Balkan War - Albania Capitulation
     if = {
       limit = {
 	  
-	    has_global_flag = third_balkan_war_started
+	   has_global_flag = third_balkan_war_started
 		
-          controls_province = 9617		  
+	   ALB = {
+       has_capitulated = yes
+       }	  
     }
 	
 	country_event = { id = hungarian.57}
@@ -374,7 +376,9 @@ on_daily_HUN = {	# Third Balkan War - Greece Capitulation
 
 	    has_global_flag = third_balkan_war_started
 		
-          controls_province = 9617		  
+	   GRE = {
+       has_capitulated = yes
+       }	  
     }
 
     set_global_flag = third_balkan_war_greece_lost

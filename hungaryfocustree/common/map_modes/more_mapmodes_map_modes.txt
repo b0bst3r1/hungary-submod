@@ -28,7 +28,7 @@ scripted_map_modes = {
 					
 					else_if = {
 						limit = {
-							check_variable = { culture_id = 442 }
+							check_variable = { culture_id = 500 }
 						}
 						set_temp_variable = { red = 0.9 }
 						set_temp_variable = { green = 0.74 }
@@ -37,7 +37,7 @@ scripted_map_modes = {
 					
 					else_if = {
 						limit = {
-							check_variable = { culture_id = 443 }
+							check_variable = { culture_id = 501 }
 						}
 						set_temp_variable = { red = 0.537 }
 						set_temp_variable = { green = 0.196 }
@@ -46,7 +46,7 @@ scripted_map_modes = {
 
 					else_if = {
 						limit = {
-						check_variable = { culture_id = 444 }
+						check_variable = { culture_id = 502 }
 						}
 						set_temp_variable = { red = 0.6 }
 						set_temp_variable = { green = 0.4 }
@@ -55,7 +55,7 @@ scripted_map_modes = {
 
 					else_if = {
 						limit = {
-						check_variable = { culture_id = 445 }
+						check_variable = { culture_id = 503 }
 						}
 						set_temp_variable = { red = 0.388 }
 						set_temp_variable = { green = 0.486 }
@@ -64,7 +64,7 @@ scripted_map_modes = {
 
 					else_if = {
 						limit = {
-						check_variable = { culture_id = 446 }
+						check_variable = { culture_id = 504 }
 							}
 						set_temp_variable = { red = 0.8 }
 						set_temp_variable = { green = 0.2 }
@@ -73,11 +73,29 @@ scripted_map_modes = {
 
 					else_if = {
 						limit = {
-						check_variable = { culture_id = 447 }
+						check_variable = { culture_id = 505 }
 							}
 						set_temp_variable = { red = 0.70 }
 						set_temp_variable = { green = 0.17 }
 						set_temp_variable = { blue = 0.0 }
+					}
+
+					else_if = {
+						limit = {
+						check_variable = { culture_id = 506 }
+							}
+						set_temp_variable = { red = 0.59 }
+						set_temp_variable = { green = 0.0 }
+						set_temp_variable = { blue = 0.3 }
+					}
+
+					else_if = {
+						limit = {
+						check_variable = { culture_id = 507 }
+							}
+						set_temp_variable = { red = 0.1 }
+						set_temp_variable = { green = 0.0 }
+						set_temp_variable = { blue = 0.6 }
 					}					
 					
 					else_if = {
