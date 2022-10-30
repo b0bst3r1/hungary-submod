@@ -101,13 +101,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Constantine I"
-	desc = "PB_GRE_Constantine_I_DESC"
-	picture = "gfx/leaders/GRE/Portrait_GRE_Constantine_I.dds"
+	name = "Geórgios I"
+	desc = "PB_GRE_Georgios_I_DESC"
+	picture = "gfx/leaders/GRE/Portrait_Georgios_I.dds"
 	ideology = DS_VARIANT_02 
 	traits = {
 		PB_King_Of_The_Greeks
 	}
+	
+	traits = {
+		PB_King_Old_Greek_King
+	}	
 }
 
 create_country_leader = {

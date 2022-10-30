@@ -1,0 +1,180 @@
+guiTypes = {
+	containerWindowType = {
+		name = "HUN_Tension_container"
+        position = { x = 0 y = 100 }
+		size = { width = 300 height = 325 }
+		Orientation = center
+		
+		buttonType = {
+			name = "Imperial_Powers_big_icon"
+			position = { x = 75 y = 50 }			
+			quadTextureSprite = "GFX_faction_Imperial_Powers_big_icon"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "Imperial_Powers_big_tooltip"
+		}
+		
+		buttonType = {
+			name = "Revanchist_Pact_big_icon"
+			position = { x = 320 y = 50 }		
+			quadTextureSprite = "GFX_faction_Revanchist_Pact_big_icon"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "Revanchist_Pact_big_tooltip"
+		}
+		
+		iconType = {
+			name = "HUN_Tensions_are_0_imperial_powers"
+			spriteType = "GFX_HUN_tension_is_0_icon"
+			position = { x= 0 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_10_imperial_powers"
+			spriteType = "GFX_HUN_tension_is_10_icon"
+			position = { x= 0 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_20_imperial_powers"
+			spriteType = "GFX_HUN_tension_is_20_icon"
+			position = { x= 0 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_30_imperial_powers"
+			spriteType = "GFX_HUN_tension_is_30_icon"
+			position = { x= 0 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_40_imperial_powers"
+			spriteType = "GFX_HUN_tension_is_40_icon"
+			position = { x= 0 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_50_imperial_powers"
+			spriteType = "GFX_HUN_tension_is_50_icon"
+			position = { x= 0 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_60_imperial_powers"
+			spriteType = "GFX_HUN_tension_is_60_icon"
+			position = { x= 0 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_70_imperial_powers"
+			spriteType = "GFX_HUN_tension_is_70_icon"
+			position = { x= 0 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_80_imperial_powers"
+			spriteType = "GFX_HUN_tension_is_80_icon"
+			position = { x= 0 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_90_imperial_powers"
+			spriteType = "GFX_HUN_tension_is_90_icon"
+			position = { x= 0 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_100_imperial_powers"
+			spriteType = "GFX_HUN_tension_is_100_icon"
+			position = { x= 0 y = 160 }
+		}
+		
+		# Revanchist Pact
+
+		iconType = {
+			name = "HUN_Tensions_are_0_revanchist_pact"
+			spriteType = "GFX_HUN_tension_is_0_icon"
+			position = { x= 240 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_10_revanchist_pact"
+			spriteType = "GFX_HUN_tension_is_10_icon"
+			position = { x= 240 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_20_revanchist_pact"
+			spriteType = "GFX_HUN_tension_is_20_icon"
+			position = { x= 240 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_30_revanchist_pact"
+			spriteType = "GFX_HUN_tension_is_30_icon"
+			position = { x= 240 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_40_revanchist_pact"
+			spriteType = "GFX_HUN_tension_is_40_icon"
+			position = { x= 240 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_50_revanchist_pact"
+			spriteType = "GFX_HUN_tension_is_50_icon"
+			position = { x= 240 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_60_revanchist_pact"
+			spriteType = "GFX_HUN_tension_is_60_icon"
+			position = { x= 240 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_70_revanchist_pact"
+			spriteType = "GFX_HUN_tension_is_70_icon"
+			position = { x= 240 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_80_revanchist_pact"
+			spriteType = "GFX_HUN_tension_is_80_icon"
+			position = { x= 240 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_90_revanchist_pact"
+			spriteType = "GFX_HUN_tension_is_90_icon"
+			position = { x= 240 y = 160 }
+		}
+
+		iconType = {
+			name = "HUN_Tensions_are_100_revanchist_pact"
+			spriteType = "GFX_HUN_tension_is_100_icon"
+			position = { x= 240 y = 160 }
+		}		
+
+		instantTextBoxType = {
+			name = "Tensions_with_Imperial_Powers_text"
+			position = { x = -75 y = 290 }
+			font = "hoi_36mbs"
+			text = "[get_Imperial_Powers_Tension_scripted_loc]"
+			format = center
+			maxWidth = 400
+			maxHeight = 240
+		}		
+
+		instantTextBoxType = {
+			name = "Tensions_with_Revanchist_Pact_text"
+			position = { x = 240 y = 290 }
+			font = "hoi_36mbs"
+			text = "[get_Revanchist_Pact_Tension_scripted_loc]"
+			format = center
+			maxWidth = 240
+			maxHeight = 240
+		}				
+    }
+}

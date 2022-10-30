@@ -14,6 +14,36 @@ spriteTypes = {
 	    name = "GFX_HUN_Esterhazy_Takes"
         texturefile = "gfx/interface/goals/HUN_Esterhazy_Takes.dds"
     }
+	
+	SpriteType = {
+	    name = "GFX_HUN_Economic_Liberalization"
+        texturefile = "gfx/interface/goals/HUN_Economic_Liberalization.dds"
+    }
+
+	SpriteType = {
+	    name = "GFX_HUN_Single_Tax"
+        texturefile = "gfx/interface/goals/HUN_Single_Tax.dds"
+    }
+	
+	SpriteType = {
+	    name = "GFX_HUN_Greece_Compromise"
+        texturefile = "gfx/interface/goals/HUN_Greece_Compromise.dds"
+    }	
+
+	SpriteType = {
+	    name = "GFX_HUN_Federation_of_Nations"
+        texturefile = "gfx/interface/goals/HUN_Federation_of_Nations.dds"
+    }	
+	
+	SpriteType = {
+	    name = "GFX_HUN_League_of_Atheists"
+        texturefile = "gfx/interface/goals/HUN_League_of_Atheists.dds"
+    }	
+	
+	SpriteType = {
+	    name = "GFX_HUN_Army_Liberalization"
+        texturefile = "gfx/interface/goals/HUN_Army_Liberalization.dds"
+    }	
 
 	SpriteType = {
 	    name = "GFX_HUN_Army_Issue"

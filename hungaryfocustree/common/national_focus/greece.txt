@@ -1,14 +1,14 @@
-﻿focus_tree = {
-	id = greek_focus
+﻿#focus_tree = {
+	#id = greek_focus
 	
-	country = {
-		factor = 0
+	#country = {
+		#factor = 0
 		
-		modifier = {
-			add = 10
-			tag = GRE
-		}
-	}
+		#modifier = {
+			#add = 10
+			#tag = GRE
+		#}
+	#}
 	
 	default = no
 	

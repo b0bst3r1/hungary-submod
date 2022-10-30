@@ -1,3 +1,729 @@
+Relations_With_Hungary_GER = {
+
+	GER_War_With_Hungary = {
+
+		icon = generic_tank
+
+		available = {
+		custom_trigger_tooltip = {
+			tooltip = RUS_Condition_to_win_against_hungary_tt
+	        has_global_flag = GER_Won_In_The_Balkan_War
+		  }		
+		}  
+
+        activation = { 
+            original_tag = GER  
+		    has_global_flag = League_of_Nations_Intervantion_In_Balkan             
+        }
+
+		selectable_mission = no
+		days_mission_timeout = 200
+
+		is_good = no
+		fire_only_once = yes
+
+		complete_effect = {
+		custom_effect_tooltip = ENG_Divide_Balkans_tt
+        }
+
+		timeout_effect = {
+	    custom_effect_tooltip = RUS_Balkan_Intervention_White_Peace
+        }
+    }
+
+	GER_OPERATION_SOUTHEASTERN_FRONTIER = {
+
+		icon = generic_tank
+		
+		cost = 50
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		custom_trigger_tooltip = {
+			tooltip = GER_Tension_With_Hungary_80_tt
+	        check_variable = { HUN_Tensions_with_imperial_powers > 0.79 }
+		  }
+
+		custom_trigger_tooltip = {
+			tooltip = RUS_Won_In_Europe_tt
+	        FRA = { has_country_flag = GER_Victory_In_Europe }
+		   }		  
+        }
+		
+		days_remove = 1 
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		set_global_flag = League_of_Nations_Intervantion_In_Balkan
+		
+		GER = {
+        declare_war_on = {
+        target = HUN
+        type = annex_everything
+           } 		
+		}
+
+		HUN = { 
+			country_event = { id = hungarian.1011 hours = 1 }
+		}
+		
+		ENG = { 
+			country_event = { id = hungarian.1015 hours = 1 }
+		}		
+		    
+	    hidden_effect = {
+			
+		every_country = {
+		  set_temp_variable = { super_id = 91 }
+			PB_Fire_Super_Event = yes
+		}
+		
+		news_event = {
+			id = hungary.29
+			days = 1
+			}
+		}		
+	}
+}
+
+	HUN_Military_Provocation_Hungary_Border = {
+
+		icon = GFX_decision_influence_cold_war
+		
+		cost = 50
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		custom_trigger_tooltip = {
+			tooltip = GER_Tension_With_Hungary_60_tt
+	        check_variable = { HUN_Tensions_with_imperial_powers > 0.59 }
+		  }
+
+		custom_trigger_tooltip = {
+			tooltip = RUS_Won_In_Europe_tt
+	        FRA = { has_country_flag = GER_Victory_In_Europe }
+		   }		  
+        }
+		
+		days_remove = 7 
+		
+		fire_only_once = yes
+
+		remove_effect = {
+
+		custom_effect_tooltip = HUN_Tension_Imperial_Powers.20_increase		
+		
+		HUN = { 
+			country_event = { id = hungarian.1014 hours = 1 }
+		    }
+		}
+	}
+	
+	GER_Demand_Burgerland = {
+
+		icon = GFX_decision_influence_cold_war
+		
+		cost = 50
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		custom_trigger_tooltip = {
+			tooltip = GER_Tension_With_Hungary_40_tt
+	        check_variable = { HUN_Tensions_with_imperial_powers > 0.39 }
+		}
+
+		custom_trigger_tooltip = {
+			tooltip = RUS_Won_In_Europe_tt
+	        FRA = { has_country_flag = GER_Victory_In_Europe }
+		   }		  
+        }
+		
+		days_remove = 30 
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		custom_effect_tooltip = HUN_Tension_Imperial_Powers.20_increase
+		
+		HUN = { 
+			country_event = { id = hungarian.1013 hours = 1 }
+		    }
+		}
+	}
+}
+
+
+Relations_With_Hungary_RUS = {
+
+	RUS_War_With_Hungary = {
+
+		icon = generic_tank
+
+		available = {
+		custom_trigger_tooltip = {
+			tooltip = RUS_Condition_to_win_against_hungary_tt
+	        has_global_flag = RUS_Won_In_The_Balkan_War
+		  }		
+		}  
+
+        activation = { 
+            original_tag = RUS  
+		    has_global_flag = Revachist_Pact_Intervantion_In_Balkan             
+        }
+
+		selectable_mission = no
+		days_mission_timeout = 200
+
+		is_good = no
+		fire_only_once = yes
+
+		complete_effect = {
+		custom_effect_tooltip = RUS_Divide_Balkans_tt
+        }
+
+		timeout_effect = {
+	    custom_effect_tooltip = RUS_Balkan_Intervention_White_Peace
+        }
+    }
+
+	RUS_Operation_LIBERATION = {
+
+		icon = generic_tank
+		
+		cost = 50
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		custom_trigger_tooltip = {
+			tooltip = RUS_Tension_With_Hungary_80_tt
+	        check_variable = { HUN_Tensions_with_revanchist_pact > 0.79 }
+		  }
+
+		custom_trigger_tooltip = {
+			tooltip = RUS_Won_In_Europe_tt
+	        FRA = { has_country_flag = FRA_Cucked_Germany }
+		}		  
+        }
+		
+		days_remove = 1 
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		set_global_flag = Revachist_Pact_Intervantion_In_Balkan
+		
+		RUS = {
+        declare_war_on = {
+        target = HUN
+        type = annex_everything
+           } 		
+		}
+
+		POL = {
+        declare_war_on = {
+        target = HUN
+        type = annex_everything
+           } 		
+		}
+
+		HUN = { 
+			country_event = { id = hungarian.1011 hours = 1 }
+		}
+		
+		FRA = { 
+			country_event = { id = hungarian.1012 hours = 1 }
+		}		
+		    
+	    hidden_effect = {
+			
+		every_country = {
+		  set_temp_variable = { super_id = 90 }
+			PB_Fire_Super_Event = yes
+		}
+		
+		news_event = {
+			id = hungary.28
+			days = 1
+			}
+		}		
+	}
+}
+
+	RUS_Military_Provocation_Hungary_Border = {
+
+		icon = GFX_decision_influence_cold_war
+		
+		cost = 50
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		custom_trigger_tooltip = {
+			tooltip = RUS_Tension_With_Hungary_60_tt
+	        check_variable = { HUN_Tensions_with_revanchist_pact > 0.59 }
+		  }
+
+		custom_trigger_tooltip = {
+			tooltip = RUS_Won_In_Europe_tt
+	        FRA = { has_country_flag = FRA_Cucked_Germany }
+		}		  
+        }
+		
+		days_remove = 7 
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		HUN = { 
+			country_event = { id = hungarian.1010 hours = 1 }
+		    }
+		}
+	}
+	
+	RUS_Demand_the_Independence_of_Carpathian_Ukraine = {
+
+		icon = GFX_decision_influence_cold_war
+		
+		cost = 50
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		custom_trigger_tooltip = {
+			tooltip = RUS_Tension_With_Hungary_40_tt
+	        check_variable = { HUN_Tensions_with_revanchist_pact > 0.39 }
+		}
+
+		custom_trigger_tooltip = {
+			tooltip = RUS_Won_In_Europe_tt
+	        FRA = { has_country_flag = FRA_Cucked_Germany }
+		}		
+        }
+		
+		days_remove = 30 
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+        custom_effect_tooltip = HUN_Tension_Revanchist_Pact.20_increase		
+		
+		HUN = { 
+			country_event = { id = hungarian.1008 hours = 1 }
+		    }
+		}
+	}	
+}
+
+
+HUN_tensions_with_world_aliances_dec = {
+
+	HUN_War_With_LON = {
+
+		icon = generic_tank
+
+		available = {
+		  NOT = {
+          controls_province = 9660
+          controls_province = 9617
+          controls_province = 11581
+          controls_province = 11597		  
+          controls_province = 11899
+          controls_province = 949		  
+          }		  
+		}  
+
+        activation = { 
+            original_tag = HUN  
+		    has_global_flag = League_of_Nations_Intervantion_In_Balkan             
+        }
+
+		selectable_mission = no
+		days_mission_timeout = 200
+
+		is_good = no
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_global_flag = GER_WAR_WITH_HUNGARY_END
+		
+		GER = {
+		country_event = { id = hungarian.1007 hours = 1 }		
+           }
+		}
+
+		timeout_effect = {
+		
+		set_global_flag = GER_WAR_WITH_HUNGARY_END
+		
+		remove_ideas = HUN_Second_Great_Patriotic_War
+		   every_country = {
+			limit = {
+				has_war_with = HUN
+			}
+			white_peace = HUN
+		}								
+    }
+}
+
+	HUN_War_With_Revanchists = {
+
+		icon = generic_tank
+
+		available = {
+		  NOT = {
+          controls_province = 9660
+          controls_province = 9617
+          controls_province = 11581
+          controls_province = 11597		  
+          controls_province = 11899
+          controls_province = 949		  
+          }		  
+		}  
+
+        activation = { 
+            original_tag = HUN  
+		    has_global_flag = Revachist_Pact_Intervantion_In_Balkan             
+        }
+
+		selectable_mission = no
+		days_mission_timeout = 200
+
+		is_good = no
+		fire_only_once = yes
+
+		complete_effect = {
+		
+		set_global_flag = RUS_WAR_WITH_HUNGARY_END
+		
+		RUS = {
+		country_event = { id = hungarian.1006 hours = 1 }		
+           }
+		}
+
+		timeout_effect = {
+		
+		set_global_flag = RUS_WAR_WITH_HUNGARY_END
+		
+		remove_ideas = HUN_Second_Great_Patriotic_War
+		   every_country = {
+			limit = {
+				has_war_with = HUN
+			}
+			white_peace = HUN
+		}								
+    }
+}
+
+	HUN_Declare_on_Russia = {
+
+		icon = generic_tank
+		
+		custom_cost_trigger = { command_power > 14 }
+		custom_cost_text = decision_cost_15_cp
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+		FRA = {
+		 has_war_with = GER
+		}
+		
+		RUS = {
+		 has_war_with = GER
+		}
+		
+		ENG = {
+		 has_war_with = FRA
+		}
+		
+		 has_government = lb
+        }
+
+		days_remove = 7 
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		set_global_flag = Hungary_Intervene_In_WW2_LB
+		
+		hidden_effect = {
+		  add_command_power = -15
+		}		
+		
+        declare_war_on = {
+         target = RUS
+          type = annex_everything
+        }		
+		
+		ENG = { 
+			country_event = { id = hungarian.80 hours = 1 }
+		   }
+		}
+	}
+
+	HUN_Intervene_In_Ukraine = {
+
+		icon = generic_tank
+		
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = decision_cost_10_cp
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+	    UKR = {
+		exists = yes
+		}
+		
+	    MLR = {
+		exists = yes
+		}
+
+	    NKR = {
+		exists = yes
+		}
+
+	    MAK = {
+		exists = yes
+		}		
+		
+		OR = { 
+		has_government = ss
+		has_government = jc
+          }		
+        }
+
+		days_remove = 3
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		set_global_flag = Hungary_Intervene_In_Ukraine
+		
+		custom_effect_tooltip = HUN_Tension_Imperial_Powers.30_increase
+		   add_to_variable = {
+		   var = HUN_Tensions_with_imperial_powers
+		   value = 0.30
+		}		
+		
+		hidden_effect = {
+		  add_command_power = -10
+		}		
+		
+		if = {
+			limit = {
+				NKR = {
+					exists = yes
+				}
+			}
+			HUN = {
+				declare_war_on = {
+				    target = NKR
+				    type = annex_everything
+			    }
+			}
+		}
+
+		if = {
+			limit = {
+				MLR = {
+					exists = yes
+				}
+			}
+			HUN = {
+				declare_war_on = {
+				    target = MLR
+				    type = annex_everything
+			    }
+			}
+		}
+
+		if = {
+			limit = {
+				MAK = {
+					exists = yes
+				}
+			}
+			HUN = {
+				declare_war_on = {
+				    target = MAK
+				    type = annex_everything
+			        }
+			    }
+		    }
+			
+		if = {
+			limit = {
+				UKR = {
+					exists = yes
+				}
+			}
+			HUN = {
+				declare_war_on = {
+				    target = UKR
+				    type = annex_everything
+			        }
+			    }
+		    }			
+		}
+	}
+	
+	HUN_Demand_Thrace = {
+
+		icon = generic_tank
+			
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = decision_cost_10_cp
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {			
+		BLR = {
+		exists = yes
+		}
+		 
+		TUR = {
+		owns_state = 821
+		   }		 
+	    }
+
+		days_remove = 7
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		hidden_effect = {
+		  add_command_power = -10
+		}
+		
+		TUR = { 
+			country_event = { id = hungarian.1003 hours = 1 }
+		}		
+		
+		custom_effect_tooltip = HUN_Tension_Imperial_Powers.20_increase
+		   add_to_variable = {
+		   var = HUN_Tensions_with_imperial_powers
+		   value = 0.20
+		   }
+		}
+	}
+
+	HUN_Reunification_with_Bessarabia = {
+
+		icon = generic_tank
+			
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = decision_cost_10_cp
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {			
+		OR = { 
+		has_government = ss
+		has_government = jc
+          }
+		 
+		RUS = {		
+		 OR = {		 
+		  NOT = { controls_state = 217 }
+		  NOT = { controls_state = 219 }
+		  NOT = { controls_state = 195 }
+		    }
+          }		   
+	    }
+
+		days_remove = 7
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		
+		hidden_effect = {
+		  add_command_power = -10
+		}
+		
+		transfer_state = 78
+		transfer_state = 766		
+
+		custom_effect_tooltip = HUN_Tension_Revanchist_Pact.50_increase
+		   add_to_variable = {
+		   var = HUN_Tensions_with_revanchist_pact
+		   value = 0.50
+		   }		
+		
+		custom_effect_tooltip = HUN_Tension_Imperial_Powers.10_increase
+		   add_to_variable = {
+		   var = HUN_Tensions_with_imperial_powers
+		   value = 0.10
+		      }
+		 }   
+    }	
+ 
+	HUN_Join_League_of_Nations = {
+
+		icon = influence_cold_war
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		 has_government = lb
+			
+		custom_trigger_tooltip = {
+			tooltip = hun_lon_formed
+			has_global_flag = LON_Formed
+		}
+	 }
+
+		days_remove = 7
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		add_ideas = ENG_League_of_Nations_Council_Member
+		 }
+	  }	
+   }
+
 HUN_dejacobinization_dec_category = {
 
 	HUN_Renaming_of_squares_and_streets = {
@@ -2046,11 +2772,11 @@ HUN_domestic_policy = {
 		on_map_mode = map_and_decisions_view		
 
 		available = {
-		has_completed_focus = hun_collectivization
+		has_completed_focus = hun_collectivization_country
 		}
 		
 		visible = {
-			has_completed_focus = hun_collectivization
+			has_completed_focus = hun_collectivization_country
 		}			
 
 		modifier = {
@@ -2097,11 +2823,11 @@ HUN_domestic_policy = {
 		on_map_mode = map_and_decisions_view		
 		
 		available = {
-		has_completed_focus = hun_collectivization
+		has_completed_focus = hun_collectivization_country
 		}
 		
 		visible = {
-			has_completed_focus = hun_collectivization
+			has_completed_focus = hun_collectivization_country
 		}		
 		
 		modifier = {
@@ -2147,11 +2873,11 @@ HUN_domestic_policy = {
 		on_map_mode = map_and_decisions_view		
 		
 		available = {
-		has_completed_focus = hun_collectivization
+		has_completed_focus = hun_collectivization_country
 		}
 		
 		visible = {
-			has_completed_focus = hun_collectivization
+			has_completed_focus = hun_collectivization_country
 		}		
 
 		modifier = {
@@ -2187,11 +2913,11 @@ HUN_domestic_policy = {
 		}
 		
 		available = {
-		has_completed_focus = hun_collectivization
+		has_completed_focus = hun_collectivization_country
 		}
 		
 		visible = {
-			has_completed_focus = hun_collectivization
+			has_completed_focus = hun_collectivization_country
 		}		
 		
         highlight_states = {
@@ -2233,11 +2959,11 @@ HUN_domestic_policy = {
 		}
 		
 		available = {
-		has_completed_focus = hun_collectivization
+		has_completed_focus = hun_collectivization_country
 		}
 		
 		visible = {
-			has_completed_focus = hun_collectivization
+			has_completed_focus = hun_collectivization_country
 		}		
 		
         highlight_states = {
@@ -2690,83 +3416,6 @@ HUN_domestic_policy = {
 					days = 1
 				}
 			}
-		}
-	}
-
-	HUN_Join_League_of_Nations = {
-
-		icon = influence_cold_war
-		
-		cost = 30
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-		  has_government = lb
-			
-		custom_trigger_tooltip = {
-			tooltip = hun_lon_formed
-			has_global_flag = LON_Formed
-		}
-	 }
-
-		days_remove = 7
-		
-		fire_only_once = yes
-
-		remove_effect = {
-		add_ideas = ENG_League_of_Nations_Council_Member
-		}
-	}
-
-	HUN_Declare_on_Russia = {
-
-		icon = generic_tank
-		
-		custom_cost_trigger = { command_power > 14 }
-		custom_cost_text = decision_cost_15_cp
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-		
-		FRA = {
-		 has_war_with = GER
-		}
-		
-		RUS = {
-		 has_war_with = GER
-		}
-		
-		ENG = {
-		 has_war_with = FRA
-		}
-		
-		 has_government = lb
-        }
-
-		days_remove = 7
-		
-		fire_only_once = yes
-
-		remove_effect = {
-		
-		hidden_effect = {
-		  add_command_power = -15
-		}		
-		
-        declare_war_on = {
-         target = RUS
-          type = annex_everything
-        }		
-		
-		ENG = { 
-			country_event = { id = hungarian.80 hours = 1 }
-		   }
 		}
 	}	
 	

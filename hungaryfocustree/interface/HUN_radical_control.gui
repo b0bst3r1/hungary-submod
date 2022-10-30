@@ -1,7 +1,3 @@
-# I
-# Hate
-# Myself 
-
 guiTypes = {
 	containerWindowType = {
 		name = "cor_opening_of_window_gui"

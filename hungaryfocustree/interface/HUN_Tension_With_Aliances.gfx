@@ -1,0 +1,67 @@
+spriteTypes = {
+
+SpriteType = {
+	name = "GFX_faction_Imperial_Powers_big_icon"
+	texturefile = "gfx/interface/Hungary/faction_Imperial_Powers_big.dds"
+             }
+
+SpriteType = {
+	name = "GFX_faction_Revanchist_Pact_big_icon"
+	texturefile = "gfx/interface/Hungary/faction_Revanchist_Pact_big.dds"
+             }
+
+SpriteType = {
+	name = "GFX_HUN_tension_is_0_icon"
+	texturefile = "gfx/interface/Hungary/HUN_tension_is_0.dds"
+             }
+
+SpriteType = {
+	name = "GFX_HUN_tension_is_10_icon"
+	texturefile = "gfx/interface/Hungary/HUN_tension_is_10.dds"
+             }
+
+SpriteType = {
+	name = "GFX_HUN_tension_is_20_icon"
+	texturefile = "gfx/interface/Hungary/HUN_tension_is_20.dds"
+             }
+
+SpriteType = {
+	name = "GFX_HUN_tension_is_30_icon"
+	texturefile = "gfx/interface/Hungary/HUN_tension_is_30.dds"
+             }
+
+SpriteType = {
+	name = "GFX_HUN_tension_is_40_icon"
+	texturefile = "gfx/interface/Hungary/HUN_tension_is_40.dds"
+             }
+
+SpriteType = {
+	name = "GFX_HUN_tension_is_50_icon"
+	texturefile = "gfx/interface/Hungary/HUN_tension_is_50.dds"
+             }
+
+SpriteType = {
+	name = "GFX_HUN_tension_is_60_icon"
+	texturefile = "gfx/interface/Hungary/HUN_tension_is_60.dds"
+             }
+
+SpriteType = {
+	name = "GFX_HUN_tension_is_70_icon"
+	texturefile = "gfx/interface/Hungary/HUN_tension_is_70.dds"
+             }
+
+SpriteType = {
+	name = "GFX_HUN_tension_is_80_icon"
+	texturefile = "gfx/interface/Hungary/HUN_tension_is_80.dds"
+             }
+
+SpriteType = {
+	name = "GFX_HUN_tension_is_90_icon"
+	texturefile = "gfx/interface/Hungary/HUN_tension_is_90.dds"
+             }
+
+SpriteType = {
+	name = "GFX_HUN_tension_is_100_icon"
+	texturefile = "gfx/interface/Hungary/HUN_tension_is_100.dds"
+             }			 
+}

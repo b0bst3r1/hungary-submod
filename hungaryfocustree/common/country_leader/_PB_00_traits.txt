@@ -26,7 +26,7 @@ leader_traits = {
 	
 	PB_Pers_First_Hungarian_Democrat = {
 
-		political_power_gain = 0.3		
+		political_power_gain = 0.20		
 		
 		random = no
 		
@@ -50,6 +50,17 @@ leader_traits = {
 
 	    ni_drift = 0.02
 	    jc_drift = -0.02	
+		
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	PB_King_Old_Greek_King = {
+
+	political_power_gain = -0.25		
 		
 		random = no
 		

@@ -10,7 +10,7 @@ add_namespace = alban
 	id = alban.1
 	title = alban.1.t
 	desc = alban.1.d
-	picture = GFX_news_event_alb_900
+	picture = GFX_PB_News_Albania_In_Kosovo
 	
 	is_triggered_only = yes
 

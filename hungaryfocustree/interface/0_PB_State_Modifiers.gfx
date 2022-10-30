@@ -18,7 +18,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_modifiers_Burchard_Belavary_Family_state_icon"
 		textureFile = "gfx/interface/state_modifiers/Modifier_Burchard_Belavary_Family.dds"
-	} 	
+	}
+
+	spriteType = {
+		name = "GFX_modifiers_Modifier_Special_Economic_Zone_icon"
+		textureFile = "gfx/interface/state_modifiers/Modifier_Special_Economic_Zone.dds"
+	}  	
 
 	# Unique Terrain
 

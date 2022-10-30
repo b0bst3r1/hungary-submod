@@ -49,3 +49,13 @@ music = {
 	name = "Super_Event_Sound_89"
 	file = "SPEVNT_Romanovs_Hungary.ogg"
 }
+
+music = {
+	name = "Super_Event_Sound_90"
+	file = "SPEVNT_PACT_INTERVENES_IN_BALKANS.ogg"
+}
+
+music = {
+	name = "Super_Event_Sound_90"
+	file = "SPEVNT_LON_INTERVENES_IN_BALKANS.ogg"
+}

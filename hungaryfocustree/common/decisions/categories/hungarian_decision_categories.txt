@@ -2,8 +2,7 @@ dec_influence_on_hungary = {
 	icon = GFX_decision_category_generic_political_actions
 	
 	allowed = {
-		original_tag = GER
-		original_tag = RUS		
+		always = NO		
 	}
 
 	visible = {
@@ -12,7 +11,63 @@ dec_influence_on_hungary = {
 
 	picture = GFX_decision_cat_PB_espionage_decisions
 
-	priority = 900 
+	priority = 900
+}
+
+Relations_With_Hungary_RUS = {
+	icon = GFX_decision_category_generic_political_actions
+	
+	allowed = {
+		original_tag = RUS		
+	}
+
+	visible = {
+	check_variable = { HUN_Tensions_with_revanchist_pact > 0.39 }
+	NOT = {
+	has_global_flag = RUS_WAR_WITH_HUNGARY_END
+	  }
+    }
+
+	picture = GFX_decision_cat_RUS_Imperial_Army
+
+	priority = 500
+}
+
+Relations_With_Hungary_GER = {
+	icon = GFX_decision_category_generic_political_actions
+	
+	allowed = {
+		original_tag = GER		
+	}
+
+	visible = {
+	check_variable = { HUN_Tensions_with_imperial_powers > 0.39 }
+	NOT = {
+	has_global_flag = GER_WAR_WITH_HUNGARY_END
+	  }	
+    }
+
+	picture = GFX_decision_cat_PB_GER_Exile
+
+	priority = 500
+}
+
+HUN_tensions_with_world_aliances_dec = {
+	icon = GFX_decision_category_generic_political_actions
+	
+	allowed = {
+		original_tag = HUN	
+	}
+
+	visible = {
+		has_country_flag = hungarian_starting
+    }
+	
+    scripted_gui = HUN_Tension_gui		
+
+	picture = GFX_decision_category_Tension_with_factions
+
+	priority = 950 
 }
 
 control_of_radicalism_dec = {
@@ -54,14 +109,14 @@ HUN_dejacobinization_dec_category = {
 
 	picture = GFX_decision_category_Dejacobinization
 
-	priority = 900
+	priority = 850
 }
 
 HUN_foreign_influence = {
 	icon = usa_congress
 	
 	allowed = {
-		original_tag = HUN
+		always = NO
 	}
 
 	visible = {
@@ -72,7 +127,7 @@ HUN_foreign_influence = {
 
 	picture = GFX_decision_cat_PB_espionage_decisions
 
-	priority = 950
+	priority = 700
 }
 
 HUN_industrialisation = { 
@@ -180,7 +235,7 @@ HUN_Nationalist_Domestic_Policy = {
 }
 
 HUN_war_on_horizon = { 
-	icon = GFX_decision_category_sov_great_patriotic_war
+	icon = decision_category_ger_military_buildup
 
 	picture = GFX_decision_war_horizon
 

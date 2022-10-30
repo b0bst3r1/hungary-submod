@@ -4,26 +4,13 @@
 
 add_namespace = hungary
 
-	news_event = { #HORTHYBUDAPEST
-	id = hungary.1
-	title = hungary.1.t
-	desc = hungary.1.d
-	picture = GFX_news_event_hun_900
-	
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = hungary.1.a
-	}
-        } 
+    # Event one was deleted
 
 	news_event = {		#UDWR
 	id = hungary.2
 	title = hungary.2.t
 	desc = hungary.2.d
-	picture = GFX_news_event_hun_901
+	picture = GFX_PB_News_Event_Danube_Unites
 	
 	is_triggered_only = yes
 
@@ -34,41 +21,13 @@ add_namespace = hungary
 	}
 	}
 	
-	news_event = {	#balkwar	
-	id = hungary.3
-	title = hungary.3.t
-	desc = hungary.3.d
-	picture = GFX_news_event_hun_905
-	
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = hungary.3.a
-	}
-        }
-
-	news_event = {		#SLOVAK
-	id = hungary.4
-	title = hungary.4.t
-	desc = hungary.4.d
-	picture = GFX_news_event_hun_906
-	
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = hungary.4.a
-	}
-        }				 		
+    # Event 3 and 4 were deleted				 		
     
 	news_event = { #RUSinMOLDOVA
 	id = hungary.5
 	title = hungary.5.t
 	desc = hungary.5.d
-	picture = GFX_news_event_hun_902
+	picture = GFX_PB_news_event_PBNews_Alexei_Rules_Russia
 	
 	is_triggered_only = yes
 
@@ -79,71 +38,13 @@ add_namespace = hungary
 	}
         }
 
-	news_event = { #SERBIaPeace
-	id = hungary.6
-	title = hungary.6.t
-	desc = hungary.6.d
-	picture = GFX_news_event_hun_907
-	
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = hungary.6.a
-	}
-        }
-
-	news_event = { #RomaniaPeace
-	id = hungary.7
-	title = hungary.7.t
-	desc = hungary.7.d
-	picture = GFX_news_event_hun_908
-	
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = hungary.7.a
-	}
-        }	
-
-	news_event = { #SerbianKingExile
-	id = hungary.8
-	title = hungary.8.t
-	desc = hungary.8.d
-	picture = GFX_news_event_hun_909
-	
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = hungary.8.a
-	}
-        }
-
-	news_event = { #CHAOSonBalkans
-	id = hungary.9
-	title = hungary.9.t
-	desc = hungary.9.d
-	picture = GFX_news_event_hun_910
-	
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = hungary.9.a
-	}
-        }
+    # Event 6-9 were deleted	
 
 	news_event = { #VagoDead
 	id = hungary.10
 	title = hungary.10.t
 	desc = hungary.10.d
-	picture = GFX_news_event_hun_921
+	picture = GFX_PB_News_Vago_Is_Dead
 	
 	is_triggered_only = yes
 
@@ -158,7 +59,7 @@ add_namespace = hungary
 	id = hungary.11
 	title = hungary.11.t
 	desc = hungary.11.d
-	picture = GFX_news_event_hun_922
+	picture = GFX_PB_News_Bela_Kun_Takes
 	
 	is_triggered_only = yes
 
@@ -173,7 +74,7 @@ add_namespace = hungary
 	id = hungary.12
 	title = hungary.12.t
 	desc = hungary.12.d
-	picture = GFX_news_event_hun_923
+	picture = GFX_PB_News_Revai_Coup
 	
 	is_triggered_only = yes
 
@@ -188,7 +89,7 @@ add_namespace = hungary
 	id = hungary.13
 	title = hungary.13.t
 	desc = hungary.13.d
-	picture = GFX_news_event_hun_924
+	picture = GFX_PB_News_Garbai_Takes
 	
 	is_triggered_only = yes
 
@@ -199,37 +100,12 @@ add_namespace = hungary
 	}
         }
 
-	news_event = { #BudapestMassacre
-	id = hungary.14
-	title = hungary.14.t
-	desc = hungary.14.d
-	picture = GFX_news_event_hun_925
-	
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = hungary.14.a 
-        trigger = {
-            NOT = { tag = HUN }
-                  }
-		}
-	option = {
-		name = hungary.14.b
-		trigger = {
-			OR = { 				
-				tag = HUN
-			}
-		 }
-	  }		
-   }
 
 	news_event = { #BohmResings
 	id = hungary.15
 	title = hungary.15.t
 	desc = hungary.15.d
-	picture = GFX_news_event_hun_926
+	picture = GFX_PB_News_Bohm_Resigns
 	
 	is_triggered_only = yes
 
@@ -240,86 +116,13 @@ add_namespace = hungary
 	}
         }
 
-	news_event = { #Spartakiad
-	id = hungary.16
-	title = hungary.16.t
-	desc = hungary.16.d
-	picture = GFX_news_event_hun_927
-	
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = hungary.16.a
-	}
-        }
-
-	news_event = { #HungaryVictorySpartakiad
-	id = hungary.17
-	title = hungary.17.t
-	desc = hungary.17.d
-	picture = GFX_news_event_hun_928
-	
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = hungary.17.a
-	}
-        }
-
-	news_event = { #CroatiaVictorySpartakiad
-	id = hungary.18
-	title = hungary.18.t
-	desc = hungary.18.d
-	picture = GFX_news_event_hun_929
-	
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = hungary.18.a
-	}
-        }
-
-	news_event = { #JapaneseVictorySpartakiad
-	id = hungary.19
-	title = hungary.19.t
-	desc = hungary.19.d
-	picture = GFX_news_event_hun_930
-	
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = hungary.19.a
-	}
-        }
-
-	news_event = { #It's Alive
-	id = hungary.20
-	title = hungary.20.t
-	desc = hungary.20.d
-	picture = GFX_news_event_hun_931
-	
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = hungary.20.a
-	}
-        }
+    # Events 16 - 20 were deleted
 
 	news_event = { #Bulgaria becomes free
 	id = hungary.21
 	title = hungary.21.t
 	desc = hungary.21.d
-	picture = GFX_news_event_hun_932
+	picture = GFX_PB_News_Crisis_In_Bulgaria
 	
 	is_triggered_only = yes
 
@@ -416,12 +219,21 @@ add_namespace = hungary
 	major = yes
 
 	option = {
-		name = hungary.2.a
+		name = hungary.27.a
+	   }
+    }
+
+	news_event = { # Pacte Intervenes in Balkans
+	id = hungary.28
+	title = hungary.28.t
+	desc = hungary.28.d
+	picture = GFX_PB_News_Pact_Intervenes_In_Balkan
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.28.a
 	   }
     }	
-
- 
-
-
-
-

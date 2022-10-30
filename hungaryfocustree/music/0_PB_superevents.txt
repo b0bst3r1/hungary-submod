@@ -88,3 +88,21 @@ music = {
 		}		
 	}
 }
+
+music = {
+	song = "Super_Event_Sound_90"
+	chance = {
+		modifier = {
+			factor = 0
+		}		
+	}
+}
+
+music = {
+	song = "Super_Event_Sound_91"
+	chance = {
+		modifier = {
+			factor = 0
+		}		
+	}
+}

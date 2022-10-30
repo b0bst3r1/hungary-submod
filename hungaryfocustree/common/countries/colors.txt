@@ -1844,32 +1844,12 @@ DER = {
 	color_ui = rgb { 127 116 63 }
 }
 
-MRD = {
-	color = rgb { 46 102 63 }
-	color_ui = rgb { 18 130 52 }
-}
-
-BAT = {
-	color = rgb { 255 202 134 }
-	color_ui = rgb { 255 202 134 }
-}
-
-VJW = {
-	color = rgb { 117 93 154 }
-	color_ui = rgb { 117 93 154 }
-}
-	
-SRS = {
-	color = rgb { 76 81 74 }
-	color_ui = rgb { 76 81 74 }
-}
-
-TRA = {
-	color = rgb { 202 197 101 }
-	color_ui = rgb { 202 197 101 }
-}
-
 RUT = {
 	color = rgb { 255 219 139 }
 	color_ui = rgb { 255 219 139 }
+}
+
+GLC = {
+	color = rgb { 6 66 100 }
+	color_ui = rgb { 66 66 66 }
 }

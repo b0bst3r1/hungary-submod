@@ -31,3 +31,12 @@ HUN_Autonomous_state = {
 	local_resources = 0.10		
 }
 
+Special_Economic_Zone_State_Modifier = {
+	icon = GFX_modifiers_Modifier_Special_Economic_Zone_icon
+	enable = { always = yes }
+	
+    production_speed_buildings_factor = 0.25 
+	industry_repair_factor = 0.33
+    local_building_slots_factor = 0.25	
+}
+

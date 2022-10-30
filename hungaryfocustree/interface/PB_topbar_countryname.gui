@@ -113,6 +113,13 @@ guiTypes = {
 			position = { x= -90 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
+		
+		iconType = {
+			name = "PB_Player_flag_HUN"
+			quadTextureSprite ="GFX_PB_Playerflag_HUN"
+			position = { x= -90 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}		
 
 		iconType = {
 			name = "PB_Player_flag_Generic"
@@ -166,13 +173,6 @@ guiTypes = {
         #iconType = {
 			#name = "PB_Player_flag_MAR"
 			#quadTextureSprite ="GFX_PB_Playerflag_MAR"
-			#position = { x= -90 y = 0 }
-			#Orientation = "UPPER_LEFT"
-		#}
-
-		#iconType = {
-			#name = "PB_Player_flag_HUN"
-			#quadTextureSprite ="GFX_PB_Playerflag_HUN"
 			#position = { x= -90 y = 0 }
 			#Orientation = "UPPER_LEFT"
 		#}
@@ -326,14 +326,14 @@ guiTypes = {
 			#}
 
 			instantTextBoxType = {
-				#name = "Pax_Infobox_text_HUN"
-				#position = { x = 15 y = 5 }
-				#font = "hoi_20bs"
-				#borderSize = {x = 0 y = 0}
-				#text = "HUN_CountryDesc_Topbar"    
-				#maxWidth = 470
-				#maxHeight = 500
-				#format = left
+				name = "Pax_Infobox_text_HUN"
+				position = { x = 15 y = 5 }
+				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
+				text = "HUN_Country_Desc_Topbar"    
+				maxWidth = 470
+				maxHeight = 500
+				format = left
 			}
 		}
 	}

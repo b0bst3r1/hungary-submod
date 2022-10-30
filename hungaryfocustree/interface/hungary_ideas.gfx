@@ -303,5 +303,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_PB_HUN_The_Walking_Dead"
 		texturefile = "gfx/interface/ideas/Hungary/HUN_The_Walking_Dead.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PB_HUN_Atheist_League"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_Atheist_League.dds"
 	}	
 }

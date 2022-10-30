@@ -799,39 +799,28 @@ country_event = {
 	option = {
 		name = hungarian.14.a
 		
-	     HUN = {
-         puppet = ALB
-		 
-	     hidden_effect = {
-			set_autonomy = {
-                target = ALB
-                 autonomy_state = autonomy_PB_Sister_Republic
-                }
-			}
-		}	
+	set_autonomy = {
+    target = ALB
+    autonomy_state = autonomy_PB_Sister_Republic
+                } 	
 		
 	ALB = {
 	
 	set_cosmetic_tag = ALB_Jacobin
 	
-	  set_politics = {
-	  ruling_party = JC
-    }
-	
-   
 	set_popularities = {
 	       ni = 0
 	       ds = 0
 	       rc = 0
 	       cn = 0
-	       lb = 0
+	       lb = 33
 	       an = 0
-	       ss = 30
-	       jc = 70
-      }
-	}
+	       ss = 33
+	       jc = 33
+           }
+	    }
+	 }
   }
- }
  
     country_event = { #BulgariaPeace
 	id = hungarian.15
@@ -850,9 +839,13 @@ country_event = {
 	add_state_core = 955
 	transfer_state = 77
 	add_state_core = 77		
-	
+	}
 		
-	hidden_effect = {			
+	hidden_effect = {
+
+    TUR = {
+	transfer_state = 821	
+	}	
 		
 	BUL = {
 	
@@ -1027,7 +1020,6 @@ set_popularities = {
 		   }			
         }
      }
-  }
  
 	country_event = { #POLITICLCRISIS
 	id = hungarian.16
@@ -2173,53 +2165,15 @@ create_country_leader = {
 	
 	option = {
 		name = hungarian.57.a
-
-					ALB = {					
-			
-            white_peace = HUN					
-					
-            remove_ideas = ALB_german_dependency					
-					
-			clr_country_flag = Tag_in_German_Sphere
-			clr_country_flag = Tag_in_Russian_Sphere			
-            set_country_flag = Tag_in_Hungarian_Sphere			
-			
-			if = {
-				limit = {
-					HUN = {
-					has_government = jc
-					}
-				}
-			   set_politics = {
-		       ruling_party = JC
-		       }
-			}
-
-			else_if = {
-				limit = {
-					HUN = {
-					has_government = ss
-					}
-				}
-			   set_politics = {
-		       ruling_party = SS
-		       }
-			  }
-			
-			else_if = {
-				limit = {
-					HUN = {
-					has_government = lb
-					}
-				}
-				
-			   kill_country_leader = yes
-			   
-			   set_politics = {
-		       ruling_party = LB
-		       }
-			}
-			
+		
+	set_autonomy = {
+    target = ALB
+    autonomy_state = autonomy_PB_Sister_Republic
+       } 			
+		
+	   ALB = {
+	   
+hidden_effect = {	   
 create_country_leader = {
 	name = "Enver Hoxha"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
@@ -2240,32 +2194,32 @@ create_country_leader = {
 	picture = "gfx/leaders/ALB/ALB_Fan_Noli.dds"
 	ideology = LB_VARIANT_01
            }			
-		}		
-		
-	         HUN = {
-			 
-         puppet = ALB
-		 
-		 hidden_effect = {
-		 
-			set_autonomy = {
-                target = BUL
-                 autonomy_state = autonomy_PB_Sister_Republic
-                }
-				
-			set_autonomy = {
-                target = MAC
-                 autonomy_state = autonomy_PB_Sister_Republic
-                }
-				
-			set_autonomy = {
-                target = KSV
-                 autonomy_state = autonomy_PB_Sister_Republic
-             }				
-		  }								
-	   } 
-    } 
- }
+}	   
+
+	set_cosmetic_tag = ALB_Jacobin
+	
+	set_popularities = {
+	       ni = 0
+	       ds = 0
+	       rc = 0
+	       cn = 0
+	       lb = 33
+	       an = 0
+	       ss = 33
+	       jc = 33
+           }	   
+			
+       white_peace = HUN					
+					
+       remove_ideas = ALB_german_dependency					
+					
+	   clr_country_flag = Tag_in_German_Sphere
+	   clr_country_flag = Tag_in_Russian_Sphere			
+       set_country_flag = Tag_in_Hungarian_Sphere					
+	   } 						 
+    }
+ }	
+
  
     country_event = { #Third Balkan War - Final Peace
 	id = hungarian.58
@@ -2308,6 +2262,39 @@ create_country_leader = {
 			expire = "1965.1.1"
 			ideology = LB_VARIANT_02
 		}
+		
+			if = {
+				limit = {
+					HUN = {
+					has_government = jc
+					}
+				}
+			   set_politics = {
+		       ruling_party = JC
+		       }
+			}
+
+			else_if = {
+				limit = {
+					HUN = {
+					has_government = ss
+					}
+				}
+			   set_politics = {
+		       ruling_party = SS
+		       }
+			  }
+			
+			else_if = {
+				limit = {
+					HUN = {
+					has_government = lb
+					}
+				}	   
+			   set_politics = {
+		       ruling_party = LB
+		       }
+		  }		
      }		
 			 
 		set_cosmetic_tag = BUL_League			 
@@ -2359,7 +2346,10 @@ create_country_leader = {
 		    add_state_core = 44
          	transfer_state = 44	
 			
-          }		   
+          }
+           GRE = {
+           set_cosmetic_tag = GRE_Exiled
+         }		   
        }
     }
  }
@@ -3357,4 +3347,1091 @@ country_event = { # Dejacobinization over
     remove_ideas = HUN_legacy_of_revolution
   
 	}
-}	  
+}
+
+country_event = { # Join Zagreb Treaty
+	id = hungarian.1002
+	title = hungarian.1002.t
+	desc = hungarian.1002.d
+	picture = GFX_report_PB_Generic_Political_Event
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1002.a # Yep
+
+		ai_chance = {
+			factor = 100
+		}		
+		
+      add = HUN_zagreb_treaty
+	}
+	
+	option = { 
+		name = hungarian.1002.b # Nope
+
+		ai_chance = {
+			factor = 0
+		}		
+	}	
+}
+
+country_event = { # Hungary Demands Thrace
+	id = hungarian.1003
+	title = hungarian.1003.t
+	desc = hungarian.1003.d
+	picture = GFX_report_PB_Generic_War_Event
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1003.a # Yep
+
+		ai_chance = {
+			factor = 0
+		}
+		
+	    HUN = {
+		transfer_state = 821
+        }		
+	}
+	
+	option = { 
+		name = hungarian.1003.b # Nope
+
+		ai_chance = {
+			factor = 100
+		}
+		
+		HUN = {
+		leave_faction = yes
+		}
+		
+		TUR = {
+		leave_faction = yes
+		}
+		
+		HUN = {
+        declare_war_on = {
+        target = TUR
+        type = annex_everything
+          }
+        set_global_flag = turko_hungarian_war_flag		  
+	   }	
+    }
+ }
+
+country_event = { # Question of Dnestr
+	id = hungarian.1004
+	title = hungarian.1004.t
+	desc = hungarian.1004.d
+	picture = GFX_report_PB_Generic_Political_Event
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1004.a 
+
+		ai_chance = {
+			factor = 50
+		}
+		
+        MOL = {				
+        set_cosmetic_tag = MOL_ODESSA		
+        }		
+		
+	    HUN = {
+		transfer_state = 78
+		transfer_state = 766
+
+	    set_autonomy = {
+        target = MOL
+        autonomy_state = autonomy_PB_Sister_Republic
+            }
+		}
+		
+        MOL = {		
+		transfer_state = 192
+		transfer_state = 198
+	    add_state_core = 198
+	    add_state_core = 192			
+        }		
+	}
+	
+	option = { 
+		name = hungarian.1004.b 
+
+		ai_chance = {
+			factor = 50
+		}
+		
+        MOL = {		
+        set_cosmetic_tag = MOL_DNESTR		
+        }		
+		
+	    HUN = {
+	    set_autonomy = {
+        target = MOL
+        autonomy_state = autonomy_PB_Sister_Republic
+            }
+		}
+		
+        MOL = {		
+		transfer_state = 192
+		transfer_state = 198
+		transfer_state = 78
+		transfer_state = 766
+
+		add_state_core = 192
+		add_state_core = 198
+		add_state_core = 78
+		add_state_core = 766
+		
+        set_cosmetic_tag = MOL_DNESTR		
+          }		  
+	  }	
+  }
+
+country_event = { # Republic of Galicia
+	id = hungarian.1005
+	title = hungarian.1005.t
+	desc = hungarian.1005.d
+	picture = GFX_report_PB_Military_Tribunal
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1005.a 
+
+		ai_chance = {
+			factor = 100
+		}		
+		
+	    GLC = {
+		transfer_state = 88
+		transfer_state = 89
+		transfer_state = 91
+
+		add_state_core = 88
+		add_state_core = 89
+		add_state_core = 91			
+        }
+		
+		HUN = {
+	    set_autonomy = {
+        target = GLC
+        autonomy_state = autonomy_PB_Satellite_State
+           }
+		}		
+	 } 	
+  }
+
+country_event = { # Fall of Hungary against Revanchist Pact
+	id = hungarian.1006
+	title = hungarian.1006.t
+	desc = hungarian.1006.d
+	picture = GFX_report_event_Generic_Soldiers_Charging
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1006.a 
+
+		ai_chance = {
+			factor = 100
+		}
+
+		FRA = {
+
+	    set_autonomy = {
+        target = CRO
+        autonomy_state = autonomy_client_state
+        }
+		
+	    set_autonomy = {
+        target = ALB
+        autonomy_state = autonomy_client_state
+        }
+		   
+	    set_autonomy = {
+        target = SER
+        autonomy_state = autonomy_client_state		   
+		   }
+		   
+	    set_autonomy = {
+        target = GRE
+        autonomy_state = autonomy_client_state		   
+		   }		   
+        }		   
+		
+	    CRO = {
+		
+		hidden_effect = {
+		
+		set_politics = {
+		ruling_party = NI
+		}	
+		
+		set_cosmetic_tag = CRO_UST
+		}
+		
+		transfer_state = 109
+		transfer_state = 957
+		transfer_state = 104
+		transfer_state = 954
+		transfer_state = 959
+		transfer_state = 103
+		transfer_state = 794
+		transfer_state = 956
+		transfer_state = 974		
+
+		add_state_core = 109
+		add_state_core = 957
+		add_state_core = 956
+		add_state_core = 959
+		add_state_core = 103
+		add_state_core = 794					
+        }
+		
+	    ALB = {
+		
+		hidden_effect = {	
+		set_politics = {
+		ruling_party = DS
+		  }	
+		}
+		
+		transfer_state = 972
+		transfer_state = 163
+		transfer_state = 960					
+        }
+
+        SER = {
+		
+		hidden_effect = {
+		set_politics = {
+		ruling_party = NI
+		}	
+		
+		set_cosmetic_tag = SER_Chetniks
+		}
+
+		transfer_state = 107
+		transfer_state = 961
+		transfer_state = 105
+        }
+
+        GRE = {
+		
+		hidden_effect = {
+		set_politics = {
+		ruling_party = NI
+		}	
+		
+		set_cosmetic_tag = GRE_ELL
+		
+		kill_country_leader = yes
+		}
+		
+		create_country_leader = {
+		name = "Nikolaos Plastiras"
+		desc = " "
+		picture = "gfx/leaders/GRE/Portrait_plastiras.dds"
+		expire = "1965.1.1"
+		ideology = NI_VARIANT_01
+		}		
+		  
+		transfer_state = 186
+		transfer_state = 182
+		transfer_state = 963
+		transfer_state = 186
+		transfer_state = 970
+		transfer_state = 47
+		transfer_state = 971
+		transfer_state = 185
+		transfer_state = 958 
+		transfer_state = 822
+		transfer_state = 339
+		transfer_state = 823
+		transfer_state = 962
+		transfer_state = 164		
+        }		
+        				
+		MGE = {
+		transfer_state = 975
+		}
+		
+		RUS = {
+	    set_autonomy = {
+        target = HUN
+        autonomy_state = autonomy_PB_Imperial_Autonomy
+        }
+
+	    set_autonomy = {
+        target = ROM
+        autonomy_state = autonomy_PB_Imperial_Autonomy
+        }
+
+	    set_autonomy = {
+        target = RUT
+        autonomy_state = autonomy_PB_Imperial_Autonomy
+        }
+
+	    set_autonomy = {
+        target = SLO
+        autonomy_state = autonomy_PB_Imperial_Autonomy
+        }
+
+	    set_autonomy = {
+        target = BUL
+        autonomy_state = autonomy_PB_Imperial_Autonomy
+           }
+        }		   
+
+        ROM = {
+		
+		hidden_effect = {
+		set_politics = {
+		ruling_party = NI
+		}	
+		
+		set_cosmetic_tag = ROM_Great_Wallachia
+		
+		create_country_leader = {
+			name = "Corneliu Codreanu"
+			desc = ""
+			picture = "gfx/leaders/ROM/Portrait_ROM_Codreanu.dds"
+			expire = "1965.1.1"
+			ideology = NI_VARIANT_01
+		  }		
+		}
+		transfer_state = 46
+		transfer_state = 955
+		transfer_state = 81
+		transfer_state = 84
+		transfer_state = 76
+		transfer_state = 83
+		transfer_state = 82
+		transfer_state = 764		
+        }
+
+        RUT = {
+		
+		hidden_effect = {
+		set_politics = {
+		ruling_party = RC
+		}	
+		
+		set_cosmetic_tag = RUT_Russian_Puppet
+		}
+		
+		create_country_leader = {
+			name = "Pyotr Gavrilov"
+			desc = ""
+			picture = "gfx/leaders/MLR/Portrait_MLR_Pyotr_Filippovich_Gavrilov.dds"
+			expire = "1965.1.1"
+			ideology = RC_VARIANT_01
+		  }		
+		transfer_state = 73
+        }
+
+        BUL = {
+		
+		hidden_effect = {
+		set_politics = {
+		ruling_party = DS
+		}	
+		
+		set_cosmetic_tag = BUL_Russian_Puppet
+		
+		kill_country_leader = yes
+		}
+		
+		create_country_leader = {
+			name = "Anatoly Pepelyayev"
+			desc = ""
+			picture = "gfx/leaders/BUL/Portrait_BUL_Anatoly_Pepelyayev.dds"
+			expire = "1965.1.1"
+			ideology = DS_VARIANT_01
+		  }		
+		transfer_state = 212
+		transfer_state = 48
+		transfer_state = 211
+		transfer_state = 77
+		transfer_state = 106
+		transfer_state = 108
+		transfer_state = 184
+		transfer_state = 731		
+        }
+
+        SLO = {
+		
+		hidden_effect = {
+		set_politics = {
+		ruling_party = DS
+		}	
+		
+		set_cosmetic_tag = SLO_Russian_Puppet
+		
+		kill_country_leader = yes
+		}
+		
+		create_country_leader = {
+			name = "Grigory Semyonov"
+			desc = ""
+			picture = "gfx/leaders/RUS/Portrait_RUS_Grigory_Semyonov.dds"
+			expire = "1965.1.1"
+			ideology = DS_VARIANT_01
+		  }		
+		  
+		transfer_state = 664
+		transfer_state = 71
+		transfer_state = 70
+		transfer_state = 973		
+        }
+
+	   HUN = {
+	   
+	   hidden_effect = {
+	   
+	   set_cosmetic_tag = HUN_Russian_Puppet
+	   
+       set_politics = {
+	   ruling_party = ds
+       }
+
+       set_popularities = {
+	   ni = 15
+	   ds = 52
+	   rc = 10
+	   cn = 18
+	   lb = 5
+	   an = 0
+	   ss = 0
+	   jc = 0
+       }
+	   
+	   kill_country_leader = yes
+	   }
+
+		create_country_leader = {
+			name = "Cirill I Romanov"
+			desc = ""
+			picture = "gfx/leaders/HUN/Portrait_HUN_Kirill.dds"
+			expire = "1965.1.1"
+			ideology = DS_VARIANT_01
+		 } 		
+	  } 	
+   }
+}
+   
+country_event = { # Fall of Hungary against Imperial Powers
+	id = hungarian.1007
+	title = hungarian.1007.t
+	desc = hungarian.1007.d
+	picture = GFX_report_event_Generic_Soldiers_Charging
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1007.a 
+
+		ai_chance = {
+			factor = 100
+		}
+
+		GER = {
+
+	    set_autonomy = {
+        target = HUN
+        autonomy_state = autonomy_PB_Personal_Union
+        }
+		
+	    set_autonomy = {
+        target = ROM
+        autonomy_state = autonomy_PB_Personal_Union
+        }
+		   
+	    set_autonomy = {
+        target = SER
+        autonomy_state = autonomy_PB_Satellite_State		   
+		   }
+		   
+	    set_autonomy = {
+        target = CRO
+        autonomy_state = autonomy_PB_Satellite_State		   
+		   }		   
+        }
+
+	   HUN = {
+	   
+	   hidden_effect = {
+       set_politics = {
+	   ruling_party = cn
+       }
+
+       set_popularities = {
+	   ni = 15
+	   ds = 5
+	   rc = 10
+	   cn = 52
+	   lb = 18
+	   an = 0
+	   ss = 0
+	   jc = 0
+       }
+	   
+	   set_cosmetic_tag = HUN_Germany_Puppet
+	   kill_country_leader = yes
+	   }
+
+		create_country_leader = {
+			name = "Karl I Von Habsburg"
+			desc = ""
+			picture = "gfx/leaders/HUN/Portrait_HUN_Karl.dds"
+			expire = "1965.1.1"
+			ideology = CN_VARIANT_01
+		  }       		  
+       }		
+		
+	    CRO = {
+		
+		hidden_effect = {
+		
+		set_politics = {
+		ruling_party = lb
+		}	
+		
+		set_cosmetic_tag = CRO_Dinaric_Federation
+		}
+		
+		transfer_state = 109
+		transfer_state = 957
+		transfer_state = 104
+		transfer_state = 954
+		transfer_state = 959
+		transfer_state = 103
+		transfer_state = 794
+		transfer_state = 956		
+
+		add_state_core = 109
+		add_state_core = 957
+		add_state_core = 956
+		add_state_core = 959
+		add_state_core = 103
+		add_state_core = 794					
+        }
+
+        SER = {
+		
+		hidden_effect = {
+		set_politics = {
+		ruling_party = ds
+		}	
+		
+		set_cosmetic_tag = SER_Germany_Puppet
+		
+		kill_country_leader = yes
+		}
+
+		create_country_leader = {
+	        name = "Danilo"
+	        desc = ""
+	        picture = "gfx/leaders/SER/Portrait_SER_Danilo.dds"
+			expire = "1965.1.1"
+			ideology = DS_VARIANT_01
+		}		
+
+		transfer_state = 107
+		transfer_state = 961
+		transfer_state = 105
+		transfer_state = 108
+		transfer_state = 163
+		transfer_state = 960
+		transfer_state = 108
+		transfer_state = 106
+		transfer_state = 105		
+		transfer_state = 972		
+        }
+
+        ROM = {
+		
+		hidden_effect = {
+		set_politics = {
+		ruling_party = cn
+		}	
+		
+		set_cosmetic_tag = ROM_Germany_Puppet
+		
+		create_country_leader = {
+			name = "Iosif I Von Habsburg"
+			desc = ""
+			picture = "gfx/leaders/ROM/Portrait_ROM_Iosif_I.dds"
+			expire = "1965.1.1"
+			ideology = cn_VARIANT_01
+		  }		
+		}
+		transfer_state = 46
+		transfer_state = 955
+		transfer_state = 81
+		transfer_state = 84
+		transfer_state = 78
+		transfer_state = 766		
+        }		
+        				
+		GER = {
+		transfer_state = 975
+		}
+		
+		ENG = {
+	    set_autonomy = {
+        target = ALB
+        autonomy_state = autonomy_PB_Satellite_State
+        }
+
+	    set_autonomy = {
+        target = GRE
+        autonomy_state = autonomy_PB_Satellite_State
+        }
+
+	    set_autonomy = {
+        target = BUL
+        autonomy_state = autonomy_PB_Satellite_State
+           }
+        }		   
+
+        ALB = {
+		
+		hidden_effect = {
+		set_politics = {
+		ruling_party = LB
+		}	
+		
+		set_cosmetic_tag = ALB_English_Puppet
+		}		
+		transfer_state = 44
+        }
+
+        BUL = {
+		
+		hidden_effect = {
+		set_politics = {
+		ruling_party = CN
+		}	
+		
+		set_cosmetic_tag = BUL_English_Puppet
+		
+		kill_country_leader = yes
+		}
+		
+		create_country_leader = {
+			name = "Todor Aleksandrov Poporushov"
+			desc = ""
+			picture = "gfx/leaders/BUL/Portrait_BUL_Todor_Alexandrov.dds"
+			expire = "1965.1.1"
+			ideology = CN_VARIANT_01
+		}
+		
+		transfer_state = 212
+		transfer_state = 48
+		transfer_state = 211
+		transfer_state = 77		
+        }
+
+        GRE = {
+		
+		hidden_effect = {
+		set_politics = {
+		ruling_party = LB
+		}	
+		
+		set_cosmetic_tag = GRE_REP
+		
+		kill_country_leader = yes
+		}
+		
+		create_country_leader = {
+		name = "Themistoklis Sofoulis"
+		desc = " "
+		picture = "gfx/leaders/GRE/Portrait_Themistoklis_Sofoulis.dds"
+		expire = "1965.1.1"
+		ideology = LB_VARIANT_01
+		}
+		
+		transfer_state = 186
+		transfer_state = 182
+		transfer_state = 963
+		transfer_state = 186
+		transfer_state = 970
+		transfer_state = 47
+		transfer_state = 971
+		transfer_state = 185
+		transfer_state = 958
+		transfer_state = 731
+		transfer_state = 184
+		transfer_state = 821
+		transfer_state = 822
+		transfer_state = 339
+		transfer_state = 823
+		transfer_state = 962
+		transfer_state = 164
+
+			if = {
+			  limit = {
+				HUN = {
+				 controls_state = 341
+				 controls_state = 965					
+				 controls_state = 966
+				 controls_state = 821					
+					}
+				GRE = {
+				transfer_state = 341
+				transfer_state = 965					
+				transfer_state = 966
+				transfer_state = 821
+			    }
+			 }		
+          } 	
+       }   
+    }
+ }
+
+country_event = { # Demand Slovakia and Ruthenia
+	id = hungarian.1008
+	title = hungarian.1008.t
+	desc = hungarian.1008.d
+	picture = GFX_report_PB_Generic_War_Event
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1008.a 
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		RUS = {
+	    set_autonomy = {
+        target = RUT
+        autonomy_state = autonomy_PB_Imperial_Autonomy
+        }
+
+	    set_autonomy = {
+        target = SLO
+        autonomy_state = autonomy_PB_Imperial_Autonomy
+          }
+		}
+		
+		custom_effect_tooltip = HUN_Tension_Revanchist_Pact.20_decrease
+		  add_to_variable = {
+			var = HUN_Tensions_with_revanchist_pact
+			value = -0.20
+	    }		
+      		
+        RUT = {
+		
+		hidden_effect = {
+		set_politics = {
+		ruling_party = RC
+		}	
+		
+		set_cosmetic_tag = RUT_Russian_Puppet
+		
+		create_country_leader = {
+			name = "Pyotr Gavrilov"
+			desc = ""
+			picture = "gfx/leaders/MLR/Portrait_MLR_Pyotr_Filippovich_Gavrilov.dds"
+			expire = "1965.1.1"
+			ideology = RC_VARIANT_01
+		  }
+        }
+		
+		transfer_state = 73
+        }
+
+        SLO = {
+		
+		hidden_effect = {
+		set_politics = {
+		ruling_party = DS
+		}	
+		
+		set_cosmetic_tag = SLO_Russian_Puppet
+		
+		kill_country_leader = yes
+		
+		create_country_leader = {
+			name = "Grigory Semyonov"
+			desc = ""
+			picture = "gfx/leaders/RUS/Portrait_RUS_Grigory_Semyonov.dds"
+			expire = "1965.1.1"
+			ideology = DS_VARIANT_01
+		  }
+        }		  
+		  
+		transfer_state = 664
+		transfer_state = 71
+		transfer_state = 70
+		transfer_state = 973		
+        }
+	}
+	
+	option = { 
+		name = hungarian.1008.b
+
+		ai_chance = {
+			factor = 100
+		}
+		
+		custom_effect_tooltip = HUN_Tension_Revanchist_Pact.20_increase
+		  add_to_variable = {
+			var = HUN_Tensions_with_revanchist_pact
+			value = 0.20
+	    }
+		
+        RUS = {
+		country_event = {
+		id = hungarian.1009
+		hours = 6
+		   }
+		}		
+	}
+}
+
+country_event = { # Hungary Declines
+	id = hungarian.1009
+	title = hungarian.1009.t
+	desc = hungarian.1009.d
+	picture = GFX_report_PB_Generic_Political_Event
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1009.a			
+			
+		every_country = {
+		  set_temp_variable = { super_id = 91 }
+			PB_Fire_Super_Event = yes
+		}				
+	}
+}
+
+country_event = { # Military Provocation - Russia 
+	id = hungarian.1010
+	title = hungarian.1010.t
+	desc = hungarian.1010.d
+	picture = GFX_report_PB_Generic_War_Event
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1010.a 
+
+		ai_chance = {
+			factor = 100
+		}
+				
+        custom_effect_tooltip = HUN_Military_Provocation_From_Russia_tt		
+		
+		custom_effect_tooltip = HUN_Tension_Revanchist_Pact.20_increase
+		  add_to_variable = {
+			var = HUN_Tensions_with_revanchist_pact
+			value = 0.20
+	    }			
+	}
+}
+
+country_event = { # Second Great Patriotic War
+	id = hungarian.1011
+	title = hungarian.1011.t
+	desc = hungarian.1011.d
+	picture = GFX_report_PB_Generic_War_Event
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1011.a 
+
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = HUN_Second_Great_Patriotic_War			
+	}
+}
+
+country_event = { # Russia asks France
+	id = hungarian.1012
+	title = hungarian.1012.t
+	desc = hungarian.1012.d
+	picture = GFX_report_PB_Generic_War_Event
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1012.a # Yes
+
+		ai_chance = {
+			factor = 100
+		}
+		
+        custom_effect_tooltip = FRA_Divide_Balkans_tt		
+		
+		FRA = {
+        declare_war_on = {
+        target = HUN
+        type = annex_everything
+           } 		
+		}
+
+		MGE = {
+        declare_war_on = {
+        target = HUN
+        type = annex_everything
+           } 		
+		}	
+	}
+	
+	option = { 
+		name = hungarian.1012.a  # Nope
+
+		ai_chance = {
+			factor = 0
+		}
+	}	
+}
+
+country_event = { # Germany demands Burgerland
+	id = hungarian.1013
+	title = hungarian.1013.t
+	desc = hungarian.1013.d
+	picture = GFX_report_PB_Generic_War_Event
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1013.a  #NO
+
+		ai_chance = {
+			factor = 100
+		}
+		
+		custom_effect_tooltip = HUN_Tension_Imperial_Powers.20_increase
+		  add_to_variable = {
+			var = HUN_Tensions_with_revanchist_pact
+			value = 0.20
+	    }	
+	}
+	
+	option = { 
+		name = hungarian.1013.b  #Yes
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		custom_effect_tooltip = HUN_Tension_Imperial_Powers.20_decrease
+		  add_to_variable = {
+			var = HUN_Tensions_with_revanchist_pact
+			value = -0.20
+	    }		
+		
+        GER = {
+        transfer_state = 975
+        }		
+	}	
+}
+
+country_event = { # Military Provocation - Ger
+	id = hungarian.1014
+	title = hungarian.1014.t
+	desc = hungarian.1014.d
+	picture = GFX_report_PB_Generic_War_Event
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1013.a 
+
+		ai_chance = {
+			factor = 100
+		}
+				
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = -10
+			producer = HUN
+		}
+			
+        custom_effect_tooltip = HUN_Military_Provocation_From_Germany_tt		
+		
+		custom_effect_tooltip = HUN_Tension_Imperial_Powers.20_increase
+		add_to_variable = {
+		var = HUN_Tensions_with_imperial_powers
+		value = 0.20
+		}	
+	}	
+}
+
+country_event = { # Germany asks Britain
+	id = hungarian.1015
+	title = hungarian.1015.t
+	desc = hungarian.1015.d
+	picture = GFX_report_PB_Generic_War_Event
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = hungarian.1015.a # Yes
+
+		ai_chance = {
+			factor = 100
+		}
+		
+        custom_effect_tooltip = ENG_Divide_Balkans_tt		
+		
+		ENG = {
+        declare_war_on = {
+        target = HUN
+        type = annex_everything
+           } 		
+		}	
+	}
+	
+	option = { 
+		name = hungarian.1015.a  # Nope
+
+		ai_chance = {
+			factor = 0
+		}
+	}	
+}	
+    		

@@ -34,58 +34,57 @@ set_politics = {
 
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Pyotr Krasnov"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/MOL/Portrait_MOL_Krasnov.dds"
 	ideology = NI_VARIANT_01
 }
 
 create_country_leader = {
 	name = "Pyotr Krasnov"
 	desc = ""
-	picture = "gfx/leaders/MRD/Portrait_MRD_Krasnov.dds"
+	picture = "gfx/leaders/MOL/Portrait_MOL_Krasnov.dds"
 	ideology = DS_VARIANT_01
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Pyotr Krasnov"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/MOL/Portrait_MOL_Krasnov.dds"
 	ideology = RC_VARIANT_01
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Pyotr Krasnov"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/MOL/Portrait_MOL_Krasnov.dds"
 	ideology = CN_VARIANT_01
 }
-
 
 create_country_leader = {
 	name = "No Leader"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/No_Leader_Portrait/Portrait_MOL_Lazar_Kaganovich.dds"
 	ideology = AN_VARIANT_01
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Lazar Kaganovich"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/MOL/Portrait_MOL_Lazar_Kaganovich.dds"
 	ideology = LB_VARIANT_01
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Lazar Kaganovich"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/MOL/Portrait_MOL_Lazar_Kaganovich.dds"
 	ideology = SS_VARIANT_01
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Lazar Kaganovich"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/MOL/Portrait_MOL_Lazar_Kaganovich.dds"
 	ideology = JC_VARIANT_01
 }

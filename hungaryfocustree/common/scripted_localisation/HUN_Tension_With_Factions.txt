@@ -1,0 +1,110 @@
+defined_text = { 
+    name = get_Imperial_Powers_Tension_scripted_loc
+    
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Tensions_with_imperial_powers = 0.00 }
+                check_variable = { HUN_Tensions_with_imperial_powers = 0.10 }				
+            }
+        }
+        localization_key = "HUN_Tensions_very_low"
+    }
+	
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Tensions_with_imperial_powers = 0.20 }
+                check_variable = { HUN_Tensions_with_imperial_powers = 0.30 }
+                check_variable = { HUN_Tensions_with_imperial_powers = 0.40 }				
+            }
+        }
+        localization_key = "HUN_Tensions_low"
+    }
+	
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Tensions_with_imperial_powers = 0.50 }			
+            }
+        }
+        localization_key = "HUN_Tensions_medium"
+    }
+	
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Tensions_with_imperial_powers = 0.60 }
+                check_variable = { HUN_Tensions_with_imperial_powers = 0.70 }				
+            }
+        }
+        localization_key = "HUN_Tensions_high"
+    }
+
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Tensions_with_imperial_powers = 0.80 }
+                check_variable = { HUN_Tensions_with_imperial_powers = 0.90 }
+                check_variable = { HUN_Tensions_with_imperial_powers = 1.00 }					
+            }
+        }
+        localization_key = "HUN_Tensions_very_high"
+    }	  
+}
+
+defined_text = { 
+    name = get_Revanchist_Pact_Tension_scripted_loc
+    
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Tensions_with_revanchist_pact = 0.00 }
+                check_variable = { HUN_Tensions_with_revanchist_pact = 0.10 }				
+            }
+        }
+        localization_key = "HUN_Tensions_very_low"
+    }
+	
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Tensions_with_revanchist_pact = 0.20 }
+                check_variable = { HUN_Tensions_with_revanchist_pact = 0.30 }
+                check_variable = { HUN_Tensions_with_revanchist_pact = 0.40 }				
+            }
+        }
+        localization_key = "HUN_Tensions_low"
+    }
+	
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Tensions_with_revanchist_pact = 0.50 }			
+            }
+        }
+        localization_key = "HUN_Tensions_medium"
+    }
+	
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Tensions_with_revanchist_pact = 0.60 }
+                check_variable = { HUN_Tensions_with_revanchist_pact = 0.70 }				
+            }
+        }
+        localization_key = "HUN_Tensions_high"
+    }
+
+    text = { 
+        trigger = {
+            OR = {
+                check_variable = { HUN_Tensions_with_revanchist_pact = 0.80 }
+                check_variable = { HUN_Tensions_with_revanchist_pact = 0.90 }
+                check_variable = { HUN_Tensions_with_revanchist_pact = 1.00 }					
+            }
+        }
+        localization_key = "HUN_Tensions_very_high"
+    }	  
+}
+

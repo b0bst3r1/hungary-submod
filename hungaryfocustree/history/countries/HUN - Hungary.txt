@@ -9,8 +9,8 @@ oob = "HUN_PB"
 set_variable = { PB_main_culture = 55 }
 add_to_array = { PB_accepted_cultures = 55 }
 add_to_array = { PB_accepted_cultures = 46 }
-add_to_array = { PB_accepted_cultures = 446 }
-add_to_array = { PB_accepted_cultures = 448 }
+add_to_array = { PB_accepted_cultures = 504 }
+add_to_array = { PB_accepted_cultures = 506 }
 
 # Starting tech
 set_technology = { 
@@ -39,7 +39,6 @@ set_country_flag = transylvania_undefined
 set_country_flag = slovakia_undefined
 set_country_flag = ruthenia_undefined
 set_country_flag = PB_content_country
-set_country_flag = budapest_under_radical_control
 
 set_research_slots = 3
 

@@ -78,9 +78,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Joseph Broz Tito"
+	name = "Slavko Kvaternik"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "Portrait_CRO_Tito.dds"
+	picture = "gfx/leaders/CRO/Portrait_Slavko_Kvaternik.dds"
 	ideology = NI_VARIANT_02
 }
 
@@ -112,7 +112,6 @@ create_country_leader = {
 	ideology = CN_VARIANT_01
 }
 
-
 create_country_leader = {
 	name = "No Leader"
 	desc = ""
@@ -121,9 +120,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Eugen"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_No_Leader.dds"
+	picture = "gfx/leaders/CRO/Portrait_CRO_Eugen.dds"
 	ideology = LB_VARIANT_01
 }
 

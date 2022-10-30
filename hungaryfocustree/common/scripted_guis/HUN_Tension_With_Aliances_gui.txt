@@ -1,0 +1,110 @@
+scripted_gui = {
+    HUN_Tension_gui = {
+    
+        context_type = decision_category
+		window_name = "HUN_Tension_container"
+		
+		visible = {
+			always = yes
+		}
+		ai_enabled = {
+			always = yes
+		}
+		
+		triggers = {
+		
+		  # Imperial Powers
+		
+		  HUN_Tensions_are_0_imperial_powers_visible = {
+		  check_variable = { HUN_Tensions_with_imperial_powers < 0.01 }
+		    }
+
+		  HUN_Tensions_are_10_imperial_powers_visible = {
+		  check_variable = { HUN_Tensions_with_imperial_powers = 0.10 }
+		    }
+
+		  HUN_Tensions_are_20_imperial_powers_visible = {
+		  check_variable = { HUN_Tensions_with_imperial_powers = 0.20 }
+		    }
+
+		  HUN_Tensions_are_30_imperial_powers_visible = {
+		  check_variable = { HUN_Tensions_with_imperial_powers = 0.30 }
+		    }
+
+		  HUN_Tensions_are_40_imperial_powers_visible = {
+		  check_variable = { HUN_Tensions_with_imperial_powers = 0.40 }
+		    }
+
+		  HUN_Tensions_are_50_imperial_powers_visible = {
+		  check_variable = { HUN_Tensions_with_imperial_powers = 0.50 }
+		    }
+
+		  HUN_Tensions_are_60_imperial_powers_visible = {
+		  check_variable = { HUN_Tensions_with_imperial_powers = 0.60 }
+		    }
+
+		  HUN_Tensions_are_70_imperial_powers_visible = {
+		  check_variable = { HUN_Tensions_with_imperial_powers = 0.70 }
+		    }
+
+		  HUN_Tensions_are_80_imperial_powers_visible = {
+		  check_variable = { HUN_Tensions_with_imperial_powers = 0.80 }
+		    }
+
+		  HUN_Tensions_are_90_imperial_powers_visible = {
+		  check_variable = { HUN_Tensions_with_imperial_powers = 0.90 }
+		    }
+
+		  HUN_Tensions_are_100_imperial_powers_visible = {
+		  check_variable = { HUN_Tensions_with_imperial_powers = 1.00 }
+		    }
+			
+		  # Revanchist Pact
+
+		  HUN_Tensions_are_0_revanchist_pact_visible = {
+		  check_variable = { HUN_Tensions_with_revanchist_pact < 0.01 }
+		    }
+
+		  HUN_Tensions_are_10_revanchist_pact_visible = {
+		  check_variable = { HUN_Tensions_with_revanchist_pact = 0.10 }
+		    }
+
+		  HUN_Tensions_are_20_revanchist_pact_visible = {
+		  check_variable = { HUN_Tensions_with_revanchist_pact = 0.20 }
+		    }
+
+		  HUN_Tensions_are_30_revanchist_pact_visible = {
+		  check_variable = { HUN_Tensions_with_revanchist_pact = 0.30 }
+		    }
+
+		  HUN_Tensions_are_40_revanchist_pact_visible = {
+		  check_variable = { HUN_Tensions_with_revanchist_pact = 0.40 }
+		    }
+
+		  HUN_Tensions_are_50_revanchist_pact_visible = {
+		  check_variable = { HUN_Tensions_with_revanchist_pact = 0.50 }
+		    }
+
+		  HUN_Tensions_are_60_revanchist_pact_visible = {
+		  check_variable = { HUN_Tensions_with_revanchist_pact = 0.60 }
+		    }
+
+		  HUN_Tensions_are_70_revanchist_pact_visible = {
+		  check_variable = { HUN_Tensions_with_revanchist_pact = 0.70 }
+		    }
+
+		  HUN_Tensions_are_80_revanchist_pact_visible = {
+		  check_variable = { HUN_Tensions_with_revanchist_pact = 0.80 }
+		    }
+
+		  HUN_Tensions_are_90_revanchist_pact_visible = {
+		  check_variable = { HUN_Tensions_with_revanchist_pact = 0.90 }
+		    }
+
+		  HUN_Tensions_are_100_revanchist_pact_visible = {
+		  check_variable = { HUN_Tensions_with_revanchist_pact = 1.00 }
+		    }			
+	    }
+    }
+}
+

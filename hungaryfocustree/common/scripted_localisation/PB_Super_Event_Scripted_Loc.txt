@@ -267,6 +267,20 @@ defined_text = { #SUPER EVENT TITLES
             check_variable = { Active_Superevent_ID = 89 }
         }
         localization_key = "SPEVNT_Romanovs_Hungary"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 90 }
+        }
+        localization_key = "SPEVNT_PACT_INTERVENES_IN_BALKANS"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 91 }
+        }
+        localization_key = "SPEVNT_LON_INTERVENES_IN_BALKANS"
     }	
 }
 
@@ -530,6 +544,20 @@ defined_text = { #SUPER EVENT QUOTES
             check_variable = { Active_Superevent_ID = 89 }
         }
         localization_key = "SPEVNT_Romanovs_Hungary_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 90 }
+        }
+        localization_key = "SPEVNT_PACT_INTERVENES_IN_BALKANS_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 91 }
+        }
+        localization_key = "SPEVNT_LON_INTERVENES_IN_BALKANS_TEXT"
     }	
 }
 
@@ -793,5 +821,19 @@ defined_text = { #SUPER EVENT QUOTES
             check_variable = { Active_Superevent_ID = 89 }
         }
         localization_key = "SPEVNT_Romanovs_Hungary_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 90 }
+        }
+        localization_key = "SPEVNT_PACT_INTERVENES_IN_BALKANS_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 91 }
+        }
+        localization_key = "SPEVNT_LON_INTERVENES_IN_BALKANS_CLOSETEXT"
     }	
 }

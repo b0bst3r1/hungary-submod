@@ -15,7 +15,7 @@ defined_text = {
     }
     text = { 
         trigger = {
-            has_completed_focus = HUN_VAGO
+            has_completed_focus = HUN_Revai_Coup
         }
         localization_key = "get_revai_suicide_event_tt"
     }    

@@ -345,13 +345,11 @@ SRD = "countries/Sardinia.txt"
 DER = "countries/Desert Rangers.txt"
 
 #HungarySubmod
-MRD = "countries/MRD.txt"
+
 KSV = "countries/KSV.txt"
-BAT = "countries/BAT.txt"
-VJW = "countries/VJW.txt"
-SRS = "countries/SRS.txt"
 TRA = "countries/TRA.txt"
 RUT = "countries/RUT.txt"
+GLC = "countries/GLC.txt"
 
 #do not edit below this line
 #----------------------------------------------------------

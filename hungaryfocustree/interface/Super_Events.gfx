@@ -48,5 +48,15 @@ spriteTypes = {
 	spriteType = {
   		name = "GFX_SPEVNT_89"
 		texturefile = "gfx/super_events/SPEVNT_Romanovs_Hungary.dds"
+	}
+
+	spriteType = {
+  		name = "GFX_SPEVNT_90"
+		texturefile = "gfx/super_events/SPEVNT_PACT_INTERVENES_IN_BALKANS.dds"
+	}
+
+	spriteType = {
+  		name = "GFX_SPEVNT_91"
+		texturefile = "gfx/super_events/SPEVNT_LON_INTERVENES_IN_BALKANS.dds"
 	}	
 }

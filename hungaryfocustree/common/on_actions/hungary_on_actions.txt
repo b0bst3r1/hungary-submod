@@ -468,7 +468,29 @@ clamp_variable = {
 var = HUN_dejacobinization_progress
 	min = 0
 	max = 1
-        }		
+        }
+
+set_variable = {
+var = HUN_Tensions_with_imperial_powers
+value = 0.00
+              }			  
+			  
+clamp_variable = {
+	var = HUN_Tensions_with_imperial_powers
+	min = 0
+	max = 1
+   }
+
+set_variable = {
+var = HUN_Tensions_with_revanchist_pact
+value = 0.00
+              }			  
+			  
+clamp_variable = {
+	var = HUN_Tensions_with_revanchist_pact
+	min = 0
+	max = 1
+   }   
 }
 
 	
