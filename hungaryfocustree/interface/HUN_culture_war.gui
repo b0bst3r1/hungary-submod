@@ -26,7 +26,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="slovakia_culture_status"
-			position = { x = 45 y = 70 }
+			position = { x = 45 y = 82 }
 			font = "hoi_16mbs"
 			text = "[get_slovakia_culture_war_loc]"
 			format = center
@@ -35,7 +35,7 @@ guiTypes = {
 		}		
 		instantTextBoxType = {
 			name ="slovakia_status"
-			position = { x = 45 y = 47 }
+			position = { x = 45 y = 62 }
 			font = "hoi_16mbs"
 			text = "slovakia_status"
 			format = center
@@ -51,7 +51,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="transylvania_culture_status"
-			position = { x = 200 y = 307 }
+			position = { x = 200 y = 319 }
 			font = "hoi_16mbs"
 			text = "[get_transylvania_culture_war_loc]"
 			format = center
@@ -60,7 +60,7 @@ guiTypes = {
 		}		
 		instantTextBoxType = {
 			name ="transylvania_status"
-			position = { x = 200 y = 282 }
+			position = { x = 200 y = 297 }
 			font = "hoi_16mbs"
 			text = "transylvania_status"
 			format = center
@@ -76,7 +76,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="ruthenia_culture_status"
-			position = { x = 270 y = 73 }
+			position = { x = 270 y = 85 }
 			font = "hoi_16mbs"
 			text = "[get_ruthenia_culture_war_loc]"
 			format = center
@@ -85,7 +85,7 @@ guiTypes = {
 		}		
 		instantTextBoxType = {
 			name ="ruthenia_status"
-			position = { x = 270 y = 50 }
+			position = { x = 270 y = 65 }
 			font = "hoi_16mbs"
 			text = "ruthenia_status"
 			format = center

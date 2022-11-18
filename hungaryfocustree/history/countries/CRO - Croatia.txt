@@ -43,8 +43,6 @@ add_ideas = {
 	PB_Basic_Healthcare
 	PB_Universal_Basic
     PB_Generous_Welfare
-	PB_Trade_Unions_All_Allowed
-    PB_Slavery_Abolished
 	PB_Significant_Poverty
     PB_Semi_Industrialized
 	PB_Minor_Illiteracy
@@ -76,6 +74,9 @@ set_popularities = {
     ss = 20
     jc = 60
 }
+
+recruit_character = CRO_Miroslav_Navratil
+recruit_character = CRO_Vladimir_Laxa
 
 create_country_leader = {
 	name = "Slavko Kvaternik"

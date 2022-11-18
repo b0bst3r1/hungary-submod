@@ -84,6 +84,69 @@ spriteTypes = {
     spriteType = {
 		name = "GFX_idea_HUN_Miklos_Horthy_II_FM"
 		texturefile = "gfx/interface/ideas/Government_Ideas/Foreign_Minister/Hungary/HUN_Miklos_Horthy_II_FM.dds"
-	}	
+	}
+     
+	#################
+	###TECH TEAMS####
+	#################
 	
+    spriteType = {
+		name = "GFX_idea_PB_HUN_Mavag_Tank"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Tech_Teams/Hungary/PB_HUN_Mavag_Tank.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_idea_PB_HUN_Haditechnikai_Intezet"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Tech_Teams/Hungary/PB_HUN_Haditechnikai_Intezet.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_PB_HUN_Raba"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Tech_Teams/Hungary/PB_HUN_Raba.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_PB_HUN_GANZ_Danubius_Watercraft"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Tech_Teams/Hungary/PB_HUN_GANZ_Danubius_Watercraft.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_PB_HUN_DGT"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Tech_Teams/Hungary/PB_HUN_DGT.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_PB_HUN_DUNAI_REPULOGEPGYAR_RT"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Tech_Teams/Hungary/PB_HUN_DUNAI_REPULOGEPGYAR_RT.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_PB_HUN_Mavag_Air"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Tech_Teams/Hungary/PB_HUN_Mavag_Air.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_PB_HUN_Mernoki_Intezet"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Tech_Teams/Hungary/PB_HUN_Mernoki_Intezet.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_PB_HUN_Digep"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Tech_Teams/Hungary/PB_HUN_Digep.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_PB_HUN_Maort"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Tech_Teams/Hungary/PB_HUN_Maort.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_PB_HUN_Mavag_Industry"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Tech_Teams/Hungary/PB_HUN_Mavag_Industry.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_PB_HUN_Haesz"
+		texturefile = "gfx/interface/ideas/Government_Ideas/Tech_Teams/Hungary/PB_HUN_Haesz.dds"
+	}	
 }

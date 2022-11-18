@@ -1,18 +1,17 @@
 spriteTypes = {	
-####################mod
 
 	spriteType = {
-		name = "GFX_trait_Jacobin"
+		name = "GFX_trait_Support_Jacobins_Trait"
 		texturefile = "gfx/interface/traits/personal/trait_HUN_Jacobin.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_trait_Nationalist"
+		name = "GFX_trait_Support_Nationalists_Trait"
 		texturefile = "gfx/interface/traits/personal/trait_HUN_Nationalist.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_trait_Socialist"
+		name = "GFX_trait_Support_Socialists_Trait"
 		texturefile = "gfx/interface/traits/personal/trait_HUN_Socialist.dds"
 		legacy_lazy_load = no
 	}

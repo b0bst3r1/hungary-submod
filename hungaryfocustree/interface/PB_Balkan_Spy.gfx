@@ -1,0 +1,17 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_HUN_Laszlo_Piros"
+		texturefile = "gfx/leaders/HUN/PB_HUN_Portrait_Laszlo_Piros.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_HUN_Mihaly_Farkas"
+		texturefile = "gfx/leaders/HUN/PB_HUN_Portrait_Mihaly_Farkas.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HUN_Endre_Laszlo"
+		texturefile = "gfx/leaders/HUN/PB_HUN_Portrait_Endre_Laszlo.dds"
+	}	
+}

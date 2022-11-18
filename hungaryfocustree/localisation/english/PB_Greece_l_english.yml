@@ -1,0 +1,104 @@
+﻿  l_english:
+ 
+  ##########################
+  # LEADER DESC/LEADER TRAITS
+  ##########################
+
+  PB_GRE_Constantine_I_DESC:0 "§YBorn:§! 2/8/1868\n\nConstantine I, the King who would reconquer Constantinople, has achieved immense popularity amongst the Greek populace ever since the successful transfer of the Western Turkish states from the Russian client state of the ottoman Empire. Known as the Aegean treaty of 1914, Greece would be granted large swaths of Turkish lands in exchange for a semi-permanent Russian military presence. That as well as an almost total Russian economic dominance in the Greek military-industrial complex. Critics say that Constantine I had surrendered his nations independence to Russia, but it is undeniable to mention the popularity and prestige such a deal gave to the Kingdom of Greece.\n\nConstantine I has increasingly sided with autocrats and reactionaries within the Greek parliament, expanding both the military budget to appease generals and admirals alike, as well as cracking down on individual freedoms. However, the King is old, and his time may soon come to abdicate to his son George II, but there a rumours behind the triumphant banners of this ascendant Greek state that there are those that wish to return to the Republic of old."
+  
+  PB_GRE_Georgios_I_DESC:0 "§YBorn:§! 24/12/1845\n\nGeórgios I, the Great King of Greece, who had been on the throne for 70 years, succeeded Otto I of Bavaria to the Greek throne in 1863 by referendum in Greece in 1862. Since then the Greek people have seen no other leader. But not to say that they needed one. For his great deeds, Geórgios enjoyed great popular popularity. With him, the Greek people were able first to keep their independence from the Ottoman Empire, and then regain all the lands seized by the Turks in the past.\n\nKnown as the Aegean Treaty of 1914, Greece received large tracts of Turkish lands in exchange for a semi-permanent Russian military presence. This, as well as Russia's near-complete economic dominance of the Greek military-industrial complex. Critics say that Geórgios I surrendered his country's independence to Russia, but one cannot deny the popularity and prestige that such a deal gave the Kingdom of Greece.\n\nBut in spite of all his achievements, the king is very old. Geórgios is 87 years old and cannot fulfill all his duties. There is public talk that perhaps it is time for the great king to abdicate, although it is obviously forbidden to publish such statements in the press.\n\n§SThe figure of the king is untouchable.§!"  
+  
+  PB_King_Of_The_Greeks:0 "King of the Greeks"
+  PB_GRE_Eternal_King:0 "Eternal King"  
+  PB_King_Old_Greek_King:0 "Old King"    
+
+  ##########################
+  # IDEAS
+  ##########################
+
+  PB_GRE_Greece_Ascendant:0 "Path towards Enosis"
+  PB_GRE_Greece_Ascendant_desc:0 "Whatever one may think of the methods of Constantine I or his loyal cabinet, few Greeks will deny the national pride they feel for Constantine's success with the Russians. Cunning diplomacy and the right geopolitical pressure allowed Greece to force Russia into favourable terms, paving the first stone of the path towards Enosis (the union of all Greeks under a single, Greek state). \n\nThe partial victory of Enosis in Anatolia emboldened the nationalist elements of Greek civil society and the military. Youth clubs, hiking organisations and illegal military circles are all loyal to the furthering of Enosis and the related Megali Idea, seeking to bring the remaining Greek territories into a single state. Territories like Cyprus, Northern Albania, Constantinople, Trebizond and the rest of the Aegean Coast all house Greek communities and are thus, along the lines of both revanchist dreaming and government policy, legitimate targets for further Greek expansion."
+  PB_GRE_Russan_Economic_Dominance:0 "Russian Economic Dominance"
+  PB_GRE_Russan_Economic_Dominance_desc:0 "Following the Aegean treaty of 1914 Greece gave up much of its industrial independence to Russia in exchange for Turkish lands, while some would say the deal was worth while that doesn't change the fact that most of the Greek military industry lays subject to Russian economic interests."
+  PB_GRE_Fading_Democracy:0 "Slide into Royalism"
+  PB_GRE_Fading_Democracy_desc:0 "The democracy that was brought to Greece in the wake of the its war of independence against the Ottoman Turks has always been at odds with its monarchy. For as long as the crown of the Hellenes was established, the monarchy has tried to chain parliament and the political parties, while parliament itself has often tried to bind the monarch to constitutional guarantees and civil rights. Especially the liberal-minded politicians of Greece tried to impose this Frankfurt-style of democracy on Greece, but the conservative landowners remained staunch allies of the king, keeping parliament from cementing any formal guarantee in the constitution. The last attempt was made in 1909, when Venizelos failed to amend the constitution by abolishing the royal veto. \n\nThis war against the monarchy turned during the Great War, as Constantine I brought Greece regional power status with the Aegean Treaty, enforcing the first step towards Enosis. The success of the monarchy turned parliament on its head. Royalist allies won a majority in parliament in 1916 and have hold onto their mandate ever since. With them in control, the Greek monarchy has been able to thrive and centralize, forcing political opponents underground and binding Venizelos to the role of powerless opposition. With a slow decline of checks and balances surrounding the king's priviliges and power, it is safe to assume that post-independence democracy will not survive the coming decade."
+  
+  GRE_second_rome:0 "The second Rome"
+  GRE_second_rome_desc:0 "As a result of the Aegean Treaty, Greece gained control of Constantinople for the first time after a break of more than 350 years. The so-called Second Rome was once again in the hands of its rightful owners, the Orthodox Greeks. It was definitely worth it, even though in exchange Greece gave up the rights to a semi-permanent Russian military presence, also Russia gained almost complete economic dominance in the Greek military-industrial complex and de facto control of the Bosporus Strait.\n\nHistorical justice prevailed."
+
+  ##########################
+  # TOOLTIPS
+  ##########################
+
+  GRE_STRAITS_ARE_BLOWN_tt:0 "The §YBosporus§! and §YDardanelles§! bridges were §Rblown§! up."
+  GRE_Blow_Straits_tt:0 "§RDisables§! the crossing between §YBosphorus§! and §YDardanelles§!"
+
+  ##########################
+  # PARTIES
+  ##########################
+   
+  GRE_ni_party_long:0 "Komma Toov Eleutherofrovoov"
+  GRE_ni_party:0 "KTE"
+  GRE_ds_party_long:0 "House of Saxe-Coburg and Gotha"
+  GRE_ds_party:0 "Saxe-Coburg and Gotha"
+  GRE_rc_party_long:0 "Elleviké Énoose"
+  GRE_rc_party:0 "EE"
+  GRE_cn_party_long:0 "Laïkòv Kómma"
+  GRE_cn_party:0 "LK"
+  GRE_lb_party_long:0 "Kómma Fileleuthéroon"
+  GRE_lb_party:0 "KF"
+  GRE_ss_party_long:0 "Agrotikón Ergatikón Kómma"
+  GRE_ss_party:0 "AEK"
+  GRE_jc_party_long:0 "Sosialistikó Ergatikó Kómma Elládas"
+  GRE_jc_party:0 "SEKE"
+
+  ##########################
+  # EVENTS
+  ##########################
+  
+  greece.1.t:0 "Eternal King Is Dead!"
+  greece.1.d:0 "George I came to Thessaloniki to celebrate another feast. Arriving in the city, the king stopped as usual at his residence, where a few hours later he was found dead in his bed.\n\nThe king's body was taken to Athens by the ship Amphitrite, escorted by a flotilla of ships. For three days the king's coffin, draped in Danish and Greek flags, stood in the cathedral of Athens before his body was interred in his palace at Tatoi."
+  greece.1.a:0 "R.I.P."
+  
+  ##########################
+  # MINISTERS
+  ##########################
+  
+  GRE_PB_Ioannis_Metaxas_IAM:0 "Ioannis Metaxas"
+  GRE_PB_Dimitrios_Gounaris_HOG:0 "Dimitrios Gounaris"
+  GRE_PB_Ioannis_Theotokis_ECM:0 "Ioannis Theotokis"
+  GRE_PB_Konstantinos_Georgakopoulos_FAM:0 "Konstantinos Georgakopoulos"
+
+  PB_Skilled_Orator:0 "Skilled Orator" 
+ 
+  ##########################
+  # DELETED FOCUSES
+  ##########################
+ 
+  GRE_A_day_in_the_palace:0 "The kings birthday!"
+  GRE_A_day_in_the_palace_desc:0 "Today is my birthday, should not be too out of the ordinary"
+ 
+  GRE_the_medical_staff_is_worried:0 "The doctor requests a check up"
+  GRE_the_medical_staff_is_worried_desc:0 "The head doctor of the royal medical staff invites me to the national medical center, funding by none other than me" 
+  
+  GRE_politics_and_other_nonsense:0 "The Head of Governemnt"
+  GRE_politics_and_other_nonsense_desc:0 "Today I have to travel to the center of congress, athens in order to have a series of meetings with head of governemnt, Dimitrios Gounaris and others"
+ 
+  GRE_The_House_Of_The_Setting_Sun:0 "The Head of the Greek Chruch"
+  GRE_The_House_Of_The_Setting_Sun_desc:0 "The Partiarch has requested a meeting with me, might as weel go meet with him"
+ 
+  GRE_A_quiet_day_in_athens:0 "A day in Athens"
+  GRE_A_quiet_day_in_athens_desc:0 "Today I am in athens, The home of the greek revolution, home of democracy and home of congress. what a beatufil city."
+ 
+  GRE_Death_of_the_King:0 "The death of the King"
+  GRE_Death_of_the_King_desc:0 "His royal majesty, Gods chosen ruler of Greece and the Peoples king has died!"
+ 
+  GRE_A_Crown_with_no_King:0 "A Crown with no King"
+  GRE_A_Crown_with_no_King:0 "Now with the king dead we need a regent untill an heir is found"
+ 
+  GRE_eeath_of_the_King:0 "The Regent"
+  GRE_eeath_of_the_King_desc:0 "Now with Mextas as the regent he can now look for an heir"
+ 
+  GRE_number1:0 "The problem with congress"
+  GRE_number1_desc:0 "The head of congress, PLACEHOLDER, starts speaking about forming a republic with the death of the king. Note to selfs this will be start of power struggle" 
+  

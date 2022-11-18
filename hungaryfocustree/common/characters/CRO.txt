@@ -1,0 +1,40 @@
+characters={
+	
+	CRO_Miroslav_Navratil ={
+		name="Miroslav Navratil"
+		portraits={
+			army={
+				large="GFX_PB_Portrait_BOS_Mahmut_Busatlija"
+				small="GFX_PB_Portrait_BOS_Mahmut_Busatlija"		
+			}
+		}
+	corps_commander = {
+	traits = { career_officer }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	legacy_id = 13100	
+		}
+	}
+	
+	CRO_Vladimir_Laxa ={
+		name="Vladimir Laxa"
+		portraits={
+			army={
+				large="GFX_PB_Portrait_CRO_Vladimir_Laxa"
+				small="GFX_PB_Portrait_CRO_Vladimir_Laxa"
+			}
+		}
+	corps_commander = {
+	traits = { old_guard war_hero }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 1
+		logistics_skill = 2
+	legacy_id = 13101
+		}
+	}
+}

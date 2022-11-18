@@ -55,10 +55,8 @@ add_ideas = {
 	PB_No_Healthcare
 	PB_No_Formal_Education
 	PB_No_Welfare
-	PB_Trade_Unions_State_Controlled
 	PB_No_Womens_Legal_Protections
 	PB_Limited_Autonomy
-	PB_Slavery_Abolished
 	PB_Rampant_Poverty
 	PB_Subsistence_Agriculture
 	PB_Rampant_Illiteracy

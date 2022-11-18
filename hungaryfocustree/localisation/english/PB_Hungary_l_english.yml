@@ -54,6 +54,11 @@
   Special_Economic_Zone_State_Modifier:0 "Special Economic Zone"
   Special_Economic_Zone_State_Modifier_desc:0 " "
   
+  Albanian_National_Liberation_Army_State_Modifier:0 "Albanian National Liberation Army"
+  IMRO_Macedonia_State_Modifier:0 "Internal Macedonian Revolutionary Organization"
+  IMRO_Macedonia_State_Modifier:0 "§YIMRO§! – §RInternal Macedonian Revolutionary Organization§! is a secret revolutionary society in Macedonia, which sees its goal as accession to §GBulgaria§!."
+  Bosniak_Clandestine_Organization_State_Modifier:0 "Bosniak Clandestine Organization"
+  
   HUN_Danube_PR:0 "Danubian Peasants And Workers Republic" 
 
   decision_cost_5_cp: "£command_power §Y5§!"
@@ -65,25 +70,33 @@
   decision_cost_15_cp: "£command_power §Y15§!"
   decision_cost_15_cp_blocked: "£command_power §R15§!"
 
+  #############  
   HUN_socialist_party_PB_long:0 "Patriotic People's Front"
   HUN_socialist_party_PB:0 "Hazafias Népfront"
   
-  HUN_Country_Desc_Topbar:0 "§YFeatures:§!\n    - Defend the Banner of the Revolution\n    - Unite Balkans under one banner\n    - Manage the State of Country\n\n§YOr after defeat:§!\n    - Bring Hungary back to greatness\n    - Punish all your enemies\n\n§YSituation:§!\nThe §RHungarian People's Republic§! is the only §RRevolutionary Republic§! in continental Europe in 1933.\n\n§YThe Kingdom of Hungary§! gained independence as a nation in 1866, when the Austrian Empire unified Germany and gave its Non-German territories independence. However the independence was only nominal. Karl Ludwig of Habsburg would become the King of Hungary and maintain loyalty to the Habsburg family and subsequently to Germany. Hungary would continue to be an ally of Germany or rather in the eyes of the Hungarian people be a exploited puppet.\n\nThe Downfall of the Kingdom began with the outbreak of the §YGreat War§! in 1905 where the nation would immediatly join the Imperial Powers in their war against the Bourbons. The Hungarian People were dragged into a war they had no motivation or interest fighting in greatly increasing their dissent with the Royal Leadership. With Hungarian Soldiers being used as cannon fodder on the alpine front and the citiziens themself experiencing food shortages, the old Jacobine ideas born in 1790 would again gain support among the common people. In the end over 300 thousand soldiers would give their lives for the war effort and in the Treaty of Tours the Kingdom would only be awarded some small reperations as compensation. §RThe Spark was lit!§!\n\nThe following collapsing economy in 1911 would lead to bread riots which would escalate as Hungarian troops would fire on the protestors. From there on the situation rapidly escalated with Troops defecting on mass. §RThe Revolution§! had began, the Hungarian civil war between the Jacobin Revolutionaries and the German Backed Whites started. At the same time Romania would invade and steal Translyvanian territory. However despite these setback the Revolution would suceed under the guidance of Vilmos Böhm and the §YCommon Republic of Hungary§! would be declared on 6th March 1912. \n\nAfter 8 years of recovering the Hungarian Republic would declare war upon Romania trying to reclaim their lost territories. The war would be the most brutal one both countries had ever experienced and after 3 years of gruesome fighting the Great Powers of Europe forced a peace. Hungary reclaimed the majority of its former Translyvanian States and would be seen as the victor. However its following and current problems would be internally. Ethnic tension in Slovakia and the Slavic border regions begin to cause issues, the ruling party §RForradalmi Tanács§! is splitting into two conflicting branches, the §YReformists§! and §YVanguardists§! and lastly the hero of the revolution Vilmos Böhm is losing his shine and motivation to rule this nation. On top of all of this, the is a feeling in the air that the Balkan is soon reaching its §R"Boiling Point"§!.\n\n§YSpecial thanks to§!:\nBernie, Stallone, Lofn, Two-Watt, Wolfxe, Nilo, Mimi, Globus, Alfred/Fausi, BoringIndividual, Jubs, Tapir, Weis, Erwin, Jackie, Beezlebub, Zerogamer, SilentKing, Soble, Red, and Arj.\n\n"
+  HUN_Country_Desc_Topbar:0 "§YFeatures:§!\n    - Defend the Banner of the Revolution\n    - Unite Balkans under one banner\n    - Manage the State of Country\n\n§YOr after defeat:§!\n    - Bring Hungary back to greatness\n    - Punish all your enemies\n\n§YSituation:§!\nThe §RHungarian People's Republic§! is the only §RRevolutionary Republic§! in continental Europe in 1933.\n\n§YThe Kingdom of Hungary§! gained independence as a nation in 1866, when the Austrian Empire unified Germany and gave its Non-German territories independence. However the independence was only nominal. Karl Ludwig of Habsburg would become the King of Hungary and maintain loyalty to the Habsburg family and subsequently to Germany. Hungary would continue to be an ally of Germany or rather in the eyes of the Hungarian people be a exploited puppet.\n\nThe Downfall of the Kingdom began with the outbreak of the §YGreat War§! in 1905 where the nation would immediatly join the Imperial Powers in their war against the Bourbons. The Hungarian People were dragged into a war they had no motivation or interest fighting in greatly increasing their dissent with the Royal Leadership. With Hungarian Soldiers being used as cannon fodder on the alpine front and the citiziens themself experiencing food shortages, the old Jacobine ideas born in 1790 would again gain support among the common people. In the end over 300 thousand soldiers would give their lives for the war effort and in the Treaty of Tours the Kingdom would only be awarded some small reperations as compensation. §RThe Spark was lit!§!\n\nThe following collapsing economy in 1911 would lead to bread riots which would escalate as Hungarian troops would fire on the protestors. From there on the situation rapidly escalated with Troops defecting on mass. §RThe Revolution§! had began, the Hungarian civil war between the Jacobin Revolutionaries and the German Backed Whites started. At the same time, Romanian guerrillas began to operate in Transylvania, but without decent support from Russia and the United Danubian Principalities they were suppressed. However despite these setback the Revolution would suceed under the guidance of Vilmos Böhm and the §YCommon Republic of Hungary§! would be declared on 6th March 1912.\n\nAfter several years of recovery from the Great War, foreign imperialists trying to bring Hungary back into their sphere of influence from all sides organized local skirmishes on the borders. Hungary immediately imposed martial law and mobilization in the state, whereupon the Great Powers retreated, fearing an escalation still unrecovered from the shock of the Great War. However its following and current problems would be internally. Ethnic tension in Slovakia and the Slavic border regions begin to cause issues, the ruling party §RForradalmi Tanács§! is splitting into two conflicting branches, the §YReformists§! and §YVanguardists§! and lastly the hero of the revolution Vilmos Böhm is losing his shine and motivation to rule this nation. On top of all of this, the is a feeling in the air that the Balkan is soon reaching its §R"Boiling Point"§!.\n\n§YSpecial thanks to§!:\nBernie, Stallone, Lofn, Two-Watt, Wolfxe, Nilo, Mimi, Globus, Alfred/Fausi, BoringIndividual, Jubs, Tapir, Weis, Erwin, Jackie, Beezlebub, Zerogamer, SilentKing, Soble, Red, and Arj.\n\n"
   
-  #Leader Trait
+  # Traits
+  
+  Support_Jacobins_Trait:0 "§RJacobin§!"
+  Support_Jacobins_Trait_desc:0 "This commander has §RJacobean views§!"
+  Support_Nationalists_Trait:0 "§GNationalist§!"
+  Support_Nationalists_Trait_desc:0 "This commander has §GNationalist views§!"
+  Support_Socialists_Trait:0 "§YSocialist§!"
+  Support_Socialists_Trait_desc:0 "This commander has §YSocialist views§!"  
   
   PB_The_Great_Founder:0 "The Great Founder"
   PB_Pers_Chief:0 "Chief"
   PB_Pers_First_Hungarian_Democrat:0 "First Hungarian Democrat"
   PB_HUN_Leader_of_Nation:0 "Nemzetvezető"
   
-  # Leader Descriptions 
- 
-  PB_GRE_Georgios_I_DESC:0 "§YBorn:§! 24/12/1845\n\nGeórgios I, the Great King of Greece, who had been on the throne for 70 years, succeeded Otto I of Bavaria to the Greek throne in 1863 by referendum in Greece in 1862. Since then the Greek people have seen no other leader. But not to say that they needed one. For his great deeds, Geórgios enjoyed great popular popularity. With him, the Greek people were able first to keep their independence from the Ottoman Empire, and then regain all the lands seized by the Turks in the past.\n\nKnown as the Aegean Treaty of 1914, Greece received large tracts of Turkish lands in exchange for a semi-permanent Russian military presence. This, as well as Russia's near-complete economic dominance of the Greek military-industrial complex. Critics say that Geórgios I surrendered his country's independence to Russia, but one cannot deny the popularity and prestige that such a deal gave the Kingdom of Greece.\n\nBut in spite of all his achievements, the king is very old. Geórgios is 87 years old and cannot fulfill all his duties. There is public talk that perhaps it is time for the great king to abdicate, although it is obviously forbidden to publish such statements in the press.\n\n§SThe figure of the king is untouchable.§!"
+  # Leader Descriptions
+
+  PB_HUN_Vilmos_Bohm_DESC:0 "§YBorn:§! 06/01/1880\n\nVilmos Böhm was born in a middle class Jewish family. After graduation from vocational secondary school, he became a mechanist. Since his youth, he had been interested in the problem of inequality in society, so he turned more and more to revolutionary ideas for answers. In 1905 at all, after the outbreak of the Great War, he strictly opposed Hungary's entry into it. He carried out mass agitation and protests, for which he was declared wanted by the kingdom.\n\nThe following collapsing economy in 1911 would lead to bread riots which would escalate as Hungarian troops would fire on the protestors. From there on the situation rapidly escalated with Troops defecting on mass.The Revolution§ had began, the Hungarian civil war between the Jacobin Revolutionaries and the German Backed Whites started. However despite these setback the Revolution would suceed under the guidance of §RVilmos Böhm§! and the People's Republic of Hungary would be declared on 6th March 1912.\n\nVilmos Böhm has ruled the Hungarian People's Republic for more than 20 years, having single-handedly led it through many crises. But even such a colorful personality as Vilmos Böhm is losing his luster and motivation to rule this country."  
   
   #FOCUS
   
-  HUN_Partycrisis:0 "Jacobin's Party Crisis" 
+  HUN_Partycrisis:0 "Forradalmi Tanacs Crisis" 
   HUN_Partycrisis_desc:0 "Hungary in 1933 is at an important stage in its history. The rulling party of Hungary is divided into several different factions. The most supported group led by Commissar of Foreign Affairs Bela Kun adheres to traditional Marxist values. The second one led by Commissar of Internal Affairs Sandor Garbai is maintain the reformists values of market socialism. And finally the third group led by party leader Bela Vago is between the two previous supporting small reforms. Everything will be decided at the upcoming party congress."
   HUN_politicalstruggle:0 "Political Struggle" 
   HUN_politicalstruggle_desc:0 "Getting closer to the most important congress, the stakes are heating up and heating up. Political opponents are increasinaly criticizing each other in order to earn political capital and get more people support." 
@@ -154,8 +167,8 @@
   
   #Revai Tree 
   
-  HUN_Revai_Coup:0 "Revai Coup"
-  HUN_Revai_Coup_desc:0 " "
+  HUN_Szamuely_Coup:0 "Socialist Coup"
+  HUN_Szamuely_Coup_desc:0 " "
   hun_continuation_former_policy:0 "A New Deal"
   hun_continuation_former_policy_desc:0 "The previous state policy ended in the collapse of the political system. Inevitably, a new system must be developed so that the country does not fall. The idea of state socialism with elements of a past revolutionary order seems to be appropriate for the country."
   hun_belakun_arrest:0 "Crush Left Party Opposition"
@@ -427,10 +440,78 @@
   hun_federation_of_nations:0 "§CFederation of Nations§!"
   hun_federation_of_nations_desc:0 "Now that all the integration processes have reached their peak, we have resolved the issue of Greece in exile, it is time to forget about the past Balkan contradictions. It is time to forget the old idea of a nation-state, it is time to create a great free Balkan state in peace and without conflict. A new dawn of the Balkans."
   
+  # Economic Tree
+  
+  HUN_Szilard_Research_Plan:0 "Szilard Vision"
+  HUN_Szilard_Research_Plan_desc:0 "Leo Szilárd is a Hungarian physicist working on nuclear physics experiments.  He is currently a member of the Budapest Research University. He is one of the most distinguished scientists of our country. In his opinion, more resources should be invested in developing the military potential of nuclear chain reaction and other such weapons, and technologies should be developed to increase the extraction of vital resources"
+  HUN_Oil_Break:0 "Oil Breakthrough"
+  HUN_Oil_Break_desc:0 "Oil is one of the most important resources we have on the planet. But since our country is in a closed position and we do not have free access to purchase such a resource, it is necessary to try to organize the development of artificial oil with the help of technology."
+  HUN_Chemical_Break:0 "Chemical Breakthrough"
+  HUN_Chemical_Break_desc:0 "The chemical industry is one of the main areas of our economy. The products that are produced there are indispensable. We should also not forget the other sphere of application of chemistry. In spite of humanism, chemical weapons may come in handy in wars to come."
+  HUN_Nukes_Break:0 "Nuke Breakthrough"
+  HUN_Nukes_Break_desc:0 ""
+  HUN_Biological_Break:0 "Biological Breakthrough"
+  HUN_Biological_Break_desc:0 " "
+  HUN_Wigner_Research_Plan:0 "Wigner Vision"
+  HUN_Wigner_Research_Plan_desc:0 " "
+  HUN_Autonomized_Industry:0 "Autonomized Industry"
+  HUN_Autonomized_Industry_desc:0 ""
+  HUN_Augmentation_Effort:0 "Augmentation Effort"
+  HUN_Augmentation_Effort_desc:0 "" 
+  HUN_A_Lot_Mines:0 "Mines Effort"
+  HUN_A_Lot_Mines_desc:0 ""
+  HUN_Electro_Effort:0 "Electrification"
+  HUN_Electro_Effort_desc:0 ""
+  HUN_Triump_of_Modernity:0 "Triump of Modernity"
+  HUN_Triump_of_Modernity_desc:0 ""
+  HUN_Agriculture_Revoltuion:0 "Agriculture Revolution"
+  HUN_Agriculture_Revoltuion_desc:0 ""
+  HUN_Mass_Urbanization:0 "Mass Urbanization"
+  HUN_Mass_Urbanization_desc:0 ""
+  HUN_Mass_Railways:0 "Mass Railways Building"
+  HUN_Mass_Railways_desc:0 ""
+  HUN_Future_Of_The_Farms:0 "Future of the Farms"
+  HUN_Future_Of_The_Farms_desc:0 ""
+  HUN_Future_Of_The_Industry:0 "Future of the Industry"
+  HUN_Future_Of_The_Industry_desc:0 ""
+  HUN_Every_Man_Is_A_Worker:0 "Every Man Is a Worker"
+  HUN_Every_Man_Is_A_Worker_desc:0 ""
+  HUN_Grand_Education_Campaign:0 "Grand Education Campaign"
+  HUN_Grand_Education_Campaign_desc:0 ""
+  HUN_Books_For_Everyone:0 "Books For Everyone"
+  HUN_Books_For_Everyone_desc:0 " "
+  HUN_No_Child_Left_Behind:0 "No Child Left Behind"
+  HUN_No_Child_Left_Behind_desc:0 ""
+  HUN_High_School_Reform:0 "High School Reform"
+  HUN_High_School_Reform_desc:0 ""
+  HUN_Chance_For_Everyone:0 "Chance for Everyone"
+  HUN_Chance_For_Everyone_desc:0 ""
+  HUN_Our_Brightest_Minds:0 "Our Brightest Minds"
+  HUN_Our_Brightest_Minds_desc:0 ""
+  HUN_Grand_Cultural_Campaign:0 "Grand Cultural Campaign"
+  HUN_Grand_Cultural_Campaign_desc:0 ""
+  HUN_Cinemas_For_Everyone:0 "Cinemas In Every City"
+  HUN_Cinemas_For_Everyone_desc:0 ""
+  HUN_Futurism:0 "Make Way For Futurism"
+  HUN_Futurism_desc:0 ""
+  HUN_Anti_Alcohol_Campaign:0 "Anti-Alcohol Campaign"
+  HUN_Anti_Alcohol_Campaign_desc:0 ""
+  HUN_Youth_Activity:0 "Youth Activity"
+  HUN_Youth_Activity_desc:0 ""
+  HUN_Our_Middle_Class:0 "Our Middle Class"
+  HUN_Our_Middle_Class_desc:0 ""
+  
   ###IDEAS###
   
   PB_Govidea_Hungarian_Socialism:0 "Hungarian Socialism"
   
+  
+  HUN_Gold_Of_Nation:0 "Gold of Nation"
+  HUN_Gold_Of_Nation_desc:0 "The gold of our nation is every person. Any member of the nation, if guided to the right path, can glorify the nation or benefit the nation through his work."
+  HUN_Gold_Of_Nation_1:0 "Gold of Nation"
+  HUN_Gold_Of_Nation_1_desc:0 "The gold of our nation is every person. Any member of the nation, if guided to the right path, can glorify the nation or benefit the nation through his work."
+  HUN_Gold_Of_Nation_2:0 "Gold of Nation"
+  HUN_Gold_Of_Nation_2_desc:0 "The gold of our nation is every person. Any member of the nation, if guided to the right path, can glorify the nation or benefit the nation through his work."  
   Bank_Reform_Idea:0 "Bank Reform"
   Bank_Reform_Idea_desc:0 " "
   Single_Tax_Idea:0 "Single Tax"
@@ -563,9 +644,30 @@
   TUR_national_disgrace:0 "National Disgrace"
   TUR_national_disgrace_desc:0 "Recently the Ottoman Empire stretched from Constantinople to Alexandria and Mecca, but the Empire was defeated under the onslaught of Russia. Only the name remains of the once greatest Empire, the menace of Europe and defender of the Islamic world. The Ottomans are disgraced - Kurdistan has gained independence, Greece controls the west coast of Anatolia, and the Russian vassal controls the eastern part.\n\nAfter all the defeats, people no longer believe in the Ottoman Empire. Maybe Turkey should begin a new phase in its history: §Ba republic.§!"
   TUR_Liberation_War:0 "National-Liberation War"
-  TUR_Liberation_War_desc:0 " "  
+  TUR_Liberation_War_desc:0 " "
+
+  ##################
+  ######TECH TEAMS##
+  ##################
+ 
+  PB_HUN_Mavag_Tank:0 "Mavag"
+  PB_HUN_Haditechnikai_Intezet:0 "Haditechnikai Intezet"
+  PB_HUN_Raba:0 "Rába"
+  PB_HUN_GANZ_Danubius_Watercraft:0 "GANZ Danubius Watercraft"
+  PB_HUN_DGT:0 "DGT"
+  PB_HUN_DUNAI_REPULOGEPGYAR_RT:0 "Dunai Repülogépgyár"
+  PB_HUN_Mavag_Air:0 "Mavag"
+  PB_HUN_Mernoki_Intezet:0 "Mérnöki Intézet"
+  PB_HUN_Digep:0 "Digep"
+  PB_HUN_Maort:0 "Maort"
+  PB_HUN_Mavag_Industry:0 "Mavag"
+  PB_HUN_Haesz:0 "Haesz"
   
   #Tooltips
+  
+  get_garbai_suicide_event_scripted_tt:0 "Garbai"
+  get_belakun_suicide_event_tt:0 "Bela Kun"
+  get_revai_suicide_event_tt:0 "Szamuely"
   
   HUN_FORMS_UDWR:0 "The following nations will be annexed if they exist:\n\n-[CRO.GetFlag] Croatia\n-[SER.GetFlag] Serbia\n-[ROM.GetFlag] Romania\n-[MNT.GetFlag] Montenegro\n-[ALB.GetFlag] Albania."
   
@@ -732,8 +834,10 @@
 
   ### 
   Budapest_research_name:0 "Budapest Research Collaboration"
-  Budapest_research_desc:0 "The Budapest Research Cooperation was founded in Budapest with the goal of exchanging technological discoveries between Hungarian scientists and furthering their joint advancement for the benefit of mankind."  
-  BOSPHORUS2_STRAIT:0 "Bosphorus Strait"
+  Budapest_research_desc:0 "The Budapest Research Cooperation was founded in Budapest with the goal of exchanging technological discoveries between Hungarian scientists and furthering their joint advancement for the benefit of mankind."
+  
+  BOSPHORUS_STRAITT:0 "Bosphorus Strait"
+  BOSPHORUS_BRIDGE:0 "Milyutin Bridge" 
   
   #Aliances 
   

@@ -37,21 +37,6 @@ division_template = {
 }
 
 division_template = {
-	name = "Automata divízió"		
-	regiments = {
-		gw_basic_automat = { x = 0 y = 0 }
-		gw_basic_automat = { x = 0 y = 1 }
-		gw_basic_automat = { x = 0 y = 2 }
-		gw_basic_automat = { x = 1 y = 0 }
-		gw_basic_automat = { x = 1 y = 1 }
-		gw_basic_automat = { x = 1 y = 2 }
-	}
-	support = {
-		recon = { x = 0 y = 0 } 
-	}
-}
-
-division_template = {
 	name = "Lovasság"
 
 	regiments = {
@@ -196,9 +181,9 @@ units = {
 	}	
 
 	division = {
-		name = "Automata divízió"
+		name = "10. Gyaloghadosztály"
 		location = 9563
-		division_template = "Automata divízió"
+		division_template = "Gyalogság"
 		start_experience_factor = 0.90
 		start_equipment_factor = 1.00
 	}

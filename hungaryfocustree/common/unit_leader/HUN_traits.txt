@@ -1,6 +1,6 @@
 leader_traits = {
 
-	Jacobin = {
+	Support_Jacobins_Trait = {
 		type = all
 		trait_type = personality_trait
 		gain_xp = {
@@ -23,7 +23,7 @@ leader_traits = {
 		}
 	}
 	
-	Nationalist = {
+	Support_Nationalists_Trait = {
 		type = all
 		trait_type = personality_trait
 		gain_xp = {
@@ -46,7 +46,7 @@ leader_traits = {
 		}
 	}
 	
-	Socialist = {
+	Support_Socialists_Trait = {
 		type = all
 		trait_type = personality_trait
 		gain_xp = {

@@ -1,0 +1,12 @@
+﻿l_english:
+
+ PB_HUNGARIAN_PATH_CHOICE:0 "@HUN Hungarian AI Strategy"
+ 
+ RULE_OPTION_HUN_JACOBIN_PATH:0 "The Triumph of Bela Kun"
+ RULE_OPTION_HUN_JACOBIN_PATH_DESC:0 "Hungary will move toward a great revolutionary future."
+  
+ RULE_OPTION_HUN_SOCIALIST_PATH:0 "A Socialist Coup"
+ RULE_OPTION_HUN_SOCIALIST_PATH_desc:0 "Socialists will take over power in Hungary."
+  
+ RULE_OPTION_HUN_LIBERAL_PATH:0 "A Long-awaited freedom"
+ RULE_OPTION_HUN_LIBERAL_PATH_DESC:0 "Liberals will come to power and start liberalization." 

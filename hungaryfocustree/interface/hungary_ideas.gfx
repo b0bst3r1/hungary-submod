@@ -6,6 +6,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_HUN_Gold_Of_Nation"
+		texturefile = "gfx/interface/ideas/Hungary/HUN_Gold_Of_Nation.dds"
+	}	
+	
+	spriteType = {
 		name = "GFX_idea_HUN_monarchy_without_monarch"
 		texturefile = "gfx/interface/ideas/Hungary/HUN_monarchy_without_monarch.dds"
 	}	

@@ -1,0 +1,101 @@
+##################
+####greece#####
+#####events#######
+##################
+
+add_namespace = greece
+	    
+	country_event = { # Eternal King Is Dead
+	id = greece.1
+	title = greece.1.t
+	desc = greece.1.d
+	picture = GFX_report_PB_Generic_Spy_Radio
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = greece.1.a
+		
+		hidden_effect = {
+		news_event = {
+		id = hungary.30
+		hours = 12
+		   }
+        }		 
+
+		create_country_leader = {
+		name = "Constantine I"
+		desc = " "
+		picture = "gfx/leaders/GRE/Portrait_GRE_Constantine_I.dds"
+		expire = "1965.1.1"
+		ideology = DS_VARIANT_02
+	    traits = {
+		  PB_King_Of_The_Greeks
+	               }		
+		      }
+	     }
+    }
+	
+	country_event = { # Russian concessions
+	id = greece.2
+	title = greece.2.t
+	desc = greece.2.d
+	picture = GFX
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = greece.2.a
+		
+	 GRE = {			
+     transfer_state = 966
+	 transfer_state = 965
+	 }
+
+	 TUR = {			
+     transfer_state = 969
+	          }
+
+		hidden_effect = {
+		news_event = {
+		id = hungary.32
+		days = 1
+		          }
+              }			  
+	      }
+     }	
+
+
+	country_event = { #Treaty with Bulgaria
+	id = greece.4
+	title = greece.4.t
+	desc = greece.4.d
+	picture = GFX
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = greece.4.a
+		
+	 GRE = {			
+     declare_war_on = {
+     target = HUN
+     type = annex_everything
+     }
+		 
+	 set_major = yes		 		 
+		 
+	 transfer_state = 731
+	 transfer_state = 958
+	 transfer_state = 976	 
+	 
+      }
+	  
+	 BUL = {				
+       add_to_faction = GRE				
+	  }	  
+   }      
+}	

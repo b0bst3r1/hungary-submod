@@ -815,6 +815,11 @@ Ser_Jacobin = {
 	color_ui = rgb { 155 45 48 }
 }
 
+Serbian_Occupied_Zone = {
+	color = rgb { 170 45 48 }
+	color_ui = rgb { 155 45 48 }
+}
+
 BOS_Jacobin = {
 	color = rgb { 155 45 48 }
 	color_ui = rgb { 155 45 48 }
@@ -913,6 +918,11 @@ BUL_TSA = {
 BUL_after_tsar = {
 	color = rgb { 40 80 0 }
 	color_ui = rgb { 40 80 0 }
+}
+
+MAC_IMRO = {
+	color = rgb { 40 65 0 }
+	color_ui = rgb { 40 65 0 }
 }
 
 HUN_COM = {

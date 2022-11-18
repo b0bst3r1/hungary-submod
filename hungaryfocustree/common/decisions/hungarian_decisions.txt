@@ -3478,7 +3478,7 @@ HUN_domestic_policy = {
 		cost = 30
 
 		ai_will_do = {
-			factor = 10
+			factor = 4000
 		}
 
 		available = {
@@ -3544,7 +3544,7 @@ HUN_domestic_policy = {
 		cost = 30
 
 		ai_will_do = {
-			factor = 10
+			factor = 4000
 		}
 
 		available = {
@@ -3615,7 +3615,7 @@ HUN_domestic_policy = {
 		cost = 30
 
 		ai_will_do = {
-			factor = 10
+			factor = 4000
 		}
 
 		available = {
@@ -3891,7 +3891,7 @@ HUN_domestic_policy = {
 		cost = 75
 
 		ai_will_do = {
-			factor = 10
+			factor = 5000
 		}
 
 		available = {
@@ -3917,7 +3917,7 @@ HUN_domestic_policy = {
 		cost = 75
 
 		ai_will_do = {
-			factor = 10
+			factor = 5000
 		}
 
 		available = {

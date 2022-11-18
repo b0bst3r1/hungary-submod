@@ -1,0 +1,17 @@
+on_actions = {
+	on_startup = {
+	    effect = {
+			GRE = {
+		        country_event = { 
+					id = greece.1
+					days = 80
+				}
+				
+		        country_event = { 
+					id = greece.2
+					days = 320
+				}				
+		    }
+		}
+	}
+}

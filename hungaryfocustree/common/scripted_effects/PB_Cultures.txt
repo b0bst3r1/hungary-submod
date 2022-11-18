@@ -323,6 +323,7 @@ PB_Setup_Cultures = {
 	187 = { set_variable = { culture_id = 44 } }
 	958 = { set_variable = { culture_id = 44 } }
 	963 = { set_variable = { culture_id = 44 } }
+	976 = { set_variable = { culture_id = 44 } }	
 
 	### ---- Albanian Culture ---- ###
 
@@ -387,7 +388,8 @@ PB_Setup_Cultures = {
 	664 = { set_variable = { culture_id = 55 } }
 	82 = { set_variable = { culture_id = 55 } }
     76 = { set_variable = { culture_id = 55 } }
-    83 = { set_variable = { culture_id = 55 } }		
+    83 = { set_variable = { culture_id = 55 } }
+    975 = { set_variable = { culture_id = 55 } }	
 
 	### ---- Slovakian Culture ---- ###
 
@@ -1796,7 +1798,7 @@ PB_Setup_Cultures = {
 	
 	### ---- Austro-Hungarian Culture ---- ###
 	
-	975 = { set_variable = { culture_id = 506 } }
+	# culture id = 506
 	
 	### ---- Jewish Culture ---- ###
 	

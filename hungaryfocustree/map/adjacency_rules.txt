@@ -199,46 +199,15 @@ adjacency_rule =
 	
 	required_provinces = { 9833 11829 }
 	
+	is_disabled = {
+		OR = {
+			has_global_flag = GRE_STRAITS_ARE_BLOWN
+			has_country_flag = BOSPHORUS_STRAITS_BLOCKED_FOR_COUNTRY			
+		}
+		tooltip = GRE_STRAITS_ARE_BLOWN_tt
+	}	
+	
 	icon = 9833
-	offset = { -2 0 -9 }
-}
-
-adjacency_rule =
-{
-	name = "BOSPHORUS2_STRAIT"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = yes
-	}
-	
-	required_provinces = { 13280 13281 }
-	
-	icon = 13280
 	offset = { -2 0 -9 }
 }
 
@@ -277,6 +246,14 @@ adjacency_rule =
 	}
 	
 	required_provinces = { 849 6864 }
+	
+	is_disabled = {
+		OR = {
+			has_global_flag = GRE_STRAITS_ARE_BLOWN
+			has_country_flag = BOSPHORUS_STRAITS_BLOCKED_FOR_COUNTRY			
+		}
+		tooltip = GRE_STRAITS_ARE_BLOWN_tt
+	}	
 	
 	icon = 849
 	offset = { 3 0 -5 } 
@@ -354,4 +331,52 @@ adjacency_rule =
 		
 	icon = 10904
 	offset = { 2 0 12 }
+}
+
+#The Bosphorus Bridge 
+adjacency_rule = 
+{
+	name = "BOSPHORUS_BRIDGE"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 13280 13281 }
+
+	is_disabled = {
+		OR = {
+			has_global_flag = GRE_STRAITS_ARE_BLOWN
+			has_country_flag = BOSPHORUS_STRAITS_BLOCKED_FOR_COUNTRY			
+		}
+		tooltip = GRE_STRAITS_ARE_BLOWN_tt
+	}	
+	
+	icon = 13280
+	offset = { -2 0 -9 } 
 }

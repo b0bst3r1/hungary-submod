@@ -27,8 +27,8 @@ set_cosmetic_tag = ROM_RUS
 set_research_slots = 3
 
 #Characters
-
-recruit_character = ROM_Gheorghe_Manoliu
+	
+recruit_character = ROM_Gheorghe_Manoliu 
 recruit_character = ROM_Balan
 recruit_character = ROM_Dumitrache
 recruit_character = ROM_IlieSteflea
@@ -165,10 +165,13 @@ set_politics = {
 
 
 create_country_leader = {
-	name = "Constantin Prezan"
-	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "gfx/leaders/ROM/Portrait_prezan.dds"
+	name = "Alexandru Averescu"
+	desc = "PB_ROM_Alexander_Averescu_DESC"
+	picture = "gfx/leaders/ROM/Portrait_averescu.dds"
 	ideology = RC_VARIANT_01
+	traits = {
+		PB_ROM_Namestnik
+	}	
 }
 
 create_country_leader = {
@@ -193,17 +196,23 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Constantin Prezan"
-	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I_YOUNG.dds"
+	name = "Alexandru Averescu"
+	desc = "PB_ROM_Alexander_Averescu_DESC"
+	picture = "gfx/leaders/ROM/Portrait_averescu.dds"
 	ideology = CN_VARIANT_01
+	traits = {
+		PB_ROM_Namestnik
+	}	
 }
 
 create_country_leader = {
-	name = "Constantin Prezan"
-	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I_YOUNG.dds"
+	name = "Alexandru Averescu"
+	desc = "PB_ROM_Alexander_Averescu_DESC"
+	picture = "gfx/leaders/ROM/Portrait_averescu.dds"
 	ideology = DS_VARIANT_01
+	traits = {
+		PB_ROM_Namestnik
+	}	
 }
 
 ######################################################################################################## NAVY

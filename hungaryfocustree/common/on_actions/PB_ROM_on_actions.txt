@@ -1,0 +1,16 @@
+on_actions = {
+ on_startup = {
+      effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				ROM = {
+					give_resource_rights = { receiver = RUS state = 46 }
+				}
+			}
+		}
+	}
+}
+  
+  

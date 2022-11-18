@@ -52,7 +52,7 @@ HUN_prepare_for_war = {
 	}
 	enable = {
 		AND =  {
-			date > 1933.6.1
+			date > 1933.1.1
 			date < 1935.1.1
 		}
 
@@ -68,13 +68,13 @@ HUN_prepare_for_war = {
 ai_strategy = {
     type = prepare_for_war
     id = SER
-    value = 1000
+    value = 50
   }
 
 ai_strategy = {
     type = prepare_for_war
     id = ROM
-    value = 100
+    value = 50
   }	
 }
 
@@ -164,7 +164,7 @@ HUN_wants_civ = {
 		original_tag = HUN
 	}
 	enable = {
-		date < 1935.4.1
+		date < 1933.7.1
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
@@ -174,12 +174,12 @@ HUN_wants_civ = {
 	}
 }
 
-GER_wants_mils = {
+HUN_wants_mils = {
 	allowed = {
 		original_tag = HUN
 	}
 	enable = {
-		date > 1933.2.1
+		date > 1933.7.2
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {

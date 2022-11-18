@@ -1369,11 +1369,87 @@ hidden_ideas = {
 				always = yes
 			}
 
-			picture = ENG_PB_Imperial_Bank
+			picture = HUN_Gold_Of_Nation
 
 			removal_cost = -1
 			modifier = {
 			consumer_goods_factor = 0.05			
+			}
+		}
+
+		HUN_Gold_Of_Nation = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = HUN_Gold_Of_Nation
+
+			removal_cost = -1
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			modifier = {
+			research_speed_factor = 0.025			
+			}
+		}
+
+		HUN_Gold_Of_Nation_1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = HUN_Gold_Of_Nation
+
+			removal_cost = -1
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}			
+			
+			modifier = {
+			research_speed_factor = 0.035			
+			}
+		}
+
+
+		HUN_Gold_Of_Nation_2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = HUN_Gold_Of_Nation
+
+			removal_cost = -1
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+
+			research_bonus = {
+				industry = 0.15
+			}			
+			
+			modifier = {
+			research_speed_factor = 0.05		
 			}
 		}		
     }

@@ -23,6 +23,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_modifiers_Modifier_Special_Economic_Zone_icon"
 		textureFile = "gfx/interface/state_modifiers/Modifier_Special_Economic_Zone.dds"
+	} 
+
+	spriteType = {
+		name = "GFX_modifiers_Albanian_National_Liberation_Army_icon"
+		textureFile = "gfx/interface/state_modifiers/Albanian_National_Liberation_Army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifiers_IMRO_Serbia_Dynamic_Modifier_icon"
+		textureFile = "gfx/interface/state_modifiers/IMRO_Serbia_Dynamic_Modifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifiers_Bosniak_Clandestine_Organization_icon"
+		textureFile = "gfx/interface/state_modifiers/Bosniak_Clandestine_Organization.dds"
 	}  	
 
 	# Unique Terrain

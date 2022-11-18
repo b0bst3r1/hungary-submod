@@ -92,7 +92,6 @@ create_country_leader = {
 	ideology = JC_VARIANT_05
 }
 
-
 create_country_leader = {
 	name = "Ioannis Metaxas"
 	desc = ""
@@ -106,9 +105,8 @@ create_country_leader = {
 	picture = "gfx/leaders/GRE/Portrait_Georgios_I.dds"
 	ideology = DS_VARIANT_02 
 	traits = {
-		PB_King_Of_The_Greeks
+		PB_GRE_Eternal_King
 	}
-	
 	traits = {
 		PB_King_Old_Greek_King
 	}	

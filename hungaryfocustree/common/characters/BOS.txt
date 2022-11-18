@@ -1,0 +1,40 @@
+characters={
+	
+	BOS_Mahmut_Busatlija={
+		name="Mahmut Busatlija"
+		portraits={
+			army={
+				large="GFX_PB_Portrait_BOS_Mahmut_Busatlija"
+				small="GFX_PB_Portrait_BOS_Mahmut_Busatlija"		
+			}
+		}
+	corps_commander = {
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+	legacy_id = 12100	
+		}
+	}
+	
+	BOS_Osman_Karabegovic ={
+		name="Osman Karabegovic"
+		portraits={
+			army={
+				large="GFX_PB_Portrait_BOS_Osman_Karabegovic"
+				small="GFX_PB_Portrait_BOS_Osman_Karabegovic"
+			}
+		}
+	corps_commander = {
+	traits = { trait_reckless }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 3
+		planning_skill = 1
+		logistics_skill = 2
+	legacy_id = 12101
+		}
+	}
+}

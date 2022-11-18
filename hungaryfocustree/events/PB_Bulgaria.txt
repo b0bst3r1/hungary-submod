@@ -1,0 +1,295 @@
+#Bulgarian Events#
+
+add_namespace = bulgar
+
+country_event = {
+	id = bulgar.1
+	title = bulgar.1.t
+	desc = bulgar.1.d
+	picture = GFX_report_PB_Soldiers_Riot
+	
+	trigger = {
+		tag = BUL
+		date > 1933.5.1
+	}
+
+	mean_time_to_happen = {
+		days = 90
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = bulgar.1.a
+
+			country_event = { id = bulgar.2 days = 33 }
+		
+			hidden_effect = {
+		news_event = {
+			id = hungary.21
+			days = 1
+		} 
+      }		
+		   
+       set_politics = {
+	     ruling_party = ss
+       }
+
+	   remove_ideas = {
+	     BUL_rus_influence
+	     BUL_unpopular_tsar				
+		}	   
+		
+		set_cosmetic_tag = BUL_after_tsar
+		
+		kill_country_leader = yes
+		
+	    create_country_leader = {
+		name = "Shalva Dadiani"
+		desc = " "
+		picture = "gfx/leaders/BUL/Portrait_Dadiani.dds"
+		expire = "1965.1.1"
+		ideology = SS_VARIANT_01
+		
+        clr_country_flag = Tag_in_Russian_Sphere
+        clr_country_flag = Megacorp_Tesla_Dominant	
+		
+		}
+	 }
+  } 
+
+country_event = {
+	id = bulgar.2
+	title = bulgar.2.t
+	desc = bulgar.2.d
+	picture = GFX_report_PB_Soldiers_Riot	
+	fire_only_once = yes
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = bulgar.2.a
+
+		ai_chance = {
+			factor = 40
+		}		
+		   
+        set_politics = {
+	    ruling_party = ni
+        }  
+		
+		drop_cosmetic_tag = yes
+		
+		kill_country_leader = yes
+		
+	    create_country_leader = {
+		name = "Alexander Tsankov"
+		desc = " "
+		picture = "gfx/leaders/BUL/Portrait_Alexander_Tsankov.dds"
+		expire = "1965.1.1"
+		ideology = NI_VARIANT_01
+		
+		}
+	 }
+	 
+	option = {
+		name = bulgar.2.b
+
+		ai_chance = {
+			factor = 40
+		}		
+		   
+        set_politics = {
+	    ruling_party = ds
+        }  
+		
+		drop_cosmetic_tag = yes
+		
+		kill_country_leader = yes
+		
+	    create_country_leader = {
+		name = "Nikola Zhekov"
+		desc = " "
+		picture = "gfx/leaders/BUL/Portrait_Nikola_Zhekov.dds"
+		expire = "1965.1.1"
+		ideology = DS_VARIANT_01
+		
+		}
+	 }
+
+	option = {
+		name = bulgar.2.c
+
+		ai_chance = {
+			factor = 20
+	
+		}
+	 }	 
+  }
+
+country_event = {
+	id = bulgar.3
+	title = bulgar.3.t
+	desc = bulgar.3.d
+	picture = GFX_report_PB_Soldiers_Riot	
+	fire_only_once = yes
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = bulgar.3.a
+
+		ai_chance = {
+			factor = 100
+		}
+		
+		BOS = {	
+		
+		transfer_state = 104
+		add_ideas = BOS_patriotic_war
+		
+        hidden_effect = {
+
+        set_province_controller = 11899		
+		
+        set_politics = {
+	    ruling_party = ni
+            }		
+		}
+		
+        declare_war_on = {
+        target = SER
+        type = annex_everything
+        }
+
+        declare_war_on = {
+        target = HUN
+        type = annex_everything
+               }
+        }
+  		
+        hidden_effect = {
+		
+		954 = {
+		set_demilitarized_zone = no	
+		}		
+		
+		106 = {
+		set_demilitarized_zone = no
+		
+		remove_dynamic_modifier = { modifier = IMRO_Macedonia_State_Modifier }		
+		}
+
+		104 = {
+		set_demilitarized_zone = no
+		
+		remove_dynamic_modifier = { modifier = Bosniak_Clandestine_Organization_State_Modifier }		
+		}		
+		
+        BUL = {
+        set_autonomy = {
+	    target = MAC
+	    autonomous_state = autonomy_client_state
+	    freedom_level = 0.50
+                 }
+		country_event = { id = bulgar.4 days = 2 }				 
+             }
+        }		  
+		
+        MAC = {
+        hidden_effect = {
+		
+		load_oob = "MAC_Uprising"		
+		
+        declare_war_on = {
+        target = SER
+        type = annex_everything
+        }		
+		
+        set_politics = {
+	    ruling_party = ni
+        }  
+		
+		set_cosmetic_tag = MAC_IMRO		   
+		}	
+		transfer_state = 106
+	        }
+        
+		hidden_effect = {
+        BOS = {
+        load_oob = "BOS_Uprising"
+            }		
+        }
+    }
+}
+
+country_event = {
+	id = bulgar.4
+	title = bulgar.4.t
+	desc = bulgar.4.d
+	picture = GFX_report_PB_Soldiers_Riot	
+	fire_only_once = yes
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = bulgar.4.a
+
+		ai_chance = {
+			factor = 100
+		}
+		
+		BUL = {
+		annex_country = {
+        target = MAC
+        transfer_troops = yes
+               }       	 
+            }
+        }
+    }
+
+country_event = {
+	id = bulgar.5
+	title = bulgar.5.t
+	desc = bulgar.5.d
+	picture = GFX_report_PB_Soldiers_Riot	
+	fire_only_once = yes
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = bulgar.5.a
+
+		ai_chance = {
+			factor = 100
+		}
+
+			if = {
+				limit = {
+					BUL = {
+					has_government = ss
+					}
+				}
+			   hidden_effect = {
+               puppet = SAL
+               } 			   
+			   SAL = {
+		       transfer_state = 976
+			   hidden_effect = {
+		       load_oob = "SAL_1935"
+                      }			   
+                 }			   
+			}
+
+			else_if = {
+				limit = {
+				   NOT = {
+					BUL = {
+					has_government = ss
+					    }
+					}
+				}			   
+		       transfer_state = 976			   
+			}			
+      }
+}	

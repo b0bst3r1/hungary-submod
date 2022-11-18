@@ -1,213 +1,173 @@
 spriteTypes = {
 
 		spriteType = {
-		name = "GFX_report_event_hun_900"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_900.dds"
+		name = "GFX_report_event_HUN_Sandor_Garbai"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/Report_Event_HUN_Sandor_Garbai.dds"
 	}
 	
 		spriteType = {
-		name = "GFX_report_event_hun_902"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_902.dds"
+		name = "GFX_report_event_HUN_Bela_Kun_Talking"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Bela_Kun_Talking.dds"
 	}
 	
 		spriteType = {
-		name = "GFX_report_event_hun_903"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_903.dds"
+		name = "GFX_report_event_HUN_Revai"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Revai.dds"
 	}
 	
 		spriteType = {
-		name = "GFX_report_event_hun_901"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_901.dds"
+		name = "GFX_report_event_HUN_Party"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Party.dds"
 	}
 	
 		spriteType = {
-		name = "GFX_report_event_hun_904"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_904.dds"
+		name = "GFX_Generic_report_event_Strikes"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/Generic_report_event_Strikes.dds"
 	}
 	
 		spriteType = {
-		name = "GFX_report_event_hun_905"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_905.dds"
+		name = "GFX_report_event_HUN_guys_staying"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_guys_staying.dds"
 	}
 	
 		spriteType = {
-		name = "GFX_report_event_hun_906"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_906.dds"
+		name = "GFX_report_event_HUN_Coup_Failes"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Coup_Failes.dds"
 	}
 	
 		spriteType = {
-		name = "GFX_report_event_hun_907"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_907.dds"
+		name = "GFX_report_event_HUN_Bela_Kun_Takes_Power"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Bela_Kun_Takes_Power.dds"
 	}
 	
 		spriteType = {
-		name = "GFX_report_event_hun_908"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_908.dds"
+		name = "GFX_report_event_HUN_Garbai_Takes"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Garbai_Takes.dds"
 	}
 	
 		spriteType = {
-		name = "GFX_report_event_hun_909"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_909.dds"
+		name = "GFX_Generic_report_event_Revolution"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/Generic_report_event_Revolution.dds"
 	}
 	
 		spriteType = {
-		name = "GFX_report_event_hun_910"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_910.dds"
-	}
-	
-		spriteType = {
-		name = "GFX_report_event_hun_911"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_911.dds"
-	}
-	
-		spriteType = {
-		name = "GFX_report_event_hun_912"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_912.dds"
+		name = "GFX_report_event_HUN_Memory_Wall"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Memory_Wall.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_913"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_913.dds"
+		name = "GFX_Generic_report_event_Chaos"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/Generic_report_event_Chaos.dds"
 	}	
 
 		spriteType = {
-		name = "GFX_report_event_hun_914"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_914.dds"
-	}	
-
-		spriteType = {
-		name = "GFX_report_event_hun_915"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_915.dds"
+		name = "GFX_report_event_HUN_Vago_Is_Dead"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Vago_Is_Dead.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_916"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_916.dds"
-	}	
-	
-		spriteType = {
-		name = "GFX_report_event_hun_917"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_917.dds"
+		name = "GFX_Generic_report_event_Collectivization"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/Generic_report_event_Collectivization.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_918"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_918.dds"
+		name = "GFX_Generic_report_event_Revolution2"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/Generic_report_event_Revolution2.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_919"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_919.dds"
+		name = "GFX_report_event_HUN_Bela_Kun"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Bela_Kun.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_920"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_920.dds"
+		name = "GFX_Generic_report_event_Strikes2"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/Generic_report_event_Strikes2.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_921"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_921.dds"
+		name = "GFX_Generic_report_event_Massacre"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/Generic_report_event_Massacre.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_922"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_922.dds"
+		name = "GFX_Generic_report_event_Army_Parade"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/Generic_report_event_Army_Parade.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_923"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_923.dds"
-	}
-
-		spriteType = {
-		name = "GFX_report_event_hun_924"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_924.dds"
+		name = "GFX_report_event_HUN_Bohm"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Bohm.dds"
 	}
 	
 		spriteType = {
-		name = "GFX_report_event_hun_925"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_925.dds"
+		name = "GFX_report_event_HUN_Martians"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Martians.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_926"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_926.dds"
+		name = "GFX_Generic_report_event_Trial"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/Generic_report_event_Trial.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_927"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_927.dds"
+		name = "GFX_report_event_HUN_Artists"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Artists.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_928"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_928.dds"
+		name = "GFX_Generic_report_event_Labor_Camp"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/Generic_report_event_Labor_Camp.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_929"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_929.dds"
+		name = "GFX_report_event_HUN_Electrophysiology"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Electrophysiology.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_930"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_930.dds"
+		name = "GFX_Generic_report_event_heart"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/Generic_report_event_heart.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_931"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_931.dds"
+		name = "GFX_report_event_HUN_Revival"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Revival.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_932"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_932.dds"
+		name = "GFX_report_event_HUN_Revival2"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Revival2.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_933"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_933.dds"
+		name = "GFX_report_event_HUN_Socialists_Managment"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Socialists_Managment.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_934"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_934.dds"
+		name = "GFX_report_event_HUN_Democracy"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Democracy.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_935"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_935.dds"
+		name = "GFX_Generic_report_event_Engels"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/Generic_report_event_Engels.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_936"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_936.dds"
+		name = "GFX_report_event_HUN_Economic_Collapse"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Economic_Collapse.dds"
 	}
 
 		spriteType = {
-		name = "GFX_report_event_hun_937"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_937.dds"
-	}
-
-		spriteType = {
-		name = "GFX_report_event_hun_938"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_938.dds"
-	}
-
-		spriteType = {
-		name = "GFX_report_event_hun_939"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_939.dds"
-	}
-
-		spriteType = {
-		name = "GFX_report_event_hun_940"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_940.dds"
+		name = "GFX_report_event_HUN_Revolutionary"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Revolutionary.dds"
 	}
 	
 		spriteType = {
-		name = "GFX_report_event_hun_941"
-		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_hun_941.dds"
+		name = "GFX_report_event_HUN_Diamond_And"
+		texturefile = "gfx/event_pictures/hun_report_event/hungary/report_event_HUN_Diamond_And.dds"
 	}	
 	
 		spriteType = {

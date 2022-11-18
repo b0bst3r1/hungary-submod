@@ -7,17 +7,32 @@ Hungary_historical = {
 	}
 
 	ai_national_focuses = {
-		#
+		HUN_Partycrisis
+        HUN_politicalstruggle
+        HUN_SIXTHCONGRESS
+        HUN_BELAKUN
+        HUN_Szamuely_Coup
+        hun_garbai
+        the_red_tide
+		hun_budapest_research_centr
+		hun_international_support
+		hun_befriend_japan
+		hun_zagreb_treaty
+		hun_budapest_entente
+        reborn_of_croatian_hungarian_settlement
+        hun_eternal_friendship
+        hun_south_curtain
+        hun_proclaim_UDWR
 	}
 
 	research = {
-        armor = 14.0
+        armor = 6.0
         light_fighter = 9.0
 		infantry_weapons = 12.0
         concentrated_industry_category = 13.0
         industry = 15.0
-		infantry_tech = 12.0
-		artillery = 8.0
+		infantry_tech = 14.0
+		artillery = 12.0
 		support_tech = 6.5
 	}
 

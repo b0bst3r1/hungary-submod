@@ -7,7 +7,7 @@ HUN_culture_war = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -36,7 +36,7 @@ HUN_culture_war = {
 		cost = 50
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -64,7 +64,7 @@ HUN_culture_war = {
 		cost = 30
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -87,7 +87,7 @@ HUN_culture_war = {
 			}
 
 			46 = {
-			add_manpower = 40000	
+			add_manpower = 1000	
 		   }
 		   
 			79 = {
@@ -107,7 +107,7 @@ HUN_culture_war = {
 		cost = 50
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -136,7 +136,7 @@ HUN_culture_war = {
 		cost = 80
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -208,7 +208,7 @@ HUN_culture_war = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -236,7 +236,7 @@ HUN_culture_war = {
 		cost = 50
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -265,7 +265,7 @@ HUN_culture_war = {
 		cost = 50
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -294,7 +294,7 @@ HUN_culture_war = {
 		cost = 30
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -319,7 +319,7 @@ HUN_culture_war = {
 		   }
 
 			967 = {
-			add_manpower = 40000	
+			add_manpower = 1000	
 		   }		   
 		
         set_country_flag = send_the_hungarians_home 		
@@ -333,7 +333,7 @@ HUN_culture_war = {
 		cost = 75
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -412,7 +412,7 @@ HUN_culture_war = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -440,7 +440,7 @@ HUN_culture_war = {
 		cost = 30
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -484,7 +484,7 @@ HUN_culture_war = {
 		cost = 50
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -513,7 +513,7 @@ HUN_culture_war = {
 		cost = 50
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -542,7 +542,7 @@ HUN_culture_war = {
 		cost = 80
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -624,7 +624,7 @@ HUN_culture_war = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -652,7 +652,7 @@ HUN_culture_war = {
 		cost = 50
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -684,7 +684,7 @@ HUN_culture_war = {
 		cost = 50
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -717,7 +717,7 @@ HUN_culture_war = {
 		cost = 50
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -768,7 +768,7 @@ HUN_culture_war = {
 		cost = 75
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -846,7 +846,7 @@ HUN_culture_war = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -874,7 +874,7 @@ HUN_culture_war = {
 		cost = 30
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -909,7 +909,7 @@ HUN_culture_war = {
 		cost = 50
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -937,7 +937,7 @@ HUN_culture_war = {
 		cost = 30
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -965,7 +965,7 @@ HUN_culture_war = {
 		cost = 80
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -1035,7 +1035,7 @@ HUN_culture_war = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -1063,7 +1063,7 @@ HUN_culture_war = {
 		cost = 50
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -1096,7 +1096,7 @@ HUN_culture_war = {
 		cost = 30
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -1129,7 +1129,7 @@ HUN_culture_war = {
 		cost = 50
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {
@@ -1159,7 +1159,7 @@ HUN_culture_war = {
 		cost = 80
 
 		ai_will_do = {
-			factor = 4000
+			factor = 100
 		}
 		
 		visible = {

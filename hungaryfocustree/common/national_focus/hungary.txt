@@ -16,6 +16,9 @@ focus_tree = {
 		id = HUN_Partycrisis
 		icon = GFX_hun_political_crisis
 
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_STABILITY}
 
 		available = {
 			OR = {
@@ -29,7 +32,7 @@ focus_tree = {
 				}
 				
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
@@ -48,30 +51,37 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = hun_economyof_hungary
-		icon = GFX_hun_economyof_hungary
+		id = hun_victory
+		icon = GFX_hun_victory
 		cost = 0
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 		
 		available = {
 			custom_trigger_tooltip = {
-			    tooltip = hun_starting_crisis_tt
-				has_country_flag = hun_starting_crisis
+			    tooltip = hun_won_in_the_gbw_tt
+				has_global_flag = gbw_hungary_won
 			}
 		}
+			
+		x = 41
+		y = 1
 		
-	available_if_capitulated = no
-
-	cancel_if_invalid = yes		
-		
-		x = 13
-		y = 24
-
+		completion_reward = {
+		set_country_flag = open_brave_new_world_mechanic
+		}
 	}
-
+	
 	focus = {
 		id = hun_recovery_from_the_war
 		icon = GFX_hun_recovery_from_The_war
 		cost = 21
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 		
 		prerequisite = {
 			focus = hun_demobilization
@@ -95,30 +105,16 @@ focus_tree = {
 		x = 40
 		y = 4
 
-	}
-	
-	focus = {
-		id = hun_victory
-		icon = GFX_hun_victory
-		cost = 0
-		
-		available = {
-			custom_trigger_tooltip = {
-			    tooltip = hun_won_in_the_gbw_tt
-				has_global_flag = gbw_hungary_won
-			}
-		}
-		
-		
-		x = 41
-		y = 1
-
-	}
+	}	
 	
 	focus = {
 		id = hun_victory_parade
 		icon = GFX_hun_victory_parade
 		cost = 7
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 		
 		available = {
 		}
@@ -146,6 +142,10 @@ focus_tree = {
 		id = hun_demobilization
 		icon = GFX_hun_demobilization
 		cost = 14
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 		
 		prerequisite = {
 			focus = hun_victory_parade
@@ -213,6 +213,10 @@ focus_tree = {
 		icon = GFX_hun_pension_war_generals
 		cost = 35
 		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		prerequisite = {
 			focus = hun_demobilization
 		}
@@ -237,6 +241,10 @@ focus_tree = {
 		id = hun_break_relations_with_rus
 		icon = GFX_hun_break_relations_with_Alb_rus
 		cost = 28
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 		
 		prerequisite = {
 			focus = hun_victory
@@ -266,6 +274,10 @@ focus_tree = {
 		icon = GFX_hun_split_with_Bulgaria
 		cost = 28
 		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		prerequisite = {
 			focus = hun_break_relations_with_rus
 		}
@@ -289,6 +301,11 @@ focus_tree = {
 		id = hun_south_curtain
 		icon = GFX_hun_focus_kosovo
 		cost = 56
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		prerequisite = {
 			focus = hun_pensionwarveterans
 		}
@@ -406,6 +423,10 @@ focus_tree = {
 		id = hun_integrate_with_new_republics
 		icon = GFX_hun_integrate_with_new_republics
 		cost = 28
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 			
 		prerequisite = {
 			focus = hun_victory
@@ -432,6 +453,11 @@ focus_tree = {
 		id = hun_financial_support_forrepublics
 		icon = GFX_hun_financial_support_forrepublics
 		cost = 35
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		prerequisite = {
 			focus = hun_road-bdpst-srjvo-blgrd
 		}
@@ -466,6 +492,11 @@ focus_tree = {
 		id = hun_road-bdpst-srjvo-blgrd
 		icon = GFX_hun_road-bdpst-srjvo-blgrd
 		cost = 35
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
 		prerequisite = {
 			focus = hun_integrate_with_new_republics
 		}
@@ -495,6 +526,11 @@ focus_tree = {
 		id = hun_road_budapest-buharest
 		icon = GFX_hun_road_budapest-buharest
 		cost = 35
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
 		prerequisite = {
 			focus = hun_integrate_with_new_republics
 		}
@@ -533,6 +569,11 @@ focus_tree = {
 		id = hun_tribunaloverromanians
 		icon = GFX_hun_tribunaloverromanians
 		cost = 28
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		prerequisite = {
 			focus = hun_victory
 		}
@@ -559,6 +600,11 @@ focus_tree = {
 		id = hun_tribunaloverserbs
 		icon = GFX_hun_tribunaloverserbs
 		cost = 28
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		prerequisite = {
 			focus = hun_tribunaloverromanians
 		}
@@ -579,6 +625,11 @@ focus_tree = {
 		id = hun_tribunalovergreeks
 		icon = GFX_hun_tribunaloverbosniaks
 		cost = 28
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		prerequisite = {
 			focus = hun_tribunaloverserbs
 		}
@@ -605,6 +656,11 @@ focus_tree = {
 		id = hun_develop_romanian_oil
 		icon = GFX_hun_develop_romanian_oil
 		cost = 35
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
 		prerequisite = {
 			focus = hun_road_budapest-buharest
 		}
@@ -638,6 +694,11 @@ focus_tree = {
 		id = hun_unify_education
 		icon = GFX_hun_rebuild_socialist_education
 		cost = 35
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		prerequisite = {
 			focus = hun_financial_support_forrepublics
 		}
@@ -647,7 +708,12 @@ focus_tree = {
 		
 	    completion_reward = {
 		
-         PB_Literacy_Moderate_Progress_Increase = yes
+			every_country = {
+				limit = {
+					is_subject_of = HUN
+				}
+            PB_Literacy_Moderate_Progress_Increase = yes
+			}			
 		 
 			add_tech_bonus = {
 				name = PB_FRA_Electrification_Processes
@@ -671,6 +737,10 @@ focus_tree = {
 		id = hun_proclaim_UDWR
 		icon = GFX_hun_proclaim_UDWR
 		cost = 70
+	
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		
 		prerequisite = {
 			focus = hun_tribunalovergreeks
@@ -863,6 +933,10 @@ focus_tree = {
 		icon = GFX_revolution_goes_on
 		cost = 35
 		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		prerequisite = {
 		focus = hun_proclaim_UDWR		
 		}		
@@ -896,6 +970,10 @@ focus_tree = {
 		icon = GFX_hun_industrialization
 		cost = 35
 		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
 		prerequisite = {
 			focus = hun_revolution_goes_on
 		}		
@@ -923,6 +1001,10 @@ focus_tree = {
 		id = hun_project_riese
 		icon = GFX_project_giant
 		cost = 56
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
 		
 		prerequisite = {
 			focus = hun_industrialisation
@@ -956,6 +1038,10 @@ focus_tree = {
 		id = hun_new_element_of_resettlement
 		icon = GFX_ideal_city
 		cost = 56
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
 		
 		prerequisite = {
 			focus = hun_industrialisation
@@ -1012,6 +1098,10 @@ focus_tree = {
 		icon = GFX_hun_industrial_society
 		cost = 56
 		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
 		available = {
 		check_variable = { HUN_industr_progress = 100 }
 		}
@@ -1045,6 +1135,10 @@ focus_tree = {
 		icon = GFX_hun_continue_our_way
 		cost = 35
 		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		prerequisite = {
 			focus = hun_revolution_goes_on
 		}		
@@ -1076,7 +1170,7 @@ focus_tree = {
 			else_if = {
 			  limit = {
 				 has_country_leader = {
-				   name = "Jozsef Revai"
+				   name = "Tibor Szamuely"
 					 ruling_only = yes
 				  }
 				}
@@ -1113,6 +1207,10 @@ focus_tree = {
 		icon = GFX_HUN_jew_autonomy
 		cost = 35
 		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		prerequisite = {
 			focus = hun_way_forward
 		}		
@@ -1144,6 +1242,10 @@ focus_tree = {
 		id = hun_heart_of_revolution
 		icon = GFX_hun_heart_of_revoltuion
 		cost = 56
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 		
 		available = {
 		OR = {
@@ -1209,6 +1311,10 @@ focus_tree = {
 		id = hun_budapest_accord
 		icon = GFX_HUN_Budapest_Accord
 		cost = 56
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 		
 		available = {
 		OR = {
@@ -1343,6 +1449,10 @@ focus_tree = {
 		icon = GFX_hun_second_december
 		cost = 56
 		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		mutually_exclusive = {
 			focus = HUN_Greece_Compromise
 		}		
@@ -1378,6 +1488,10 @@ focus_tree = {
 		id = HUN_Greece_Compromise
 		icon = GFX_HUN_Greece_Compromise
 		cost = 56
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}		
 		
 		mutually_exclusive = {
 			focus = hun_second_december
@@ -1504,6 +1618,10 @@ focus_tree = {
 		icon = GFX_hun_armed_neutrality
 		cost = 35
 		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}		
+		
 		prerequisite = {
 		focus = hun_revolution_goes_on		
 		}		
@@ -1534,6 +1652,10 @@ focus_tree = {
 		id = hun_prepare_a_new_hike
 		icon = GFX_hun_prepare_anew_hike
 		cost = 56
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_RESEARCH}		
 		
 		prerequisite = {
 		focus = hun_armed_neutrality		
@@ -1571,6 +1693,10 @@ focus_tree = {
 		icon = GFX_hun_project_horus
 		cost = 56
 		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_RESEARCH}		
+		
 		prerequisite = {
 		focus = hun_armed_neutrality
 		}		
@@ -1584,7 +1710,7 @@ focus_tree = {
 		  
 		     add_tech_bonus = {
 			   name = secret_bonus
-			   bonus = 2
+			   bonus = 1
 			   uses = 1
 			   category = nuclear
 		    }
@@ -1613,6 +1739,10 @@ focus_tree = {
 		id = hun_revolutionary_bulgaria
 		icon = GFX_hun_revolutionary_bulgaria
 		cost = 56
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}		
 		
 		available = {
 			is_subject = no
@@ -1691,6 +1821,10 @@ focus_tree = {
 		icon = GFX_hun_europe_last_chance
 		cost = 70
 		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}			
+		
 		mutually_exclusive = {
 			focus = hun_federation_of_nations
 		}		
@@ -1726,6 +1860,10 @@ focus_tree = {
 		id = hun_federation_of_nations
 		icon = GFX_HUN_Federation_of_Nations_shine
 		cost = 70
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}			
 		
 		mutually_exclusive = {
 			focus = hun_europe_last_chance
@@ -1808,6 +1946,12 @@ focus_tree = {
 		icon = GFX_hun_red_tide
 		cost = 21
 		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		available = {
 			custom_trigger_tooltip = {
 			    tooltip = hun_starting_crisis_tt
@@ -1859,6 +2003,12 @@ focus_tree = {
 		icon = GFX_befriend_japan
 		cost = 28
 		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		available = {
 			has_government = jc
 
@@ -1897,9 +2047,15 @@ focus_tree = {
 		id = hun_international_support
 		icon = GFX_HUN_international_support
 		cost = 28
+		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 
 		available = {
-			has_government = jc
+			has_government = ss
 
 			custom_trigger_tooltip = {
 			    tooltip = hun_gbw_started_tt
@@ -1925,7 +2081,7 @@ focus_tree = {
 		 
          every_country = {
          limit = {
-                has_government = JC
+                has_government = ss
          }
          HUN = {
          add_opinion_modifier = {
@@ -1945,6 +2101,12 @@ focus_tree = {
 		id = hun_budapest_research_centr
 		icon = GFX_HUN_research_center
 		cost = 28
+		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_RESEARCH}		
 		
 		available = {
 			has_government = lb
@@ -1978,6 +2140,12 @@ focus_tree = {
 		id = hun_zagreb_treaty
 		icon = GFX_hun_zagreb_front
 		cost = 28
+
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		
 		available = {
 			custom_trigger_tooltip = {
@@ -2034,6 +2202,12 @@ focus_tree = {
 		icon = GFX_hun_balkan_liberation
 		cost = 28
 		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}		
+		
 		available = {
 			custom_trigger_tooltip = {
 			    tooltip = hun_gbw_started_tt
@@ -2079,6 +2253,12 @@ focus_tree = {
 		id = reborn_of_croatian_hungarian_settlement
 		icon = GFX_HUN_reborn_treaty
 		cost = 28
+		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_ANNEXATION}		
 		
 		available = {
 			custom_trigger_tooltip = {
@@ -2137,6 +2317,12 @@ focus_tree = {
 		id = hun_eternal_friendship
 		icon = GFX_eternal_friendship_cro
 		cost = 28
+		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 		
 		available = {
 			custom_trigger_tooltip = {
@@ -2201,6 +2387,12 @@ create_country_leader = {
 		icon = GFX_hun_socialism_front
 		cost = 28
 		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		available = {
 		    has_government = ss		
 			custom_trigger_tooltip = {
@@ -2250,6 +2442,12 @@ create_country_leader = {
 		id = hun_talk_with_capitalist
 		icon = GFX_HUN_democratic
 		cost = 28
+		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 
 		available = {
 		    has_government = lb		
@@ -2324,6 +2522,12 @@ create_country_leader = {
 		icon = GFX_Communist_Pride
 		cost = 28
 		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		available = {
 		    has_government = jc		
 			custom_trigger_tooltip = {
@@ -2378,6 +2582,12 @@ create_country_leader = {
 		id = hun_help_albania
 		icon = GFX_HUN_help_albania
 		cost = 28
+
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		
 		available = {		
 			custom_trigger_tooltip = {
@@ -2429,6 +2639,12 @@ create_country_leader = {
 		id = hun_albanian_revolution
 		icon = GFX_albanian_revolution
 		cost = 28
+		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 		
 		available = {		
 			custom_trigger_tooltip = {
@@ -2562,42 +2778,6 @@ create_country_leader = {
 		x = 27
 		y = 11
 
-	}
-
-	focus = {
-		id = hun_letter_to_tesla
-		icon = GFX_hun_letter_to_tesla
-		cost = 35
-
-		available = {		
-			custom_trigger_tooltip = {
-			    tooltip = hun_gbw_started_tt
-	            NOT = {
-	            OR = {
-		        has_global_flag = great_balk_war
-                has_global_flag = gbw_hungary_won
-                has_global_flag = gbw_serbia_won		
-                }
-	        }
-		}			
-	}		
-		
-		prerequisite = {
-			focus = hun_albanian_revolution
-			focus = hun_help_albania
-		}
-	
-	    completion_reward = {
-		
-		  country_event = {
-		   id = hungarian.61
-		    days = 1
-		}		
-	}	  
-		
-		x = 28
-		y = 12
-
 	}	
 	
 	focus = {
@@ -2617,39 +2797,8 @@ create_country_leader = {
 			air_experience = 15
 		}
 		cost = 0
-		x = 23
+		x = 35
 		y = 15
-
-	}
-	focus = {
-		id = hun_hungarian_air
-		icon = GFX_hun_hungarian_air
-		cost = 0
-		
-		completion_reward = {
-		air_experience = 25
-		}
-		
-		prerequisite = {
-			focus = hun_army_reform
-		}
-		
-		x = 15
-		y = 16
-
-	}
-
-	focus = {
-		id = hun_development_of_the_steel_industry
-		icon = GFX_hun_development_of_the_steel_industry
-		cost = 0
-		
-		prerequisite = {
-			focus = hun_mass_use_of_labor_contracts
-		}
-		
-		x = 13
-		y = 28
 
 	}
 	
@@ -2657,6 +2806,12 @@ create_country_leader = {
 		id = HUN_politicalstruggle
 		icon = GFX_hun_politicalstruggle
 		cost = 1
+		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_STABILITY}		
 		
 		available = {
 			OR = {
@@ -2680,6 +2835,12 @@ create_country_leader = {
 		icon = GFX_hun_congress
 		cost = 2
 		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_STABILITY}		
+		
 		completion_reward = {
 		
 		country_event = {
@@ -2701,6 +2862,12 @@ create_country_leader = {
 		id = HUN_BELAKUN
 		icon = GFX_HUN_BELAKUN
 		cost = 0
+		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 		
 		available = {
 			OR = {
@@ -2734,7 +2901,7 @@ create_country_leader = {
 		}
 		
 		mutually_exclusive = {
-			focus = HUN_Revai_Coup
+			focus = HUN_Szamuely_Coup
 			focus = hun_garbai
 		}
 		
@@ -2757,9 +2924,11 @@ create_country_leader = {
 			}				
 		}
 		
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes	
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}	
 		
 		prerequisite = {
 			focus = HUN_BELAKUN
@@ -2792,9 +2961,11 @@ create_country_leader = {
 			}				
 		}
 		
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes		
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 		
 		prerequisite = {
 			focus = HUN_EXECUTEREFORMISTS
@@ -2850,9 +3021,11 @@ create_country_leader = {
 			}				
 		}
 		
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes	
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}	
 		
 		prerequisite = {
 			focus = HUN_BELAKUN
@@ -2892,9 +3065,11 @@ create_country_leader = {
 			}				
 		}
 		
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes	
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		
 		prerequisite = {
 			focus = HUN_MEMORYOFTHEREVOLU
@@ -2935,9 +3110,11 @@ create_country_leader = {
 			}				
 		}
 
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes		
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}	
 		
 		prerequisite = {
 			focus = HUN_artist_union
@@ -2979,9 +3156,11 @@ create_country_leader = {
 			}				
 		}
 
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes		
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}	
 		
 		prerequisite = {
 			focus = HUN_Legacy_of_Bohm
@@ -3013,9 +3192,11 @@ create_country_leader = {
 			}				
 		}
 
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes	
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
 		
 		prerequisite = {
 			focus = hun_collectivization_country
@@ -3051,9 +3232,11 @@ create_country_leader = {
 			}				
 		}
 
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes	
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
 		
 		prerequisite = {
 			focus = HUN_compactions
@@ -3086,9 +3269,11 @@ create_country_leader = {
 			}				
 		}
 
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes	
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		
 		prerequisite = {
 			focus = hun_collectivization_country
@@ -3177,9 +3362,11 @@ create_country_leader = {
 			}				
 		}
 
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes		
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 		
 		prerequisite = {
 			focus = HUN_peoples_communes
@@ -3201,14 +3388,20 @@ create_country_leader = {
 	}				
 	
 	focus = {
-		id = HUN_Revai_Coup
+		id = HUN_Szamuely_Coup
 		icon = GFX_HUN_revai_coup
 		cost = 0
+		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 			
 		available = {
 			OR = {
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
@@ -3239,18 +3432,20 @@ create_country_leader = {
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
 		}
 		
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes	
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		
 		prerequisite = {
-			focus = HUN_Revai_Coup
+			focus = HUN_Szamuely_Coup
 		}
 		
 	    completion_reward = {
@@ -3284,18 +3479,20 @@ create_country_leader = {
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
 		}
 		
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes	
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}	
 		
 		prerequisite = {
-			focus = HUN_Revai_Coup
+			focus = HUN_Szamuely_Coup
 		}
 		
 	   completion_reward = {
@@ -3329,19 +3526,21 @@ create_country_leader = {
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
 		}
 		
 		prerequisite = {
-			focus = HUN_Revai_Coup
+			focus = HUN_Szamuely_Coup
 		}
 		
-	    available_if_capitulated = no
+		available_if_capitulated = no
 
-	    cancel_if_invalid = yes		
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
  
 	    completion_reward = {
 		country_event = {
@@ -3368,15 +3567,17 @@ create_country_leader = {
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
 		}
 		
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes	
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
 		
 		prerequisite = {
 		focus = hun_belakun_arrest
@@ -3415,15 +3616,17 @@ create_country_leader = {
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
 		}
 		
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes	
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}	
 		
 		prerequisite = {
 		focus = hun_monetary_reform
@@ -3451,15 +3654,17 @@ create_country_leader = {
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
 		}
 		
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes		
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
 		
 		prerequisite = {
 			focus = hun_small_market_elements
@@ -3488,15 +3693,17 @@ create_country_leader = {
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
 		}
 		
-	    available_if_capitulated = no
+		available_if_capitulated = no
 
-	    cancel_if_invalid = yes	
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		
 		prerequisite = {
 			focus = hun_socialist_self_management
@@ -3522,15 +3729,17 @@ create_country_leader = {
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
 		}
 		
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes	
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}	
 		
 		prerequisite = {
 			focus = hun_restructing_of_the_collective_farms
@@ -3561,15 +3770,17 @@ create_country_leader = {
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
 		}
 		
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes		
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 		
 		prerequisite = {
 			focus = HUN_Army_issue
@@ -3596,15 +3807,17 @@ create_country_leader = {
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
 		}
 		
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes		
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
 		
 		prerequisite = {
 			focus = hun_huge_child_support
@@ -3646,9 +3859,11 @@ create_country_leader = {
             }				
 		}
 		
-	available_if_capitulated = no
+		available_if_capitulated = no
 
-	cancel_if_invalid = yes		
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}	
 		
 		completion_reward = {
 		remove_ideas = HUN_Collapsing_Government
@@ -3658,7 +3873,7 @@ create_country_leader = {
 			focus = HUN_SIXTHCONGRESS
 		}
 		mutually_exclusive = {
-			focus = HUN_Revai_Coup
+			focus = HUN_Szamuely_Coup
 			focus = HUN_BELAKUN
 		}
 		x = 21
@@ -3680,9 +3895,11 @@ create_country_leader = {
             }				
 		}
 
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes		  
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		  
 		
 	    completion_reward = {
 		
@@ -3716,6 +3933,12 @@ create_country_leader = {
 		id = HUN_Army_Liberalization
 		icon = GFX_HUN_Army_Liberalization
 		cost = 42
+		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}		
 		
 		available = {
 			OR = {
@@ -3758,9 +3981,11 @@ create_country_leader = {
             }				
 		}
 
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes		  
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		  
 		
 			completion_reward = {
 			
@@ -3811,9 +4036,11 @@ create_country_leader = {
             }				
 		}	
 
-	   available_if_capitulated = no
+		available_if_capitulated = no
 
-	   cancel_if_invalid = yes			  
+		cancel_if_invalid = yes
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}			  
 		
 		completion_reward = {		
 		add_ideas = Single_Tax_Idea		
@@ -3846,7 +4073,9 @@ create_country_leader = {
 
 	   available_if_capitulated = no
 
-	   cancel_if_invalid = yes		  
+	   cancel_if_invalid = yes
+		
+	   search_filters = {FOCUS_FILTER_POLITICAL}		  
 		
 	   completion_reward = {		
 		
@@ -3890,7 +4119,9 @@ create_country_leader = {
 			  
 	   available_if_capitulated = no
 
-	   cancel_if_invalid = yes			  
+	   cancel_if_invalid = yes
+		
+	   search_filters = {FOCUS_FILTER_INDUSTRY}			  
 			  
 			completion_reward = {		
 		
@@ -3929,7 +4160,9 @@ create_country_leader = {
 
 	    available_if_capitulated = no
 
-	    cancel_if_invalid = yes			  
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_INDUSTRY}			  
 		
 	    completion_reward = {
 		
@@ -3976,9 +4209,11 @@ create_country_leader = {
             }				
 		}
 
-	   available_if_capitulated = no
+	    available_if_capitulated = no
 
-	   cancel_if_invalid = yes			  
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}			  
 		
 			completion_reward = {
 
@@ -4036,9 +4271,11 @@ create_country_leader = {
             }				
 		}
 
-	available_if_capitulated = no
+	    available_if_capitulated = no
 
-	cancel_if_invalid = yes			  
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}		  
 		
 			completion_reward = {
 			
@@ -4110,9 +4347,11 @@ create_country_leader = {
 			focus = HUN_Healthcare_Reform
 		}		
 
-	available_if_capitulated = no
+	    available_if_capitulated = no
 
-	cancel_if_invalid = yes			  
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}			  
 		
 		completion_reward = {
 
@@ -4148,9 +4387,11 @@ create_country_leader = {
             }				
 		}
 
-	available_if_capitulated = no
+	    available_if_capitulated = no
 
-	cancel_if_invalid = yes			  
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}			  
 		
 		completion_reward = {
 		
@@ -4189,9 +4430,11 @@ create_country_leader = {
             }				
 		}
 
-	available_if_capitulated = no
+	    available_if_capitulated = no
 
-	cancel_if_invalid = yes			  
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}		  
 		
 		completion_reward = {
 			swap_ideas = {
@@ -4226,9 +4469,11 @@ create_country_leader = {
             }				
 		}
 
-	available_if_capitulated = no
+	    available_if_capitulated = no
 
-	cancel_if_invalid = yes			  
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_INDUSTRY}		  
 		
 		completion_reward = {
 		
@@ -4266,9 +4511,11 @@ create_country_leader = {
             }				
 		}
 
-	available_if_capitulated = no
+	    available_if_capitulated = no
 
-	cancel_if_invalid = yes			  
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}			  
 		
 	    completion_reward = {
 		
@@ -4303,6 +4550,12 @@ create_country_leader = {
 		id = hun_privatization
 		icon = GFX_hun_ease_tensions_with_capitalists
 		cost = 42
+		
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_INDUSTRY}		
 
 		available = {
 			OR = {
@@ -4348,6 +4601,12 @@ create_country_leader = {
 		icon = GFX_HUN_Liberal_Hungary
 		cost = 70
 		
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		available = {
 			OR = {
 				has_country_leader = {
@@ -4388,122 +4647,1172 @@ create_country_leader = {
 		x = 21
 		y = 11
 
+	}
+  
+    # Economic tree
+	
+	focus = {
+		id = hun_economyof_hungary
+		icon = GFX_hun_economyof_hungary
+		cost = 14
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = hun_starting_crisis_tt
+				has_country_flag = hun_starting_crisis
+			}
+		}
+		
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes	
+		
+        completion_reward = {
+		add_political_power = 50
+		}
+		
+		x = 13
+		y = 13
+
+	}
+
+	focus = {
+		id = HUN_Szilard_Research_Plan
+		icon = GFX_HUN_Szilard_Research_Plan
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_RESEARCH}		
+		
+		prerequisite = {
+			focus = hun_economyof_hungary
+		}
+		
+		mutually_exclusive = {
+			focus = HUN_Wigner_Research_Plan
+		}		
+				
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes		
+		
+		x = 11
+		y = 14
+		
+	}
+	
+	focus = {
+		id = HUN_Oil_Break
+		icon = GFX_goal_Generic_Oil_Concern
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_RESEARCH}		
+		
+		prerequisite = {
+			focus = HUN_Szilard_Research_Plan
+		}	
+				
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes
+		
+		completion_reward = {
+
+			add_tech_bonus = {
+				name = synth_resources
+				bonus = 1.0
+				uses = 1
+				category = synth_resources
+			}
+			155 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type =  fuel_silo
+					level = 2
+					instant_build = yes
+				 }
+             }
+         }			 
+		
+		x = 12
+		y = 15
+		
+	}
+
+	focus = {
+		id = HUN_Chemical_Break
+		icon = GFX_HUN_Chemical_Industry_Research
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_RESEARCH}		
+		
+		prerequisite = {
+			focus = HUN_Szilard_Research_Plan
+		}	
+				
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes
+
+		completion_reward = {
+		
+	    add_tech_bonus = {
+		bonus = 1
+		uses = 1
+		category = cat_terror_weapons
+		   }
+		}		
+		
+		x = 10
+		y = 15
+		
+	}
+
+	focus = {
+		id = HUN_Nukes_Break
+		icon = GFX_HUN_Nuke_Research
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_RESEARCH}		
+		
+		prerequisite = {
+			focus = HUN_Chemical_Break
+		}
+
+		prerequisite = {
+			focus = HUN_Oil_Break
+		}		
+				
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes
+		
+		completion_reward = {
+		     add_tech_bonus = {
+			   name = secret_bonus
+			   bonus = 1
+			   uses = 1
+			   category = nuclear
+		    }
+		}		
+		
+		x = 10
+		y = 16
+		
+	}
+
+	focus = {
+		id = HUN_Biological_Break
+		icon = GFX_HUN_Biological_Research
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_RESEARCH}		
+		
+		prerequisite = {
+			focus = HUN_Chemical_Break
+		}
+
+		prerequisite = {
+			focus = HUN_Oil_Break
+		}		
+				
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes
+
+		completion_reward = {
+		
+	    add_tech_bonus = {
+		bonus = 0.5
+		uses = 1
+		category = cat_terror_weapons
+		}		
+
+			154 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = medical_center
+					level = 2
+					instant_build = yes
+				  }
+			  }
+         }			   
+		
+		x = 12
+		y = 16
+		
 	}	
 	
 	focus = {
-		id = hun_military_exercise
-		icon = GFX_hun_military_exercise
-		cost = 0
+		id = HUN_Wigner_Research_Plan
+		icon = GFX_HUN_Szilard_Research_Plan
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_RESEARCH}		
+		
 		prerequisite = {
-			focus = hun_army_reform
+			focus = hun_economyof_hungary
 		}
-		x = 23
+		
+		mutually_exclusive = {
+			focus = HUN_Szilard_Research_Plan
+		}
+		
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes		
+		
+		x = 15
+		y = 14
+    }
+	
+	focus = {
+		id = HUN_Autonomized_Industry
+		icon = GFX_HUN_Autonomization_Industry
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
+		prerequisite = {
+			focus = HUN_Wigner_Research_Plan
+		}
+		
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes	
+
+        completion_reward = {
+	    add_tech_bonus = {
+		bonus = 0.5
+		uses = 2
+		category = construction_tech
+			}
+        }			
+		
+		x = 16
+		y = 15
+    }	
+	
+	focus = {
+		id = HUN_Augmentation_Effort
+		icon = GFX_HUN_Augmentation_Research
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_RESEARCH}		
+		
+		prerequisite = {
+			focus = HUN_Wigner_Research_Plan
+		}
+		
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes	
+
+        completion_reward = {
+        add_ideas = PB_Augmentation_Encouraged
+        }		
+		
+		x = 14
+		y = 15
+    }
+
+	focus = {
+		id = HUN_A_Lot_Mines
+		icon = GFX_HUN_Lot_Mines
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
+		prerequisite = {
+			focus = HUN_Augmentation_Effort
+		}
+		
+		prerequisite = {
+			focus = HUN_Autonomized_Industry
+		}		
+		
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes
+ 
+		completion_reward = {
+		
+		71 = {
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+		  type = steel_mill
+		   level = 3
+			instant_build = yes
+			}
+		}
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.5
+			uses = 1
+			category = industry
+			}
+		} 		
+		
+		x = 14
 		y = 16
+    }
+	
+	focus = {
+		id = HUN_Electro_Effort
+		icon = GFX_goal_Generic_Electrification
+		cost = 50
+
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_RESEARCH}		
+		
+		prerequisite = {
+			focus = HUN_Augmentation_Effort
+		}
+		
+		prerequisite = {
+			focus = HUN_Autonomized_Industry
+		}		
+		
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes
+
+        completion_reward = {
+	    add_tech_bonus = {
+		bonus = 0.75
+		uses = 1
+		category = electronics
+			}
+        }			
+		
+		x = 16
+		y = 16
+    }
+
+	focus = {
+		id = hun_letter_to_tesla
+		icon = GFX_hun_letter_to_tesla
+		cost = 50
+
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_RESEARCH}		
+		
+		prerequisite = {
+			focus = HUN_A_Lot_Mines
+			focus = HUN_Electro_Effort
+		}
+		
+		prerequisite = {
+			focus = HUN_Biological_Break
+			focus = HUN_Nukes_Break
+		}		
+	
+	    completion_reward = {
+		
+		  country_event = {
+		   id = hungarian.61
+		    days = 1
+		}		
+	}	  
+		
+		x = 13
+		y = 17
 
 	}
-	focus = {
-		id = hun_fortification_effort
-		icon = GFX_hun_fortification_effort
-		cost = 0
-		prerequisite = {
-			focus = hun_military_exercise
-		}
-		x = 23
-		y = 18
 
-	}
 	focus = {
-		id = hun_arpad_line
-		icon = GFX_hun_arpad_line
-		cost = 0
-		prerequisite = {
-			focus = hun_fortification_effort
-		}
-		x = 23
-		y = 19
+		id = HUN_Triump_of_Modernity
+		icon = GFX_HUN_Triumph_of_Modernity
+		cost = 50
+		
+		available = {
+		controls_state = 154		
+		}		
 
-	}
-	focus = {
-		id = hun_mountaniers
-		icon = GFX_hun_mountaniers
-		cost = 0
-		prerequisite = {
-			focus = hun_arpad_line
-		}
-		x = 22
-		y = 20
+		available_if_capitulated = no
 
-	}
-	focus = {
-		id = hun_improve_The_arpad_line
-		icon = GFX_hun_improve_The_arpad_line
-		cost = 0
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
 		prerequisite = {
-			focus = hun_arpad_line
+			focus = hun_economyof_hungary
 		}
-		x = 24
-		y = 20
+		
+	    completion_reward = {
+		
+		add_political_power = 50
+		
+			154 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			    }
+			}
+			
+			155 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}			
+        }				
+		
+	    add_tech_bonus = {
+		bonus = 0.75
+		uses = 1
+		category = construction_tech
+		}		
+	}
+	
+		x = 20
+		y = 14
 
 	}
 	
 	focus = {
-		id = hun_fleet_development
-		icon = GFX_hun_fleet_development
-		cost = 0
+		id = HUN_Agriculture_Revoltuion
+		icon = GFX_HUN_Agriculture_Revolution
+		cost = 50
+		
+		available = {
+		controls_state = 664
+		controls_state = 73
+		controls_state = 155		
+		}		
+
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
 		prerequisite = {
-			focus = hun_army_reform
+			focus = HUN_Triump_of_Modernity
 		}
-		x = 31
+
+		completion_reward = {
+			664 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = farm
+					level = 2
+					instant_build = yes
+				}
+			}
+			73 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = farm
+					level = 2
+					instant_build = yes
+				}
+			}
+			155 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = farm
+					level = 2
+					instant_build = yes
+				}
+			}
+		}		
+		
+		x = 18
+		y = 15
+
+	}
+
+	focus = {
+		id = HUN_Mass_Urbanization
+		icon = GFX_Focus_goal_generic_industrial_towns2
+		cost = 50
+		
+		available = {
+		controls_state = 76
+		controls_state = 155
+		controls_state = 154		
+		}		
+
+		cancel_if_invalid = yes			
+
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
+		prerequisite = {
+			focus = HUN_Triump_of_Modernity
+		}
+
+	completion_reward = {
+	
+        PB_Poverty_Small_Progress_Increase = yes
+		
+		76 = {
+		    add_building_construction = {
+		    	type = infrastructure
+		    	level = 2
+		    	instant_build = yes
+		    }
+		}	
+		154 = {
+		    add_building_construction = {
+		    	type = infrastructure
+		    	level = 2
+		    	instant_build = yes
+		    }
+		}
+		
+		add_victory_points = {
+			province = 3696
+			value = 1
+		}
+		
+		add_victory_points = {
+			province = 3730
+			value = 1
+		}
+
+		add_victory_points = {
+			province = 746
+			value = 1
+		}
+
+		add_victory_points = {
+			province = 9656
+			value = 1
+		}		
+	}		
+		
+		x = 20
+		y = 15
+
+	}
+
+	focus = {
+		id = HUN_Mass_Railways
+		icon = GFX_goal_Focus_GER_Volkswagen
+		cost = 50
+		
+		available = {
+		controls_state = 84
+		controls_state = 973
+		controls_state = 975		
+		}		
+
+		cancel_if_invalid = yes		
+
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
+		prerequisite = {
+			focus = HUN_Triump_of_Modernity
+		}
+
+	    completion_reward = {
+
+        PB_Economy_Small_Progress_Increase = yes 		
+	
+		build_railway = {
+			path = { 6679 6709 3676 690 9668 9670 }
+		}
+		
+		build_railway = {
+			path = { 3670 11627 11630 9661 13287 13284 9692 }
+		}		
+		
+		84 = {
+			add_building_construction = {
+				type = supply_node
+				level = 1
+				instant_build = yes
+				province = 690	
+			   }
+		   }
+
+		975 = {
+			add_building_construction = {
+				type = supply_node
+				level = 1
+				instant_build = yes
+				province = 9661	
+			   }
+		   }		   
+	   }		
+		
+		x = 22
+		y = 15
+
+	}
+
+	focus = {
+		id = HUN_Future_Of_The_Farms
+		icon = GFX_goal_Focus_GER_Agriculture_Mechanization
+		cost = 50
+		
+		available = {
+		controls_state = 155
+		controls_state = 43
+		controls_state = 73		
+		}		
+		
+		available_if_capitulated = no
+
+		cancel_if_invalid = yes
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
+		prerequisite = {
+			focus = HUN_Mass_Urbanization
+		}
+
+		prerequisite = {
+			focus = HUN_Agriculture_Revoltuion
+		}
+
+        completion_reward = {
+		
+		PB_Economy_Small_Progress_Increase = yes
+		
+        add_resource = {
+        type = grain
+        amount = 25
+        state = 155
+        }
+
+        add_resource = {
+        type = grain
+        amount = 40
+        state = 43
+        }
+
+        add_resource = {
+        type = grain
+        amount = 20
+        state = 73
+        }
+    }		
+		
+		x = 19
 		y = 16
 
 	}
+
 	focus = {
-		id = hun_adriatic_fleet
-		icon = GFX_hun_adriatic_fleet
-		cost = 0
+		id = HUN_Future_Of_The_Industry
+		icon = GFX_construction_engineering_focus
+		cost = 50
+
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
 		prerequisite = {
-			focus = hun_fleet_development	
+			focus = HUN_Mass_Urbanization
 		}
-		x = 31
+
+		prerequisite = {
+			focus = HUN_Mass_Railways
+		}
+
+		completion_reward = {
+            PB_Economy_Moderate_Progress_Increase = yes		
+            PB_Poverty_Small_Progress_Increase = yes
+			every_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}		
+		
+		x = 21
+		y = 16
+
+	}
+
+	focus = {
+		id = HUN_Every_Man_Is_A_Worker
+		icon = GFX_goal_Generic_Working_Class_Family
+		cost = 50
+		
+		available = {
+		controls_state = 967
+		controls_state = 45
+		controls_state = 155
+		controls_state = 70		
+		}		
+
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
+		prerequisite = {
+			focus = HUN_Future_Of_The_Farms
+		}
+
+		prerequisite = {
+			focus = HUN_Future_Of_The_Industry
+		}
+
+        completion_reward = {
+        PB_SocDev_Improve_Industry_Rate = yes
+		
+			967 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			    }
+			}
+			
+			45 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			    }
+			}
+			
+
+			155 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			    }
+			}
+
+			70 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			   }			  
+          }  		
+	 }
+	 
+		x = 20
+		y = 17
+	}	
+
+	focus = {
+		id = HUN_Grand_Education_Campaign
+		icon = GFX_HUN_Grand_Education_Campaign
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+
+		mutually_exclusive = {
+			focus = HUN_Grand_Cultural_Campaign
+		}		
+		
+		prerequisite = {
+			focus = hun_economyof_hungary
+		}
+
+        completion_reward = {
+		add_political_power = 50
+        PB_Literacy_Small_Progress_Increase = yes
+		}
+		
+		x = 3
+		y = 14
+
+	}
+	
+	focus = {
+		id = HUN_Books_For_Everyone
+		icon = GFX_HUN_Reading
+		cost = 50
+
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
+		prerequisite = {
+			focus = HUN_Grand_Education_Campaign
+		}
+
+        completion_reward = {
+        PB_Literacy_Moderate_Progress_Increase = yes
+        }		
+		
+		x = 4
+		y = 15
+
+	}
+
+	focus = {
+		id = HUN_No_Child_Left_Behind
+		icon = GFX_HUN_No_Child_Left_Behind
+		cost = 50
+
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
+		prerequisite = {
+			focus = HUN_Grand_Education_Campaign
+		}			  
+		
+		completion_reward = {
+		add_ideas = HUN_Gold_Of_Nation
+		}
+		
+		x = 2
+		y = 15
+
+	}
+	
+	focus = {
+		id = HUN_High_School_Reform
+		icon = GFX_HUN_Gold_of_Nation
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+
+		prerequisite = {
+			focus = HUN_No_Child_Left_Behind
+		}		
+		
+		prerequisite = {
+			focus = HUN_Books_For_Everyone
+		}
+
+        completion_reward = {
+		
+		swap_ideas = {
+	      remove_idea =  HUN_Gold_Of_Nation
+		  add_idea = HUN_Gold_Of_Nation_1
+		}
+		
+        PB_Literacy_Moderate_Progress_Increase = yes
+        }		
+		
+		x = 2
+		y = 16
+
+	}
+
+	focus = {
+		id = HUN_Chance_For_Everyone
+		icon = GFX_HUN_Chance_For_Everyone
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+
+		prerequisite = {
+			focus = HUN_No_Child_Left_Behind
+		}		
+		
+		prerequisite = {
+			focus = HUN_Books_For_Everyone
+		}
+
+        completion_reward = {
+		
+		PB_Economy_Small_Progress_Increase = yes
+		
+	    add_tech_bonus = {
+		bonus = 0.50
+		uses = 1
+		category = construction_tech
+		}
+
+	    add_tech_bonus = {
+		bonus = 0.50
+		uses = 1
+		category = synth_resources
+		   }
+        }		   
+		
+		x = 4
+		y = 16
+
+	}
+
+	focus = {
+		id = HUN_Our_Brightest_Minds
+		icon = GFX_HUN_Our_Brightest_Minds
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+
+		prerequisite = {
+			focus = HUN_Chance_For_Everyone
+		}		
+		
+		prerequisite = {
+			focus = HUN_High_School_Reform
+		}
+		
+        completion_reward = {
+		
+		swap_ideas = {
+	      remove_idea =  HUN_Gold_Of_Nation_1
+		  add_idea = HUN_Gold_Of_Nation_2
+		}
+		PB_Economy_Small_Progress_Increase = yes
+        PB_Literacy_Moderate_Progress_Increase = yes	
+		}
+		
+		x = 3
 		y = 17
 
-	}
+	}	
+	
 	focus = {
-		id = hun_import_submarine_techs
-		icon = GFX_hun_import_submarine_techs
-		cost = 0
+		id = HUN_Grand_Cultural_Campaign
+		icon = HUN_Grand_Cultural_Campaign
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+
+		mutually_exclusive = {
+			focus = HUN_Grand_Education_Campaign
+		}		
+		
 		prerequisite = {
-			focus = hun_adriatic_fleet
+			focus = hun_economyof_hungary
 		}
-		x = 30
-		y = 18
+
+        completion_reward = {
+        add_political_power = 100
+        }		
+		
+		x = 7
+		y = 14
 
 	}
+
 	focus = {
-		id = hun_cruiser_effort
-		icon = GFX_hun_cruiser_effort
-		cost = 0
+		id = HUN_Cinemas_For_Everyone
+		icon = GFX_HUN_Cinemas_for_Everyone
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		prerequisite = {
-			focus = hun_adriatic_fleet
+			focus = HUN_Grand_Cultural_Campaign
 		}
-		x = 32
-		y = 18
+
+		completion_reward = {		
+            PB_Poverty_Small_Progress_Increase = yes
+			every_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}		
+		
+		x = 8
+		y = 15
 
 	}
+
 	focus = {
-		id = hun_own_navy_techologies
-		icon = GFX_hun_own_navy_techologies
-		cost = 0
+		id = HUN_Futurism
+		icon = GFX_HUN_Make_Way_for_Futurism
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		prerequisite = {
-			focus = hun_import_submarine_techs
+			focus = HUN_Grand_Cultural_Campaign
 		}
-		prerequisite = {
-			focus = hun_cruiser_effort
+
+        completion_reward = {
+		
+		add_political_power = 50
+		
+		  add_tech_bonus = {
+		  name = land_doc_bonus
+		  bonus = 0.5
+		  uses = 1
+		  category = electronics
 		}
-		x = 31
-		y = 19
+
+		  add_tech_bonus = {
+		  name = land_doc_bonus
+		  bonus = 0.33
+		  uses = 1
+		  category = rocketry
+		}
+
+		  add_tech_bonus = {
+		  name = land_doc_bonus
+		  bonus = 0.33
+		  uses = 1
+		  category = flamethrowers_tech
+		}
+      }		
+		
+		x = 6
+		y = 15
 
 	}
+
+	focus = {
+		id = HUN_Anti_Alcohol_Campaign
+		icon = GFX_HUN_Anti_Alcohol_Campaign
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
+		prerequisite = {
+			focus = HUN_Futurism
+		}
+
+		prerequisite = {
+			focus = HUN_Cinemas_For_Everyone
+		}
+
+        completion_reward = {
+		PB_Economy_Small_Progress_Increase = yes
+        PB_Poverty_Small_Progress_Increase = yes
+        }		
+		
+		x = 6
+		y = 16
+
+	}
+
+	focus = {
+		id = HUN_Youth_Activity
+		icon = GFX_HUN_Youth_Activity
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
+		prerequisite = {
+			focus = HUN_Futurism
+		}
+
+		prerequisite = {
+			focus = HUN_Cinemas_For_Everyone
+		}
+
+        completion_reward = {
+		
+		add_political_power = 50
+		
+		if = {
+		 limit = {
+		   OR = {
+		  has_government = jc
+		  has_government = lb
+		  has_government = ss		  
+		  }
+		}
+        custom_effect_tooltip = Revolutionary_Zeal_0.04_increase 		
+			add_to_variable = {
+				var = HUN_Revolutionary_Zeal
+				value = 0.04
+			}
+		}
+		
+		else_if = {
+		  limit = {
+		    NOT = {
+		      OR = {
+		  has_government = jc
+		  has_government = lb
+		  has_government = ss		  
+		      }
+		   }
+		}
+		custom_effect_tooltip = Militarism_0.04_increase
+			add_to_variable = {
+				var = HUN_Militarism_var
+				value = 0.04
+		}
+
+		custom_effect_tooltip = Chauvinism_0.04_increase
+			add_to_variable = {
+				var = HUN_Chauvinism
+				value = 0.04
+		        }
+		    }
+        }		   
+		
+		x = 8
+		y = 16
+
+	}
+
+	focus = {
+		id = HUN_Our_Middle_Class
+		icon = GFX_goal_Generic_Family
+		cost = 50
+		
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
+		prerequisite = {
+			focus = HUN_Anti_Alcohol_Campaign
+		}
+
+		prerequisite = {
+			focus = HUN_Youth_Activity
+		}
+
+        completion_reward = {
+		add_political_power = 100
+        PB_SocDev_Improve_Poverty_Rate = yes
+        }		
+		
+		x = 7
+		y = 17
+
+	}	
+
+    # Counter Revolution Trees	
 	
 	focus = {
 		id = hun_counterrevolution
@@ -5352,164 +6661,6 @@ create_country_leader = {
 		y = 11
 
 	}
-
-	focus = {
-		id = hun_announce_mobilization
-		icon = GFX_hun_announce_mobilization
-		cost = 0
-		prerequisite = {
-			
-		}
-		x = 58
-		y = 14
-
-	}
-	focus = {
-		id = hun_demand_transylvania
-		icon = GFX_hun_demand_transylvania
-		cost = 0
-		prerequisite = {
-			focus = hun_announce_mobilization
-		}
-		x = 58
-		y = 15
-
-	}
-	focus = {
-		id = hun_ask_for_russian_intervention
-		icon = GFX_hun_ask_for_russian_intervention
-		cost = 0
-		prerequisite = {
-			focus = hun_demand_transylvania
-		}
-		x = 57
-		y = 17
-
-	}
-	focus = {
-		id = hun_burn_bucharest
-		icon = GFX_hun_burn_bucharest
-		cost = 0
-		prerequisite = {
-			focus = hun_demand_transylvania
-		}
-		x = 58
-		y = 18
-
-	}
-	focus = {
-		id = hun_get_romanian_oil
-		icon = GFX_hun_get_romanian_oil
-		cost = 0
-		prerequisite = {
-			focus = hun_burn_bucharest
-		}
-		x = 58
-		y = 19
-
-	}
-	focus = {
-		id = hun_revenge_is_sweet
-		icon = GFX_hun_revenge_is_sweet
-		cost = 0
-		prerequisite = {
-			focus = hun_demand_transylvania
-		}
-		x = 58
-		y = 18
-
-	}
-	focus = {
-		id = hun_execute_romanian_royal_family
-		icon = GFX_hun_execute_romanian_royal_family
-		cost = 0
-		prerequisite = {
-			focus = hun_demand_transylvania
-		}
-		x = 61
-		y = 17
-
-	}
-	focus = {
-		id = hun_burn_the_bucharest
-		icon = GFX_hun_burn_bucharest
-		cost = 0
-		prerequisite = {
-			focus = hun_demand_transylvania
-		}
-		x = 59
-		y = 17
-
-	}
-	focus = {
-		id = hun_cancel_the_transylvanians
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_burn_bucharest
-		}
-		x = 55
-		y = 19
-
-	}
-	focus = {
-		id = hun_increase_the_garrison
-		icon = GFX_hun_increase_the_garrison
-		
-		prerequisite = {
-		focus = hun_get_romanian_oil
-		}
-	
-		cost = 0
-		
-		x = 60
-		y = 20
-
-	}
-	focus = {
-		id = hun_relocate_industry
-		icon = GFX_hun_relocate_industry
-		cost = 0
-		prerequisite = {
-			focus = hun_get_romanian_oil
-		}
-		x = 58
-		y = 20
-
-	}
-	focus = {
-		id = hun_open_terror
-		icon = GFX_hun_open_terror
-		cost = 0
-		prerequisite = {
-			focus = hun_increase_the_garrison
-		}
-		x = 60
-		y = 21
-
-	}
-	focus = {
-		id = hun_forced_labor_for_romanians
-		icon = GFX_hun_forced_labor_for_romanians
-		cost = 0
-		prerequisite = {
-			focus = hun_relocate_industry
-		}
-		x = 58
-		y = 21
-
-	}
-	focus = {
-		id = hun_execute_leadersforindependence
-		icon = GFX_hun_execute_leadersforindependence
-		cost = 0
-		prerequisite = {
-			focus = hun_cancel_the_transylvanians
-		}
-		x = 55
-		y = 20
-
-	}
 	
 	focus = {
 		id = hun_monarch_elections
@@ -5681,7 +6832,7 @@ create_country_leader = {
 		}
 		
 		completion_reward = {
-        PB_SocDev_Decrease_Literacy_Rate = yes
+        PB_Literacy_Moderate_Regression = yes
         add_stability = 0.03		
 		}		
 		
@@ -5802,623 +6953,20 @@ create_country_leader = {
 	}
 	
 	focus = {
-		id = hun_startthe_fifth_5year_plan
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_economyof_hungary
-		}
-		x = 4
-		y = 25
-
-	}
-	focus = {
-		id = hun_connectionof_theinterior
-		icon = GFX_hun_connectionof_theinterior
-		cost = 0
-		prerequisite = {
-			focus = hun_evolve_our_urban_culture
-		}
-		x = 4
-		y = 27
-
-	}
-	focus = {
-		id = hun_evolve_our_urban_culture
-		icon = GFX_hun_evolve_our_urban_culture
-		cost = 0
-		prerequisite = {
-			focus = hun_startthe_fifth_5year_plan
-		}
-		x = 4
-		y = 26
-
-	}
-	focus = {
-		id = hun_fix_tire_problem
-		icon = GFX_hun_fix_tire_problem
-		cost = 0
-		prerequisite = {
-			focus = hun_connectionof_theinterior
-		}
-		x = 4
-		y = 28
-
-	}
-	focus = {
-		id = hun_improve_robots
-		icon = GFX_hun_improve_robots
-		cost = 0
-		prerequisite = {
-			focus = hun_fix_tire_problem
-		}
-		x = 4
-		y = 29
-
-	}
-	focus = {
-		id = hun_finish_5th_5year_plan
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_improve_robots
-		}
-		x = 4
-		y = 30
-
-	}
-	
-	focus = {
-		id = hun_bomber_improvment
-		icon = GFX_hun_bomber_improvment
-		cost = 0
-		prerequisite = {
-			focus = hun_hungarian_air
-		}
-		x = 13
-		y = 17
-
-	}
-	focus = {
-		id = hun_fighter_production
-		icon = GFX_hun_fighter_production
-		cost = 0
-		prerequisite = {
-			focus = hun_hungarian_air
-		}
-		x = 17
-		y = 17
-
-	}
-	focus = {
-		id = hun_clear_sky
-		icon = GFX_hun_clear_sky
-		cost = 0
-		prerequisite = {
-			focus = hun_naval_bombers
-		}
-		x = 14
-		y = 19
-
-	}
-	focus = {
-		id = hun_air_base_expansion
-		icon = GFX_hun_air_base_expansion
-		cost = 0
-		prerequisite = {
-			focus = hun_naval_bombers
-		}
-		x = 16
-		y = 19
-
-	}
-	focus = {
-		id = hun_heavy_fighter_concept
-		icon = GFX_hun_heavy_fighter_concept
-		cost = 0
-		prerequisite = {
-			focus = hun_hungarian_air
-		}
-		x = 15
-		y = 17
-
-	}
-	focus = {
-		id = hun_naval_bombers
-		icon = GFX_hun_naval_bombers
-		cost = 0
-		prerequisite = {
-			focus = hun_bomber_improvment
-			focus = hun_heavy_fighter_concept
-			focus = hun_fighter_production
-		}
-		x = 15
-		y = 18
-
-	}
-	focus = {
-		id = hun_experimental_helicopters
-		icon = GFX_hun_experimental_helicopters
-		cost = 0
-		prerequisite = {
-			focus = hun_clear_sky
-		}
-		prerequisite = {
-			focus = hun_air_base_expansion
-		}
-		x = 15
-		y = 20
-
-	}
-	focus = {
-		id = hun_evolution_of_air_strategy
-		icon = GFX_hun_evolution_of_air_strategy
-		cost = 0
-		prerequisite = {
-			focus = hun_experimental_helicopters
-		}
-		x = 15
-		y = 21
-
-	}
-	focus = {
-		id = hun_rocket_development
-		icon = GFX_hun_rocket_development
-		cost = 0
-		prerequisite = {
-			focus = hun_evolution_of_air_strategy
-		}
-		x = 15
-		y = 22
-
-	}
-	focus = {
-		id = hun_Coastal_defence
-		icon = GFX_hun_Coastal_defence
-		cost = 0
-		prerequisite = {
-			focus = hun_own_navy_techologies
-		}
-		x = 32
-		y = 20
-
-	}
-	focus = {
-		id = hun_black_sea_fleet
-		icon = GFX_hun_black_sea_fleet
-		cost = 0
-		prerequisite = {
-			focus = hun_improve_naval_bases
-		}
-		prerequisite = {
-			focus = hun_Coastal_defence
-		}
-		x = 30
-		y = 21
-
-	}
-	focus = {
-		id = hun_improve_naval_bases
-		icon = GFX_hun_improve_naval_bases
-		cost = 0
-		prerequisite = {
-			focus = hun_own_navy_techologies
-		}
-		x = 30
-		y = 20
-
-	}
-	focus = {
-		id = hun_ports_development
-		icon = GFX_hun_ports_development
-		cost = 0
-		prerequisite = {
-			focus = hun_black_sea_fleet
-		}
-		x = 29
-		y = 22
-
-	}
-	focus = {
-		id = hun_defence_of_maritime_borders
-		icon = GFX_hun_defence_of_maritime_borders
-		cost = 0
-		prerequisite = {
-			focus = hun_black_sea_fleet
-		}
-		x = 31
-		y = 22
-
-	}
-	focus = {
-		id = hun_first_battleship
-		icon = GFX_hun_first_battleship
-		cost = 0
-		prerequisite = {
-			focus = hun_ports_development
-		}
-		prerequisite = {
-			focus = hun_defence_of_maritime_borders
-		}
-		x = 30
-		y = 23
-
-	}
-	focus = {
-		id = hun_classic_army
-		icon = GFX_hun_classic_army
-		cost = 0
-		prerequisite = {
-			focus = hun_military_exercise
-		}
-		mutually_exclusive = {
-			focus = hun_army_of_movement
-		}
-		x = 27
-		y = 17
-
-	}
-	focus = {
-		id = hun_mechanized_forces
-		icon = GFX_hun_mechanized_forces
-		cost = 0
-		prerequisite = {
-			focus = hun_army_of_movement
-		}
-		x = 18
-		y = 18
-
-	}
-	focus = {
-		id = hun_army_of_movement
-		icon = GFX_hun_army_of_movement
-		cost = 0
-		prerequisite = {
-			focus = hun_military_exercise
-		}
-		mutually_exclusive = {
-			focus = hun_classic_army
-		}
-		x = 19
-		y = 17
-
-	}
-	focus = {
-		id = hun_automation_benefits
-		icon = GFX_hun_automation_benefits
-		cost = 0
-		prerequisite = {
-			focus = hun_army_of_movement
-		}
-		x = 20
-		y = 18
-
-	}
-	focus = {
-		id = hun_massive_artillery
-		icon = GFX_hun_massive_artillery
-		cost = 0
-		prerequisite = {
-			focus = hun_mechanized_forces
-		}
-		prerequisite = {
-			focus = hun_automation_benefits
-		}
-		x = 18
-		y = 19
-
-	}
-	focus = {
-		id = hun_victory_at_any_cost
-		icon = GFX_hun_victory_at_any_cost
-		cost = 0
-		prerequisite = {
-			focus = hun_automation_benefits
-		}
-		prerequisite = {
-			focus = hun_mechanized_forces
-		}
-		x = 20
-		y = 19
-
-	}
-	focus = {
-		id = hun_integrating_red_front_hungary
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_massive_artillery
-		}
-		prerequisite = {
-			focus = hun_victory_at_any_cost
-		}
-		x = 19
-		y = 20
-
-	}
-	focus = {
-		id = hun_new_army_organization
-		icon = GFX_GFX_hun_new_army_organization
-		cost = 0
-		prerequisite = {
-			focus = hun_mountaniers
-			focus = hun_improve_the_tactics
-			focus = hun_integrating_red_front_hungary
-		}
-		prerequisite = {
-			focus = hun_improve_The_arpad_line
-		}
-		x = 23
-		y = 21
-
-	}
-	focus = {
-		id = hun_infantry_cult
-		icon = GFX_hun_infantry_cult
-		cost = 0
-		prerequisite = {
-			focus = hun_prepare_for_long_war
-		}
-		x = 29
-		y = 19
-
-	}
-	focus = {
-		id = hun_prepare_for_long_war
-		icon = GFX_hun_prepare_for_long_war
-		cost = 0
-		prerequisite = {
-			focus = hun_classic_army
-		}
-		x = 27
-		y = 18
-
-	}
-	focus = {
-		id = hun_increase_firepower
-		icon = GFX_hun_increase_firepower
-		cost = 0
-		prerequisite = {
-			focus = hun_prepare_for_long_war
-		}
-		x = 25
-		y = 19
-
-	}
-	focus = {
-		id = hun_improve_the_tactics
-		icon = GFX_hun_improve_the_tactics
-		cost = 0
-		prerequisite = {
-			focus = hun_increase_firepower
-		}
-		prerequisite = {
-			focus = hun_infantry_cult
-		}
-		prerequisite = {
-			focus = hun_small_army_engineering
-		}
-		x = 27
-		y = 20
-
-	}
-	focus = {
-		id = hun_rebuild_officer_corp
-		icon = GFX_hun_rebuild_officer_corp
-		cost = 0
-		prerequisite = {
-			focus = hun_new_army_organization
-		}
-		x = 20
-		y = 22
-
-	}
-	focus = {
-		id = hun_guards_division
-		icon = GFX_hun_guards_division
-		cost = 0
-		prerequisite = {
-			focus = hun_new_army_organization
-		}
-		x = 24
-		y = 22
-
-	}
-	focus = {
-		id = hun_army_modernization
-		icon = GFX_hun_army_modernization
-		cost = 0
-		prerequisite = {
-			focus = hun_rebuild_officer_corp
-		}
-		prerequisite = {
-			focus = hun_guards_division
-		}
-		prerequisite = {
-			focus = hun_war_in_the_blood
-		}
-		prerequisite = {
-			focus = hun_form_parachute_division
-		}
-		x = 23
-		y = 23
-
-	}
-	focus = {
-		id = hun_war_in_the_blood
-		icon = GFX_hun_war_in_the_blood
-		cost = 0
-		prerequisite = {
-			focus = hun_new_army_organization
-		}
-		x = 22
-		y = 22
-
-	}
-	focus = {
-		id = hun_start_the_Sixth_5year_plan
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_economyof_hungary
-		}
-		x = 6
-		y = 25
-
-	}
-	focus = {
-		id = hun_budapest_industry_centre
-		icon = GFX_hun_budapest_industry_centre 
-		cost = 0
-		prerequisite = {
-			focus = hun_start_the_Sixth_5year_plan
-		}
-		x = 6
-		y = 26
-
-	}
-	focus = {
-		id = hun_voevodina_military_industry
-		icon = GFX_hun_voevodina_military_industry
-		cost = 0
-		prerequisite = {
-			focus = hun_budapest_industry_centre
-		}
-		x = 6
-		y = 27
-
-	}
-	focus = {
-		id = hun_croatian_military_complex
-		icon = GFX_hun_croatian_military_complex
-		cost = 0
-		prerequisite = {
-			focus = hun_voevodina_military_industry
-		}
-		x = 6
-		y = 28
-
-	}
-	focus = {
-		id = hun_progress_cult
-		icon = GFX_hun_progress_cult
-		cost = 0
-		prerequisite = {
-			focus = hun_croatian_military_complex
-		}
-		x = 6
-		y = 29
-
-	}
-	focus = {
-		id = hun_start_the_seventh_5year_plan
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_economyof_hungary
-		}
-		x = 8
-		y = 25
-
-	}
-	focus = {
-		id = hun_capitals_of_revolution
-		icon = GFX_hun_capitals_of_revolution
-		cost = 0
-		prerequisite = {
-			focus = hun_start_the_seventh_5year_plan
-		}
-		x = 8
-		y = 26
-
-	}
-	focus = {
-		id = hun_bratislava_institut_of_electronics
-		icon = GFX_hun_bratislava_institut_of_electronics
-		cost = 0
-		prerequisite = {
-			focus = hun_capitals_of_revolution
-		}
-		x = 8
-		y = 27
-
-	}
-	focus = {
-		id = hun_budapest_dunai_canal
-		icon = GFX_hun_budapest_dunai_canal
-		cost = 0
-		prerequisite = {
-			focus = hun_bratislava_institut_of_electronics
-		}
-		x = 8
-		y = 28
-
-	}
-	focus = {
-		id = hun_necessary_measure
-		icon = GFX_hun_necessary_measure
-		cost = 0
-		prerequisite = {
-			focus = hun_budapest_dunai_canal
-		}
-		x = 8
-		y = 29
-
-	}
-	focus = {
-		id = hun_finish_7th_5year_plan
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_necessary_measure
-		}
-		x = 8
-		y = 30
-
-	}
-	focus = {
-		id = hun_finish_6th_5year_plan
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = hun_progress_cult
-		}
-		x = 6
-		y = 30
-
-	}
-	focus = {
-		id = hun_form_parachute_division
-		icon = GFX_hun_form_parachute_division
-		cost = 0
-		prerequisite = {
-			focus = hun_new_army_organization
-		}
-		x = 26
-		y = 22
-
-	}
-	focus = {
-		id = hun_small_army_engineering
-		icon = GFX_hun_small_army_engineering
-		cost = 0
-		prerequisite = {
-			focus = hun_prepare_for_long_war
-		}
-		x = 27
-		y = 19
-
-	}
-	
-	focus = {
 		id = hun_socialist_self_management
 		icon = GFX_hun_socialist_self_management
 		cost = 42
 		
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
@@ -6447,17 +6995,23 @@ create_country_leader = {
 		icon = GFX_hun_direct_democracy
 		cost = 42
 		
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
 		}
 		
 		prerequisite = {
-			focus = HUN_Revai_Coup
+			focus = HUN_Szamuely_Coup
 		}
 		
 	    completion_reward = {
@@ -6482,10 +7036,16 @@ create_country_leader = {
 		icon = GFX_hun_weaking_of_the_center
 		cost = 42
 		
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
@@ -6511,10 +7071,16 @@ create_country_leader = {
 		icon = GFX_hun_huge_child_support
 		cost = 42
 		
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
@@ -6543,10 +7109,16 @@ create_country_leader = {
 		icon = GFX_hun_small_market_elements
 		cost = 42
 		
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
@@ -6582,10 +7154,16 @@ create_country_leader = {
 		icon = GFX_hun_forget_the_past_Embrace_the_future
 		cost = 70
 		
+	    available_if_capitulated = no
+
+	    cancel_if_invalid = yes
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}		
+		
 		available = {
 			OR = {	
 				has_country_leader = {
-					name = "Jozsef Revai"
+					name = "Tibor Szamuely"
 					ruling_only = yes
 				}				
 			}
@@ -6624,190 +7202,5 @@ create_country_leader = {
 		x = 13
 		y = 11
 
-	}
-	
-	focus = {
-		id = hun_war_on_uneployment
-		icon = GFX_hun_war_on_uneployment
-		cost = 0
-		prerequisite = {
-			focus = hun_economyof_hungary
-		}
-		x = 13
-		y = 25
-
-	}
-	focus = {
-		id = hun_support_heavy_industry
-		icon = GFX_hun_support_heavy_industry
-		cost = 0
-		prerequisite = {
-			focus = hun_war_on_uneployment
-		}
-		x = 15
-		y = 26
-
-	}
-	focus = {
-		id = hun_support_civil_industry
-		icon = GFX_hun_support_civil_industry
-		cost = 0
-		prerequisite = {
-			focus = hun_war_on_uneployment
-		}
-		x = 13
-		y = 26
-
-	}
-	focus = {
-		id = hun_expand_budapest_university
-		icon = GFX_hun_expand_budapest_university
-		cost = 0
-		prerequisite = {
-			focus = hun_economyof_hungary
-		}
-		x = 18
-		y = 25
-
-	}
-	focus = {
-		id = hun_mass_housing_development
-		icon = GFX_hun_mass_housing_development
-		cost = 0
-		prerequisite = {
-			focus = hun_war_on_uneployment
-		}
-		x = 11
-		y = 26
-
-	}
-	focus = {
-		id = hun_each_in_apartment
-		icon = GFX_hun_each_in_apartment
-		cost = 0
-		prerequisite = {
-			focus = hun_mass_housing_development
-		}
-		prerequisite = {
-			focus = hun_mass_use_of_labor_contracts
-		}
-		x = 11
-		y = 28
-
-	}
-	focus = {
-		id = hun_mass_use_of_labor_contracts
-		icon = GFX_hun_forced_labor_for_romanians
-		cost = 0
-		prerequisite = {
-			focus = hun_support_civil_industry
-		}
-		prerequisite = {
-			focus = hun_support_heavy_industry
-		}
-		x = 13
-		y = 27
-
-	}
-	focus = {
-		id = hun_academy_of_sciencies
-		icon = GFX_hun_academy_of_sciencies
-		cost = 0
-		prerequisite = {
-			focus = hun_expand_budapest_university
-		}
-		x = 18
-		y = 26
-
-	}
-	focus = {
-		id = hun_science_above_all
-		icon = GFX_hun_science_above_all
-		cost = 0
-		prerequisite = {
-			focus = hun_academy_of_sciencies
-		}
-		prerequisite = {
-			focus = hun_use_Foreign_developments
-		}
-		x = 18
-		y = 28
-
-	}
-	focus = {
-		id = hun_use_Foreign_developments
-		icon = GFX_hun_use_Foreign_developments
-		cost = 0
-		prerequisite = {
-			focus = hun_academy_of_sciencies
-		}
-		x = 16
-		y = 27
-
-	}
-	focus = {
-		id = hun_education_for_everyone
-		icon = GFX_hun_education_for_everyone
-		cost = 0
-		prerequisite = {
-			focus = hun_each_in_apartment
-		}
-		x = 13
-		y = 29
-
-	}
-	focus = {
-		id = medicine_for_needy
-		icon = GFX_medicine_for_needy
-		cost = 0
-		prerequisite = {
-			focus = hun_each_in_apartment
-		}
-		x = 11
-		y = 29
-
-	}
-	focus = {
-		id = hun_hungarian_center_bank
-		icon = GFX_hun_hungarian_center_bank
-		cost = 0
-		prerequisite = {
-			focus = hun_mass_use_of_labor_contracts
-		}
-		x = 15
-		y = 28
-
-	}
-	focus = {
-		id = hun_to_each_according_to_his_needs
-		icon = GFX_hun_to_each_according_to_his_needs
-		cost = 0
-		prerequisite = {
-			focus = medicine_for_needy
-		}
-		prerequisite = {
-			focus = hun_education_for_everyone
-		}
-		x = 12
-		y = 30
-
-	}
-	focus = {
-		id = hun_sovereign_economy
-		icon = GFX_hun_sovereign_economy
-		cost = 0
-		prerequisite = {
-			focus = hun_to_each_according_to_his_needs
-		}
-		prerequisite = {
-			focus = hun_hungarian_center_bank
-		}
-		prerequisite = {
-			focus = hun_science_above_all
-		}
-		x = 15
-		y = 31
-
-	}
-	
+	}	
 }

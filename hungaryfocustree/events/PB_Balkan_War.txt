@@ -42,15 +42,9 @@ country_event = {		#Test balkan war
 		ai_chance = {
 			factor = 100
         }
-
-		every_country = {
-			set_temp_variable = { super_id = 86 }
-			PB_Fire_Super_Event = yes
-		    }
-			
-			155 = {
-		    add_dynamic_modifier = { modifier = Burchard_Belavary_Family_state }
-			}					
+	    set_global_flag = gbw_bulgaria_lost
+	    set_global_flag = gbw_serbia_lost
+	    set_global_flag = gbw_turkey_lost					
       }
 }
 
@@ -149,6 +143,16 @@ country_event = {		#PrepareForWar - Everyone
         }
 
 		add_war_support = 0.1
+		
+		hidden_effect = {
+		106 = {
+		set_demilitarized_zone = yes	
+		}
+
+		104 = {
+		set_demilitarized_zone = yes	
+		   }
+        }		   
 	}
 }
 
@@ -384,7 +388,7 @@ country_event = {		#JoinTheWar as Romania
 			factor = 100
         }			
 
-		hidden_effect = {
+		hidden_effect = {		
 
 		remove_ideas = PB_HUN_Balkan_Powderkeg
         add_ideas = ROM_russian_help
@@ -392,12 +396,13 @@ country_event = {		#JoinTheWar as Romania
 		
 		SER = {
 			country_event = { id = greatbalkwar.5 days = 2 }
-		}		
-       }		
+			country_event = { id = bulgar.3 hours = 25 }			
+		    }		
+         }		
 
-declare_war_on = {
-    target = BUL
-    type = annex_everything
+         declare_war_on = {
+         target = BUL
+         type = annex_everything
         }	
 	}
 }
@@ -604,6 +609,10 @@ set_popularities = {
 		
 		TUR = {
 			country_event = { id = balkwarpeace.9 days = 1 }
+		}
+
+		BUL = {
+			country_event = { id = bulgar.5 days = 2 }
 		}		
 		
 		GRE = {
@@ -871,19 +880,17 @@ country_event = {		#Great Balkan War - Serbian Victory against Hungary
 		
 		SER = {
 		
-   set_cosmetic_tag = PB_YUGOSLAVIA
-  
-			annex_country = {
-				target = CRO
-				transfer_troops = yes
-			}		
+   set_cosmetic_tag = PB_YUGOSLAVIA		
 
 			annex_country = {
 				target = BUL
-				transfer_troops = yes
+				transfer_troops = no
 			}
 
 			transfer_state = 45
+			transfer_state = 794
+			transfer_state = 109
+			transfer_state = 957			
 			add_state_core = 45
 			add_state_core = 109
 			add_state_core = 794

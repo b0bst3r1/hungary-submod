@@ -4,12 +4,12 @@ characters={
 		name="Matyas Rakosi"
 		portraits={
 			army={
-				large="GFX_portrait_HUN_1"
-				small="GFX_portrait_HUN_1"		
+				large="GFX_PB_HUN_Portrai_Matyas_Rakosi"
+				small="GFX_PB_HUN_Portrai_Matyas_Rakosi"		
 			}
 		}
 		corps_commander = {
-		traits = { Jacobin old_guard infantry_leader}
+		traits = { Support_Jacobins_Trait old_guard infantry_leader brilliant_strategist }
 	    skill = 3
 	    attack_skill = 2
 	    defense_skill = 3
@@ -23,12 +23,12 @@ characters={
 		name="Jozsef Pogany"
 		portraits={
 			army={
-				large="GFX_portrait_pogany_jozsef"
-				small="GFX_portrait_pogany_jozsef"
+				large="GFX_PB_HUN_Portrait_Jozsef_Pogany"
+				small="GFX_PB_HUN_Portrait_Jozsef_Pogany"
 			}
 		}
 	corps_commander = {
-	traits = { Jacobin }
+	traits = { Support_Jacobins_Trait questionable_methods armor_officer }
 	skill = 2
 	attack_skill = 2
 	defense_skill = 1
@@ -42,12 +42,12 @@ characters={
 		name="Otto Korvin"
 		portraits={
 			army={
-				large="GFX_portrait_Korvin_Otto"
-				small="GFX_portrait_Korvin_Otto"	
+				large="GFX_PB_HUN_Portrait_Otto_Korvin"
+				small="GFX_PB_HUN_Portrait_Otto_Korvin"	
 			}
 		}
 	corps_commander = {
-	traits = { Jacobin }
+	traits = { Support_Jacobins_Trait infantry_officer }
 	skill = 1
 	attack_skill = 1
 	defense_skill = 2
@@ -61,12 +61,12 @@ characters={
 		name="Jeno Landler"
 		portraits={
 			army={
-				large="GFX_portrait_Jeno_Landler"
-				small="GFX_portrait_Jeno_Landler"			
+				large="GFX_PB_HUN_Portrait_Jeno_Landler"
+				small="GFX_PB_HUN_Portrait_Jeno_Landler"			
 			}
 		}
 	corps_commander = {
-	traits = { Jacobin }
+	traits = { Support_Jacobins_Trait old_guard war_hero }
 	skill = 2
 	attack_skill = 3
 	defense_skill = 2
@@ -80,12 +80,12 @@ characters={
 		name="Arpad Kerekes"
 		portraits={
 			army={
-				large="GFX_portrait_arpad_kerekes"
-				small="GFX_portrait_arpad_kerekes"		
+				large="GFX_PB_HUN_Portrait_Arpad_Kerekes"
+				small="GFX_PB_HUN_Portrait_Arpad_Kerekes"		
 			}
 		}
 	corps_commander = {
-	traits = { Jacobin }
+	traits = { Support_Jacobins_Trait trait_engineer }
 	skill = 1
 	attack_skill = 1
 	defense_skill = 2
@@ -100,12 +100,12 @@ characters={
 		name="Ivan Hindy"
 		portraits={
 			army={
-				large="GFX_portrait_ivan_hindy"
-				small="GFX_portrait_ivan_hindy"				
+				large="GFX_PB_HUN_Portrait_Ivan_Hindy"
+				small="GFX_PB_HUN_Portrait_Ivan_Hindy"				
 			}
 		}
 	field_marshal = {
-	traits = { Nationalist }
+	traits = { Support_Nationalists_Trait career_officer war_hero old_guard harsh_leader }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
@@ -120,12 +120,12 @@ characters={
 		name="Karoly Bartha"
 		portraits={
 			army={
-				large="GFX_portrait_Bartha_Karoly"
-				small="GFX_portrait_Bartha_Karoly"		
+				large="GFX_PB_HUN_Portrait_Bartha_Karoly"
+				small="GFX_PB_HUN_Portrait_Bartha_Karoly"		
 			}
 		}
 	corps_commander = {
-	traits = { Nationalist }
+	traits = { Support_Nationalists_Trait career_officer war_hero old_guard defensive_doctrine }
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
@@ -140,12 +140,12 @@ characters={
 		name="Kornel Radanyi"
 		portraits={
 			army={
-				large="GFX_portrait_osztolanyi_kornel"
-				small="GFX_portrait_osztolanyi_kornel"			
+				large="GFX_PB_HUN_Portrait_Osztolanyi_Kornel"
+				small="GFX_PB_HUN_Portrait_Osztolanyi_Kornel"			
 			}
 		}
 	corps_commander = {
-	traits = { Nationalist }
+	traits = { Support_Nationalists_Trait career_officer trait_reckless }
 	skill = 1
 	attack_skill = 2
 	defense_skill = 1
@@ -160,12 +160,12 @@ characters={
 		name="Jeno Sarkany"
 		portraits={
 			army={
-				large="GFX_portrait_Sarkany_Jeno"
-				small="GFX_portrait_Sarkany_Jeno"			
+				large="GFX_PB_HUN_Portrait_Sarkany_Jeno"
+				small="GFX_PB_HUN_Portrait_Sarkany_Jeno"			
 			}
 		}
 	corps_commander = {
-			traits = { Nationalist }
+			traits = { Support_Nationalists_Trait career_officer }
 	        skill = 1
 	        attack_skill = 2
 	        defense_skill = 1
@@ -180,12 +180,12 @@ characters={
 		name="Aurel Stromfeld"
 		portraits={
 			army={
-				large="GFX_portrait_stromfeld"
-				small="GFX_portrait_stromfeld"			
+				large="GFX_PB_HUN_Portrait_Stromfeld"
+				small="GFX_PB_HUN_Portrait_Stromfeld"			
 			}
 		}
 	field_marshal = {
-	traits = {  }
+	traits = { career_officer war_hero old_guard trait_cautious }
 	skill = 4
 	attack_skill = 3
 	defense_skill = 4
@@ -200,12 +200,12 @@ characters={
 		name="Laszlo Szamuely"
 		portraits={
 			army={
-				large="GFX_portrait_Laszio"
-				small="GFX_portrait_Laszio"			
+				large="GFX_PB_HUN_Portrait_Laszio_Szamuely"
+				small="GFX_PB_HUN_Portrait_Laszio_Szamuely"			
 			}
 		}
 	corps_commander = {
-	traits = {  }
+	traits = { career_officer cavalry_officer infantry_officer }
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
@@ -220,12 +220,12 @@ characters={
 		name="Gordony Novak"
 		portraits={
 			army={
-				large="GFX_portrait_Gorondy_Novak"
-				small="GFX_portrait_Gorondy_Novak"		
+				large="GFX_PB_HUN_Portrait_Gorondy_Novak"
+				small="GFX_PB_HUN_Portrait_Gorondy_Novak"		
 			}
 		}
 	corps_commander = {
-	traits = {  }
+	traits = { armor_officer old_guard war_hero commando }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
@@ -240,12 +240,12 @@ characters={
 		name="Geza Lakatos"
 		portraits={
 			army={
-				large="GFX_portrait_Geza_Lakatos"
-				small="GFX_portrait_Geza_Lakatos"		
+				large="GFX_PB_HUN_Portrait_Geza_Lakatos"
+				small="GFX_PB_HUN_Portrait_Geza_Lakatos"		
 			}
 		}
 	corps_commander = {
-	traits = {  }
+	traits = { trait_engineer commando }
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
@@ -260,12 +260,12 @@ characters={
 		name="Ferenc Kovats"
 		portraits={
 			army={
-				large="GFX_portrait_Ferenc"
-				small="GFX_portrait_Ferenc"			
+				large="GFX_PB_HUN_Portrait_Ferenc_Kovats"
+				small="GFX_PB_HUN_Portrait_Ferenc_Kovats"			
 			}
 		}
 	corps_commander = {
-	traits = {  }
+	traits = { infantry_officer }
 	skill = 1
 	attack_skill = 1
 	defense_skill = 1
@@ -280,16 +280,16 @@ characters={
 		name="Bela Miklos de Dalnok"
 		portraits={
 			army={
-				large="GFX_portrait_bela_miklos_de_dalnok"
-				small="GFX_portrait_bela_miklos_de_dalnok"
+				large="GFX_PB_HUN_Portrait_Bela_Miklos"
+				small="GFX_PB_HUN_Portrait_Bela_Miklos"
 			}
 		}
 	corps_commander = {
-	traits = {  }
-	skill = 2
-	attack_skill = 3
+	traits = { media_personality trait_engineer war_hero old_guard }
+	skill = 3
+	attack_skill = 2
 	defense_skill = 2
-	planning_skill = 2
+	planning_skill = 3
 	logistics_skill = 2
 	legacy_id = 8015	
 		}
@@ -300,12 +300,12 @@ characters={
 		name="Vilmos Nagy"
 		portraits={
 			army={
-				large="GFX_portrait_Vilmos_Nagy"
-				small="GFX_portrait_Vilmos_Nagy"		
+				large="GFX_PB_HUN_Portrait_Vilmos_Nagy"
+				small="GFX_PB_HUN_Portrait_Vilmos_Nagy"		
 			}
 		}
 	corps_commander = {
-	traits = { Socialist }
+	traits = { Support_Socialists_Trait war_hero armor_officer }
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
@@ -320,12 +320,12 @@ characters={
 		name="Karoly Beregfy"
 		portraits={
 			army={
-				large="GFX_portrait_Beregfy_Karoly"
-				small="GFX_portrait_Beregfy_Karoly"				
+				large="GFX_PB_HUN_Portrait_Beregfy_Karoly"
+				small="GFX_PB_HUN_Portrait_Beregfy_Karoly"				
 			}
 		}
 	corps_commander = {
-	traits = { Socialist }
+	traits = { Support_Socialists_Trait politically_connected  }
 	skill = 2
 	attack_skill = 2
 	defense_skill = 1
@@ -340,12 +340,12 @@ characters={
 		name="Arpad Schon"
 		portraits={
 			army={
-				large="GFX_portrait_aprad_schon"
-				small="GFX_portrait_aprad_schon"			
+				large="GFX_PB_HUN_Portrait_Aprad_Schon"
+				small="GFX_PB_HUN_Portrait_Aprad_Schon"			
 			}
 		}
 	corps_commander = {
-	traits = { Socialist }
+	traits = { Support_Socialists_Trait trait_mountaineer }
 	skill = 1
 	attack_skill = 2
 	defense_skill = 2
@@ -359,12 +359,12 @@ characters={
 		name="Tibor Szamuely"
 		portraits={
 			army={
-				large="GFX_portrait_HUN_2"
-				small="GFX_portrait_HUN_2"		
+				large="GFX_PB_HUN_Portrait_Tibor_Szamuely"
+				small="GFX_PB_HUN_Portrait_Tibor_Szamuely"		
 			}
 		}
 	field_marshal = {
-	traits = { Socialist }
+	traits = { Support_Socialists_Trait politically_connected media_personality old_guard }
 	skill = 3
 	attack_skill = 2
 	defense_skill = 2
@@ -378,12 +378,12 @@ characters={
 		name="Mihaly Farkas"
 		portraits={
 			army={
-				large="GFX_portrait_farkas_mihaly"
-				small="GFX_portrait_farkas_mihaly"			
+				large="GFX_PB_HUN_Portrait_Farkas_Mihaly"
+				small="GFX_PB_HUN_Portrait_Farkas_Mihaly"			
 			}
 		}
 	corps_commander = {
-	traits = { Socialist }
+	traits = { Support_Socialists_Trait winter_specialist }
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
@@ -397,12 +397,12 @@ characters={
 		name="Gabor Peter"
 		portraits={
 			army={
-				large="GFX_Gabor_Peter"
-				small="GFX_Gabor_Peter"		
+				large="GFX_PB_HUN_Portrait_Gabor_Peter"
+				small="GFX_PB_HUN_Portrait_Gabor_Peter"		
 			}
 		}
 	corps_commander = {
-	traits = { Socialist }
+	traits = { Support_Socialists_Trait politically_connected }
 	skill = 1
 	attack_skill = 2
 	defense_skill = 2
@@ -416,12 +416,12 @@ characters={
 		name="Erno Gero"
 		portraits={
 			army={
-				large="GFX_enro_gero"
-				small="GFX_enro_gero"	
+				large="GFX_PB_HUN_Portrait_Erno_Gero"
+				small="GFX_PB_HUN_Portrait_Erno_Gero"	
 			}
 		}
 	corps_commander = {
-	traits = { Jacobin }
+	traits = { Support_Jacobins_Trait politically_connected }
 	skill = 2
 	attack_skill = 2
 	defense_skill = 3
@@ -435,12 +435,12 @@ characters={
 		name="Ferenc Munnich"
 		portraits={
 			army={
-				large="GFX_ferenc_munnich"
-				small="GFX_ferenc_munnich"
+				large="GFX_PB_HUN_Portrait_Ferenc_Munnich"
+				small="GFX_PB_HUN_Portrait_Ferenc_Munnich"
 			}
 		}
 	corps_commander = {
-	traits = { Jacobin }
+	traits = { Support_Jacobins_Trait cavalry_officer }
 	skill = 1
 	attack_skill = 2
 	defense_skill = 1

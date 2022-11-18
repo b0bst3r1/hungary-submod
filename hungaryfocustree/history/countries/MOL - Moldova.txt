@@ -62,9 +62,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "No Leader"
+	name = "Lazar Kaganovich"
 	desc = ""
-	picture = "gfx/leaders/No_Leader_Portrait/Portrait_MOL_Lazar_Kaganovich.dds"
+	picture = "gfx/leaders/MOL/Portrait_MOL_Lazar_Kaganovich.dds"
 	ideology = AN_VARIANT_01
 }
 

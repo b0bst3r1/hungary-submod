@@ -40,3 +40,41 @@ Special_Economic_Zone_State_Modifier = {
     local_building_slots_factor = 0.25	
 }
 
+Albanian_National_Liberation_Army_State_Modifier = {
+	icon = GFX_modifiers_Albanian_National_Liberation_Army_icon
+	enable = { always = yes }
+	
+	resistance_growth = 0.03
+	resistance_target = 0.1
+	resistance_decay = -0.1
+	org_loss_when_moving = 0.1
+	local_manpower = -0.1
+	local_intel_to_enemies = 0.3
+	local_factory_sabotage = 0.15	
+}
+
+Bosniak_Clandestine_Organization_State_Modifier = {
+	icon = GFX_modifiers_Bosniak_Clandestine_Organization_icon
+	enable = { always = yes }
+	
+	resistance_growth = 0.03
+	resistance_target = 0.1
+	resistance_decay = -0.1
+	org_loss_when_moving = 0.1
+	local_manpower = -0.1
+	local_factory_sabotage = 0.1	
+}
+
+IMRO_Macedonia_State_Modifier = {
+	icon = GFX_modifiers_IMRO_Serbia_Dynamic_Modifier_icon
+	enable = { always = yes }
+	
+	resistance_growth = 0.05
+	resistance_target = 0.15
+	resistance_decay = -0.15
+	state_resources_factor = -0.25
+	local_manpower = -0.15
+	local_factory_sabotage = 0.15
+	state_production_speed_bunker_factor = -0.15	
+}
+

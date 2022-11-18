@@ -344,12 +344,17 @@ GAL = "countries/Galicia.txt"
 SRD = "countries/Sardinia.txt"
 DER = "countries/Desert Rangers.txt"
 
-#HungarySubmod
+#####################################################
+#####################################################
+##############BALKAN SUBMOD##########################
+#####################################################
+#####################################################
 
 KSV = "countries/KSV.txt"
 TRA = "countries/TRA.txt"
 RUT = "countries/RUT.txt"
 GLC = "countries/GLC.txt"
+SAL = "countries/SAL.txt"
 
 #do not edit below this line
 #----------------------------------------------------------

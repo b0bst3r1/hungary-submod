@@ -1,0 +1,299 @@
+﻿  ###############
+  ##NEWS#EVENTS##
+  ###############
+
+add_namespace = hungary
+
+    # Event one was deleted
+
+	news_event = {		#UDWR
+	id = hungary.2
+	title = hungary.2.t
+	desc = hungary.2.d
+	picture = GFX_PB_News_Event_Danube_Unites
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.2.a
+	}
+	}
+	
+    # Event 3 and 4 were deleted				 		
+    
+	news_event = { #RUSinMOLDOVA
+	id = hungary.5
+	title = hungary.5.t
+	desc = hungary.5.d
+	picture = GFX_PB_news_event_PBNews_Alexei_Rules_Russia
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.5.a
+	}
+        }
+
+    # Event 6-9 were deleted	
+
+	news_event = { #VagoDead
+	id = hungary.10
+	title = hungary.10.t
+	desc = hungary.10.d
+	picture = GFX_PB_News_Vago_Is_Dead
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.10.a
+	}
+        }
+
+	news_event = { #BelaKun
+	id = hungary.11
+	title = hungary.11.t
+	desc = hungary.11.d
+	picture = GFX_PB_News_Bela_Kun_Takes
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.11.a
+	}
+        }
+
+	news_event = { # Szamuely Coup
+	id = hungary.12
+	title = hungary.12.t
+	desc = hungary.12.d
+	picture = GFX_PB_News_Szamuely_Coup
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.12.a
+	}
+        }
+
+	news_event = { #Garbai
+	id = hungary.13
+	title = hungary.13.t
+	desc = hungary.13.d
+	picture = GFX_PB_News_Garbai_Takes
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.13.a
+	}
+        }
+
+
+	news_event = { #BohmResings
+	id = hungary.15
+	title = hungary.15.t
+	desc = hungary.15.d
+	picture = GFX_PB_News_Bohm_Resigns
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.15.a
+	}
+        }
+
+    # Events 16 - 20 were deleted
+
+	news_event = { #Bulgaria becomes free
+	id = hungary.21
+	title = hungary.21.t
+	desc = hungary.21.d
+	picture = GFX_PB_News_Crisis_In_Bulgaria
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.21.a
+	}
+        }
+
+	news_event = { # Turkey Revolts
+	id = hungary.22
+	title = hungary.22.t
+	desc = hungary.22.d
+	picture = GFX_PB_news_event_PBNews_Postwar_Ottoman_Dismantling
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.22.a
+	}
+        }
+
+	news_event = { # Romania Revolts
+	id = hungary.23
+	title = hungary.23.t
+	desc = hungary.23.d
+	picture = GFX_PB_news_event_PBNews_Postwar_Ottoman_Dismantling
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.23.a
+	   }
+    }
+
+	news_event = { # Tesla is Back
+	id = hungary.24
+	title = hungary.24.t
+	desc = hungary.24.d
+	picture = GFX_PB_News_Tesla_is_Back
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.24.a
+	   }
+    }
+
+	news_event = { # Tesla is Dead
+	id = hungary.25
+	title = hungary.25.t
+	desc = hungary.25.d
+	picture = GFX_PB_News_Tesla_is_Dead
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.25.a
+	   }
+    }
+
+	news_event = { # Habsburg Restoration Hungary
+	id = hungary.26
+	title = hungary.26.t
+	desc = hungary.26.d
+	picture = GFX_PB_News_Event_Habsburg_Restoration
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.26.a
+	   }
+    }
+
+	news_event = { # Romanov in Hungary
+	id = hungary.27
+	title = hungary.27.t
+	desc = hungary.27.d
+	picture = GFX_PB_News_Event_Romanov_In_Hungary
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.27.a
+	   }
+    }
+
+	news_event = { # Pacte Intervenes in Balkans
+	id = hungary.28
+	title = hungary.28.t
+	desc = hungary.28.d
+	picture = GFX_PB_News_Pact_Intervenes_In_Balkan
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.28.a
+	   }
+    }
+	
+	news_event = { # LON Intervenes in Balkan
+	id = hungary.29
+	title = hungary.29.t
+	desc = hungary.29.d
+	picture = GFX_PB_News_LON_Intervenes_In_Balkan
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.29.a
+	   }
+    }	
+
+	news_event = { # Eternal Greek King is Dead
+	id = hungary.30
+	title = hungary.30.t
+	desc = hungary.30.d
+	picture = GFX_PB_News_PB_News_Event_Eternal_King_Is_Dead
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.30.a
+	   }
+    }
+
+	news_event = { # Bosphorus Bridges are blown
+	id = hungary.31
+	title = hungary.31.t
+	desc = hungary.31.d
+	picture = GFX_PB_News_Event_Bosphorus_Bridges_Blown
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.31.a
+	   }
+    }
+
+	news_event = { # Russian concessions
+	id = hungary.32
+	title = hungary.32.t
+	desc = hungary.32.d
+	picture = GFX_PB_News_Event_SOUTHERN_CONCESSIONS
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = hungary.32.a
+	   }
+    }	

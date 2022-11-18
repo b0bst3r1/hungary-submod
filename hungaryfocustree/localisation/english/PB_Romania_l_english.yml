@@ -1,5 +1,8 @@
 ﻿  l_english:
   
+  ##########################
+  # IDEAS
+  ##########################
   
   ROM_russian_help:0 "Russian Help"
   ROM_russian_help_desc:0 "Our allies from Russia cannot support us directly in the Great Balkan War, but they can help us with advisors, arms, and even volunteers."
@@ -14,6 +17,10 @@
   ROM_peasantry:0 "A Danubian life is a Peasants life"
   ROM_peasantry_desc:0 "While constant government efforts were made to modernize and industrialize UPMW, almost 80% of its population keeps consisting of peasantry and a huge chunk of the economy remains dependant on the agricultural sector. While this has helped country in some forms and protected it during the economic crashes across Eastern Europe in the wake of the Great War, it continues to limit state's economic capabilities and will not be able to support the needs of a modern, mechanized army."
   
+  ##########################
+  # MINISTERS
+  ##########################  
+  
   ROM_PB_Codreanu_HOG:0 "Corneliu Zelea Codreanu"
   ROM_PB_Gheorghe_HOG:0 "Gheorghe Tătărescu"
   ROM_PB_Ion_HOG:0 "Ion Antonescu"
@@ -24,12 +31,22 @@
   ROM_PB_Ion_IM:0 "Ion Inculet"
   ROM_PB_Ion_2_IM:0 "Ion Mihalache"
   ROM_PB_Gheorghe_IM:0 "Gheorghe Mironescu"
+  
+  ##########################
+  # DESCRIPTIONS AND TRAITS
+  ##########################
 
+  PB_ROM_Alexander_Averescu_DESC:0 "§YBorn:§! 09/03/1859\n\nAlexandru Averescu was born in Babele, United Principalities of Moldavia and Wallachia a village northwest of Izmail (Izmayil). The son of Constantin Averescu, who held the rank of sluger, he studied at the Romanian Orthodox seminary in Izmail, then at the School of Arts and Crafts in Bucharest (intending to become an engineer).In 1876, he decided to join the Gendarmes in Izmail. He received a military education in Wallachia, at the military school of Târgoviște, and in Italy, at the Military Academy of Turin.\n\nAdvancing rapidly up the military ladder, he became head of the Bucharest Military Academy in 1889, which helped him greatly in the future. In 1890, during the intervention of the Russian Empire, he supported the interventionists and even used his influence to lend them military support by raising a local uprising in Bucharest. Appreciating this support, Averescu became Minister of Defense of the new Danubian state, and Alexandru Cernat became the so-called Namestnik. In 1900, at the age of 41, he became the first Marshal of the United Danubian Principalities.\n\nIn 1905, during the Great War, Alexandru Cernat, the first namestnik of the United Danubian Principalities, died of old age. Wishing to preserve the steadfastness of the army, Russia decides to appoint Alexandru Averescu as the new leader of the state.\n\nIn 1922 local nationalist uprisings began throughout the Russian Empire. Romania was also under threat of revolt, but with a firm hand, the army under Averescu swept away all nationalist movements. After 2 years Under diplomatic pressure from Germany, Russia acedes to some of the demands of the nationalist revolutionaries, including the city of Izmail, to ensure maximum loyalty of the United Danubian Principalities.\n\nToday Alexandru Averescu is the old leader, fulfilling the wishes of the Russian Empire, all losing and losing his former influence in the army. While in the political sphere, The National Liberals are slowly gaining more and more political power."
 
+  PB_ROM_Namestnik:0 "Namestnik"
 
   PB_Closet_Despotist:0 "Closet Despotist"
   PB_Human_Cipher:0 "Human Cipher"
   PB_Wartime_Dictator:0 "Wartime Dictator"
+  
+  ##########################
+  # PARTIES
+  ##########################  
   
   ROM_ni_party_long:0 "Partidul Naționalist al Poporului"
   ROM_ni_party:0 "PNP"

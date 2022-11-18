@@ -13,6 +13,28 @@ leader_traits = {
 		}
 	}
 	
+	PB_ROM_Namestnik = {
+
+		stability_factor = 0.1
+		
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+   PB_GRE_Eternal_King = {
+
+		stability_factor = 0.20
+		
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+   }		
+	
 	PB_HUN_Leader_of_Nation = {
 
 		political_power_gain = 0.15

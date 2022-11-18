@@ -59,8 +59,6 @@ add_ideas = {
 	PB_Basic_Healthcare
 	PB_Basic_Education
 	PB_No_Welfare
-	PB_Trade_Unions_Banned
-	PB_Slavery_Abolished
 	PB_Significant_Poverty
 	PB_Semi_Industrialized
 	PB_Significant_Illiteracy
@@ -68,6 +66,32 @@ add_ideas = {
 	PB_Fully_Westernized
 	PB_Govidea_Mixed_Market_Capitalism
 	PB_Great_War_Military
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	
+	163 = {
+		add_dynamic_modifier = { modifier = Albanian_National_Liberation_Army_State_Modifier }
+	}
+	
+	961 = {
+		add_dynamic_modifier = { modifier = Albanian_National_Liberation_Army_State_Modifier }
+	}
+	
+	972 = {
+		add_dynamic_modifier = { modifier = Albanian_National_Liberation_Army_State_Modifier }
+	}	
+	
+	106 = {
+		add_dynamic_modifier = { modifier = IMRO_Macedonia_State_Modifier }
+	}
+	
+	104 = {
+		add_dynamic_modifier = { modifier = Bosniak_Clandestine_Organization_State_Modifier }
+	}	
 }
 
 set_stability = 0.5

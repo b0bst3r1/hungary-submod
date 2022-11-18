@@ -13,9 +13,10 @@ add_to_array = { PB_accepted_cultures = 504 }
 add_to_array = { PB_accepted_cultures = 506 }
 
 # Starting tech
-set_technology = { 
+set_technology = {
 	infantry_rations = 1
 	basic_train = 1
+	motorised_infantry = 1	
 	infantry_weapons1930 = 1
 	infantry_weapons1933 = 1
 	tech_mountaineers = 1
@@ -45,7 +46,7 @@ set_research_slots = 3
 #Characters
 
 recruit_character = HUN_Rakosi
-recruit_character = HUN_Jozsef_Pogan
+recruit_character = HUN_Jozsef_Pogany
 recruit_character = HUN_Otto_Korvin
 recruit_character = HUN_arpad_kerekes
 recruit_character = HUN_ivan_hindy
@@ -62,7 +63,7 @@ recruit_character = HUN_nagy
 recruit_character = HUN_Karoly
 recruit_character = HUN_Schon
 recruit_character = HUN_tibor
-recruit_character = HUN_Ferenc
+recruit_character = HUN_ferenc_munnich
 recruit_character = HUN_farkas_mihaly
 recruit_character = HUN_Gabor_Peter
 recruit_character = HUN_Erno_Gero
@@ -149,7 +150,6 @@ add_ideas = {
 	HUN_Garbai_IM
 	HUN_Vago_EM
 	HUN_BelaKun_FM
-	HUN_PB_Rakosi
 
 	PB_Sociogenetics_Allowed
 	PB_Augmentation_No_Legislation
@@ -171,9 +171,7 @@ add_ideas = {
 	PB_Basic_Healthcare
 	PB_Universal_Basic
     PB_Basic_Welfare
-	PB_Trade_Unions_All_Allowed
-    PB_Slavery_Abolished
-    PB_Semi_Industrialized
+    PB_Agrarianism
 	PB_Minor_Illiteracy
 	PB_Middling_Consumer_Confidence
 }
@@ -197,6 +195,42 @@ set_politics = {
 	elections_allowed = no
 }
 
+create_intelligence_agency = {
+	name = "Munkásorség"
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Endre Laszló"
+		GFX = GFX_Portrait_HUN_Endre_Laszlo
+		traits = { operative_well_groomed }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = no
+		nationalities = { HUN }
+	}
+	create_operative_leader = {
+		name = "Mihaly Farkas"
+		GFX = GFX_Portrait_HUN_Mihaly_Farkas
+		traits = { operative_seducer operative_linguist operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = no
+		nationalities = { HUN }
+	}
+	create_operative_leader = {
+		name = "Laszló Piros"
+		GFX = GFX_Portrait_HUN_Laszlo_Piros
+		traits = { operative_double_agent }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = no
+		nationalities = { HUN }
+	}
+}
 
 add_to_leading_coalition_lb = yes
 add_to_leading_coalition_jc = yes
@@ -253,7 +287,7 @@ set_cosmetic_tag = CRO_COM
 
 create_country_leader = {
 	name = "Vilmos Böhm"
-	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	desc = "PB_HUN_Vilmos_Bohm_DESC"
 	picture = "gfx/leaders/HUN/bohm.dds"
 	ideology = JC_VARIANT_01
 	traits = {
@@ -304,8 +338,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Jozsef Revai"
+	name = "Tibor Szamuely"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_revai.dds"
+	picture = "gfx/leaders/HUN/PB_HUN_Portrait_Tibor_Szamuely.dds"
 	ideology = SS_VARIANT_04
 }
